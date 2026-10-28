@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from "macros.html" import btn with context %}
+{% block title %}Thank you | {{ site.name }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap narrow center">
+    <h1>Thank you</h1>
+    <p class="lead">{{ page.success_message }}</p>
+    <div class="btn-row center">{{ btn("Back to home", "index.html", "navy") }}</div>
+  </div>
+</section>
+{% endblock %}

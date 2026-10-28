@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% from "macros.html" import btn with context %}
+{% block content %}
+<section class="page-hero page-hero-navy">
+  <div class="wrap">
+    <p class="eyebrow">{{ page.eyebrow }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap grid-3">
+    {% for c in page.challenges %}
+    <div class="card challenge">
+      <span class="letter" aria-hidden="true">{{ c.letter }}</span>
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <div>
+      <h2 class="h3">{{ page.offerings_title }}</h2>
+      <ol class="offerings">
+        {% for o in page.offerings %}
+        <li><span class="step-num">{{ loop.index }}</span><div><strong>{{ o.title }}</strong><p>{{ o.text }}</p></div></li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="why">
+      <h2 class="h3">{{ page.why_title }}</h2>
+      <ul class="checks">{% for w in page.why %}<li>{{ w }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+
+<section class="band band-gold">
+  <div class="wrap"><p><strong>{{ page.ideal_partners }}</strong></p></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="trusted">
+      <span class="partners-label">{{ page.trusted_label }}</span>
+      <ul class="school-logos">
+        {% for s in page.school_logos %}
+        <li>{% if s.logo %}<img src="{{ root }}{{ s.logo | trim('/') }}" alt="{{ s.name }}">{% else %}<span class="ph logo-ph"><span>{{ s.name }}</span></span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="btn-row center section-cta">
+      {{ btn(page.primary_cta, page.primary_link) }}
+      {% if page.secondary_cta %}<a class="btn btn-navy" href="{{ (root ~ page.secondary_file | trim('/')) if page.secondary_file else u(page.primary_link) }}">{{ page.secondary_cta }} <span aria-hidden="true">→</span></a>{% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

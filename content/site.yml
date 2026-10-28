@@ -1,0 +1,48 @@
+# Global site settings — shown on every page (header, footer, contact info)
+name: WinPlus
+name_sub: EDUCATION
+company_legal: WinPlus Education & Technology Inc.
+domain: winplus.com
+meta_description: "WinPlus is a global talent development platform: real research with NASA, Meta and MIT, strategic admissions counseling, and global exposure for high school students."
+email: "[email@winplus.com]"
+phone: "[+1 000 000 0000]"
+linkedin_url: "#"
+wechat_id: "[WeChat ID]"
+wechat_qr: ""
+cta_text: Book Free Consultation
+cta_link: contact.html
+nav:
+  - label: Admissions Counseling
+    link: admissions.html
+  - label: Research & Internships
+    link: programs.html
+  - label: Our Results
+    link: results.html
+  - label: Insights
+    link: insights.html
+  - label: For Schools
+    link: schools.html
+  - label: About WinPlus
+    link: about.html
+partners_label: "Partners & mentors from:"
+partners:
+  - name: NASA
+    logo: ""
+  - name: Meta
+    logo: ""
+  - name: MIT
+    logo: ""
+  - name: Caltech
+    logo: ""
+  - name: Apple
+    logo: ""
+  - name: Bloomberg
+    logo: ""
+  - name: Microsoft
+    logo: ""
+  - name: SpaceX
+    logo: ""
+  - name: Northwestern
+    logo: ""
+  - name: Columbia
+    logo: ""

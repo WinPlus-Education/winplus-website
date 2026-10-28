@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero page-hero-navy">
+  <div class="wrap narrow">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    {# Netlify Forms: submissions appear in the Netlify dashboard under "Forms" and can be emailed to you #}
+    <form class="card form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ root }}thanks.html">
+      <input type="hidden" name="form-name" value="consultation">
+      <p class="hp"><label>Leave this empty: <input name="company_website"></label></p>
+      <div class="form-grid">
+        <label for="f-parent">Parent / guardian name<input id="f-parent" name="parent_name" autocomplete="name" required></label>
+        <label for="f-student">Student name<input id="f-student" name="student_name"></label>
+        <label for="f-email">Email<input id="f-email" type="email" name="email" autocomplete="email" required></label>
+        <label for="f-phone">Phone / WeChat<input id="f-phone" name="phone_or_wechat"></label>
+        <label for="f-grade">Student's current grade
+          <select id="f-grade" name="grade">
+            <option value="">Select</option>
+            {% for g in ["Grade 8 or below","Grade 9","Grade 10","Grade 11","Grade 12","University / Graduate","Not a student (school partner)"] %}<option>{{ g }}</option>{% endfor %}
+          </select>
+        </label>
+        <label for="f-interest">I'm interested in
+          <select id="f-interest" name="interest">
+            <option value="">Select</option>
+            {% for i in page.interests %}<option>{{ i }}</option>{% endfor %}
+          </select>
+        </label>
+      </div>
+      <label for="f-msg">Goals or questions<textarea id="f-msg" name="message" rows="5"></textarea></label>
+      <button class="btn btn-gold" type="submit">Send request <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="muted center small">Prefer email? {{ site.email }}</p>
+  </div>
+</section>
+{% endblock %}

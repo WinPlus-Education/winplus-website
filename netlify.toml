@@ -1,0 +1,18 @@
+# Netlify reads this file automatically.
+[build]
+  command = "pip install -r requirements.txt && python build.py"
+  publish = "_site"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Clean URLs: /about works as well as /about.html
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

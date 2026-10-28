@@ -1,0 +1,342 @@
+# Decap CMS configuration — defines what can be edited at yoursite.com/admin
+# Docs: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway        # uses Netlify Identity + Git Gateway (see README)
+  branch: main
+
+# Uncomment to edit locally without logging in (run `npx decap-server` + `python build.py --serve`)
+# local_backend: true
+
+# Drafts & review before publishing (optional): uncomment the next line
+# publish_mode: editorial_workflow
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+site_url: https://winplus.com
+display_url: https://winplus.com
+logo_url: ""
+
+collections:
+  # ───────────── Site-wide settings ─────────────
+  - name: settings
+    label: Site Settings
+    files:
+      - name: site
+        label: Header, Footer & Contact Info
+        file: content/site.yml
+        fields:
+          - { name: name, label: Company name (logo text), widget: string }
+          - { name: name_sub, label: Logo subtitle, widget: string }
+          - { name: company_legal, label: Legal company name, widget: string }
+          - { name: domain, label: Domain shown in footer, widget: string }
+          - { name: meta_description, label: Search engine description, widget: text }
+          - { name: email, label: Email, widget: string }
+          - { name: phone, label: Phone, widget: string, required: false }
+          - { name: linkedin_url, label: LinkedIn URL, widget: string }
+          - { name: wechat_id, label: WeChat ID, widget: string, required: false }
+          - { name: wechat_qr, label: WeChat QR code image, widget: image, required: false }
+          - { name: cta_text, label: Header button text, widget: string }
+          - { name: cta_link, label: Header button link, widget: string }
+          - name: nav
+            label: Main menu
+            widget: list
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: link, label: Link (e.g. about.html), widget: string }
+          - { name: partners_label, label: Partner strip label, widget: string }
+          - name: partners
+            label: Partner logos
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: logo, label: Logo image (optional — shows name if empty), widget: image, required: false }
+
+  # ───────────── Pages ─────────────
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home
+        file: content/pages/home.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - name: hero
+            label: Hero (top banner)
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label above title, widget: string }
+              - { name: title_line1, label: Title line 1, widget: string }
+              - { name: title_line2, label: Title line 2 (gold), widget: string }
+              - { name: subtitle, label: Subtitle, widget: text }
+              - { name: image, label: Hero photo, widget: image, required: false }
+              - { name: image_note, label: Placeholder note (shown when no photo), widget: string, required: false }
+              - { name: primary_cta, label: Gold button text, widget: string }
+              - { name: primary_link, label: Gold button link, widget: string }
+              - { name: secondary_cta, label: Outline button text, widget: string }
+              - { name: secondary_link, label: Outline button link, widget: string }
+          - name: problem
+            label: '"Why WinPlus" section'
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: pillars
+                label: Three pillars
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+                  - { name: link, label: Link, widget: string }
+          - name: banner
+            label: Navy banner
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: button, label: Button text, widget: string }
+              - { name: link, label: Button link, widget: string }
+
+      - name: admissions
+        label: Admissions Counseling
+        file: content/pages/admissions.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: values
+            label: Value points
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: string }
+          - name: services
+            label: Services
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: image, label: Photo, widget: image, required: false }
+              - { name: link, label: '"Learn more" link', widget: string }
+          - { name: process_label, label: Process label, widget: string }
+          - { name: steps, label: Process steps, widget: list, field: { name: step, label: Step, widget: string } }
+          - { name: cta, label: Button text, widget: string }
+          - { name: cta_link, label: Button link, widget: string }
+
+      - name: programs
+        label: Research & Internships
+        file: content/pages/programs.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: benefits
+            label: Benefits
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - name: programs
+            label: Programs
+            widget: list
+            summary: "{{fields.org}} — {{fields.title}}"
+            fields:
+              - { name: org, label: Organization, widget: string }
+              - { name: title, label: Program title, widget: string }
+              - { name: mentor, label: Mentor, widget: string }
+              - { name: format, label: Format (e.g. Online Internship), widget: string }
+              - { name: image, label: Image / logo, widget: image, required: false }
+          - name: banner
+            label: Bottom banner
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: button, label: Button text, widget: string }
+              - { name: link, label: Button link, widget: string }
+
+      - name: results
+        label: Our Results
+        file: content/pages/results.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - { name: chart_title, label: Chart title, widget: string }
+          - name: schools
+            label: Universities (acceptance rates — numbers only, e.g. 3.6)
+            widget: list
+            summary: "{{fields.name}}: {{fields.general_rate}}% vs {{fields.winplus_rate}}%"
+            fields:
+              - { name: name, label: University, widget: string }
+              - { name: general_rate, label: General admit rate (%), widget: string, required: false }
+              - { name: winplus_rate, label: WinPlus student rate (%), widget: string, required: false }
+          - { name: footnote, label: Footnote, widget: text }
+          - { name: offers_banner, label: Gold banner text, widget: text }
+          - name: stories
+            label: Student stories
+            widget: list
+            fields:
+              - { name: initials, label: Initials, widget: string }
+              - { name: admitted_to, label: Admitted to, widget: string }
+              - { name: program, label: Program, widget: string }
+              - { name: quote, label: Quote, widget: text }
+          - { name: cta, label: Button text, widget: string }
+          - { name: cta_link, label: Button link, widget: string }
+
+      - name: insights
+        label: Insights (page text)
+        file: content/pages/insights.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - { name: categories, label: Topic filters, widget: list, field: { name: category, label: Topic, widget: string } }
+          - { name: newsletter_text, label: Newsletter prompt, widget: string }
+          - { name: newsletter_button, label: Newsletter button, widget: string }
+
+      - name: schools
+        label: For Schools
+        file: content/pages/schools.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: eyebrow, label: Small label, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: challenges
+            label: Challenges
+            widget: list
+            fields:
+              - { name: letter, label: Icon letter, widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - { name: offerings_title, label: Offerings heading, widget: string }
+          - name: offerings
+            label: Offerings
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - { name: why_title, label: '"Why" heading', widget: string }
+          - { name: why, label: '"Why" points', widget: list, field: { name: point, label: Point, widget: string } }
+          - { name: ideal_partners, label: Gold banner text, widget: text }
+          - { name: trusted_label, label: '"Trusted by" label', widget: string }
+          - name: school_logos
+            label: School logos
+            widget: list
+            fields:
+              - { name: name, label: School name, widget: string }
+              - { name: logo, label: Logo, widget: image, required: false }
+          - { name: primary_cta, label: Gold button text, widget: string }
+          - { name: primary_link, label: Gold button link, widget: string }
+          - { name: secondary_cta, label: Navy button text, widget: string }
+          - { name: secondary_file, label: Overview PDF (download), widget: file, required: false }
+
+      - name: about
+        label: About WinPlus
+        file: content/pages/about.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - { name: compare_title, label: Comparison heading, widget: string }
+          - name: without
+            label: '"Without WinPlus" side'
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: center, label: Center box, widget: string }
+              - { name: vendors, label: Vendors, widget: list, field: { name: vendor, label: Vendor, widget: string } }
+              - { name: note, label: Note, widget: string }
+          - name: with
+            label: '"With WinPlus" side'
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: center, label: Center box, widget: string }
+              - { name: stages, label: Stages, widget: list, field: { name: stage, label: Stage, widget: string } }
+          - name: benefits
+            label: Benefits
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: string }
+          - { name: founders_title, label: Founders heading, widget: string }
+          - name: founders
+            label: Founders
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: role, label: Role, widget: string }
+              - { name: photo, label: Photo, widget: image, required: false }
+              - { name: bio, label: Bio, widget: text }
+          - { name: mentors_title, label: Mentors heading, widget: string }
+          - { name: mentors_intro, label: Mentors intro, widget: text }
+          - name: mentors
+            label: Mentors
+            widget: list
+            summary: "{{fields.org}} — {{fields.role}}"
+            fields:
+              - { name: role, label: Role, widget: string }
+              - { name: org, label: Organization, widget: string }
+              - { name: program, label: Program, widget: string }
+              - { name: photo, label: Photo, widget: image, required: false }
+          - { name: team_cta, label: Button text, widget: string }
+          - { name: team_link, label: Button link, widget: string }
+
+      - name: how-it-works
+        label: How It Works
+        file: content/pages/how-it-works.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: string }
+          - name: steps
+            label: Steps
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - name: testimonial
+            label: Testimonial
+            widget: object
+            fields:
+              - { name: quote, label: Quote, widget: text }
+              - { name: name, label: Name, widget: string }
+          - { name: primary_cta, label: Gold button text, widget: string }
+          - { name: primary_link, label: Gold button link, widget: string }
+          - { name: secondary_cta, label: Navy button text, widget: string }
+          - { name: secondary_link, label: Navy button link, widget: string }
+
+      - name: contact
+        label: Book Consultation (form page)
+        file: content/pages/contact.yml
+        fields:
+          - { name: seo_title, label: Browser tab / Google title, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - { name: interests, label: '"Interested in" options', widget: list, field: { name: option, label: Option, widget: string } }
+          - { name: success_message, label: Thank-you message, widget: text }
+
+  # ───────────── Insights articles ─────────────
+  - name: posts
+    label: Insights Articles
+    label_singular: Article
+    folder: content/posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: [date, title, category]
+    summary: "{{title}} ({{category}})"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Publish date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - name: category
+        label: Topic
+        widget: select
+        options: ["Research & Internships", "Parent Guides", "Admissions Strategy", "Student Stories", "AI & Tech", "Global Exposure", "Thought Leadership"]
+      - { name: summary, label: Short summary, widget: text }
+      - { name: image, label: Cover image, widget: image, required: false }
+      - { name: featured, label: Feature at top of Insights page, widget: boolean, default: false }
+      - { name: body, label: Article, widget: markdown }

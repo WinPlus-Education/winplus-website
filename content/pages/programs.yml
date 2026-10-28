@@ -1,0 +1,61 @@
+seo_title: "Research & Internships | WinPlus"
+title: Where High Schoolers Do Work That Belongs on a College Application
+intro: Our programs aren't simulations. They're real projects, real mentors, and real deliverables, the kind top admissions officers notice.
+benefits:
+  - title: Admissions Impact
+    text: Research is a top differentiator for Ivy League and top-20 admits. Most applicants don't have it.
+  - title: Career-Ready Skills
+    text: Students graduate with a portfolio, mentor letter, and technical skills that matter in college and beyond.
+  - title: Elite Network Access
+    text: Students work alongside engineers, scientists, and industry leaders from world-leading institutions.
+programs:
+  - org: Meta
+    title: AI Agent Software & Tools Development
+    mentor: Meta Llama Team Lead & AI Platform Dev Lead
+    format: Online Internship
+    image: ""
+  - org: Apple + Oracle
+    title: Claude Code AI Programming Research
+    mentor: 10+ yr Apple Silicon Valley Cloud Engineer
+    format: Online Research
+    image: ""
+  - org: Amazon AWS
+    title: IoT & AI Device Development
+    mentor: 10+ yr Amazon Cloud Engineer
+    format: Online Internship
+    image: ""
+  - org: Northwestern + Cannes
+    title: Screenwriting & Directing
+    mentor: Cannes Short Film Award Winner
+    format: Online Course
+    image: ""
+  - org: Microsoft
+    title: Financial Forecasting with Python
+    mentor: 7+ yr Microsoft Data Scientist | UMich PhD
+    format: Online Internship
+    image: ""
+  - org: Bloomberg
+    title: FinTech + AI Startup Project
+    mentor: 8+ yr Bloomberg Engineering Lead
+    format: Online Program
+    image: ""
+  - org: Caltech
+    title: Gene Therapy AI Data Analysis
+    mentor: Caltech Gene Therapy Lab Postdoc
+    format: Research Project
+    image: ""
+  - org: NASA (JWST)
+    title: Deep Space Telescope Research
+    mentor: NASA Ames Research Center Scientist
+    format: Research Project
+    image: ""
+  - org: MIT + NASA
+    title: SpaceX Starlink Satellite Orbit Design
+    mentor: NASA Goddard Aerospace Engineer
+    format: Research Project
+    image: ""
+banner:
+  title: "UN Conference Experience: UNPFII & UN COSP19"
+  text: WinPlus students have participated in globally recognized United Nations conferences.
+  button: Apply 2026
+  link: contact.html

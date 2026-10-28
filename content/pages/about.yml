@@ -1,0 +1,58 @@
+seo_title: "About WinPlus"
+title: The Platform Built for the Future of Education
+intro: WinPlus is the only end-to-end talent development platform that takes students from Grade 9 to elite university acceptance, and prepares them for what comes after.
+compare_title: One Platform vs. a Patchwork of Vendors
+without:
+  label: Without an integrated platform
+  heading: A separate vendor for every need.
+  center: Student & Parents
+  vendors:
+    - Admissions Counselor
+    - Research Program
+    - Internship Provider
+    - Test-Prep Tutor
+    - Essay Coach
+  note: Repeat your story to each one. Five plans that never connect.
+with:
+  label: With WinPlus
+  heading: One Talent Consultant guides the whole journey.
+  center: Your Dedicated Talent Consultant
+  stages:
+    - "Grade 9–10 · Profile Building"
+    - "Grade 10–11 · Research + Skills"
+    - "Grade 11 · Strategy"
+    - "Grade 12 · Applications"
+    - "Acceptance & Beyond"
+benefits:
+  - title: Continuity & Consistency
+    text: One relationship, Grade 9 to acceptance.
+  - title: One Dedicated Consultant
+    text: One consultant owns your child's full journey.
+  - title: A Truly Bespoke Plan
+    text: A single strategy built around the student.
+  - title: Cost-Efficient
+    text: No overlapping or duplicated vendor fees.
+founders_title: Founded by Educators Who've Been on Both Sides
+founders:
+  - name: Cathy Guo
+    role: Co-Founder
+    photo: ""
+    bio: "[Bio: PLACEHOLDER — background in elite university admissions and student talent development across US and China]"
+  - name: Cedric Pan
+    role: Co-Founder
+    photo: ""
+    bio: "[Bio: PLACEHOLDER — background in research program development and strategic partnerships with leading institutions]"
+mentors_title: Our Expert Mentor Network
+mentors_intro: WinPlus programs are led by industry professionals from the world's leading institutions, not career tutors.
+mentors:
+  - { role: "Software Engineering Lead, Llama Team", org: Meta AI, program: AI Agent Program, photo: "" }
+  - { role: "Senior Cloud Engineer, 10+ yrs", org: Apple (Silicon Valley), program: Claude Code AI Program, photo: "" }
+  - { role: "Cloud Engineer, 10+ yrs", org: Amazon AWS, program: IoT AI Device Program, photo: "" }
+  - { role: "MFA Screenwriting; Cannes Award Winner", org: Northwestern University, program: Screenwriting & Directing, photo: "" }
+  - { role: "Senior Data Scientist, 7+ yrs", org: Microsoft HQ, program: Financial Forecasting Program, photo: "" }
+  - { role: "Engineering Lead, 8+ yrs", org: Bloomberg, program: FinTech + AI Program, photo: "" }
+  - { role: Postdoctoral Researcher, org: Caltech Gene Therapy Lab, program: Gene Therapy Research, photo: "" }
+  - { role: Research Scientist, org: NASA Ames Research Center, program: JWST Deep Space Program, photo: "" }
+  - { role: Aerospace Engineer, org: NASA Goddard / MIT, program: SpaceX Starlink Program, photo: "" }
+team_cta: Meet the Full Team
+team_link: contact.html

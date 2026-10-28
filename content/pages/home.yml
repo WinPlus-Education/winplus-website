@@ -1,0 +1,30 @@
+seo_title: "WinPlus | Prepare for Elite Universities. Build for Life."
+hero:
+  eyebrow: Global Talent Development Platform
+  title_line1: Prepare for Elite Universities.
+  title_line2: Build for Life.
+  subtitle: Real research with NASA, Meta, and MIT. Strategic admissions counseling. Global exposure. One platform. Your entire journey.
+  image: ""
+  image_note: "PHOTO: Aspirational montage — student in research lab, Ivy League campus, UN conference"
+  primary_cta: Book a Free Strategy Session
+  primary_link: contact.html
+  secondary_cta: Explore Programs
+  secondary_link: programs.html
+problem:
+  title: The World's Best Universities Don't Just Want Good Grades.
+  intro: Today's top applicants are expected to show real research experience, intellectual initiative, and global perspective before they even apply. Most students don't know where to start.
+  pillars:
+    - title: Real Research & Internship Experience
+      text: Work alongside engineers at Meta, scientists at NASA, and researchers at MIT. Build real projects. Earn mentor letters. Graduate with a portfolio, not a participation certificate.
+      link: programs.html
+    - title: Strategic Admissions Guidance
+      text: Expert consultants guide every stage of your application (school selection, essay strategy, interview prep) tailored to your unique story. One consultant. Your entire journey.
+      link: admissions.html
+    - title: Global Exposure & Leadership
+      text: UN conferences, Ivy League campus tours, cross-cultural programs. Build the worldview and track record that top universities reward.
+      link: programs.html
+banner:
+  title: AI Proficiency Is Now a Baseline Expectation
+  text: Students without hands-on AI and research experience are already at a disadvantage. WinPlus's 2026 programs at Meta, Apple, and Microsoft put students ahead, now.
+  button: See 2026 Programs
+  link: programs.html

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% from "macros.html" import img, btn, partners_strip with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <ul class="value-row">
+      {% for v in page['values'] %}<li><strong>{{ v.title }}</strong><span>{{ v.text }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid-2">
+    {% for s in page.services %}
+    <article class="card service">
+      {{ img(s.image, s.title, "Photo", "service-img") }}
+      <div class="service-body">
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+        <a class="more" href="{{ u(s.link) }}">Learn more <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-dark">{{ page.process_label }}</p>
+    <ol class="steps">
+      {% for s in page.steps %}<li><span class="step-num">{{ loop.index }}</span>{{ s }}</li>{% endfor %}
+    </ol>
+    <div class="center">{{ btn(page.cta, page.cta_link) }}</div>
+  </div>
+</section>
+{{ partners_strip(site) }}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "macros.html" import img, btn with context %}
+{% block title %}{{ post.title }} | {{ site.name }}{% endblock %}
+{% block description %}{{ post.summary }}{% endblock %}
+{% block content %}
+<article class="article">
+  <header class="page-hero">
+    <div class="wrap narrow">
+      <a class="back" href="{{ root }}insights.html"><span aria-hidden="true">←</span> All insights</a>
+      <span class="tag">{{ post.category }}</span>
+      <h1>{{ post.title }}</h1>
+      <p class="muted">{{ post.date | date_fmt }}</p>
+    </div>
+  </header>
+  <div class="wrap narrow article-body">
+    {% if post.image %}{{ img(post.image, post.title) }}{% endif %}
+    {{ post.body | safe }}
+    <div class="article-cta">{{ btn(site.cta_text, site.cta_link) }}</div>
+  </div>
+</article>
+{% endblock %}

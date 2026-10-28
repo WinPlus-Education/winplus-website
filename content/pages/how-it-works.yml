@@ -1,0 +1,21 @@
+seo_title: "How It Works | WinPlus"
+title: Your Journey with WinPlus
+intro: One consultant. One platform. Every step of the way.
+steps:
+  - title: Free Strategy Session
+    text: We learn your goals, strengths, and target schools. No commitment required.
+  - title: Custom Profile Assessment
+    text: Your WinPlus consultant maps your profile and identifies highest-impact programs.
+  - title: Tailored Development Roadmap
+    text: "A bespoke multi-year plan: which programs to pursue, when to apply, and how to build your narrative."
+  - title: Programs + Counseling in Parallel
+    text: Complete research and internship programs while your consultant develops your application strategy.
+  - title: Applications, Acceptance & Beyond
+    text: Full support through essays, school selection, and interviews, with your consultant to acceptance and beyond.
+testimonial:
+  quote: "[Student quote placeholder — to be replaced with real testimonial]"
+  name: "[Name], Class of [Year]"
+primary_cta: Book Your Free Strategy Session
+primary_link: contact.html
+secondary_cta: Explore Programs
+secondary_link: programs.html

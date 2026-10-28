@@ -371,3 +371,125 @@ input, select, textarea {
   .newsletter-row { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ==========================================================================
+   LIGHT & SPACIOUS THEME  (added Oct 2026)
+   Overrides the dark navy look above with white/pale backgrounds and more
+   breathing room. To go back to the original dark look, delete everything
+   from this comment to the end of the file.
+   ========================================================================== */
+:root {
+  --sky: #f3f7fc;        /* pale blue background for hero & bands */
+  --sky-2: #e6eef8;      /* slightly deeper pale blue for chips/tags */
+  --cream: #fbf7ee;      /* soft warm background for highlights */
+  --line: #e7eaf0;       /* lighter borders */
+  --tint: #f7f9fc;
+  --ink-2: #566074;
+  --step-0: 1.0625rem;
+  --step-3: clamp(1.9rem, 1.3rem + 2vw, 2.6rem);
+}
+body { line-height: 1.75; }
+p { margin-bottom: 1.15em; }
+h1, h2, h3 { margin-bottom: .6em; }
+.lead { line-height: 1.7; }
+
+/* Header: white instead of navy */
+.site-header { background: var(--white); color: var(--navy); border-bottom: 1px solid var(--line); box-shadow: 0 1px 12px rgba(14, 28, 51, .04); }
+body::before { background: var(--white); }
+.header-row { min-height: 84px; }
+.logo-name { color: var(--navy); }
+.logo-sub { color: var(--gold-dark); }
+.site-nav ul a { color: var(--ink-2); }
+.site-nav ul a:hover { color: var(--navy); }
+.site-nav ul a[aria-current="page"] { border-color: transparent; color: var(--navy); font-weight: 700; box-shadow: inset 0 -2px 0 var(--gold); border-radius: 0; }
+.lang { color: #9aa3b4; }
+.lang a[aria-current] { color: var(--navy); }
+.bars, .bars::before, .bars::after { background: var(--navy); }
+@media (max-width: 1080px) {
+  .site-nav { background: var(--white); border-bottom: 3px solid var(--gold); box-shadow: 0 12px 24px rgba(14, 28, 51, .08); }
+}
+
+/* Hero: pale sky instead of navy */
+.hero { background: linear-gradient(180deg, var(--sky) 0%, var(--white) 100%); color: var(--ink); }
+.hero-grid { padding-block: 6rem 5.5rem; gap: 4rem; }
+.hero h1 { color: var(--navy); }
+.hero h1 em { color: var(--gold-dark); }
+.hero .lead { color: var(--ink-2); }
+.hero .eyebrow { color: var(--gold-dark); }
+.hero .ph { background: var(--sky-2); color: var(--ph-ink); border-color: #c9d6e8; }
+.btn-outline-light { border-color: var(--navy); color: var(--navy); }
+.btn-outline-light:hover { background: var(--navy); color: var(--white); }
+
+/* Inner page headers */
+.page-hero { padding-block: 5rem 3.5rem; background: var(--sky); border-bottom: 0; }
+.page-hero-navy { background: var(--sky); color: var(--ink); }
+.page-hero-navy h1 { color: var(--navy); }
+.page-hero-navy .lead { color: var(--ink-2); }
+.page-hero-navy .eyebrow { color: var(--gold-dark); }
+
+/* Navy bands become soft cream bands */
+.band { padding-block: 3.5rem; }
+.band-navy { background: var(--cream); color: var(--ink-2); border-block: 1px solid #f0e6cf; }
+.band-navy .band-title { color: var(--navy); }
+.band-navy strong.gold { color: var(--navy); }
+.band-gold { background: var(--cream); color: var(--navy); padding-block: 2rem; border-block: 1px solid #f0e6cf; }
+.band-tint { background: var(--cream); }
+.newsletter label { color: var(--navy); }
+
+/* More space between and inside sections */
+.section { padding-block: 6rem; }
+.section-tight { padding-block: 4.5rem; }
+.section-head { margin-bottom: 3.5rem; }
+.section-cta { margin-top: 3.5rem; }
+.grid-2, .grid-3, .grid-4 { gap: 2rem; }
+.card { padding: 2.25rem; border-color: var(--line); }
+.card p { line-height: 1.7; }
+.partners-row { padding-block: 2rem; }
+.partners { background: var(--white); }
+.value-row { gap: 2.5rem; margin-top: 2.75rem; }
+.steps { gap: 1.25rem; margin-bottom: 3.5rem; }
+.steps li { padding: 1.25rem 1.4rem; }
+.program { gap: 1rem; }
+.mentor { padding: 1.75rem; }
+.offerings { gap: 1.75rem; }
+.checks { gap: 1.1rem; }
+.founders { gap: 4rem; margin-top: 3.5rem; }
+.compare { gap: 2rem; margin: 2rem 0 3.5rem; }
+.compare > div { padding: 2.5rem; }
+.chart { gap: 1rem 4rem; }
+.chart-card { padding: 2.75rem; }
+.feature { gap: 3rem; margin-bottom: 2rem; }
+.journey { gap: 2rem; }
+
+/* Remaining dark blocks made light */
+.step-num { background: var(--cream); color: var(--gold-dark); border: 2px solid var(--gold); }
+.program .tag { background: var(--sky-2); color: var(--navy); }
+.why { background: var(--sky); color: var(--ink-2); border: 1px solid #dbe5f2; padding: 2.5rem; }
+.why h2 { color: var(--navy); }
+.checks li::before { color: var(--gold-dark); }
+.compare-with { background: var(--cream); color: var(--ink-2); border: 1px solid #f0e6cf; }
+.compare-with .compare-heading { color: var(--navy); }
+.compare-with .eyebrow { color: var(--gold-dark); }
+.path li.final { color: var(--gold-dark); }
+.btn-navy { background: var(--white); color: var(--navy); border-color: var(--navy); }
+.btn-navy:hover { background: var(--navy); color: var(--white); }
+.chip.is-active { background: var(--navy); }
+
+/* Footer: light instead of navy */
+.site-footer { background: var(--tint); color: var(--ink-2); border-top: 1px solid var(--line); }
+.footer-grid { padding-block: 4rem 3rem; gap: 2.5rem; }
+.footer-links { gap: .6rem; }
+.footer-links a:hover, .footer-contact a:hover { color: var(--navy); }
+.footer-contact .label { color: var(--gold-dark); }
+.site-footer .logo-name { color: var(--navy); }
+.ph.qr { background: var(--white); border-color: #c4cbd8; color: var(--ph-ink); }
+.footer-bottom { border-top-color: var(--line); }
+
+@media (max-width: 640px) {
+  .section { padding-block: 4rem; }
+  .section-tight { padding-block: 3rem; }
+  .hero-grid { padding-block: 3.5rem; gap: 2.5rem; }
+  .page-hero { padding-block: 3.5rem 2.5rem; }
+  .card { padding: 1.75rem; }
+  .compare > div, .why, .chart-card { padding: 1.75rem; }
+}

@@ -1,0 +1,25 @@
+# {{ site.company_legal }} ({{ site.name }} Education)
+
+> {{ site.meta_description }}
+
+WinPlus is a global talent development platform for high school students and their families, serving {{ site.area_served | join(", ") }}. One dedicated consultant guides each student from Grade 9 to university acceptance across three service lines: admissions counseling, research & internships, and experience enrichment.
+
+## Admissions counseling
+{% for s in services %}- [{{ s.title }}]({{ site_url }}/{{ s.url }}): {{ s.summary }}
+{% endfor %}- [How we work]({{ site_url }}/how-it-works.html): Free strategy session, profile assessment, multi-year roadmap, profile building, applications and decision support.
+
+## Research & internship programs (mentor-led, for Grades 9–12)
+{% for p in programs %}- [{{ p.title }}]({{ site_url }}/{{ p.url }}): {{ p.summary }} Mentor: {{ p.mentor }}. Format: {{ p.format }}.
+{% endfor %}
+Students can receive a finished research paper or product, a portfolio presentation, a certificate and, if eligible, a mentor recommendation letter.
+
+## Experience enrichment
+{% for e in enrichments %}- [{{ e.title }}]({{ site_url }}/{{ e.url }}): {{ e.summary }}
+{% endfor %}- [Upcoming events]({{ site_url }}/events.html)
+
+## More
+- [Our results]({{ site_url }}/results.html)
+- [Our team]({{ site_url }}/team.html)
+- [Insights (articles)]({{ site_url }}/insights.html)
+- [For schools]({{ site_url }}/schools.html)
+- [Book a free consultation]({{ site_url }}/contact.html)

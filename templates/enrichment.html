@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo, btn, more, head, cta_band, event_card with context %}
+{% block content %}
+{{ page_hero(page, [[page.eyebrow, "enrichment.html"]], btn(page.cta, page.cta_link)) }}
+
+<section class="section section-tight">
+  <div class="wrap">
+    {{ head("", page.benefits_title) }}
+    <div class="grid-3 why-grid">{% for b in page.benefits %}<div class="why-item"><h3>{{ b.title }}</h3><p>{{ b.text }}</p></div>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section section-sky">
+  <div class="wrap">
+    {{ head(_("Programs"), _("Our enrichment programs")) }}
+    <div class="grid-2 enrich-grid">
+      {% for e in enrichments %}
+      <a class="card offer-card" href="{{ u(e.url) }}">
+        {{ photo(e.image, e.image_alt, "ratio-wide", 900) }}
+        <div class="card-body">
+          <h3>{{ e.title }}</h3>
+          <p>{{ e.summary }}</p>
+          <span class="more">{{ _("Program details") }} <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set h = page.highlight %}
+<section class="section">
+  <div class="wrap feature-split">
+    {{ photo(h.image, h.image_alt, "ratio-wide", 1000) }}
+    <div>
+      <p class="eyebrow">{{ h.label }}</p>
+      <h2>{{ h.title }}</h2>
+      <p>{{ h.text }}</p>
+      {{ more(_("See student highlights"), "results.html#highlights") }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="wrap">
+    <div class="split-head">{{ head(_("Upcoming"), _("Upcoming events & program launches")) }}{{ more(_("All events"), "events.html") }}</div>
+    {% if upcoming %}<div class="grid-3">{% for e in upcoming[:3] %}{{ event_card(e) }}{% endfor %}</div>
+    {% else %}<p class="empty-note">{{ _("New events are announced regularly. Subscribe below to hear first.") }}</p>{% endif %}
+  </div>
+</section>
+
+{{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
+{% endblock %}

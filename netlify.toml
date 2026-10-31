@@ -1,0 +1,41 @@
+# Netlify reads this file automatically.
+[build]
+  command = "pip install -r requirements.txt && python build.py"
+  publish = "_site"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Old page addresses → new ones (keeps old links and Google results working)
+[[redirects]]
+  from = "/about.html"
+  to = "/team.html"
+  status = 301
+[[redirects]]
+  from = "/about"
+  to = "/team.html"
+  status = 301
+[[redirects]]
+  from = "/programs.html"
+  to = "/research.html"
+  status = 301
+[[redirects]]
+  from = "/programs"
+  to = "/research.html"
+  status = 301
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
+# CSS/JS links carry a version number that changes on every build, so long caching is safe
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

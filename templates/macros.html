@@ -1,0 +1,168 @@
+{# ---------- Shared building blocks used by every page ---------- #}
+
+{# Photo with a tidy fallback: if the image is missing or fails to load, a soft placeholder shows instead #}
+{% macro photo(src, alt="", cls="", w=1200, note="Photo", eager=false) -%}
+<figure class="photo {{ cls }}{% if not src %} is-empty{% endif %}">
+  {% if src %}<img src="{{ img(src, w) }}" alt="{{ alt }}" {% if not eager %}loading="lazy" {% endif %}decoding="async" onerror="this.parentNode.classList.add('is-empty')">{% endif %}
+  <span class="photo-ph" aria-hidden="true">[{{ note }}]</span>
+</figure>
+{%- endmacro %}
+
+{% macro btn(text, link, style="gold", arrow=true) -%}
+{% if text %}<a class="btn btn-{{ style }}" href="{{ u(link) }}">{{ text }}{% if arrow %} <span class="arr" aria-hidden="true">→</span>{% endif %}</a>{% endif %}
+{%- endmacro %}
+
+{% macro more(text, link) -%}
+<a class="more" href="{{ u(link) }}">{{ text }} <span aria-hidden="true">→</span></a>
+{%- endmacro %}
+
+{% macro head(eyebrow="", title="", intro="", center=false, h="h2") -%}
+<header class="section-head{% if center %} center{% endif %}">
+  {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+  {% if title %}<{{ h }}>{{ title }}</{{ h }}>{% endif %}
+  {% if intro %}<p class="lead">{{ intro }}</p>{% endif %}
+</header>
+{%- endmacro %}
+
+{# Breadcrumb trail + BreadcrumbList structured data. crumbs = [[label, link], ...] #}
+{% macro breadcrumbs(crumbs) -%}
+<nav class="crumbs" aria-label="{{ _('Breadcrumb') }}">
+  <ol>
+    <li><a href="{{ u('index.html') }}">{{ _("Home") }}</a></li>
+    {% for c in crumbs %}<li>{% if not loop.last %}<a href="{{ u(c[1]) }}">{{ c[0] }}</a>{% else %}<span aria-current="page">{{ c[0] }}</span>{% endif %}</li>{% endfor %}
+  </ol>
+</nav>
+{% set items = [{"@type": "ListItem", "position": 1, "name": _("Home"), "item": site_url ~ "/" ~ lang.prefix}] %}
+{% for c in crumbs %}{% set _ = items.append({"@type": "ListItem", "position": loop.index + 1, "name": c[0], "item": site_url ~ "/" ~ lang.prefix ~ c[1]}) %}{% endfor %}
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items} | jsonld | safe }}</script>
+{%- endmacro %}
+
+{# FAQ accordion + FAQPage structured data (great for Google rich results and AI answers) #}
+{% macro faq(items, title=none, center=false) -%}
+{% set title = title if title is not none else _("Frequently asked questions") %}
+{% if items %}
+<div class="faq">
+  {% if title %}<h2 class="{% if center %}center {% endif %}faq-title">{{ title }}</h2>{% endif %}
+  <div class="faq-list">
+    {% for f in items %}
+    <details class="faq-item"{% if loop.first %} open{% endif %}>
+      <summary>{{ f.q }}</summary>
+      <div class="faq-a">{{ f.a | md | safe }}</div>
+    </details>
+    {% endfor %}
+  </div>
+</div>
+{% set qa = [] %}
+{% for f in items %}{% if '[' not in f.a %}{% set _ = qa.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endif %}{% endfor %}
+{% if qa %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa} | jsonld | safe }}</script>{% endif %}
+{% endif %}
+{%- endmacro %}
+
+{% macro ld(obj) -%}
+<script type="application/ld+json">{{ obj | jsonld | safe }}</script>
+{%- endmacro %}
+
+{# Rolling logo strip #}
+{% macro marquee(label, items, note='') -%}
+<section class="marquee" aria-label="{{ label }}">
+  <div class="wrap marquee-row">
+    <p class="marquee-label">{{ label }}</p>
+    <div class="marquee-viewport">
+      <ul class="marquee-track">
+        {% for p in items %}
+        <li>{% if p.logo %}<img src="{{ img(p.logo, 300) }}" alt="{{ p.name }}" loading="lazy">{% else %}<span class="wordmark">{{ p.name }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% if note %}<p class="wrap marquee-note">{{ note }}</p>{% endif %}
+</section>
+{%- endmacro %}
+
+{% macro stats(items, cls="") -%}
+<dl class="stats {{ cls }}">
+  {% for s in items %}
+  <div class="stat"><dt>{{ s.label }}</dt><dd>{{ s.number }}</dd></div>
+  {% endfor %}
+</dl>
+{%- endmacro %}
+
+{% macro event_card(e) -%}
+<article class="card event-card" data-date="{{ e.date.isoformat() if e.date else '' }}">
+  <a class="event-link" href="{{ u(e.url) }}">
+    <div class="event-top">
+      <time class="datebadge" datetime="{{ e.date.isoformat() if e.date else '' }}">
+        <span class="db-m">{{ e.date | date_fmt('mon') }}</span><span class="db-d">{{ e.date | date_fmt('day') }}</span><span class="db-y">{{ e.date | date_fmt('year') }}</span>
+      </time>
+      <div>
+        <span class="tag">{{ e.type }}</span>
+        <h3>{{ e.title }}</h3>
+        <p class="meta">{{ e.time_label }} · {{ e.location }}</p>
+      </div>
+    </div>
+    <p>{{ e.summary }}</p>
+    <span class="more">{{ _("Register") }} <span aria-hidden="true">→</span></span>
+  </a>
+</article>
+{%- endmacro %}
+
+{% macro program_card(p) -%}
+<a class="card program-card" href="{{ u(p.url) }}">
+  {{ photo(p.image, p.image_alt, "ratio-wide", 700) }}
+  <div class="card-body">
+    <p class="kicker">{{ p.org }}</p>
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.summary }}</p>
+    <div class="card-foot"><span class="tag tag-quiet">{{ p.format }}</span><span class="more">{{ _("Program details") }} <span aria-hidden="true">→</span></span></div>
+  </div>
+</a>
+{%- endmacro %}
+
+{% macro quote_card(t) -%}
+<figure class="card quote-card">
+  <blockquote>{{ t.quote }}</blockquote>
+  <figcaption><strong>{{ t.name }}</strong>{% if t.role %}<span class="tag tag-quiet">{{ t.role }}</span>{% endif %}</figcaption>
+</figure>
+{%- endmacro %}
+
+{% macro cta_band(title, text, button, link) -%}
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>{{ title }}</h2>
+      {% if text %}<p>{{ text }}</p>{% endif %}
+    </div>
+    {{ btn(button, link) }}
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro person(p, size="") -%}
+<article class="person {{ size }}">
+  {% if p.photo %}{{ photo(p.photo, p.name, "avatar-photo", 400) }}{% else %}<span class="avatar" aria-hidden="true">{{ (p.name or p.org or "?")[0] if (p.name and p.name[0] != '[') else "·" }}</span>{% endif %}
+  <div>
+    <h3>{{ p.name }}</h3>
+    <p class="kicker">{{ p.role }}</p>
+    {% if p.bio %}<p class="bio">{{ p.bio }}</p>{% endif %}
+    {% if p.linkedin %}<a class="more" href="{{ p.linkedin }}">LinkedIn <span aria-hidden="true">→</span></a>{% endif %}
+  </div>
+</article>
+{%- endmacro %}
+
+{# Standard header for inner pages: breadcrumbs, title, intro and an optional photo #}
+{% macro page_hero(p, crumbs, extra="") -%}
+<section class="page-hero{% if p.image %} has-photo{% endif %}">
+  <div class="wrap">
+    {{ breadcrumbs(crumbs) }}
+    <div class="page-hero-grid">
+      <div class="page-hero-copy">
+        {% if p.eyebrow %}<p class="eyebrow">{{ p.eyebrow }}</p>{% endif %}
+        <h1>{{ p.title }}</h1>
+        {% if p.intro or p.summary %}<p class="lead">{{ p.intro or p.summary }}</p>{% endif %}
+        {{ extra }}
+      </div>
+      {% if p.image %}{{ photo(p.image, p.image_alt, "page-hero-photo", 1200, "Photo", true) }}{% endif %}
+    </div>
+  </div>
+</section>
+{%- endmacro %}

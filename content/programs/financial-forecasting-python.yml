@@ -1,0 +1,45 @@
+order: 5
+title: Financial Forecasting with Python
+category: finance-business
+org: Microsoft
+format: Online Internship
+seo_title: Financial Forecasting with Python | High School Finance Program | WinPlus
+meta_description: Use Python and data science to analyze real financial data and build forecasting models, mentored by a Microsoft data scientist.
+summary: Use Python and data science to analyze real financial data and build forecasting models, mentored by a Microsoft data scientist.
+image: https://images.unsplash.com/photo-1689732888407-310424e3a372
+image_alt: Candlestick stock chart on a dark screen
+facts:
+- label: Format
+  value: Online Internship
+- label: Length
+  value: 6–8 weeks
+- label: Schedule
+  value: '[Day/time, time zone]'
+- label: Group size
+  value: '[X] students'
+- label: Grade level
+  value: Grades 9–12
+- label: Next start
+  value: '[Month YEAR]'
+overview: Students learn how data scientists model financial markets, then build and test their own forecasting model on real market or company data.
+activities:
+- Python for data analysis (pandas, visualization)
+- Financial data and key market concepts
+- Time-series forecasting and machine learning basics
+- Backtesting and evaluating a model honestly
+- Presenting findings like an analyst
+mentor: Senior Data Scientist, 7+ years (Microsoft HQ); PhD, University of Michigan
+mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
+mentor_photo: ''
+deliverables:
+- A forecasting model, code notebook and analyst-style report
+- Mentor recommendation letter (for eligible students)
+- Certificate of completion
+- Final showcase presentation
+prerequisites: Algebra required; Python basics helpful.
+faq:
+- q: Is this program online?
+  a: Yes. This is an online internship with live sessions, so students can join from anywhere.
+- q: How do I apply?
+  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
+internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'

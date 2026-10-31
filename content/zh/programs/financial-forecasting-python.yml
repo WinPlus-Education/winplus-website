@@ -1,0 +1,45 @@
+order: 5
+title: Python 金融预测
+category: finance-business
+org: Microsoft
+format: 线上实习
+seo_title: Python 金融预测 | 高中生科研与实习项目 | WinPlus 欧歌学院
+meta_description: 运用 Python 与数据科学分析真实金融数据并构建预测模型，由微软数据科学家指导。
+summary: 运用 Python 与数据科学分析真实金融数据并构建预测模型，由微软数据科学家指导。
+image: https://images.unsplash.com/photo-1689732888407-310424e3a372
+image_alt: 深色屏幕上的股票 K 线图
+facts:
+- label: 形式
+  value: 线上实习
+- label: 时长
+  value: 6–8 周
+- label: 上课时间
+  value: '[时间，时区]'
+- label: 小组人数
+  value: '[X] 人'
+- label: 适合年级
+  value: 9–12 年级
+- label: 下期开课
+  value: '[年 月]'
+overview: 学生将学习数据科学家如何为金融市场建模，并在真实的市场或公司数据上构建、检验自己的预测模型。
+activities:
+- 使用 Python 进行数据分析（pandas、可视化）
+- 金融数据与核心市场概念
+- 时间序列预测与机器学习基础
+- 回测并客观评估模型
+- 像分析师一样汇报研究结果
+mentor: 微软总部资深数据科学家，7 年以上经验，密歇根大学博士
+mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
+mentor_photo: ''
+deliverables:
+- 预测模型、代码笔记本及分析师风格报告
+- 导师亲笔推荐信（符合条件的学生）
+- 实习科研证书
+- 结业成果展示
+prerequisites: 需具备代数基础；有 Python 基础更好。
+faq:
+- q: 这个项目是线上进行吗？
+  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
+- q: 如何申请？
+  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
+internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'

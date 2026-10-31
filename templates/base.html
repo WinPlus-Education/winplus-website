@@ -1,0 +1,206 @@
+{% set seo_title = self.title() | trim %}
+{% set seo_desc = self.description() | trim %}
+<!doctype html>
+<html lang="{{ lang.html }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% block title %}{{ page.seo_title or page.title or site.name }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ page.meta_description or page.summary or site.meta_description }}{% endblock %}">
+  <link rel="canonical" href="{{ canonical }}">
+  {# Language versions of this page (tells Google which page to show to which reader) #}
+  {% for code, href in alternates.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ href }}">
+  {% endfor %}
+  {% block robots %}<meta name="robots" content="index, follow, max-image-preview:large">{% endblock %}
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:site_name" content="{{ site.name }} {{ site.name_sub }}">
+  <meta property="og:locale" content="{{ lang.locale }}">
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_desc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  {% set share_img = page.image or (post.image if post is defined and post else '') or (page.hero.image if page.hero is defined and page.hero else '') or site.default_image %}
+  <meta property="og:image" content="{{ img(share_img, 1200) if share_img.startswith('http') else site_url ~ '/' ~ share_img.lstrip('/') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="sitemap" type="application/xml" href="{{ root }}sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap">
+  {# Social media icons (Font Awesome free brand icons: core + brands) #}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+  <link rel="stylesheet" href="{{ root }}assets/css/style.css?v={{ version }}">
+  <!-- Netlify Identity: lets invited editors accept their invite and log in to /admin -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+
+  {# Structured data about the organization, on every page (SEO + AI search) #}
+  {% set same_as = [] %}{% for s in site.social %}{% if s.url and s.url.startswith('http') %}{% set _x = same_as.append(s.url) %}{% endif %}{% endfor %}
+  {% set org = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": site_url ~ "/#organization",
+    "name": site.company_legal,
+    "alternateName": [site.name ~ " Education", site.name ~ " " ~ (site.name_local or "")],
+    "url": site_url ~ "/",
+    "description": site.meta_description,
+    "areaServed": site.area_served,
+    "knowsAbout": ["College admissions counseling", "US college admissions", "Ivy League admissions", "UK university admissions", "UCAS", "Oxbridge admissions", "Graduate school admissions", "Boarding school admissions", "High school research programs", "Summer programs", "Education consulting", "留学申请", "美国本科申请", "藤校申请", "科研项目", "夏校"]
+  } %}
+  {% if '[' not in site.email %}{% set _x = org.update({"email": site.email}) %}{% endif %}
+  {% if '[' not in site.phone %}{% set _x = org.update({"telephone": site.phone}) %}{% endif %}
+  {% if same_as %}{% set _x = org.update({"sameAs": same_as}) %}{% endif %}
+  <script type="application/ld+json">{{ org | jsonld | safe }}</script>
+  {% if current == "index.html" %}
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": site.name ~ " " ~ site.name_sub, "url": canonical, "inLanguage": lang.html, "publisher": {"@id": site_url ~ "/#organization"}} | jsonld | safe }}</script>
+  {% endif %}
+  {% block schema %}{% endblock %}
+</head>
+<body class="lang-{{ lang.code }} page-{{ current | replace('.html','') | replace('/','-') }}">
+<a class="skip" href="#main">{{ _("Skip to content") }}</a>
+
+<div class="utility">
+  <div class="wrap utility-row">
+    <p class="utility-tag">{{ site.tagline }}</p>
+    <ul class="utility-links">
+      {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}"{% if l.link == current %} aria-current="page"{% endif %}>{{ l.label }}</a></li>{% endfor %}
+      <li class="lang">
+        <a href="{{ switch.en }}" hreflang="en" lang="en"{% if lang.code == 'en' %} aria-current="true"{% endif %}>EN</a><span aria-hidden="true">|</span><a href="{{ switch.zh }}" hreflang="zh-CN" lang="zh-CN"{% if lang.code == 'zh' %} aria-current="true"{% endif %}>中文</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="{{ u('index.html') }}" aria-label="{{ site.name }} {{ _('home') }}">
+      <span class="logo-name">{{ site.name }}</span>
+      <span class="logo-sub">{{ site.name_sub }}</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">{{ _("Menu") }}</span><span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="{{ _('Main') }}">
+      <ul class="nav-list">
+        {% for item in site.nav %}
+        {% set section = item.link | replace('.html','') %}
+        {% set active = current == item.link or current.startswith(section ~ '/') or (item.children and (item.children | selectattr('link', 'equalto', current) | list)) %}
+        <li class="nav-item{% if item.children %} has-sub{% endif %}">
+          <a class="nav-link" href="{{ u(item.link) }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% if item.children %}
+          <button class="sub-toggle" aria-expanded="false" aria-label="{{ _('Show pages in') }} {{ item.label }}"><span aria-hidden="true"></span></button>
+          <ul class="sub">
+            {% for c in item.children %}<li><a href="{{ u(c.link) }}"{% if c.link == current %} aria-current="page"{% endif %}>{{ c.label }}</a></li>{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="nav-mobile-extra">
+        {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
+        <li><a href="{{ switch.en if lang.code == 'zh' else switch.zh }}">{{ 'English' if lang.code == 'zh' else '中文' }}</a></li>
+      </ul>
+      <a class="btn btn-gold btn-sm nav-cta" href="{{ u(site.cta_link) }}">{{ site.cta_text }}</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+{% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin-in", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="{{ u('index.html') }}"><span class="logo-name">{{ site.name }}</span><span class="logo-sub">{{ site.name_sub }}</span></a>
+      <p>{{ site.footer_blurb }}</p>
+    </div>
+    {% for item in site.nav if item.children %}
+    <nav class="footer-col" aria-label="{{ item.label }}">
+      <h3>{{ item.label }}</h3>
+      <ul>{% for c in item.children %}<li><a href="{{ u(c.link) }}">{{ c.label }}</a></li>{% endfor %}</ul>
+    </nav>
+    {% endfor %}
+    <nav class="footer-col" aria-label="{{ _('Company') }}">
+      <h3>{{ _("Company") }}</h3>
+      <ul>
+        {% for item in site.nav if not item.children %}<li><a href="{{ u(item.link) }}">{{ item.label }}</a></li>{% endfor %}
+        {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
+        <li><a href="{{ u('contact.html') }}">{{ _("Contact Us") }}</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap footer-connect">
+    <div class="connect">
+      <h2 class="footer-h">{{ _("Connect with WinPlus") }}</h2>
+      <dl class="contact-list">
+        <div><dt>{{ _("Email") }}</dt><dd>{{ site.email }}</dd></div>
+        <div><dt>{{ _("Phone") }}</dt><dd>{{ site.phone }}</dd></div>
+        <div><dt>{{ _("WeChat") }}</dt><dd>{{ site.wechat_id }}</dd></div>
+        <div><dt>{{ _("Address") }}</dt><dd>{{ site.address }}</dd></div>
+      </dl>
+      <ul class="social" aria-label="{{ _('Social media') }}">
+        {% for s in site.social %}
+        <li>
+          {% if s.platform == 'wechat' %}
+          <button class="social-btn s-wechat wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}">
+            <i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span>
+          </button>
+          {% else %}
+          <a class="social-btn s-{{ s.platform }}" href="{{ s.url or '#' }}" title="{{ s.label }}" target="_blank" rel="noopener">
+            {% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}
+            <span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span>
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div id="wechat-pop" class="wechat-pop" hidden>
+        {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 300) }}" alt="{{ _('WeChat QR code') }}">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
+        <p>{{ _("Scan to follow us on WeChat") }}<br><strong>{{ site.wechat_id }}</strong></p>
+      </div>
+    </div>
+
+    <div class="footer-news">
+      <h2 class="footer-h">{{ site.newsletter.title }}</h2>
+      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
+        <input type="hidden" name="form-name" value="newsletter">
+        <input type="hidden" name="language" value="{{ lang.code }}">
+        <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+        <label class="sr-only" for="nl-email">{{ _("Email address") }}</label>
+        <div class="newsletter-row">
+          <input id="nl-email" type="email" name="email" placeholder="{{ _('Your email address') }}" autocomplete="email" required>
+          <button class="btn btn-gold" type="submit">{{ site.newsletter.button }}</button>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>{{ _("I agree to receive emails from WinPlus and accept the") }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a>.</span></label>
+      </form>
+      <p class="footer-news-text">{{ site.newsletter.text }}</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-legal">
+    <p class="disclaimer">{{ site.footer_disclaimer }}</p>
+    <div class="legal-row">
+      <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}</p>
+      <ul>
+        <li><a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></li>
+        <li><a href="{{ u('terms.html') }}">{{ _("Terms & Disclaimer") }}</a></li>
+        <li><a href="{{ u('sitemap.html') }}">{{ _("Site Map") }}</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="{{ root }}assets/js/main.js?v={{ version }}"></script>
+<script>
+  window.addEventListener("load", function () {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) { window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; }); }
+      });
+    }
+  });
+</script>
+</body>
+</html>

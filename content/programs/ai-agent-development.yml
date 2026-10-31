@@ -1,0 +1,45 @@
+order: 1
+title: AI Agent Software & Tools Development
+category: ai-technology
+org: Meta
+format: Online Internship
+seo_title: AI Agent Software & Tools Development | High School AI & Tech Program | WinPlus
+meta_description: Design and build a working AI agent, an application that uses a large language model to plan and complete tasks, under the guidance of a Meta AI engineering lead.
+summary: Design and build a working AI agent, an application that uses a large language model to plan and complete tasks, under the guidance of a Meta AI engineering lead.
+image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
+image_alt: Computer screen showing code for a software program
+facts:
+- label: Format
+  value: Online Internship
+- label: Length
+  value: 6–8 weeks
+- label: Schedule
+  value: '[Day/time, time zone]'
+- label: Group size
+  value: '[X] students'
+- label: Grade level
+  value: Grades 9–12
+- label: Next start
+  value: '[Month YEAR]'
+overview: AI agents are one of the fastest-moving areas in software. In this internship-style program, students learn how modern AI agents are designed and built, then develop their own agent-powered tool from idea to working demo.
+activities:
+- Learn how large language models, prompts and tool use work
+- Design an agent for a real problem students care about
+- Build and test the agent in Python
+- Evaluate performance, safety and limitations
+- Present a live demo at the final showcase
+mentor: Software Engineering Lead, Llama Team & AI Platform Development Lead (Meta)
+mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
+mentor_photo: ''
+deliverables:
+- A working AI agent project with source code and a demo video
+- Mentor recommendation letter (for eligible students)
+- Certificate of completion
+- Final showcase presentation
+prerequisites: Basic Python is helpful but not required; a short preparation module is provided.
+faq:
+- q: Is this program online?
+  a: Yes. This is an online internship with live sessions, so students can join from anywhere.
+- q: How do I apply?
+  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
+internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'

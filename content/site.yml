@@ -1,0 +1,105 @@
+# Global site settings — header, menu, footer, contact info, social media, SEO.
+name: WinPlus
+name_sub: EDUCATION
+company_legal: WinPlus Education & Technology Inc.
+name_local: 欧歌学院
+tagline: Global Talent Development Platform
+
+# SEO: the site's real address. Change to https://www.winplus.org (or your domain) once the domain is connected.
+site_url: https://winplus-education.netlify.app
+default_image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
+meta_description: "WinPlus is a global talent development platform offering college admissions counseling, real research and internship programs with mentors from NASA, Meta and MIT, and global enrichment programs for high school students."
+founded: "[YEAR]"
+address: "[Street address, City, State ZIP]"
+area_served: ["United States", "China", "Singapore", "Canada", "United Kingdom", "Australia"]
+
+email: "[email@winplus.org]"
+phone: "[+1 000 000 0000]"
+wechat_id: "[WeChat ID]"
+wechat_qr: ""
+
+cta_text: Book a Free Consultation
+cta_link: contact.html
+
+# Main menu. Items with "children" show a dropdown.
+nav:
+  - label: Admissions Counseling
+    link: admissions.html
+    children:
+      - { label: Overview, link: admissions.html }
+      - { label: US College Admissions, link: admissions/us-college.html }
+      - { label: "UK, Canada & Australia", link: admissions/uk-canada-australia.html }
+      - { label: "Graduate School: US", link: admissions/grad-school-us.html }
+      - { label: "Graduate School: UK, Canada & Australia", link: admissions/grad-school-international.html }
+      - { label: US High School Admissions, link: admissions/us-high-school.html }
+      - { label: How We Work, link: how-it-works.html }
+  - label: Research & Internships
+    link: research.html
+    children:
+      - { label: All Programs, link: research.html }
+      - { label: What Students Receive, link: "research.html#deliverables" }
+      - { label: AI & Technology, link: "research.html#ai-technology" }
+      - { label: Finance & Business, link: "research.html#finance-business" }
+      - { label: Science & Space, link: "research.html#science-space" }
+      - { label: Arts & Media, link: "research.html#arts-media" }
+  - label: Experience Enrichment
+    link: enrichment.html
+    children:
+      - { label: Overview, link: enrichment.html }
+      - { label: UN Conferences, link: enrichment/un-conferences.html }
+      - { label: Summer & Winter Schools, link: enrichment/summer-winter-schools.html }
+      - { label: Upcoming Events, link: events.html }
+  - label: Our Results
+    link: results.html
+  - label: Insights
+    link: insights.html
+  - label: Our Team
+    link: team.html
+
+# Small links in the bar above the menu
+utility_links:
+  - { label: Upcoming Events, link: events.html }
+  - { label: For Schools, link: schools.html }
+
+# Rolling logo strip under the home page hero. Upload logo files (SVG/PNG, transparent background).
+# Only list organizations you have the right to display.
+partners_label: "Our mentors come from"
+partners_note: "Logos indicate our mentors' professional backgrounds only and do not imply partnership or sponsorship. Selected list."
+partners:
+  - { name: Harvard University, logo: /images/uploads/logos/harvard.png }
+  - { name: MIT, logo: /images/uploads/logos/mit.png }
+  - { name: NASA, logo: /images/uploads/logos/nasa.png }
+  - { name: Yale University, logo: /images/uploads/logos/yale.png }
+  - { name: Meta, logo: /images/uploads/logos/meta.png }
+  - { name: Stanford University, logo: /images/uploads/logos/stanford.png }
+  - { name: United Nations, logo: /images/uploads/logos/united-nations.png }
+  - { name: Google, logo: /images/uploads/logos/google.png }
+  - { name: Columbia University, logo: /images/uploads/logos/columbia.png }
+  - { name: Apple, logo: /images/uploads/logos/apple.png }
+  - { name: Caltech, logo: /images/uploads/logos/caltech.png }
+  - { name: Microsoft, logo: /images/uploads/logos/microsoft.png }
+  - { name: Cornell University, logo: /images/uploads/logos/cornell.png }
+  - { name: Amazon, logo: /images/uploads/logos/amazon.png }
+  - { name: U.S. Centers for Disease Control and Prevention, logo: /images/uploads/logos/cdc.png }
+  - { name: Bloomberg, logo: /images/uploads/logos/bloomberg.png }
+  - { name: Congressional Budget Office, logo: /images/uploads/logos/cbo.png }
+  - { name: Fiserv, logo: /images/uploads/logos/fiserv.png }
+  - { name: Phoenix Pictures, logo: "" }
+
+# Social media (icons in the footer). Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
+social:
+  - { platform: wechat, label: WeChat, url: "" }
+  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "#" }
+  - { platform: linkedin, label: LinkedIn, url: "#" }
+  - { platform: instagram, label: Instagram, url: "#" }
+  - { platform: youtube, label: YouTube, url: "#" }
+
+newsletter:
+  title: Sign up for WinPlus newsletter
+  text: Get WinPlus insights, Admissions strategy, program launches and event invitations.
+  button: Subscribe
+
+footer_blurb: "Global talent development platform. Admissions counseling, research & internships and global enrichment for ambitious students."
+
+# Short disclaimer shown at the bottom of every page
+footer_disclaimer: "Admission outcomes depend on many factors and are never guaranteed. University and company names on this site describe our mentors' and students' backgrounds and do not imply endorsement or affiliation."

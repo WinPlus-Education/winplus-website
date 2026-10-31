@@ -1,0 +1,45 @@
+order: 7
+title: Gene Therapy AI Data Analysis
+category: science-space
+org: Caltech
+format: Research Project
+seo_title: Gene Therapy AI Data Analysis | High School Science Research Program | WinPlus
+meta_description: Apply AI and data analysis to biomedical research questions in gene therapy, mentored by a Caltech postdoctoral researcher.
+summary: Apply AI and data analysis to biomedical research questions in gene therapy, mentored by a Caltech postdoctoral researcher.
+image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+image_alt: Silhouette of a researcher using a microscope
+facts:
+- label: Format
+  value: Research Project
+- label: Length
+  value: '[X] weeks'
+- label: Schedule
+  value: '[Day/time, time zone]'
+- label: Group size
+  value: '[X] students'
+- label: Grade level
+  value: Grades 9–12
+- label: Next start
+  value: '[Month YEAR]'
+overview: Gene therapy research generates large, complex datasets. Students learn the science behind gene therapy and use computational tools to analyze real or public research data.
+activities:
+- Foundations of genetics and gene therapy
+- Reading and understanding scientific papers
+- Analyzing biological data with Python
+- Formulating and testing a research question
+- Writing a research paper and presenting results
+mentor: Postdoctoral Researcher, Caltech Gene Therapy Lab
+mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
+mentor_photo: ''
+deliverables:
+- A research paper suitable for student journals or science competitions
+- Mentor recommendation letter (for eligible students)
+- Certificate of completion
+- Final showcase presentation
+prerequisites: Strong interest in biology; high school biology recommended.
+faq:
+- q: Is this program online?
+  a: Yes. This is an research project with live sessions, so students can join from anywhere.
+- q: How do I apply?
+  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
+internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'

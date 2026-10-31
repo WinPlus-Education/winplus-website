@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo, btn, ld with context %}
+{% block schema %}
+{% set online = 'online' in (item.location | lower) %}
+{% set ev = {"@context": "https://schema.org", "@type": "Event", "name": item.title, "description": item.summary, "startDate": item.date.isoformat() if item.date else "", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode" if online else "https://schema.org/OfflineEventAttendanceMode", "organizer": {"@id": site_url ~ "/#organization"}, "image": [img(item.image, 1200)] if item.image else []} %}
+{% if online %}{% set _ = ev.update({"location": {"@type": "VirtualLocation", "url": canonical}}) %}{% else %}{% set _ = ev.update({"location": {"@type": "Place", "name": item.location, "address": item.location}}) %}{% endif %}
+{{ ld(ev) }}
+{% endblock %}
+{% block content %}
+{% set hero = {"eyebrow": item.type, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{{ page_hero(hero, [["Events", "events.html"], [item.title, item.url]]) }}
+<section class="section" data-event-date="{{ item.date.isoformat() if item.date else '' }}">
+  <div class="wrap detail-grid">
+    <div class="detail-main">
+      <dl class="facts">
+        <div><dt>Date</dt><dd>{{ item.date | date_fmt('%A, %B %-d, %Y') }}</dd></div>
+        <div><dt>Time</dt><dd>{{ item.time_label }}</dd></div>
+        <div><dt>Location</dt><dd>{{ item.location }}</dd></div>
+        <div><dt>Type</dt><dd>{{ item.type }}</dd></div>
+      </dl>
+      <h2>About this event</h2>
+      <div class="prose">{{ item.details | md | safe }}</div>
+    </div>
+    <aside class="detail-side">
+      <div class="side-card side-cta" id="register">
+        <h2 class="h4">Register</h2>
+        <p class="event-past-note" hidden>This event has ended. See <a href="{{ u('events.html') }}">upcoming events</a>.</p>
+        {% if item.register_url %}
+        {{ btn("Register now", item.register_url) }}
+        {% else %}
+        <form class="form form-compact" name="event-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
+          <input type="hidden" name="form-name" value="event-registration">
+          <input type="hidden" name="event" value="{{ item.title }} ({{ item.date | date_fmt }})">
+          <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+          <label for="r-name">Name<input id="r-name" name="name" autocomplete="name" required></label>
+          <label for="r-email">Email<input id="r-email" type="email" name="email" autocomplete="email" required></label>
+          <label for="r-role">I am a
+            <select id="r-role" name="role"><option>Parent</option><option>Student</option><option>Educator</option><option>Other</option></select>
+          </label>
+          <label for="r-grade">Student grade (optional)<input id="r-grade" name="grade"></label>
+          <button class="btn btn-gold" type="submit">Register</button>
+        </form>
+        {% endif %}
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

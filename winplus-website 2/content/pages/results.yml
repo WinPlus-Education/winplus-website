@@ -1,0 +1,97 @@
+seo_title: "Our Results | Ivy League, Oxbridge & Top University Admissions | WinPlus"
+meta_description: "WinPlus student results: admission rates to Harvard, Stanford, MIT, Oxford, Cambridge and other top universities, student success stories, UN highlights and testimonials from students and parents."
+eyebrow: Our Results
+title: Results that speak for themselves
+intro: WinPlus-advised students consistently outperform overall admission rates at the world's most selective universities. Here are their numbers, their stories and their words.
+image: https://images.unsplash.com/photo-1541339907198-e08756dedf3f
+image_alt: Graduates throwing their caps in the air
+
+stats:
+  - { number: "[X]+", label: "Students guided since [YEAR]" }
+  - { number: "[X]%", label: "Admitted to a US News Top-30 or G5 university" }
+  - { number: "[X]", label: "Ivy League, Oxbridge & Stanford/MIT offers" }
+  - { number: "[X]", label: "Students published or presented research" }
+
+chart_title: "Acceptance rate: WinPlus students vs. general applicant pool"
+# Enter rates as numbers (e.g. 3.6). Leave blank to show a [X%] placeholder.
+schools:
+  - { name: Harvard, general_rate: "", winplus_rate: "" }
+  - { name: Stanford, general_rate: "", winplus_rate: "" }
+  - { name: MIT, general_rate: "", winplus_rate: "" }
+  - { name: Princeton, general_rate: "", winplus_rate: "" }
+  - { name: Yale, general_rate: "", winplus_rate: "" }
+  - { name: Columbia, general_rate: "", winplus_rate: "" }
+  - { name: UPenn, general_rate: "", winplus_rate: "" }
+  - { name: Caltech, general_rate: "", winplus_rate: "" }
+  - { name: Duke, general_rate: "", winplus_rate: "" }
+  - { name: Johns Hopkins, general_rate: "", winplus_rate: "" }
+  - { name: Northwestern, general_rate: "", winplus_rate: "" }
+  - { name: UChicago, general_rate: "", winplus_rate: "" }
+  - { name: Cornell, general_rate: "", winplus_rate: "" }
+  - { name: UC Berkeley, general_rate: "", winplus_rate: "" }
+  - { name: UCLA, general_rate: "", winplus_rate: "" }
+  - { name: Dartmouth, general_rate: "", winplus_rate: "" }
+  - { name: Rice, general_rate: "", winplus_rate: "" }
+  - { name: Carnegie Mellon, general_rate: "", winplus_rate: "" }
+  - { name: Oxford, general_rate: "", winplus_rate: "" }
+  - { name: Cambridge, general_rate: "", winplus_rate: "" }
+  - { name: Imperial, general_rate: "", winplus_rate: "" }
+  - { name: LSE, general_rate: "", winplus_rate: "" }
+footnote: "* Based on WinPlus-counseled students, Class of [YEAR]. General admit rates from each university's published data. [Add methodology.]"
+
+offers_title: Universities our students have been admitted to
+offers: [Harvard, Stanford, MIT, Oxford, Cambridge, Columbia, UPenn, Dartmouth, Cornell, Northwestern, UC Berkeley, UCLA, Carnegie Mellon, Imperial College London, LSE]
+
+highlights_title: Student highlights
+highlights:
+  - title: "Speaking at the United Nations"
+    tag: UN Conference
+    text: "[Jason, Class of 20XX] delivered a speech at [UN meeting, date], speaking on [topic]. [Add the full story, a quote and photos.]"
+    image: https://images.unsplash.com/photo-1544531586-fde5298cdd40
+    image_alt: A speaker addressing an audience from a podium
+    link: enrichment/un-conferences.html
+  - title: "From NASA research to Stanford"
+    tag: Research
+    text: "[A.L.] completed the NASA Deep Space Research Program, presented findings at [event] and was admitted to Stanford. [Add details.]"
+    image: https://images.unsplash.com/photo-1462332420958-a05d1e002413
+    image_alt: Colorful nebula in deep space
+    link: research/jwst-deep-space-research.html
+  - title: "[Add highlight]"
+    tag: Competition
+    text: "[Competition wins, publications, startups or other notable student achievements.]"
+    image: https://images.unsplash.com/photo-1631557676757-fcc7b1160be8
+    image_alt: Hands using tweezers over a petri dish in a lab
+    link: ""
+
+stories_title: Success stories
+stories:
+  - initials: A.L.
+    admitted_to: Stanford
+    program: NASA Deep Space Research Program
+    quote: "The research experience completely changed how I talked about myself in my application. [PLACEHOLDER QUOTE]"
+  - initials: M.W.
+    admitted_to: Oxford
+    program: UK Admissions Counseling
+    quote: "My WinPlus consultant knew exactly what Oxford was looking for. [PLACEHOLDER QUOTE]"
+  - initials: J.C.
+    admitted_to: Columbia
+    program: Bloomberg FinTech Program + US Admissions
+    quote: "I had a real project, a mentor letter, and a story. That made all the difference. [PLACEHOLDER QUOTE]"
+
+testimonials_title: What families say
+testimonials:
+  - quote: "[Parent testimonial placeholder — e.g., what changed for their child and the family's experience working with WinPlus.]"
+    name: "[Parent of a Class of 20XX student]"
+    role: Parent
+  - quote: "[Alumni testimonial placeholder — e.g., how the program helped at university.]"
+    name: "[Name], [University], Class of [Year]"
+    role: Alumni
+  - quote: "[Parent testimonial placeholder.]"
+    name: "[Parent name]"
+    role: Parent
+  - quote: "[Alumni testimonial placeholder.]"
+    name: "[Name], [University]"
+    role: Alumni
+
+cta: Start Your Journey
+cta_link: contact.html

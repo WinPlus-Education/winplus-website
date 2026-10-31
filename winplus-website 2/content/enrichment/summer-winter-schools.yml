@@ -1,0 +1,31 @@
+order: 2
+title: Summer & Winter Schools
+short_title: Summer & Winter Schools
+seo_title: "Summer & Winter Schools for High School Students | WinPlus"
+meta_description: "Summer and winter school programs for high school students on leading university campuses: academic courses, campus life, college visits and leadership."
+summary: Academic courses, campus life and university visits during summer and winter breaks, on leading campuses in the US and beyond.
+image: https://images.unsplash.com/photo-1583373834259-46cc92173cb7
+image_alt: University building beside a green lawn
+facts:
+  - { label: "Locations", value: "[Campus / city]" }
+  - { label: "Summer session", value: "[Dates, YEAR]" }
+  - { label: "Winter session", value: "[Dates, YEAR]" }
+  - { label: "Grade level", value: "Grades 8–12" }
+overview: "Students spend [X] weeks taking university-style courses, living on campus, visiting top universities and working on a capstone project with peers from around the world. [Edit to describe your actual programs.]"
+activities:
+  - University-style academic courses and seminars
+  - Campus tours and admissions info sessions
+  - Leadership and teamwork workshops
+  - Cultural and city excursions
+  - Capstone project and presentation
+deliverables:
+  - Capstone project
+  - Certificate of completion
+  - Experience of university life
+  - Clearer sense of target universities
+highlight: ""
+faq:
+  - q: Are students supervised?
+    a: "[Describe supervision, staff ratios and safety protocols.]"
+  - q: When do applications open?
+    a: "[Add application timeline.]"

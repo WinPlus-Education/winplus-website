@@ -1,0 +1,37 @@
+order: 1
+title: US College Admissions
+short_title: US College
+seo_title: "US College Admissions Counseling | Ivy League & Top-30 Strategy | WinPlus"
+meta_description: "Ivy League and top-30 US college admissions counseling: school selection, Common App essays, activities, recommendations and interview coaching from one dedicated WinPlus consultant."
+summary: Ivy League and top-30 strategy, school selection, essay development, extracurricular positioning and interview coaching.
+image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
+image_alt: Students walking near a classic US university building
+who: Students in Grades 9–12 aiming for selective US universities, including the Ivy League, Stanford, MIT and other top-30 schools.
+included:
+  - Profile assessment and multi-year roadmap
+  - Course selection and standardized testing plan (SAT/ACT, AP)
+  - Extracurricular, research and summer planning
+  - Balanced school list with Early Decision / Early Action strategy
+  - Common App personal statement and supplemental essays
+  - Activities list and honors section
+  - Recommendation letter planning
+  - Interview coaching and mock interviews
+  - Financial aid and scholarship guidance
+  - Decision, waitlist and appeal support
+approach:
+  - { title: "Find the story", text: "We identify the student's genuine interests and the thread that connects them." }
+  - { title: "Build the evidence", text: "Research, internships and leadership that prove that story with real outcomes." }
+  - { title: "Tell it well", text: "Essays and activities that show who the student is, in their own voice." }
+deadlines_title: Key US admissions dates
+deadlines:
+  - { label: "Early Decision / Early Action", date: "Typically November 1–15 of Grade 12" }
+  - { label: "Regular Decision", date: "Typically January 1–15 of Grade 12" }
+  - { label: "Decisions", date: "Mid-December (early) and late March (regular)" }
+  - { label: "Reply deadline", date: "Usually May 1" }
+faq:
+  - q: When should we start US college admissions counseling?
+    a: Grade 9 or 10 is ideal so we can shape courses, activities and research. Many families start in Grade 11; we also support Grade 12 students.
+  - q: Should my child apply Early Decision?
+    a: Early Decision can raise admission chances at some schools but is binding. We help families weigh the benefits against financial aid and fit.
+  - q: Are SAT or ACT scores still required?
+    a: Policies vary by university and change often. We review each school's current requirements and advise on whether to submit scores.

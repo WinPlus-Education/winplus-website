@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, ld with context %}
+{% block schema %}
+{{ ld({"@context": "https://schema.org", "@type": "Service", "name": item.title, "serviceType": "College admissions counseling", "description": item.summary, "provider": {"@id": site_url ~ "/#organization"}, "areaServed": site.area_served, "url": canonical}) }}
+{% endblock %}
+{% block content %}
+{% set hero = {"eyebrow": "Admissions Counseling", "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{{ page_hero(hero, [["Admissions Counseling", "admissions.html"], [item.short_title or item.title, item.url]], btn("Book a Free Consultation", "contact.html?interest=" ~ (item.short_title | urlencode))) }}
+
+<section class="section">
+  <div class="wrap detail-grid">
+    <div class="detail-main">
+      <h2>Who it's for</h2>
+      <p class="lead">{{ item.who }}</p>
+      <h2>What's included</h2>
+      <ul class="checklist cols-2">{% for i in item.included %}<li>{{ i }}</li>{% endfor %}</ul>
+      <h2>Our approach</h2>
+      <ol class="approach">
+        {% for a in item.approach %}<li><span class="step-num">{{ loop.index }}</span><div><h3>{{ a.title }}</h3><p>{{ a.text }}</p></div></li>{% endfor %}
+      </ol>
+    </div>
+    <aside class="detail-side">
+      <div class="side-card">
+        <h2 class="h4">{{ item.deadlines_title }}</h2>
+        <dl class="facts">{% for d in item.deadlines %}<div><dt>{{ d.label }}</dt><dd>{{ d.date }}</dd></div>{% endfor %}</dl>
+        <p class="small muted">Dates vary by institution and year. Always confirm with each school.</p>
+      </div>
+      <div class="side-card side-cta">
+        <h2 class="h4">Talk to a consultant</h2>
+        <p>Get a personalized plan in a free 45-minute strategy session.</p>
+        {{ btn("Book a Free Consultation", "contact.html?interest=" ~ (item.short_title | urlencode)) }}
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-sky">
+  <div class="wrap narrow">{{ faq(item.faq, item.short_title ~ " FAQ") }}</div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {{ head("", "Other admissions services") }}
+    <ul class="related">
+      {% for s in siblings if s.slug != item.slug %}<li><a class="related-link" href="{{ u(s.url) }}"><span>{{ s.title }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}
+      <li><a class="related-link" href="{{ u('how-it-works.html') }}"><span>How we work</span><span aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</section>
+
+{{ cta_band("Ready to get started?", "Book a free strategy session with a WinPlus consultant.", "Book a Free Consultation", "contact.html") }}
+{% endblock %}

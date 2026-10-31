@@ -1,0 +1,60 @@
+seo_title: "Research & Internship Programs for High School Students | NASA, Meta, MIT Mentors | WinPlus"
+meta_description: "Mentor-led research and internship programs for high school students in AI, coding, finance, space science, biotech and film. Earn a portfolio project and a mentor recommendation letter."
+eyebrow: Research & Internships
+title: Where high schoolers do work that belongs on a college application
+intro: Our programs aren't simulations. They're real projects, real mentors and real deliverables, the kind top admissions officers notice.
+image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+image_alt: Silhouette of a researcher using a microscope
+
+why_title: Why research matters
+why:
+  - title: Admissions impact
+    text: Research is one of the clearest differentiators for Ivy League and top-20 applicants, and most applicants don't have it.
+  - title: Career-ready skills
+    text: Students learn the tools professionals actually use, from Python and LLMs to lab data analysis and film production.
+  - title: Access to an elite network
+    text: Students work directly with engineers, scientists and creators from world-leading organizations.
+
+deliverables_title: What every student receives
+deliverables_intro: Every program ends with tangible results that strengthen college applications and stay with students long after.
+deliverables:
+  - title: Mentor recommendation letter
+    text: Eligible students who complete the program to a high standard can receive a personalized letter from their mentor, who saw their work first-hand.
+  - title: A finished research paper or product
+    text: A research paper, working prototype, financial model or short film, depending on the program, ready to include in applications.
+  - title: Portfolio & presentation
+    text: Students present their work at a final showcase and leave with a polished portfolio piece and presentation.
+  - title: Certificate of completion
+    text: An official WinPlus certificate describing the program, mentor and hours completed.
+  - title: Publication & competition guidance
+    text: Where appropriate, we help students submit their work to journals, conferences or competitions.
+  - title: Application-ready narrative
+    text: Your consultant helps translate the experience into activity descriptions and essays.
+
+format_title: How the programs work
+format:
+  - { label: "Format", value: "Online, live small-group sessions" }
+  - { label: "Group size", value: "[X] students per mentor" }
+  - { label: "Length", value: "[X] weeks, [X] hours per week" }
+  - { label: "Grade level", value: "Grades 9–12" }
+
+categories:
+  - { id: ai-technology, title: "AI & Technology" }
+  - { id: finance-business, title: "Finance & Business" }
+  - { id: science-space, title: "Science & Space" }
+  - { id: arts-media, title: "Arts & Media" }
+
+faq:
+  - q: Do students need prior experience?
+    a: Most programs are designed for motivated beginners. Some advanced tracks require basic coding or math, which is listed on each program page.
+  - q: Will my child really get a recommendation letter?
+    a: Mentors write letters for students who complete the program and demonstrate strong work. Letters are earned, not automatic, which is what makes them valuable.
+  - q: Can students publish their research?
+    a: Some projects are suitable for student journals, conferences or competitions. Mentors and consultants advise on the best outlet.
+  - q: How do I choose the right program?
+    a: Book a free strategy session and your consultant will recommend programs that fit the student's interests and application plan.
+
+cta_title: Apply for a 2026 program
+cta_text: Spaces are limited and fill early. Talk to us about which program fits best.
+cta: Apply or Ask a Question
+cta_link: contact.html

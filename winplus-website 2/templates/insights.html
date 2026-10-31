@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo with context %}
+{% block content %}
+{% set filters %}
+<div class="filters" role="group" aria-label="Filter articles by topic">
+  <button class="chip-btn is-active" data-filter="all" aria-pressed="true">All</button>
+  {% for c in page.categories %}<button class="chip-btn" data-filter="{{ c | slugify }}" aria-pressed="false">{{ c }}</button>{% endfor %}
+</div>
+{% endset %}
+{{ page_hero(page, [["Insights", "insights.html"]], filters) }}
+<section class="section">
+  <div class="wrap">
+    {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}
+    {% if featured %}
+    <a class="card feature" href="{{ u(featured.url) }}" data-cat="{{ featured.category | slugify }}">
+      {{ photo(featured.image, featured.image_alt or featured.title, "ratio-wide", 1100) }}
+      <div class="card-body">
+        <span class="tag">{{ featured.category }}</span>
+        <h2>{{ featured.title }}</h2>
+        <p>{{ featured.summary }}</p>
+        <span class="more">Read article <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+    {% endif %}
+    <div class="grid-3 post-grid">
+      {% for p in posts if p.slug != featured.slug %}
+      <a class="card post-card" href="{{ u(p.url) }}" data-cat="{{ p.category | slugify }}">
+        {{ photo(p.image, p.image_alt or p.title, "ratio-wide", 700) }}
+        <div class="card-body">
+          <span class="tag">{{ p.category }}</span>
+          <h3>{{ p.title }}</h3>
+          <p class="meta">{{ p.date | date_fmt }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="empty-note" data-filter-empty hidden>No articles in this topic yet.</p>
+  </div>
+</section>
+{% endblock %}

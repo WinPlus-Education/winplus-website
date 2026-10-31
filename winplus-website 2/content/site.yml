@@ -1,0 +1,94 @@
+# Global site settings — header, menu, footer, contact info, social media, SEO.
+name: WinPlus
+name_sub: EDUCATION
+company_legal: WinPlus Education & Technology Inc.
+tagline: Global Talent Development Platform
+
+# SEO: the site's real address. Change to https://www.winplus.org (or your domain) once the domain is connected.
+site_url: https://winplus-education.netlify.app
+default_image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
+meta_description: "WinPlus is a global talent development platform offering college admissions counseling, real research and internship programs with mentors from NASA, Meta and MIT, and global enrichment programs for high school students."
+founded: "[YEAR]"
+address: "[Street address, City, State ZIP]"
+area_served: ["United States", "China", "Singapore", "Canada", "United Kingdom", "Australia"]
+
+email: "[email@winplus.org]"
+phone: "[+1 000 000 0000]"
+wechat_id: "[WeChat ID]"
+wechat_qr: ""
+
+cta_text: Book a Free Consultation
+cta_link: contact.html
+
+# Main menu. Items with "children" show a dropdown.
+nav:
+  - label: Admissions Counseling
+    link: admissions.html
+    children:
+      - { label: Overview, link: admissions.html }
+      - { label: US College Admissions, link: admissions/us-college.html }
+      - { label: "UK, Canada & Australia", link: admissions/uk-canada-australia.html }
+      - { label: "Graduate School: US", link: admissions/grad-school-us.html }
+      - { label: "Graduate School: UK, Canada & Australia", link: admissions/grad-school-international.html }
+      - { label: US High School Admissions, link: admissions/us-high-school.html }
+      - { label: How We Work, link: how-it-works.html }
+  - label: Research & Internships
+    link: research.html
+    children:
+      - { label: All Programs, link: research.html }
+      - { label: What Students Receive, link: "research.html#deliverables" }
+      - { label: AI & Technology, link: "research.html#ai-technology" }
+      - { label: Finance & Business, link: "research.html#finance-business" }
+      - { label: Science & Space, link: "research.html#science-space" }
+      - { label: Arts & Media, link: "research.html#arts-media" }
+  - label: Experience Enrichment
+    link: enrichment.html
+    children:
+      - { label: Overview, link: enrichment.html }
+      - { label: UN Conferences, link: enrichment/un-conferences.html }
+      - { label: Summer & Winter Schools, link: enrichment/summer-winter-schools.html }
+      - { label: Upcoming Events, link: events.html }
+  - label: Our Results
+    link: results.html
+  - label: Insights
+    link: insights.html
+  - label: Our Team
+    link: team.html
+
+# Small links in the bar above the menu
+utility_links:
+  - { label: Upcoming Events, link: events.html }
+  - { label: For Schools, link: schools.html }
+
+# Rolling logo strip under the home page hero. Upload logo files (SVG/PNG, transparent background).
+# Only list organizations you have the right to display.
+partners_label: "Our mentors come from"
+partners:
+  - { name: NASA, logo: "" }
+  - { name: Meta, logo: "" }
+  - { name: MIT, logo: "" }
+  - { name: Caltech, logo: "" }
+  - { name: Apple, logo: "" }
+  - { name: Bloomberg, logo: "" }
+  - { name: Microsoft, logo: "" }
+  - { name: Amazon Web Services, logo: "" }
+  - { name: SpaceX, logo: "" }
+  - { name: Northwestern, logo: "" }
+  - { name: Columbia, logo: "" }
+  - { name: Oracle, logo: "" }
+
+# Social media (icons in the footer). Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
+social:
+  - { platform: wechat, label: WeChat, url: "" }
+  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "#" }
+  - { platform: linkedin, label: LinkedIn, url: "#" }
+  - { platform: instagram, label: Instagram, url: "#" }
+  - { platform: youtube, label: YouTube, url: "#" }
+
+newsletter:
+  title: Get WinPlus insights & event invitations
+  text: Admissions strategy, program launches and event invitations, about twice a month. Unsubscribe anytime.
+  button: Subscribe
+
+# Short disclaimer shown at the bottom of every page
+footer_disclaimer: "Admission outcomes depend on many factors and are never guaranteed. University and company names on this site describe our mentors' and students' backgrounds and do not imply endorsement or affiliation."

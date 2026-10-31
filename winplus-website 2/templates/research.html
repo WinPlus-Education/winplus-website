@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, program_card, ld with context %}
+{% block schema %}
+{% set list = [] %}{% for p in programs %}{% set _ = list.append({"@type": "ListItem", "position": loop.index, "url": site_url ~ "/" ~ p.url, "name": p.title}) %}{% endfor %}
+{{ ld({"@context": "https://schema.org", "@type": "ItemList", "name": "WinPlus research and internship programs", "itemListElement": list}) }}
+{% endblock %}
+{% block content %}
+{{ page_hero(page, [["Research & Internships", "research.html"]], btn(page.cta, page.cta_link)) }}
+
+<section class="section section-tight">
+  <div class="wrap">
+    <div class="grid-3 why-grid">
+      {% for w in page.why %}<div class="why-item"><h3>{{ w.title }}</h3><p>{{ w.text }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream" id="deliverables">
+  <div class="wrap">
+    {{ head("Key deliverables", page.deliverables_title, page.deliverables_intro) }}
+    <div class="grid-3 deliverables">
+      {% for d in page.deliverables %}
+      <div class="deliverable"><span class="diff-num">{{ "%02d" % loop.index }}</span><h3>{{ d.title }}</h3><p>{{ d.text }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <h2 class="h3">{{ page.format_title }}</h2>
+    <dl class="facts facts-row">{% for f in page.format %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>
+  </div>
+</section>
+
+{% for c in page.categories %}
+{% set items = programs | selectattr("category", "equalto", c.id) | list %}
+{% if items %}
+<section class="section program-section{% if loop.index is even %} section-sky{% endif %}" id="{{ c.id }}">
+  <div class="wrap">
+    {{ head("Programs", c.title) }}
+    <div class="grid-3">{% for p in items %}{{ program_card(p) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="section">
+  <div class="wrap narrow">{{ faq(page.faq, "Research program FAQ") }}</div>
+</section>
+
+{{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
+{% endblock %}

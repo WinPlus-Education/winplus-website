@@ -1,0 +1,54 @@
+seo_title: "School Partnership Program | College Counseling & Summer Programs for Private Schools | WinPlus"
+meta_description: "WinPlus partners with private schools in the US, China and Singapore to deliver college counseling, turnkey summer programs, exchanges and research enrichment."
+eyebrow: School Partnership Program
+title: Give your students a competitive edge, without the overhead.
+intro: WinPlus partners with private schools to deliver world-class college counseling and summer programming, so your team doesn't have to build it from scratch.
+image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
+image_alt: Students raising hands in a classroom
+challenges:
+  - letter: C
+    title: Limited college counseling capacity
+    text: Most small and mid-sized private schools can't support a full-time Ivy-experienced counselor. Parents expect more. Students deserve more.
+  - letter: S
+    title: Summer programs are hard to execute well
+    text: A credible, safe, educationally rigorous summer program requires networks, logistics and compliance expertise most schools lack in-house.
+  - letter: P
+    title: Placement results drive enrollment
+    text: In a competitive market, college placement outcomes influence admissions decisions. Schools without strong results lose students.
+offerings_title: What a WinPlus school partnership looks like
+offerings:
+  - { title: "College counseling partnership", text: "Co-branded or white-labeled counseling; WinPlus consultants as an extension of your team." }
+  - { title: "Turnkey summer programs", text: "WinPlus designs, staffs and runs summer programs; you bring the students." }
+  - { title: "Cross-border exchange programs", text: "US and China student exchanges managed end-to-end by WinPlus." }
+  - { title: "Curriculum enrichment", text: "Integrate WinPlus research and AI programs into your school's enrichment calendar." }
+why_title: Why schools choose WinPlus
+why:
+  - Access to elite mentor networks (NASA, MIT, Meta, Bloomberg)
+  - Safety & compliance, with background checks and minor welfare protocols
+  - Proven student outcomes from a track record of top-university placements
+  - "Flexible models: white-label, co-brand or referral partnership"
+  - Deep expertise across US, China and Singapore school systems
+# Add content from the B2B company overview deck here
+track_title: "Our track record"
+track:
+  - { number: "[X]", label: "Partner schools" }
+  - { number: "[X]", label: "Students served through partnerships" }
+  - { number: "[X]", label: "Countries" }
+steps_title: How a partnership works
+steps:
+  - { title: "Discovery call", text: "We learn your school's goals, student profile and current counseling resources." }
+  - { title: "Proposal", text: "A tailored partnership model, scope and pricing." }
+  - { title: "Launch", text: "Onboarding for staff, students and parents, with co-branded materials." }
+  - { title: "Review", text: "Termly reporting on student progress and outcomes." }
+ideal_partners: "Ideal partners: private schools of 50–500 students in China, the US and Singapore seeking premium college outcomes and differentiated programming."
+trusted_label: "Trusted by:"
+school_logos:
+  - { name: "[School logo]", logo: "" }
+  - { name: "[School logo]", logo: "" }
+  - { name: "[School logo]", logo: "" }
+  - { name: "[School logo]", logo: "" }
+  - { name: "[School logo]", logo: "" }
+primary_cta: Explore a Partnership
+primary_link: contact.html
+secondary_cta: Download Overview (PDF)
+secondary_file: ""

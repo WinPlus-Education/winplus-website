@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, ld with context %}
+{% block schema %}
+{{ ld({"@context": "https://schema.org", "@type": "Service", "name": item.title, "serviceType": "Student enrichment program", "description": item.summary, "provider": {"@id": site_url ~ "/#organization"}, "url": canonical}) }}
+{% endblock %}
+{% block content %}
+{% set hero = {"eyebrow": "Experience Enrichment", "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{{ page_hero(hero, [["Experience Enrichment", "enrichment.html"], [item.short_title or item.title, item.url]], btn("Register Interest", "contact.html?interest=" ~ ("UN Conferences / Summer & Winter Schools" | urlencode) ~ "&program=" ~ (item.title | urlencode))) }}
+
+<section class="section section-tight">
+  <div class="wrap"><dl class="facts facts-row">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl></div>
+</section>
+
+<section class="section section-flush-top">
+  <div class="wrap detail-grid">
+    <div class="detail-main">
+      <h2>Overview</h2>
+      <div class="prose">{{ item.overview | md | safe }}</div>
+      <h2>What students do</h2>
+      <ol class="approach">{% for a in item.activities %}<li><span class="step-num">{{ loop.index }}</span><div><p>{{ a }}</p></div></li>{% endfor %}</ol>
+      {% if item.highlight %}<div class="callout"><p class="kicker">Highlight</p><p>{{ item.highlight }}</p></div>{% endif %}
+    </div>
+    <aside class="detail-side">
+      <div class="side-card">
+        <h2 class="h4">What students receive</h2>
+        <ul class="checklist">{% for d in item.deliverables %}<li>{{ d }}</li>{% endfor %}</ul>
+      </div>
+      <div class="side-card side-cta">
+        <h2 class="h4">Interested?</h2>
+        <p>Register your interest and we'll send dates, eligibility and fees.</p>
+        {{ btn("Register Interest", "contact.html?interest=" ~ ("UN Conferences / Summer & Winter Schools" | urlencode) ~ "&program=" ~ (item.title | urlencode)) }}
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-sky"><div class="wrap narrow">{{ faq(item.faq, "FAQ") }}</div></section>
+
+<section class="section">
+  <div class="wrap">
+    {{ head("", "More enrichment") }}
+    <ul class="related">
+      {% for s in siblings if s.slug != item.slug %}<li><a class="related-link" href="{{ u(s.url) }}"><span>{{ s.title }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}
+      <li><a class="related-link" href="{{ u('events.html') }}"><span>Upcoming events</span><span aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</section>
+{{ cta_band("Questions about enrichment programs?", "Talk to a consultant about which experiences fit the student's plan.", "Talk to a Consultant", "contact.html") }}
+{% endblock %}

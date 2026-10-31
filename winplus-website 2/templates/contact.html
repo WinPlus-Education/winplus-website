@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "macros.html" import breadcrumbs with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap narrow">
+    {{ breadcrumbs([["Contact", "contact.html"]]) }}
+    <p class="eyebrow">{{ page.eyebrow }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap contact-grid">
+    {# Netlify Forms: submissions appear in the Netlify dashboard under "Forms" and can be emailed to you #}
+    <form class="card form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}">
+      <input type="hidden" name="form-name" value="consultation">
+      <p class="hp"><label>Leave this empty: <input name="company_website"></label></p>
+      <div class="form-grid">
+        <label for="f-parent">Parent / guardian name<input id="f-parent" name="parent_name" autocomplete="name" required></label>
+        <label for="f-student">Student name<input id="f-student" name="student_name"></label>
+        <label for="f-email">Email<input id="f-email" type="email" name="email" autocomplete="email" required></label>
+        <label for="f-phone">Phone / WeChat<input id="f-phone" name="phone_or_wechat"></label>
+        <label for="f-grade">Student's current grade
+          <select id="f-grade" name="grade">
+            <option value="">Select</option>
+            {% for g in ["Grade 8 or below","Grade 9","Grade 10","Grade 11","Grade 12","University / Graduate","Not a student (school or mentor)"] %}<option>{{ g }}</option>{% endfor %}
+          </select>
+        </label>
+        <label for="f-interest">I'm interested in
+          <select id="f-interest" name="interest">
+            <option value="">Select</option>
+            {% for i in page.interests %}<option>{{ i }}</option>{% endfor %}
+          </select>
+        </label>
+      </div>
+      <label for="f-program">Specific program (optional)<input id="f-program" name="program"></label>
+      <label for="f-msg">Goals or questions<textarea id="f-msg" name="message" rows="5"></textarea></label>
+      <label class="consent"><input type="checkbox" name="newsletter_optin" value="yes"> Also send me WinPlus insights and event invitations.</label>
+      <button class="btn btn-gold" type="submit">Send request <span aria-hidden="true">→</span></button>
+      <p class="small muted">By submitting, you agree to our <a href="{{ u('privacy.html') }}">Privacy Policy</a>.</p>
+    </form>
+    <aside class="contact-side">
+      <div class="side-card">
+        <h2 class="h4">Other ways to reach us</h2>
+        <dl class="facts">
+          <div><dt>Email</dt><dd>{{ site.email }}</dd></div>
+          <div><dt>Phone</dt><dd>{{ site.phone }}</dd></div>
+          <div><dt>WeChat</dt><dd>{{ site.wechat_id }}</dd></div>
+        </dl>
+      </div>
+      <div class="side-card">
+        <h2 class="h4">What happens next</h2>
+        <ol class="mini-steps"><li>We reply to schedule a call</li><li>A free 45-minute strategy session</li><li>Initial recommendations, with no obligation</li></ol>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

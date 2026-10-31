@@ -20,8 +20,6 @@
   </div>
 </section>
 
-{{ marquee(site.partners_label, site.partners, site.partners_note) }}
-
 {# ---------- Results: photos | key numbers | offers chart ---------- #}
 {% set r = page.results %}
 <section class="section results-hook">
@@ -80,6 +78,8 @@
     </div>
   </div>
 </section>
+
+{{ marquee(site.partners_label, site.partners, site.partners_note) }}
 
 {% set m = page.mission %}
 <section class="section section-sky">
@@ -160,7 +160,7 @@
 </section>
 
 <section class="section">
-  <div class="wrap narrow">
+  <div class="wrap">
     {{ faq(page.faq['items'], page.faq.title, true) }}
   </div>
 </section>

@@ -38,15 +38,23 @@
 {%- endmacro %}
 
 {# FAQ accordion + FAQPage structured data (great for Google rich results and AI answers) #}
-{% macro faq(items, title=none, center=false) -%}
+{% macro faq(items, title=none, center=false, intro=none) -%}
 {% set title = title if title is not none else _("Frequently asked questions") %}
 {% if items %}
 <div class="faq">
-  {% if title %}<h2 class="{% if center %}center {% endif %}faq-title">{{ title }}</h2>{% endif %}
+  <div class="faq-aside">
+    <p class="eyebrow">{{ _("FAQ") }}</p>
+    {% if title %}<h2 class="faq-title">{{ title }}</h2>{% endif %}
+    <p class="faq-intro">{{ intro or _("Quick answers to the questions families ask us most.") }}</p>
+    <div class="faq-help">
+      <strong>{{ _("Still have questions?") }}</strong>
+      <a class="more" href="{{ u('contact.html') }}">{{ _("Talk to a consultant") }} <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
   <div class="faq-list">
     {% for f in items %}
     <details class="faq-item"{% if loop.first %} open{% endif %}>
-      <summary>{{ f.q }}</summary>
+      <summary><span class="faq-n" aria-hidden="true">{{ "%02d" | format(loop.index) }}</span><span class="faq-q">{{ f.q }}</span></summary>
       <div class="faq-a">{{ f.a | md | safe }}</div>
     </details>
     {% endfor %}

@@ -11,6 +11,11 @@
   {# Language versions of this page (tells Google which page to show to which reader) #}
   {% for code, href in alternates.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ href }}">
   {% endfor %}
+  {% set kw = page.keywords or (item.keywords if item is defined and item and item.keywords) or site.keywords %}
+  {% if kw %}<meta name="keywords" content="{{ kw }}">{% endif %}
+  {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+  {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
+  {% if site.baidu_site_verification %}<meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">{% endif %}
   {% block robots %}<meta name="robots" content="index, follow, max-image-preview:large">{% endblock %}
   <meta property="og:type" content="{% block og_type %}website{% endblock %}">
   <meta property="og:site_name" content="{{ site.name }} {{ site.name_sub }}">
@@ -45,8 +50,16 @@
     "url": site_url ~ "/",
     "description": site.meta_description,
     "areaServed": site.area_served,
-    "knowsAbout": ["College admissions counseling", "US college admissions", "Ivy League admissions", "UK university admissions", "UCAS", "Oxbridge admissions", "Graduate school admissions", "Boarding school admissions", "High school research programs", "Summer programs", "Education consulting", "留学申请", "美国本科申请", "藤校申请", "科研项目", "夏校"]
+    "slogan": site.tagline,
+    "inLanguage": ["en", "zh-CN"],
+    "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 40},
+    "founder": [
+      {"@type": "Person", "name": "Cathy Guo", "jobTitle": "Co-Founder & Executive President", "alumniOf": "Harvard Kennedy School"},
+      {"@type": "Person", "name": "Cedric Pan", "jobTitle": "Co-Founder", "alumniOf": ["Peking University", "Harvard University"]}
+    ],
+    "knowsAbout": ["College admissions counseling", "Education consultancy", "US college admissions", "Ivy League admissions consulting", "Ivy League schools", "Top 30 US universities", "UK university admissions", "UK G5 universities", "UCAS", "Oxbridge admissions", "Graduate school admissions", "Boarding school admissions", "International student admissions", "High school research programs", "Summer programs", "Model United Nations and UN conferences", "留学咨询", "留学顾问", "美国本科申请", "藤校申请", "英国G5申请", "背景提升", "科研项目", "夏校"]
   } %}
+  {% if services is defined and services %}{% set offers = [] %}{% for sv in services %}{% set _x = offers.append({"@type": "Offer", "itemOffered": {"@type": "Service", "name": sv.title, "description": sv.summary, "url": site_url ~ "/" ~ lang.prefix ~ sv.url}}) %}{% endfor %}{% set _x = org.update({"hasOfferCatalog": {"@type": "OfferCatalog", "name": _("Admissions Counseling"), "itemListElement": offers}}) %}{% endif %}
   {% if '[' not in site.email %}{% set _x = org.update({"email": site.email}) %}{% endif %}
   {% if '[' not in site.phone %}{% set _x = org.update({"telephone": site.phone}) %}{% endif %}
   {% if same_as %}{% set _x = org.update({"sameAs": same_as}) %}{% endif %}

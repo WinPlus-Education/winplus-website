@@ -7,7 +7,40 @@
   <div class="wrap">{{ stats(page.stats, "stats-4") }}{% if page.stats_note %}<p class="footnote">{{ page.stats_note }}</p>{% endif %}</div>
 </section>
 
-<section class="section section-flush-top">
+{# ---------- Admissions wall ---------- #}
+<section class="section admit-wall" id="admissions-wall">
+  <div class="wrap">
+    <div class="aw-head">
+      <div>
+        <p class="eyebrow">{{ page.offers_eyebrow or _("Admissions wall") }}</p>
+        <h2>{{ page.offers_title }}</h2>
+        {% if page.offers_intro %}<p class="aw-intro">{{ page.offers_intro }}</p>{% endif %}
+      </div>
+      {% if page.stats and page.stats|length > 1 %}<div class="aw-stat"><span class="aw-stat-num">{{ page.stats[1].number }}</span><span class="aw-stat-label">{{ page.stats[1].label }}</span></div>{% endif %}
+    </div>
+    {% if page.offer_tiers %}
+    {% for t in page.offer_tiers %}
+    <div class="aw-tier">
+      <div class="aw-tier-head"><h3>{{ t.label }}</h3><span class="aw-rule" aria-hidden="true"></span><span class="aw-count">{{ t.schools|length }} {{ _("universities") }}</span></div>
+      <ul class="aw-grid">
+        {% for sc in t.schools %}
+        <li class="aw-card{% if sc.note %} is-featured{% endif %}">
+          <div class="aw-logo">{% if sc.logo %}<img src="{{ img(sc.logo) }}" alt="{{ sc.name }} {{ _('crest') }}" loading="lazy" decoding="async">{% else %}<span class="aw-initial" aria-hidden="true">{{ sc.name[0] }}</span>{% endif %}</div>
+          <span class="aw-name">{{ sc.name }}</span>
+          {% if sc.note %}<span class="aw-badge"><span aria-hidden="true">★</span> {{ sc.note }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    {% elif page.offers %}
+    <ul class="chips chips-lg">{% for o in page.offers %}<li>{{ o }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if page.offers_note %}<p class="aw-note">{{ page.offers_note }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section section-cream">
   <div class="wrap">
     <div class="card chart-card">
       <div class="chart-head">
@@ -36,13 +69,6 @@
   </div>
 </section>
 
-<section class="section section-cream section-tight">
-  <div class="wrap">
-    <h2 class="h3">{{ page.offers_title }}</h2>
-    <ul class="chips chips-lg">{% for o in page.offers %}<li>{{ o }}</li>{% endfor %}</ul>
-    {% if page.offers_note %}<p class="footnote">{{ page.offers_note }}</p>{% endif %}
-  </div>
-</section>
 
 <section class="section" id="highlights">
   <div class="wrap">

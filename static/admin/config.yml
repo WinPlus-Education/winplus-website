@@ -44,6 +44,22 @@ collections:
     - name: meta_description
       label: Default search description
       widget: text
+    - name: keywords
+      label: Search keywords (comma separated)
+      widget: text
+      required: false
+    - name: google_site_verification
+      label: Google Search Console code
+      widget: string
+      required: false
+    - name: bing_site_verification
+      label: Bing Webmaster code
+      widget: string
+      required: false
+    - name: baidu_site_verification
+      label: Baidu verification code
+      widget: string
+      required: false
     - name: founded
       label: Year founded
       widget: string
@@ -774,16 +790,44 @@ collections:
     - name: footnote
       label: Footnote
       widget: text
-    - name: offers_title
-      label: Offers heading
+    - name: offers_eyebrow
+      label: 'Admissions wall: small label'
       widget: string
-    - name: offers
-      label: Universities admitted to
+      required: false
+    - name: offers_title
+      label: 'Admissions wall: heading'
+      widget: string
+    - name: offers_intro
+      label: 'Admissions wall: intro'
+      widget: text
+      required: false
+    - name: offer_tiers
+      label: 'Admissions wall: groups of universities'
       widget: list
-      field:
-        name: item
-        label: Item
+      collapsed: true
+      fields:
+      - name: label
+        label: Group name (e.g. Ivy League)
         widget: string
+      - name: schools
+        label: Universities
+        widget: list
+        collapsed: true
+        fields:
+        - name: name
+          label: University name
+          widget: string
+        - name: logo
+          label: Crest / logo (PNG/SVG)
+          widget: image
+          choose_url: true
+          required: false
+        - name: note
+          label: Badge (optional, e.g. Admitted 3 years in a row)
+          widget: string
+          required: false
+        summary: '{{fields.name}}'
+      summary: '{{fields.label}}'
     - name: offers_note
       label: Offers note
       widget: text
@@ -1735,6 +1779,10 @@ collections:
     - name: meta_description
       label: Default search description
       widget: text
+    - name: keywords
+      label: Search keywords (comma separated)
+      widget: text
+      required: false
     - name: founded
       label: Year founded
       widget: string
@@ -2422,16 +2470,44 @@ collections:
     - name: footnote
       label: Footnote
       widget: text
-    - name: offers_title
-      label: Offers heading
+    - name: offers_eyebrow
+      label: 'Admissions wall: small label'
       widget: string
-    - name: offers
-      label: Universities admitted to
+      required: false
+    - name: offers_title
+      label: 'Admissions wall: heading'
+      widget: string
+    - name: offers_intro
+      label: 'Admissions wall: intro'
+      widget: text
+      required: false
+    - name: offer_tiers
+      label: 'Admissions wall: groups of universities'
       widget: list
-      field:
-        name: item
-        label: Item
+      collapsed: true
+      fields:
+      - name: label
+        label: Group name (e.g. Ivy League)
         widget: string
+      - name: schools
+        label: Universities
+        widget: list
+        collapsed: true
+        fields:
+        - name: name
+          label: University name
+          widget: string
+        - name: logo
+          label: Crest / logo (PNG/SVG)
+          widget: image
+          choose_url: true
+          required: false
+        - name: note
+          label: Badge (optional, e.g. Admitted 3 years in a row)
+          widget: string
+          required: false
+        summary: '{{fields.name}}'
+      summary: '{{fields.label}}'
     - name: offers_note
       label: Offers note
       widget: text

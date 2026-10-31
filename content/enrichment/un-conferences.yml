@@ -1,0 +1,32 @@
+order: 1
+title: United Nations Conference Program
+short_title: UN Conferences
+seo_title: "UN Conference Program for High School Students | WinPlus"
+meta_description: "High school students attend United Nations conferences such as UNPFII and COSP with WinPlus: preparation, policy research, delegation experience and reflection."
+summary: Real seats at United Nations conferences and international forums, not a Model UN camp. Students research a global issue, speak or present, and build a global network. WinPlus students have taken part in 15 UN conferences.
+image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
+image_alt: United Nations headquarters beside the East River in New York
+facts:
+  - { label: "Location", value: "United Nations Headquarters, New York" }
+  - { label: "Timing", value: "[Month(s), YEAR]" }
+  - { label: "Duration", value: "[X] days in person + preparation sessions" }
+  - { label: "Grade level", value: "Grades 9–12" }
+overview: "Students research a global issue, prepare position statements and attend sessions at the United Nations as part of a WinPlus delegation. Past programs have included the UN Permanent Forum on Indigenous Issues (UNPFII) and the Conference of States Parties to the Convention on the Rights of Persons with Disabilities (COSP19)."
+activities:
+  - Pre-conference training on the UN system and the topic
+  - Policy research and position writing
+  - Attending UN sessions and side events
+  - Networking with delegates, NGOs and experts
+  - Reflection, presentation and follow-up project
+deliverables:
+  - Speaking experience at an international conference
+  - A network of global leaders
+  - Policy brief or reflection paper
+  - Certificate of participation
+  - Material for essays and interviews
+highlight: "In June 2026, a 17-year-old WinPlus student was the only high-school speaker at the 19th Conference of States Parties to the CRPD (COSP19) at UN Headquarters in New York, after UN issue training and guidance from our team."
+faq:
+  - q: Do students speak at the UN?
+    a: "Opportunities vary by meeting. [Describe the speaking or side-event opportunities your students have had.]"
+  - q: Is travel included?
+    a: "[Describe what is included: travel, accommodation, chaperones, etc.]"

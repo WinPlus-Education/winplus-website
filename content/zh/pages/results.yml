@@ -1,0 +1,98 @@
+seo_title: "录取成果 | 藤校、牛剑及世界名校录取 | WinPlus 欧歌学院"
+meta_description: "WinPlus 学员录取成果：累计培养 100+ 名学生，87 例 Top-30 / 藤校录取，录取院校包括哈佛、耶鲁、普林斯顿、MIT、牛津、剑桥等，以及学员故事与家长评价。"
+eyebrow: 录取成果
+title: 用成果说话
+intro: WinPlus 学员在世界顶尖大学的录取率持续高于整体水平。这里是他们的数据、故事与心声。
+image: https://images.unsplash.com/photo-1541339907198-e08756dedf3f
+image_alt: 毕业生将学位帽抛向空中
+
+stats:
+  - { number: "100+", label: "累计培养学生" }
+  - { number: "87", label: "例 Top-30 / 藤校录取" }
+  - { number: "15", label: "次联合国会议参会" }
+  - { number: "6", label: "个国家的合作伙伴" }
+stats_note: "数据截至 2026 年 7 月。"
+
+chart_title: "录取率对比：WinPlus 学员 vs. 整体申请者"
+schools:
+  - { name: 哈佛大学, general_rate: "", winplus_rate: "" }
+  - { name: 斯坦福大学, general_rate: "", winplus_rate: "" }
+  - { name: 麻省理工学院, general_rate: "", winplus_rate: "" }
+  - { name: 普林斯顿大学, general_rate: "", winplus_rate: "" }
+  - { name: 耶鲁大学, general_rate: "", winplus_rate: "" }
+  - { name: 哥伦比亚大学, general_rate: "", winplus_rate: "" }
+  - { name: 宾夕法尼亚大学, general_rate: "", winplus_rate: "" }
+  - { name: 加州理工学院, general_rate: "", winplus_rate: "" }
+  - { name: 杜克大学, general_rate: "", winplus_rate: "" }
+  - { name: 约翰斯·霍普金斯大学, general_rate: "", winplus_rate: "" }
+  - { name: 西北大学, general_rate: "", winplus_rate: "" }
+  - { name: 芝加哥大学, general_rate: "", winplus_rate: "" }
+  - { name: 康奈尔大学, general_rate: "", winplus_rate: "" }
+  - { name: 加州大学伯克利分校, general_rate: "", winplus_rate: "" }
+  - { name: 加州大学洛杉矶分校, general_rate: "", winplus_rate: "" }
+  - { name: 达特茅斯学院, general_rate: "", winplus_rate: "" }
+  - { name: 莱斯大学, general_rate: "", winplus_rate: "" }
+  - { name: 卡内基梅隆大学, general_rate: "", winplus_rate: "" }
+  - { name: 牛津大学, general_rate: "", winplus_rate: "" }
+  - { name: 剑桥大学, general_rate: "", winplus_rate: "" }
+  - { name: 帝国理工学院, general_rate: "", winplus_rate: "" }
+  - { name: 伦敦政治经济学院, general_rate: "", winplus_rate: "" }
+footnote: "* 基于 WinPlus 辅导学员，[年份] 届。整体录取率来自各校公开数据。[请补充统计方法。]"
+
+offers_title: 学员录取院校
+offers: [哈佛大学, 耶鲁大学, 普林斯顿大学, 哥伦比亚大学, 宾夕法尼亚大学, 布朗大学, 麻省理工学院, 杜克大学, 加州大学伯克利分校, 加州大学洛杉矶分校, 佐治亚理工学院, 牛津大学, 剑桥大学, 帝国理工学院, 伦敦大学学院, 伦敦政治经济学院]
+offers_note: "以上为部分展示。录取覆盖常春藤盟校、美国 Top30、英国 G5 及更多世界顶尖高校，其中耶鲁大学已连续三年斩获录取。"
+
+highlights_title: 学员故事
+highlights:
+  - title: "国际舞台：联合国会议唯一高中生发言代表"
+    tag: 国际舞台
+    text: "背景：17 岁高中在读学员。我们做了什么：联合国议题培训与全程辅导。结果：2026 年 6 月，在纽约联合国总部《残疾人权利公约》第十九届缔约国大会（COSP19）上，成为唯一的高中生发言代表。"
+    image: /images/uploads/students/un-cosp19-speaker.jpg
+    image_alt: WinPlus 学员在联合国会议上发言
+    link: enrichment/un-conferences.html
+  - title: "藤校逆袭：从中游成绩到哈佛、耶鲁"
+    tag: 藤校逆袭
+    text: "背景：成绩中游、目标顶尖名校。我们做了什么：基于「八大要素」体系的冲藤规划。结果：录取哈佛 / 耶鲁，含奖学金。"
+    image: /images/uploads/students/ivy-admit-story.jpg
+    image_alt: WinPlus 学员展示研究成果
+    link: admissions/us-college.html
+  - title: "低基础翻盘：从零标化到加州大学奖学金"
+    tag: 低基础翻盘
+    text: "背景：无托福 / SAT 起步。我们做了什么：标化、科研与文书系统提升。结果：录取加州大学系统并获奖学金。"
+    image: /images/uploads/students/uc-scholarship-story.jpg
+    image_alt: WinPlus 学员参观大学
+    link: research.html
+
+stories_title: 学员心声
+stories:
+  - initials: A.L.
+    admitted_to: 斯坦福大学
+    program: NASA 深空科研项目
+    quote: "科研经历彻底改变了我在申请中介绍自己的方式。[示例引言]"
+  - initials: M.W.
+    admitted_to: 牛津大学
+    program: 英国升学规划
+    quote: "我的 WinPlus 顾问非常清楚牛津在寻找什么样的学生。[示例引言]"
+  - initials: J.C.
+    admitted_to: 哥伦比亚大学
+    program: 彭博金融科技项目 + 美国升学规划
+    quote: "我有真实的项目、导师推荐信和属于自己的故事，这让一切都不一样了。[示例引言]"
+
+testimonials_title: 家长与校友评价
+testimonials:
+  - quote: "[家长评价占位——例如孩子的变化，以及家庭与 WinPlus 合作的体验。]"
+    name: "[20XX 届学生家长]"
+    role: 家长
+  - quote: "[校友评价占位——例如项目如何帮助其在大学中发展。]"
+    name: "[姓名]，[大学]，[年份] 届"
+    role: 校友
+  - quote: "[家长评价占位。]"
+    name: "[家长姓名]"
+    role: 家长
+  - quote: "[校友评价占位。]"
+    name: "[姓名]，[大学]"
+    role: 校友
+
+cta: 开启你的成长之旅
+cta_link: contact.html

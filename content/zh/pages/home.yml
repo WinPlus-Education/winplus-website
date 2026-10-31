@@ -1,0 +1,138 @@
+seo_title: "WinPlus 欧歌学院 | 美国本科申请、藤校规划、科研项目与国际背景提升"
+meta_description: "WinPlus 欧歌学院为初高中生提供美加英澳升学规划、NASA、Meta、MIT 导师指导的科研与实习项目，以及联合国会议、全球胜任力夏校等国际背景提升项目。累计培养 100+ 名学生，87 例 Top-30 / 藤校录取。"
+
+hero:
+  eyebrow: 全周期人才培养平台
+  title_line1: 打造脱颖而出的背景，
+  title_line2: 成就面向未来的人生。
+  subtitle: WinPlus 欧歌学院陪伴学生从 9 年级走向世界顶尖大学：专业的升学规划，NASA、Meta、MIT 导师指导的真实科研，以及联合国会议等国际舞台。一位专属顾问、一套完整规划，全程陪伴。
+  image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
+  image_alt: 学生们走过大学校园
+  primary_cta: 预约免费规划咨询
+  primary_link: contact.html
+  secondary_cta: 了解我们的项目
+  secondary_link: research.html
+  proof: "累计培养 100+ 名学生 · 87 例 Top-30 / 藤校录取"
+
+results:
+  eyebrow: 录取成果
+  title: 用成果说话
+  text: WinPlus 学员斩获常春藤盟校、美国 Top-30 及英国 G5 名校录取，录取率远高于申请者平均水平。
+  photos:
+    - { image: /images/uploads/students/un-cosp19-speaker.jpg, alt: "WinPlus 学员在联合国总部《残疾人权利公约》第十九届缔约国大会上发言", caption: "联合国 COSP19 唯一高中生发言代表，2026" }
+    - { image: /images/uploads/students/ivy-admit-story.jpg, alt: "WinPlus 学员展示研究成果", caption: "录取哈佛 / 耶鲁，含奖学金" }
+    - { image: /images/uploads/students/uc-scholarship-story.jpg, alt: "WinPlus 学员参观大学", caption: "从零托福 / SAT 到加州大学奖学金" }
+  key_stats:
+    - { number: "87", label: "例 Top-30 / 藤校录取", note: "数据截至 2026 年 7 月" }
+    - { number: "[X]", label: "[第二项核心数据——待定]", note: "[例如：平均奖学金金额，或耶鲁连续三年录取]" }
+  chart_title: 各校录取人数
+  chart_note: "WinPlus 学员获得的录取数量。请在后台编辑器中填写具体数字。"
+  chart:
+    - { name: 哈佛大学, value: "" }
+    - { name: 耶鲁大学, value: "" }
+    - { name: 普林斯顿大学, value: "" }
+    - { name: 哥伦比亚大学, value: "" }
+    - { name: 宾夕法尼亚大学, value: "" }
+    - { name: 布朗大学, value: "" }
+    - { name: 麻省理工学院, value: "" }
+    - { name: 杜克大学, value: "" }
+    - { name: 加州大学伯克利分校, value: "" }
+    - { name: 加州大学洛杉矶分校, value: "" }
+    - { name: 佐治亚理工学院, value: "" }
+    - { name: 牛津大学, value: "" }
+    - { name: 剑桥大学, value: "" }
+    - { name: 帝国理工学院, value: "" }
+    - { name: 伦敦大学学院, value: "" }
+    - { name: 伦敦政治经济学院, value: "" }
+  offers_label: "近期录取院校"
+  offer_groups:
+    - { label: 常春藤盟校, schools: [哈佛大学, 耶鲁大学, 普林斯顿大学, 哥伦比亚大学, 宾夕法尼亚大学, 布朗大学] }
+    - { label: 美国 Top 30, schools: [麻省理工学院, 杜克大学, 加州大学伯克利分校, 加州大学洛杉矶分校, 佐治亚理工学院] }
+    - { label: 英国 G5, schools: [牛津大学, 剑桥大学, 帝国理工学院, 伦敦大学学院, 伦敦政治经济学院] }
+  footnote: "以上为部分展示。数据截至 2026 年 7 月。"
+  link_text: 查看全部成果
+  link: results.html
+
+mission:
+  eyebrow: 关于我们
+  title: 我们的使命
+  paragraphs:
+    - "WinPlus Education & Technology Inc. 是一家教育社会企业，致力于为全球弱势群体及历史上处于不利地位的学生提供可负担、可获得的高质量教育。"
+    - "秉承哈佛大学追求真理的校训与对教育公平的深切信念，WinPlus 致力于传递真理、追求卓越、提供平等机会。依托超过 5,000 小时的在线课程、创新的教育科技与个性化学习体验，我们以革新性的教育服务践行这一使命。"
+  image: /images/uploads/campus.jpg
+  image_alt: 绿树环绕的大学红砖图书馆
+
+offer:
+  eyebrow: 我们的服务
+  title: 三大服务，助力学生成长
+  intro: 很多家庭需要分别寻找升学顾问、科研项目和夏令营。WinPlus 将三者整合在一起，由一位专属顾问统筹规划。
+  segments:
+    - title: 升学规划
+      text: 美国、英国、加拿大、澳大利亚本科及研究生申请，以及美国高中申请。从选校定位到文书与面试，全程指导。
+      points: ["美国及英加澳本科申请", "研究生申请（美国及英加澳）", "美国寄宿高中及私立高中申请"]
+      image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
+      image_alt: 学生走过历史悠久的大学建筑
+      link: admissions.html
+      link_text: 了解升学规划
+    - title: 科研与实习
+      text: 由工程师、科学家和行业领袖指导的真实项目。学生最终获得作品集、导师推荐信，以及值得讲述的成长故事。
+      points: ["人工智能、编程与科技", "金融与商业", "科学、航天与艺术"]
+      image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
+      image_alt: 研究人员在实验室使用显微镜
+      link: research.html
+      link_text: 了解科研项目
+    - title: 国际背景提升
+      text: 联合国会议、全球胜任力夏校与冬校、名校参访，培养顶尖大学看重的全球视野与领导力。
+      points: ["联合国会议代表团", "夏校与冬校", "名校参访与领导力项目"]
+      image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
+      image_alt: 纽约东河畔的联合国总部
+      link: enrichment.html
+      link_text: 了解国际背景提升
+
+why:
+  eyebrow: 为什么选择 WinPlus
+  title: WinPlus 的核心优势
+  points:
+    - title: 全球资源网络
+      text: 链接哈佛、MIT、NASA、Meta 等全球顶尖高校、机构与企业资源，打造覆盖学术、科研与产业的导师网络及实践平台。
+    - title: 世界舞台
+      text: 依托联合国会议、国际青年论坛及全球交流平台，帮助学生培养领导力、跨文化沟通能力与国际影响力。
+    - title: 实战方法论
+      text: 多年实践沉淀形成可复制的「申请八大要素」成长体系，以系统化培养代替随机尝试，让成长成果更具确定性。
+    - title: 全周期陪伴
+      text: 中美双文化导师团队，全程陪伴学生从兴趣探索、背景提升、升学申请到职业发展，提供长期成长支持。
+
+events:
+  eyebrow: 近期活动
+  title: 欢迎参加我们的活动
+  text: 面向学生与家长的讲座、说明会、工作坊及项目发布。名额有限，请尽早报名。
+  link_text: 查看全部活动
+  link: events.html
+
+testimonials:
+  eyebrow: 学员心声
+  title: 听听学生和家长怎么说
+  link_text: 阅读更多学员故事
+  link: results.html
+
+faq:
+  title: 常见问题
+  items:
+    - q: WinPlus 欧歌学院提供哪些服务？
+      a: WinPlus 是面向初高中生的全周期人才培养平台，提供升学规划、导师指导的科研与实习项目，以及联合国会议等国际背景提升项目，并由一位专属顾问统筹协调。
+    - q: 你们可以帮助申请哪些国家的大学？
+      a: 我们提供美国、英国、加拿大、澳大利亚的本科申请，美国及英加澳的研究生申请，以及美国寄宿高中与私立高中申请指导。
+    - q: 学生应该什么时候开始规划？
+      a: 建议在 9 年级或 10 年级开始，这样有充足时间积累科研经历、打造完整背景。我们也为 11、12 年级学生提供针对性的申请支持。
+    - q: 科研项目的导师是谁？
+      a: 我们的导师是来自 NASA、Meta、MIT、加州理工、苹果、微软、彭博等机构的在职专业人士与研究人员。每个项目页面都会介绍导师背景。
+    - q: 科研项目是线上进行吗？
+      a: 大多数科研与实习项目以线上小班形式进行，为期 6–8 周，学生可在任何地方参加。联合国会议、夏校等国际项目则为线下进行。
+    - q: 如何开始？
+      a: 预约一次免费规划咨询。我们会了解学生的目标与现有背景，并给出初步建议，无需任何承诺。
+
+cta:
+  title: 准备好规划通往名校之路了吗？
+  text: 从一次免费、无承诺的规划咨询开始，与 WinPlus 顾问面对面交流。
+  button: 预约免费规划咨询
+  link: contact.html

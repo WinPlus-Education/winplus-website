@@ -1,0 +1,99 @@
+seo_title: "Our Results | Ivy League, Oxbridge & Top University Admissions | WinPlus"
+meta_description: "WinPlus student results: admission rates to Harvard, Stanford, MIT, Oxford, Cambridge and other top universities, student success stories, UN highlights and testimonials from students and parents."
+eyebrow: Our Results
+title: Results that speak for themselves
+intro: WinPlus-advised students consistently outperform overall admission rates at the world's most selective universities. Here are their numbers, their stories and their words.
+image: https://images.unsplash.com/photo-1541339907198-e08756dedf3f
+image_alt: Graduates throwing their caps in the air
+
+stats:
+  - { number: "100+", label: "Students guided" }
+  - { number: "87", label: "Top-30 & Ivy League offers" }
+  - { number: "15", label: "United Nations conference participations" }
+  - { number: "6", label: "Countries with partners" }
+stats_note: "Data as of July 2026."
+
+chart_title: "Acceptance rate: WinPlus students vs. general applicant pool"
+# Enter rates as numbers (e.g. 3.6). Leave blank to show a [X%] placeholder.
+schools:
+  - { name: Harvard, general_rate: "", winplus_rate: "" }
+  - { name: Stanford, general_rate: "", winplus_rate: "" }
+  - { name: MIT, general_rate: "", winplus_rate: "" }
+  - { name: Princeton, general_rate: "", winplus_rate: "" }
+  - { name: Yale, general_rate: "", winplus_rate: "" }
+  - { name: Columbia, general_rate: "", winplus_rate: "" }
+  - { name: UPenn, general_rate: "", winplus_rate: "" }
+  - { name: Caltech, general_rate: "", winplus_rate: "" }
+  - { name: Duke, general_rate: "", winplus_rate: "" }
+  - { name: Johns Hopkins, general_rate: "", winplus_rate: "" }
+  - { name: Northwestern, general_rate: "", winplus_rate: "" }
+  - { name: UChicago, general_rate: "", winplus_rate: "" }
+  - { name: Cornell, general_rate: "", winplus_rate: "" }
+  - { name: UC Berkeley, general_rate: "", winplus_rate: "" }
+  - { name: UCLA, general_rate: "", winplus_rate: "" }
+  - { name: Dartmouth, general_rate: "", winplus_rate: "" }
+  - { name: Rice, general_rate: "", winplus_rate: "" }
+  - { name: Carnegie Mellon, general_rate: "", winplus_rate: "" }
+  - { name: Oxford, general_rate: "", winplus_rate: "" }
+  - { name: Cambridge, general_rate: "", winplus_rate: "" }
+  - { name: Imperial, general_rate: "", winplus_rate: "" }
+  - { name: LSE, general_rate: "", winplus_rate: "" }
+footnote: "* Based on WinPlus-counseled students, Class of [YEAR]. General admit rates from each university's published data. [Add methodology.]"
+
+offers_title: Universities our students have been admitted to
+offers: [Harvard, Yale, Princeton, Columbia, UPenn, Brown, MIT, Duke, UC Berkeley, UCLA, Georgia Tech, Oxford, Cambridge, Imperial College London, UCL, LSE]
+offers_note: "Selected list. Our students' offers span the Ivy League, US Top-30 and UK G5 universities, including Yale admissions three years in a row."
+
+highlights_title: Student stories
+highlights:
+  - title: "The only high-school speaker at a UN conference"
+    tag: Global Stage
+    text: "Background: a 17-year-old high school student. What we did: UN issue training and guidance at every step. Result: the only high-school student speaker at the 19th Conference of States Parties to the CRPD (COSP19), UN Headquarters, New York, June 2026."
+    image: /images/uploads/students/un-cosp19-speaker.jpg
+    image_alt: A WinPlus student speaking at a United Nations conference
+    link: enrichment/un-conferences.html
+  - title: "From mid-range grades to Harvard and Yale"
+    tag: Ivy League
+    text: "Background: average grades with top-university goals. What we did: an Ivy League plan built on our Eight Key Elements framework. Result: admitted to Harvard and Yale, with scholarship."
+    image: /images/uploads/students/ivy-admit-story.jpg
+    image_alt: A WinPlus student presenting her work
+    link: admissions/us-college.html
+  - title: "From no SAT or TOEFL to a UC scholarship"
+    tag: Turnaround
+    text: "Background: started without TOEFL or SAT scores. What we did: a structured plan across testing, research and essays. Result: admitted to the University of California system with a scholarship."
+    image: /images/uploads/students/uc-scholarship-story.jpg
+    image_alt: A WinPlus student on a university visit
+    link: research.html
+
+stories_title: In their words
+stories:
+  - initials: A.L.
+    admitted_to: Stanford
+    program: NASA Deep Space Research Program
+    quote: "The research experience completely changed how I talked about myself in my application. [PLACEHOLDER QUOTE]"
+  - initials: M.W.
+    admitted_to: Oxford
+    program: UK Admissions Counseling
+    quote: "My WinPlus consultant knew exactly what Oxford was looking for. [PLACEHOLDER QUOTE]"
+  - initials: J.C.
+    admitted_to: Columbia
+    program: Bloomberg FinTech Program + US Admissions
+    quote: "I had a real project, a mentor letter, and a story. That made all the difference. [PLACEHOLDER QUOTE]"
+
+testimonials_title: What families say
+testimonials:
+  - quote: "[Parent testimonial placeholder — e.g., what changed for their child and the family's experience working with WinPlus.]"
+    name: "[Parent of a Class of 20XX student]"
+    role: Parent
+  - quote: "[Alumni testimonial placeholder — e.g., how the program helped at university.]"
+    name: "[Name], [University], Class of [Year]"
+    role: Alumni
+  - quote: "[Parent testimonial placeholder.]"
+    name: "[Parent name]"
+    role: Parent
+  - quote: "[Alumni testimonial placeholder.]"
+    name: "[Name], [University]"
+    role: Alumni
+
+cta: Start Your Journey
+cta_link: contact.html

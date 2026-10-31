@@ -1,0 +1,23 @@
+seo_title: "服务流程 | 与 WinPlus 一起成长 | WinPlus 欧歌学院"
+meta_description: "WinPlus 服务流程：免费规划咨询、背景评估、定制规划路线图、科研与规划同步推进，以及申请到录取的全程支持。"
+eyebrow: 服务流程
+title: 与 WinPlus 一起成长
+intro: 一位顾问，一个平台，全程陪伴。
+steps:
+  - title: 免费规划咨询
+    text: 了解你的目标、优势与目标院校，无需任何承诺。
+  - title: 定制背景评估
+    text: WinPlus 顾问梳理你的背景，找出最有价值的提升项目。
+  - title: 量身定制的成长路线图
+    text: 一份个性化的多年规划：参加哪些项目、何时申请、如何构建个人叙事。
+  - title: 项目与规划同步推进
+    text: 在完成科研与实习项目的同时，顾问同步制定申请策略。
+  - title: 申请、录取及未来
+    text: 从文书、选校到面试全程支持，顾问陪伴你直到录取及以后。
+testimonial:
+  quote: "[学员引言占位——请替换为真实评价]"
+  name: "[姓名]，[年份] 届"
+primary_cta: 预约免费规划咨询
+primary_link: contact.html
+secondary_cta: 了解我们的项目
+secondary_link: research.html

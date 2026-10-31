@@ -1,0 +1,103 @@
+seo_title: "机构合作 | 升学规划、科研与夏校合作方案 | WinPlus 欧歌学院"
+meta_description: "WinPlus 欧歌学院机构合作方案：推荐合作、联合品牌与白标三种模式，为学校与教育机构提供升学规划、科研实习、联合国会议与全球胜任力夏校，合作伙伴零运营负担。"
+eyebrow: 机构合作
+title: 世界级导师 · 顶级国际舞台，由 WinPlus 为您的学生交付。
+intro: WinPlus 与学校及教育机构合作，提供从夏校、科研到升学申请的全周期人才培养服务，可使用您的品牌或我们的品牌。交付由我们完成，您获得新增收入与差异化优势，零运营负担。
+image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
+image_alt: 课堂上举手的学生
+
+challenges_title: 为什么是现在
+challenges:
+  - letter: "1"
+    title: 结果落差
+    text: 家长追求顶尖名校结果，而学校与机构难以在内部配齐相应的资源与师资。
+  - letter: "2"
+    title: 人才标准之变
+    text: AI 正在重写「优秀」的定义——科研能力、动手创造、全球视野，成为新的竞争力。
+  - letter: "3"
+    title: 资源即壁垒
+    text: 真正稀缺的不再是信息，而是触达顶尖的人与舞台的能力。WinPlus 专为弥合这一落差而生。
+
+benefits_title: 为什么与我们合作
+benefits:
+  - { title: "新增收入，零运营负担", text: "交付由我们完成，您无需自建团队。" }
+  - { title: "即刻差异化", text: "一项竞争对手难以复制的服务，立即成为您的优势。" }
+  - { title: "提升招生与留存", text: "顶尖成果，正是家长愿意付费、愿意长期留下的理由。" }
+  - { title: "品牌赋能", text: "让哈佛、NASA 级别的资源，呈现在您的品牌之下。" }
+
+models_title: 合作模式
+models:
+  - title: 推荐合作（Referral）
+    text: 您引荐，我们交付，您获得引荐分成。最简单，零负担。
+  - title: 联合品牌（Reseller / Co-brand）
+    text: 共同交付，共享市场推广，利润分成。
+  - title: 白标 / 批发（White-label）
+    text: 您作为品牌门面，掌握家庭关系；WinPlus 在后端提供升学、科研与专属资源。
+roles_title: 责任分工
+roles:
+  partner: [学生关系, 招生, 本地信任]
+  winplus: [导师与课程, 升学交付, 国际资源, 质量管控]
+models_note: "每一项合作均配备正式合同、学生保护机制与质量标准。"
+
+services_title: 可合作的服务
+services_intro: 五大核心服务，覆盖探索、实践、申请与长期成长路径。
+services_table:
+  - service: 全球胜任力夏校
+    ages: 12–18 岁
+    outcomes: 全球议题训练 · 结业证明 · 与招生官面对面
+    edge: 名校与行业背景导师参与，项目化课程设计
+    models: 推荐 · 联合品牌
+  - service: 科研与硅谷实习
+    ages: 10–12 年级及以上
+    outcomes: 科研论文 · 导师推荐信
+    edge: 真实课题 + 在职科学家导师深度参与 + 过程管理
+    models: 联合品牌 · 白标
+  - service: 美加英澳升学规划
+    ages: 本硕博申请者
+    outcomes: 定制策略 · 50+ 文书精修机会
+    edge: 藤校招生官 + 八大要素体系
+    models: 白标 · 联合品牌
+  - service: 国际平台与背景提升
+    ages: 初高中生
+    outcomes: 国际会议 / 论坛参与 · 议题研究 · 发言 / 展示机会
+    edge: 真实平台资源对接 + 议题培训 + 全程辅导
+    models: 联合品牌 · 白标
+  - service: 文书 / 标化 / 作品集
+    ages: 12–18 岁
+    outcomes: 标化提分 · 成长路线图
+    edge: 中美团队串联全程叙事
+    models: 推荐 · 白标
+services_note: "每一项服务均由 WinPlus 交付并质量管控。具体交付内容因项目类型、学生基础与申请周期而异，最终以合作协议及项目说明为准。"
+
+track_title: "成果与公信力"
+track:
+  - { number: "100+", label: "名学生" }
+  - { number: "87", label: "例 Top-30 / 藤校录取" }
+  - { number: "6", label: "个合作国家" }
+  - { number: "40+", label: "位团队成员" }
+track_note: "数据截至 2026 年 7 月。"
+
+steps_title: 如何开启合作
+steps:
+  - { title: "初步沟通", text: "了解您的学生、目标与现有资源。" }
+  - { title: "选择模式", text: "推荐、联合品牌或白标，签订正式协议。" }
+  - { title: "试点合作", text: "从一次低门槛的推荐合作试点开始——投入小，见效真。" }
+  - { title: "扩大规模", text: "根据成果逐步扩展至更多服务与学生。" }
+
+ideal_partners: "理想合作伙伴：中国、美国、新加坡等地希望提供高端升学成果与差异化项目的私立学校及教育机构。"
+
+contact_title: 洽谈合作
+contact_name: 郭琪 Cathy Guo
+contact_role: 联合创始人兼执行总裁
+contact_email: cathy.guo@winplus.org
+
+trusted_label: "合作伙伴："
+school_logos:
+  - { name: "[合作伙伴标识]", logo: "" }
+  - { name: "[合作伙伴标识]", logo: "" }
+  - { name: "[合作伙伴标识]", logo: "" }
+  - { name: "[合作伙伴标识]", logo: "" }
+primary_cta: 洽谈合作
+primary_link: contact.html
+secondary_cta: 下载合作方案（PDF）
+secondary_file: ""

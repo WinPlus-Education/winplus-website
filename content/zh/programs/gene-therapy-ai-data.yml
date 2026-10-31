@@ -1,0 +1,45 @@
+order: 7
+title: 基因治疗 AI 数据分析
+category: science-space
+org: Caltech
+format: 科研项目
+seo_title: 基因治疗 AI 数据分析 | 高中生科研与实习项目 | WinPlus 欧歌学院
+meta_description: 运用 AI 与数据分析研究基因治疗领域的生物医学问题，由加州理工博士后研究员指导。
+summary: 运用 AI 与数据分析研究基因治疗领域的生物医学问题，由加州理工博士后研究员指导。
+image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+image_alt: 研究人员使用显微镜的剪影
+facts:
+- label: 形式
+  value: 科研项目
+- label: 时长
+  value: 6–8 周
+- label: 上课时间
+  value: '[时间，时区]'
+- label: 小组人数
+  value: '[X] 人'
+- label: 适合年级
+  value: 9–12 年级
+- label: 下期开课
+  value: '[年 月]'
+overview: 基因治疗研究会产生大量复杂数据。学生将学习基因治疗背后的科学原理，并使用计算工具分析真实或公开的研究数据。
+activities:
+- 遗传学与基因治疗基础
+- 阅读和理解科研论文
+- 使用 Python 分析生物数据
+- 提出并验证研究问题
+- 撰写科研论文并汇报成果
+mentor: 加州理工学院基因治疗实验室博士后研究员
+mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
+mentor_photo: ''
+deliverables:
+- 可投稿学生期刊或科学竞赛的科研论文
+- 导师亲笔推荐信（符合条件的学生）
+- 实习科研证书
+- 结业成果展示
+prerequisites: 对生物学有浓厚兴趣；建议修过高中生物。
+faq:
+- q: 这个项目是线上进行吗？
+  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
+- q: 如何申请？
+  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
+internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'

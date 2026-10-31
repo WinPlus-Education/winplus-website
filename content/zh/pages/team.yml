@@ -1,0 +1,88 @@
+seo_title: "我们的团队 | 升学顾问、导师与创始人 | WinPlus 欧歌学院"
+meta_description: "认识 WinPlus 欧歌学院团队：创始人郭琪、盘超，升学顾问，以及来自哈佛、MIT、NASA、Meta、联合国、哥伦比亚大学等机构的导师。"
+eyebrow: 我们的团队
+title: 每一位 WinPlus 学员背后的团队
+intro: WinPlus 是全周期人才培养平台，陪伴学生从 9 年级走向世界名校录取，并为未来做好准备。认识让这一切成为可能的团队。
+image: https://images.unsplash.com/photo-1758873269811-4e62e346b4b7
+image_alt: 团队围坐在桌边协作
+
+what_title: 我们做什么
+what:
+  - { title: "升学规划", text: "美国、英国、加拿大、澳大利亚本科及研究生申请，以及美国高中申请。", link: admissions.html }
+  - { title: "科研与实习", text: "人工智能、金融、科学与艺术领域的导师制科研与实习项目。", link: research.html }
+  - { title: "国际背景提升", text: "联合国会议、全球胜任力夏校与冬校，以及领导力项目。", link: enrichment.html }
+
+compare_title: 一站式平台 vs. 分散的多家机构
+without:
+  label: 没有一体化平台
+  heading: 每项需求都要找一家机构。
+  center: 学生与家长
+  vendors: [升学顾问, 科研项目, 实习机构, 标化培训, 文书老师]
+  note: 向每一家重复讲述你的故事，五份规划却互不衔接。
+with:
+  label: 选择 WinPlus
+  heading: 一位人才顾问统筹全程。
+  center: 你的专属人才顾问
+  stages: ["9–10 年级 · 背景打造", "10–11 年级 · 科研与能力", "11 年级 · 申请策略", "12 年级 · 申请执行", "录取及未来"]
+benefits:
+  - { title: "连贯一致", text: "从 9 年级到录取，始终是同一段关系。" }
+  - { title: "一位专属顾问", text: "一位顾问负责孩子的完整成长路径。" }
+  - { title: "真正的个性化规划", text: "一套围绕学生本人打造的完整策略。" }
+  - { title: "更高性价比", text: "避免多家机构的重复收费。" }
+
+leaders_title: 创始人
+leaders:
+  - name: 郭琪 Cathy Guo
+    role: 联合创始人兼执行总裁
+    photo: /images/uploads/team/cathy-guo.jpg
+    bio: "哈佛大学肯尼迪学院公共政策硕士；曾任职联合国妇女署、牛津经济研究院；罗格斯大学 Douglass 女子学院董事。"
+    linkedin: ""
+  - name: 盘超 Cedric Pan
+    role: 联合创始人
+    photo: /images/uploads/team/cedric-pan.jpg
+    bio: "北京大学；哈佛大学公共政策硕士 + 教育学硕士；MIT 航空航天创业项目导师；曾任硅谷与波士顿教育科技公司高管。"
+    linkedin: ""
+
+consultants_title: 顾问与教练
+consultants_intro: 从规划到录取，与家庭日常沟通的伙伴。
+consultants:
+  - { name: "[顾问姓名]", role: "资深升学顾问", photo: "", bio: "[教育背景、擅长方向（如美国 / 英国）、从业年限。]" }
+  - { name: "[顾问姓名]", role: "升学顾问", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
+  - { name: "[教练姓名]", role: "文书与面试教练", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
+
+featured_title: 部分导师
+featured_intro: 部分指导 WinPlus 学员的教授与业界专家，并非全部合作资源。
+featured:
+  - { name: Professor Steve, photo: /images/uploads/team/steve.jpg, background: "哈佛大学 · 美国国会预算办公室", field: "国际关系、政府与公共政策" }
+  - { name: Professor Jeff, photo: /images/uploads/team/jeff.jpg, background: "MIT · 美国国家航空航天局", field: "航空航天与工程" }
+  - { name: Professor Nico, photo: /images/uploads/team/nico.jpg, background: "哈佛大学 · 费哲金融", field: "金融与数据科学" }
+  - { name: Professor Rachel, photo: /images/uploads/team/rachel.jpg, background: "MIT · 斯坦福大学", field: "电气工程与机械工程" }
+  - { name: Professor Oliner, photo: /images/uploads/team/oliner.jpg, background: "斯宾塞私立高中 · 哥伦比亚大学", field: "运动与体育管理" }
+  - { name: Professor Mike, photo: /images/uploads/team/mike.jpg, background: "凤凰影业 CEO", field: "影视制作" }
+  - { name: Professor Tarik, photo: /images/uploads/team/tarik.jpg, background: "联合国总部 · 哥伦比亚大学", field: "联合国维和行动、国际组织与国际关系" }
+  - { name: Professor Yuan, photo: /images/uploads/team/yuan.jpg, background: "Meta · 哥伦比亚大学", field: "人工智能与计算机科学" }
+
+network_title: 导师与师资网络
+network:
+  - { title: "科研导师", text: "人工智能、航空航天、机械工程、数据科学、计算机等领域。", count: "[X]+" }
+  - { title: "产业导师", text: "金融、国际关系、公共政策、国际贸易、时尚、电影等领域。", count: "[X]+" }
+  - { title: "升学策略导师", text: "来自顶尖大学的前招生官与升学顾问。", count: "[X]+" }
+team_stat: { number: "40+", label: "位团队成员" }
+
+mentors_title: 项目导师
+mentors_intro: WinPlus 项目由来自世界顶尖机构的业界专家与研究人员授课，而非职业辅导老师。
+mentors:
+  - { role: "Llama 团队软件工程负责人", org: Meta AI, program: AI 智能体项目, photo: "", link: research/ai-agent-development.html }
+  - { role: "资深云计算工程师，10 年以上经验", org: 苹果（硅谷）, program: Claude Code AI 编程项目, photo: "", link: research/claude-code-ai-programming.html }
+  - { role: "云计算工程师，10 年以上经验", org: 亚马逊 AWS, program: 物联网 AI 设备项目, photo: "", link: research/iot-ai-devices.html }
+  - { role: "编剧艺术硕士；戛纳获奖导演", org: 西北大学, program: 编剧与导演项目, photo: "", link: research/screenwriting-directing.html }
+  - { role: "资深数据科学家，7 年以上经验", org: 微软总部, program: 金融预测项目, photo: "", link: research/financial-forecasting-python.html }
+  - { role: "工程负责人，8 年以上经验", org: 彭博, program: 金融科技 + AI 项目, photo: "", link: research/fintech-ai-startup.html }
+  - { role: 博士后研究员, org: 加州理工基因治疗实验室, program: 基因治疗科研项目, photo: "", link: research/gene-therapy-ai-data.html }
+  - { role: 研究科学家, org: NASA 艾姆斯研究中心, program: JWST 深空科研项目, photo: "", link: research/jwst-deep-space-research.html }
+  - { role: 航空航天工程师, org: NASA 戈达德 / MIT, program: 星链轨道设计项目, photo: "", link: research/starlink-orbit-design.html }
+
+join_title: 加入我们的导师网络
+join_text: 如果你是研究人员、工程师或创作者，并希望指导有志青年，欢迎与我们联系。
+join_cta: 联系我们
+join_link: contact.html

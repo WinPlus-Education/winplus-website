@@ -1,0 +1,74 @@
+seo_title: "College Admissions Counseling | US, UK, Canada, Australia & Grad School | WinPlus"
+meta_description: "Expert college admissions counseling for US, UK, Canadian and Australian universities, graduate school and US high schools. One dedicated WinPlus consultant from school selection to essays, interviews and acceptance."
+eyebrow: Admissions Counseling
+title: Expert guidance, from first step to acceptance letter
+intro: We don't just help students apply. We help them build the profile that earns acceptance, then guide every part of the application to the US, UK, Canada, Australia and beyond.
+image: https://images.unsplash.com/photo-1741699427799-3fbb70fce948
+image_alt: Students studying in a large university library
+
+services_title: Our admissions services
+services_intro: Choose the path that fits your goals. Every service is led by one dedicated consultant.
+
+diff_title: What makes WinPlus counseling different
+diff_intro: Most counseling starts in Grade 11 with essays. Ours starts with the student and builds a profile worth writing about.
+differentiators:
+  - title: The Eight Key Elements framework
+    text: A proven system, refined over years, that covers every academic and extracurricular dimension and turns scattered experiences into one convincing application story.
+  - title: Ivy League admissions officers
+    text: Former Ivy League admissions officers work alongside our mentors, so results come from a method, not from a single star consultant.
+  - title: One consultant, start to finish
+    text: The same consultant works with your family from the first session to the final decision, so nothing is lost in hand-offs.
+  - title: Counseling plus real experience
+    text: Because WinPlus also runs research, internship and enrichment programs, your consultant can build the experiences that make an application stand out, not just describe them.
+  - title: Transparent milestones
+    text: Families receive a written roadmap, regular progress updates and a clear checklist of what happens when.
+  - title: Mentor letters that carry weight
+    text: Students in our programs can earn recommendation letters from mentors at leading organizations, written by people who saw their work first-hand.
+
+process_title: How we work
+process_intro: A clear, six-stage process that starts with understanding the student and ends with a confident decision.
+process:
+  - title: Free strategy session
+    text: We meet the student and parents to understand goals, interests, academic record and target schools.
+    deliverable: Initial recommendations
+    when: Week 1
+  - title: Profile assessment
+    text: Your consultant reviews grades, testing, activities and interests, and benchmarks them against admitted students at target schools.
+    deliverable: Written profile assessment
+    when: Weeks 1–3
+  - title: Multi-year roadmap
+    text: A personalized plan covering courses, testing, research, internships, competitions and summers, with the narrative we want the application to tell.
+    deliverable: Roadmap & timeline
+    when: Month 1
+  - title: Build the profile
+    text: The student completes research, internship and enrichment programs while the consultant tracks progress and adjusts the plan each term.
+    deliverable: Term-by-term check-ins
+    when: Ongoing
+  - title: Applications
+    text: School list strategy, essay brainstorming and editing, activity lists, recommendation planning, interview coaching and application review.
+    deliverable: Complete, reviewed applications
+    when: Grade 11–12
+  - title: Decisions & beyond
+    text: We help compare offers, handle waitlists and appeals, and prepare the student for the transition to university.
+    deliverable: Decision support
+    when: Spring of Grade 12
+
+timeline_title: What happens when
+timeline:
+  - { grade: "Grade 9", focus: "Explore interests, choose rigorous courses, start a first research or skills program." }
+  - { grade: "Grade 10", focus: "Deepen one or two passions, complete a mentored research project, plan testing." }
+  - { grade: "Grade 11", focus: "Leadership and impact, standardized tests, summer programs, build the school list." }
+  - { grade: "Grade 12", focus: "Essays, applications, interviews, decisions and the transition to university." }
+
+faq:
+  - q: How much does admissions counseling cost?
+    a: "Packages depend on the student's grade, target countries and the level of support needed. [Add pricing guidance or invite families to book a free session.]"
+  - q: Can you help if my child is already in Grade 12?
+    a: Yes. We offer focused application support for seniors, covering school list strategy, essays, interviews and application review.
+  - q: Do you guarantee admission?
+    a: No ethical counselor can guarantee admission. We guarantee a thoughtful strategy, expert support and a student who presents their strongest, most authentic self.
+  - q: Do you work with students outside the US?
+    a: Yes. Many of our families are based in China, Singapore and elsewhere. We meet online and schedule around your time zone.
+
+cta: Book Your Free Strategy Session
+cta_link: contact.html

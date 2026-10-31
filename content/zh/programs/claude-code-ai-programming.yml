@@ -1,0 +1,45 @@
+order: 2
+title: Claude Code AI 编程科研
+category: ai-technology
+org: Apple + Oracle
+format: 线上科研
+seo_title: Claude Code AI 编程科研 | 高中生科研与实习项目 | WinPlus 欧歌学院
+meta_description: 研究 AI 编程助手如何改变软件开发方式，并运用这些工具开发真实应用，由资深硅谷云计算工程师指导。
+summary: 研究 AI 编程助手如何改变软件开发方式，并运用这些工具开发真实应用，由资深硅谷云计算工程师指导。
+image: https://images.unsplash.com/photo-1565687981296-535f09db714e
+image_alt: 程序员使用笔记本电脑和显示器工作
+facts:
+- label: 形式
+  value: 线上科研
+- label: 时长
+  value: 6–8 周
+- label: 上课时间
+  value: '[时间，时区]'
+- label: 小组人数
+  value: '[X] 人'
+- label: 适合年级
+  value: 9–12 年级
+- label: 下期开课
+  value: '[年 月]'
+overview: Claude Code 等 AI 编程助手正在改变软件工程。学生围绕 AI 辅助编程提出研究问题，并开发一个将研究发现付诸实践的项目。
+activities:
+- 学习专业的软件工程工作流程
+- 使用 AI 编程助手规划、编写和测试代码
+- 设计并开展关于 AI 辅助编程的小型研究
+- 开发展示研究发现的应用
+- 撰写科研论文
+mentor: 硅谷资深云计算工程师，10 年以上经验（苹果）
+mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
+mentor_photo: ''
+deliverables:
+- 科研论文及可运行的软件项目
+- 导师亲笔推荐信（符合条件的学生）
+- 实习科研证书
+- 结业成果展示
+prerequisites: 建议具备一定编程经验。
+faq:
+- q: 这个项目是线上进行吗？
+  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
+- q: 如何申请？
+  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
+internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'

@@ -1,0 +1,33 @@
+order: 5
+title: US High School Admissions
+short_title: US High School
+interest: US High School Admissions
+seo_title: "US Boarding & Private High School Admissions Counseling | SSAT & TOEFL | WinPlus"
+meta_description: "US boarding and private high school admissions counseling for international students: school selection, SSAT and TOEFL strategy, applications, essays and interview coaching."
+summary: Boarding and private school placement for international students, including school selection, SSAT/TOEFL strategy and interview coaching.
+image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
+image_alt: Students raising their hands in a classroom
+who: Students in Grades 6–10 (and their families) applying to US boarding schools and private day schools.
+included:
+  - School research and balanced school list
+  - SSAT / ISEE and TOEFL testing strategy
+  - Application essays (student and parent statements)
+  - Interview coaching and mock interviews
+  - Campus visit planning
+  - Recommendation planning
+  - Decision support and enrollment preparation
+approach:
+  - { title: "Find the right fit", text: "Academics, culture, location and support for international students." }
+  - { title: "Prepare thoroughly", text: "Testing, essays and interviews prepared well ahead of deadlines." }
+  - { title: "Support the transition", text: "Help settling in academically and socially once accepted." }
+deadlines_title: Typical timeline
+deadlines:
+  - { label: "Research & campus visits", date: "Spring to fall of the year before entry" }
+  - { label: "Testing (SSAT/ISEE, TOEFL)", date: "Fall of the application year" }
+  - { label: "Application deadline", date: "Commonly mid-January" }
+  - { label: "Decisions", date: "Commonly March 10" }
+faq:
+  - q: What grade should my child enter a US boarding school?
+    a: Grade 9 is the most common entry point, though many schools also admit students into Grade 10. We advise based on your child's readiness.
+  - q: Is the SSAT required?
+    a: Many boarding schools require or recommend the SSAT or ISEE, and international students often also need TOEFL or similar. Requirements vary by school.

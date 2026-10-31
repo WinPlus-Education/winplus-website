@@ -1,0 +1,45 @@
+order: 3
+title: 物联网与 AI 智能设备开发
+category: ai-technology
+org: Amazon AWS
+format: 线上实习
+seo_title: 物联网与 AI 智能设备开发 | 高中生科研与实习项目 | WinPlus 欧歌学院
+meta_description: 将传感器、设备与云端连接，打造由 AI 驱动的智能设备原型，由资深 AWS 云计算工程师指导。
+summary: 将传感器、设备与云端连接，打造由 AI 驱动的智能设备原型，由资深 AWS 云计算工程师指导。
+image: https://images.unsplash.com/photo-1719159381981-1327b22aff9b
+image_alt: 学生在学校机房使用电脑
+facts:
+- label: 形式
+  value: 线上实习
+- label: 时长
+  value: 6–8 周
+- label: 上课时间
+  value: '[时间，时区]'
+- label: 小组人数
+  value: '[X] 人'
+- label: 适合年级
+  value: 9–12 年级
+- label: 下期开课
+  value: '[年 月]'
+overview: 智能设备融合了硬件、云计算与人工智能。学生将全面了解物联网（IoT）系统的工作原理，并打造一个能采集数据并做出智能响应的原型。
+activities:
+- 了解物联网架构：设备、网络与云端
+- 使用传感器与微控制器
+- 将设备数据上传至云端并进行分析
+- 加入预测或异常检测等 AI 功能
+- 在结业展示会上演示原型
+mentor: 亚马逊云计算工程师，10 年以上经验（AWS）
+mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
+mentor_photo: ''
+deliverables:
+- 可运行的物联网原型及技术文档
+- 导师亲笔推荐信（符合条件的学生）
+- 实习科研证书
+- 结业成果展示
+prerequisites: 无需硬件基础。[请确认是否寄送硬件套件。]
+faq:
+- q: 这个项目是线上进行吗？
+  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
+- q: 如何申请？
+  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
+internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'

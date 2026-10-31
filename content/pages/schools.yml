@@ -1,0 +1,103 @@
+seo_title: "School & Institution Partnerships | College Counseling, Research & Summer Programs | WinPlus"
+meta_description: "Partner with WinPlus to offer world-class admissions counseling, mentor-led research, UN conference opportunities and summer programs to your students, through referral, co-brand or white-label models."
+eyebrow: Partner With Us
+title: World-class mentors and global stages for your students, delivered by WinPlus.
+intro: WinPlus partners with schools and education organizations to deliver full-cycle talent development, from summer programs and research to admissions, under your brand or ours. We deliver; you gain new revenue and differentiation with zero operational burden.
+image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
+image_alt: Students raising hands in a classroom
+
+challenges_title: Why now
+challenges:
+  - letter: "1"
+    title: The outcomes gap
+    text: Parents want top-university results, but schools and organizations struggle to build the resources and faculty in-house.
+  - letter: "2"
+    title: The talent bar is changing
+    text: AI is redefining what excellence means. Research ability, hands-on creation and a global perspective are the new competitive edge.
+  - letter: "3"
+    title: Access is the real barrier
+    text: Information is no longer scarce. Access to top people and real stages is, and WinPlus delivers that access through partners.
+
+benefits_title: Why partner with WinPlus
+benefits:
+  - { title: "New revenue, zero operations", text: "We handle delivery, so you don't need to build a team." }
+  - { title: "Instant differentiation", text: "A service competitors can't easily copy becomes your advantage immediately." }
+  - { title: "Better enrollment & retention", text: "Top outcomes are why families pay, and why they stay." }
+  - { title: "Brand empowerment", text: "Harvard- and NASA-level resources, presented under your brand." }
+
+models_title: Partnership models
+models:
+  - title: Referral
+    text: You refer, we deliver, and you receive a referral share. The simplest model, with no operational burden.
+  - title: Co-brand / reseller
+    text: We deliver together, share marketing and share revenue.
+  - title: White-label / wholesale
+    text: You are the brand and own the family relationship; WinPlus provides admissions, research and exclusive resources behind the scenes.
+roles_title: Who does what
+roles:
+  partner: [Student relationships, Enrollment & recruitment, Local trust]
+  winplus: [Mentors & curriculum, Admissions delivery, International resources, Quality control]
+models_note: "Every partnership comes with a formal contract, student protection measures and quality standards."
+
+services_title: Services you can offer
+services_intro: Five core services covering exploration, hands-on experience, applications and long-term growth.
+services_table:
+  - service: Global Competency Summer School
+    ages: Ages 12–18
+    outcomes: Global-issues training · certificate of completion · meetings with admissions officers
+    edge: Mentors from top universities and industry; project-based curriculum
+    models: Referral · Co-brand
+  - service: Research & Silicon Valley Internships
+    ages: Grades 10–12 and above
+    outcomes: Research paper · mentor recommendation letter
+    edge: Real research topics, working scientists as mentors, managed process
+    models: Co-brand · White-label
+  - service: US, Canada, UK & Australia Admissions
+    ages: Undergraduate, master's & PhD applicants
+    outcomes: Custom strategy · 50+ rounds of essay editing
+    edge: Ivy League admissions officers + the Eight Key Elements framework
+    models: White-label · Co-brand
+  - service: Global Stage & Profile Building
+    ages: Middle & high school students
+    outcomes: International conference or forum participation · issue research · speaking or presentation opportunities
+    edge: Real platform access, issue training and guidance throughout
+    models: Co-brand · White-label
+  - service: Essays, Test Prep & Portfolios
+    ages: Ages 12–18
+    outcomes: Score improvement · long-term growth roadmap
+    edge: A US–China team connecting the whole narrative
+    models: Referral · White-label
+services_note: "Every service is delivered and quality-controlled by WinPlus. Specific deliverables vary by program, student and application cycle and are set out in the partnership agreement."
+
+track_title: "Our track record"
+track:
+  - { number: "100+", label: "Students guided" }
+  - { number: "87", label: "Top-30 & Ivy League offers" }
+  - { number: "6", label: "Countries with partners" }
+  - { number: "40+", label: "Team members" }
+track_note: "Data as of July 2026."
+
+steps_title: How to get started
+steps:
+  - { title: "Intro call", text: "We learn about your students, goals and current resources." }
+  - { title: "Choose a model", text: "Referral, co-brand or white-label, with a formal agreement." }
+  - { title: "Start with a pilot", text: "Begin with a low-commitment referral pilot: small investment, real results." }
+  - { title: "Scale up", text: "Expand to more services and students as results come in." }
+
+ideal_partners: "Ideal partners: private schools and education organizations in China, the US, Singapore and beyond seeking premium outcomes and differentiated programming."
+
+contact_title: Talk to us about a partnership
+contact_name: Cathy Guo
+contact_role: Co-Founder & Executive President
+contact_email: cathy.guo@winplus.org
+
+trusted_label: "Trusted by:"
+school_logos:
+  - { name: "[Partner logo]", logo: "" }
+  - { name: "[Partner logo]", logo: "" }
+  - { name: "[Partner logo]", logo: "" }
+  - { name: "[Partner logo]", logo: "" }
+primary_cta: Explore a Partnership
+primary_link: contact.html
+secondary_cta: Download Overview (PDF)
+secondary_file: ""

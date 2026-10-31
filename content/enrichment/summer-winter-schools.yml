@@ -1,0 +1,31 @@
+order: 2
+title: Global Competency Summer & Winter Schools
+short_title: Summer & Winter Schools
+seo_title: "Summer & Winter Schools for High School Students | WinPlus"
+meta_description: "Summer and winter school programs for high school students on leading university campuses: academic courses, campus life, college visits and leadership."
+summary: From top-university classrooms to Silicon Valley, students build cross-cultural communication skills and a global perspective, taught by mentors from Harvard, MIT, Stanford and Silicon Valley.
+image: https://images.unsplash.com/photo-1583373834259-46cc92173cb7
+image_alt: University building beside a green lawn
+facts:
+  - { label: "Ages", value: "12–18 (middle & high school)" }
+  - { label: "Formats", value: "US research camps · China study tours" }
+  - { label: "Summer session", value: "[Dates, YEAR]" }
+  - { label: "Winter session", value: "[Dates, YEAR]" }
+overview: "Unlike sightseeing tours, our summer and winter schools are designed and taught by mentors with backgrounds at Harvard, MIT, Stanford and Silicon Valley companies. The curriculum is built around four global competencies: global analysis, cultural empathy, diverse communication and sustainable action."
+activities:
+  - Global-issues training built on four core competencies
+  - University-style seminars with mentors from NASA, Harvard and MIT
+  - Campus visits and face-to-face sessions with admissions officers
+  - Company visits and themed study tours
+  - Capstone project and presentation
+deliverables:
+  - Harvard Global Competency Certificate
+  - Face-to-face meetings with top-university admissions officers
+  - A personalized US undergraduate admissions plan
+  - Capstone project
+highlight: ""
+faq:
+  - q: Are students supervised?
+    a: "[Describe supervision, staff ratios and safety protocols.]"
+  - q: When do applications open?
+    a: "[Add application timeline.]"

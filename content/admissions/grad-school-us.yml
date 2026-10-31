@@ -1,0 +1,32 @@
+order: 3
+title: "Graduate School Admissions: United States"
+short_title: "Grad School: US"
+seo_title: "US Graduate School Admissions Counseling | MBA, MS & PhD | WinPlus"
+meta_description: "Graduate admissions counseling for top US MBA, master's and PhD programs: program selection, statement of purpose, recommendations, CV and interview preparation."
+summary: MBA, MS and PhD strategy for top US programs, including statement of purpose, recommendations and school selection.
+image: https://images.unsplash.com/photo-1498243691581-b145c3f54a5a
+image_alt: Rows of books in a university library
+who: University students and professionals applying to master's, MBA or PhD programs in the United States.
+included:
+  - Program and school selection strategy
+  - Statement of purpose and personal history statements
+  - Research proposal and faculty fit (PhD)
+  - CV and résumé development
+  - Recommendation strategy and briefing materials
+  - GRE / GMAT planning
+  - Interview preparation
+  - Funding, assistantship and scholarship guidance
+approach:
+  - { title: "Define the goal", text: "Clarify career or research goals and which programs truly serve them." }
+  - { title: "Prove fit", text: "Show faculty, research and program fit with specific evidence." }
+  - { title: "Polish every document", text: "SOP, CV and recommendations that tell one consistent story." }
+deadlines_title: Typical US graduate deadlines
+deadlines:
+  - { label: "PhD programs", date: "Typically December 1 – January 15" }
+  - { label: "Master's programs", date: "December – March; some rolling" }
+  - { label: "MBA", date: "Rounds from September through April" }
+faq:
+  - q: When should I start preparing for US graduate school?
+    a: About 12–18 months before enrollment, which leaves time for testing, research and recommendations.
+  - q: Do you help with PhD applications?
+    a: Yes. We help identify faculty and programs, articulate research interests and prepare a strong statement of purpose.

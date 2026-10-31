@@ -1,0 +1,69 @@
+seo_title: "Our Team | Admissions Consultants, Coaches & Industry Mentors | WinPlus"
+meta_description: "Meet the WinPlus team: founders, admissions consultants, coaches and mentors from NASA, Meta, MIT, Caltech, Microsoft and Bloomberg who guide students from Grade 9 to top universities."
+eyebrow: Our Team
+title: The people behind every WinPlus student
+intro: WinPlus is the only end-to-end talent development platform that takes students from Grade 9 to elite university acceptance and prepares them for what comes after. Meet the team that makes it happen.
+image: https://images.unsplash.com/photo-1758873269811-4e62e346b4b7
+image_alt: A team collaborating around a table
+
+what_title: What we do
+what:
+  - { title: "Admissions Counseling", text: "US, UK, Canada and Australia undergraduate, graduate school and US high school admissions.", link: admissions.html }
+  - { title: "Research & Internships", text: "Mentor-led research and internship programs in AI, finance, science and the arts.", link: research.html }
+  - { title: "Experience Enrichment", text: "UN conferences, summer and winter schools and leadership programs.", link: enrichment.html }
+
+compare_title: One platform vs. a patchwork of vendors
+without:
+  label: Without an integrated platform
+  heading: A separate vendor for every need.
+  center: Student & Parents
+  vendors: [Admissions Counselor, Research Program, Internship Provider, Test-Prep Tutor, Essay Coach]
+  note: Repeat your story to each one. Five plans that never connect.
+with:
+  label: With WinPlus
+  heading: One talent consultant guides the whole journey.
+  center: Your Dedicated Talent Consultant
+  stages: ["Grade 9–10 · Profile Building", "Grade 10–11 · Research + Skills", "Grade 11 · Strategy", "Grade 12 · Applications", "Acceptance & Beyond"]
+benefits:
+  - { title: "Continuity & consistency", text: "One relationship, Grade 9 to acceptance." }
+  - { title: "One dedicated consultant", text: "One consultant owns your child's full journey." }
+  - { title: "A truly bespoke plan", text: "A single strategy built around the student." }
+  - { title: "Cost-efficient", text: "No overlapping or duplicated vendor fees." }
+
+leaders_title: Founders
+leaders:
+  - name: Cathy Guo
+    role: Co-Founder
+    photo: ""
+    bio: "[Bio: PLACEHOLDER — background in elite university admissions and student talent development across the US and China.]"
+    linkedin: ""
+  - name: Cedric Pan
+    role: Co-Founder
+    photo: ""
+    bio: "[Bio: PLACEHOLDER — background in research program development and strategic partnerships with leading institutions.]"
+    linkedin: ""
+
+consultants_title: Consultants & coaches
+consultants_intro: Your family's day-to-day partners, from roadmap to acceptance.
+consultants:
+  - { name: "[Consultant name]", role: "Senior Admissions Consultant", photo: "", bio: "[Education background, specialties (e.g., US / UK), years of experience.]" }
+  - { name: "[Consultant name]", role: "Admissions Consultant", photo: "", bio: "[Education background, specialties, years of experience.]" }
+  - { name: "[Coach name]", role: "Essay & Interview Coach", photo: "", bio: "[Education background, specialties, years of experience.]" }
+
+mentors_title: Our expert mentor network
+mentors_intro: WinPlus programs are led by industry professionals and researchers from the world's leading institutions, not career tutors.
+mentors:
+  - { role: "Software Engineering Lead, Llama Team", org: Meta AI, program: AI Agent Program, photo: "", link: research/ai-agent-development.html }
+  - { role: "Senior Cloud Engineer, 10+ yrs", org: Apple (Silicon Valley), program: Claude Code AI Program, photo: "", link: research/claude-code-ai-programming.html }
+  - { role: "Cloud Engineer, 10+ yrs", org: Amazon AWS, program: IoT AI Device Program, photo: "", link: research/iot-ai-devices.html }
+  - { role: "MFA Screenwriting; Cannes Award Winner", org: Northwestern University, program: Screenwriting & Directing, photo: "", link: research/screenwriting-directing.html }
+  - { role: "Senior Data Scientist, 7+ yrs", org: Microsoft HQ, program: Financial Forecasting Program, photo: "", link: research/financial-forecasting-python.html }
+  - { role: "Engineering Lead, 8+ yrs", org: Bloomberg, program: FinTech + AI Program, photo: "", link: research/fintech-ai-startup.html }
+  - { role: Postdoctoral Researcher, org: Caltech Gene Therapy Lab, program: Gene Therapy Research, photo: "", link: research/gene-therapy-ai-data.html }
+  - { role: Research Scientist, org: NASA Ames Research Center, program: JWST Deep Space Program, photo: "", link: research/jwst-deep-space-research.html }
+  - { role: Aerospace Engineer, org: NASA Goddard / MIT, program: SpaceX Starlink Program, photo: "", link: research/starlink-orbit-design.html }
+
+join_title: Join our mentor network
+join_text: Are you a researcher, engineer or creator who wants to mentor ambitious students? We'd love to hear from you.
+join_cta: Get in Touch
+join_link: contact.html

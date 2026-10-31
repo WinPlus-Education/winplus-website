@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% from "macros.html" import photo, btn, more, head, faq, marquee, stats, event_card, quote_card, cta_band with context %}
+{% block content %}
+{% set h = page.hero %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ h.eyebrow }}</p>
+      <h1>{{ h.title_line1 }} <em>{{ h.title_line2 }}</em></h1>
+      <p class="lead">{{ h.subtitle }}</p>
+      <div class="btn-row">
+        {{ btn(h.primary_cta, h.primary_link) }}
+        {{ btn(h.secondary_cta, h.secondary_link, "outline") }}
+      </div>
+    </div>
+    <div class="hero-media">
+      {{ photo(h.image, h.image_alt, "hero-photo", 1400, "Hero photo", true) }}
+      {% if h.proof %}<p class="hero-proof"><span class="dot" aria-hidden="true"></span>{{ h.proof }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+{{ marquee(site.partners_label, site.partners) }}
+
+{% set r = page.results %}
+<section class="section results-hook">
+  <div class="wrap">
+    <div class="split-head">
+      {{ head(r.eyebrow, r.title, r.text) }}
+      {{ more(r.link_text, r.link) }}
+    </div>
+    {{ stats(r.stats, "stats-4") }}
+    <div class="offers">
+      <span class="offers-label">{{ r.offers_label }}</span>
+      <ul class="chips">{% for o in r.offers %}<li>{{ o }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+
+{% set m = page.mission %}
+<section class="section section-sky">
+  <div class="wrap mission">
+    {{ photo(m.image, m.image_alt, "mission-photo ratio-tall", 900) }}
+    <div class="mission-copy">
+      <p class="eyebrow">{{ m.eyebrow }}</p>
+      <h2>{{ m.title }}</h2>
+      <div class="mv">
+        <h3>{{ m.mission_label }}</h3>
+        <p>{{ m.mission }}</p>
+      </div>
+      <div class="mv">
+        <h3>{{ m.vision_label }}</h3>
+        <p>{{ m.vision }}</p>
+      </div>
+      {{ more("Meet our team", "team.html") }}
+    </div>
+  </div>
+</section>
+
+{% set o = page.offer %}
+<section class="section">
+  <div class="wrap">
+    {{ head(o.eyebrow, o.title, o.intro, true) }}
+    <div class="grid-3 offer-grid">
+      {% for s in o.segments %}
+      <a class="card offer-card" href="{{ u(s.link) }}">
+        {{ photo(s.image, s.image_alt, "ratio-wide", 800) }}
+        <div class="card-body">
+          <p class="kicker">0{{ loop.index }}</p>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+          <ul class="ticks">{% for pt in s.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+          <span class="more">{{ s.link_text }} <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set w = page.why %}
+<section class="section section-cream">
+  <div class="wrap">
+    {{ head(w.eyebrow, w.title) }}
+    <div class="grid-4 why-grid">
+      {% for p in w.points %}
+      <div class="why-item">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set ev = page.events %}
+<section class="section" id="events">
+  <div class="wrap">
+    <div class="split-head">
+      {{ head(ev.eyebrow, ev.title, ev.text) }}
+      {{ more(ev.link_text, ev.link) }}
+    </div>
+    {% if upcoming %}
+    <div class="grid-3 events-grid">
+      {% for e in upcoming[:3] %}{{ event_card(e) }}{% endfor %}
+    </div>
+    {% else %}
+    <p class="empty-note">New events are announced regularly. Subscribe below to hear first.</p>
+    {% endif %}
+  </div>
+</section>
+
+{% set t = page.testimonials %}
+<section class="section section-sky">
+  <div class="wrap">
+    <div class="split-head">
+      {{ head(t.eyebrow, t.title) }}
+      {{ more(t.link_text, t.link) }}
+    </div>
+    <div class="grid-3">
+      {% for s in results_data.stories[:3] %}
+      {{ quote_card({"quote": s.quote, "name": s.initials ~ " · Admitted to " ~ s.admitted_to, "role": s.program}) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    {{ faq(page.faq['items'], page.faq.title, true) }}
+  </div>
+</section>
+
+{{ cta_band(page.cta.title, page.cta.text, page.cta.button, page.cta.link) }}
+{% endblock %}

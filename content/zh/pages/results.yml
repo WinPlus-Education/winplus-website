@@ -1,4 +1,4 @@
-seo_title: "录取成果 | 藤校、牛剑及世界名校录取 | WinPlus 欧歌学院"
+seo_title: "录取成果 | 87 封藤校及 Top30 录取：哈佛、耶鲁、牛津、剑桥 | WinPlus 欧歌学院"
 meta_description: "WinPlus 学员录取成果：累计培养 100+ 名学生，87 例 Top-30 / 藤校录取，录取院校包括哈佛、耶鲁、普林斯顿、MIT、牛津、剑桥等，以及学员故事与家长评价。"
 eyebrow: 录取成果
 title: 用成果说话
@@ -40,7 +40,32 @@ schools:
 footnote: "* 基于 WinPlus 辅导学员，[年份] 届。整体录取率来自各校公开数据。[请补充统计方法。]"
 
 offers_title: 学员录取院校
-offers: [哈佛大学, 耶鲁大学, 普林斯顿大学, 哥伦比亚大学, 宾夕法尼亚大学, 布朗大学, 麻省理工学院, 杜克大学, 加州大学伯克利分校, 加州大学洛杉矶分校, 佐治亚理工学院, 牛津大学, 剑桥大学, 帝国理工学院, 伦敦大学学院, 伦敦政治经济学院]
+offers_eyebrow: "录取荣誉墙"
+offers_intro: "截至目前，WinPlus 学员已斩获 87 封美国 Top30 及常春藤盟校录取，覆盖美国与英国顶尖名校。"
+# Each tier is a row on the "admissions wall". Logos live in /images/uploads/universities/
+offer_tiers:
+  - label: "常春藤盟校"
+    schools:
+      - { name: "哈佛大学", logo: /images/uploads/universities/harvard.png, note: "" }
+      - { name: "耶鲁大学", logo: /images/uploads/universities/yale.png, note: "连续三年获录取" }
+      - { name: "普林斯顿大学", logo: /images/uploads/universities/princeton.png, note: "" }
+      - { name: "哥伦比亚大学", logo: /images/uploads/universities/columbia.png, note: "" }
+      - { name: "宾夕法尼亚大学", logo: /images/uploads/universities/upenn.png, note: "" }
+      - { name: "布朗大学", logo: /images/uploads/universities/brown.png, note: "" }
+  - label: "美国 Top30"
+    schools:
+      - { name: "麻省理工学院", logo: /images/uploads/universities/mit.png, note: "" }
+      - { name: "杜克大学", logo: /images/uploads/universities/duke.png, note: "" }
+      - { name: "加州大学伯克利分校", logo: /images/uploads/universities/berkeley.png, note: "" }
+      - { name: "加州大学洛杉矶分校", logo: /images/uploads/universities/ucla.png, note: "" }
+      - { name: "佐治亚理工学院", logo: /images/uploads/universities/georgia-tech.png, note: "" }
+  - label: "英国 G5"
+    schools:
+      - { name: "牛津大学", logo: /images/uploads/universities/oxford.png, note: "" }
+      - { name: "剑桥大学", logo: /images/uploads/universities/cambridge.png, note: "" }
+      - { name: "帝国理工学院", logo: /images/uploads/universities/imperial.png, note: "" }
+      - { name: "伦敦大学学院", logo: /images/uploads/universities/ucl.png, note: "" }
+      - { name: "伦敦政治经济学院", logo: /images/uploads/universities/lse.png, note: "" }
 offers_note: "以上为部分展示。录取覆盖常春藤盟校、美国 Top30、英国 G5 及更多世界顶尖高校，其中耶鲁大学已连续三年斩获录取。"
 
 highlights_title: 学员故事

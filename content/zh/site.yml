@@ -5,7 +5,8 @@ name_local: 欧歌学院
 company_legal: WinPlus Education & Technology Inc.
 tagline: 全周期人才培养平台
 
-meta_description: "WinPlus 欧歌学院是面向青少年的全周期人才培养平台，提供美加英澳升学规划、NASA、Meta、MIT 等顶尖导师指导的科研与实习项目，以及联合国会议、夏校等国际背景提升项目。"
+meta_description: "WinPlus 欧歌学院是专业的留学咨询与升学规划机构：提供美国本科申请、藤校申请规划、英加澳及研究生留学申请，NASA、Meta、MIT 等导师指导的科研与实习项目，以及联合国会议、夏校等国际背景提升项目。"
+keywords: "留学顾问, 留学咨询, 留学中介, 升学规划, 美国本科申请, 美国留学申请, 藤校申请, 常春藤盟校, 美国TOP30名校, 英国G5申请, 牛剑申请, 研究生留学申请, 美高申请, 背景提升, 高中生科研项目, 夏校, 欧歌学院"
 default_image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
 founded: "[年份]"
 address: "[街道地址, 城市, 州, 邮编]"
@@ -25,6 +26,7 @@ nav:
     children:
       - { label: 服务总览, link: admissions.html }
       - { label: 美国本科申请, link: admissions/us-college.html }
+      - { label: 藤校申请规划, link: admissions/ivy-league.html }
       - { label: 英国、加拿大、澳大利亚本科申请, link: admissions/uk-canada-australia.html }
       - { label: 美国研究生申请, link: admissions/grad-school-us.html }
       - { label: 英加澳研究生申请, link: admissions/grad-school-international.html }

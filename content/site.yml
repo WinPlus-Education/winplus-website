@@ -8,7 +8,13 @@ tagline: Global Talent Development Platform
 # SEO: the site's real address. Change to https://www.winplus.org (or your domain) once the domain is connected.
 site_url: https://winplus-education.netlify.app
 default_image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
-meta_description: "WinPlus is a global talent development platform offering college admissions counseling, real research and internship programs with mentors from NASA, Meta and MIT, and global enrichment programs for high school students."
+meta_description: "WinPlus Education is an education consultancy for high school students: college admissions counseling for the US, UK, Canada and Australia, Ivy League admissions strategy, mentor-led research and internships with mentors from NASA, Meta and MIT, and global programs like UN conferences."
+# Search keywords (used by Baidu/Bing and as hints for AI search). Separate with commas.
+keywords: "college admissions counseling, college admissions consultant, education consultancy, education consultant, US college admissions, Ivy League admissions consulting, Ivy League schools, top 30 universities, UK university admissions, Oxbridge admissions, graduate school admissions, boarding school admissions, high school research programs, summer programs for high school students, international students US admissions"
+# Search engine ownership codes. Paste only the code (the content="..." value) from Google Search Console, Bing Webmaster Tools or Baidu Ziyuan.
+google_site_verification: ""
+bing_site_verification: ""
+baidu_site_verification: ""
 founded: "[YEAR]"
 address: "[Street address, City, State ZIP]"
 area_served: ["United States", "China", "Singapore", "Canada", "United Kingdom", "Australia"]
@@ -28,6 +34,7 @@ nav:
     children:
       - { label: Overview, link: admissions.html }
       - { label: US College Admissions, link: admissions/us-college.html }
+      - { label: Ivy League Admissions, link: admissions/ivy-league.html }
       - { label: "UK, Canada & Australia", link: admissions/uk-canada-australia.html }
       - { label: "Graduate School: US", link: admissions/grad-school-us.html }
       - { label: "Graduate School: UK, Canada & Australia", link: admissions/grad-school-international.html }

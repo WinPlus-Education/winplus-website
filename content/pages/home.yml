@@ -11,28 +11,24 @@ hero:
   slides:
   - image: /images/uploads/campus/harvard.webp
     alt: Widener Library, Harvard University
-    caption: Harvard University
   - image: /images/uploads/campus/yale-sterling.webp
     alt: Sterling Memorial Library, Yale University
-    caption: Yale University
   - image: /images/uploads/campus/princeton.webp
     alt: Nassau Hall in autumn, Princeton University
-    caption: Princeton University
+  - image: /images/uploads/campus/columbia.webp
+    alt: Low Memorial Library, Columbia University
   - image: /images/uploads/campus/mit-dome.webp
     alt: The Great Dome, Massachusetts Institute of Technology
-    caption: MIT
   - image: /images/uploads/campus/stanford.webp
     alt: Main Quad at sunset, Stanford University
-    caption: Stanford University
-  - image: /images/uploads/campus/penn.webp
-    alt: Fisher Fine Arts Library, University of Pennsylvania, home of the Wharton School
-    caption: Wharton · University of Pennsylvania
+  - image: /images/uploads/campus/caltech-beckman.webp
+    alt: Beckman Auditorium, California Institute of Technology
+  - image: /images/uploads/campus/penn-college-hall.webp
+    alt: College Hall, University of Pennsylvania
   - image: /images/uploads/campus/brown.webp
     alt: Brown University campus, Providence
-    caption: Brown University
   - image: /images/uploads/campus/dartmouth.webp
     alt: Baker Library, Dartmouth College
-    caption: Dartmouth College
 results:
   eyebrow: Our Results
   title: Outcomes at the most selective universities

@@ -3,28 +3,37 @@ title: US High School Admissions
 short_title: US High School
 interest: US High School Admissions
 seo_title: US Boarding & Private High School Admissions Consulting | WinPlus
-meta_description: 'Admissions counseling for top US boarding and private day schools: school selection, SSAT, applications, essays, interviews and visits, from a Harvard Square team.'
+meta_description: 'US boarding and private day school admissions: school selection, SSAT/ISEE planning, applications, parent statements, interviews and campus visits.'
 summary: Boarding and private day school admissions, from school selection to SSAT, interviews and visits.
 eyebrow: US High School
 title_long: The right US boarding or day school, and a confident start
 image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
 image_alt: A historic red-brick campus building
 who: Students in Grades 5–10 applying to US boarding schools and private day schools, and families relocating to the US.
-help:
-- title: Finding the right school
-  text: We help families understand the differences between schools in academics, culture, size and support, and build a list where the student will thrive, not just be admitted.
-- title: A complete, polished application
-  text: SSAT/ISEE and English testing plans, applications, student and parent essays, and recommendations, coordinated on one timeline.
-- title: Interviews, visits and transition
-  text: Interview preparation, campus-visit planning from our base near many top New England schools, and guidance for the move to US school life.
-highlight:
-  label: Why it matters
-  title: High school shapes the college path
-  text: The right high school opens doors to rigorous courses, research and leadership, the foundation of a strong college application four years later.
-faq:
-- q: When do US boarding school applications open?
-  a: Most applications open in late summer or early autumn and are due in January, with decisions in March for entry the following September.
-- q: Is the SSAT required?
-  a: Many schools require or recommend the SSAT or ISEE; international students usually also submit TOEFL, Duolingo or similar. We plan tests around each school's policy.
-- q: Can you help with campus visits?
-  a: Yes. From our base in Harvard Square we help families plan visits and interviews at schools across New England and beyond.
+system: Independent schools admit a community, not just a transcript. Interviews and campus visits weigh heavily, parents write their own statements, and most leading schools share a January deadline and
+  a common March notification date.
+challenges_intro: Families often underestimate how personal boarding school admissions are. Here is where we make the difference.
+challenges:
+- challenge: Rankings say little about fit
+  title: Finding the right school
+  text: We help families understand the real differences in academics, culture, size and support, and build a list where the student will thrive, not just be admitted.
+- challenge: Young applicants, adult expectations
+  title: Interviews and visits that feel natural
+  text: Interview practice that builds real confidence, and campus-visit planning from our base near many of the leading New England schools.
+- challenge: Many moving parts, one deadline
+  title: One coordinated application
+  text: SSAT or ISEE and English testing plans, student and parent statements, and teacher recommendations, all on one timeline.
+timeline_title: The boarding school timeline
+timeline:
+- when: 12–18 months out
+  text: School research, first testing plan and summer visits.
+- when: Sep–Dec
+  text: Campus tours and interviews; SSAT or ISEE testing.
+- when: Jan 15
+  text: Application deadline at many leading boarding schools.
+- when: Mar 10
+  text: Common notification date for many boarding schools.
+- when: Apr 10
+  text: Common reply date; preparation for the move.
+outcomes_text: '[Add featured US high school outcomes: schools where WinPlus students have been admitted.]'
+outcomes: []

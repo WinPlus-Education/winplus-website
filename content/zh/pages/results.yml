@@ -1,5 +1,5 @@
 seo_title: 录取成果 | 常春藤与美国 Top 30 录取 | WinPlus 欧歌学院
-meta_description: WinPlus 学员录取成果：87 封常春藤及 Top 30 录取，包括哈佛、耶鲁（连续三年）、普林斯顿、宾大等，以及成功案例与家长评价。
+meta_description: WinPlus 学员录取成果：87 封常春藤及 Top 30 录取，包括哈佛、耶鲁、普林斯顿、宾大等，以及成功案例与家长评价。
 eyebrow: 录取成果
 title: 成果，自己会说话
 intro: WinPlus 指导的学生获得世界顶尖大学录取的比例，远高于各校整体录取率。这里是数字、故事，以及背后的家庭。
@@ -12,47 +12,59 @@ stats:
   label: 录取常春藤或美国 Top 30 的比例
 - number: '87'
   label: 常春藤与 Top 30 录取
-- number: '3'
-  label: 连续三年获耶鲁录取
+- number: '[X]'
+  label: '[占位：补充一项核心成果]'
 stats_note: 数据截至 2026 年 7 月。[请确认统计口径：包含哪些学生及届别。]
 chart_title: 录取率：WinPlus 学员 vs. 整体
 schools:
 - name: Harvard
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/harvard.png
 - name: Stanford
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/logos/stanford.png
 - name: MIT
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/mit.png
 - name: Princeton
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/princeton.png
 - name: Yale
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/yale.png
 - name: Columbia
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/columbia.png
 - name: UPenn
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/upenn.png
 - name: Caltech
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/logos/caltech.png
 - name: Duke
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/duke.png
 - name: Johns Hopkins
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/johns-hopkins.png
 - name: Northwestern
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/northwestern.png
 - name: UChicago
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/uchicago.png
 footnote: '* 基于 WinPlus 指导学生，[年份]届。整体录取率来自各校公布数据。[补充统计方法。]'
 offers_eyebrow: 录取墙
 offers_title: 我们的学生被这些大学录取
@@ -71,7 +83,7 @@ offer_tiers:
     note: ''
   - name: 耶鲁大学
     logo: /images/uploads/universities/yale.png
-    note: 本科连续三年获录取
+    note: ''
   - name: 斯坦福大学
     logo: /images/uploads/logos/stanford.png
     note: ''
@@ -82,19 +94,19 @@ offer_tiers:
     logo: /images/uploads/universities/duke.png
     note: ''
   - name: 约翰霍普金斯大学
-    logo: ''
+    logo: /images/uploads/universities/johns-hopkins.png
     note: ''
   - name: 芝加哥大学
-    logo: ''
+    logo: /images/uploads/universities/uchicago.png
     note: ''
   - name: 哥伦比亚大学
     logo: /images/uploads/universities/columbia.png
     note: ''
   - name: 达特茅斯学院
-    logo: ''
+    logo: /images/uploads/universities/dartmouth.png
     note: ''
   - name: 卡内基梅隆大学
-    logo: ''
+    logo: /images/uploads/universities/cmu.png
     note: ''
   - name: 康奈尔大学
     logo: /images/uploads/logos/cornell.png
@@ -115,72 +127,72 @@ offer_tiers:
     logo: ''
     note: ''
   - name: 密歇根大学安娜堡分校
-    logo: ''
+    logo: /images/uploads/universities/michigan.png
     note: ''
   - name: 弗吉尼亚大学
-    logo: ''
+    logo: /images/uploads/universities/uva.png
     note: ''
   - name: 北卡罗来纳大学教堂山分校
     logo: ''
     note: ''
   - name: 南加州大学
-    logo: ''
+    logo: /images/uploads/universities/usc.png
     note: ''
   - name: 佐治亚理工学院
     logo: /images/uploads/universities/georgia-tech.png
     note: ''
   - name: 加州大学圣地亚哥分校
-    logo: ''
+    logo: /images/uploads/universities/ucsd.png
     note: ''
 - label: 美国 Top 50（31–50 名）
   schools:
   - name: 波士顿学院
-    logo: ''
+    logo: /images/uploads/universities/boston-college.png
     note: ''
   - name: 纽约大学
-    logo: ''
+    logo: /images/uploads/universities/nyu.png
     note: ''
   - name: 塔夫茨大学
-    logo: ''
+    logo: /images/uploads/universities/tufts.png
     note: ''
   - name: 波士顿大学
-    logo: ''
+    logo: /images/uploads/universities/bu.png
     note: ''
   - name: 加州大学戴维斯分校
-    logo: ''
+    logo: /images/uploads/universities/ucdavis.png
     note: ''
   - name: 加州大学尔湾分校
-    logo: ''
+    logo: /images/uploads/universities/uci.png
     note: ''
   - name: 佛罗里达大学
-    logo: ''
+    logo: /images/uploads/universities/florida.png
     note: ''
   - name: 伊利诺伊大学厄巴纳-香槟分校
-    logo: ''
+    logo: /images/uploads/universities/illinois.png
     note: ''
   - name: 德克萨斯大学奥斯汀分校
-    logo: ''
+    logo: /images/uploads/universities/texas.png
     note: ''
   - name: 威斯康星大学麦迪逊分校
-    logo: ''
+    logo: /images/uploads/universities/wisconsin.png
     note: ''
   - name: 东北大学
-    logo: ''
+    logo: /images/uploads/universities/northeastern.png
     note: ''
   - name: 理海大学
-    logo: ''
+    logo: /images/uploads/universities/lehigh.png
     note: ''
   - name: 俄亥俄州立大学
-    logo: ''
+    logo: /images/uploads/universities/ohio-state.png
     note: ''
   - name: 罗格斯大学新布朗斯维克分校
     logo: ''
     note: ''
   - name: 加州大学圣塔芭芭拉分校
-    logo: ''
+    logo: /images/uploads/universities/ucsb.png
     note: ''
   - name: 马里兰大学帕克分校
-    logo: ''
+    logo: /images/uploads/universities/umd.png
     note: ''
   - name: 罗切斯特大学
     logo: ''
@@ -215,23 +227,19 @@ cases:
   strategy: 补足国际领导力与专家推荐：申请国际女性大会发言，由美国疾控中心专家与北大全球健康教授指导科研，并由耶鲁校友面试官与哈佛导师共同指导文书与模拟面试。
   change: 在曼谷全球女性大会上台发言，绘画作品入选大会画展；获得两封专家推荐信；50+ 轮文书修改；获得所申请藤校全部面试。
   outcome: 录取耶鲁（含奖学金）、宾大、约翰霍普金斯、圣母大学、加州伯克利与加州洛杉矶。
-  image: /images/uploads/students/ivy-admit-story.jpg
-  image_alt: WinPlus 学生展示作品
 - tag: 逆袭
   title: 从无托福、无 SAT 到 Top 50 录取与 18 万美元奖学金
   start: 11 年级暑假开始指导。GPA 约 3.5，无托福、无 SAT、无科研。活动丰富但缺少亮点与国际高度。
   strategy: 八大要素全面拔高：密集的标化提分计划、与地理信息科学教授合作三个月科研、参加联合国气候大会，以及摄影作品集与个人影展。
   change: 托福 99、SAT 1400（拼分）；发表一篇 GIS 研究论文；在联合国气候大会上发言；举办摄影展并在杂志发表作品；在儿童医院举办大提琴慈善演出。
   outcome: 录取加州戴维斯、波士顿大学、普渡、东北大学与俄亥俄州立，并获加州河滨 8 万美元、加州圣克鲁兹 6 万美元、雪城 4 万美元奖学金；加州洛杉矶与加州圣地亚哥候补。
-  image: /images/uploads/students/uc-scholarship-story.jpg
-  image_alt: WinPlus 学生参观大学
 stories_title: 学员故事
 stories:
 - tag: 国际舞台
   title: COSP19 唯一的高中生发言人
   text: 经过 WinPlus 导师的议题培训，一位 17 岁学生于 2026 年 6 月在纽约联合国总部召开的《残疾人权利公约》第十九届缔约国大会上发言。
-  image: /images/uploads/students/un-cosp19-speaker.jpg
-  image_alt: WinPlus 学生在 COSP19 发言
+  image: /images/uploads/campus/un-flags.webp
+  image_alt: 国际组织总部外的各国国旗
   link: experiences/global-conferences.html
 - tag: 科研
   title: 一封 NASA 导师推荐信，与哈佛、斯坦福计算机专业

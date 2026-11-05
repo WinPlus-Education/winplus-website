@@ -2,38 +2,50 @@ order: 1
 title: US College Admissions
 short_title: US College
 interest: US College Admissions
-lead: true
 seo_title: US College & Ivy League Admissions Counseling | WinPlus
-meta_description: 'Ivy League and Top-30 college admissions counseling: profile building, ED/EA strategy, essays with Harvard, Yale and Stanford mentors, interview prep.'
-summary: Our core program. Ivy League and Top-30 strategy, from a multi-year profile plan to essays and interviews.
+meta_description: 'Ivy League and Top-30 college admissions counseling: multi-year profile building, early-round strategy, essays and interview preparation with alumni interviewers.'
+summary: Ivy League and Top-30 strategy, from a multi-year profile plan to the school list, essays and interviews.
 eyebrow: US College Admissions
 title_long: Ivy League & Top-30 admissions, built around who you are
-image: /images/uploads/campus/yale.webp
-image_alt: Sterling Memorial Library, Yale University
-who: Students in Grades 9–12, in the US or abroad, aiming for the Ivy League, Stanford, MIT and other highly selective US universities and liberal arts colleges.
-help:
-- title: A profile that proves the story
-  text: We find the genuine thread in a student's interests, then build the evidence through research, internships, leadership and global experiences, so the application describes real
-    accomplishments rather than promises.
-- title: Strategy for the most selective schools
-  text: A balanced school list and a deliberate early-round plan (REA, ED, EA), shaped by first-hand insight into each university's culture, priorities and current policies on testing
-    and essays.
-- title: Essays and interviews with insiders
-  text: Personal statements and supplements developed over many rounds with mentors from Harvard, Yale and Stanford, and interview preparation with Ivy League alumni interviewers.
-highlight:
-  label: Featured outcome
-  title: Yale, with scholarship, Penn and Johns Hopkins
-  text: A student who started with WinPlus the summer after Grade 9 added international leadership and research recommendations to a strong academic record, earned interviews at every
-    Ivy she applied to, and was admitted to Yale with scholarship, Penn and Johns Hopkins.
-faq:
-- q: What's included in US college admissions counseling?
-  a: A profile assessment and multi-year roadmap; course, testing and summer planning; research, internship and leadership planning; a school list with early-round strategy; Common App
-    and supplemental essays; activities list; recommendation planning; interview preparation; and decision, waitlist and financial-aid guidance.
-- q: Do you offer Ivy League admissions consulting?
-  a: Yes. Ivy League strategy is part of our US college program, including REA/ED/EA strategy, essays developed with mentors from Harvard, Yale and Stanford, and interview preparation
-    with Ivy League alumni interviewers. WinPlus students have been admitted to Harvard, Yale, Princeton, Columbia, Penn and Brown.
-- q: Should my child apply Early Decision?
-  a: Early Decision can raise admission chances at some universities but is binding. We help families weigh the advantage against fit and financial aid, school by school.
-- q: Are SAT or ACT scores still required?
-  a: Policies differ by university and change often; several highly selective universities have reinstated testing requirements. We review each school's current policy every cycle and
-    advise whether and when to submit.
+image: /images/uploads/campus/yale-harkness.webp
+image_alt: Harkness Tower, Yale University
+who: Students in Grades 9–12, in the US or abroad, aiming for the Ivy League, Stanford, MIT and other highly selective universities and liberal arts colleges.
+system: US universities read the whole person. Grades and rigor are the threshold; what separates admits is evidence of impact, a coherent story and a voice that comes through in up to 20 applications,
+  each with its own supplements.
+challenges_intro: At the most selective universities, nearly every applicant is academically excellent. Here is what decides the rest, and how we approach it.
+challenges:
+- challenge: Everyone looks excellent on paper
+  title: A profile that proves the story
+  text: We find the genuine thread in a student's interests, then build the evidence through research, internships, leadership and global stages, so the application describes real accomplishments, not promises.
+- challenge: Early rounds decide more seats every year
+  title: A deliberate early-round strategy
+  text: A balanced list and a clear plan for Restrictive Early Action, Early Decision and Early Action, shaped by each university's culture, priorities and current testing and essay policies.
+- challenge: Thousands of essays sound the same
+  title: Essays and interviews with insiders
+  text: Personal statements and supplements developed over many rounds of questions and feedback, and interview practice with alumni interviewers. Students write every word themselves.
+timeline_title: The US college timeline
+timeline:
+- when: Grades 9–10
+  text: Explore interests, choose a rigorous course path and start the first real projects.
+- when: Grade 11
+  text: Research or internship, testing plan, leadership with impact and a first school list.
+- when: Summer before 12
+  text: Personal statement, supplements and activity list; campus visits.
+- when: Nov 1–15
+  text: Early Decision and Early Action deadlines at most selective schools.
+- when: Jan 1–15
+  text: Regular Decision deadlines; interviews with alumni.
+- when: Mar–May 1
+  text: Decisions, offer comparison, waitlists and enrollment by May 1.
+outcomes_text: 'Recent offers earned by WinPlus students include:'
+outcomes:
+- Harvard University
+- Yale University
+- Stanford University
+- University of Pennsylvania
+- Johns Hopkins University
+- Duke University
+- Brown University
+- University of Notre Dame
+- UC Berkeley
+- UCLA

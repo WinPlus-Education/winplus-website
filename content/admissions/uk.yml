@@ -7,24 +7,40 @@ meta_description: 'UK admissions counseling: Oxford, Cambridge and G5 strategy, 
 summary: Undergraduate and graduate applications to Oxford, Cambridge, the G5 and leading UK universities.
 eyebrow: UK Admissions
 title_long: 'Oxford, Cambridge and the G5: undergraduate and graduate'
-image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
-image_alt: Students walking across a university campus
+image: /images/uploads/campus/cambridge.webp
+image_alt: King's College Chapel, University of Cambridge
 who: Students applying to UK undergraduate programs through UCAS, and graduates applying to UK master's and doctoral programs.
-help:
-- title: Depth over breadth
-  text: UK universities admit students to a specific subject. We help students build super-curricular depth (reading, research and competitions) that proves genuine academic commitment.
-- title: UCAS, tests and interviews
-  text: Course choices, the personal statement, subject admissions tests and interview preparation for Oxford, Cambridge and other universities that interview.
-- title: UK graduate programs
-  text: One-year master's and doctoral applications, including research proposals and supervisor outreach.
-highlight:
-  label: Featured outcomes
-  title: Offers across the UK G5
-  text: WinPlus students have received offers from Oxford, Cambridge, Imperial College London, UCL and LSE.
-faq:
-- q: When are UCAS deadlines?
-  a: Applications to Oxford, Cambridge and most medicine courses are due in mid-October of the final year; most other courses are due in late January.
-- q: Can students apply to both the US and the UK?
-  a: Yes, and many of our students do. Because the two systems reward different things, we plan the profile and timeline so each application is strong.
-- q: Do you help with UK master's applications?
-  a: Yes, including course selection, personal statements, references and, for research degrees, proposals.
+system: The UK admits to a subject, not to a university. Students choose up to five UCAS courses, only one of Oxford or Cambridge, and write a single personal statement for all of them. Academic depth,
+  admissions tests and interviews decide the most competitive places.
+challenges_intro: UK admissions reward depth in one subject. Students coming from US-style profiles often need a different strategy.
+challenges:
+- challenge: Breadth doesn't impress a subject tutor
+  title: Super-curricular depth
+  text: Reading, research, competitions and projects that prove genuine commitment to the chosen subject, the evidence tutors look for first.
+- challenge: One statement for five universities
+  title: A personal statement that argues
+  text: A focused, academic statement that shows how the student thinks about their subject, written to work across every UCAS choice.
+- challenge: Tests and interviews decide the top places
+  title: Admissions tests and interviews
+  text: Preparation for subject admissions tests where required, and mock interviews that train students to think aloud through unfamiliar problems.
+timeline_title: The UK application timeline
+timeline:
+- when: Year 12 / Grade 11
+  text: Choose the subject, build super-curricular depth, plan any admissions tests.
+- when: Summer
+  text: Personal statement drafts; course and university shortlist.
+- when: Oct 15
+  text: UCAS deadline for Oxford, Cambridge, medicine, dentistry and veterinary courses.
+- when: Oct–Nov
+  text: Subject admissions tests where required.
+- when: Dec
+  text: Oxford and Cambridge interviews.
+- when: Jan
+  text: UCAS deadline for most other courses; offers through spring.
+outcomes_text: 'WinPlus students have received offers from every G5 university:'
+outcomes:
+- University of Oxford
+- University of Cambridge
+- Imperial College London
+- University College London (UCL)
+- London School of Economics (LSE)

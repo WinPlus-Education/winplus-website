@@ -243,13 +243,24 @@ def build():
             e["is_past"] = bool(end and end < now - dt.timedelta(days=1))
         upcoming = [e for e in events if e.get("date") and not e["is_past"]]
         team = d["team"]
+        # School logos and local names, keyed by the English name (admissions wall in content/pages/results.yml)
+        en_tiers = data["en"]["results"].get("offer_tiers", [])
+        school_logos, school_names = {}, {}
+        for ti, t in enumerate(d["results"].get("offer_tiers", [])):
+            for si, sc in enumerate(t.get("schools", [])):
+                try:
+                    key = en_tiers[ti]["schools"][si]["name"]
+                except (IndexError, KeyError):
+                    key = sc["name"]
+                school_logos[key] = school_logos[sc["name"]] = sc.get("logo", "")
+                school_names[key] = sc["name"]
         people = team.get("people") or [p for g in team.get("groups", []) for p in g.get("people", [])]
         common = {
             "lang": lang, "site": d["site"], "site_url": site_url, "posts": d["posts"],
             "programs": d["programs"], "services": d["admissions"], "experiences": d["experiences"],
             "events": events, "upcoming": upcoming, "past_events": [e for e in events if e["is_past"]][::-1],
             "results_data": d["results"], "team_data": team, "people_by_id": {p["id"]: p for p in people if p.get("id")},
-            "school_logos": {sc["name"]: sc.get("logo", "") for t in d["results"].get("offer_tiers", []) for sc in t.get("schools", [])},
+            "school_logos": school_logos, "school_names": school_names,
             "team_people": people, "team_founders": [p for p in people if p.get("founder")],
             "industries": {c["id"]: c["title"] for c in d["research_page"].get("industries", [])},
             "section_pages": d["pages"],

@@ -3,26 +3,37 @@ title: Canada Admissions
 short_title: Canada
 interest: UK, Canada & Australia Admissions
 seo_title: Canada University Admissions Counseling | WinPlus
-meta_description: 'Admissions counseling for Toronto, McGill, UBC, Waterloo and other Canadian universities: undergraduate, master''s and PhD applications.'
+meta_description: 'Canadian university admissions counseling: program selection, prerequisites, supplementary applications for Toronto, McGill, UBC and Waterloo, and graduate applications.'
 summary: Undergraduate and graduate applications to Toronto, McGill, UBC, Waterloo and other leading Canadian universities.
 eyebrow: Canada Admissions
 title_long: 'Leading Canadian universities: undergraduate and graduate'
 image: https://images.unsplash.com/photo-1583373834259-46cc92173cb7
 image_alt: A modern university building at dusk
 who: Students applying to Canadian undergraduate programs, often alongside US or UK applications, and graduates applying to Canadian master's and PhD programs.
-help:
-- title: Program-specific strategy
-  text: Canadian universities admit by program and often weigh grades heavily. We plan courses and prerequisites early and choose programs strategically.
-- title: Supplementary applications
-  text: Personal profiles, supplementary essays, video responses and portfolios for competitive programs such as engineering, computer science and commerce.
-- title: Graduate applications
-  text: Master's and PhD applications, including statements, supervisor outreach and funding considerations.
-highlight:
-  label: Smart planning
+system: Canadian universities admit by program and weigh grades heavily, especially in prerequisite courses. Competitive programs such as engineering, computer science and commerce add supplementary applications,
+  and many offers are made on Grade 11 and early Grade 12 marks.
+challenges_intro: Canada can look straightforward. The competitive programs are not, and the details decide the outcome.
+challenges:
+- challenge: Prerequisites close doors quietly
+  title: Program-specific planning
+  text: We map each target program's prerequisites early, so course choices in Grades 10 and 11 keep every option open.
+- challenge: Supplements carry more weight than expected
+  title: Supplementary applications
+  text: Personal profiles, supplementary essays, video responses and portfolios for competitive programs, developed with the same care as a US essay.
+- challenge: Juggling Canada, the US and the UK
   title: One profile, several countries
-  text: Many families apply to Canada alongside the US and UK. We coordinate timelines and requirements so one strong profile serves every application.
-faq:
-- q: When are Canadian application deadlines?
-  a: Most undergraduate deadlines fall between January and March, with some programs and scholarships earlier, from November.
-- q: Do Canadian universities consider extracurriculars?
-  a: Increasingly, yes, especially through supplementary applications for competitive programs. We help students present activities effectively.
+  text: We coordinate timelines and requirements so one strong profile serves every application without trade-offs.
+timeline_title: The Canadian application timeline
+timeline:
+- when: Grades 10–11
+  text: Map program prerequisites and protect the grades that count.
+- when: Oct–Jan
+  text: Applications through OUAC for Ontario or each university's portal.
+- when: Jan–Mar
+  text: Supplementary applications, profiles and video responses.
+- when: Feb–May
+  text: Rolling offers, often on Grade 11 and early Grade 12 marks.
+- when: Jun 1
+  text: Typical deadline to accept an Ontario offer.
+outcomes_text: '[Add featured Canadian outcomes: universities and programs where WinPlus students have been admitted.]'
+outcomes: []

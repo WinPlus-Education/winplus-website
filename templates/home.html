@@ -9,7 +9,7 @@
 <section class="hero-home" data-slides aria-roledescription="carousel" aria-label="{{ _('Top university campuses') }}">
   <ul class="slides">
     {% for s in slides %}
-    <li class="slide{% if loop.first %} is-active{% endif %}" data-caption="{{ s.caption }}">
+    <li class="slide fx-{{ (loop.index0 % 4) + 1 }}{% if loop.first %} is-active{% endif %}">
       {% set ss = srcset(s.image) %}
       <img src="{{ img(s.image, 2000) }}"{% if ss %} srcset="{{ ss }}" sizes="100vw"{% endif %} alt="{{ s.alt }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
     </li>
@@ -25,10 +25,6 @@
         {{ btn(h.secondary_cta, h.secondary_link, "ghost", false) }}
       </div>
     </div>
-  </div>
-  <div class="slide-caption" aria-hidden="true">
-    <span data-slide-caption>{{ slides[0].caption }}</span>
-    <span class="slide-dots">{% for s in slides %}<button type="button" aria-label="{{ s.caption }}"{% if loop.first %} aria-current="true"{% endif %}></button>{% endfor %}</span>
   </div>
 </section>
 

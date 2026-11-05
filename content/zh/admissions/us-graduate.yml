@@ -3,28 +3,44 @@ title: 美国研究生申请
 short_title: 美国研究生
 interest: 研究生申请
 seo_title: 美国研究生申请：硕士、博士、MBA | WinPlus 欧歌学院
-meta_description: 美国硕士、博士及 MBA 申请指导，由哈佛、MIT、耶鲁导师带领：申请定位、个人陈述、推荐信与面试。
-summary: 硕士、博士与 MBA 申请，由哈佛、MIT、耶鲁等名校毕业的导师指导。
+meta_description: 美国研究生申请规划：硕士、博士与 MBA 的定位、个人陈述、推荐人策略、项目匹配与面试辅导。
+summary: 硕士、博士与 MBA 申请，由亲历目标项目的导师指导。
 eyebrow: 美国研究生申请
 title_long: 硕士、博士与 MBA 申请，由过来人指导
-image: https://images.unsplash.com/photo-1741699427799-3fbb70fce948
-image_alt: 大学图书馆中的研究生
-who: 申请美国硕士、博士与 MBA 项目的大学生和职场人士，包括转专业申请者与国际申请者。
-help:
-- title: 清晰的申请定位
-  text: 我们帮助你想清楚这个学位要为你带来什么，再把过往的工作、科研或职业经历与目标项目串联成有说服力的叙事，这正是招生委员会首先看重的。
-- title: 文书、简历与推荐信
-  text: 目的陈述、个人经历陈述、简历与推荐人策略，由拥有哈佛、MIT、耶鲁等名校学位的导师共同打磨。
-- title: 项目匹配与面试
-  text: 基于师资、就业与匹配度制定选校方案，并准备教授面试与招生面试，包括 MBA 行为面试。
-highlight:
-  label: 成功案例
-  title: 哈佛商学院、MIT 斯隆与沃顿
-  text: WinPlus 导师曾指导 MBA 与硕士申请者进入哈佛商学院、MIT 斯隆商学院与沃顿商学院等项目。
-faq:
-- q: 你们支持哪些研究生项目？
-  a: 工程、计算机、经济、公共政策、教育、生命科学与商科等领域的硕士、博士与 MBA 项目。
-- q: 应该什么时候开始准备？
-  a: 最好在截止日期前 9–12 个月开始。大多数美国项目截止于 12 月至 1 月，MBA 申请者通常在第一轮（9–10 月）提交。
-- q: 你们指导博士研究计划吗？
-  a: 指导。拥有博士学位的导师帮助完善研究陈述、寻找潜在导师并准备与教授的沟通。
+image: /images/uploads/campus/harvard-dunster.webp
+image_alt: 冬日的哈佛大学 Dunster 学院
+who: 申请美国硕士、博士及 MBA 项目的大学生与职场青年，包括转专业人士与国际申请者。
+system: 研究生申请由教授与录取委员会审阅，他们首先看的是：为什么这个学位、这个项目，是你合理的下一步。研究匹配度、职业轨迹与推荐人的分量，都远高于本科申请。
+challenges_intro: 研究生录取看重方向与匹配。以下是我们最常见到的短板，以及弥补方式。
+challenges:
+- challenge: 履历出色，方向却不清晰
+  title: 有说服力的定位
+  text: 我们先厘清你希望这个学位带来什么，再构建叙事，把过去的工作、科研或职业经历与目标项目及未来职业连接起来。
+- challenge: 文书泛泛，推荐信平淡
+  title: 文书、简历与推荐人策略
+  text: 个人陈述、个人经历陈述与简历经多轮打磨，并设计推荐人分工，让每一封推荐信都提供不同的证据。
+- challenge: 冲着名气申请，而非匹配度
+  title: 项目匹配与面试
+  text: 依据导师、奖学金、就业与文化制定选校名单，并辅导教授面谈与 MBA 行为面试。
+timeline_title: 研究生申请时间线
+timeline:
+- when: 提前 12–18 个月
+  text: 明确目标，初选项目，规划 GRE/GMAT 与语言考试。
+- when: 春季–夏季
+  text: 科研型项目联系导师；确定推荐人；完成文书初稿。
+- when: 9–10 月
+  text: 多数 MBA 第一轮截止。
+- when: 12–1 月
+  text: 多数博士与硕士截止；MBA 第二轮。
+- when: 2–3 月
+  text: 面试、校园开放日与录取结果。
+- when: 4 月 15 日
+  text: 有奖学金资助的研究生录取通常的答复日。
+outcomes_text: WinPlus 导师曾指导 MBA 与硕士申请者进入的项目包括：
+outcomes:
+- name: Harvard University
+  label: 哈佛商学院
+- name: Massachusetts Institute of Technology
+  label: MIT 斯隆管理学院
+- name: University of Pennsylvania
+  label: 宾大沃顿商学院

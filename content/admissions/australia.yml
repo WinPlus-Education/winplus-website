@@ -3,26 +3,37 @@ title: Australia Admissions
 short_title: Australia
 interest: UK, Canada & Australia Admissions
 seo_title: Australia University Admissions Counseling | WinPlus
-meta_description: 'Admissions counseling for Melbourne, Sydney, ANU, UNSW and other Australian universities: undergraduate, master''s and research degrees.'
+meta_description: 'Australian university admissions counseling: course selection across IB, A-Level and AP, applications for Melbourne, Sydney, ANU and UNSW, and graduate degrees.'
 summary: Undergraduate and graduate applications to Melbourne, Sydney, ANU, UNSW and other leading Australian universities.
 eyebrow: Australia Admissions
 title_long: 'Leading Australian universities: undergraduate and graduate'
-image: https://images.unsplash.com/photo-1541339907198-e08756dedf3f
-image_alt: Graduates throwing their caps in celebration
+image: /images/uploads/campus/sydney.webp
+image_alt: The Quadrangle, University of Sydney
 who: Students applying to Australian undergraduate programs and graduates applying to Australian master's and research degrees.
-help:
-- title: Course and entry planning
-  text: We match students to courses based on interests and entry requirements across curricula including IB, A-Levels, AP and national systems.
-- title: Applications and documentation
-  text: Applications, statements and supporting documents, coordinated with any US, UK or Canadian applications.
-- title: Graduate and research degrees
-  text: Coursework master's and research degrees, including proposals and supervisor outreach.
-highlight:
-  label: Smart planning
-  title: Flexible intakes
-  text: Many Australian universities offer February and July intakes, giving students flexibility around other application cycles.
-faq:
-- q: When do Australian universities accept applications?
-  a: Most universities run main intakes in February and July, with application windows that vary by university and course.
-- q: Can WinPlus help with combined applications?
-  a: Yes. We regularly coordinate Australian applications with US, UK and Canadian applications.
+system: Australian universities admit mainly on academic results, converted from ATAR, IB, A-Levels, AP or national systems, into a specific course. Many offer February and July intakes, and some courses,
+  such as medicine, add tests and interviews.
+challenges_intro: Australia rewards precise planning around grades, courses and intakes.
+challenges:
+- challenge: Entry scores differ by curriculum
+  title: Course and entry planning
+  text: We match students to courses based on interests and published entry requirements across IB, A-Levels, AP and national systems.
+- challenge: Two intakes, several countries
+  title: Coordinated applications
+  text: Applications, statements and documents timed around February and July intakes and any US, UK or Canadian applications.
+- challenge: Research degrees need a supervisor
+  title: Graduate and research degrees
+  text: Coursework master's and research degrees, including research proposals and supervisor outreach.
+timeline_title: The Australian application timeline
+timeline:
+- when: 12 months out
+  text: Course shortlist and entry requirements for the student's curriculum.
+- when: Aug–Dec
+  text: Applications for the February intake; any required tests or interviews.
+- when: Dec–Jan
+  text: Offers, often conditional on final results.
+- when: Feb–Mar
+  text: Semester 1 begins.
+- when: Jul
+  text: Mid-year intake at many universities.
+outcomes_text: '[Add featured Australian outcomes: universities and courses where WinPlus students have been admitted.]'
+outcomes: []

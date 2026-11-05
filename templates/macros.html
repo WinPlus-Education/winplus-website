@@ -336,7 +336,7 @@
 {% macro school_cards(items, cls="") -%}
 <ul class="wall {{ cls }}">
   {% for sc in items %}{% set name = sc.name if sc.name is defined else sc %}{% set logo = (sc.logo if sc.logo is defined else "") or school_logos.get(name, "") %}
-  <li class="reveal">{% if logo %}<img src="{{ img(logo, 240) }}" alt="" loading="lazy" decoding="async">{% else %}<span class="wall-mono" aria-hidden="true">{{ name[0] }}</span>{% endif %}<span>{{ (sc.label if sc.label is defined and sc.label else name) }}</span></li>
+  <li class="reveal">{% if logo %}<img src="{{ img(logo, 240) }}" alt="" loading="lazy" decoding="async">{% else %}<span class="wall-mono" aria-hidden="true">{{ name[0] }}</span>{% endif %}<span>{{ (sc.label if sc.label is defined and sc.label else school_names.get(name, name)) }}</span></li>
   {% endfor %}
 </ul>
 {%- endmacro %}

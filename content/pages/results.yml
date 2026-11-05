@@ -1,9 +1,8 @@
 seo_title: Our Results | Ivy League & Top-30 Admissions Outcomes | WinPlus
-meta_description: 'WinPlus student outcomes: 87 Ivy League and Top-30 offers including Harvard, Yale three years running, Princeton and Penn, plus case studies and family testimonials.'
+meta_description: 'WinPlus student outcomes: 87 Ivy League and Top-30 offers including Harvard, Yale, Princeton and Penn, plus case studies and family testimonials.'
 eyebrow: Our Results
 title: Outcomes that speak for themselves
-intro: WinPlus-advised students earn offers from the world's most selective universities at rates far above each school's overall admit rate. Here are the numbers, the stories and the
-  families behind them.
+intro: WinPlus-advised students earn offers from the world's most selective universities at rates far above each school's overall admit rate. Here are the numbers, the stories and the families behind them.
 image: /images/uploads/campus/yale.webp
 image_alt: Sterling Memorial Library, Yale University
 stats:
@@ -13,47 +12,59 @@ stats:
   label: Admitted to the Ivy League or US Top 30
 - number: '87'
   label: Ivy League & Top-30 offers
-- number: '3'
-  label: Consecutive years of Yale admits
+- number: '[X]'
+  label: '[Placeholder: add a headline result]'
 stats_note: 'Data as of July 2026. [Confirm methodology: which students and class years are included.]'
 chart_title: 'Acceptance rate: WinPlus students vs. overall'
 schools:
 - name: Harvard
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/harvard.png
 - name: Stanford
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/logos/stanford.png
 - name: MIT
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/mit.png
 - name: Princeton
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/princeton.png
 - name: Yale
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/yale.png
 - name: Columbia
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/columbia.png
 - name: UPenn
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/upenn.png
 - name: Caltech
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/logos/caltech.png
 - name: Duke
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/duke.png
 - name: Johns Hopkins
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/johns-hopkins.png
 - name: Northwestern
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/northwestern.png
 - name: UChicago
   general_rate: ''
   winplus_rate: ''
+  logo: /images/uploads/universities/uchicago.png
 footnote: '* Based on WinPlus-counseled students, Class of [YEAR]. General admit rates from each university''s published data. [Add methodology.]'
 offers_eyebrow: Admissions wall
 offers_title: Universities our students have been admitted to
@@ -72,7 +83,7 @@ offer_tiers:
     note: ''
   - name: Yale University
     logo: /images/uploads/universities/yale.png
-    note: Undergraduate admits 3 years in a row
+    note: ''
   - name: Stanford University
     logo: /images/uploads/logos/stanford.png
     note: ''
@@ -83,19 +94,19 @@ offer_tiers:
     logo: /images/uploads/universities/duke.png
     note: ''
   - name: Johns Hopkins University
-    logo: ''
+    logo: /images/uploads/universities/johns-hopkins.png
     note: ''
   - name: University of Chicago
-    logo: ''
+    logo: /images/uploads/universities/uchicago.png
     note: ''
   - name: Columbia University
     logo: /images/uploads/universities/columbia.png
     note: ''
   - name: Dartmouth College
-    logo: ''
+    logo: /images/uploads/universities/dartmouth.png
     note: ''
   - name: Carnegie Mellon University
-    logo: ''
+    logo: /images/uploads/universities/cmu.png
     note: ''
   - name: Cornell University
     logo: /images/uploads/logos/cornell.png
@@ -116,72 +127,72 @@ offer_tiers:
     logo: ''
     note: ''
   - name: University of Michigan
-    logo: ''
+    logo: /images/uploads/universities/michigan.png
     note: ''
   - name: University of Virginia
-    logo: ''
+    logo: /images/uploads/universities/uva.png
     note: ''
   - name: University of North Carolina at Chapel Hill
     logo: ''
     note: ''
   - name: University of Southern California
-    logo: ''
+    logo: /images/uploads/universities/usc.png
     note: ''
   - name: Georgia Institute of Technology
     logo: /images/uploads/universities/georgia-tech.png
     note: ''
   - name: UC San Diego
-    logo: ''
+    logo: /images/uploads/universities/ucsd.png
     note: ''
 - label: US Top 50 (31–50)
   schools:
   - name: Boston College
-    logo: ''
+    logo: /images/uploads/universities/boston-college.png
     note: ''
   - name: New York University
-    logo: ''
+    logo: /images/uploads/universities/nyu.png
     note: ''
   - name: Tufts University
-    logo: ''
+    logo: /images/uploads/universities/tufts.png
     note: ''
   - name: Boston University
-    logo: ''
+    logo: /images/uploads/universities/bu.png
     note: ''
   - name: UC Davis
-    logo: ''
+    logo: /images/uploads/universities/ucdavis.png
     note: ''
   - name: UC Irvine
-    logo: ''
+    logo: /images/uploads/universities/uci.png
     note: ''
   - name: University of Florida
-    logo: ''
+    logo: /images/uploads/universities/florida.png
     note: ''
   - name: University of Illinois Urbana-Champaign
-    logo: ''
+    logo: /images/uploads/universities/illinois.png
     note: ''
   - name: University of Texas at Austin
-    logo: ''
+    logo: /images/uploads/universities/texas.png
     note: ''
   - name: University of Wisconsin–Madison
-    logo: ''
+    logo: /images/uploads/universities/wisconsin.png
     note: ''
   - name: Northeastern University
-    logo: ''
+    logo: /images/uploads/universities/northeastern.png
     note: ''
   - name: Lehigh University
-    logo: ''
+    logo: /images/uploads/universities/lehigh.png
     note: ''
   - name: Ohio State University
-    logo: ''
+    logo: /images/uploads/universities/ohio-state.png
     note: ''
   - name: Rutgers University–New Brunswick
     logo: ''
     note: ''
   - name: UC Santa Barbara
-    logo: ''
+    logo: /images/uploads/universities/ucsb.png
     note: ''
   - name: University of Maryland, College Park
-    logo: ''
+    logo: /images/uploads/universities/umd.png
     note: ''
   - name: University of Rochester
     logo: ''
@@ -213,31 +224,25 @@ cases:
 - tag: Ivy League
   title: From top of the class to Yale, with scholarship
   start: Started the summer after Grade 9. GPA 4.0 with 14 AP 5s, ranked 1st of 300+, TOEFL 117, SAT 1550. Rich activities in biology and public health, but little international impact.
-  strategy: 'Add global leadership and expert recommendations: a speaking role at an international women''s forum, research guided by a CDC epidemiologist and a global-health professor,
-    and essays and mock interviews with a Yale alumni interviewer and Harvard mentors.'
-  change: Spoke at a global women's forum in Bangkok; artwork exhibited at the forum; two expert recommendation letters; 50+ rounds of essay revision; interviews at every Ivy applied
-    to.
+  strategy: 'Add global leadership and expert recommendations: a speaking role at an international women''s forum, research guided by a CDC epidemiologist and a global-health professor, and essays and mock
+    interviews with a Yale alumni interviewer and Harvard mentors.'
+  change: Spoke at a global women's forum in Bangkok; artwork exhibited at the forum; two expert recommendation letters; 50+ rounds of essay revision; interviews at every Ivy applied to.
   outcome: Admitted to Yale (with scholarship), Penn, Johns Hopkins, Notre Dame, UC Berkeley and UCLA.
-  image: /images/uploads/students/ivy-admit-story.jpg
-  image_alt: A WinPlus student presenting her work
 - tag: Turnaround
   title: From no SAT or TOEFL to Top-50 offers and $180,000 in scholarships
   start: Started the summer after Grade 11. GPA around 3.5, no TOEFL, no SAT, no research. Many activities but no standout achievement or international reach.
-  strategy: 'Raise every one of the Eight Key Elements at once: an intensive testing plan, a three-month research project with a geospatial-science professor, a UN climate conference,
-    and a photography portfolio and exhibition.'
-  change: TOEFL 99 and SAT 1400 (superscore); a published GIS research paper; spoke at a UN climate conference; a photography exhibition and published work; charity cello concerts at
-    a children's hospital.
-  outcome: Admitted to UC Davis, Boston University, Purdue, Northeastern and Ohio State, with scholarships of $80,000 (UC Riverside), $60,000 (UC Santa Cruz) and $40,000 (Syracuse).
-    Waitlisted at UCLA and UC San Diego.
-  image: /images/uploads/students/uc-scholarship-story.jpg
-  image_alt: A WinPlus student on a university visit
+  strategy: 'Raise every one of the Eight Key Elements at once: an intensive testing plan, a three-month research project with a geospatial-science professor, a UN climate conference, and a photography
+    portfolio and exhibition.'
+  change: TOEFL 99 and SAT 1400 (superscore); a published GIS research paper; spoke at a UN climate conference; a photography exhibition and published work; charity cello concerts at a children's hospital.
+  outcome: Admitted to UC Davis, Boston University, Purdue, Northeastern and Ohio State, with scholarships of $80,000 (UC Riverside), $60,000 (UC Santa Cruz) and $40,000 (Syracuse). Waitlisted at UCLA and
+    UC San Diego.
 stories_title: Student stories
 stories:
 - tag: Global stage
   title: The only high-school speaker at COSP19
   text: After issue training with WinPlus mentors, a 17-year-old student addressed the 19th Conference of States Parties to the CRPD at UN Headquarters, New York, in June 2026.
-  image: /images/uploads/students/un-cosp19-speaker.jpg
-  image_alt: A WinPlus student speaking at COSP19
+  image: /images/uploads/campus/un-flags.webp
+  image_alt: Flags of member states outside an international headquarters
   link: experiences/global-conferences.html
 - tag: Research
   title: A NASA mentor's letter, and Harvard and Stanford computer science

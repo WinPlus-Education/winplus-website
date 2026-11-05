@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, values, journey, faq, cta_band, results_notice, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, cta_band, results_notice, school_cards, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block schema %}
 {{ ld({"@context": "https://schema.org", "@type": "Service", "serviceType": item.title, "name": item.title, "description": item.summary, "url": canonical, "provider": {"@id": site_url ~ "/#organization"}, "areaServed": site.area_served, "audience": {"@type": "EducationalAudience", "educationalRole": "student"}}) }}
@@ -9,48 +9,56 @@
 {% set hero = {"eyebrow": item.eyebrow, "title": item.title_long, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
 {{ page_hero(hero, [[_("Admissions Counseling"), "admissions.html"], [item.short_title, item.url]], btn(site.cta_text, contact, "light")) }}
 
+{# What makes the difference: who it's for, how the system works, key challenges and our approach #}
 <section class="section">
-  <div class="container split-intro">
-    <div><p class="eyebrow">{{ _("Who it's for") }}</p><p class="statement">{{ item.who }}</p></div>
-    <div>
-      {% if item.highlight %}
-      <p class="eyebrow">{{ item.highlight.label }}</p>
-      <h2 class="h3" style="font-size:1.75rem">{{ item.highlight.title }}</h2>
-      <p class="lead">{{ item.highlight.text }}</p>
-      {{ results_notice() }}
-      {% endif %}
+  <div class="container">
+    <div class="split-intro">
+      <div><p class="eyebrow">{{ _("Who it's for") }}</p><p class="statement">{{ item.who }}</p></div>
+      <div><p class="lead">{{ item.system }}</p></div>
     </div>
   </div>
 </section>
 
 <section class="section s-ivory">
   <div class="container">
-    {{ head(_("How we help"), item.help_title or _("What makes the difference")) }}
-    {{ values(item.help) }}
-  </div>
-</section>
-
-<section class="section s-ink">
-  <div class="container">
-    {{ head(_("How we work"), section_pages.admissions.how_title, section_pages.admissions.how_intro) }}
-    {{ journey(section_pages.admissions.how) }}
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">{{ faq(item.faq, item.title ~ ": " ~ _("FAQ")) }}</div>
-</section>
-
-<section class="section s-ivory">
-  <div class="container">
-    <div class="head-row">{{ head("", _("Other admissions programs")) }}{{ arrow(_("All admissions programs"), "admissions.html#programs") }}</div>
-    <div class="grid g-3">
-      {% for s in (siblings | rejectattr("slug", "equalto", item.slug) | list)[:3] %}
-      <a class="card track-card reveal" href="{{ u(s.url) }}">{{ photo(s.image, s.image_alt, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}<div class="card-body"><h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="link-arrow">{{ _("Learn more") }} <span aria-hidden="true">→</span></span></div></a>
+    {{ head(_("How we help"), _("What makes the difference"), item.challenges_intro) }}
+    <div class="challenges">
+      {% for c in item.challenges %}
+      <article class="challenge reveal" style="--i: {{ loop.index0 }}">
+        <p class="challenge-q"><span class="num">{{ "%02d" | format(loop.index) }}</span>{{ c.challenge }}</p>
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.text }}</p>
+      </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
+{% if item.timeline %}
+<section class="section s-ink">
+  <div class="container">
+    {{ head(_("Key dates"), item.timeline_title) }}
+    <ol class="timeline reveal" style="--steps: {{ item.timeline | length }}">
+      {% for t in item.timeline %}<li style="--i: {{ loop.index0 }}"><span class="tl-when">{{ t.when }}</span><p>{{ t.text }}</p></li>{% endfor %}
+    </ol>
+    <p class="notice">{{ _("Typical dates; each school and cycle sets its own. We confirm every deadline for each student.") }}</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(_("Featured outcomes"), item.outcomes_text) }}{{ arrow(_("See all results"), "results.html") }}</div>
+    {% if item.outcomes %}{{ school_cards(item.outcomes) }}{{ results_notice() }}{% endif %}
+  </div>
+</section>
+
 {{ cta_band(_("Start with a free strategy session."), _("Meet a WinPlus mentor, discuss your goals and leave with clear next steps. No commitment required."), site.cta_text, contact) }}
+
+<nav class="section section-tight s-ivory" aria-label="{{ _('Other admissions programs') }}">
+  <div class="container other-links">
+    <p class="eyebrow">{{ _("Other admissions programs") }}</p>
+    <ul>{% for s in siblings | sort(attribute="order") if s.slug != item.slug %}<li><a href="{{ u(s.url) }}">{{ s.title }} <span aria-hidden="true">→</span></a></li>{% endfor %}</ul>
+  </div>
+</nav>
 {% endblock %}

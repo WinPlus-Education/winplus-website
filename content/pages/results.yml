@@ -218,7 +218,7 @@ offer_tiers:
     logo: /images/uploads/universities/lse.png
     note: ''
 offers_note: Selected list of undergraduate and graduate offers. US categories follow the U.S. News & World Report 2027 Best National Universities ranking.
-cases_title: Case studies
+cases_title: Selected case studies
 cases_intro: 'Three very different starting points, one approach: a plan built around the student.'
 cases:
 - tag: Ivy League

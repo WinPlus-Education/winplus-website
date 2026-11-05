@@ -908,3 +908,9 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .consult-form button[disabled] { opacity: .45; cursor: not-allowed; }
 .consult-form textarea::placeholder, .consult-form input::placeholder { color: var(--mute-2); }
 @media (max-width: 1260px) { .sub { box-shadow: none; } }
+/* Story cards share row tracks (subgrid) so tags, titles and result panels line up across cards */
+@media (min-width: 1001px) {
+  .stories { row-gap: 0; }
+  .story { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; margin-bottom: clamp(16px, 2vw, 28px); }
+  .story-result { margin-bottom: 1.5rem; }
+}

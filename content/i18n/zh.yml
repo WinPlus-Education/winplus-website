@@ -4,7 +4,9 @@ A WinPlus consultant can recommend programs that fit the student's interests and
 A WinPlus mentor can recommend programs that fit the student's interests and application plan.: WinPlus 导师可以根据学生的兴趣与申请规划推荐合适的项目。
 A free 45-minute strategy session: 一次 45 分钟的免费规划咨询
 About Us: 关于我们
+About the student: 学生信息
 About this event: 活动介绍
+About you: 您的信息
 Address: 地址
 Admissions Counseling: 升学规划
 Admissions counseling FAQ: 升学规划常见问题
@@ -36,6 +38,7 @@ Book a Free Consultation: 预约免费咨询
 Book a free strategy session with a WinPlus consultant.: 与 WinPlus 顾问预约一次免费规划咨询。
 Breadcrumb: 页面路径
 By submitting, you agree to our: 提交即表示你同意我们的
+City: 城市
 Click to enlarge: 点击查看大图
 Cohort: 班级规模
 Company: 关于我们
@@ -47,12 +50,15 @@ Contact Us: 联系我们
 Contact name: 联系人姓名
 Cookie preferences: Cookie 偏好设置
 Country or region: 国家或地区
+Current grade or stage: 当前年级或阶段
+Current school: 当前就读学校
 Curriculum: 课程安排
 Date: 日期
 Date of birth: 出生日期
 Dates: 日期
 Dates vary by institution and year. Always confirm with each school.: 日期因院校和年份而异，请以各校官方信息为准。
 Details: 详情
+Dream schools, current activities, timeline, anything you would like us to know: 梦校、目前的活动、时间安排，以及任何希望我们了解的情况
 Educator: 教育工作者
 Effective date: 生效日期
 Email: 邮箱
@@ -67,6 +73,7 @@ Explore the program: 了解项目详情
 FAQ: 常见问题
 Featured outcomes: 代表性录取
 Field: 领域
+Fields marked * are required.: 标 * 为必填项。
 Filter articles by topic: 按主题筛选文章
 For: 适合对象
 For Schools: 机构合作
@@ -91,6 +98,7 @@ Grade 9: 9 年级
 Highlight: 亮点
 Highlights: 亮点
 Home: 首页
+How did you hear about us?: 您是如何了解到我们的？
 How we help: 我们如何帮助
 How we work: 服务流程
 I agree to receive emails from WinPlus and accept the: 我同意接收 WinPlus 的邮件，并接受
@@ -101,6 +109,8 @@ In their words: 他们说
 Initial recommendations, with no obligation: 获得初步建议，无需任何承诺
 Inquire: 咨询
 Insights: 洞察与资讯
+Intended field of study: 意向专业方向
+Intended start of studies: 计划入学时间
 Interested?: 感兴趣吗？
 Internship: 实习
 It may have moved. Try the menu above, or start from one of these pages.: 页面可能已移动。请使用上方菜单，或从以下页面开始浏览。
@@ -163,6 +173,7 @@ Parent / guardian name: 家长 / 监护人姓名
 Parent or guardian: 家长或监护人
 Partner: 合作伙伴
 Partner With Us: 学校合作
+Partnership inquiry: 学校合作咨询
 Partnership models: 合作模式
 Past event: 往期活动
 Past events: 往期活动
@@ -174,6 +185,7 @@ Photo credits: 图片来源
 Places are limited and offered on a rolling basis.: 名额有限，按申请顺序录取。
 Please enable JavaScript to complete this form, or email us at: 请启用 JavaScript 以填写此表格，或发送邮件至
 Preferred start: 期望开始时间
+Preferred way to reach you: 首选联系方式
 Previous: 上一个
 Privacy Policy: 隐私政策
 Program (optional): 项目（选填）
@@ -194,6 +206,8 @@ Register Interest: 登记意向
 Register interest: 登记意向
 Register now: 立即报名
 Register your interest and we'll send dates, eligibility and fees.: 登记意向后，我们会将日期、报名条件与费用发送给你。
+'Representing a school? Our partnership inquiry form asks the right questions:': 代表学校或机构？请使用我们的学校合作咨询表：
+Request my free consultation: 提交免费咨询申请
 Research: 科研
 Research & Internship Programs: 科研与实习项目
 Research & Internships: 科研与实习
@@ -220,6 +234,7 @@ Show pages in: 展开
 Site Map: 网站地图
 Skip to content: 跳到正文
 Social media: 社交媒体
+Specific program: 具体项目
 Specific program (optional): 具体项目（选填）
 Start with a free strategy session: 从一次免费规划咨询开始
 Start with a free strategy session with a WinPlus consultant.: 与 WinPlus 顾问预约一次免费规划咨询。
@@ -232,12 +247,14 @@ Student (13 or older): 学生（13 岁及以上）
 Student grade (optional): 学生年级（选填）
 Student name: 学生姓名
 Student's current grade: 学生当前年级
+Student's name: 学生姓名
 Success stories: 成功案例
 Talk to a Consultant: 咨询顾问
 Talk to a WinPlus consultant about your student's plan.: 与 WinPlus 顾问探讨孩子的规划。
 Talk to a WinPlus mentor about your student's plan.: 与 WinPlus 导师聊聊孩子的规划。
 Talk to a consultant: 与顾问聊一聊
 Talk to a consultant about which experiences fit the student's plan.: 与顾问探讨哪些经历最适合学生的规划。
+Target countries: 目标国家
 Tell us about your goals: 合作目标
 Terms & Disclaimer: 使用条款与免责声明
 Testimonials: 评价
@@ -283,11 +300,15 @@ Why it's hard to copy: 为何难以复制
 WinPlus student rate: WinPlus 学员录取率
 Work email: 工作邮箱
 'You receive:': 你将获得：
+Your date of birth: 您的出生日期
 Your email address: 你的邮箱地址
+Your goals: 您的目标
 Your mentor: 你的导师
 Your story could be next: 下一个成功故事，可能就是你
 crest: 校徽
+e.g. US, UK: 例如：美国、英国
 home: 首页
+if different from yours: 如与您不同
 optional: 选填
 photos: 张照片
 universities: 所院校

@@ -3,14 +3,9 @@
 {% block content %}
 {{ page_head(page, [[_("About Us"), "about.html"], [_("Partner With Us"), "schools.html"], [page.eyebrow, "partner-inquiry.html"]]) }}
 <section class="section">
-  <div class="container contact-layout">
-    <aside>
-      <h2 class="h3">{{ page.next_title }}</h2>
-      <ol class="next-steps">{% for s in page.next_steps %}<li>{{ s }}</li>{% endfor %}</ol>
-    </aside>
-
+  <div class="container">
     {# Netlify Forms: submissions appear in the Netlify dashboard under "Forms" as "partner-inquiry". #}
-    <form class="form form-wrap" name="partner-inquiry" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}">
+    <form class="form consult-form" name="partner-inquiry" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}">
       <input type="hidden" name="form-name" value="partner-inquiry">
       <input type="hidden" name="language" value="{{ lang.code }}">
       <input type="hidden" name="consent_version" value="{{ site.consent.version }}">

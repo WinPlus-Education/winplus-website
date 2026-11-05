@@ -1,41 +1,82 @@
-seo_title: "Book a Free Strategy Session | WinPlus"
-meta_description: "Book a free, no-commitment strategy session with a WinPlus mentor to discuss admissions, research and internships, campus immersion and global conferences."
+seo_title: Book a Free Strategy Session | WinPlus
+meta_description: Book a free, no-commitment strategy session with a WinPlus mentor to discuss admissions, research and internships, campus immersion and global conferences.
 eyebrow: Free Strategy Session
-title: "Book your free strategy session"
-intro: "Tell us a little about the student. A WinPlus mentor will reply within [X] business days to schedule a call."
-next_title: What happens next
-next_steps:
-  - "We reply to schedule a call at a time that suits your time zone."
-  - "A free strategy session with a WinPlus mentor: goals, background and interests."
-  - "Initial recommendations and next steps, with no obligation."
+title: Book your free strategy session
+intro: Tell us about the student and your goals. A WinPlus mentor will reply within [X] business days to schedule your free strategy session at a time that suits your time zone, and you'll leave with initial
+  recommendations and clear next steps. No commitment required.
 interests:
-  - US College Admissions
-  - Graduate School Admissions
-  - US High School Admissions
-  - "UK, Canada & Australia Admissions"
-  - Research & Internship Programs
-  - Global Experiences
-  - Events & Info Sessions
-  - School Partnership
-  - Other
+- US College Admissions
+- Graduate School Admissions
+- US High School Admissions
+- UK, Canada & Australia Admissions
+- Research & Internship Programs
+- Global Experiences
+- Events & Info Sessions
+- School Partnership
+- Other
 grades:
-  - Grade 8 or below
-  - Grade 9
-  - Grade 10
-  - Grade 11
-  - Grade 12
-  - University / graduate
+- Grade 6 or below
+- Grade 7
+- Grade 8
+- Grade 9
+- Grade 10
+- Grade 11
+- Grade 12
+- Gap year
+- Undergraduate
+- Graduate student
+- Working professional
 countries:
-  - { code: US, label: United States }
-  - { code: CN, label: Mainland China }
-  - { code: HK, label: Hong Kong SAR }
-  - { code: MO, label: Macao SAR }
-  - { code: TW, label: Taiwan }
-  - { code: SG, label: Singapore }
-  - { code: CA, label: Canada (outside Quebec) }
-  - { code: CA-QC, label: Canada (Quebec) }
-  - { code: GB, label: United Kingdom }
-  - { code: AU, label: Australia }
-  - { code: AE, label: United Arab Emirates }
-  - { code: OTHER, label: Other }
-success_message: "Thank you. We've received your message and a WinPlus mentor will be in touch soon."
+- code: US
+  label: United States
+- code: CN
+  label: Mainland China
+- code: HK
+  label: Hong Kong SAR
+- code: MO
+  label: Macao SAR
+- code: TW
+  label: Taiwan
+- code: SG
+  label: Singapore
+- code: CA
+  label: Canada (outside Quebec)
+- code: CA-QC
+  label: Canada (Quebec)
+- code: GB
+  label: United Kingdom
+- code: AU
+  label: Australia
+- code: AE
+  label: United Arab Emirates
+- code: OTHER
+  label: Other
+success_message: Thank you. We've received your message and a WinPlus mentor will be in touch soon.
+curricula:
+- US / AP
+- IB
+- A-Level
+- Chinese national curriculum (Gaokao track)
+- Canadian provincial
+- Australian
+- Other
+entry_years:
+- '2027'
+- '2028'
+- '2029'
+- '2030'
+- 2031 or later
+- Not sure yet
+contact_methods:
+- Email
+- Phone
+- WeChat
+referrals:
+- Search engine
+- Xiaohongshu (RED)
+- WeChat
+- LinkedIn
+- Friend or family
+- School or counselor
+- WinPlus event
+- Other

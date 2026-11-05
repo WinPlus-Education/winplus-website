@@ -718,18 +718,6 @@ collections:
       label: Intro text
       required: false
       widget: text
-    - name: next_title
-      label: Next title
-      required: false
-      widget: string
-    - name: next_steps
-      label: Next steps
-      required: false
-      widget: list
-      field:
-        name: item
-        label: Item
-        widget: string
     - name: interests
       label: Interests
       required: false
@@ -765,6 +753,38 @@ collections:
       label: Success message
       required: false
       widget: string
+    - name: curricula
+      label: Curricula
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: entry_years
+      label: Entry years
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: contact_methods
+      label: Contact methods
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: referrals
+      label: Referrals
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
   - name: credits
     label: Photo credits
     file: content/pages/credits.yml
@@ -1482,18 +1502,6 @@ collections:
       label: Intro text
       required: false
       widget: text
-    - name: next_title
-      label: Next title
-      required: false
-      widget: string
-    - name: next_steps
-      label: Next steps
-      required: false
-      widget: list
-      field:
-        name: item
-        label: Item
-        widget: string
     - name: countries
       label: Countries
       required: false
@@ -3728,18 +3736,6 @@ collections:
       label: Intro text
       required: false
       widget: text
-    - name: next_title
-      label: Next title
-      required: false
-      widget: string
-    - name: next_steps
-      label: Next steps
-      required: false
-      widget: list
-      field:
-        name: item
-        label: Item
-        widget: string
     - name: interests
       label: Interests
       required: false
@@ -3775,6 +3771,38 @@ collections:
       label: Success message
       required: false
       widget: string
+    - name: curricula
+      label: Curricula
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: entry_years
+      label: Entry years
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: contact_methods
+      label: Contact methods
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
+    - name: referrals
+      label: Referrals
+      required: false
+      widget: list
+      field:
+        name: item
+        label: Item
+        widget: string
   - name: credits
     label: Photo credits
     file: content/zh/pages/credits.yml
@@ -4492,18 +4520,6 @@ collections:
       label: Intro text
       required: false
       widget: text
-    - name: next_title
-      label: Next title
-      required: false
-      widget: string
-    - name: next_steps
-      label: Next steps
-      required: false
-      widget: list
-      field:
-        name: item
-        label: Item
-        widget: string
     - name: countries
       label: Countries
       required: false

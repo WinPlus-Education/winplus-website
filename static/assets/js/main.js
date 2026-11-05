@@ -133,13 +133,16 @@
   });
 
   // ---------- Consultation form: age screening + PRC consents (legal Part 6 §4, §9) ----------
+  // Every field is visible from the start. Age rules only add a date-of-birth field for students,
+  // and stop submission for children under 13 (under 14 in mainland China or Quebec).
   var form = $("[data-consult-form]");
   if (form) {
     var roleInputs = $$("input[name=role]", form);
     var dobWrap = $("[data-dob]", form), dob = $("input[name=student_dob]", form);
+    var nameWrap = $("[data-student-name]", form);
     var country = $("select[name=country]", form);
-    var stop = $("[data-age-stop]", form), teen = $("[data-age-teen]", form);
-    var rest = $("[data-form-rest]", form), prc = $("[data-prc]", form), prcChild = $("[data-prc-child]", form);
+    var stop = $("[data-age-stop]", form), teen = $("[data-age-teen]", form), schoolNote = $("[data-school-note]", form);
+    var prc = $("[data-prc]", form), prcChild = $("[data-prc-child]", form), submit = $("[data-submit]", form);
     var role = function () { var r = roleInputs.filter(function (x) { return x.checked; })[0]; return r ? r.value : ""; };
     var age = function () {
       if (!dob || !dob.value) return null;
@@ -150,13 +153,15 @@
     var update = function () {
       var r = role(), a = age(), c = country ? country.value : "";
       var strict = c === "CN" || c === "CA-QC";
-      dobWrap.hidden = r !== "student";
-      dob.required = r === "student";
-      var blocked = r === "student" && a !== null && (a < 13 || (strict && a < 14));
+      var isStudent = r === "student";
+      dobWrap.hidden = !isStudent;
+      dob.required = isStudent;
+      if (nameWrap) nameWrap.hidden = isStudent;
+      if (schoolNote) schoolNote.hidden = r !== "school";
+      var blocked = isStudent && a !== null && (a < 13 || (strict && a < 14));
       stop.hidden = !blocked;
-      teen.hidden = !(r === "student" && a !== null && !blocked && a < 18);
-      rest.hidden = blocked || !r;
-      $$("input, select, textarea, button", rest).forEach(function (el) { el.disabled = blocked; });
+      teen.hidden = !(isStudent && a !== null && !blocked && a < 18);
+      if (submit) submit.disabled = blocked;
       var isCN = c === "CN";
       prc.hidden = !isCN;
       var transfer = $("input[name=prc_transfer_consent]", form);
@@ -166,6 +171,7 @@
     roleInputs.forEach(function (x) { x.addEventListener("change", update); });
     if (dob) dob.addEventListener("change", update);
     if (country) country.addEventListener("change", update);
+    form.addEventListener("submit", function (e) { update(); if (submit && submit.disabled) e.preventDefault(); });
     update();
     // Pre-fill interest and program from the link (e.g. contact.html?interest=...&program=...)
     var params = new URLSearchParams(location.search);

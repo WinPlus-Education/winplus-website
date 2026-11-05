@@ -111,29 +111,47 @@
 
 {% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin-in", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
 <footer class="site-footer">
-  <div class="container footer-top">
-    <div>
+  <div class="container footer-band">
+    <div class="fb-cta">
       <h2>{{ site.footer_title }}</h2>
-      <div class="btn-row" style="margin-top:2rem">
-        <a class="btn btn-light" href="{{ u(site.cta_link) }}">{{ site.cta_text }} <span class="arr" aria-hidden="true">→</span></a>
-      </div>
+      <a class="btn btn-light btn-sm" href="{{ u(site.cta_link) }}">{{ site.cta_text }} <span class="arr" aria-hidden="true">→</span></a>
     </div>
-    <div class="footer-news">
-      <h3 class="h4" style="color:#fff">{{ site.newsletter.title }}</h3>
+    <div class="fb-news">
+      <h3>{{ site.newsletter.title }}</h3>
       <p>{{ site.newsletter.text }}</p>
       <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
         <input type="hidden" name="form-name" value="newsletter">
         <input type="hidden" name="language" value="{{ lang.code }}">
         <input type="hidden" name="consent_version" value="{{ site.consent.version }}">
-        <input type="hidden" name="consent_text" value="{{ site.consent.marketing }}">
+        <input type="hidden" name="consent_text" value="{{ site.newsletter.consent or site.consent.marketing }}">
         <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
         <label class="sr-only" for="nl-email">{{ _("Email address") }}</label>
         <div class="newsletter-row">
           <input id="nl-email" type="email" name="email" placeholder="{{ _('Your email address') }}" autocomplete="email" required>
           <button class="btn" type="submit">{{ site.newsletter.button }} <span class="arr" aria-hidden="true">→</span></button>
         </div>
-        <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> <span>{{ site.consent.marketing }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></span></label>
+        <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> <span>{{ site.newsletter.consent or site.consent.marketing }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></span></label>
       </form>
+    </div>
+    <div class="fb-connect">
+      <h3>{{ _("Connect") }}</h3>
+      {% if site.email %}<a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+      <ul class="social" aria-label="{{ _('Social media') }}">
+        {% for s in site.social if s.platform == 'wechat' or (s.url and s.url != '#') %}
+        <li>
+          {% if s.platform == 'wechat' %}
+          <button class="social-btn wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
+          {% else %}
+          <a class="social-btn" href="{{ s.url }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
+          {% endif %}
+        </li>
+        {% endfor %}
+        <li id="wechat-pop" class="wechat-pop" hidden>
+          {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 400) }}" alt="{{ _('WeChat QR code') }}">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
+          <p>{{ _("Scan to follow us on WeChat") }}{% if site.wechat_id %}<br><strong>{{ site.wechat_id }}</strong>{% endif %}</p>
+        </li>
+      </ul>
+      <p class="offices">{% for o in site.offices %}{{ o.display }}{{ " · " if not loop.last else "" }}{% endfor %}</p>
     </div>
   </div>
 
@@ -148,28 +166,6 @@
       <ul>{% for l in col.links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}</ul>
     </nav>
     {% endfor %}
-  </div>
-
-  <div class="container footer-connect">
-    <div>
-      {% if site.email %}<a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
-      <ul class="offices">{% for o in site.offices %}<li>{{ o.label }} · {{ o.display }}</li>{% endfor %}</ul>
-    </div>
-    <ul class="social" aria-label="{{ _('Social media') }}">
-      {% for s in site.social %}
-      <li>
-        {% if s.platform == 'wechat' %}
-        <button class="social-btn wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
-        {% else %}
-        <a class="social-btn" href="{{ s.url or '#' }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
-        {% endif %}
-      </li>
-      {% endfor %}
-      <li id="wechat-pop" class="wechat-pop" hidden>
-        {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 400) }}" alt="{{ _('WeChat QR code') }}">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
-        <p>{{ _("Scan to follow us on WeChat") }}{% if site.wechat_id %}<br><strong>{{ site.wechat_id }}</strong>{% endif %}</p>
-      </li>
-    </ul>
   </div>
 
   <div class="container footer-legal">

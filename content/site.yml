@@ -122,20 +122,20 @@ partners:
   - { name: Amazon, logo: /images/uploads/logos/amazon.png }
   - { name: Fiserv, logo: /images/uploads/logos/fiserv.png }
 
-# Social media (icons in the footer). Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
+# Social media (icons in the footer). Leave url empty to hide a platform. Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
 social:
   - { platform: wechat, label: WeChat, url: "" }
-  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "#" }
-  - { platform: linkedin, label: LinkedIn, url: "#" }
-  - { platform: instagram, label: Instagram, url: "#" }
-  - { platform: youtube, label: YouTube, url: "#" }
+  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "https://xhslink.cn/m/8tZcHuYWpGw" }
+  - { platform: linkedin, label: LinkedIn, url: "https://www.linkedin.com/company/winplus-edu/posts/" }
+  - { platform: instagram, label: Instagram, url: "" }
 
 newsletter:
+  consent: "Email me WinPlus insights and event invitations. Unsubscribe anytime."
   title: The WinPlus Letter
   text: Admissions insight, program launches and event invitations, a few times a term.
   button: Subscribe
 
-footer_blurb: "A boutique education consultancy headquartered in Harvard Square, with a team in Beijing. Bespoke admissions counseling, research and internships, campus immersion and global conferences."
+footer_blurb: "A premier boutique education consultancy and talent-development platform. Top mentors, real projects and global stages, guiding ambitious students from high school to graduate school and beyond."
 
 # Short disclaimer at the bottom of every page (legal Part 4)
 footer_disclaimer: "Admission outcomes depend on many factors and are never guaranteed. University, company and organization names on this site describe the backgrounds of our mentors and the experiences of our students, and do not imply affiliation with or endorsement of WinPlus."

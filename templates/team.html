@@ -4,19 +4,10 @@
 {% block content %}
 {{ page_hero(page, [[_("About Us"), "about.html"], [page.eyebrow, "team.html"]]) }}
 
-<nav class="anchor-nav" aria-label="{{ _('On this page') }}">
-  <div class="container"><ul>{% for g in page.groups %}<li><a href="#{{ g.id }}">{{ g.title }}</a></li>{% endfor %}</ul></div>
-</nav>
-
 <section class="section">
   <div class="container">
-    {% for g in page.groups %}
-    <div class="team-group" id="{{ g.id }}">
-      {{ head("", g.title, g.intro) }}
-      {{ people(g.people, 4) }}
-      {{ people_schema(g.people) }}
-    </div>
-    {% endfor %}
+    {{ people(team_people, 4) }}
+    {{ people_schema(team_people) }}
     <p class="notice">{{ page.note }}</p>
   </div>
 </section>

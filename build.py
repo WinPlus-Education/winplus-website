@@ -243,13 +243,14 @@ def build():
             e["is_past"] = bool(end and end < now - dt.timedelta(days=1))
         upcoming = [e for e in events if e.get("date") and not e["is_past"]]
         team = d["team"]
-        people = [p for g in team.get("groups", []) for p in g.get("people", [])]
+        people = team.get("people") or [p for g in team.get("groups", []) for p in g.get("people", [])]
         common = {
             "lang": lang, "site": d["site"], "site_url": site_url, "posts": d["posts"],
             "programs": d["programs"], "services": d["admissions"], "experiences": d["experiences"],
             "events": events, "upcoming": upcoming, "past_events": [e for e in events if e["is_past"]][::-1],
             "results_data": d["results"], "team_data": team, "people_by_id": {p["id"]: p for p in people if p.get("id")},
-            "team_founders": next((g["people"] for g in team.get("groups", []) if g.get("id") == "founders"), []),
+            "school_logos": {sc["name"]: sc.get("logo", "") for t in d["results"].get("offer_tiers", []) for sc in t.get("schools", [])},
+            "team_people": people, "team_founders": [p for p in people if p.get("founder")],
             "industries": {c["id"]: c["title"] for c in d["research_page"].get("industries", [])},
             "section_pages": d["pages"],
             "legal_pages": [(stem, meta.get("title", stem)) for stem, meta in d["legal"]],

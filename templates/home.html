@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import photo, btn, arrow, head, stats, rates, results_notice, offer_cards, pillars, journey, people, people_schema, marquee, case_study, story_card, quotes, cta_band with context %}
+{% from "macros.html" import photo, btn, arrow, head, stats, rates, results_notice, offer_cards, pillars, journey, people, people_schema, marquee, case_study, event_card, quotes, cta_band with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block preload %}{% set first = (page.hero.slides | selectattr("image", "exists") | first).image %}<link rel="preload" as="image" href="{{ img(first, 2000) }}"{% if srcset(first) %} imagesrcset="{{ srcset(first) }}" imagesizes="100vw"{% endif %}>{% endblock %}
 {% block content %}
@@ -50,9 +50,9 @@
   </div>
 </section>
 
-{# ---------- What we offer + why WinPlus ---------- #}
+{# ---------- Our programs + why us ---------- #}
 {% set o = page.offer %}
-<section class="section s-ivory" id="offer">
+<section class="section s-ivory" id="programs">
   <div class="container">
     {{ head(o.eyebrow, o.title, o.intro) }}
     {{ offer_cards(o.segments) }}
@@ -67,16 +67,22 @@
   </div>
 </section>
 
-{# ---------- How we work ---------- #}
+{# ---------- Our approach ---------- #}
 {% set j = page.journey %}
 <section class="section">
   <div class="container">
     <div class="head-row">{{ head(j.eyebrow, j.title, j.intro) }}{{ arrow(j.link_text, j.link) }}</div>
     {{ journey(j.steps) }}
+    {% if j.early_title %}
+    <div class="early-note reveal">
+      <div><h3>{{ j.early_title }}</h3><p>{{ j.early_text }}</p></div>
+      {{ btn(j.early_cta, j.early_link, "primary") }}
+    </div>
+    {% endif %}
   </div>
 </section>
 
-{# ---------- Who we are ---------- #}
+{# ---------- Our team ---------- #}
 {% set t = page.team %}
 {% set featured = [] %}{% for pid in t.featured %}{% if pid in people_by_id %}{% set _x = featured.append(people_by_id[pid]) %}{% endif %}{% endfor %}
 <section class="section s-ivory">
@@ -88,7 +94,7 @@
 </section>
 {{ marquee(site.partners_label, site.partners, site.partners_note) }}
 
-{# ---------- Success stories & testimonials ---------- #}
+{# ---------- Our success stories, testimonials, past events ---------- #}
 {% set st = page.stories %}
 <section class="section">
   <div class="container">
@@ -98,19 +104,28 @@
   </div>
 </section>
 
+{% if results_data.testimonials %}
 <section class="section s-ivory">
   <div class="container">
-    <div class="grid g-3">{% for s in results_data.stories[:3] %}{{ story_card(s) }}{% endfor %}</div>
-    {% if results_data.testimonials %}
-    <div class="head-row" style="margin-top:clamp(64px,7vw,112px);margin-bottom:2rem">
+    <div class="head-row">
       {{ head(_("In their words"), results_data.testimonials_title) }}
       <div class="carousel-nav" data-carousel="#home-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div>
     </div>
     {{ quotes(results_data.testimonials, "home-quotes") }}
     {{ results_notice() }}
-    {% endif %}
   </div>
 </section>
+{% endif %}
+
+{% set ev = page.events %}
+{% if ev and past_events %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(ev.eyebrow, ev.title, ev.intro) }}{{ arrow(ev.link_text, ev.link) }}</div>
+    <div class="grid g-3">{% for e in past_events[:3] %}{{ event_card(e) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
 
 {{ cta_band(page.cta.title, page.cta.text, page.cta.button, page.cta.link, page.cta.image) }}
 {% endblock %}

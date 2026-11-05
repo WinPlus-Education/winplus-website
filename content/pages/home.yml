@@ -1,40 +1,42 @@
 seo_title: WinPlus | Boutique College Admissions Consultancy, Harvard Square
-meta_description: Bespoke pathways to Harvard, MIT, Yale, Stanford and other top universities, built by a US-based team of mentors. Admissions, research, immersion and conferences.
+meta_description: Bespoke pathways to the world's top universities, built by a US-based team of mentors. Admissions counseling, research, campus immersion and global conferences.
 hero:
-  eyebrow: Boutique education consultancy · Harvard Square
+  eyebrow: Premier boutique education consultancy
   title: Bespoke pathways to the world's top universities.
-  subtitle: A US-based team of mentors from Harvard, MIT, Yale and Stanford. We design one plan around one student (admissions strategy, real research and global stages) so they reach
-    their dream school and grow along the way.
+  subtitle: 'Mentors from America''s top universities and leading companies build one plan around one student: admissions strategy, real research and global stages, from high school to graduate school.'
   primary_cta: Book a Free Strategy Session
   primary_link: contact.html
   secondary_cta: Explore Our Programs
-  secondary_link: '#offer'
+  secondary_link: '#programs'
   slides:
   - image: /images/uploads/campus/harvard.webp
-    alt: Harvard Yard, Harvard University
+    alt: Widener Library, Harvard University
     caption: Harvard University
-  - image: /images/uploads/campus/yale.webp
+  - image: /images/uploads/campus/yale-sterling.webp
     alt: Sterling Memorial Library, Yale University
     caption: Yale University
   - image: /images/uploads/campus/princeton.webp
-    alt: Nassau Hall, Princeton University
+    alt: Nassau Hall in autumn, Princeton University
     caption: Princeton University
-  - image: /images/uploads/campus/mit.webp
+  - image: /images/uploads/campus/mit-dome.webp
     alt: The Great Dome, Massachusetts Institute of Technology
     caption: MIT
   - image: /images/uploads/campus/stanford.webp
-    alt: Main Quad, Stanford University
+    alt: Main Quad at sunset, Stanford University
     caption: Stanford University
-  - image: /images/uploads/campus/wharton.webp
-    alt: University of Pennsylvania campus, home of the Wharton School
+  - image: /images/uploads/campus/penn.webp
+    alt: Fisher Fine Arts Library, University of Pennsylvania, home of the Wharton School
     caption: Wharton · University of Pennsylvania
   - image: /images/uploads/campus/brown.webp
     alt: Brown University campus, Providence
     caption: Brown University
+  - image: /images/uploads/campus/dartmouth.webp
+    alt: Baker Library, Dartmouth College
+    caption: Dartmouth College
 results:
   eyebrow: Our Results
   title: Outcomes at the most selective universities
-  text: WinPlus students earn offers from the Ivy League and US Top 30 at rates far above each university's overall admit rate.
+  text: WinPlus students earn offers from the Ivy League and the US Top 30 at rates far above each university's overall admit rate.
   stats:
   - number: 100+
     label: Students advised since 2020
@@ -42,111 +44,98 @@ results:
     label: Admitted to the Ivy League or US Top 30
   - number: '87'
     label: Ivy League & Top-30 offers
-  - number: '3'
-    label: Consecutive years of Yale admits
+  - number: '[X]'
+    label: '[Placeholder: add a headline result]'
   rates_title: 'Acceptance rate: WinPlus students vs. overall'
   rates_count: 6
   note: Data as of July 2026. Acceptance rates compare WinPlus-advised applicants with each university's published overall admit rate.
   link_text: See all results
   link: results.html
 offer:
-  eyebrow: What We Offer
-  title: Four programs. One plan, built around your child.
-  intro: Most families assemble a counselor, a research program and a summer trip from different vendors. At WinPlus each program is designed to strengthen the others, coordinated by
-    one team that knows your child.
+  eyebrow: Our Programs
+  title: Four programs. One plan, built around you.
+  intro: Applying to high school, college or graduate school? Most applicants piece together a counselor, a research program and a summer trip from different vendors. At WinPlus every program is designed
+    to strengthen the others, guided by one team that knows your story.
   segments:
-  - kicker: Our core
-    title: Admissions Counseling
-    text: From US high school to graduate school, a strategy shaped by mentors from Harvard, MIT, Yale and Stanford, and by Ivy League alumni interviewers. We also guide UK, Canadian
-      and Australian applications.
+  - title: Admissions Counseling
+    text: 'From US high school to graduate school, and across the UK, Canada and Australia: a strategy shaped by mentors and alumni interviewers from top US universities.'
     outcomes:
     - A school list and story that are unmistakably yours
-    - Essays developed with mentors from your target schools
-    - Interview preparation with alumni interviewers
-    image: /images/uploads/photos/hks-session.webp
-    image_alt: A WinPlus mentor leading a session with students at Harvard Kennedy School
+    - Essays developed with mentors who know your target schools
+    - Interview practice with alumni interviewers
+    image: /images/uploads/campus/yale-harkness.webp
+    image_alt: Harkness Tower, Yale University
     link: admissions.html
     link_text: Explore admissions
-  - kicker: Real-world work
-    title: Research & Internships
-    text: Bespoke online research and internships led by scientists and engineers from NASA, Meta, Microsoft, Caltech and MIT. Students solve real problems and build work admissions
-      officers remember.
+  - title: Research & Internships
+    text: Bespoke online research and internships led by scientists, engineers and industry leaders. Solve a real problem and build work admissions officers remember.
     outcomes:
-    - First-hand experience of real problem-solving
+    - Real problem-solving from day one
     - A finished paper, prototype or portfolio
     - A recommendation from a mentor who saw the work
     image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
     image_alt: A scientist working at a laboratory microscope
     link: research.html
     link_text: Explore programs
-  - kicker: Beyond the campus tour
-    title: Campus Immersion
-    text: Step inside the labs, classrooms and companies of Harvard, MIT, Yale and Stanford. Students join lab and team projects and talk with faculty and current students to discover
-      where they truly belong.
+  - title: Campus Immersion
+    text: Not a campus tour. Step inside the labs, classrooms and companies of America's leading universities, and talk with faculty and current students to find where you truly belong.
     outcomes:
     - Hands-on sessions in university labs
     - Candid conversations with faculty and students
-    - A clear picture of the right-fit university
-    image: /images/uploads/photos/yale-sterling-group.webp
-    image_alt: WinPlus students and mentors at Sterling Memorial Library, Yale University
+    - A clear picture of your right-fit university
+    image: /images/uploads/campus/stanford-arcade.webp
+    image_alt: Main Quad arcade and Hoover Tower, Stanford University
     link: experiences/campus-immersion.html
     link_text: Explore immersion
-  - kicker: The global stage
-    title: Global Leadership Conferences
-    text: High-profile international conferences where students present their ideas to diplomats, policymakers and global delegates. It's a once-in-a-lifetime experience, and a credential
-      few applicants can match.
+  - title: Global Leadership Conferences
+    text: Research a global issue and present it at high-profile international conferences, before diplomats, policymakers and global delegates.
     outcomes:
     - Speak before international delegates
     - A network that spans countries
     - Leadership proven on a world stage
-    image: /images/uploads/students/un-cosp19-speaker.jpg
-    image_alt: A WinPlus student speaking at an international conference
+    image: /images/uploads/campus/un-flags.webp
+    image_alt: Flags of member states outside an international headquarters
     link: experiences/global-conferences.html
     link_text: Explore conferences
 why:
-  eyebrow: Why WinPlus
+  eyebrow: Why Us
   title: Elite guidance, never a template.
-  intro: WinPlus is a boutique talent-development platform, not a transactional application service. We work with fewer families, more closely.
+  intro: WinPlus is a boutique talent-development platform, not an application mill. We work with fewer students, more closely, for longer.
   points:
   - title: On the ground in the US
-    text: Our Chinese-American and American team lives and works in the US, with first-hand insight from current students, alumni interviewers and each year's published admissions policy
-      at the Ivy League, liberal arts colleges and the Top 100.
-  - title: Mentors from the very top
-    text: Professors, scientists and alumni interviewers from Harvard, MIT, Yale and Stanford guide students directly, from research projects to the final essay.
+    text: Our bilingual Chinese-American and American team lives and works in the US, with first-hand insight from current students, alumni interviewers and each cycle's published admissions policies.
+  - title: Mentors who have been there
+    text: Professors, scientists, alumni interviewers and industry leaders work with students directly, from the first research question to the final essay.
   - title: Bespoke, never a mold
-    text: We build each plan around the student's character, experience and interests. We amplify their strengths and close gaps deliberately, instead of forcing them into a mold.
+    text: 'Every plan starts from the student: their character, experience and interests. We amplify strengths and close gaps deliberately, instead of forcing anyone into a template.'
   - title: Growth that outlasts admission
-    text: Inspired by Harvard's ideals of whole-person education and the pursuit of truth, we develop the curiosity, skills and character that carry students through university and beyond.
+    text: We develop the curiosity, skills and character that carry students through university, graduate school and the careers beyond them.
 journey:
-  eyebrow: How We Work
+  eyebrow: Our Approach
   title: From first conversation to final decision
   intro: Every journey follows the same disciplined arc, and no two plans look alike.
   link_text: How we work
   link: about.html#how-we-work
+  early_title: Start early. Plan with intent.
+  early_text: The strongest applications are built over years, not over one summer. Talk to us as early as possible, whether that is middle school, the start of high school or a year before graduate applications,
+    so we can plan every step ahead of time.
+  early_cta: Start planning now
+  early_link: contact.html
   steps:
   - title: Discover
     text: A free strategy session to understand the student's background, goals, interests and personality.
   - title: Design
     text: 'A bespoke multi-year roadmap: which activities, research and internships to pursue, and when. A dedicated mentor guides every step.'
   - title: Build
-    highlight: true
-    text: The profile comes to life through real work, with research, immersion and global stages that complement each other.
-    links:
-    - label: Research & Internships
-      link: research.html
-    - label: Campus Immersion
-      link: experiences/campus-immersion.html
-    - label: Global Conferences
-      link: experiences/global-conferences.html
+    text: 'The profile comes to life through real work: research, immersion and global stages chosen to complement each other.'
   - title: Apply
-    text: Application strategy, school list, essay brainstorming and editing, activity lists, recommendations and interview preparation.
+    text: School list, application strategy, essay brainstorming and editing, activity lists, recommendations and interview preparation.
   - title: Decide
     text: We help compare offers, navigate waitlists and prepare for a confident start at university.
 team:
-  eyebrow: Who We Are
+  eyebrow: Our Team
   title: The people behind every WinPlus student
-  text: WinPlus was founded in 2020 in Harvard Square by Harvard Kennedy School graduates. Today our mentors include MIT and Harvard professors, NASA scientists and leaders from the
-    world's top companies.
+  text: Founded in 2020 by Harvard Kennedy School graduates. Today our mentors include university professors, NASA scientists, alumni interviewers and leaders from the world's top companies.
   featured:
   - cathy-guo
   - cedric-pan
@@ -156,14 +145,20 @@ team:
   link_text: Meet our full team
   link: team.html
 stories:
-  eyebrow: Success Stories
+  eyebrow: Our Success Stories
   title: Real students. Real transformations.
   intro: 'Two very different starting points, one approach: a plan built around the student.'
   link_text: Read more success stories
   link: results.html
 cta:
   title: Begin with a free strategy session.
-  text: Meet a WinPlus mentor, talk through your child's goals and leave with clear next steps. No commitment required.
+  text: Meet a WinPlus mentor, talk through your goals and leave with clear next steps. No commitment required.
   button: Book a Free Consultation
   link: contact.html
-  image: /images/uploads/campus/yale.webp
+  image: /images/uploads/campus/princeton-blair.webp
+events:
+  eyebrow: Past Events
+  title: Where our students have been
+  intro: Campus immersions, international conferences and info sessions from recent years.
+  link_text: All events
+  link: events.html

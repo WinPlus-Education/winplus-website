@@ -100,7 +100,7 @@
   {% set g = sc.general_rate | num %}{% set w = sc.winplus_rate | num %}
   {% set mx = [g or 0, w or 0, 1] | max %}
   <div class="rate">
-    <h3>{{ sc.name }}</h3>
+    <h3 class="rate-name">{% if sc.logo %}<img src="{{ img(sc.logo, 160) }}" alt="" loading="lazy" decoding="async">{% endif %}<span>{{ sc.name }}</span></h3>
     <div class="rate-row is-wp"><span>WinPlus</span><span class="rate-track"><span class="rate-bar" style="width:{{ ((w / mx * 100) if w else 60) | round(1) }}%"></span></span><span class="rate-val">{{ (w ~ '%') if w else '[X%]' }}</span></div>
     <div class="rate-row"><span>{{ _("Overall") }}</span><span class="rate-track"><span class="rate-bar" style="width:{{ ((g / mx * 100) if g else 8) | round(1) }}%"></span></span><span class="rate-val">{{ (g ~ '%') if g else '[X%]' }}</span></div>
   </div>
@@ -115,10 +115,9 @@
   <a class="card offer-card reveal" href="{{ u(s.link) }}">
     {{ photo(s.image, s.image_alt, "media ratio-45", 900, sizes="(max-width: 720px) 100vw, 25vw") }}
     <div class="card-body">
-      <span class="kicker">{{ s.kicker }}</span>
       <h3>{{ s.title }}</h3>
       <p>{{ s.text }}</p>
-      {% if s.outcomes %}<ul class="outcomes">{% for o in s.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>{% endif %}
+      {% if s.outcomes %}<ul class="ticks">{% for o in s.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>{% endif %}
       <span class="link-arrow">{{ s.link_text or _("Learn more") }} <span aria-hidden="true">→</span></span>
     </div>
   </a>
@@ -196,8 +195,8 @@
 
 {# M10 Case study #}
 {% macro case_study(c, reverse=false) -%}
-<article class="case reveal{% if reverse %} is-reverse{% endif %}">
-  {{ photo(c.image, c.image_alt, "case-media", 1200, sizes="(max-width: 900px) 100vw, 45vw") }}
+<article class="case reveal{% if reverse %} is-reverse{% endif %}{% if not c.image %} no-media{% endif %}">
+  {% if c.image %}{{ photo(c.image, c.image_alt, "case-media", 1200, sizes="(max-width: 900px) 100vw, 45vw") }}{% endif %}
   <div class="case-body">
     <span class="kicker">{{ c.tag }}</span>
     <h3>{{ c.title }}</h3>
@@ -305,8 +304,10 @@
 <article class="card event-card reveal">
   {% if e.image %}<a href="{{ u(e.url) }}" tabindex="-1" aria-hidden="true">{{ photo(e.image, "", "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}</a>{% endif %}
   <div class="card-body">
-    <p class="event-date"><span class="num">{{ e.date | date_fmt('day') }}</span><span>{{ e.date | date_fmt('mon') }} {{ e.date | date_fmt('year') }}{% if e.end_label %} · {{ e.end_label }}{% endif %}</span></p>
-    <span class="kicker">{{ e.type }}</span>
+    <div class="event-top">
+      <p class="event-date"><span class="num">{{ e.date | date_fmt('day') }}</span><span>{{ e.date | date_fmt('mon') }} {{ e.date | date_fmt('year') }}{% if e.end_label %} · {{ e.end_label }}{% endif %}</span></p>
+      {% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}
+    </div>
     <h3><a href="{{ u(e.url) }}" style="text-decoration:none">{{ e.title }}</a></h3>
     <ul class="event-meta">{% if e.time_label %}<li>{{ e.time_label }}</li>{% endif %}<li>{{ e.location }}</li></ul>
     <p>{{ e.summary }}</p>
@@ -329,6 +330,15 @@
   {% for g in items %}<a href="{{ img(g.image, 2000) }}" data-caption="{{ g.caption or '' }}">{{ photo(g.image, g.caption or g.alt or '', "", 1000, sizes="(max-width: 720px) 50vw, 33vw") }}</a>{% endfor %}
 </div>
 {% endif %}
+{%- endmacro %}
+
+{# School logo cards (admissions wall, featured outcomes). items: dicts with name/logo/note, or plain names #}
+{% macro school_cards(items, cls="") -%}
+<ul class="wall {{ cls }}">
+  {% for sc in items %}{% set name = sc.name if sc.name is defined else sc %}{% set logo = (sc.logo if sc.logo is defined else "") or school_logos.get(name, "") %}
+  <li class="reveal">{% if logo %}<img src="{{ img(logo, 240) }}" alt="" loading="lazy" decoding="async">{% else %}<span class="wall-mono" aria-hidden="true">{{ name[0] }}</span>{% endif %}<span>{{ (sc.label if sc.label is defined and sc.label else name) }}</span></li>
+  {% endfor %}
+</ul>
 {%- endmacro %}
 
 {% macro ld(obj) -%}

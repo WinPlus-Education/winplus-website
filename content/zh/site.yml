@@ -114,17 +114,17 @@ partners:
 
 social:
   - { platform: wechat, label: 微信, url: "" }
-  - { platform: xiaohongshu, label: 小红书, url: "#" }
-  - { platform: linkedin, label: LinkedIn, url: "#" }
-  - { platform: instagram, label: Instagram, url: "#" }
-  - { platform: youtube, label: YouTube, url: "#" }
+  - { platform: xiaohongshu, label: 小红书, url: "https://xhslink.cn/m/8tZcHuYWpGw" }
+  - { platform: linkedin, label: LinkedIn, url: "https://www.linkedin.com/company/winplus-edu/posts/" }
+  - { platform: instagram, label: Instagram, url: "" }
 
 newsletter:
+  consent: "我愿意接收 WinPlus 的升学洞察与活动邀请邮件，可随时退订。"
   title: 订阅 WinPlus 通讯
   text: 升学洞察、项目发布与活动邀请，每学期数封。
   button: 订阅
 
-footer_blurb: "总部位于哈佛广场、在北京设有团队的精品升学规划机构。提供定制升学规划、科研与实习、名校深度研学和全球领导力会议。"
+footer_blurb: "精品国际教育咨询与人才发展平台。从高中、本科到研究生，我们以顶尖导师、真实项目与全球舞台，陪伴有志青年走进世界名校，成为名校想要的人。"
 footer_disclaimer: "录取结果受多种因素影响，任何机构都无法保证录取。本网站提及的大学、公司及机构名称仅用于说明导师背景与学生经历，并不代表其与 WinPlus 存在关联或为 WinPlus 背书。"
 results_notice: "个人结果因人而异。过往成果不代表或保证未来结果。WinPlus 不保证被任何院校录取。详见"
 

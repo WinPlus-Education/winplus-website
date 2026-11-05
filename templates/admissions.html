@@ -1,20 +1,17 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, intro, photo, arrow, btn, values, journey, faq, cta_band, results_notice with context %}
+{% from "macros.html" import page_hero, head, photo, arrow, btn, pillars, faq, cta_band, results_notice, school_cards with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block content %}
 {{ page_hero(page, [[page.eyebrow, "admissions.html"]], btn(site.cta_text, site.cta_link, "light") ~ btn(_("Explore programs"), "#programs", "ghost", false)) }}
 
-{{ intro(page.summary_eyebrow, page.summary_statement, page.summary_text) }}
-
-<section class="section s-ivory" id="programs">
+<section class="section" id="programs">
   <div class="container">
     {{ head(page.programs_eyebrow, page.programs_title, page.programs_intro) }}
-    <div class="tracks">
+    <div class="grid g-3">
       {% for s in services | sort(attribute="order") %}
-      <a class="card track-card reveal{% if s.lead %} is-lead{% endif %}" href="{{ u(s.url) }}">
-        {{ photo(s.image, s.image_alt, "media", 1400 if s.lead else 900, sizes="(max-width: 640px) 100vw, " ~ ("66vw" if s.lead else "33vw")) }}
+      <a class="card track-card reveal" href="{{ u(s.url) }}">
+        {{ photo(s.image, s.image_alt, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
         <div class="card-body">
-          {% if s.lead %}<span class="kicker">{{ _("Our core program") }}</span>{% endif %}
           <h3>{{ s.title }}</h3>
           <p>{{ s.summary }}</p>
           <span class="link-arrow">{{ _("Learn more") }} <span aria-hidden="true">→</span></span>
@@ -25,17 +22,13 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section s-ink" id="approach">
   <div class="container">
-    {{ head(page.why_eyebrow, page.why_title) }}
-    {{ values(page.why) }}
-  </div>
-</section>
-
-<section class="section s-ink" id="how-we-work">
-  <div class="container">
-    {{ head(page.how_eyebrow, page.how_title, page.how_intro) }}
-    {{ journey(page.how) }}
+    <div class="split-intro" style="margin-bottom:clamp(48px,5vw,80px)">
+      <div><p class="eyebrow">{{ page.approach_eyebrow }}</p><h2>{{ page.approach_title }}</h2></div>
+      <div><p class="lead">{{ page.approach_text }}</p></div>
+    </div>
+    {{ pillars(page.approach) }}
   </div>
 </section>
 
@@ -45,7 +38,7 @@
     {% for t in results_data.offer_tiers %}
     <div class="wall-tier">
       <h3>{{ t.label }}</h3>
-      <ul class="wall">{% for sc in t.schools %}<li>{% if sc.logo %}<img src="{{ img(sc.logo, 200) }}" alt="" loading="lazy">{% endif %}<span>{{ sc.name }}</span>{% if sc.note %}<em>{{ sc.note }}</em>{% endif %}</li>{% endfor %}</ul>
+      {{ school_cards(t.schools) }}
     </div>
     {% endfor %}
     {{ results_notice() }}

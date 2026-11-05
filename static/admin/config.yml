@@ -2829,6 +2829,14 @@ collections:
     label: 'SEO: Google description (about 150 characters)'
     required: false
     widget: text
+  - name: arc_unit
+    label: Arc unit
+    required: false
+    widget: string
+  - name: arc_title
+    label: Arc title
+    required: false
+    widget: string
   - name: cta_title
     label: Cta title
     required: false
@@ -5916,6 +5924,14 @@ collections:
     label: 'SEO: Google description (about 150 characters)'
     required: false
     widget: text
+  - name: arc_unit
+    label: Arc unit
+    required: false
+    widget: string
+  - name: arc_title
+    label: Arc title
+    required: false
+    widget: string
   - name: cta_title
     label: Cta title
     required: false

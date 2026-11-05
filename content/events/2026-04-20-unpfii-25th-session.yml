@@ -7,8 +7,7 @@ location: United Nations Headquarters, New York
 image: /images/uploads/photos/unpfii-2026.webp
 image_alt: WinPlus students and mentor in the UN General Assembly Hall
 summary: WinPlus students joined the 25th session of the UN Permanent Forum on Indigenous Issues (UNPFII) at UN Headquarters in New York.
-details: Guided by WinPlus mentors, students prepared on the forum's themes and attended sessions of the 25th session of the United Nations Permanent Forum on Indigenous Issues in the General Assembly Hall,
-  engaging with delegates and Indigenous representatives from around the world.
+details: Guided by WinPlus mentors, students prepared on the forum's themes and attended sessions of the 25th session of the United Nations Permanent Forum on Indigenous Issues in the General Assembly Hall, engaging with delegates and Indigenous representatives from around the world.
 gallery:
 - image: /images/uploads/photos/unpfii-2026-gallery-1.webp
   caption: At the General Assembly Hall during the opening of UNPFII's 25th session
@@ -36,3 +35,17 @@ highlights:
   image: /images/uploads/photos/unpfii-2026-gallery-2.webp
   text: WinPlus mentors guided students through the forum's themes before and during the session.
 city: UN Headquarters, New York
+highlights_title: What we did
+arc:
+- label: Before
+  title: Prepare
+  text: Mentors guided students through the forum's themes and the work of the Permanent Forum.
+- label: Opening
+  title: The General Assembly Hall
+  text: Students attended the opening of the 25th session in the General Assembly Hall.
+- label: In session
+  title: Engage
+  text: Conversations with Indigenous representatives and delegates from every region.
+- label: After
+  title: Reflect
+  text: A debrief with mentors on what students heard and what it means for their own work.

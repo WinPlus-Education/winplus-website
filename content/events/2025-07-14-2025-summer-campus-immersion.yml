@@ -7,8 +7,7 @@ location: New York · Boston · Silicon Valley · Los Angeles
 image: /images/uploads/photos/wall-street-group.webp
 image_alt: WinPlus students and mentors on Wall Street, New York
 summary: Twenty students, ten universities and 35 organizations, from Columbia and Harvard to Stanford, Apple Park and Hollywood, in twelve days.
-details: Mentors from Harvard, MIT and Stanford taught 50 hours of global competency coursework on leadership, international relations, AI, gene editing and satellite engineering. Admissions teams at leading
-  universities hosted information sessions, and students visited technology companies including Apple, Google and Meta, as well as NASA.
+details: Mentors from Harvard, MIT and Stanford taught 50 hours of global competency coursework on leadership, international relations, AI, gene editing and satellite engineering. Admissions teams at leading universities hosted information sessions, and students visited technology companies including Apple, Google and Meta, as well as NASA.
 gallery: []
 testimonials:
 - quote: The ten universities we visited left a deep impression on me. The professors and alumni we met made me want, more than ever, to study at a place like this.
@@ -37,3 +36,19 @@ highlights:
 - title: Where technology is made
   text: Visits to Apple, Google and Meta, and to NASA.
 city: U.S. East & West Coasts
+highlights_title: What we did
+arc_unit: Stop
+arc_title: Four stops, coast to coast
+arc:
+- label: New York
+  title: Columbia and Wall Street
+  text: Columbia University, Wall Street with WinPlus mentors and the city's landmarks.
+- label: Boston
+  title: Harvard and MIT
+  text: Harvard and MIT, with admissions information sessions hosted by university admissions teams.
+- label: Silicon Valley
+  title: Stanford and Big Tech
+  text: 'Stanford, Apple Park, Google and Meta, and NASA: a first-hand look at the companies and labs shaping technology.'
+- label: Los Angeles
+  title: Hollywood
+  text: Hollywood and the creative industries of Los Angeles.

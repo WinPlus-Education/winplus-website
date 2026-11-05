@@ -7,8 +7,8 @@ type: Global Conference
 category: conference
 location: United Nations Conference Centre, Bangkok, Thailand
 city: Bangkok, Thailand
-image: /images/uploads/campus/un-flags.webp
-image_alt: Flags of member states outside an international headquarters
+image: /images/uploads/photos/apfsd13-uncc.webp
+image_alt: The United Nations Conference Centre in Bangkok, home of ESCAP
 summary: At the UN's regional forum on the Sustainable Development Goals, a WinPlus student spoke on young women's health, and her Dunhuang-inspired artwork was exhibited.
 statement: A student's voice on young women's health, at the region's leading forum on the 2030 Agenda.
 details: 'The Asia-Pacific Forum on Sustainable Development (APFSD), convened each year by the UN Economic and Social Commission for Asia and the Pacific (ESCAP), is the region''s main platform for reviewing progress on the 2030 Agenda.
@@ -22,7 +22,7 @@ details: 'The Asia-Pacific Forum on Sustainable Development (APFSD), convened ea
 
   *Official information: [UN ESCAP: APFSD13](https://www.unescap.org/events/apfsd13). WinPlus is an independent education company; participation does not imply endorsement by the United Nations.*'
 facts:
-- number: '13th'
+- number: 13th
   label: Session of the UN's Asia-Pacific forum on the SDGs
 - number: '5'
   label: Sustainable Development Goals under review
@@ -39,3 +39,4 @@ gallery: []
 testimonials: []
 seo_title: WinPlus Delegation at APFSD13, Bangkok 2026 | WinPlus
 meta_description: A WinPlus student spoke on young women's health at the 13th Asia-Pacific Forum on Sustainable Development (APFSD), UN Conference Centre, Bangkok, February 24–27, 2026.
+highlights_title: What we did

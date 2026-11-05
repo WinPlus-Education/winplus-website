@@ -36,3 +36,19 @@ highlights:
 - title: 科技前沿
   text: 参访苹果、谷歌、Meta 等科技企业以及 NASA。
 city: 美国东西海岸
+highlights_title: 项目内容
+arc_unit: 站点
+arc_title: 四站，横跨东西海岸
+arc:
+- label: 纽约
+  title: 哥伦比亚与华尔街
+  text: 走进哥伦比亚大学，与 WinPlus 导师走访华尔街，游览城市地标。
+- label: 波士顿
+  title: 哈佛与 MIT
+  text: 走访哈佛与 MIT，参加大学招生团队举办的说明会。
+- label: 硅谷
+  title: 斯坦福与科技巨头
+  text: 斯坦福、苹果总部、谷歌、Meta 与 NASA，第一手了解塑造科技未来的企业与实验室。
+- label: 洛杉矶
+  title: 好莱坞
+  text: 好莱坞与洛杉矶的创意产业。

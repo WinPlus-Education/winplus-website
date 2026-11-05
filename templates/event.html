@@ -21,7 +21,7 @@
 
 {% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
 {% set actions %}{% if not past %}{{ btn(_("Inquire"), inquire, "light") }}{% elif has_gallery %}{{ btn(_("View gallery"), "#gallery", "light") }}{% endif %}{% endset %}
-{{ page_hero(hero, [[_("Events"), "events.html"], [item.card_title or item.title, item.url]], actions, [item.time_label, item.location]) }}
+{{ page_hero(hero, [[_("Events"), "events.html"], [item.card_title or item.title, item.url]], actions, [item.time_label, item.location], "ev-hero") }}
 
 {# 1. Key numbers #}
 {% if item.facts %}
@@ -33,27 +33,39 @@
 </section>
 {% endif %}
 
-{# 2. Overview #}
+{# 2. About the program. Past events fold "what we did" into this section. #}
 <section class="section">
-  <div class="container split-intro">
-    <div>
-      <p class="eyebrow">{{ _("The story") if past else _("About the program") }}</p>
-      {% if item.statement %}<p class="statement">{{ item.statement }}</p>{% endif %}
-      <ul class="event-chips">
-        <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
-        <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
-        {% if item.partner %}<li><span>{{ _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
-      </ul>
+  <div class="container">
+    <div class="split-intro">
+      <div>
+        <p class="eyebrow">{{ _("About the program") }}</p>
+        {% if item.statement %}<p class="statement">{{ item.statement }}</p>{% endif %}
+        <ul class="event-chips n-{{ 3 if item.partner else 2 }}">
+          <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
+          <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
+          {% if item.partner %}<li><span>{{ _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
+        </ul>
+      </div>
+      <div class="prose">{{ item.details | md | safe }}</div>
     </div>
-    <div class="prose">{{ item.details | md | safe }}</div>
+    {% if past and item.highlights %}
+    <div class="about-hl">
+      <p class="about-hl-title">{{ item.highlights_title or _("What we did") }}</p>
+      <div class="about-hl-grid n-{{ item.highlights | length }}">
+        {% for h in item.highlights %}
+        <div class="about-hl-item reveal"><span class="hl-n">{{ "%02d" | format(loop.index) }}</span><h3>{{ h.title }}</h3><p>{{ h.text }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
 </section>
 
-{# 3. Signature experiences / highlights #}
-{% if item.highlights or item.expect %}
+{# 3. Signature experiences (upcoming events) #}
+{% if not past and (item.highlights or item.expect) %}
 <section class="section s-ivory">
   <div class="container">
-    {{ head(_("Highlights") if past else _("What to expect"), item.highlights_title or (_("What we did") if past else _("Signature experiences")), item.highlights_intro) }}
+    {{ head(_("What to expect"), item.highlights_title or _("Signature experiences"), item.highlights_intro) }}
     {% if item.highlights %}
     {% set n = item.highlights | length %}
     <div class="hl-grid hl-{{ n if n <= 4 else 3 }}">
@@ -80,7 +92,7 @@
 <section class="section">
   <div class="container">
     {{ head(_("How it unfolded") if past else _("The week at a glance"), item.arc_title, item.arc_intro) }}
-    {{ journey(item.arc) }}
+    {{ journey(item.arc, item.arc_unit or '') }}
   </div>
 </section>
 {% endif %}

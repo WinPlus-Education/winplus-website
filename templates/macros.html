@@ -42,8 +42,8 @@
 {%- endmacro %}
 
 {# M2 Page hero: full-bleed photo anchored right, gradient on the left for legible text #}
-{% macro page_hero(p, crumbs, actions="", meta=none) -%}
-<section class="page-hero">
+{% macro page_hero(p, crumbs, actions="", meta=none, cls="") -%}
+<section class="page-hero{% if cls %} {{ cls }}{% endif %}">
   {{ photo(p.image, p.image_alt, "ph-img", 2000, true) }}
   <div class="container">
     <div class="page-hero-copy">
@@ -140,11 +140,11 @@
 {%- endmacro %}
 
 {# M7 Journey steps #}
-{% macro journey(steps) -%}
+{% macro journey(steps, unit="") -%}
 <ol class="journey" style="--steps: {{ steps | length }}">
   {% for st in steps %}
   <li class="reveal{% if st.highlight %} is-highlight{% endif %}">
-    <span class="step-n">{{ "%02d" | format(loop.index) }}</span>
+    <span class="step-n">{% if unit %}<small>{{ unit }}</small>{% endif %}{{ "%02d" | format(loop.index) }}</span>
     {% if st.label %}<span class="step-label">{{ st.label }}</span>{% endif %}
     <h3>{{ st.title }}</h3>
     <p>{{ st.text }}</p>
@@ -326,13 +326,12 @@
 {# M14 Event card #}
 {# Event card: one design for upcoming and past events #}
 {% macro event_card(e) -%}
-{% set n_photos = 1 + ((e.gallery or []) | rejectattr("image", "equalto", e.image) | list | length) %}
 {% set when = (e.card_date or e.time_label or (e.date | date_fmt('long'))) if not e.is_past else (e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year')))) %}
 <article class="ev-card reveal{% if e.is_past %} is-past{% endif %}">
   <div class="media">
     {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
     {% if e.type %}<span class="ev-chip">{{ e.type }}</span>{% endif %}
-    {% if e.is_past and n_photos > 1 %}<span class="photo-count">{{ n_photos }} {{ _("photos") }}</span>{% elif not e.is_past %}<span class="ev-status">{{ _("Upcoming") }}</span>{% endif %}
+    {% if not e.is_past %}<span class="ev-status">{{ _("Upcoming") }}</span>{% endif %}
   </div>
   <div class="card-body">
     <p class="ev-meta"><span>{{ when }}</span><span>{{ e.city or e.location }}</span></p>

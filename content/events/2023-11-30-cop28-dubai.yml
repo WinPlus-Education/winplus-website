@@ -29,7 +29,7 @@ facts:
 - number: CCTV-2
   label: National television feature
 facts_source: Participant figure from the UNFCCC's final count, as reported by Carbon Brief.
-highlights_title: What the delegation achieved
+highlights_title: What we did
 highlights:
 - title: A speech at the China Pavilion
   image: /images/uploads/photos/cop28-china-pavilion-speech.webp

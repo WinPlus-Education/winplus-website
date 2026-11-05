@@ -35,3 +35,17 @@ highlights:
   image: /images/uploads/photos/unpfii-2026-gallery-2.webp
   text: WinPlus 导师在会前与会中指导学生理解论坛议题。
 city: 纽约联合国总部
+highlights_title: 项目内容
+arc:
+- label: 会前
+  title: 准备
+  text: 导师带领学生理解论坛议题与常设论坛的工作。
+- label: 开幕
+  title: 联合国大会堂
+  text: 学生在联合国大会堂出席第 25 届会议开幕。
+- label: 会中
+  title: 交流
+  text: 与来自各地区的土著代表和各国代表交流。
+- label: 会后
+  title: 复盘
+  text: 与导师复盘所见所闻，思考对自身研究的意义。

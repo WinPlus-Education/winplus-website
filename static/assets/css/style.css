@@ -1016,3 +1016,33 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .ev-facts .stats dd { white-space: nowrap; }
 @media (max-width: 600px) { .ev-facts .stats dd { font-size: clamp(2rem, 9vw, 2.6rem); } }
 .wm-panel .eyebrow { justify-content: center; }
+
+/* Event hero: photo sits to the right so its centre stays visible; gradient only on the left */
+@media (min-width: 901px) {
+  .page-hero.ev-hero > .ph-img { left: 36%; }
+  .page-hero.ev-hero > .ph-img img { object-position: 50% 40%; }
+  .page-hero.ev-hero::after { background: linear-gradient(90deg, var(--ink) 0%, var(--ink) 36%, rgba(15, 26, 43, .78) 42%, rgba(15, 26, 43, .3) 54%, transparent 66%); }
+  .page-hero.ev-hero .page-hero-copy { max-width: min(600px, 42vw); }
+  .page-hero.ev-hero h1 { font-size: clamp(2.2rem, 1.5rem + 2vw, 3.4rem); }
+}
+
+/* About the program: equal date / location boxes */
+.event-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; max-width: 560px; }
+.event-chips.n-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 720px; }
+.event-chips li { height: 100%; }
+@media (max-width: 600px) { .event-chips, .event-chips.n-3 { grid-template-columns: 1fr; } }
+
+/* What we did, inside About the program (past events) */
+.about-hl { margin-top: clamp(48px, 6vw, 88px); padding-top: clamp(28px, 3vw, 40px); border-top: 1px solid var(--line); }
+.about-hl-title { font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); margin: 0 0 1.75rem; }
+.lang-zh .about-hl-title { letter-spacing: .06em; }
+.about-hl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 3vw, 48px) clamp(24px, 3vw, 56px); }
+.about-hl-grid.n-2, .about-hl-grid.n-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 1200px) { .about-hl-grid.n-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .about-hl-grid, .about-hl-grid.n-2, .about-hl-grid.n-4 { grid-template-columns: 1fr; } }
+.about-hl-item h3 { font-size: 1.4rem; line-height: 1.25; margin-bottom: .55rem; }
+.about-hl-item p { color: var(--mute); font-size: .94rem; line-height: 1.7; margin: 0; }
+
+/* Program arc labelled as stops */
+.journey .step-n small { display: block; font-family: var(--font-body); font-size: .68rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; margin-bottom: .35rem; }
+.lang-zh .journey .step-n small { letter-spacing: .06em; }

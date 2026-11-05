@@ -7,13 +7,10 @@ location: Boston · New York · Philadelphia · Washington, D.C.
 image: /images/uploads/photos/amnh-2024.webp
 image_alt: Students and WinPlus co-founder Cathy Guo at the American Museum of Natural History, July 2024
 summary: A 12-day program for 15 students from the High School Affiliated to Renmin University of China, with ten universities, McKinsey, Meta, the IMF and NASA.
-details: Co-organized with the High School Affiliated to Renmin University of China, the program took 15 students to ten universities including Harvard, MIT, Brown, Yale, Princeton, Penn, Columbia, NYU,
-  Johns Hopkins and Georgetown. Students visited McKinsey & Company, Meta's New York office and BrainCo, met economists at the International Monetary Fund, heard from a UN peacekeeping officer, learned
-  sailing at MIT and squash with a former Yale team captain.
+details: Co-organized with the High School Affiliated to Renmin University of China, the program took 15 students to ten universities including Harvard, MIT, Brown, Yale, Princeton, Penn, Columbia, NYU, Johns Hopkins and Georgetown. Students visited McKinsey & Company, Meta's New York office and BrainCo, met economists at the International Monetary Fund, heard from a UN peacekeeping officer, learned sailing at MIT and squash with a former Yale team captain.
 gallery: []
 testimonials:
-- quote: At MIT's Sea Grant lab, a professor explained that a robot in the corner could carry sensors three kilometres below the ocean surface. Only then did I grasp how deep the research at a place like
-    MIT really goes.
+- quote: At MIT's Sea Grant lab, a professor explained that a robot in the corner could carry sensors three kilometres below the ocean surface. Only then did I grasp how deep the research at a place like MIT really goes.
   name: Student participant
   role: 2024 cohort
 - quote: 'Twelve days ago we were complete strangers. Now we are close friends. The trip started our voyage: finding out the reality with our feet.'
@@ -38,3 +35,19 @@ highlights:
 - title: Beyond the classroom
   text: Sailing at MIT and squash with a former Yale team captain.
 city: U.S. East Coast
+highlights_title: What we did
+arc_unit: Stop
+arc_title: Four stops on the East Coast
+arc:
+- label: Boston
+  title: Harvard, MIT and Brown
+  text: Campus visits, a professor's tour of MIT's Sea Grant lab and sailing at MIT.
+- label: New York
+  title: Columbia, NYU and global business
+  text: McKinsey & Company, Meta's New York office and BrainCo, and the American Museum of Natural History.
+- label: Philadelphia & Princeton
+  title: Penn and Princeton
+  text: 'Two Ivy League campuses: the University of Pennsylvania and Princeton.'
+- label: Washington, D.C.
+  title: Policy and the world
+  text: Georgetown and Johns Hopkins, economists at the International Monetary Fund and a UN peacekeeping officer.

@@ -29,7 +29,7 @@ facts:
 - number: CCTV-2
   label: 央视财经频道报道
 facts_source: 参会人数来自 UNFCCC 最终统计，据 Carbon Brief 报道。
-highlights_title: 代表团成果
+highlights_title: 项目内容
 highlights:
 - title: 中国角发言
   image: /images/uploads/photos/cop28-china-pavilion-speech.webp

@@ -348,10 +348,9 @@
 
 {# Past event card: hero image plus a strip of additional photos from the event #}
 {% macro past_event_card(e) -%}
-{% set extra = (e.gallery or []) | rejectattr("image", "equalto", e.image) | list %}
+{% set n_photos = 1 + ((e.gallery or []) | rejectattr("image", "equalto", e.image) | list | length) %}
 <a class="card past-card reveal" href="{{ u(e.url) }}">
-  <div class="media">{{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}</div>
-  {% if extra %}<div class="past-thumbs">{% for g in extra[:3] %}{{ photo(g.image, g.caption or "", "", 400, sizes="12vw") }}{% endfor %}</div>{% endif %}
+  <div class="media">{{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}{% if n_photos > 1 %}<span class="photo-count">{{ n_photos }} {{ _("photos") }}</span>{% endif %}</div>
   <div class="card-body">
     <div class="event-top"><p class="event-date"><span>{{ e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year'))) }}</span></p>{% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}</div>
     <h3>{{ e.title }}</h3>

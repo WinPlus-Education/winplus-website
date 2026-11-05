@@ -112,6 +112,7 @@
       $("img", box).src = links[at].getAttribute("href");
       $("img", box).alt = links[at].getAttribute("data-caption") || "";
       $(".lb-cap", box).textContent = links[at].getAttribute("data-caption") || "";
+      $(".lb-count", box).textContent = (at + 1) + " / " + links.length;
     };
     var close = function () { if (box) { box.remove(); box = null; document.removeEventListener("keydown", key); } };
     var key = function (e) { if (e.key === "Escape") close(); if (e.key === "ArrowRight") { at = (at + 1) % links.length; render(); } if (e.key === "ArrowLeft") { at = (at - 1 + links.length) % links.length; render(); } };
@@ -119,7 +120,7 @@
       a.addEventListener("click", function (e) {
         e.preventDefault(); at = n;
         box = document.createElement("div"); box.className = "lightbox"; box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
-        box.innerHTML = '<img alt=""><p class="lb-cap"></p><button class="lb-close" aria-label="Close">×</button><button class="lb-prev" aria-label="Previous">‹</button><button class="lb-next" aria-label="Next">›</button>';
+        box.innerHTML = '<span class="lb-count"></span><img alt=""><p class="lb-cap"></p><button class="lb-close" aria-label="Close">×</button><button class="lb-prev" aria-label="Previous">‹</button><button class="lb-next" aria-label="Next">›</button>';
         document.body.appendChild(box); render();
         $(".lb-close", box).onclick = close;
         $(".lb-prev", box).onclick = function () { at = (at - 1 + links.length) % links.length; render(); };

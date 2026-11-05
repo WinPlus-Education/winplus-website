@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, gallery, quotes, results_notice, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, gallery, quotes, results_notice, past_event_card, cta_band, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block schema %}
 {% set online = 'online' in (item.location | lower) or '线上' in item.location %}
@@ -13,6 +13,69 @@
 {% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if item.is_past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
 {% set actions %}{% if not item.is_past %}{{ btn(item.apply_label or _("Register"), item.apply_link or "#register", "light") }}{% endif %}{% endset %}
 {{ page_hero(hero, [[_("Events"), "events.html"], [item.title, item.url]], actions, [item.time_label, item.location]) }}
+
+{% if item.is_past %}
+{# ---------- Past event: the story, the moments, what's next ---------- #}
+<section class="section">
+  <div class="container split-intro">
+    <div>
+      <p class="eyebrow">{{ _("The story") }}</p>
+      <p class="statement">{{ item.summary }}</p>
+      <ul class="event-chips">
+        <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
+        <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
+        <li><span>{{ _("Type") }}</span>{{ item.type }}</li>
+      </ul>
+    </div>
+    <div class="prose">{{ item.details | md | safe }}</div>
+  </div>
+</section>
+
+{% if item.facts %}
+<section class="section section-tight s-ink">
+  <div class="container"><dl class="stats">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl></div>
+</section>
+{% endif %}
+
+{% set shots = [{"image": item.image, "caption": item.image_alt}] + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
+{% if shots | length > 1 %}
+<section class="section s-ivory" id="gallery">
+  <div class="container">
+    <div class="head-row">{{ head(_("Gallery"), _("Moments from the program")) }}<p class="gallery-count">{{ shots | length }} {{ _("photos") }} · {{ _("Click to enlarge") }}</p></div>
+    <div class="mosaic" data-gallery>
+      {% set n = shots | length %}{% set full = (n // 5) * 5 %}{% set rem = n - full %}
+      {% for g in shots %}{% set i = loop.index0 %}
+      {% if i < full %}{% set pos = i % 5 %}{% set blk = i // 5 %}{% set cls = ("m-big" ~ (" m-right" if blk is odd else "")) if pos == 0 else "" %}
+      {% elif rem == 1 %}{% set cls = "m-wide4" %}{% elif rem == 2 %}{% set cls = "m-wide2" %}{% elif rem == 3 %}{% set cls = "m-wide2" if i == full else "" %}{% else %}{% set cls = "" %}{% endif %}
+      <a href="{{ img(g.image, 2000) }}" data-caption="{{ g.caption or '' }}" class="reveal {{ cls }}">{{ photo(g.image, g.caption or item.title, "", 1200, sizes="(max-width: 720px) 100vw, 50vw") }}{% if g.caption %}<span class="mosaic-cap">{{ g.caption }}</span>{% endif %}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if item.testimonials %}
+<section class="section{% if shots | length <= 1 %} s-ivory{% endif %}">
+  <div class="container">
+    <div class="head-row">{{ head(_("In their words"), "") }}<div class="carousel-nav" data-carousel="#ev-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
+    {{ quotes(item.testimonials, "ev-quotes") }}
+    {{ results_notice() }}
+  </div>
+</section>
+{% endif %}
+
+{% set more = past_events | rejectattr("slug", "equalto", item.slug) | list %}
+{% if more %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(_("Past events"), _("More moments from WinPlus students")) }}{{ arrow(_("All events"), "events.html#past") }}</div>
+    <div class="grid g-3">{% for e in more[:3] %}{{ past_event_card(e) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+
+{% set prog = "experiences/campus-immersion.html" if item.category == "immersion" else "experiences/global-conferences.html" %}
+{{ cta_band(_("Be part of the next chapter."), _("Applications for our next programs open soon. Register your interest and we'll share dates and details first."), _("Register interest"), "contact.html?interest=" ~ (_("Global Experiences") | urlencode) ~ "&program=" ~ (item.title | urlencode), item.image, _("Explore the program"), prog) }}
+{% else %}
 
 <section class="section">
   <div class="container detail">
@@ -32,11 +95,7 @@
     </div>
     <aside class="detail-side">
       <div class="side-card side-sticky" id="register">
-        {% if item.is_past %}
-        <h2 class="h3">{{ _("This event has ended") }}</h2>
-        <p class="small muted">{{ _("See what's coming up next, or ask us about future cohorts.") }}</p>
-        {{ btn(_("See upcoming events"), "events.html#upcoming") }}
-        {% elif item.apply_link %}
+        {% if item.apply_link %}
         <h2 class="h3">{{ _("Apply") }}</h2>
         <p class="small muted">{{ item.time_label }}</p>
         {{ btn(item.apply_label or _("Apply"), item.apply_link) }}{{ btn(_("Inquire"), item.inquire_link or ("contact.html?program=" ~ (item.title | urlencode)), "outline", false) }}
@@ -78,5 +137,6 @@
     {{ results_notice() }}
   </div>
 </section>
+{% endif %}
 {% endif %}
 {% endblock %}

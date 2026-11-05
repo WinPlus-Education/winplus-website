@@ -277,6 +277,18 @@ stories:
   link: ''
 testimonials_title: What families say
 testimonials:
+- quote: The ten universities we visited left a deep impression on me. More than twenty professors and outstanding alumni, people of real character and learning, showed me why these schools are the world's best. Their teaching stays with me, and my wish to study at a top university grows stronger every day. I hope one day to become someone like them.
+  name: Student, Grade 9
+  role: Campus Immersion
+- quote: This trip made me think deeply about my future. I came to understand what American universities really want to know about me — who I am, what makes me unique, who I hope to become and what I want to contribute to the world. I also experienced the diversity, openness, warmth and inclusiveness of American culture first-hand. All of this will stay with me as a treasure for life.
+  name: Student, Grade 10
+  role: Campus Immersion
+- quote: Thank you to the teachers for such thoughtful care! Our child cried when they got home, not wanting to leave the teachers and classmates. The group on this trip was warm and wonderful, the itinerary was full and well organized, and our child gained so much.
+  name: Parent of a Grade 11 student
+  role: Campus Immersion
+- quote: Our child came back with so much, and the teachers' devotion moved us deeply. All the way home, our child couldn't stop talking about how the teachers cared for them like family. Far from home in America, it still felt as warm as home. Thank you again to every teacher!
+  name: Parent of a Grade 8 student
+  role: Campus Immersion
 - quote: '[Parent testimonial placeholder: what changed for their child, and the family''s experience working with WinPlus.]'
   name: '[Parent of a Class of 20XX student]'
   role: Parent
@@ -286,9 +298,6 @@ testimonials:
 - quote: '[Alumni testimonial placeholder: how the program helped at university.]'
   name: '[Name], [University], Class of [Year]'
   role: Alumni
-- quote: Thank you to every teacher for such thoughtful care. The program was full, rich and warm, and our child grew so much.
-  name: Parent
-  role: Campus Immersion 2025
 cta_title: Let's write the next success story.
 cta_text: Start with a free strategy session with a WinPlus mentor.
 cta: Book a Free Consultation

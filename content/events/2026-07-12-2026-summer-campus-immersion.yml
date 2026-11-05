@@ -3,10 +3,10 @@ date: '2026-07-12T09:00:00'
 end_date: '2026-07-23'
 time_label: July 12–23, 2026
 type: Campus Immersion
-location: Boston · New Haven · Princeton · New York · Philadelphia · Silicon Valley
+location: Boston · New Haven · Princeton · New York · Philadelphia
 image: /images/uploads/photos/hks-session.webp
 image_alt: WinPlus students in a mentor session at Harvard Kennedy School, July 2026
-summary: 'Twelve days, ten universities and 35 organizations: a 50-hour global competency program taught by 18 mentors from Harvard, MIT, Yale and Silicon Valley.'
+summary: 'Twelve days, ten universities and 35 organizations: a 50-hour global competency program taught by 18 mentors from Harvard, MIT, Yale and leading technology companies.'
 details: 'Built on courses at Harvard and MIT, the program is a 50-hour global competency curriculum developed by mentors from Harvard, Yale and MIT and taught in English at Harvard, MIT and Princeton. It is organized around four competencies: global analysis, cultural empathy, cross-cultural communication and sustainable action.
 
 
@@ -35,7 +35,7 @@ gallery:
   caption: The cohort with WinPlus mentors
 testimonials: []
 category: immersion
-statement: Twelve days inside Harvard, MIT, Yale, Princeton and Silicon Valley, learning to think like global leaders.
+statement: Twelve days inside Harvard, MIT, Yale and Princeton, learning to think like global leaders.
 seo_title: 2026 Summer Campus Immersion | WinPlus
 facts:
 - number: '50'
@@ -62,12 +62,12 @@ arc:
 - label: New Haven & Princeton
   title: The Ivy League
   text: 'Yale''s Old Campus and Sterling Memorial Library, then Princeton: admissions sessions, campus tours with current students, and a seminar in Princeton''s classrooms.'
-- label: New York & Philadelphia
-  title: Cities that shaped America
-  text: 'A cruise to the Statue of Liberty, Wall Street and the 9/11 Memorial, United Nations Headquarters, Times Square, the Empire State Building, Central Park, the Met, the American Museum of Natural History and a Broadway show. In Philadelphia: Independence National Historical Park and the Liberty Bell.'
-- label: Silicon Valley
-  title: Where the future is built
-  text: Visits to leading technology companies and sessions with executives from Google and Meta gave students a first-hand look at how the industry works, from product design to AI research.
+- label: New York
+  title: The city that never sleeps
+  text: A cruise to the Statue of Liberty, Wall Street and the 9/11 Memorial, United Nations Headquarters, Times Square, the Empire State Building, Central Park, the Met, the American Museum of Natural History and a Broadway show.
+- label: Philadelphia
+  title: Where America began
+  text: Independence National Historical Park and the Liberty Bell, where students explored the founding of the United States and the ideas behind it.
 outcomes:
 - title: Global Competency Certificate
   text: Awarded to every student on completing the 50-hour curriculum.
@@ -77,7 +77,7 @@ outcomes:
   text: Public speaking, group discussion and real conversations with professionals and peers.
 - title: Mentors and friends
   text: Relationships with mentors and a cohort that continue long after the program.
-city: Boston · New York · Silicon Valley
+city: Boston · New York · Philadelphia
 highlights_title: What we did
 arc_unit: Stop
 arc_title: Four stops, one journey

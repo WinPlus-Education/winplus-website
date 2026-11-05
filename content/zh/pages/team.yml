@@ -1,88 +1,289 @@
-seo_title: "我们的团队 | 升学顾问、导师与创始人 | WinPlus 欧歌学院"
-meta_description: "认识 WinPlus 欧歌学院团队：创始人郭琪、盘超，升学顾问，以及来自哈佛、MIT、NASA、Meta、联合国、哥伦比亚大学等机构的导师。"
-eyebrow: 我们的团队
-title: 每一位 WinPlus 学员背后的团队
-intro: WinPlus 是全周期人才培养平台，陪伴学生从 9 年级走向世界名校录取，并为未来做好准备。认识让这一切成为可能的团队。
-image: https://images.unsplash.com/photo-1758873269811-4e62e346b4b7
-image_alt: 团队围坐在桌边协作
+seo_title: 导师团队 | 哈佛、MIT、斯坦福导师与顾问 | WinPlus 欧歌学院
+meta_description: 认识 WinPlus 欧歌学院的创始人、顾问与导师：MIT 与哈佛教授、前 NASA 宇航员、NASA 科学家、藤校校友面试官，以及来自 Meta、微软、苹果的行业导师。
+eyebrow: 导师团队
+title: 每一位 WinPlus 学生背后的导师
+intro: 来自世界顶尖大学与企业的教授、科学家、校友面试官和行业领袖，直接指导我们的学生。
+image: /images/uploads/photos/hbs-classroom.webp
+image_alt: WinPlus 导师与学生在大学校园
+people:
+- id: tarik-carney
+  name: Tarik Carney
+  initials: TC
+  title: 联合国和平与安全领域专业人士
+  education: 哥伦比亚大学 SIPA 及巴黎政治学院硕士
+  photo: /images/uploads/team/tarik-carney.webp
+  bio: 'Tarik Carney 长期从事联合国和平与安全工作，拥有哥伦比亚大学国际与公共事务学院及巴黎政治学院硕士学位，曾在纽约大学和日本上智大学学习哲学与日语。他的经历涵盖中非共和国民事事务、乌干达儿童保护、纽约联合国总部平民保护及索马里局势分析，连接人文训练与国际事务实践。
 
-what_title: 我们做什么
-what:
-  - { title: "升学规划", text: "美国、英国、加拿大、澳大利亚本科及研究生申请，以及美国高中申请。", link: admissions.html }
-  - { title: "科研与实习", text: "人工智能、金融、科学与艺术领域的导师制科研与实习项目。", link: research.html }
-  - { title: "国际背景提升", text: "联合国会议、全球胜任力夏校与冬校，以及领导力项目。", link: enrichment.html }
 
-compare_title: 一站式平台 vs. 分散的多家机构
-without:
-  label: 没有一体化平台
-  heading: 每项需求都要找一家机构。
-  center: 学生与家长
-  vendors: [升学顾问, 科研项目, 实习机构, 标化培训, 文书老师]
-  note: 向每一家重复讲述你的故事，五份规划却互不衔接。
-with:
-  label: 选择 WinPlus
-  heading: 一位人才顾问统筹全程。
-  center: 你的专属人才顾问
-  stages: ["9–10 年级 · 背景打造", "10–11 年级 · 科研与能力", "11 年级 · 申请策略", "12 年级 · 申请执行", "录取及未来"]
-benefits:
-  - { title: "连贯一致", text: "从 9 年级到录取，始终是同一段关系。" }
-  - { title: "一位专属顾问", text: "一位顾问负责孩子的完整成长路径。" }
-  - { title: "真正的个性化规划", text: "一套围绕学生本人打造的完整策略。" }
-  - { title: "更高性价比", text: "避免多家机构的重复收费。" }
+    在 WinPlus 活动中，他带领学生参观联合国总部，讲解组织机构、价值观与使命，分享维和工作中的故事。学生既能了解机构职责，也能看到和平、安全与人道保护如何落实到个人，以及国际合作需要怎样的沟通和协调。'
+  founder: false
+- id: le-cong
+  name: Le Cong
+  initials: LC
+  title: 斯坦福大学病理学与遗传学副教授
+  education: 清华大学学士；哈佛大学生物与生物医学科学博士
+  photo: /images/uploads/team/le-cong.webp
+  bio: 'Le Cong 是斯坦福大学病理学与遗传学副教授，毕业于清华大学，获哈佛大学生物与生物医学科学博士学位。他研究基因工程、基因与细胞治疗，曾获美国国家人类基因组研究所 Genomic Innovator Award，研究连接实验生物学、计算方法和工程设计。
 
-leaders_title: 创始人
-leaders:
-  - name: 郭琪 Cathy Guo
-    role: 联合创始人兼执行总裁
-    photo: /images/uploads/team/cathy-guo.jpg
-    bio: "哈佛大学肯尼迪学院公共政策硕士；曾任职联合国妇女署、牛津经济研究院；罗格斯大学 Douglass 女子学院董事。"
-    linkedin: ""
-  - name: 盘超 Cedric Pan
-    role: 联合创始人
-    photo: /images/uploads/team/cedric-pan.jpg
-    bio: "北京大学；哈佛大学公共政策硕士 + 教育学硕士；MIT 航空航天创业项目导师；曾任硅谷与波士顿教育科技公司高管。"
-    linkedin: ""
 
-consultants_title: 顾问与教练
-consultants_intro: 从规划到录取，与家庭日常沟通的伙伴。
-consultants:
-  - { name: "[顾问姓名]", role: "资深升学顾问", photo: "", bio: "[教育背景、擅长方向（如美国 / 英国）、从业年限。]" }
-  - { name: "[顾问姓名]", role: "升学顾问", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
-  - { name: "[教练姓名]", role: "文书与面试教练", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
+    其团队研究 CRISPR、大段基因插入、单细胞分析及干细胞疾病模型，并通过 CRISPR-GPT 等项目探索 AI 辅助基因编辑。在 WinPlus 活动中，他带领学生参观斯坦福干细胞研究所，讲授前沿基因编辑研究，介绍基因、细胞功能与疾病之间的关系。'
+  founder: false
+- id: harper-gu
+  name: Harper Gu
+  initials: HG
+  title: 软件工程师 · Apple 工作背景
+  education: ''
+  photo: ''
+  bio: 'Harper Gu 是拥有 Apple 工作背景的软件工程师。[请补充教育与职业背景。]
 
-featured_title: 部分导师
-featured_intro: 部分指导 WinPlus 学员的教授与业界专家，并非全部合作资源。
-featured:
-  - { name: Professor Steve, photo: /images/uploads/team/steve.jpg, background: "哈佛大学 · 美国国会预算办公室", field: "国际关系、政府与公共政策" }
-  - { name: Professor Jeff, photo: /images/uploads/team/jeff.jpg, background: "MIT · 美国国家航空航天局", field: "航空航天与工程" }
-  - { name: Professor Nico, photo: /images/uploads/team/nico.jpg, background: "哈佛大学 · 费哲金融", field: "金融与数据科学" }
-  - { name: Professor Rachel, photo: /images/uploads/team/rachel.jpg, background: "MIT · 斯坦福大学", field: "电气工程与机械工程" }
-  - { name: Professor Oliner, photo: /images/uploads/team/oliner.jpg, background: "斯宾塞私立高中 · 哥伦比亚大学", field: "运动与体育管理" }
-  - { name: Professor Mike, photo: /images/uploads/team/mike.jpg, background: "凤凰影业 CEO", field: "影视制作" }
-  - { name: Professor Tarik, photo: /images/uploads/team/tarik.jpg, background: "联合国总部 · 哥伦比亚大学", field: "联合国维和行动、国际组织与国际关系" }
-  - { name: Professor Yuan, photo: /images/uploads/team/yuan.jpg, background: "Meta · 哥伦比亚大学", field: "人工智能与计算机科学" }
 
-network_title: 导师与师资网络
-network:
-  - { title: "科研导师", text: "人工智能、航空航天、机械工程、数据科学、计算机等领域。", count: "[X]+" }
-  - { title: "产业导师", text: "金融、国际关系、公共政策、国际贸易、时尚、电影等领域。", count: "[X]+" }
-  - { title: "升学策略导师", text: "来自顶尖大学的前招生官与升学顾问。", count: "[X]+" }
-team_stat: { number: "40+", label: "位团队成员" }
+    在 WinPlus，Harper Gu 担任「AI 辅助软件工程」项目导师。'
+  founder: false
+  org: Apple
+- id: cathy-guo
+  name: 郭琪 Cathy Guo
+  initials: CG
+  title: 联合创始人 · 曾任职联合国妇女署
+  education: 哈佛大学肯尼迪学院公共政策硕士 · 罗格斯大学学士
+  photo: /images/uploads/team/cathy-guo.webp
+  bio: '郭琪老师于 2020 年在哈佛广场联合创立 WinPlus 欧歌学院，毕业于哈佛大学肯尼迪学院公共政策硕士，罗格斯大学经济与传媒双学士。
 
-mentors_title: 项目导师
-mentors_intro: WinPlus 项目由来自世界顶尖机构的业界专家与研究人员授课，而非职业辅导老师。
-mentors:
-  - { role: "Llama 团队软件工程负责人", org: Meta AI, program: AI 智能体项目, photo: "", link: research/ai-agent-development.html }
-  - { role: "资深云计算工程师，10 年以上经验", org: 苹果（硅谷）, program: Claude Code AI 编程项目, photo: "", link: research/claude-code-ai-programming.html }
-  - { role: "云计算工程师，10 年以上经验", org: 亚马逊 AWS, program: 物联网 AI 设备项目, photo: "", link: research/iot-ai-devices.html }
-  - { role: "编剧艺术硕士；戛纳获奖导演", org: 西北大学, program: 编剧与导演项目, photo: "", link: research/screenwriting-directing.html }
-  - { role: "资深数据科学家，7 年以上经验", org: 微软总部, program: 金融预测项目, photo: "", link: research/financial-forecasting-python.html }
-  - { role: "工程负责人，8 年以上经验", org: 彭博, program: 金融科技 + AI 项目, photo: "", link: research/fintech-ai-startup.html }
-  - { role: 博士后研究员, org: 加州理工基因治疗实验室, program: 基因治疗科研项目, photo: "", link: research/gene-therapy-ai-data.html }
-  - { role: 研究科学家, org: NASA 艾姆斯研究中心, program: JWST 深空科研项目, photo: "", link: research/jwst-deep-space-research.html }
-  - { role: 航空航天工程师, org: NASA 戈达德 / MIT, program: 星链轨道设计项目, photo: "", link: research/starlink-orbit-design.html }
 
-join_title: 加入我们的导师网络
-join_text: 如果你是研究人员、工程师或创作者，并希望指导有志青年，欢迎与我们联系。
-join_cta: 联系我们
-join_link: contact.html
+    她现任哈佛肯尼迪学院校友会董事、罗格斯大学 Douglass 女子学院董事，曾就职于联合国妇女署、牛津经济研究院等机构，长期在中东、欧洲、非洲、东南亚和中国西南地区推动国际教育与公益事业。'
+  founder: true
+- id: josh-guo
+  name: Josh Guo
+  initials: JG
+  title: 耶鲁大学本科招生面试官 · 曾任职德勤
+  education: 耶鲁大学学士（专业优异）
+  photo: /images/uploads/team/josh-guo.webp
+  bio: 'Josh Guo 毕业于耶鲁大学，获专业荣誉 Distinction in Major，曾任职德勤。他曾在白宫环境质量委员会实习，接触气候、能源与环境政策协调，并向康涅狄格州立法机构提交公共议题书面意见。他也参与云南布朗族文化保护，通过访谈、影像、音乐记录和写作连接人文研究与社区实践。
+
+
+    在 WinPlus，他指导经济、政治、哲学、法律相关及其他人文社科方向的本科、硕士和博士申请，并担任耶鲁本科申请面试官，曾帮助学生获得哈佛、耶鲁和斯坦福录取，将研究与面试经验用于升学支持。'
+  founder: false
+- id: daniel-e-hastings
+  name: Daniel E. Hastings
+  initials: DH
+  title: 麻省理工学院 Institute Professor · 前美国空军首席科学家
+  education: 牛津大学数学学士；麻省理工学院航空航天硕士及博士
+  photo: /images/uploads/team/daniel-e-hastings.webp
+  bio: 'Daniel E. Hastings 是 MIT Institute Professor，获该校最高教师荣誉；本科毕业于牛津大学，获 MIT 硕士及博士学位。他研究航天器与空间环境、推进技术及复杂系统设计，曾任 MIT 本科教育院长、航空航天系主任、新加坡—MIT 科研联盟负责人和美国空军首席科学家。
+
+
+    他与新加坡国立大学及亚洲学生有长期教学交流。在 WinPlus 活动中，他带领学生了解航天可持续发展、系统工程与地球轨道制造，讨论技术方案如何长期运行、任务目标如何匹配资源，以及在轨生产所需的基础设施。'
+  founder: false
+- id: jeffrey-hoffman
+  name: Jeffrey A. Hoffman
+  initials: JH
+  title: 麻省理工学院航空航天工程实践教授 · 前 NASA 宇航员
+  education: 哈佛大学博士；阿默斯特学院学士；莱斯大学硕士
+  photo: /images/uploads/team/jeff.jpg
+  bio: 'Jeffrey A. Hoffman 是 MIT 航空航天工程实践教授、前 NASA 宇航员，拥有哈佛大学博士学位。他曾五次执行航天飞机任务，在太空工作超过 1,211 小时，并参与 1993 年哈勃太空望远镜首次维修。他还担任火星制氧实验 MOXIE 副首席研究员，该装置搭载于“毅力号”，验证了从火星大气提取氧气的可行性。
+
+
+    在 WinPlus 活动中，他带领学生参观 MIT 航空航天系，讲解“毅力号”探索、航天飞机载人飞行和阿波罗登月工程，结合实际任务说明科学仪器、航天器与宇航员如何协同工作，以及工程设计如何应对资源和环境限制。'
+  founder: false
+- id: steve-kelman
+  name: Steve Kelman
+  initials: SK
+  title: 哈佛肯尼迪学院 Weatherhead 公共管理荣休教授 · 前美国联邦采购政策办公室主任
+  education: 哈佛大学学士及政府学博士
+  photo: /images/uploads/team/steve-kelman.webp
+  bio: 'Steve Kelman 是哈佛肯尼迪政府学院 Weatherhead 公共管理荣休教授，在哈佛完成本科及政府学博士学习。他研究政府管理、公共政策与组织变革，曾于 1993 至 1997 年担任美国行政管理和预算局下属联邦采购政策办公室负责人，参与联邦政府管理改革，并著有《Unleashing Change》等著作。
+
+
+    在 WinPlus 活动中，他带领学生参观哈佛肯尼迪政府学院，讲解中美关系、国际关系与美国政府治理，将新闻议题与政府组织、政策决策及执行联系起来，介绍公共事务研究如何回应现实问题。'
+  founder: false
+- id: damir-kozhanbayev
+  name: Damir Kozhanbayev
+  initials: DK
+  title: 哈佛 Project on Workforce 研究员 · 前联合国儿童基金会
+  education: 哈佛大学教育研究生院
+  photo: /images/uploads/team/damir-kozhanbayev.webp
+  bio: 'Damir Kozhanbayev 是哈佛 Project on Workforce 研究员，曾在 UNICEF 哈萨克斯坦办公室负责教育与知识创新，并以 Urban Scholars Fellow 身份进入哈佛教育学院学习“学习设计、创新与技术”，兼具国际组织与教育研究背景。
+
+
+    在 WinPlus，Damir Kozhanbayev 担任「全球挑战政策研究」项目导师。'
+  founder: false
+  org: 哈佛 Project on Workforce
+- id: changfan-lin
+  name: Changfan Lin
+  initials: CL
+  title: 加州理工学院博士后研究员
+  education: 康奈尔大学博士 · 清华大学
+  photo: /images/uploads/team/changfan-lin.webp
+  bio: 'Changfan Lin 是加州理工学院 Gradinaru 实验室博士后，本科毕业于清华大学，在康奈尔完成博士研究，曾主导解析昼夜节律核心蛋白复合物的冷冻电镜结构。目前研究腺相关病毒载体（AAV）的工程改造，改善基因递送的靶向性与安全性。
+
+
+    在 WinPlus，Changfan Lin 担任「基因治疗与 AI 数据分析」项目导师。'
+  founder: false
+  org: 加州理工学院
+- id: yinong-liu
+  name: Yinong Liu
+  initials: YL
+  title: WinPlus AI 时尚与零售产品创新课程导师
+  education: ''
+  photo: ''
+  bio: '[请补充 Yinong Liu 的教育与职业背景。]
+
+
+    在 WinPlus，Yinong Liu 担任「奢侈品零售 AI 产品创新」项目导师。'
+  founder: false
+  org: '[所属机构]'
+- id: mike-medavoy
+  name: Mike Medavoy
+  initials: MM
+  title: 好莱坞制片人 · Phoenix Pictures 与 Orion Pictures 联合创始人
+  education: 加州大学洛杉矶分校毕业
+  photo: /images/uploads/team/mike-medavoy.webp
+  bio: 'Mike Medavoy 是好莱坞制片人、Phoenix Pictures 联合创始人，毕业于加州大学洛杉矶分校。他的经历涵盖人才经纪、电影公司管理和制片，曾联合创办 Orion Pictures，并在 United Artists 与 TriStar Pictures 担任管理职务。参与推动的作品包括《黑天鹅》《禁闭岛》《十二宫》和《细细的红线》。
+
+
+    在 WinPlus 活动中，他带领学生参观好莱坞制片公司，分享制片流程、产业运作和明星经纪经验，解释一个故事如何成为电影项目，以及导演、演员、编剧、制片人与经纪人如何分工协作，连接创意、资金与市场。'
+  founder: false
+- id: rachel-morgan
+  name: Rachel Morgan
+  initials: RM
+  title: NASA 艾姆斯研究中心光学科学家
+  education: 麻省理工学院航空航天博士及硕士
+  photo: /images/uploads/team/rachel-morgan.webp
+  bio: 'Rachel Morgan 是在 NASA Ames 研究中心开展研究的光学科学家，拥有 MIT 航空航天与物理本科背景，以及航空航天硕士、博士学位。她研究集成光子技术在天文仪器中的应用，关注类地系外行星探测，并曾在 NASA 喷气推进实验室及 MIT 林肯实验室积累科研经验。
+
+
+    在 WinPlus，Rachel Morgan 担任「太空望远镜任务设计」项目导师。'
+  founder: false
+  org: NASA 艾姆斯研究中心
+- id: anhphu-nguyen
+  name: AnhPhu Nguyen
+  initials: AN
+  title: 科技创业者 · MIRA 联合创始人
+  education: 哈佛大学
+  photo: ''
+  bio: 'AnhPhu Nguyen 是科技创业者、智能眼镜公司 MIRA 联合创始人，曾在哈佛学习 Human Augmentation，探索计算机、工程与人机交互如何拓展人类能力。他从学生时期经营手机维修业务起步，获哈佛工程学院报道，并参与发起 AR／VR 开发者社团，探索可穿戴设备与互动技术。
+
+
+    在 WinPlus，他指导计算机与人工智能方向的本科申请，带领学生深入哈佛工程学院学习参访，曾帮助学生获得哈佛和斯坦福本科录取。其经历连接设备维修、原型制作与产品开发，使学生接触软件、硬件和交互设计之间的关系。'
+  founder: false
+- id: cedric-pan
+  name: 盘超 Cedric Pan
+  initials: CP
+  title: 联合创始人
+  education: 哈佛大学肯尼迪学院公共政策硕士 · 哈佛大学教育学硕士 · 北京大学学士
+  photo: /images/uploads/team/cedric-pan.webp
+  bio: '盘超老师毕业于哈佛大学肯尼迪政府学院公共政策硕士、哈佛大学教育学硕士，北京大学城市规划和经济学双学士，现任麻省理工学院航空航天创业项目导师。
+
+
+    他曾在硅谷自动驾驶公司、跨国共享出行公司和波士顿 K12 教育科技公司担任高管，早年曾在国务院发展研究中心、国家开发银行等机构工作。'
+  founder: true
+- id: vania-shi
+  name: Vania Shi
+  initials: VS
+  title: Court Square Advisors 创始人
+  education: MIT Sloan 金融硕士 · 女王大学商科学士
+  photo: /images/uploads/team/vania-shi.webp
+  bio: 'Vania Shi 是Court Square Advisors 创始人，拥有 MIT Sloan 金融硕士和加拿大女王大学荣誉商科学士学位。她在咨询、运营与投资领域有十余年经历，曾任 Morrison 投资经理及 Altman Solon 经理，涉及增长战略、商业尽职调查、运营改进与资本筹措。
+
+
+    在 WinPlus，她指导商科本科，以及 MBA、金融和商业分析硕士申请，带领学生深入 MIT 商学院学习参访，曾帮助学生获得哈佛商学院、MIT Sloan 和沃顿等商学院录取，将行业经验与商学院学习及申请规划联系起来。'
+  founder: false
+- id: sijie-tian
+  name: Sijie Tian
+  initials: ST
+  title: 人工智能工程师 · Meta 工作背景
+  education: ''
+  photo: /images/uploads/team/sijie-tian.webp
+  bio: 'Sijie Tian 是拥有 Meta AI 团队背景的工程师。[请补充教育与职业背景。]
+
+
+    在 WinPlus，Sijie Tian 担任「AI 智能体从 0 到 1」项目导师。'
+  founder: false
+  org: Meta
+- id: hannah-tomio
+  name: Hannah Tomio
+  initials: HT
+  title: 伯尔尼大学激光物理博士后
+  education: 麻省理工学院博士 · 东北大学（日本）硕士 · 卡内基梅隆大学学士
+  photo: /images/uploads/team/hannah-tomio.webp
+  bio: 'Hannah Tomio 是伯尔尼大学激光物理博士后，拥有 MIT 航空航天博士学位，本科就读于卡内基梅隆大学电气与计算机工程专业，并获东北大学航空航天硕士学位。她曾与 NASA 戈达德航天中心合作，在喷气推进实验室及波音实习，研究激光仪器、光通信与空间精密测量。
+
+
+    在 WinPlus，Hannah Tomio 担任「卫星星座与轨道设计」项目导师。'
+  founder: false
+  org: 伯尔尼大学
+- id: claire-yoo
+  name: Claire Yoo
+  initials: CY
+  title: Harvard Undergraduate OpenBio 实验室联合外联负责人
+  education: 哈佛大学整合生物学
+  photo: ''
+  bio: 'Claire Yoo 在哈佛大学攻读整合生物学本科，担任 Harvard Undergraduate OpenBio Laboratory 联合外联负责人，推动高中生和大学生接触科研。她通过哈佛 PRISE 项目进入 Jost 实验室开展微生物研究，并参与哈佛植物标本馆相关研究，关注植物化合物与环境指示等方向。
+
+
+    在 WinPlus，她指导医学兴趣、神经科学及相关生命科学方向的本科申请，带领学生深入哈佛生命科学与医学院相关环境学习参访，曾帮助学生获得哈佛和斯坦福本科录取，将校园体验、专业探索与申请支持结合起来。'
+  founder: false
+- id: yuan-yuan
+  name: Yuan Yuan
+  initials: YY
+  title: 软件工程师 · Meta 与彭博
+  education: 哥伦比亚大学工程学院
+  photo: /images/uploads/team/yuan.jpg
+  bio: 'Yuan Yuan 拥有 Meta 与 Bloomberg 工作背景，曾在哥伦比亚大学工程与应用科学学院学习，连接互联网科技与金融信息服务。其公开技术交流包括 CppCon 2024 关于微服务算法交易系统行为驱动开发的海报，涉及业务需求、系统行为与软件测试之间的关系。
+
+
+    在 WinPlus，Yuan Yuan 担任「金融科技 + AI 创业实验室」项目导师。'
+  founder: false
+  org: Meta · 彭博
+- id: terry-zhang
+  name: Terry Zhang
+  initials: TZ
+  title: 科技与数据研究方向导师 · 微软与谷歌
+  education: 密歇根大学 Rackham 研究生院
+  photo: /images/uploads/team/terry-zhang.webp
+  bio: 'Terry Zhang，亦名 Dehao Terry Zhang，拥有 Microsoft 与 Google 工作背景，曾就读密歇根大学 Rackham 研究生院。他参与的混合办公研究发表于《美国国家科学院院刊》，分析员工到岗与管理者、同事的关系。
+
+
+    在 WinPlus，Terry Zhang 担任「Python 财务预测」项目导师。'
+  founder: false
+  org: 微软 · 谷歌
+- id: mentor-ar-accessibility
+  name: '[导师姓名]'
+  initials: ''
+  title: Meta Reality Labs 工程主管
+  education: ''
+  photo: ''
+  bio: '[请补充导师姓名、照片与职业背景。]负责「AR 眼镜无障碍软件」项目。'
+  founder: false
+  org: Meta Reality Labs
+- id: mentor-iot-devices
+  name: '[导师姓名]'
+  initials: ''
+  title: 亚马逊云服务（AWS）10 年以上经验云工程师
+  education: ''
+  photo: ''
+  bio: '[请补充导师姓名、照片与职业背景。]负责「物联网与 AI 设备开发」项目。'
+  founder: false
+  org: 亚马逊云服务（AWS）
+- id: mentor-screenwriting
+  name: '[导师姓名]'
+  initials: ''
+  title: 戛纳获奖短片导演
+  education: 西北大学编剧艺术硕士
+  photo: ''
+  bio: '[请补充导师姓名、照片与职业背景。]负责「编剧与导演」项目。'
+  founder: false
+  org: '[所属机构]'
+- id: mentor-ux-research
+  name: '[导师姓名]'
+  initials: ''
+  title: 谷歌 8 年以上用户研究主管
+  education: 斯坦福大学双硕士
+  photo: ''
+  bio: '[请补充导师姓名、照片与职业背景。]负责「短视频产品与用户体验研究」项目。'
+  founder: false
+  org: 谷歌
+note: 以上为 WinPlus 部分团队成员。头衔与机构仅说明个人的职业背景，并不代表其所在机构为 WinPlus 背书。
+cta_title: 让这样的导师指导您的孩子
+cta_text: 从一次免费规划咨询开始，我们将为您介绍最适合孩子的导师。
+cta: 预约免费咨询
+cta_link: contact.html

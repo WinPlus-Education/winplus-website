@@ -1,0 +1,41 @@
+seo_title: 图片来源 | WinPlus 欧歌学院
+meta_description: WinPlus 网站所使用第三方图片的来源与许可。
+title: 图片来源
+intro_text: WinPlus 项目照片均为 WinPlus 自有。其他部分图片依据开放许可使用，谨此致谢原作者。来自 Unsplash 的图片依据 Unsplash 许可使用。
+credits:
+- subject: IoT & AI Device Development
+  title: Internet Widget
+  author: dam
+  license: CC BY 2.0
+  source: https://www.flickr.com/photos/36749491@N00/16266134437
+  changes: cropped, resized
+- subject: AI Product Innovation for Luxury Retail
+  title: The Boutique
+  author: Peter Alfred Hess
+  license: CC BY 2.0
+  source: https://www.flickr.com/photos/22799676@N03/8246566956
+  changes: resized
+- subject: AR Glasses Accessibility Software
+  title: action-adult-augmented-reality-756439
+  author: toptenalternatives
+  license: CC BY 2.0
+  source: https://www.flickr.com/photos/159248733@N04/45977002511
+  changes: resized
+- subject: Product & UX Research
+  title: Wireframing & prototyping table
+  author: '@resultsjunkie'
+  license: CC BY-SA 2.0
+  source: https://www.flickr.com/photos/28678196@N04/9489007609
+  changes: resized
+- subject: 首页轮播：加州理工学院
+  title: Beckman Auditorium
+  author: Robert Skolmen (Bobskol854)
+  license: CC BY-SA 3.0
+  source: https://commons.wikimedia.org/wiki/File:Beckman_Auditorium.JPG
+  changes: 缩放
+- subject: 首页轮播：宾夕法尼亚大学
+  title: College Hall U Penn
+  author: Smallbones
+  license: 公有领域
+  source: https://commons.wikimedia.org/wiki/File:College_Hall_U_Penn.JPG
+  changes: 裁切、缩放

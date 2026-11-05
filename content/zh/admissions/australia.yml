@@ -1,0 +1,38 @@
+order: 6
+title: 澳洲留学申请
+short_title: 澳洲
+interest: 英国、加拿大、澳洲申请
+seo_title: 澳洲留学申请：本科与研究生 | WinPlus 欧歌学院
+meta_description: 澳大利亚留学申请：IB、A-Level、AP 等体系的课程匹配，墨大、悉大、澳国立与新南申请，以及研究生学位。
+summary: 墨尔本大学、悉尼大学、澳国立、新南威尔士等澳大利亚顶尖大学的本科与研究生申请。
+eyebrow: 澳洲留学申请
+title_long: 澳洲名校：本科与研究生申请
+image: /images/uploads/campus/sydney.webp
+image_alt: 悉尼大学主楼四方院
+who: 申请澳大利亚本科的学生，以及申请澳大利亚授课型硕士与研究型学位的毕业生。
+system: 澳大利亚大学主要依据学术成绩录取到具体课程，成绩可来自 ATAR、IB、A-Level、AP 或各国体系。许多大学设有 2 月与 7 月两次入学，医学等部分课程还需笔试与面试。
+challenges_intro: 澳洲申请的关键，在于围绕成绩、课程与入学时间的精准规划。
+challenges:
+- challenge: 不同课程体系的录取分数各异
+  title: 课程与入学规划
+  text: 根据兴趣与公布的入学要求，为 IB、A-Level、AP 及各国体系的学生匹配合适课程。
+- challenge: 两次入学，多国并行
+  title: 协调统筹的申请
+  text: 围绕 2 月与 7 月入学以及美、英、加申请安排材料、陈述与文件。
+- challenge: 研究型学位需要导师
+  title: 研究生与研究型学位
+  text: 授课型硕士与研究型学位申请，包括研究计划与导师联络。
+timeline_title: 澳大利亚申请时间线
+timeline:
+- when: 提前 12 个月
+  text: 确定课程名单，核对对应课程体系的入学要求。
+- when: 8–12 月
+  text: 申请 2 月入学；完成所需笔试或面试。
+- when: 12–1 月
+  text: 发放录取，常为基于最终成绩的有条件录取。
+- when: 2–3 月
+  text: 第一学期开学。
+- when: 7 月
+  text: 多数大学的年中入学。
+outcomes_text: '[请补充澳洲录取案例：WinPlus 学生被录取的大学与课程。]'
+outcomes: []

@@ -1,45 +1,42 @@
 order: 7
-title: 基因治疗 AI 数据分析
-category: science-space
-org: Caltech
-format: 科研项目
-seo_title: 基因治疗 AI 数据分析 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 运用 AI 与数据分析研究基因治疗领域的生物医学问题，由加州理工博士后研究员指导。
-summary: 运用 AI 与数据分析研究基因治疗领域的生物医学问题，由加州理工博士后研究员指导。
+title: 基因治疗与 AI 数据分析
+industry: science-space
+type: research
+status: open
+mentor_id: changfan-lin
+mentor_note: 加州理工学院博士后研究员；康奈尔大学博士
+seo_title: 高中生基因治疗科研项目 | WinPlus 欧歌学院
+meta_description: 在加州理工博士后研究员指导下，用 Python 分析真实 AAV 基因治疗测序数据。八周线上生物科研项目。
+summary: 用 Python 分析真实的基因治疗测序数据，了解实验室发现如何走向临床，由加州理工博士后研究员指导。
 image: https://images.unsplash.com/photo-1630959305606-3123a081dada
-image_alt: 研究人员使用显微镜的剪影
-facts:
-- label: 形式
-  value: 科研项目
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 基因治疗研究会产生大量复杂数据。学生将学习基因治疗背后的科学原理，并使用计算工具分析真实或公开的研究数据。
-activities:
-- 遗传学与基因治疗基础
-- 阅读和理解科研论文
-- 使用 Python 分析生物数据
-- 提出并验证研究问题
-- 撰写科研论文并汇报成果
-mentor: 加州理工学院基因治疗实验室博士后研究员
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 可投稿学生期刊或科学竞赛的科研论文
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 对生物学有浓厚兴趣；建议修过高中生物。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 实验室中使用显微镜的研究人员
+format: 线上 · 导师直播课
+length: 8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '基因治疗是医学最有前景的前沿之一，而越来越多的进展依赖数据。学生将通过科学家阅读的研究论文，了解基因编辑与递送原理：AAV 衣壳、血脑屏障、受体识别与定向进化。
+
+
+  随后学生亲自动手：用 Python 分析真实 AAV 筛选实验的测序数据，统计变体、计算富集度并可视化结果，同时理解为什么实验室发现在惠及患者前还需进一步验证。'
+outcomes:
+- 阐述方法、发现与解读的研究报告
+- 基于真实实验数据的 Python 分析
+- 可选文献综述
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 科学原理
+  text: 基因编辑、递送与 AAV 载体。
+- phase: 第 3–4 周
+  title: 研读论文
+  text: 关键论文，以及动物研究向人类转化的局限。
+- phase: 第 5–7 周
+  title: 数据分析
+  text: 用 Python 分析真实 AAV 测序数据：变体、富集度与可视化。
+- phase: 第 8 周
+  title: 研究报告
+  text: 撰写并展示方法、发现与解读。
+eligibility:
+- 10–12 年级
+- 具备高中生物基础；化学基础更佳
+- 无需 Python 基础

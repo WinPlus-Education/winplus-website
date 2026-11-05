@@ -1,49 +1,162 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, quotes, results_notice, event_card, journey, cta_band, ld with context %}
+{% block body_class %}has-overlay{% endblock %}
 {% block schema %}
-{% set online = 'online' in (item.location | lower) %}
-{% set ev = {"@context": "https://schema.org", "@type": "Event", "name": item.title, "description": item.summary, "startDate": item.date.isoformat() if item.date else "", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode" if online else "https://schema.org/OfflineEventAttendanceMode", "organizer": {"@id": site_url ~ "/#organization"}, "image": [img(item.image, 1200)] if item.image else []} %}
-{% if online %}{% set _ = ev.update({"location": {"@type": "VirtualLocation", "url": canonical}}) %}{% else %}{% set _ = ev.update({"location": {"@type": "Place", "name": item.location, "address": item.location}}) %}{% endif %}
-{{ ld(ev) }}
+{% set online = 'online' in (item.location | lower) or '线上' in item.location %}
+{% set ev = {"@context": "https://schema.org", "@type": "Event", "name": item.title, "description": item.summary, "startDate": item.date.isoformat() if item.date else "", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode" if online else "https://schema.org/OfflineEventAttendanceMode", "organizer": {"@id": site_url ~ "/#organization"}} %}
+{% if item.end_date %}{% set _x = ev.update({"endDate": item.end_date | string}) %}{% endif %}
+{% if item.image %}{% set _x = ev.update({"image": [item.image if item.image.startswith('http') else site_url ~ item.image]}) %}{% endif %}
+{% if online %}{% set _x = ev.update({"location": {"@type": "VirtualLocation", "url": canonical}}) %}{% else %}{% set _x = ev.update({"location": {"@type": "Place", "name": item.location, "address": item.location}}) %}{% endif %}
+{% if item.date %}{{ ld(ev) }}{% endif %}
 {% endblock %}
 {% block content %}
-{% set hero = {"eyebrow": item.type, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{{ page_hero(hero, [[_("Events"), "events.html"], [item.title, item.url]]) }}
-<section class="section" data-event-date="{{ item.date.isoformat() if item.date else '' }}">
-  <div class="wrap detail-grid">
-    <div class="detail-main">
-      <dl class="facts">
-        <div><dt>{{ _("Date") }}</dt><dd>{{ item.date | date_fmt('weekday') }}</dd></div>
-        <div><dt>{{ _("Time") }}</dt><dd>{{ item.time_label }}</dd></div>
-        <div><dt>{{ _("Location") }}</dt><dd>{{ item.location }}</dd></div>
-        <div><dt>{{ _("Type") }}</dt><dd>{{ item.type }}</dd></div>
-      </dl>
-      <h2>{{ _("About this event") }}</h2>
-      <div class="prose">{{ item.details | md | safe }}</div>
-    </div>
-    <aside class="detail-side">
-      <div class="side-card side-cta" id="register">
-        <h2 class="h4">{{ _("Register") }}</h2>
-        <p class="event-past-note" hidden>{{ _("This event has ended.") }} <a href="{{ u('events.html') }}">{{ _("See upcoming events") }}</a></p>
-        {% if item.register_url %}
-        {{ btn(_("Register now"), item.register_url) }}
-        {% else %}
-        <form class="form form-compact" name="event-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
-          <input type="hidden" name="form-name" value="event-registration">
-          <input type="hidden" name="event" value="{{ item.title }} ({{ item.date | date_fmt('long') }})">
-          <input type="hidden" name="language" value="{{ lang.code }}">
-          <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
-          <label for="r-name">{{ _("Name") }}<input id="r-name" name="name" autocomplete="name" required></label>
-          <label for="r-email">{{ _("Email") }}<input id="r-email" type="email" name="email" autocomplete="email" required></label>
-          <label for="r-role">{{ _("I am a") }}
-            <select id="r-role" name="role"><option>{{ _("Parent") }}</option><option>{{ _("Student") }}</option><option>{{ _("Educator") }}</option><option>{{ _("Other") }}</option></select>
-          </label>
-          <label for="r-grade">{{ _("Student grade (optional)") }}<input id="r-grade" name="grade"></label>
-          <button class="btn btn-gold" type="submit">{{ _("Register") }}</button>
-        </form>
-        {% endif %}
-      </div>
-    </aside>
+{#
+  One template for upcoming and past events. Every section is optional and appears only when its
+  content exists. When an event ends: add gallery photos, switch the copy to past tense, done.
+#}
+{% set past = item.is_past %}
+{% set inquire = item.inquire_link or ("contact.html?interest=" ~ (_("Global Experiences") | urlencode) ~ "&program=" ~ (item.title | urlencode)) %}
+{% set shots = ([{"image": item.image, "caption": item.image_alt}] if item.image else []) + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
+{% set has_gallery = past and shots | length > 1 %}
+
+{% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{% set actions %}{% if not past and item.no_inquire %}{{ btn(item.hero_button or item.cta_button or _("About WinPlus"), item.cta_link or "about.html", "light") }}{% elif not past %}{{ btn(_("Inquire"), inquire, "light") }}{% elif has_gallery %}{{ btn(_("View gallery"), "#gallery", "light") }}{% endif %}{% endset %}
+{{ page_hero(hero, [[_("Events"), "events.html"], [item.card_title or item.title, item.url]], actions, [item.time_label, item.location], "ev-hero") }}
+
+{# 1. Key numbers #}
+{% if item.facts %}
+<section class="section section-tight s-ink ev-facts">
+  <div class="container">
+    <dl class="stats stats-{{ [item.facts | length, 4] | min }}">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl>
+    {% if item.facts_source %}<p class="ev-source">{{ item.facts_source }}</p>{% endif %}
   </div>
 </section>
+{% endif %}
+
+{# 2. About the program. Past events fold "what we did" into this section. #}
+<section class="section">
+  <div class="container">
+    <div class="split-intro">
+      <div>
+        <p class="eyebrow">{{ _("About the program") }}</p>
+        {% if item.statement %}<p class="statement">{{ item.statement }}</p>{% endif %}
+        <ul class="event-chips n-{{ 3 if item.partner else 2 }}">
+          <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
+          <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
+          {% if item.partner %}<li><span>{{ item.partner_label or _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
+        </ul>
+      </div>
+      <div class="prose">{{ item.details | md | safe }}</div>
+    </div>
+    {% if past and item.highlights %}
+    <div class="about-hl">
+      <p class="about-hl-title">{{ item.highlights_title or _("What we did") }}</p>
+      <div class="about-hl-grid n-{{ item.highlights | length }}">
+        {% for h in item.highlights %}
+        <div class="about-hl-item reveal"><span class="hl-n">{{ "%02d" | format(loop.index) }}</span><h3>{{ h.title }}</h3><p>{{ h.text }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# 3. Signature experiences (upcoming events) #}
+{% if not past and (item.highlights or item.expect) %}
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(_("What to expect"), item.highlights_title or _("Signature experiences"), item.highlights_intro) }}
+    {% if item.highlights %}
+    {% set n = item.highlights | length %}
+    <div class="hl-grid hl-{{ n if n <= 4 else 3 }}">
+      {% for h in item.highlights %}
+      <article class="hl-card reveal{% if h.image %} has-img{% endif %}">
+        {% if h.image %}{{ photo(h.image, h.title, "hl-media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}{% endif %}
+        <div class="hl-body">
+          <span class="hl-n">{{ "%02d" | format(loop.index) }}</span>
+          <h3>{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <ul class="ticks ticks-lg">{% for x in item.expect %}<li>{{ x }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{# 4. The arc of the program #}
+{% if item.arc %}
+<section class="section">
+  <div class="container">
+    {{ head(_("How it unfolded") if past else _("The week at a glance"), item.arc_title, item.arc_intro) }}
+    {{ journey(item.arc, item.arc_unit or '') }}
+  </div>
+</section>
+{% endif %}
+
+{# 5. Outcomes #}
+{% if item.outcomes %}
+<section class="section s-ink">
+  <div class="container">
+    {{ head(_("Outcomes"), item.outcomes_title or (_("What students gained") if past else _("What students gain"))) }}
+    <div class="oc-grid">
+      {% for o in item.outcomes %}
+      <div class="oc reveal"><span class="oc-n">{{ "%02d" | format(loop.index) }}</span><h3>{{ o.title }}</h3><p>{{ o.text }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# 6. Gallery (past events) #}
+{% if has_gallery %}
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="head-row">{{ head(_("Gallery"), _("Moments from the program")) }}<p class="gallery-count">{{ shots | length }} {{ _("photos") }} · {{ _("Click to enlarge") }}</p></div>
+    <div class="mosaic" data-gallery>
+      {% set n = shots | length %}{% set full = (n // 5) * 5 %}{% set rem = n - full %}
+      {% for g in shots %}{% set i = loop.index0 %}
+      {% if i < full %}{% set pos = i % 5 %}{% set blk = i // 5 %}{% set cls = ("m-big" ~ (" m-right" if blk is odd else "")) if pos == 0 else "" %}
+      {% elif rem == 1 %}{% set cls = "m-wide4" %}{% elif rem == 2 %}{% set cls = "m-wide2" %}{% elif rem == 3 %}{% set cls = "m-wide2" if i == full else "" %}{% else %}{% set cls = "" %}{% endif %}
+      <a href="{{ img(g.image, 2000) }}" data-caption="{{ g.caption or '' }}" class="reveal {{ cls }}">{{ photo(g.image, g.caption or item.title, "", 1200, sizes="(max-width: 720px) 100vw, 50vw") }}{% if g.caption %}<span class="mosaic-cap">{{ g.caption }}</span>{% endif %}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# 7. Quotes #}
+{% if item.testimonials %}
+<section class="section s-ivory">
+  <div class="container">
+    <div class="head-row">{{ head(_("In their words"), "") }}<div class="carousel-nav" data-carousel="#ev-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
+    {{ quotes(item.testimonials, "ev-quotes") }}
+    {{ results_notice() }}
+  </div>
+</section>
+{% endif %}
+
+{# 8. More events #}
+{% set more = past_events | rejectattr("slug", "equalto", item.slug) | list %}
+{% if more %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(_("Past events"), _("More moments from WinPlus students") if past else _("Where WinPlus students have been")) }}{{ arrow(_("All events"), "events.html#past") }}</div>
+    <div class="grid g-3">{% for e in more[:3] %}{{ event_card(e) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+
+{% set prog = "experiences/campus-immersion.html" if item.category == "immersion" else "experiences/global-conferences.html" %}
+{% if past %}
+{{ cta_band(_("Be part of the next chapter."), _("Applications for our next programs open soon. Register your interest and we'll share dates and details first."), _("Register interest"), inquire, item.image, _("Explore the program"), prog) }}
+{% else %}
+{% if item.no_inquire %}
+{{ cta_band(item.cta_title or _("Meet the people behind WinPlus."), item.cta_text or "", item.cta_button or _("About WinPlus"), item.cta_link or "about.html", item.image, _("See upcoming events"), "events.html#upcoming") }}
+{% else %}
+{{ cta_band(item.cta_title or _("Join the delegation."), item.cta_text or _("Places are limited. Send us an inquiry and a WinPlus advisor will share the full program, eligibility and next steps."), _("Inquire"), inquire, item.image, _("Explore the program"), prog) }}
+{% endif %}
+{% endif %}
 {% endblock %}

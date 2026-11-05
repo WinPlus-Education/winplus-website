@@ -1,142 +1,158 @@
-seo_title: "College Admissions Counseling & Ivy League Consulting | WinPlus"
-meta_description: "WinPlus Education is an education consultancy for US college admissions, Ivy League and UK G5 applications. 87 Top-30 & Ivy League offers, mentor-led research with NASA, Meta and MIT mentors, UN conferences. Book a free consultation."
-
+seo_title: WinPlus | Boutique College Admissions Consultancy, Harvard Square
+meta_description: Bespoke pathways to the world's top universities, built by a US-based team of mentors. Admissions counseling, research, campus immersion and global conferences.
 hero:
-  eyebrow: "Education Consultancy · College Admissions Counseling"
-  title_line1: Build a profile that stands out.
-  title_line2: Build a future that lasts.
-  subtitle: WinPlus is an education consultancy that guides students from Grade 9 to the world's top universities with expert admissions counseling, real research with mentors from NASA, Meta and MIT, and global experiences like UN conferences. One consultant, one plan, every step of the way.
-  image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
-  image_alt: Students walking past a university building on campus
+  eyebrow: Premier boutique education consultancy
+  title: Bespoke pathways to the world's top universities.
+  subtitle: 'Mentors from America''s top universities and leading companies build one plan around one student: admissions strategy, real research and global stages, from high school to graduate school.'
   primary_cta: Book a Free Strategy Session
   primary_link: contact.html
   secondary_cta: Explore Our Programs
-  secondary_link: research.html
-  proof: "100+ students guided · 87 Top-30 & Ivy League offers"
-
+  secondary_link: '#programs'
+  slides:
+  - image: /images/uploads/campus/harvard.webp
+    alt: Widener Library, Harvard University
+  - image: /images/uploads/campus/yale-sterling.webp
+    alt: Sterling Memorial Library, Yale University
+  - image: /images/uploads/campus/princeton.webp
+    alt: Nassau Hall in autumn, Princeton University
+  - image: /images/uploads/campus/columbia.webp
+    alt: Low Memorial Library, Columbia University
+  - image: /images/uploads/campus/mit-dome.webp
+    alt: The Great Dome, Massachusetts Institute of Technology
+  - image: /images/uploads/campus/stanford.webp
+    alt: Main Quad at sunset, Stanford University
+  - image: /images/uploads/campus/caltech-beckman.webp
+    alt: Beckman Auditorium, California Institute of Technology
+  - image: /images/uploads/campus/penn-college-hall.webp
+    alt: College Hall, University of Pennsylvania
+  - image: /images/uploads/campus/brown.webp
+    alt: Brown University campus, Providence
+  - image: /images/uploads/campus/dartmouth.webp
+    alt: Baker Library, Dartmouth College
 results:
   eyebrow: Our Results
-  title: Outcomes that speak for themselves
-  text: WinPlus students earn offers from the Ivy League, US Top-30 universities and the UK's G5, at rates well above the general applicant pool.
-  photos:
-    - { image: /images/uploads/students/un-cosp19-speaker.jpg, alt: "A WinPlus student speaking at the 19th Conference of States Parties to the CRPD at UN Headquarters", caption: "Only high-school speaker at COSP19, UN Headquarters, 2026" }
-    - { image: /images/uploads/students/ivy-admit-story.jpg, alt: "A WinPlus student presenting her work", caption: "Admitted to Harvard & Yale with scholarship" }
-    - { image: /images/uploads/students/uc-scholarship-story.jpg, alt: "A WinPlus student on a university visit", caption: "From no SAT/TOEFL to a UC scholarship" }
-  key_stats:
-    - { number: "87", label: "Top-30 & Ivy League offers", note: "Since founding, as of July 2026" }
-    - { number: "[X]", label: "[Second key metric — to be decided]", note: "[e.g. average scholarship, Yale offers in 3 consecutive years]" }
-  chart_title: Offers by university
-  chart_note: "Number of offers earned by WinPlus students. Enter the counts in the editor."
-  chart:
-    - { name: Harvard, value: "" }
-    - { name: Yale, value: "" }
-    - { name: Princeton, value: "" }
-    - { name: Columbia, value: "" }
-    - { name: UPenn, value: "" }
-    - { name: Brown, value: "" }
-    - { name: MIT, value: "" }
-    - { name: Duke, value: "" }
-    - { name: UC Berkeley, value: "" }
-    - { name: UCLA, value: "" }
-    - { name: Georgia Tech, value: "" }
-    - { name: Oxford, value: "" }
-    - { name: Cambridge, value: "" }
-    - { name: Imperial, value: "" }
-    - { name: UCL, value: "" }
-    - { name: LSE, value: "" }
-  offers_label: "Recent offers include"
-  offer_groups:
-    - { label: Ivy League, schools: [Harvard, Yale, Princeton, Columbia, UPenn, Brown] }
-    - { label: US Top 30, schools: [MIT, Duke, UC Berkeley, UCLA, Georgia Tech] }
-    - { label: UK G5, schools: [Oxford, Cambridge, Imperial College London, UCL, LSE] }
-  footnote: "Selected list. Data as of July 2026."
+  title: Outcomes at the most selective universities
+  text: WinPlus students earn offers from the Ivy League and the US Top 30 at rates far above each university's overall admit rate.
+  stats:
+  - number: 100+
+    label: Students advised since 2020
+  - number: '[X%]'
+    label: Admitted to the Ivy League or US Top 30
+  - number: '87'
+    label: Ivy League & Top-30 offers
+  - number: '[X]'
+    label: '[Placeholder: add a headline result]'
+  rates_title: 'Acceptance rate: WinPlus students vs. overall'
+  rates_count: 6
+  note: Data as of July 2026. Acceptance rates compare WinPlus-advised applicants with each university's published overall admit rate.
   link_text: See all results
   link: results.html
-
-mission:
-  eyebrow: Who We Are
-  title: Our Mission
-  paragraphs:
-    - "WinPlus Education & Technology Inc. is an education social enterprise with a mission to provide affordable and accessible high-quality education to underprivileged and historically disadvantaged students worldwide."
-    - "Inspired by Harvard University's motto of pursuing truth and a deep devotion to educational equity, WinPlus is committed to instilling truth, promoting excellence, and offering equitable opportunities through our revolutionary educational services enabled by more than 5,000 hours of e-learning curricula, innovative educational technologies, and personalized learning experiences."
-  image: /images/uploads/campus.jpg
-  image_alt: A historic red-brick university library on a green campus
-
 offer:
-  eyebrow: What We Offer
-  title: Three ways we help students grow
-  intro: Most families piece together a counselor, a research program and a summer camp from different vendors. WinPlus brings all three together under one dedicated consultant.
+  eyebrow: Our Programs
+  title: Four programs. One plan, built around you.
+  intro: Applying to high school, college or graduate school? Most applicants piece together a counselor, a research program and a summer trip from different vendors. At WinPlus every program is designed to strengthen the others, guided by one team that knows your story.
   segments:
-    - title: Admissions Counseling
-      text: Strategy and support for US, UK, Canadian and Australian universities, graduate school and US high schools, from school selection to essays and interviews.
-      points: ["US & international college admissions", "Graduate school (US and international)", "US boarding & high school placement"]
-      image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
-      image_alt: Students outside a historic university building
-      link: admissions.html
-      link_text: Explore admissions counseling
-    - title: Research & Internships
-      text: Real projects led by engineers, scientists and industry leaders. Students finish with a portfolio, a mentor recommendation letter and a story worth telling.
-      points: ["AI, coding & technology", "Finance & business", "Science, space & the arts"]
-      image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
-      image_alt: A researcher looking through a microscope in a laboratory
-      link: research.html
-      link_text: Explore research programs
-    - title: Experience Enrichment
-      text: United Nations conferences, summer and winter schools and campus visits that build the global perspective and leadership top universities reward.
-      points: ["UN conference delegations", "Summer & winter schools", "Campus tours & leadership programs"]
-      image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
-      image_alt: United Nations headquarters in New York beside the East River
-      link: enrichment.html
-      link_text: Explore enrichment programs
-
+  - title: Admissions Counseling
+    text: 'From US high school to graduate school, and across the UK, Canada and Australia: a strategy shaped by mentors and alumni interviewers from top US universities.'
+    outcomes:
+    - A school list and story that are unmistakably yours
+    - Essays developed with mentors who know your target schools
+    - Interview practice with alumni interviewers
+    image: /images/uploads/campus/yale-harkness.webp
+    image_alt: Harkness Tower, Yale University
+    link: admissions.html
+    link_text: Explore admissions
+  - title: Research & Internships
+    text: Bespoke online research and internships led by scientists, engineers and industry leaders. Solve a real problem and build work admissions officers remember.
+    outcomes:
+    - Real problem-solving from day one
+    - A finished paper, prototype or portfolio
+    - A recommendation from a mentor who saw the work
+    image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
+    image_alt: A scientist working at a laboratory microscope
+    link: research.html
+    link_text: Explore programs
+  - title: Campus Immersion
+    text: Not a campus tour. Step inside the labs, classrooms and companies of America's leading universities, and talk with faculty and current students to find where you truly belong.
+    outcomes:
+    - Hands-on sessions in university labs
+    - Candid conversations with faculty and students
+    - A clear picture of your right-fit university
+    image: /images/uploads/campus/stanford-arcade.webp
+    image_alt: Main Quad arcade and Hoover Tower, Stanford University
+    link: experiences/campus-immersion.html
+    link_text: Explore immersion
+  - title: Global Leadership Conferences
+    text: Research a global issue and present it at high-profile international conferences, before diplomats, policymakers and global delegates.
+    outcomes:
+    - Speak before international delegates
+    - A network that spans countries
+    - Leadership proven on a world stage
+    image: /images/uploads/campus/un-flags.webp
+    image_alt: Flags of member states outside an international headquarters
+    link: experiences/global-conferences.html
+    link_text: Explore conferences
 why:
-  eyebrow: Why WinPlus
-  title: What makes us different
+  eyebrow: Why Us
+  title: Elite guidance, never a template.
+  intro: WinPlus is a boutique talent-development platform, not an application mill. We work with fewer students, more closely, for longer.
   points:
-    - title: A global resource network
-      text: Access to mentors and resources from Harvard, MIT, NASA, Meta and other leading universities, institutions and companies, across academia, research and industry.
-    - title: A real world stage
-      text: Real seats at United Nations conferences and international youth forums, where students build leadership, cross-cultural communication and global influence.
-    - title: A proven methodology
-      text: Our "Eight Key Elements" framework, refined over years of practice, replaces trial and error with a systematic plan that makes outcomes more predictable.
-    - title: Full-cycle support
-      text: A bicultural US–China team stays with each student from exploring interests and building a profile to applications and career development.
-
-events:
-  eyebrow: Upcoming Events
-  title: Join us at an upcoming event
-  text: Info sessions, workshops and program launches for students and parents. Spaces are limited, so register early.
-  link_text: See all events
-  link: events.html
-
-testimonials:
-  eyebrow: In Their Words
-  title: What students and parents say
+  - title: On the ground in the US
+    text: Our bilingual Chinese-American and American team lives and works in the US, with first-hand insight from current students, alumni interviewers and each cycle's published admissions policies.
+  - title: Mentors who have been there
+    text: Professors, scientists, alumni interviewers and industry leaders work with students directly, sharing what it really takes to get in and to thrive.
+  - title: A roadmap built around one student
+    text: 'We get to know each student first: their strengths, interests and goals, and we respect where they want to go. Then we build a step-by-step roadmap that shows them at their best, and guide every step. No cookie-cutter templates.'
+  - title: With you for the whole journey
+    text: Admission is a milestone, not the finish line. We stay with students from middle school through university, graduate school and career, developing the curiosity, skills and character that last.
+journey:
+  eyebrow: Our Approach
+  title: From first conversation to final decision
+  intro: Every journey follows the same disciplined arc, and no two plans look alike.
+  link_text: How we work
+  link: about.html#how-we-work
+  early_title: Start early. Plan with intent.
+  early_text: The strongest applications are built over years, not over one summer. Talk to us as early as possible, whether that is middle school, the start of high school or a year before graduate applications, so we can plan every step ahead of time.
+  early_cta: Start planning now
+  early_link: contact.html
+  steps:
+  - title: Discover
+    text: A free strategy session to understand the student's background, goals, interests and personality.
+  - title: Design
+    text: 'A bespoke multi-year roadmap: which activities, research and internships to pursue, and when. A dedicated mentor guides every step.'
+  - title: Build
+    text: 'The profile comes to life through real work: research, immersion and global stages chosen to complement each other.'
+  - title: Apply
+    text: School list, application strategy, essay brainstorming and editing, activity lists, recommendations and interview preparation.
+  - title: Decide
+    text: We help compare offers, navigate waitlists and prepare for a confident start at university.
+team:
+  eyebrow: Our Team
+  title: The people behind every WinPlus student
+  text: Founded in 2020 by Harvard Kennedy School graduates. Today our mentors include university professors, NASA scientists, alumni interviewers and leaders from the world's top companies.
+  featured:
+  - cathy-guo
+  - cedric-pan
+  - jeffrey-hoffman
+  - steve-kelman
+  - rachel-morgan
+  link_text: Meet our full team
+  link: team.html
+stories:
+  eyebrow: Our Success Stories
+  title: Real students. Real transformations.
+  intro: 'Three very different starting points, one approach: a plan built around the student.'
   link_text: Read more success stories
   link: results.html
-
-faq:
-  title: Frequently asked questions
-  items:
-    - q: What does WinPlus do?
-      a: WinPlus is a global talent development platform for high school students. We combine college admissions counseling, mentor-led research and internship programs, and enrichment experiences such as UN conferences, all coordinated by one dedicated consultant.
-    - q: Which countries' universities do you help students apply to?
-      a: We advise on undergraduate admissions to the United States, United Kingdom, Canada and Australia, graduate school admissions in the US, UK, Canada and Australia, and US boarding and high school admissions.
-    - q: When should a student start working with WinPlus?
-      a: Ideally in Grade 9 or 10, which leaves time to build research experience and a coherent profile. We also work with students in Grades 11 and 12 who need focused application support.
-    - q: What is an education consultancy, and why work with one for college admissions?
-      a: An education consultancy such as WinPlus advises students and families on university admissions, from choosing courses and activities to school lists, essays and interviews. For selective US, Ivy League and UK G5 universities, a consultant helps a student plan years ahead, build real evidence of their interests and present a coherent application.
-    - q: Do you offer Ivy League admissions consulting?
-      a: Yes. Our Ivy League admissions consulting combines a multi-year profile plan, mentor-led research, 50+ rounds of essay editing, early-round (REA/ED) strategy and interview coaching. WinPlus students have been admitted to Harvard, Yale, Princeton, Columbia, Penn and Brown.
-    - q: What results have WinPlus students achieved?
-      a: As of July 2026, WinPlus has guided 100+ students to 87 offers from Top-30 and Ivy League universities, including Yale admissions three years in a row, and offers from UK G5 universities such as Oxford, Cambridge, Imperial, UCL and LSE.
-    - q: Do you help international students apply to US universities?
-      a: Yes. Many of our students apply from China and other countries. We guide them through US college admissions, including school selection, testing (SAT/ACT, TOEFL), essays, interviews and financial aid questions.
-    - q: How do I get started?
-      a: Book a free strategy session. We'll learn about the student's goals and current profile, then recommend a plan with no commitment required.
-
 cta:
-  title: Ready to plan your path to a top university?
-  text: Start with a free, no-commitment strategy session with a WinPlus consultant.
-  button: Book a Free Strategy Session
+  title: Begin with a free strategy session.
+  text: Meet a WinPlus mentor, talk through your goals and leave with clear next steps. No commitment required.
+  button: Book a Free Consultation
   link: contact.html
+  image: /images/uploads/campus/princeton-blair.webp
+events:
+  eyebrow: Past Events
+  title: Where our students have been
+  intro: Campus immersions, international conferences and info sessions from recent years.
+  link_text: All events
+  link: events.html

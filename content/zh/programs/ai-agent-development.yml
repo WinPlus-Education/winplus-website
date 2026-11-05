@@ -1,45 +1,42 @@
 order: 1
-title: AI 智能体软件与工具开发
-category: ai-technology
-org: Meta
-format: 线上实习
-seo_title: AI 智能体软件与工具开发 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 在 Meta AI 工程负责人指导下，设计并开发一个能调用大语言模型规划并完成任务的 AI 智能体应用。
-summary: 在 Meta AI 工程负责人指导下，设计并开发一个能调用大语言模型规划并完成任务的 AI 智能体应用。
+title: AI 智能体从 0 到 1
+industry: ai-technology
+type: internship
+status: open
+mentor_id: sijie-tian
+mentor_note: 拥有 Meta AI 团队背景的工程师
+seo_title: 高中生 AI 智能体开发实习 | WinPlus 欧歌学院
+meta_description: 六周内在 Meta AI 背景导师指导下，搭建并评估一个可运行的 AI 智能体。面向有一定编程基础的高中生的线上实习。
+summary: 从第一次 API 调用到经过测试、能使用工具的智能助手，在拥有 Meta AI 团队背景的工程师指导下，亲手打造一个可运行的 AI 智能体。
 image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
-image_alt: 电脑屏幕上的程序代码
-facts:
-- label: 形式
-  value: 线上实习
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: AI 智能体是软件领域发展最快的方向之一。在这个实习式项目中，学生将学习现代 AI 智能体的设计与构建方法，并从创意到可运行演示，开发属于自己的智能体工具。
-activities:
-- 了解大语言模型、提示词与工具调用的工作原理
-- 为自己关心的真实问题设计智能体
-- 使用 Python 构建并测试智能体
-- 评估性能、安全性与局限
-- 在结业展示会上进行现场演示
-mentor: Meta Llama 团队软件工程负责人及 AI 平台开发负责人
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 可运行的 AI 智能体项目，附源代码与演示视频
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 有 Python 基础更好，但非必需；项目提供预备课程。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 电脑屏幕上的 AI 应用代码
+format: 线上 · 导师直播课
+length: 6 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: 'AI 智能体能够自主规划、调用工具并完成任务，正在重塑每一个行业。在这个实习项目中，学生将亲手打造一个真正可用的智能体：学习助手、研究助手或数据清洗工具。
+
+
+  学生从大模型 API 调用与提示词实验起步，逐步搭建“观察—规划—执行—停止”的循环。同样重要的是，他们将学习如何让智能体安全可靠：沙箱边界、命令白名单、超时机制与 API 密钥管理。'
+outcomes:
+- 可运行的智能体代码与现场演示
+- 5–10 项测试任务的评估结果与执行日志
+- 说明智能体原理与局限的反思报告
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 基础
+  text: 大模型原理；API 调用、提示词与结构化输出。
+- phase: 第 3–4 周
+  title: 智能体循环
+  text: 观察、规划、执行、停止；连接工具、定义输入输出、记录每次调用。
+- phase: 第 5 周
+  title: 安全与可靠性
+  text: 沙箱、白名单、文件权限、超时与密钥管理。
+- phase: 第 6 周
+  title: 评估与展示
+  text: 运行评估任务、分析执行轨迹、修复弱点并展示成果。
+eligibility:
+- 9–12 年级
+- 具备初级到中级编程基础（建议 Python）
+- 笔记本电脑与稳定网络

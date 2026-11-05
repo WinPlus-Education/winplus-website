@@ -1,33 +1,38 @@
-order: 6
-title: 美国高中申请
+order: 3
+title: 美高申请
 short_title: 美国高中
-interest: 美国高中申请
-seo_title: "美国寄宿高中及私立高中申请 | SSAT、托福规划 | WinPlus 欧歌学院"
-meta_description: "为国际学生提供美国寄宿高中及私立高中申请指导：选校、SSAT 与托福规划、申请文书与面试辅导。"
-summary: 为国际学生提供美国寄宿高中及私立高中申请，包括选校、SSAT / 托福规划与面试辅导。
-image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
-image_alt: 课堂上举手的学生
-who: 申请美国寄宿高中及私立走读学校的 6–10 年级学生及家庭。
-included:
-  - 学校调研与均衡选校名单
-  - SSAT / ISEE 与托福规划
-  - 申请文书（学生及家长陈述）
-  - 面试辅导与模拟面试
-  - 校园参访规划
-  - 推荐信规划
-  - 录取决策与入学准备
-approach:
-  - { title: "找到合适的学校", text: "综合考虑学术、校园文化、地理位置及对国际学生的支持。" }
-  - { title: "充分准备", text: "在截止日期前从容完成标化考试、文书与面试准备。" }
-  - { title: "支持过渡", text: "录取后帮助学生在学业与生活上顺利适应。" }
-deadlines_title: 常见时间节点
-deadlines:
-  - { label: "调研与参访", date: "入学前一年的春季至秋季" }
-  - { label: "标化考试（SSAT/ISEE、托福）", date: "申请当年秋季" }
-  - { label: "申请截止", date: "通常为 1 月中旬" }
-  - { label: "录取结果", date: "通常为 3 月 10 日" }
-faq:
-  - q: 孩子应该在几年级入读美国寄宿高中？
-    a: 9 年级是最常见的入学年级，很多学校也招收 10 年级学生。我们会根据孩子的准备情况给出建议。
-  - q: 一定要考 SSAT 吗？
-    a: 很多寄宿高中要求或建议提交 SSAT 或 ISEE 成绩，国际学生通常还需要托福等语言成绩。具体要求因校而异。
+interest: 美高申请
+seo_title: 美国寄宿学校与私立高中申请 | WinPlus 欧歌学院
+meta_description: 美国寄宿学校与私立走读学校申请：选校、SSAT/ISEE 规划、申请材料、家长陈述、面试与探校。
+summary: 美国寄宿学校与私立走读学校申请：从选校到 SSAT、面试与探校。
+eyebrow: 美高申请
+title_long: 找到合适的美国寄宿或走读学校，自信开启新阶段
+image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
+image_alt: 历史悠久的红砖校园建筑
+who: 申请美国寄宿学校与私立走读学校的 5–10 年级学生，以及计划移居美国的家庭。
+system: 私立中学录取的是一个社区成员，而不只是一份成绩单。面试与探校分量很重，家长需要撰写自己的陈述，多数顶尖学校的截止日期集中在 1 月，并在 3 月统一放榜。
+challenges_intro: 很多家庭低估了美高申请的个性化程度。以下是我们发挥作用的地方。
+challenges:
+- challenge: 排名说明不了是否适合
+  title: 找到真正适合的学校
+  text: 我们帮助家庭了解各校在学术、文化、规模与支持上的真实差异，选出学生能真正成长的学校，而不只是能被录取的学校。
+- challenge: 年纪尚小，却要面对成人化的考察
+  title: 自然自信的面试与探校
+  text: 通过面试训练建立真正的自信；依托我们靠近新英格兰顶尖寄宿学校的地理优势，规划探校行程。
+- challenge: 环节繁多，截止日期却只有一个
+  title: 统筹协调的一份申请
+  text: SSAT 或 ISEE 与英语考试规划、学生与家长陈述、教师推荐信，全部统一在一条时间线上。
+timeline_title: 美高申请时间线
+timeline:
+- when: 提前 12–18 个月
+  text: 学校调研、初步标化规划与暑期探校。
+- when: 9–12 月
+  text: 校园参观与面试；SSAT 或 ISEE 考试。
+- when: 1 月 15 日
+  text: 多数顶尖寄宿学校申请截止。
+- when: 3 月 10 日
+  text: 多数寄宿学校统一放榜日。
+- when: 4 月 10 日
+  text: 统一答复日；准备入学过渡。
+outcomes_text: '[请补充美高录取案例：WinPlus 学生被录取的学校。]'
+outcomes: []

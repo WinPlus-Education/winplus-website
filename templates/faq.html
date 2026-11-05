@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_head, faq, arrow with context %}
+{% block content %}
+{{ page_head(page, [[page.eyebrow, "faq.html"]]) }}
+<nav class="anchor-nav" aria-label="{{ _('On this page') }}">
+  <div class="container"><ul><li><a href="#general">{{ page.general_title }}</a></li>{% for s in page.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ul></div>
+</nav>
+<section class="section">
+  <div class="container">
+    <div class="faq-cat" id="general">{{ faq(page.general, page.general_title, page.intro, true, _("FAQ")) }}</div>
+    {% for s in page.sections %}
+    {% set src = section_pages[s.page] %}
+    <div class="faq-cat" id="{{ s.id }}">
+      {{ faq(src.faq, s.title, src.intro, false, _("FAQ")) }}
+      <p style="margin-top:1.5rem;text-align:right">{{ arrow(_("Go to") ~ " " ~ s.title, s.link) }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,88 +1,289 @@
-seo_title: "Our Team | Admissions Consultants, Coaches & Industry Mentors | WinPlus"
-meta_description: "Meet the WinPlus team: founders, admissions consultants, coaches and mentors from NASA, Meta, MIT, Caltech, Microsoft and Bloomberg who guide students from Grade 9 to top universities."
+seo_title: Our Team | Harvard, MIT & Stanford Mentors and Advisors | WinPlus
+meta_description: 'Meet WinPlus founders, advisors and mentors: MIT and Harvard professors, a former NASA astronaut, NASA scientists and Ivy League alumni interviewers.'
 eyebrow: Our Team
-title: The people behind every WinPlus student
-intro: WinPlus is the only end-to-end talent development platform that takes students from Grade 9 to elite university acceptance and prepares them for what comes after. Meet the team that makes it happen.
-image: https://images.unsplash.com/photo-1758873269811-4e62e346b4b7
-image_alt: A team collaborating around a table
+title: The mentors behind every WinPlus student
+intro: Professors, scientists, alumni interviewers and industry leaders from the world's top universities and companies, working directly with our students.
+image: /images/uploads/photos/hbs-classroom.webp
+image_alt: WinPlus mentors with students on a university campus
+people:
+- id: tarik-carney
+  name: Tarik Carney
+  initials: TC
+  title: United Nations Professional, Peace and Security
+  education: Master's degrees, Columbia SIPA and Sciences Po · BA, New York University
+  photo: /images/uploads/team/tarik-carney.webp
+  bio: 'Tarik Carney is a United Nations professional in peace and security, with master’s degrees from Columbia SIPA and Sciences Po. He previously studied philosophy and Japanese at NYU and Sophia University. His UN experience includes civil affairs in the Central African Republic, child protection in Uganda, civilian protection in New York and analysis of Somalia.
 
-what_title: What we do
-what:
-  - { title: "Admissions Counseling", text: "US, UK, Canada and Australia undergraduate, graduate school and US high school admissions.", link: admissions.html }
-  - { title: "Research & Internships", text: "Mentor-led research and internship programs in AI, finance, science and the arts.", link: research.html }
-  - { title: "Experience Enrichment", text: "UN conferences, summer and winter schools and leadership programs.", link: enrichment.html }
 
-compare_title: One platform vs. a patchwork of vendors
-without:
-  label: Without an integrated platform
-  heading: A separate vendor for every need.
-  center: Student & Parents
-  vendors: [Admissions Counselor, Research Program, Internship Provider, Test-Prep Tutor, Essay Coach]
-  note: Repeat your story to each one. Five plans that never connect.
-with:
-  label: With WinPlus
-  heading: One talent consultant guides the whole journey.
-  center: Your Dedicated Talent Consultant
-  stages: ["Grade 9–10 · Profile Building", "Grade 10–11 · Research + Skills", "Grade 11 · Strategy", "Grade 12 · Applications", "Acceptance & Beyond"]
-benefits:
-  - { title: "Continuity & consistency", text: "One relationship, Grade 9 to acceptance." }
-  - { title: "One dedicated consultant", text: "One consultant owns your child's full journey." }
-  - { title: "A truly bespoke plan", text: "A single strategy built around the student." }
-  - { title: "Cost-efficient", text: "No overlapping or duplicated vendor fees." }
+    Through WinPlus, he has led visits to UN Headquarters, explaining the organization’s structure, values and mission while sharing stories from peacekeeping work. Students connect institutional responsibilities with the people affected by conflict and the coordination required for international cooperation.'
+  founder: false
+- id: le-cong
+  name: Le Cong
+  initials: LC
+  title: Associate Professor of Pathology and Genetics, Stanford University
+  education: PhD, Harvard University · BS, Tsinghua University
+  photo: /images/uploads/team/le-cong.webp
+  bio: 'Le Cong is an Associate Professor of Pathology and Genetics at Stanford, with degrees from Tsinghua and Harvard. His research develops genome-engineering tools for gene and cell therapy and disease investigation. He received the National Human Genome Research Institute’s Genomic Innovator Award.
 
-leaders_title: Founders
-leaders:
-  - name: Cathy Guo
-    role: Co-Founder & Executive President
-    photo: /images/uploads/team/cathy-guo.jpg
-    bio: "Master in Public Policy, Harvard Kennedy School. Previously worked at UN Women and Oxford Economics. Board member, Douglass Residential College for women, Rutgers University."
-    linkedin: ""
-  - name: Cedric Pan
-    role: Co-Founder
-    photo: /images/uploads/team/cedric-pan.jpg
-    bio: "Peking University; Master in Public Policy and Master of Education, Harvard University. Mentor for an MIT aerospace entrepreneurship program. Former executive at education technology companies in Silicon Valley and Boston."
-    linkedin: ""
 
-consultants_title: Consultants & coaches
-consultants_intro: Your family's day-to-day partners, from roadmap to acceptance.
-consultants:
-  - { name: "[Consultant name]", role: "Senior Admissions Consultant", photo: "", bio: "[Education background, specialties (e.g., US / UK), years of experience.]" }
-  - { name: "[Consultant name]", role: "Admissions Consultant", photo: "", bio: "[Education background, specialties, years of experience.]" }
-  - { name: "[Coach name]", role: "Essay & Interview Coach", photo: "", bio: "[Education background, specialties, years of experience.]" }
+    His laboratory studies CRISPR, large gene insertion, single-cell analysis and stem-cell disease models. Projects such as CRISPR-GPT explore AI-assisted gene editing. Through WinPlus, he has led students to Stanford’s stem-cell research institute and introduced frontier research, connecting genetic changes with cellular function and disease.'
+  founder: false
+- id: harper-gu
+  name: Harper Gu
+  initials: HG
+  title: Software Engineer · Apple background
+  education: ''
+  photo: ''
+  bio: 'Harper Gu is a software engineer with an Apple background. [Add education and professional background.]
 
-featured_title: Featured mentors
-featured_intro: A selection of the professors and professionals who mentor WinPlus students. This is not a complete list.
-featured:
-  - { name: Professor Steve, photo: /images/uploads/team/steve.jpg, background: "Harvard University · U.S. Congressional Budget Office", field: "International relations, government & public policy" }
-  - { name: Professor Jeff, photo: /images/uploads/team/jeff.jpg, background: "MIT · NASA", field: "Aerospace & engineering" }
-  - { name: Professor Nico, photo: /images/uploads/team/nico.jpg, background: "Harvard University · Fiserv", field: "Finance & data science" }
-  - { name: Professor Rachel, photo: /images/uploads/team/rachel.jpg, background: "MIT · Stanford University", field: "Electrical & mechanical engineering" }
-  - { name: Professor Oliner, photo: /images/uploads/team/oliner.jpg, background: "Spence School · Columbia University", field: "Sports & athletic management" }
-  - { name: Professor Mike, photo: /images/uploads/team/mike.jpg, background: "CEO, Phoenix Pictures", field: "Film & television production" }
-  - { name: Professor Tarik, photo: /images/uploads/team/tarik.jpg, background: "United Nations Headquarters · Columbia University", field: "UN peacekeeping, international organizations & relations" }
-  - { name: Professor Yuan, photo: /images/uploads/team/yuan.jpg, background: "Meta · Columbia University", field: "Artificial intelligence & computer science" }
 
-network_title: Our mentor network
-network:
-  - { title: "Research mentors", text: "Artificial intelligence, aerospace, mechanical engineering, data science, computer science and more.", count: "[X]+" }
-  - { title: "Industry mentors", text: "Finance, international relations, public policy, international trade, fashion, film and more.", count: "[X]+" }
-  - { title: "Admissions strategy mentors", text: "Former admissions officers and counselors from leading universities.", count: "[X]+" }
-team_stat: { number: "40+", label: "team members" }
+    At WinPlus, Harper mentors AI-Assisted Software Engineering.'
+  founder: false
+  org: Apple
+- id: cathy-guo
+  name: Cathy Guo
+  initials: CG
+  title: Co-Founder · Former UN Women
+  education: MPP, Harvard Kennedy School · BA, Rutgers University
+  photo: /images/uploads/team/cathy-guo.webp
+  bio: 'Cathy Guo co-founded WinPlus in 2020 in Harvard Square. She holds a Master in Public Policy from Harvard Kennedy School and dual bachelor''s degrees in economics and media from Rutgers University.
 
-mentors_title: Program mentors
-mentors_intro: WinPlus programs are led by industry professionals and researchers from the world's leading institutions, not career tutors.
-mentors:
-  - { role: "Software Engineering Lead, Llama Team", org: Meta AI, program: AI Agent Program, photo: "", link: research/ai-agent-development.html }
-  - { role: "Senior Cloud Engineer, 10+ yrs", org: Apple (Silicon Valley), program: Claude Code AI Program, photo: "", link: research/claude-code-ai-programming.html }
-  - { role: "Cloud Engineer, 10+ yrs", org: Amazon AWS, program: IoT AI Device Program, photo: "", link: research/iot-ai-devices.html }
-  - { role: "MFA Screenwriting; Cannes Award Winner", org: Northwestern University, program: Screenwriting & Directing, photo: "", link: research/screenwriting-directing.html }
-  - { role: "Senior Data Scientist, 7+ yrs", org: Microsoft HQ, program: Financial Forecasting Program, photo: "", link: research/financial-forecasting-python.html }
-  - { role: "Engineering Lead, 8+ yrs", org: Bloomberg, program: FinTech + AI Program, photo: "", link: research/fintech-ai-startup.html }
-  - { role: Postdoctoral Researcher, org: Caltech Gene Therapy Lab, program: Gene Therapy Research, photo: "", link: research/gene-therapy-ai-data.html }
-  - { role: Research Scientist, org: NASA Ames Research Center, program: JWST Deep Space Program, photo: "", link: research/jwst-deep-space-research.html }
-  - { role: Aerospace Engineer, org: NASA Goddard / MIT, program: SpaceX Starlink Program, photo: "", link: research/starlink-orbit-design.html }
 
-join_title: Join our mentor network
-join_text: Are you a researcher, engineer or creator who wants to mentor ambitious students? We'd love to hear from you.
-join_cta: Get in Touch
-join_link: contact.html
+    She serves on the board of the Harvard Kennedy School Alumni Association and of Douglass Residential College at Rutgers, and has worked with UN Women and Oxford Economics. She has championed international education and philanthropy across the Middle East, Europe, Africa, Southeast Asia and southwest China.'
+  founder: true
+- id: josh-guo
+  name: Josh Guo
+  initials: JG
+  title: Yale Undergraduate Admissions Interviewer · Former Deloitte
+  education: BA, Yale University, with Distinction in Major
+  photo: /images/uploads/team/josh-guo.webp
+  bio: 'Josh Guo graduated from Yale with Distinction in Major and has experience at Deloitte. He interned with the White House Council on Environmental Quality and submitted written testimony to the Connecticut legislature. His cultural-preservation work with Yunnan’s Bulang community involved interviews, film, music documentation and writing.
+
+
+    At WinPlus, he advises undergraduate, master’s and doctoral applicants in economics, politics, philosophy, law-related fields and other humanities and social sciences. He also serves as a Yale undergraduate admissions interviewer and has helped students gain admission to Harvard, Yale and Stanford.'
+  founder: false
+- id: daniel-e-hastings
+  name: Daniel E. Hastings
+  initials: DH
+  title: Institute Professor, MIT · Former Chief Scientist, US Air Force
+  education: PhD, MIT · BA, University of Oxford
+  photo: /images/uploads/team/daniel-e-hastings.webp
+  bio: 'Daniel E. Hastings is an Institute Professor, MIT’s highest faculty honor, with degrees from Oxford and MIT. His research covers spacecraft environments, propulsion and complex space systems. He has served as MIT’s undergraduate dean and AeroAstro head, leader of the Singapore–MIT research alliance, and Chief Scientist of the US Air Force.
+
+
+    His teaching collaborations include the National University of Singapore and Asian students. In WinPlus sessions, he introduces space sustainability, systems engineering and manufacturing in Earth orbit, examining how missions coordinate resources, infrastructure and technical requirements over time.'
+  founder: false
+- id: jeffrey-hoffman
+  name: Jeffrey A. Hoffman
+  initials: JH
+  title: Professor of the Practice of Aerospace Engineering, MIT · Former NASA Astronaut
+  education: PhD, Harvard University · BA, Amherst College
+  photo: /images/uploads/team/jeff.jpg
+  bio: 'Jeffrey A. Hoffman is Professor of the Practice of Aerospace Engineering at MIT and a former NASA astronaut with a Harvard PhD. He flew five Space Shuttle missions, logging over 1,211 hours in space, including the first Hubble servicing mission in 1993. He also served as deputy principal investigator for MOXIE, which demonstrated oxygen production from the Martian atmosphere aboard Perseverance.
+
+
+    Through WinPlus, he has led visits to MIT AeroAstro and explained Perseverance, crewed Shuttle operations and the Apollo program. Drawing on actual missions, he shows how instruments, spacecraft and astronauts work together under scientific, environmental and resource constraints.'
+  founder: false
+- id: steve-kelman
+  name: Steve Kelman
+  initials: SK
+  title: Weatherhead Professor of Public Management, Emeritus, Harvard Kennedy School · Former Federal Procurement Policy Administrator
+  education: PhD and BA in Government, Harvard University
+  photo: /images/uploads/team/steve-kelman.webp
+  bio: 'Steve Kelman is the Weatherhead Professor of Public Management, Emeritus, at Harvard Kennedy School. He earned his undergraduate degree and PhD in Government at Harvard. His research examines public management, policy and organizational change. From 1993 to 1997, he led the Office of Federal Procurement Policy within the US Office of Management and Budget. His books include Unleashing Change.
+
+
+    Through WinPlus, he has led visits to Harvard Kennedy School and discussed US–China relations, international affairs and American governance, connecting current events with how governments organize, decide and implement policy.'
+  founder: false
+- id: damir-kozhanbayev
+  name: Damir Kozhanbayev
+  initials: DK
+  title: Research Fellow, Harvard Project on Workforce · Former UNICEF
+  education: Harvard Graduate School of Education
+  photo: /images/uploads/team/damir-kozhanbayev.webp
+  bio: 'Damir Kozhanbayev is a Research Fellow with Harvard’s Project on Workforce. He previously worked in education and knowledge innovation at UNICEF Kazakhstan and entered Harvard’s Graduate School of Education as an Urban Scholars Fellow in Learning Design, Innovation, and Technology.
+
+
+    At WinPlus, Damir mentors Global Challenges Policy Research.'
+  founder: false
+  org: Harvard Project on Workforce
+- id: changfan-lin
+  name: Changfan Lin
+  initials: CL
+  title: Postdoctoral Fellow, Caltech
+  education: PhD, Cornell University · Tsinghua University
+  photo: /images/uploads/team/changfan-lin.webp
+  bio: 'Changfan Lin is a postdoctoral fellow in Caltech’s Gradinaru Laboratory, with degrees from Tsinghua and Cornell. His doctoral work included resolving a circadian-clock protein complex by cryo-EM. He now engineers AAV vectors to improve gene-delivery targeting and safety.
+
+
+    At WinPlus, Changfan mentors Gene Therapy & AI Data Analysis.'
+  founder: false
+  org: Caltech
+- id: yinong-liu
+  name: Yinong Liu
+  initials: YL
+  title: WinPlus Mentor, AI Product Innovation for Fashion and Retail
+  education: ''
+  photo: ''
+  bio: '[Add Yinong Liu''s education and professional background.]
+
+
+    At WinPlus, Yinong mentors AI Product Innovation for Luxury Retail.'
+  founder: false
+  org: '[Affiliation]'
+- id: mike-medavoy
+  name: Mike Medavoy
+  initials: MM
+  title: Hollywood Producer · Co-Founder, Phoenix Pictures and Orion Pictures
+  education: UCLA
+  photo: /images/uploads/team/mike-medavoy.webp
+  bio: 'Mike Medavoy is a veteran Hollywood producer, co-founder of Phoenix Pictures and a UCLA graduate. His career spans talent representation, studio management and production. He co-founded Orion Pictures and held senior roles at United Artists and TriStar. His work includes Black Swan, Shutter Island, Zodiac and The Thin Red Line.
+
+
+    Through WinPlus, he has led visits to a Hollywood production company and shared insights into filmmaking, the entertainment industry and talent representation. Students learn how stories become projects and how directors, actors, writers, producers and agents connect creative ideas with financing and audiences.'
+  founder: false
+- id: rachel-morgan
+  name: Rachel Morgan
+  initials: RM
+  title: Optical Scientist, NASA Ames Research Center
+  education: PhD and MS in Aerospace Engineering, MIT
+  photo: /images/uploads/team/rachel-morgan.webp
+  bio: 'Rachel Morgan is an optical scientist conducting research at NASA Ames, with undergraduate qualifications in aerospace engineering and physics and an MS and PhD from MIT. She applies integrated photonics to instruments for detecting Earth-like exoplanets, with research experience at JPL and MIT Lincoln Laboratory.
+
+
+    At WinPlus, Rachel mentors Space Telescope Mission Design.'
+  founder: false
+  org: NASA Ames Research Center
+- id: anhphu-nguyen
+  name: AnhPhu Nguyen
+  initials: AN
+  title: Technology Entrepreneur · Co-Founder, MIRA
+  education: Harvard University
+  photo: ''
+  bio: 'AnhPhu Nguyen is a technology entrepreneur and co-founder of smart-glasses company MIRA. He studied Human Augmentation at Harvard, connecting computing, engineering and human–computer interaction. His early phone-repair business was featured by Harvard’s engineering school, and he helped establish an AR/VR developers’ club to explore wearables and interactive technology.
+
+
+    At WinPlus, he advises undergraduate applicants in computer science and AI, leads learning visits to Harvard’s engineering school and has helped students gain undergraduate admission to Harvard and Stanford. His experience links device repair and prototyping with user needs and product development.'
+  founder: false
+- id: cedric-pan
+  name: Cedric Pan
+  initials: CP
+  title: Co-Founder
+  education: MPP, Harvard Kennedy School · EdM, Harvard · BA, Peking University
+  photo: /images/uploads/team/cedric-pan.webp
+  bio: 'Cedric Pan holds a Master in Public Policy from Harvard Kennedy School and a Master of Education from Harvard, and dual bachelor''s degrees in urban planning and economics from Peking University. He mentors in an MIT aerospace entrepreneurship program.
+
+
+    He has held executive roles at a Silicon Valley autonomous-driving company, a multinational ride-sharing company and a Boston K-12 education technology company, and earlier worked with the Development Research Center of the State Council and China Development Bank.'
+  founder: true
+- id: vania-shi
+  name: Vania Shi
+  initials: VS
+  title: Founder, Court Square Advisors
+  education: Master of Finance, MIT Sloan · BCom, Queen's University
+  photo: /images/uploads/team/vania-shi.webp
+  bio: 'Vania Shi founded Court Square Advisors, a New York strategy and operations advisory firm. She holds a Master of Finance from MIT Sloan and an Honours Bachelor of Commerce from Queen’s University. Her decade-plus experience includes Morrison and Altman Solon, covering growth strategy, commercial due diligence, operational improvement and capital formation.
+
+
+    At WinPlus, she advises undergraduate business applicants and candidates for MBA, finance and business-analytics master’s programs. She has led visits to MIT Sloan and helped applicants gain admission to Harvard Business School, MIT Sloan and Wharton.'
+  founder: false
+- id: sijie-tian
+  name: Sijie Tian
+  initials: ST
+  title: AI Engineer · Meta background
+  education: ''
+  photo: /images/uploads/team/sijie-tian.webp
+  bio: 'Sijie Tian is an engineer with a background on Meta''s AI teams. [Add education and professional background.]
+
+
+    At WinPlus, Sijie mentors AI Agents from 0 to 1.'
+  founder: false
+  org: Meta
+- id: hannah-tomio
+  name: Hannah Tomio
+  initials: HT
+  title: Postdoctoral Researcher in Laser Physics, University of Bern
+  education: PhD, MIT · MS, Tohoku University · BS, Carnegie Mellon University
+  photo: /images/uploads/team/hannah-tomio.webp
+  bio: 'Hannah Tomio is a laser-physics postdoctoral researcher at the University of Bern with an MIT aerospace PhD. She studied electrical and computer engineering at Carnegie Mellon and earned a master’s at Tohoku University. Her experience includes NASA Goddard, JPL and Boeing.
+
+
+    At WinPlus, Hannah mentors Satellite Constellation & Orbit Design.'
+  founder: false
+  org: University of Bern
+- id: claire-yoo
+  name: Claire Yoo
+  initials: CY
+  title: Co-Director of Engagement, Harvard Undergraduate OpenBio Laboratory
+  education: Integrative Biology, Harvard University
+  photo: ''
+  bio: 'Claire Yoo is a Harvard integrative biology undergraduate and Co-Director of Engagement at Harvard Undergraduate OpenBio Laboratory. Through Harvard’s PRISE program, she joined the Jost Lab for microbiology research. She has also participated in botanical research associated with the Harvard University Herbaria and scientific outreach to younger students.
+
+
+    At WinPlus, she advises undergraduate applicants interested in medicine, neuroscience and related life sciences. She has led learning visits connected with Harvard’s life-science and medical-school environments and helped students gain undergraduate admission to Harvard and Stanford.'
+  founder: false
+- id: yuan-yuan
+  name: Yuan Yuan
+  initials: YY
+  title: Software Engineer · Meta and Bloomberg
+  education: Columbia University, Fu Foundation School of Engineering
+  photo: /images/uploads/team/yuan.jpg
+  bio: 'Yuan Yuan has professional experience at Meta and Bloomberg and studied at Columbia’s engineering school. Yuan’s public technical work includes a CppCon 2024 poster on behavior-driven development for a microservices-based algorithmic trading system, connecting business requirements, system behavior and software testing.
+
+
+    At WinPlus, Yuan mentors FinTech & AI Startup Lab.'
+  founder: false
+  org: Meta · Bloomberg
+- id: terry-zhang
+  name: Terry Zhang
+  initials: TZ
+  title: Technology and Data Research Mentor · Microsoft and Google
+  education: University of Michigan, Rackham Graduate School
+  photo: /images/uploads/team/terry-zhang.webp
+  bio: 'Terry Zhang, also known as Dehao Terry Zhang, has Microsoft and Google experience and pursued graduate study at Michigan’s Rackham Graduate School. He co-authored PNAS research analyzing employee office attendance in relation to managers and teammates.
+
+
+    At WinPlus, Terry mentors Financial Forecasting with Python.'
+  founder: false
+  org: Microsoft · Google
+- id: mentor-ar-accessibility
+  name: '[Mentor name]'
+  initials: ''
+  title: Engineering Lead, Meta Reality Labs
+  education: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads AR Glasses Accessibility Software.'
+  founder: false
+  org: Meta Reality Labs
+- id: mentor-iot-devices
+  name: '[Mentor name]'
+  initials: ''
+  title: Cloud Engineer, 10+ years at Amazon Web Services
+  education: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads IoT & AI Device Development.'
+  founder: false
+  org: Amazon Web Services
+- id: mentor-screenwriting
+  name: '[Mentor name]'
+  initials: ''
+  title: Cannes award-winning short-film director
+  education: MFA in Screenwriting, Northwestern University
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads Screenwriting & Directing.'
+  founder: false
+  org: '[Affiliation]'
+- id: mentor-ux-research
+  name: '[Mentor name]'
+  initials: ''
+  title: User Research Lead, 8+ years at Google
+  education: Dual master's degrees, Stanford University
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads Product & UX Research for Short Video.'
+  founder: false
+  org: Google
+note: Selected members of the WinPlus team. Titles and affiliations describe each person's professional background and do not imply that their institution endorses WinPlus.
+cta_title: Work with mentors like these
+cta_text: Start with a free strategy session and we will introduce the mentors best placed to guide you.
+cta: Book a Free Consultation
+cta_link: contact.html

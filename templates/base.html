@@ -1,18 +1,15 @@
 {% set seo_title = self.title() | trim %}
 {% set seo_desc = self.description() | trim %}
 <!doctype html>
-<html lang="{{ lang.html }}">
+<html lang="{{ lang.html }}" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{% block title %}{{ page.seo_title or page.title or site.name }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ page.meta_description or page.summary or site.meta_description }}{% endblock %}">
   <link rel="canonical" href="{{ canonical }}">
-  {# Language versions of this page (tells Google which page to show to which reader) #}
   {% for code, href in alternates.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ href }}">
   {% endfor %}
-  {% set kw = page.keywords or (item.keywords if item is defined and item and item.keywords) or site.keywords %}
-  {% if kw %}<meta name="keywords" content="{{ kw }}">{% endif %}
   {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
   {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
   {% if site.baidu_site_verification %}<meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">{% endif %}
@@ -23,45 +20,48 @@
   <meta property="og:title" content="{{ seo_title }}">
   <meta property="og:description" content="{{ seo_desc }}">
   <meta property="og:url" content="{{ canonical }}">
-  {% set share_img = page.image or (post.image if post is defined and post else '') or (page.hero.image if page.hero is defined and page.hero else '') or site.default_image %}
-  <meta property="og:image" content="{{ img(share_img, 1200) if share_img.startswith('http') else site_url ~ '/' ~ share_img.lstrip('/') }}">
+  {% set share_img = page.image or (post.image if post is defined and post else '') or (page.hero.slides[0].image if page.hero is defined and page.hero and page.hero.slides else '') or site.default_image %}
+  <meta property="og:image" content="{{ share_img if share_img.startswith('http') else site_url ~ '/' ~ share_img.lstrip('/') }}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f1a2b">
+  <link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
   <link rel="sitemap" type="application/xml" href="{{ root }}sitemap.xml">
+  {% block preload %}{% endblock %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap">
-  {# Social media icons (Font Awesome free brand icons: core + brands) #}
+  {% if lang.code == 'zh' %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap">
+  {% else %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap">
+  {% endif %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
   <link rel="stylesheet" href="{{ root }}assets/css/style.css?v={{ version }}">
-  <!-- Netlify Identity: lets invited editors accept their invite and log in to /admin -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+  <script>document.documentElement.classList.remove("no-js");</script>
 
-  {# Structured data about the organization, on every page (SEO + AI search) #}
+  {# Organization structured data on every page (SEO + AI search) #}
   {% set same_as = [] %}{% for s in site.social %}{% if s.url and s.url.startswith('http') %}{% set _x = same_as.append(s.url) %}{% endif %}{% endfor %}
+  {% set addresses = [] %}{% for o in site.offices %}{% set _x = addresses.append({"@type": "PostalAddress", "name": o.label, "streetAddress": o.street, "addressLocality": o.city, "addressRegion": o.region, "addressCountry": o.country}) %}{% endfor %}
+  {% set founders = [] %}{% for p in team_founders %}{% set _x = founders.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.education}) %}{% endfor %}
   {% set org = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "@id": site_url ~ "/#organization",
     "name": site.company_legal,
-    "alternateName": [site.name ~ " Education", site.name ~ " " ~ (site.name_local or "")],
+    "alternateName": [site.name ~ " Education", site.name_local or site.name],
     "url": site_url ~ "/",
+    "logo": site_url ~ "/favicon.svg",
     "description": site.meta_description,
-    "areaServed": site.area_served,
     "slogan": site.tagline,
+    "foundingDate": site.founded,
+    "address": addresses,
+    "areaServed": site.area_served,
     "inLanguage": ["en", "zh-CN"],
-    "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 40},
-    "founder": [
-      {"@type": "Person", "name": "Cathy Guo", "jobTitle": "Co-Founder & Executive President", "alumniOf": "Harvard Kennedy School"},
-      {"@type": "Person", "name": "Cedric Pan", "jobTitle": "Co-Founder", "alumniOf": ["Peking University", "Harvard University"]}
-    ],
-    "knowsAbout": ["College admissions counseling", "Education consultancy", "US college admissions", "Ivy League admissions consulting", "Ivy League schools", "Top 30 US universities", "UK university admissions", "UK G5 universities", "UCAS", "Oxbridge admissions", "Graduate school admissions", "Boarding school admissions", "International student admissions", "High school research programs", "Summer programs", "Model United Nations and UN conferences", "留学咨询", "留学顾问", "美国本科申请", "藤校申请", "英国G5申请", "背景提升", "科研项目", "夏校"]
+    "founder": founders,
+    "knowsAbout": site.knows_about
   } %}
   {% if services is defined and services %}{% set offers = [] %}{% for sv in services %}{% set _x = offers.append({"@type": "Offer", "itemOffered": {"@type": "Service", "name": sv.title, "description": sv.summary, "url": site_url ~ "/" ~ lang.prefix ~ sv.url}}) %}{% endfor %}{% set _x = org.update({"hasOfferCatalog": {"@type": "OfferCatalog", "name": _("Admissions Counseling"), "itemListElement": offers}}) %}{% endif %}
-  {% if '[' not in site.email %}{% set _x = org.update({"email": site.email}) %}{% endif %}
-  {% if '[' not in site.phone %}{% set _x = org.update({"telephone": site.phone}) %}{% endif %}
+  {% if site.email and '[' not in site.email %}{% set _x = org.update({"email": site.email}) %}{% endif %}
   {% if same_as %}{% set _x = org.update({"sameAs": same_as}) %}{% endif %}
   <script type="application/ld+json">{{ org | jsonld | safe }}</script>
   {% if current == "index.html" %}
@@ -69,23 +69,11 @@
   {% endif %}
   {% block schema %}{% endblock %}
 </head>
-<body class="lang-{{ lang.code }} page-{{ current | replace('.html','') | replace('/','-') }}">
+<body class="lang-{{ lang.code }} page-{{ current | replace('.html','') | replace('/','-') }} {% block body_class %}{% endblock %}">
 <a class="skip" href="#main">{{ _("Skip to content") }}</a>
 
-<div class="utility">
-  <div class="wrap utility-row">
-    <p class="utility-tag">{{ site.tagline }}</p>
-    <ul class="utility-links">
-      {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}"{% if l.link == current %} aria-current="page"{% endif %}>{{ l.label }}</a></li>{% endfor %}
-      <li class="lang">
-        <a href="{{ switch.en }}" hreflang="en" lang="en"{% if lang.code == 'en' %} aria-current="true"{% endif %}>EN</a><span aria-hidden="true">|</span><a href="{{ switch.zh }}" hreflang="zh-CN" lang="zh-CN"{% if lang.code == 'zh' %} aria-current="true"{% endif %}>中文</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<header class="site-header">
-  <div class="wrap header-row">
+<header class="site-header" data-header>
+  <div class="container header-row">
     <a class="logo" href="{{ u('index.html') }}" aria-label="{{ site.name }} {{ _('home') }}">
       <span class="logo-name">{{ site.name }}</span>
       <span class="logo-sub">{{ site.name_sub }}</span>
@@ -97,7 +85,7 @@
       <ul class="nav-list">
         {% for item in site.nav %}
         {% set section = item.link | replace('.html','') %}
-        {% set active = current == item.link or current.startswith(section ~ '/') or (item.children and (item.children | selectattr('link', 'equalto', current) | list)) %}
+        {% set active = current == item.link or current.startswith(section ~ '/') or (item.children and (item.children | selectattr('link', 'equalto', current) | list)) or (item.match and current.startswith(item.match)) %}
         <li class="nav-item{% if item.children %} has-sub{% endif %}">
           <a class="nav-link" href="{{ u(item.link) }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a>
           {% if item.children %}
@@ -109,11 +97,10 @@
         </li>
         {% endfor %}
       </ul>
-      <ul class="nav-mobile-extra">
-        {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
-        <li><a href="{{ switch.en if lang.code == 'zh' else switch.zh }}">{{ 'English' if lang.code == 'zh' else '中文' }}</a></li>
-      </ul>
-      <a class="btn btn-gold btn-sm nav-cta" href="{{ u(site.cta_link) }}">{{ site.cta_text }}</a>
+      <div class="lang-switch">
+        <a href="{{ switch.en }}" hreflang="en" lang="en"{% if lang.code == 'en' %} aria-current="true"{% endif %}>EN</a><span aria-hidden="true">/</span><a href="{{ switch.zh }}" hreflang="zh-CN" lang="zh-CN"{% if lang.code == 'zh' %} aria-current="true"{% endif %}>中文</a>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="{{ u(site.cta_link) }}">{{ site.cta_text }}</a>
     </nav>
   </div>
 </header>
@@ -122,98 +109,110 @@
 {% block content %}{% endblock %}
 </main>
 
-{% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin-in", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
+{% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <a class="logo" href="{{ u('index.html') }}"><span class="logo-name">{{ site.name }}</span><span class="logo-sub">{{ site.name_sub }}</span></a>
-      <p>{{ site.footer_blurb }}</p>
+  <div class="container footer-band">
+    <div class="fb-cta">
+      <h2>{{ site.footer_title }}</h2>
+      <a class="btn btn-light btn-sm" href="{{ u(site.cta_link) }}">{{ site.cta_text }} <span class="arr" aria-hidden="true">→</span></a>
     </div>
-    {% for item in site.nav if item.children %}
-    <nav class="footer-col" aria-label="{{ item.label }}">
-      <h3>{{ item.label }}</h3>
-      <ul>{% for c in item.children %}<li><a href="{{ u(c.link) }}">{{ c.label }}</a></li>{% endfor %}</ul>
-    </nav>
-    {% endfor %}
-    <nav class="footer-col" aria-label="{{ _('Company') }}">
-      <h3>{{ _("Company") }}</h3>
-      <ul>
-        {% for item in site.nav if not item.children %}<li><a href="{{ u(item.link) }}">{{ item.label }}</a></li>{% endfor %}
-        {% for l in site.utility_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
-        <li><a href="{{ u('contact.html') }}">{{ _("Contact Us") }}</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="wrap footer-connect">
-    <div class="connect">
-      <h2 class="footer-h">{{ _("Connect with WinPlus") }}</h2>
-      <dl class="contact-list">
-        <div><dt>{{ _("Email") }}</dt><dd>{{ site.email }}</dd></div>
-        <div><dt>{{ _("Phone") }}</dt><dd>{{ site.phone }}</dd></div>
-        <div><dt>{{ _("WeChat") }}</dt><dd>{{ site.wechat_id }}</dd></div>
-        <div><dt>{{ _("Address") }}</dt><dd>{{ site.address }}</dd></div>
-      </dl>
-      <ul class="social" aria-label="{{ _('Social media') }}">
-        {% for s in site.social %}
-        <li>
-          {% if s.platform == 'wechat' %}
-          <button class="social-btn s-wechat wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}">
-            <i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span>
-          </button>
-          {% else %}
-          <a class="social-btn s-{{ s.platform }}" href="{{ s.url or '#' }}" title="{{ s.label }}" target="_blank" rel="noopener">
-            {% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}
-            <span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span>
-          </a>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-      <div id="wechat-pop" class="wechat-pop" hidden>
-        {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 300) }}" alt="{{ _('WeChat QR code') }}">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
-        <p>{{ _("Scan to follow us on WeChat") }}<br><strong>{{ site.wechat_id }}</strong></p>
-      </div>
-    </div>
-
-    <div class="footer-news">
-      <h2 class="footer-h">{{ site.newsletter.title }}</h2>
+    <div class="fb-news" id="newsletter">
+      <h3>{{ site.newsletter.title }}</h3>
+      <p>{{ site.newsletter.text }}</p>
       <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
         <input type="hidden" name="form-name" value="newsletter">
         <input type="hidden" name="language" value="{{ lang.code }}">
+        <input type="hidden" name="consent_version" value="{{ site.consent.version }}">
+        <input type="hidden" name="consent_text" value="{{ site.newsletter.consent or site.consent.marketing }}">
         <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
         <label class="sr-only" for="nl-email">{{ _("Email address") }}</label>
         <div class="newsletter-row">
           <input id="nl-email" type="email" name="email" placeholder="{{ _('Your email address') }}" autocomplete="email" required>
-          <button class="btn btn-gold" type="submit">{{ site.newsletter.button }}</button>
+          <button class="btn" type="submit">{{ site.newsletter.button }} <span class="arr" aria-hidden="true">→</span></button>
         </div>
-        <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>{{ _("I agree to receive emails from WinPlus and accept the") }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> <span>{{ site.newsletter.consent or site.consent.marketing }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></span></label>
       </form>
-      <p class="footer-news-text">{{ site.newsletter.text }}</p>
+    </div>
+    <div class="fb-connect">
+      <h3>{{ _("Connect") }}</h3>
+      {% if site.email %}<a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+      <ul class="social" aria-label="{{ _('Social media') }}">
+        {% for s in site.social if s.platform == 'wechat' or (s.url and s.url != '#') %}
+        <li>
+          {% if s.platform == 'wechat' %}
+          <button class="social-btn is-wechat wechat-btn" type="button" aria-haspopup="dialog" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
+          {% else %}
+          <a class="social-btn is-{{ s.platform }}" href="{{ s.url }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="offices">{% for o in site.offices %}{{ o.display }}{{ " · " if not loop.last else "" }}{% endfor %}</p>
     </div>
   </div>
 
-  <div class="wrap footer-legal">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="{{ u('index.html') }}"><span class="logo-name">{{ site.name }}</span><span class="logo-sub">{{ site.name_sub }}</span></a>
+      <p>{{ site.footer_blurb }}</p>
+    </div>
+    {% for col in site.footer_columns %}
+    <nav class="footer-col" aria-label="{{ col.title }}">
+      <h3>{{ col.title }}</h3>
+      <ul>{% for l in col.links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}</ul>
+    </nav>
+    {% endfor %}
+  </div>
+
+  <div class="container footer-legal">
     <p class="disclaimer">{{ site.footer_disclaimer }}</p>
     <div class="legal-row">
       <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}</p>
       <ul>
-        <li><a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></li>
-        <li><a href="{{ u('terms.html') }}">{{ _("Terms & Disclaimer") }}</a></li>
+        {% for l in site.legal_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
+        <li><button type="button" data-cookie-settings>{{ site.cookie.settings }}</button></li>
         <li><a href="{{ u('sitemap.html') }}">{{ _("Site Map") }}</a></li>
       </ul>
     </div>
   </div>
 </footer>
-<script src="{{ root }}assets/js/main.js?v={{ version }}"></script>
+
+{# WeChat QR: opens from the WeChat icon in the footer #}
+<div id="wechat-pop" class="wechat-modal" role="dialog" aria-modal="true" aria-labelledby="wechat-title" hidden>
+  <div class="wm-backdrop" data-wm-close></div>
+  <div class="wm-panel">
+    <button type="button" class="wm-close" data-wm-close aria-label="{{ _('Close') }}">×</button>
+    <p class="eyebrow">WeChat</p>
+    <h2 id="wechat-title">{{ _("Add WinPlus on WeChat") }}</h2>
+    {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 480) }}" width="240" height="231" alt="{{ _('WeChat QR code') }}" loading="lazy">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
+    <p>{{ _("Open WeChat and scan the code to add us.") }}{% if site.wechat_id %}<br><strong>{{ site.wechat_id }}</strong>{% endif %}</p>
+  </div>
+</div>
+
+{# Cookie banner: strictly necessary cookies only until the visitor chooses (legal Part 6 §3) #}
+<div class="cookie" data-cookie role="dialog" aria-live="polite" aria-label="{{ _('Cookie preferences') }}" hidden>
+  <p>{{ site.cookie.text }} <a href="{{ u('cookies.html') }}">{{ site.cookie.policy }}</a></p>
+  <div class="btn-row">
+    <button class="btn btn-primary btn-sm" type="button" data-cookie-accept>{{ site.cookie.accept }}</button>
+    <button class="btn btn-primary btn-sm" type="button" data-cookie-reject>{{ site.cookie.reject }}</button>
+    <button class="btn btn-outline btn-sm" type="button" data-cookie-open>{{ site.cookie.settings }}</button>
+  </div>
+  <div class="cookie-prefs" data-cookie-prefs hidden>
+    <label><input type="checkbox" checked disabled> <span><strong>{{ site.cookie.necessary_label }}</strong><br>{{ site.cookie.necessary_text }}</span></label>
+    <label><input type="checkbox" data-cookie-analytics> <span><strong>{{ site.cookie.analytics_label }}</strong><br>{{ site.cookie.analytics_text }}</span></label>
+    <div><button class="btn btn-outline btn-sm" type="button" data-cookie-save>{{ site.cookie.save }}</button></div>
+  </div>
+</div>
+
+<script>window.WINPLUS = {analytics: {{ (site.analytics_ga4_id or "") | tojson }}};</script>
+<script src="{{ root }}assets/js/main.js?v={{ version }}" defer></script>
 <script>
-  window.addEventListener("load", function () {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function (user) {
-        if (!user) { window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; }); }
-      });
-    }
-  });
+  // Netlify Identity is only needed for editor invites/logins: load it only when the link carries a token.
+  if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) {
+    var s = document.createElement("script"); s.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+    s.onload = function () { window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; }); };
+    document.head.appendChild(s);
+  }
 </script>
 </body>
 </html>

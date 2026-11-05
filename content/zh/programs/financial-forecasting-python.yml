@@ -1,45 +1,42 @@
-order: 5
-title: Python 金融预测
-category: finance-business
-org: Microsoft
-format: 线上实习
-seo_title: Python 金融预测 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 运用 Python 与数据科学分析真实金融数据并构建预测模型，由微软数据科学家指导。
-summary: 运用 Python 与数据科学分析真实金融数据并构建预测模型，由微软数据科学家指导。
+order: 4
+title: Python 财务预测
+industry: business-finance
+type: internship
+status: open
+mentor_id: terry-zhang
+mentor_note: 拥有微软与谷歌经验的数据科学家
+seo_title: 高中生 Python 财务预测项目 | WinPlus 欧歌学院
+meta_description: 用 Python、ARIMA 与 ETS 模型预测微软季度营收，由拥有微软与谷歌经验的数据科学家指导。
+summary: 用 Python 和真实财务数据预测一家世界 500 强公司的季度营收，由拥有微软与谷歌经验的数据科学家指导。
 image: https://images.unsplash.com/photo-1689732888407-310424e3a372
 image_alt: 深色屏幕上的股票 K 线图
-facts:
-- label: 形式
-  value: 线上实习
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 学生将学习数据科学家如何为金融市场建模，并在真实的市场或公司数据上构建、检验自己的预测模型。
-activities:
-- 使用 Python 进行数据分析（pandas、可视化）
-- 金融数据与核心市场概念
-- 时间序列预测与机器学习基础
-- 回测并客观评估模型
-- 像分析师一样汇报研究结果
-mentor: 微软总部资深数据科学家，7 年以上经验，密歇根大学博士
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 预测模型、代码笔记本及分析师风格报告
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 需具备代数基础；有 Python 基础更好。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+format: 线上 · 8 次导师会议
+length: 8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '企业如何预测未来？学生将承担真实分析师的任务：基于公开财务数据预测微软的季度营收，学习每一次预测背后的统计方法与判断力。
+
+
+  学生将清洗数据、探索趋势与季节性，并用 Python 比较 ARIMA 与 ETS 模型；随后分析营收驱动因素及其与股价的关系，学会区分相关性与因果性。'
+outcomes:
+- 带注释的 Python 分析笔记
+- 预测与实际对比图及误差分析（MAE、RMSE、MAPE）
+- 分析报告与成果展示
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 数据与趋势
+  text: 清洗公开财务数据；趋势、季节性、滞后与移动平均。
+- phase: 第 3–5 周
+  title: 预测模型
+  text: Python 中的 ARIMA 与 ETS；训练集与测试集；误差衡量。
+- phase: 第 6–7 周
+  title: 驱动因素与市场
+  text: 营收驱动因素与股价关系；相关与因果。
+- phase: 第 8 周
+  title: 报告与展示
+  text: 完成分析报告并展示预测成果。
+eligibility:
+- 10–12 年级
+- 熟悉代数；有 Python 基础更佳但非必需
+- 对数学、金融、经济或商业分析感兴趣

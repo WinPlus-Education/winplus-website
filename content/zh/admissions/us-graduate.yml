@@ -1,0 +1,46 @@
+order: 2
+title: 美国研究生申请
+short_title: 美国研究生
+interest: 研究生申请
+seo_title: 美国研究生申请：硕士、博士、MBA | WinPlus 欧歌学院
+meta_description: 美国研究生申请规划：硕士、博士与 MBA 的定位、个人陈述、推荐人策略、项目匹配与面试辅导。
+summary: 硕士、博士与 MBA 申请，由亲历目标项目的导师指导。
+eyebrow: 美国研究生申请
+title_long: 硕士、博士与 MBA 申请，由过来人指导
+image: /images/uploads/campus/harvard-dunster.webp
+image_alt: 冬日的哈佛大学 Dunster 学院
+who: 申请美国硕士、博士及 MBA 项目的大学生与职场青年，包括转专业人士与国际申请者。
+system: 研究生申请由教授与录取委员会审阅，他们首先看的是：为什么这个学位、这个项目，是你合理的下一步。研究匹配度、职业轨迹与推荐人的分量，都远高于本科申请。
+challenges_intro: 研究生录取看重方向与匹配。以下是我们最常见到的短板，以及弥补方式。
+challenges:
+- challenge: 履历出色，方向却不清晰
+  title: 有说服力的定位
+  text: 我们先厘清你希望这个学位带来什么，再构建叙事，把过去的工作、科研或职业经历与目标项目及未来职业连接起来。
+- challenge: 文书泛泛，推荐信平淡
+  title: 文书、简历与推荐人策略
+  text: 个人陈述、个人经历陈述与简历经多轮打磨，并设计推荐人分工，让每一封推荐信都提供不同的证据。
+- challenge: 冲着名气申请，而非匹配度
+  title: 项目匹配与面试
+  text: 依据导师、奖学金、就业与文化制定选校名单，并辅导教授面谈与 MBA 行为面试。
+timeline_title: 研究生申请时间线
+timeline:
+- when: 提前 12–18 个月
+  text: 明确目标，初选项目，规划 GRE/GMAT 与语言考试。
+- when: 春季–夏季
+  text: 科研型项目联系导师；确定推荐人；完成文书初稿。
+- when: 9–10 月
+  text: 多数 MBA 第一轮截止。
+- when: 12–1 月
+  text: 多数博士与硕士截止；MBA 第二轮。
+- when: 2–3 月
+  text: 面试、校园开放日与录取结果。
+- when: 4 月 15 日
+  text: 有奖学金资助的研究生录取通常的答复日。
+outcomes_text: WinPlus 导师曾指导 MBA 与硕士申请者进入的项目包括：
+outcomes:
+- name: Harvard University
+  label: 哈佛商学院
+- name: Massachusetts Institute of Technology
+  label: MIT 斯隆管理学院
+- name: University of Pennsylvania
+  label: 宾大沃顿商学院

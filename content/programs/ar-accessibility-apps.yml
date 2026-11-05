@@ -1,0 +1,34 @@
+order: 20
+title: AR Glasses Accessibility Software
+industry: ai-technology
+type: internship
+status: past
+mentor_note: Engineering lead, Meta Reality Labs
+seo_title: AR Accessibility Software Internship (Past Program) | WinPlus
+meta_description: 'Past WinPlus internship: students analysed user needs for AR glasses and developed accessibility features in Python with an engineering lead from Meta Reality Labs.'
+summary: Students analysed user needs for augmented-reality glasses and prototyped accessibility features in Python for people with disabilities.
+image: /images/uploads/programs/ar-accessibility-apps.webp
+image_alt: A person using a mixed-reality headset
+format: Online · live mentor sessions
+length: 6–8 weeks
+dates: Previous cohort
+cohort: Small group
+overview: 'In this past program, students studied how augmented-reality glasses serve their users, analysed market and accessibility needs, and used Python to prototype software features for people with
+  disabilities.
+
+
+  The program shows how WinPlus internships connect frontier technology with human needs. Similar topics may return in future cohorts.'
+outcomes:
+- User-needs analysis for an AR product
+- A Python accessibility feature prototype
+- Final presentation to the mentor
+curriculum:
+- phase: Phase 1
+  title: Users & needs
+  text: AR product functions and accessibility needs.
+- phase: Phase 2
+  title: Prototype
+  text: Python feature development and testing.
+eligibility:
+- This program is not currently enrolling. Contact us to hear about similar programs.
+mentor_id: mentor-ar-accessibility

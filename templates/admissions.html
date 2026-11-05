@@ -1,79 +1,53 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, ld with context %}
-{% block schema %}
-{% set list = [] %}{% for s in services %}{% set _ = list.append({"@type": "ListItem", "position": loop.index, "url": site_url ~ "/" ~ s.url, "name": s.title}) %}{% endfor %}
-{{ ld({"@context": "https://schema.org", "@type": "ItemList", "name": "WinPlus admissions counseling services", "itemListElement": list}) }}
-{% endblock %}
+{% from "macros.html" import page_hero, head, photo, arrow, btn, pillars, faq, cta_band, results_notice, school_cards with context %}
+{% block body_class %}has-overlay{% endblock %}
 {% block content %}
-{{ page_hero(page, [[page.eyebrow, "admissions.html"]], btn(page.cta, page.cta_link)) }}
+{{ page_hero(page, [[page.eyebrow, "admissions.html"]], btn(site.cta_text, site.cta_link, "light") ~ btn(_("Explore programs"), "#programs", "ghost", false)) }}
 
-<section class="section">
-  <div class="wrap">
-    {{ head("", page.services_title, page.services_intro) }}
-    <div class="grid-3 service-grid">
-      {% for s in services %}
-      <a class="card service-card" href="{{ u(s.url) }}">
-        {{ photo(s.image, s.image_alt, "ratio-wide", 700) }}
+<section class="section" id="programs">
+  <div class="container">
+    {{ head(page.programs_eyebrow, page.programs_title, page.programs_intro) }}
+    <div class="grid g-3">
+      {% for s in services | sort(attribute="order") %}
+      <a class="card track-card reveal" href="{{ u(s.url) }}">
+        {{ photo(s.image, s.image_alt, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
         <div class="card-body">
           <h3>{{ s.title }}</h3>
           <p>{{ s.summary }}</p>
-          <span class="more">{{ _("Learn more") }} <span aria-hidden="true">→</span></span>
+          <span class="link-arrow">{{ _("Learn more") }} <span aria-hidden="true">→</span></span>
         </div>
       </a>
-      {% endfor %}
-      <a class="card service-card service-card-cta" href="{{ u('how-it-works.html') }}">
-        <div class="card-body">
-          <p class="kicker">{{ _("Not sure where to start?") }}</p>
-          <h3>{{ _("See how we work with families") }}</h3>
-          <p>{{ _("From a free strategy session to acceptance, one consultant guides every step.") }}</p>
-          <span class="more">{{ _("How we work") }} <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-cream">
-  <div class="wrap">
-    {{ head(_("Our difference"), page.diff_title, page.diff_intro) }}
-    <div class="grid-3 diff-grid">
-      {% for d in page.differentiators %}
-      <div class="diff-item"><span class="diff-num">{{ "%02d" % loop.index }}</span><h3>{{ d.title }}</h3><p>{{ d.text }}</p></div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section" id="how-we-work">
-  <div class="wrap">
-    {{ head(_("How we work"), page.process_title, page.process_intro) }}
-    <ol class="process">
-      {% for s in page.process %}
-      <li class="process-step">
-        <span class="step-num">{{ loop.index }}</span>
-        <div class="process-body">
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-          <p class="process-meta"><span><strong>{{ _("You receive:") }}</strong> {{ s.deliverable }}</span><span><strong>{{ _("When:") }}</strong> {{ s.when }}</span></p>
-        </div>
-      </li>
-      {% endfor %}
-    </ol>
+<section class="section s-ink" id="approach">
+  <div class="container">
+    <div class="split-intro" style="margin-bottom:clamp(48px,5vw,80px)">
+      <div><p class="eyebrow">{{ page.approach_eyebrow }}</p><h2>{{ page.approach_title }}</h2></div>
+      <div><p class="lead">{{ page.approach_text }}</p></div>
+    </div>
+    {{ pillars(page.approach) }}
   </div>
 </section>
 
-<section class="section section-sky">
-  <div class="wrap">
-    {{ head(_("Timeline"), page.timeline_title) }}
-    <ol class="grade-timeline">
-      {% for t in page.timeline %}<li><h3>{{ t.grade }}</h3><p>{{ t.focus }}</p></li>{% endfor %}
-    </ol>
+<section class="section s-ivory">
+  <div class="container">
+    <div class="head-row">{{ head(page.results_eyebrow, page.results_title) }}{{ arrow(page.results_link_text, "results.html") }}</div>
+    {% for t in results_data.offer_tiers %}
+    <div class="wall-tier">
+      <h3>{{ t.label }}</h3>
+      {{ school_cards(t.schools) }}
+    </div>
+    {% endfor %}
+    {{ results_notice() }}
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap">{{ faq(page.faq, _("Admissions counseling FAQ")) }}</div>
+  <div class="container">{{ faq(page.faq, page.faq_title) }}</div>
 </section>
 
-{{ cta_band(_("Start with a free strategy session"), _("Meet a consultant, share your goals and get initial recommendations, with no commitment."), page.cta, page.cta_link) }}
+{{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
 {% endblock %}

@@ -1,38 +1,32 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo with context %}
+{% from "macros.html" import page_head, photo with context %}
 {% block content %}
-{% set filters %}
-<div class="filters" role="group" aria-label="{{ _('Filter articles by topic') }}">
-  <button class="chip-btn is-active" data-filter="all" aria-pressed="true">{{ _("All") }}</button>
-  {% for c in page.categories %}<button class="chip-btn" data-filter="{{ c | slugify }}" aria-pressed="false">{{ c }}</button>{% endfor %}
-</div>
-{% endset %}
-{{ page_hero(page, [[page.eyebrow, "insights.html"]], filters) }}
+{{ page_head(page, [[page.eyebrow, "insights.html"]]) }}
 <section class="section">
-  <div class="wrap">
-    {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}
-    {% if featured %}
-    <a class="card feature" href="{{ u(featured.url) }}" data-cat="{{ featured.category | slugify }}">
-      {{ photo(featured.image, featured.image_alt or featured.title, "ratio-wide", 1100) }}
-      <div class="card-body">
-        <span class="tag">{{ featured.category }}</span>
-        <h2>{{ featured.title }}</h2>
-        <p>{{ featured.summary }}</p>
-        <span class="more">{{ _("Read article") }} <span aria-hidden="true">→</span></span>
+  <div class="container">
+    <div class="filters" data-filters="#post-grid">
+      <div class="filter-group" data-group="cat" role="group" aria-label="{{ _('Filter articles by topic') }}">
+        <span class="filter-label">{{ _("Topic") }}</span>
+        <button class="chip is-active" data-value="all" aria-pressed="true">{{ _("All") }}</button>
+        {% for c in page.categories %}<button class="chip" data-value="{{ c | slugify }}" aria-pressed="false">{{ c }}</button>{% endfor %}
       </div>
-    </a>
-    {% endif %}
-    <div class="grid-3 post-grid">
-      {% for p in posts if p.slug != featured.slug %}
-      <a class="card post-card" href="{{ u(p.url) }}" data-cat="{{ p.category | slugify }}">
-        {{ photo(p.image, p.image_alt or p.title, "ratio-wide", 700) }}
-        <div class="card-body">
-          <span class="tag">{{ p.category }}</span>
-          <h3>{{ p.title }}</h3>
-          <p class="meta">{{ p.date | date_fmt("long") }}</p>
-        </div>
+    </div>
+    {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}
+    <div id="post-grid">
+      {% if featured %}
+      <a class="feature-post" href="{{ u(featured.url) }}" data-filter-item data-cat="{{ featured.category | slugify }}">
+        {{ photo(featured.image, featured.image_alt or featured.title, "media", 1400, sizes="(max-width: 900px) 100vw, 55vw") }}
+        <div><span class="kicker">{{ featured.category }}</span><h2>{{ featured.title }}</h2><p class="lead">{{ featured.summary }}</p><span class="link-arrow" style="margin-top:1.5rem">{{ _("Read article") }} <span aria-hidden="true">→</span></span></div>
       </a>
-      {% endfor %}
+      {% endif %}
+      <div class="grid g-3">
+        {% for p in posts if p.slug != featured.slug %}
+        <a class="card post-card" href="{{ u(p.url) }}" data-filter-item data-cat="{{ p.category | slugify }}">
+          {{ photo(p.image, p.image_alt or p.title, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+          <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3><p class="meta">{{ p.date | date_fmt("long") }}</p></div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
     <p class="empty-note" data-filter-empty hidden>{{ _("No articles in this topic yet.") }}</p>
   </div>

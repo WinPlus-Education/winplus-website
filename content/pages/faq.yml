@@ -1,0 +1,37 @@
+seo_title: 'FAQ: Admissions Counseling, Research & Programs | WinPlus'
+meta_description: 'Answers to common questions about WinPlus: admissions counseling, research and internships, campus immersion, conferences, fees and getting started.'
+eyebrow: FAQ
+title: Frequently asked questions
+intro: Everything families ask us most, in one place. Can't find your answer? Talk to a WinPlus mentor.
+general_title: About WinPlus
+general:
+- q: What is WinPlus?
+  a: WinPlus Education and Technology Inc. is a boutique education consultancy and talent-development platform, founded in 2020 in Harvard Square by Harvard Kennedy School graduates, with teams in Boston
+    and Beijing. We combine admissions counseling from US high school to graduate school with mentor-led research and internships, campus immersion and global leadership conferences.
+- q: What makes WinPlus different?
+  a: 'Most consultants edit applications. We build what goes into them: our own research, internship, immersion and conference programs, led by mentors from top universities and companies, coordinated in
+    one plan by one team that knows the student. And because our team lives in the US, our insight comes from the ground, every cycle.'
+- q: Who do you work with?
+  a: Students from middle school to graduate school, and their families, in the US, mainland China, Hong Kong, Singapore and beyond. We also partner with private schools to deliver counseling and global
+    programs to their students.
+- q: Who are the mentors?
+  a: University professors, a former NASA astronaut, NASA scientists, alumni interviewers, and engineers and researchers from leading technology and finance companies. See [Our Team](team.html).
+- q: Do you work with families outside the US?
+  a: Yes. Most sessions run online across time zones, with in-person meetings in Boston and Beijing and during our programs in the US.
+- q: Does WinPlus guarantee admission?
+  a: No. No ethical counselor can. Individual results vary, and past results do not guarantee future outcomes.
+- q: How do I get started?
+  a: Book a free strategy session. We learn about the student's goals and current profile and recommend clear next steps, with no commitment required.
+sections:
+- id: admissions
+  title: Admissions Counseling
+  page: admissions
+  link: admissions.html
+- id: research
+  title: Research & Internships
+  page: research
+  link: research.html
+- id: experiences
+  title: Global Experiences
+  page: experiences
+  link: experiences.html

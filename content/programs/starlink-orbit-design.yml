@@ -1,45 +1,43 @@
 order: 9
-title: SpaceX Starlink Satellite Orbit Design
-category: science-space
-org: MIT + NASA
-format: Research Project
-seo_title: SpaceX Starlink Satellite Orbit Design | High School Science Research Program | WinPlus
-meta_description: Study satellite constellations like Starlink and design orbits with an aerospace engineer from NASA Goddard and MIT.
-summary: Study satellite constellations like Starlink and design orbits with an aerospace engineer from NASA Goddard and MIT.
+title: Satellite Constellation & Orbit Design
+industry: science-space
+type: research
+status: open
+mentor_id: hannah-tomio
+seo_title: Satellite Constellation Design for Teens | WinPlus
+meta_description: Design a satellite constellation and simulate orbits with NASA's GMAT, using Starlink as a case study, mentored by an MIT aerospace PhD with NASA Goddard experience.
+summary: Using Starlink as a case study, design a satellite constellation and simulate its orbits with NASA software, mentored by an MIT aerospace PhD with NASA Goddard experience.
 image: https://images.unsplash.com/photo-1465101162946-4377e57745c3
 image_alt: Stars and the Milky Way across the night sky
-facts:
-- label: Format
-  value: Research Project
-- label: Length
-  value: 6–8 weeks
-- label: Schedule
-  value: '[Day/time, time zone]'
-- label: Group size
-  value: '[X] students'
-- label: Grade level
-  value: Grades 9–12
-- label: Next start
-  value: '[Month YEAR]'
-overview: Satellite constellations are reshaping global communications. Students learn orbital mechanics and simulation tools, then design and analyze a constellation for a defined mission.
-activities:
-- Orbital mechanics fundamentals
-- Satellite constellation design trade-offs
-- Simulating orbits with Python
-- Analyzing coverage, collisions and space debris
-- Presenting a constellation design
-mentor: Aerospace Engineer, NASA Goddard / MIT
-mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
-mentor_photo: ''
-deliverables:
-- An engineering design report and simulation
-- Mentor recommendation letter (for eligible students)
-- Certificate of completion
-- Final showcase presentation
-prerequisites: Algebra and trigonometry; physics recommended.
-faq:
-- q: Is this program online?
-  a: Yes. This is an research project with live sessions, so students can join from anywhere.
-- q: How do I apply?
-  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
-internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'
+format: Online · live mentor sessions
+length: 8 weeks
+dates: Summer 2027 · dates to be confirmed
+cohort: Small group
+overview: 'Thousands of satellites now circle the Earth to connect the world. How are those networks designed? Students study orbital altitude, inclination, period, coverage and revisit time, then use NASA''s
+  GMAT software to simulate orbits for a communication mission of their choice.
+
+
+  They compare radio and optical (laser) communications, learn the key components and build a simplified link budget, the kind of engineering reasoning used across the space industry.'
+outcomes:
+- A research paper or design portfolio with constellation architecture
+- GMAT orbit simulations and a network diagram
+- A final presentation of design justifications
+- Mentor recommendation letter for students who excel
+curriculum:
+- phase: Weeks 1–2
+  title: Orbital mechanics
+  text: Altitude, inclination, period, coverage and revisit time.
+- phase: Weeks 3–4
+  title: Simulation
+  text: Orbit simulation in NASA's GMAT; comparing constellation arrangements.
+- phase: Weeks 5–6
+  title: Communications
+  text: Radio versus optical links; components; a simplified link budget.
+- phase: Weeks 7–8
+  title: Design & present
+  text: Requirements, architecture, simulations and justifications.
+eligibility:
+- Grades 9–12
+- Strong interest in physics, aerospace or electrical engineering
+- Comfort with algebra and trigonometry
+mentor_note: MIT aerospace PhD; NASA Goddard and JPL experience

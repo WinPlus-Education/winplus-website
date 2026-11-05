@@ -1,0 +1,39 @@
+order: 5
+title: 加拿大留学申请
+short_title: 加拿大
+interest: 英国、加拿大、澳洲申请
+seo_title: 加拿大留学申请：本科与研究生 | WinPlus 欧歌学院
+meta_description: 加拿大留学申请：专业选择、先修课程规划、多大、麦吉尔、UBC 与滑铁卢的补充申请，以及研究生申请。
+summary: 多伦多大学、麦吉尔、UBC、滑铁卢等加拿大顶尖大学的本科与研究生申请。
+eyebrow: 加拿大留学申请
+title_long: 加拿大名校：本科与研究生申请
+image: /images/uploads/campus/toronto-campus.webp
+image_alt: 多伦多女王公园，毗邻多伦多大学圣乔治校区
+hero_right: true
+who: 申请加拿大本科的学生（常与美国或英国同时申请），以及申请加拿大硕士与博士项目的毕业生。
+system: 加拿大大学按专业录取，非常看重成绩，尤其是先修课程成绩。工程、计算机、商科等热门专业还需提交补充材料，许多录取依据 11 年级与 12 年级上学期成绩发放。
+challenges_intro: 加拿大申请看似简单，热门专业却并非如此，细节决定结果。
+challenges:
+- challenge: 先修课程会悄悄关上大门
+  title: 按专业提前规划
+  text: 我们尽早梳理每个目标专业的先修要求，让 10、11 年级的选课为所有选择保留可能。
+- challenge: 补充材料的分量超出预期
+  title: 补充申请材料
+  text: 热门专业所需的个人简介、补充文书、视频回答与作品集，以打磨美本文书的标准完成。
+- challenge: 加、美、英多线并行
+  title: 一份背景，多国申请
+  text: 统筹各国时间线与要求，让一份出色的背景服务所有申请，无需取舍。
+timeline_title: 加拿大申请时间线
+timeline:
+- when: 10–11 年级
+  text: 梳理专业先修要求，守住关键成绩。
+- when: 10–1 月
+  text: 通过 OUAC（安省）或各校系统提交申请。
+- when: 1–3 月
+  text: 补充申请、个人简介与视频回答。
+- when: 2–5 月
+  text: 滚动发放录取，常依据 11 年级与 12 年级上学期成绩。
+- when: 6 月 1 日
+  text: 安省大学录取的常见确认截止日。
+outcomes_text: '[请补充加拿大录取案例：WinPlus 学生被录取的大学与专业。]'
+outcomes: []

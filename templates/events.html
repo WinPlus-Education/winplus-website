@@ -1,20 +1,25 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, btn, head, event_card with context %}
+{% from "macros.html" import page_hero, head, event_card, btn with context %}
+{% block body_class %}has-overlay{% endblock %}
 {% block content %}
-{{ page_hero(page, [[page.eyebrow, "events.html"]]) }}
-<section class="section">
-  <div class="wrap">
+{{ page_hero(page, [[page.eyebrow, "events.html"]], btn(page.upcoming_title, "#upcoming", "light") ~ btn(page.past_title, "#past", "ghost", false)) }}
+
+<section class="section" id="upcoming">
+  <div class="container">
+    {{ head("", page.upcoming_title, page.upcoming_intro) }}
     {% if upcoming %}
-    <div class="grid-3 events-grid">{% for e in upcoming %}{{ event_card(e) }}{% endfor %}</div>
+    {% if upcoming | length == 1 %}<div class="ev-feature">{{ event_card(upcoming[0]) }}</div>{% else %}<div class="grid g-3">{% for e in upcoming %}{{ event_card(e) }}{% endfor %}</div>{% endif %}
+    {% else %}
+    <p class="empty-note">{{ page.empty_text }}</p>
     {% endif %}
-    <p class="empty-note" data-events-empty {% if upcoming %}hidden{% endif %}>{{ page.empty_text }}</p>
   </div>
 </section>
+
 {% if past_events %}
-<section class="section section-sky">
-  <div class="wrap">
-    {{ head("", page.past_title) }}
-    <ul class="related">{% for e in past_events %}<li><a class="related-link" href="{{ u(e.url) }}"><span>{{ e.title }} · {{ e.date | date_fmt("long") }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}</ul>
+<section class="section s-ivory" id="past">
+  <div class="container">
+    {{ head("", page.past_title, page.past_intro) }}
+    <div class="grid g-3">{% for e in past_events %}{{ event_card(e) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}

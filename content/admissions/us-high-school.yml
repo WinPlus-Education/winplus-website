@@ -1,33 +1,39 @@
-order: 6
+order: 3
 title: US High School Admissions
 short_title: US High School
 interest: US High School Admissions
-seo_title: "US Boarding & Private High School Admissions Counseling | SSAT & TOEFL | WinPlus"
-meta_description: "US boarding and private high school admissions counseling for international students: school selection, SSAT and TOEFL strategy, applications, essays and interview coaching."
-summary: Boarding and private school placement for international students, including school selection, SSAT/TOEFL strategy and interview coaching.
-image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
-image_alt: Students raising their hands in a classroom
-who: Students in Grades 6–10 (and their families) applying to US boarding schools and private day schools.
-included:
-  - School research and balanced school list
-  - SSAT / ISEE and TOEFL testing strategy
-  - Application essays (student and parent statements)
-  - Interview coaching and mock interviews
-  - Campus visit planning
-  - Recommendation planning
-  - Decision support and enrollment preparation
-approach:
-  - { title: "Find the right fit", text: "Academics, culture, location and support for international students." }
-  - { title: "Prepare thoroughly", text: "Testing, essays and interviews prepared well ahead of deadlines." }
-  - { title: "Support the transition", text: "Help settling in academically and socially once accepted." }
-deadlines_title: Typical timeline
-deadlines:
-  - { label: "Research & campus visits", date: "Spring to fall of the year before entry" }
-  - { label: "Testing (SSAT/ISEE, TOEFL)", date: "Fall of the application year" }
-  - { label: "Application deadline", date: "Commonly mid-January" }
-  - { label: "Decisions", date: "Commonly March 10" }
-faq:
-  - q: What grade should my child enter a US boarding school?
-    a: Grade 9 is the most common entry point, though many schools also admit students into Grade 10. We advise based on your child's readiness.
-  - q: Is the SSAT required?
-    a: Many boarding schools require or recommend the SSAT or ISEE, and international students often also need TOEFL or similar. Requirements vary by school.
+seo_title: US Boarding & Private High School Admissions Consulting | WinPlus
+meta_description: 'US boarding and private day school admissions: school selection, SSAT/ISEE planning, applications, parent statements, interviews and campus visits.'
+summary: Boarding and private day school admissions, from school selection to SSAT, interviews and visits.
+eyebrow: US High School
+title_long: The right US boarding or day school, and a confident start
+image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
+image_alt: A historic red-brick campus building
+who: Students in Grades 5–10 applying to US boarding schools and private day schools, and families relocating to the US.
+system: Independent schools admit a community, not just a transcript. Interviews and campus visits weigh heavily, parents write their own statements, and most leading schools share a January deadline and
+  a common March notification date.
+challenges_intro: Families often underestimate how personal boarding school admissions are. Here is where we make the difference.
+challenges:
+- challenge: Rankings say little about fit
+  title: Finding the right school
+  text: We help families understand the real differences in academics, culture, size and support, and build a list where the student will thrive, not just be admitted.
+- challenge: Young applicants, adult expectations
+  title: Interviews and visits that feel natural
+  text: Interview practice that builds real confidence, and campus-visit planning from our base near many of the leading New England schools.
+- challenge: Many moving parts, one deadline
+  title: One coordinated application
+  text: SSAT or ISEE and English testing plans, student and parent statements, and teacher recommendations, all on one timeline.
+timeline_title: The boarding school timeline
+timeline:
+- when: 12–18 months out
+  text: School research, first testing plan and summer visits.
+- when: Sep–Dec
+  text: Campus tours and interviews; SSAT or ISEE testing.
+- when: Jan 15
+  text: Application deadline at many leading boarding schools.
+- when: Mar 10
+  text: Common notification date for many boarding schools.
+- when: Apr 10
+  text: Common reply date; preparation for the move.
+outcomes_text: '[Add featured US high school outcomes: schools where WinPlus students have been admitted.]'
+outcomes: []

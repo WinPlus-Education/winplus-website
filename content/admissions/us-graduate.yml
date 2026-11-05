@@ -1,0 +1,47 @@
+order: 2
+title: US Graduate School Admissions
+short_title: US Graduate School
+interest: Graduate School Admissions
+seo_title: 'US Grad School Admissions: Master''s, PhD, MBA | WinPlus'
+meta_description: 'US graduate admissions counseling for master''s, PhD and MBA programs: positioning, statements of purpose, recommenders, program fit and interviews.'
+summary: Master's, PhD and MBA applications, with mentors who have been through the programs you are aiming for.
+eyebrow: US Graduate School
+title_long: Master's, PhD and MBA admissions, with mentors who've been there
+image: /images/uploads/campus/harvard-dunster.webp
+image_alt: Dunster House in winter, Harvard University
+who: College students and young professionals applying to US master's, PhD and MBA programs, including career changers and international applicants.
+system: 'Graduate admissions are read by faculty and committees looking for one thing first: a credible reason this degree, at this program, is the next step. Research fit, professional trajectory and recommenders
+  carry more weight than at the undergraduate level.'
+challenges_intro: Graduate committees read for direction and fit. These are the gaps we see most often, and how we close them.
+challenges:
+- challenge: A strong record, but no clear direction
+  title: Positioning that makes sense
+  text: We clarify what you want the degree to do for you, then shape a narrative that connects past work, research or career to this program and the career after it.
+- challenge: Generic statements and lukewarm letters
+  title: Statements, CVs and recommenders
+  text: Statements of purpose, personal history statements and résumés developed over many rounds, plus a recommender strategy so each letter adds evidence the others don't.
+- challenge: Applying to names, not to fit
+  title: Program fit and interviews
+  text: A list built on faculty, funding, outcomes and culture, with preparation for faculty conversations and MBA behavioural interviews.
+timeline_title: The graduate application timeline
+timeline:
+- when: 12–18 months out
+  text: Define goals, shortlist programs, plan GRE or GMAT and English testing.
+- when: Spring–summer
+  text: Faculty outreach for research degrees; recommenders confirmed; first statement drafts.
+- when: Sep–Oct
+  text: MBA Round 1 deadlines at many programs.
+- when: Dec–Jan
+  text: Most PhD and master's deadlines; MBA Round 2.
+- when: Feb–Mar
+  text: Interviews, visit days and admissions decisions.
+- when: Apr 15
+  text: Common reply date for funded graduate offers.
+outcomes_text: 'WinPlus mentors have guided MBA and master''s applicants to programs including:'
+outcomes:
+- name: Harvard University
+  label: Harvard Business School
+- name: Massachusetts Institute of Technology
+  label: MIT Sloan
+- name: University of Pennsylvania
+  label: The Wharton School

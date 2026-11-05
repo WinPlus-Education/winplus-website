@@ -1046,3 +1046,46 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 /* Program arc labelled as stops */
 .journey .step-n small { display: block; font-family: var(--font-body); font-size: .68rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; margin-bottom: .35rem; }
 .lang-zh .journey .step-n small { letter-spacing: .06em; }
+
+/* ---------- Round 5 ---------- */
+/* Fine print: small, one line on desktop */
+.notice { font-size: .68rem; line-height: 1.5; color: var(--mute-2); max-width: none; margin-top: 1.5rem; }
+@media (min-width: 1280px) { .notice:not(.notice-wrap) { white-space: nowrap; } }
+.notice-wrap { max-width: 90ch; }
+
+/* Person cards: no dividers; name / title / education / bio rows line up across a row */
+.person details { border-top: 0; margin-top: .9rem; }
+.person summary { padding: .2rem 0; }
+.person .role { margin-bottom: .35rem; line-height: 1.5; }
+.person .edu { font-size: .82rem; color: var(--mute); margin: 0; line-height: 1.5; }
+@supports (grid-template-rows: subgrid) {
+  .people { row-gap: 0; }
+  .person { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 0; margin-bottom: clamp(28px, 3vw, 48px); }
+  .person > .media, .person > .avatar { align-self: start; }
+}
+
+/* Mentor-network logos inside the team section */
+.marquee.is-inline { border: 0; padding: clamp(24px, 3vw, 40px) 0 0; margin-top: clamp(8px, 1vw, 16px); }
+.marquee.is-inline .marquee-label { margin-bottom: 1.5rem; }
+/* Program sidebar mentor uses the standard person card */
+.mentor-card .person { display: block; margin: 0; }
+.mentor-card .person .media, .mentor-card .person .avatar { max-width: 220px; }
+.mentor-card .person h3 { font-size: 1.5rem; }
+/* Student story cards: same image treatment as the home program cards; rows line up */
+.story-card .media { aspect-ratio: 4 / 5; overflow: hidden; margin: 0; }
+.story-card .media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 50%); transition: transform .9s var(--ease); }
+.story-card:hover .media img { transform: scale(1.04); }
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 721px) {
+    .story-row { align-items: stretch; row-gap: 0; }
+    .story-card { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 0; }
+    .story-card .card-body { grid-row: span 4; display: grid; grid-template-rows: subgrid; row-gap: 0; }
+    .story-card .card-body > * { margin-top: 0; }
+    .story-card .card-body > p { margin-bottom: 1rem; }
+    .story-card .story-more, .story-card .link-arrow { align-self: end; }
+  }
+}
+/* Event cards on dark sections keep their light-card colours */
+.s-ink .ev-card { color: var(--ink); }
+.s-ink .ev-card .card-body p.ev-sum { color: var(--mute); }
+.s-ink .ev-card .ev-meta { color: var(--brass); }

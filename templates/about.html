@@ -54,9 +54,9 @@
     {% set founders = team_founders %}
     {% set advisors = [] %}{% for pid in ["jeffrey-hoffman", "steve-kelman"] %}{% if pid in people_by_id %}{% set _x = advisors.append(people_by_id[pid]) %}{% endif %}{% endfor %}
     {{ people(founders + advisors, 4) }}
+    {{ marquee(site.partners_label, site.partners, site.partners_note, true) }}
   </div>
 </section>
-{{ marquee(site.partners_label, site.partners, site.partners_note) }}
 
 <section class="section">
   <div class="container split-intro">

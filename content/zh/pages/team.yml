@@ -9,32 +9,30 @@ people:
 - id: tarik-carney
   name: Tarik Carney
   initials: TC
-  title: 联合国事务专业人士
-  affiliation: 国际和平与安全领域
+  title: 联合国和平与安全领域专业人士
+  education: 哥伦比亚大学 SIPA 及巴黎政治学院硕士
   photo: /images/uploads/team/tarik-carney.webp
   bio: 'Tarik Carney 长期从事联合国和平与安全工作，拥有哥伦比亚大学国际与公共事务学院及巴黎政治学院硕士学位，曾在纽约大学和日本上智大学学习哲学与日语。他的经历涵盖中非共和国民事事务、乌干达儿童保护、纽约联合国总部平民保护及索马里局势分析，连接人文训练与国际事务实践。
 
 
     在 WinPlus 活动中，他带领学生参观联合国总部，讲解组织机构、价值观与使命，分享维和工作中的故事。学生既能了解机构职责，也能看到和平、安全与人道保护如何落实到个人，以及国际合作需要怎样的沟通和协调。'
-  education: 哥伦比亚大学 SIPA 及巴黎政治学院硕士
   founder: false
 - id: le-cong
   name: Le Cong
   initials: LC
   title: 斯坦福大学病理学与遗传学副教授
-  affiliation: 清华大学学士；哈佛大学生物与生物医学科学博士
+  education: 清华大学学士；哈佛大学生物与生物医学科学博士
   photo: /images/uploads/team/le-cong.webp
   bio: 'Le Cong 是斯坦福大学病理学与遗传学副教授，毕业于清华大学，获哈佛大学生物与生物医学科学博士学位。他研究基因工程、基因与细胞治疗，曾获美国国家人类基因组研究所 Genomic Innovator Award，研究连接实验生物学、计算方法和工程设计。
 
 
     其团队研究 CRISPR、大段基因插入、单细胞分析及干细胞疾病模型，并通过 CRISPR-GPT 等项目探索 AI 辅助基因编辑。在 WinPlus 活动中，他带领学生参观斯坦福干细胞研究所，讲授前沿基因编辑研究，介绍基因、细胞功能与疾病之间的关系。'
-  education: 清华大学学士；哈佛大学生物与生物医学科学博士
   founder: false
 - id: harper-gu
   name: Harper Gu
   initials: HG
-  title: 软件工程师
-  affiliation: Apple 工作背景
+  title: 软件工程师 · Apple 工作背景
+  education: ''
   photo: ''
   bio: 'Harper Gu 是拥有 Apple 工作背景的软件工程师。[请补充教育与职业背景。]
 
@@ -45,8 +43,8 @@ people:
 - id: cathy-guo
   name: 郭琪 Cathy Guo
   initials: CG
-  title: 联合创始人
-  affiliation: 哈佛大学肯尼迪学院公共政策硕士
+  title: 联合创始人 · 曾任职联合国妇女署
+  education: 哈佛大学肯尼迪学院公共政策硕士 · 罗格斯大学学士
   photo: /images/uploads/team/cathy-guo.webp
   bio: '郭琪老师于 2020 年在哈佛广场联合创立 WinPlus 欧歌学院，毕业于哈佛大学肯尼迪学院公共政策硕士，罗格斯大学经济与传媒双学士。
 
@@ -56,8 +54,8 @@ people:
 - id: josh-guo
   name: Josh Guo
   initials: JG
-  title: 耶鲁大学毕业生
-  affiliation: 德勤从业者 · 公共政策与人文社科方向
+  title: 耶鲁大学本科招生面试官 · 曾任职德勤
+  education: 耶鲁大学学士（专业优异）
   photo: /images/uploads/team/josh-guo.webp
   bio: 'Josh Guo 毕业于耶鲁大学，获专业荣誉 Distinction in Major，曾任职德勤。他曾在白宫环境质量委员会实习，接触气候、能源与环境政策协调，并向康涅狄格州立法机构提交公共议题书面意见。他也参与云南布朗族文化保护，通过访谈、影像、音乐记录和写作连接人文研究与社区实践。
 
@@ -67,44 +65,41 @@ people:
 - id: daniel-e-hastings
   name: Daniel E. Hastings
   initials: DH
-  title: 麻省理工学院 Institute Professor
-  affiliation: 前本科教育院长、前航空航天系主任
+  title: 麻省理工学院 Institute Professor · 前美国空军首席科学家
+  education: 牛津大学数学学士；麻省理工学院航空航天硕士及博士
   photo: /images/uploads/team/daniel-e-hastings.webp
   bio: 'Daniel E. Hastings 是 MIT Institute Professor，获该校最高教师荣誉；本科毕业于牛津大学，获 MIT 硕士及博士学位。他研究航天器与空间环境、推进技术及复杂系统设计，曾任 MIT 本科教育院长、航空航天系主任、新加坡—MIT 科研联盟负责人和美国空军首席科学家。
 
 
     他与新加坡国立大学及亚洲学生有长期教学交流。在 WinPlus 活动中，他带领学生了解航天可持续发展、系统工程与地球轨道制造，讨论技术方案如何长期运行、任务目标如何匹配资源，以及在轨生产所需的基础设施。'
-  education: 牛津大学数学学士；麻省理工学院航空航天硕士及博士
   founder: false
 - id: jeffrey-hoffman
   name: Jeffrey A. Hoffman
   initials: JH
-  title: 麻省理工学院航空航天工程实践教授
-  affiliation: 前 NASA 宇航员
+  title: 麻省理工学院航空航天工程实践教授 · 前 NASA 宇航员
+  education: 哈佛大学博士；阿默斯特学院学士；莱斯大学硕士
   photo: /images/uploads/team/jeff.jpg
   bio: 'Jeffrey A. Hoffman 是 MIT 航空航天工程实践教授、前 NASA 宇航员，拥有哈佛大学博士学位。他曾五次执行航天飞机任务，在太空工作超过 1,211 小时，并参与 1993 年哈勃太空望远镜首次维修。他还担任火星制氧实验 MOXIE 副首席研究员，该装置搭载于“毅力号”，验证了从火星大气提取氧气的可行性。
 
 
     在 WinPlus 活动中，他带领学生参观 MIT 航空航天系，讲解“毅力号”探索、航天飞机载人飞行和阿波罗登月工程，结合实际任务说明科学仪器、航天器与宇航员如何协同工作，以及工程设计如何应对资源和环境限制。'
-  education: 哈佛大学博士；阿默斯特学院学士；莱斯大学硕士
   founder: false
 - id: steve-kelman
   name: Steve Kelman
   initials: SK
-  title: 哈佛肯尼迪学院 Weatherhead 公共管理荣休教授
-  affiliation: 哈佛大学学士及政府学博士
+  title: 哈佛肯尼迪学院 Weatherhead 公共管理荣休教授 · 前美国联邦采购政策办公室主任
+  education: 哈佛大学学士及政府学博士
   photo: /images/uploads/team/steve-kelman.webp
   bio: 'Steve Kelman 是哈佛肯尼迪政府学院 Weatherhead 公共管理荣休教授，在哈佛完成本科及政府学博士学习。他研究政府管理、公共政策与组织变革，曾于 1993 至 1997 年担任美国行政管理和预算局下属联邦采购政策办公室负责人，参与联邦政府管理改革，并著有《Unleashing Change》等著作。
 
 
     在 WinPlus 活动中，他带领学生参观哈佛肯尼迪政府学院，讲解中美关系、国际关系与美国政府治理，将新闻议题与政府组织、政策决策及执行联系起来，介绍公共事务研究如何回应现实问题。'
-  education: 哈佛大学学士及政府学博士
   founder: false
 - id: damir-kozhanbayev
   name: Damir Kozhanbayev
   initials: DK
-  title: 哈佛 Project on Workforce 研究员
-  affiliation: 前 UNICEF 教育项目官员
+  title: 哈佛 Project on Workforce 研究员 · 前联合国儿童基金会
+  education: 哈佛大学教育研究生院
   photo: /images/uploads/team/damir-kozhanbayev.webp
   bio: 'Damir Kozhanbayev 是哈佛 Project on Workforce 研究员，曾在 UNICEF 哈萨克斯坦办公室负责教育与知识创新，并以 Urban Scholars Fellow 身份进入哈佛教育学院学习“学习设计、创新与技术”，兼具国际组织与教育研究背景。
 
@@ -116,7 +111,7 @@ people:
   name: Changfan Lin
   initials: CL
   title: 加州理工学院博士后研究员
-  affiliation: 康奈尔大学博士
+  education: 康奈尔大学博士 · 清华大学
   photo: /images/uploads/team/changfan-lin.webp
   bio: 'Changfan Lin 是加州理工学院 Gradinaru 实验室博士后，本科毕业于清华大学，在康奈尔完成博士研究，曾主导解析昼夜节律核心蛋白复合物的冷冻电镜结构。目前研究腺相关病毒载体（AAV）的工程改造，改善基因递送的靶向性与安全性。
 
@@ -128,7 +123,7 @@ people:
   name: Yinong Liu
   initials: YL
   title: WinPlus AI 时尚与零售产品创新课程导师
-  affiliation: ''
+  education: ''
   photo: ''
   bio: '[请补充 Yinong Liu 的教育与职业背景。]
 
@@ -139,20 +134,19 @@ people:
 - id: mike-medavoy
   name: Mike Medavoy
   initials: MM
-  title: 好莱坞制片人
-  affiliation: Phoenix Pictures 联合创始人
+  title: 好莱坞制片人 · Phoenix Pictures 与 Orion Pictures 联合创始人
+  education: 加州大学洛杉矶分校毕业
   photo: /images/uploads/team/mike-medavoy.webp
   bio: 'Mike Medavoy 是好莱坞制片人、Phoenix Pictures 联合创始人，毕业于加州大学洛杉矶分校。他的经历涵盖人才经纪、电影公司管理和制片，曾联合创办 Orion Pictures，并在 United Artists 与 TriStar Pictures 担任管理职务。参与推动的作品包括《黑天鹅》《禁闭岛》《十二宫》和《细细的红线》。
 
 
     在 WinPlus 活动中，他带领学生参观好莱坞制片公司，分享制片流程、产业运作和明星经纪经验，解释一个故事如何成为电影项目，以及导演、演员、编剧、制片人与经纪人如何分工协作，连接创意、资金与市场。'
-  education: 加州大学洛杉矶分校毕业
   founder: false
 - id: rachel-morgan
   name: Rachel Morgan
   initials: RM
-  title: NASA Ames 研究中心光学科学家
-  affiliation: MIT 航空航天博士
+  title: NASA 艾姆斯研究中心光学科学家
+  education: 麻省理工学院航空航天博士及硕士
   photo: /images/uploads/team/rachel-morgan.webp
   bio: 'Rachel Morgan 是在 NASA Ames 研究中心开展研究的光学科学家，拥有 MIT 航空航天与物理本科背景，以及航空航天硕士、博士学位。她研究集成光子技术在天文仪器中的应用，关注类地系外行星探测，并曾在 NASA 喷气推进实验室及 MIT 林肯实验室积累科研经验。
 
@@ -163,8 +157,8 @@ people:
 - id: anhphu-nguyen
   name: AnhPhu Nguyen
   initials: AN
-  title: 科技创业者
-  affiliation: MIRA 联合创始人 · 曾就读哈佛大学
+  title: 科技创业者 · MIRA 联合创始人
+  education: 哈佛大学
   photo: ''
   bio: 'AnhPhu Nguyen 是科技创业者、智能眼镜公司 MIRA 联合创始人，曾在哈佛学习 Human Augmentation，探索计算机、工程与人机交互如何拓展人类能力。他从学生时期经营手机维修业务起步，获哈佛工程学院报道，并参与发起 AR／VR 开发者社团，探索可穿戴设备与互动技术。
 
@@ -175,7 +169,7 @@ people:
   name: 盘超 Cedric Pan
   initials: CP
   title: 联合创始人
-  affiliation: 哈佛大学肯尼迪学院公共政策硕士 · 哈佛大学教育学硕士
+  education: 哈佛大学肯尼迪学院公共政策硕士 · 哈佛大学教育学硕士 · 北京大学学士
   photo: /images/uploads/team/cedric-pan.webp
   bio: '盘超老师毕业于哈佛大学肯尼迪政府学院公共政策硕士、哈佛大学教育学硕士，北京大学城市规划和经济学双学士，现任麻省理工学院航空航天创业项目导师。
 
@@ -186,7 +180,7 @@ people:
   name: Vania Shi
   initials: VS
   title: Court Square Advisors 创始人
-  affiliation: MIT Sloan 金融硕士
+  education: MIT Sloan 金融硕士 · 女王大学商科学士
   photo: /images/uploads/team/vania-shi.webp
   bio: 'Vania Shi 是Court Square Advisors 创始人，拥有 MIT Sloan 金融硕士和加拿大女王大学荣誉商科学士学位。她在咨询、运营与投资领域有十余年经历，曾任 Morrison 投资经理及 Altman Solon 经理，涉及增长战略、商业尽职调查、运营改进与资本筹措。
 
@@ -196,8 +190,8 @@ people:
 - id: sijie-tian
   name: Sijie Tian
   initials: ST
-  title: 人工智能工程师
-  affiliation: Meta 工作背景
+  title: 人工智能工程师 · Meta 工作背景
+  education: ''
   photo: /images/uploads/team/sijie-tian.webp
   bio: 'Sijie Tian 是拥有 Meta AI 团队背景的工程师。[请补充教育与职业背景。]
 
@@ -209,7 +203,7 @@ people:
   name: Hannah Tomio
   initials: HT
   title: 伯尔尼大学激光物理博士后
-  affiliation: MIT 航空航天博士
+  education: 麻省理工学院博士 · 东北大学（日本）硕士 · 卡内基梅隆大学学士
   photo: /images/uploads/team/hannah-tomio.webp
   bio: 'Hannah Tomio 是伯尔尼大学激光物理博士后，拥有 MIT 航空航天博士学位，本科就读于卡内基梅隆大学电气与计算机工程专业，并获东北大学航空航天硕士学位。她曾与 NASA 戈达德航天中心合作，在喷气推进实验室及波音实习，研究激光仪器、光通信与空间精密测量。
 
@@ -220,8 +214,8 @@ people:
 - id: claire-yoo
   name: Claire Yoo
   initials: CY
-  title: 哈佛大学整合生物学本科生
-  affiliation: Harvard Undergraduate OpenBio 联合外联负责人
+  title: Harvard Undergraduate OpenBio 实验室联合外联负责人
+  education: 哈佛大学整合生物学
   photo: ''
   bio: 'Claire Yoo 在哈佛大学攻读整合生物学本科，担任 Harvard Undergraduate OpenBio Laboratory 联合外联负责人，推动高中生和大学生接触科研。她通过哈佛 PRISE 项目进入 Jost 实验室开展微生物研究，并参与哈佛植物标本馆相关研究，关注植物化合物与环境指示等方向。
 
@@ -231,8 +225,8 @@ people:
 - id: yuan-yuan
   name: Yuan Yuan
   initials: YY
-  title: 科技行业从业者
-  affiliation: Meta 与 Bloomberg 工作背景
+  title: 软件工程师 · Meta 与彭博
+  education: 哥伦比亚大学工程学院
   photo: /images/uploads/team/yuan.jpg
   bio: 'Yuan Yuan 拥有 Meta 与 Bloomberg 工作背景，曾在哥伦比亚大学工程与应用科学学院学习，连接互联网科技与金融信息服务。其公开技术交流包括 CppCon 2024 关于微服务算法交易系统行为驱动开发的海报，涉及业务需求、系统行为与软件测试之间的关系。
 
@@ -243,8 +237,8 @@ people:
 - id: terry-zhang
   name: Terry Zhang
   initials: TZ
-  title: 科技与数据研究方向导师
-  affiliation: Microsoft 与 Google 工作背景
+  title: 科技与数据研究方向导师 · 微软与谷歌
+  education: 密歇根大学 Rackham 研究生院
   photo: /images/uploads/team/terry-zhang.webp
   bio: 'Terry Zhang，亦名 Dehao Terry Zhang，拥有 Microsoft 与 Google 工作背景，曾就读密歇根大学 Rackham 研究生院。他参与的混合办公研究发表于《美国国家科学院院刊》，分析员工到岗与管理者、同事的关系。
 
@@ -256,7 +250,7 @@ people:
   name: '[导师姓名]'
   initials: ''
   title: Meta Reality Labs 工程主管
-  affiliation: ''
+  education: ''
   photo: ''
   bio: '[请补充导师姓名、照片与职业背景。]负责「AR 眼镜无障碍软件」项目。'
   founder: false
@@ -265,7 +259,7 @@ people:
   name: '[导师姓名]'
   initials: ''
   title: 亚马逊云服务（AWS）10 年以上经验云工程师
-  affiliation: ''
+  education: ''
   photo: ''
   bio: '[请补充导师姓名、照片与职业背景。]负责「物联网与 AI 设备开发」项目。'
   founder: false
@@ -273,8 +267,8 @@ people:
 - id: mentor-screenwriting
   name: '[导师姓名]'
   initials: ''
-  title: 戛纳获奖短片导演；西北大学编剧硕士
-  affiliation: ''
+  title: 戛纳获奖短片导演
+  education: 西北大学编剧艺术硕士
   photo: ''
   bio: '[请补充导师姓名、照片与职业背景。]负责「编剧与导演」项目。'
   founder: false
@@ -282,8 +276,8 @@ people:
 - id: mentor-ux-research
   name: '[导师姓名]'
   initials: ''
-  title: 谷歌 8 年以上用户研究主管；斯坦福大学双硕士
-  affiliation: ''
+  title: 谷歌 8 年以上用户研究主管
+  education: 斯坦福大学双硕士
   photo: ''
   bio: '[请补充导师姓名、照片与职业背景。]负责「短视频产品与用户体验研究」项目。'
   founder: false

@@ -8,8 +8,8 @@ category: conference
 location: Dubai · Abu Dhabi · Sharjah, UAE
 city: Dubai, UAE
 partner: RDFZ International Curriculum Centre (ICC)
-image: /images/uploads/photos/cop28-sharjah.webp
-image_alt: The WinPlus COP28 delegation at the American University of Sharjah
+image: /images/uploads/campus/dubai-city.webp
+image_alt: The Dubai skyline, host city of COP28
 summary: Five students presented their own climate research at COP28, the largest UN climate summit ever held, spoke at the China Pavilion and were featured on national television.
 statement: At the largest climate summit in history, five students brought research of their own.
 details: 'COP28, the 2023 UN Climate Change Conference, met at Expo City Dubai from November 30 to December 12, 2023. It concluded the first global stocktake of the Paris Agreement and, in the UAE Consensus, called on the world to transition away from fossil fuels.
@@ -72,6 +72,8 @@ outcomes:
 - title: A direction for the future
   text: Students left with clearer academic interests, from urban planning and transport to climate policy and law.
 gallery:
+- image: /images/uploads/photos/cop28-sharjah.webp
+  caption: The delegation at the American University of Sharjah
 - image: /images/uploads/photos/cop28-pavilion-group.webp
   caption: The delegation at the China Pavilion
 - image: /images/uploads/photos/cop28-posters.webp

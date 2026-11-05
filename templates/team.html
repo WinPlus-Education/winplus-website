@@ -8,10 +8,10 @@
   <div class="container">
     {{ people(team_people, 4) }}
     {{ people_schema(team_people) }}
+    {{ marquee(site.partners_label, site.partners, site.partners_note, true) }}
     <p class="notice">{{ page.note }}</p>
   </div>
 </section>
 
-{{ marquee(site.partners_label, site.partners, site.partners_note) }}
 {{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
 {% endblock %}

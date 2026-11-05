@@ -995,7 +995,7 @@ collections:
     - name: cta_text
       label: Cta text
       required: false
-      widget: string
+      widget: text
     - name: cta
       label: Button text
       required: false
@@ -1900,6 +1900,10 @@ collections:
         label: Link (e.g. results.html)
         required: false
         widget: string
+      - name: image_position
+        label: Image position
+        required: false
+        widget: string
       summary: '{{fields.title}}'
     - name: testimonials_title
       label: Testimonials title
@@ -2184,9 +2188,9 @@ collections:
       - name: title
         label: Title
         required: false
-        widget: string
-      - name: affiliation
-        label: Affiliation
+        widget: text
+      - name: education
+        label: Education
         required: false
         widget: string
       - name: photo
@@ -2587,28 +2591,6 @@ collections:
       required: false
       widget: string
     summary: '{{fields.name}}'
-  - name: next
-    label: Next
-    required: false
-    widget: object
-    collapsed: true
-    fields:
-    - name: title
-      label: Title
-      required: false
-      widget: string
-    - name: text
-      label: Text
-      required: false
-      widget: text
-    - name: link_text
-      label: Link text
-      required: false
-      widget: string
-    - name: link
-      label: Link (e.g. results.html)
-      required: false
-      widget: string
   - name: faq
     label: FAQ (questions & answers)
     required: false
@@ -2628,14 +2610,6 @@ collections:
     label: Category
     required: false
     widget: string
-  - name: selection_title
-    label: Selection title
-    required: false
-    widget: string
-  - name: selection_text
-    label: Selection text
-    required: false
-    widget: text
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -2843,6 +2817,38 @@ collections:
     widget: string
   - name: cta_title
     label: Cta title
+    required: false
+    widget: string
+  - name: date_tba
+    label: Date tba
+    required: false
+    widget: boolean
+  - name: card_date
+    label: Card date
+    required: false
+    widget: string
+  - name: partner_label
+    label: Partner label
+    required: false
+    widget: string
+  - name: hero_button
+    label: Hero button
+    required: false
+    widget: string
+  - name: cta_link
+    label: Button link
+    required: false
+    widget: string
+  - name: no_inquire
+    label: No inquire
+    required: false
+    widget: boolean
+  - name: cta_text
+    label: Cta text
+    required: false
+    widget: text
+  - name: cta_button
+    label: Cta button
     required: false
     widget: string
   summary: '{{title}}'
@@ -4995,6 +5001,10 @@ collections:
         label: Link (e.g. results.html)
         required: false
         widget: string
+      - name: image_position
+        label: Image position
+        required: false
+        widget: string
       summary: '{{fields.title}}'
     - name: testimonials_title
       label: Testimonials title
@@ -5280,8 +5290,8 @@ collections:
         label: Title
         required: false
         widget: string
-      - name: affiliation
-        label: Affiliation
+      - name: education
+        label: Education
         required: false
         widget: string
       - name: photo
@@ -5293,10 +5303,6 @@ collections:
         label: Full bio
         required: false
         widget: markdown
-      - name: education
-        label: Education
-        required: false
-        widget: string
       - name: founder
         label: Founder
         required: false
@@ -5686,28 +5692,6 @@ collections:
       required: false
       widget: string
     summary: '{{fields.name}}'
-  - name: next
-    label: Next
-    required: false
-    widget: object
-    collapsed: true
-    fields:
-    - name: title
-      label: Title
-      required: false
-      widget: string
-    - name: text
-      label: Text
-      required: false
-      widget: text
-    - name: link_text
-      label: Link text
-      required: false
-      widget: string
-    - name: link
-      label: Link (e.g. results.html)
-      required: false
-      widget: text
   - name: faq
     label: FAQ (questions & answers)
     required: false
@@ -5727,14 +5711,6 @@ collections:
     label: Category
     required: false
     widget: string
-  - name: selection_title
-    label: Selection title
-    required: false
-    widget: string
-  - name: selection_text
-    label: Selection text
-    required: false
-    widget: text
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -5942,6 +5918,38 @@ collections:
     widget: string
   - name: cta_title
     label: Cta title
+    required: false
+    widget: string
+  - name: date_tba
+    label: Date tba
+    required: false
+    widget: boolean
+  - name: card_date
+    label: Card date
+    required: false
+    widget: string
+  - name: partner_label
+    label: Partner label
+    required: false
+    widget: string
+  - name: hero_button
+    label: Hero button
+    required: false
+    widget: string
+  - name: cta_link
+    label: Button link
+    required: false
+    widget: string
+  - name: no_inquire
+    label: No inquire
+    required: false
+    widget: boolean
+  - name: cta_text
+    label: Cta text
+    required: false
+    widget: string
+  - name: cta_button
+    label: Cta button
     required: false
     widget: string
   summary: '{{title}}'

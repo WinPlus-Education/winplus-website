@@ -14,11 +14,11 @@ statement_text: 名校深度研学带学生走出游客路线：参与实验室�
 facts:
 - number: '12'
   label: 天，横跨波士顿、纽约与加州
-- number: '10'
+- number: 10+
   label: 所世界名校
 - number: '50'
   label: 小时导师主讲全球胜任力课程
-- number: '18'
+- number: 20+
   label: 位教授与导师
 features_title: 与众不同之处
 features:
@@ -55,11 +55,6 @@ testimonials:
 - quote: 在 MIT 的 Sea Grant 实验室，教授告诉我们角落里那台机器人可以携带传感器下潜三千米。那一刻我才真正感受到 MIT 科研实力的深厚。
   name: 学员
   role: 2024 美国研学
-next:
-  title: 2027 年暑期营
-  text: 下一期的日期、路线与报名详情即将公布。登记意向，第一时间获取信息。
-  link_text: 登记意向
-  link: contact.html?interest=%E5%9B%BD%E9%99%85%E4%BD%93%E9%AA%8C&program=%E5%90%8D%E6%A0%A1%E6%B7%B1%E5%BA%A6%E7%A0%94%E5%AD%A6%202027
 faq:
 - q: 名校深度研学适合谁？
   a: 希望在申请前亲身了解美国顶尖大学的初高中学生（通常 12–18 岁）。课程以英文授课，WinPlus 工作人员全程支持。

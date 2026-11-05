@@ -8,8 +8,8 @@ category: conference
 location: 阿联酋 迪拜 · 阿布扎比 · 沙迦
 city: 阿联酋 迪拜
 partner: 人大附中国际部 ICC
-image: /images/uploads/photos/cop28-sharjah.webp
-image_alt: COP28 期间 WinPlus 代表团在沙迦美国大学
+image: /images/uploads/campus/dubai-city.webp
+image_alt: COP28 举办城市迪拜的天际线
 summary: 五名学生在史上规模最大的联合国气候变化大会 COP28 上展示自己的气候研究，在中国角发言，并登上央视报道。
 statement: 在史上规模最大的气候峰会上，五名学生带来了自己的研究。
 details: 'COP28（2023 年联合国气候变化大会）于 2023 年 11 月 30 日至 12 月 12 日在迪拜世博城举行，完成了《巴黎协定》首次全球盘点，并在“阿联酋共识”中呼吁全球转型脱离化石燃料。
@@ -72,6 +72,8 @@ outcomes:
 - title: 更清晰的未来方向
   text: 学生带着更明确的学术兴趣归来，从城市规划与交通到气候政策与法律。
 gallery:
+- image: /images/uploads/photos/cop28-sharjah.webp
+  caption: 代表团在沙迦美国大学
 - image: /images/uploads/photos/cop28-pavilion-group.webp
   caption: 代表团在中国馆
 - image: /images/uploads/photos/cop28-posters.webp

@@ -242,7 +242,7 @@ def build():
         for e in events:
             end = as_date(e.get("end_date")) or e.get("date")
             e["is_past"] = bool(end and end < now - dt.timedelta(days=1))
-        upcoming = [e for e in events if e.get("date") and not e["is_past"]]
+        upcoming = [e for e in events if (e.get("date") or e.get("date_tba")) and not e["is_past"]]
         team = d["team"]
         # School logos and local names, keyed by the English name (admissions wall in content/pages/results.yml)
         en_tiers = data["en"]["results"].get("offer_tiers", [])

@@ -86,9 +86,9 @@
     <div class="head-row">{{ head(t.eyebrow, t.title, t.text) }}{{ arrow(t.link_text, t.link) }}</div>
     {{ people(featured, 5) }}
     {{ people_schema(featured) }}
+    {{ marquee(site.partners_label, site.partners, site.partners_note, true) }}
   </div>
 </section>
-{{ marquee(site.partners_label, site.partners, site.partners_note) }}
 
 {# ---------- Our success stories, testimonials, past events ---------- #}
 {% set st = page.stories %}

@@ -42,7 +42,7 @@
   {# Organization structured data on every page (SEO + AI search) #}
   {% set same_as = [] %}{% for s in site.social %}{% if s.url and s.url.startswith('http') %}{% set _x = same_as.append(s.url) %}{% endif %}{% endfor %}
   {% set addresses = [] %}{% for o in site.offices %}{% set _x = addresses.append({"@type": "PostalAddress", "name": o.label, "streetAddress": o.street, "addressLocality": o.city, "addressRegion": o.region, "addressCountry": o.country}) %}{% endfor %}
-  {% set founders = [] %}{% for p in team_founders %}{% set _x = founders.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.affiliation}) %}{% endfor %}
+  {% set founders = [] %}{% for p in team_founders %}{% set _x = founders.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.education}) %}{% endfor %}
   {% set org = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
@@ -116,7 +116,7 @@
       <h2>{{ site.footer_title }}</h2>
       <a class="btn btn-light btn-sm" href="{{ u(site.cta_link) }}">{{ site.cta_text }} <span class="arr" aria-hidden="true">→</span></a>
     </div>
-    <div class="fb-news">
+    <div class="fb-news" id="newsletter">
       <h3>{{ site.newsletter.title }}</h3>
       <p>{{ site.newsletter.text }}</p>
       <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">

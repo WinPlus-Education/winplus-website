@@ -7,7 +7,7 @@
 {% if item.end_date %}{% set _x = ev.update({"endDate": item.end_date | string}) %}{% endif %}
 {% if item.image %}{% set _x = ev.update({"image": [item.image if item.image.startswith('http') else site_url ~ item.image]}) %}{% endif %}
 {% if online %}{% set _x = ev.update({"location": {"@type": "VirtualLocation", "url": canonical}}) %}{% else %}{% set _x = ev.update({"location": {"@type": "Place", "name": item.location, "address": item.location}}) %}{% endif %}
-{{ ld(ev) }}
+{% if item.date %}{{ ld(ev) }}{% endif %}
 {% endblock %}
 {% block content %}
 {#
@@ -20,7 +20,7 @@
 {% set has_gallery = past and shots | length > 1 %}
 
 {% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{% set actions %}{% if not past %}{{ btn(_("Inquire"), inquire, "light") }}{% elif has_gallery %}{{ btn(_("View gallery"), "#gallery", "light") }}{% endif %}{% endset %}
+{% set actions %}{% if not past and item.no_inquire %}{{ btn(item.hero_button or item.cta_button or _("About WinPlus"), item.cta_link or "about.html", "light") }}{% elif not past %}{{ btn(_("Inquire"), inquire, "light") }}{% elif has_gallery %}{{ btn(_("View gallery"), "#gallery", "light") }}{% endif %}{% endset %}
 {{ page_hero(hero, [[_("Events"), "events.html"], [item.card_title or item.title, item.url]], actions, [item.time_label, item.location], "ev-hero") }}
 
 {# 1. Key numbers #}
@@ -43,7 +43,7 @@
         <ul class="event-chips n-{{ 3 if item.partner else 2 }}">
           <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
           <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
-          {% if item.partner %}<li><span>{{ _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
+          {% if item.partner %}<li><span>{{ item.partner_label or _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
         </ul>
       </div>
       <div class="prose">{{ item.details | md | safe }}</div>
@@ -153,6 +153,10 @@
 {% if past %}
 {{ cta_band(_("Be part of the next chapter."), _("Applications for our next programs open soon. Register your interest and we'll share dates and details first."), _("Register interest"), inquire, item.image, _("Explore the program"), prog) }}
 {% else %}
+{% if item.no_inquire %}
+{{ cta_band(item.cta_title or _("Meet the people behind WinPlus."), item.cta_text or "", item.cta_button or _("About WinPlus"), item.cta_link or "about.html", item.image, _("See upcoming events"), "events.html#upcoming") }}
+{% else %}
 {{ cta_band(item.cta_title or _("Join the delegation."), item.cta_text or _("Places are limited. Send us an inquiry and a WinPlus advisor will share the full program, eligibility and next steps."), _("Inquire"), inquire, item.image, _("Explore the program"), prog) }}
+{% endif %}
 {% endif %}
 {% endblock %}

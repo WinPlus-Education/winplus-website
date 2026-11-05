@@ -160,13 +160,13 @@
   {% if p.photo %}{{ photo(p.photo, p.name, "media", 700, sizes="(max-width: 820px) 50vw, 20vw") }}{% else %}<div class="avatar" aria-hidden="true">{{ p.initials or p.name[0] }}</div>{% endif %}
   <h3>{{ p.name }}</h3>
   <p class="role">{{ p.title }}</p>
-  {% if p.affiliation %}<p class="affil">{{ p.affiliation }}</p>{% endif %}
+  <p class="edu">{{ p.education or "" }}</p>
   {% if p.bio %}
   <details>
     <summary>{{ _("Full bio") }}</summary>
     <div class="bio">{{ p.bio | md | safe }}</div>
   </details>
-  {% endif %}
+  {% else %}<span></span>{% endif %}
 </article>
 {%- endmacro %}
 
@@ -177,21 +177,21 @@
 {# Person structured data for named experts (E-E-A-T for search and AI) #}
 {% macro people_schema(list) -%}
 {% set arr = [] %}
-{% for p in list %}{% set _x = arr.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.affiliation, "worksFor": {"@id": site_url ~ "/#organization"}}) %}{% endfor %}
+{% for p in list %}{% set _x = arr.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.education, "worksFor": {"@id": site_url ~ "/#organization"}}) %}{% endfor %}
 {% if arr %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@graph": arr} | jsonld | safe }}</script>{% endif %}
 {%- endmacro %}
 
 {# M9 Logo marquee #}
-{% macro marquee(label, items, note='') -%}
-<section class="marquee" aria-label="{{ label }}">
+{% macro marquee(label, items, note='', inline=false) -%}
+<{{ "div" if inline else "section" }} class="marquee{% if inline %} is-inline{% endif %}" aria-label="{{ label }}">
   <p class="marquee-label">{{ label }}</p>
   <div class="marquee-viewport">
     <ul class="marquee-track">
       {% for p in items %}<li>{% if p.logo %}<img src="{{ img(p.logo, 300) }}" alt="{{ p.name }}" loading="lazy" decoding="async">{% else %}<span class="wordmark">{{ p.name }}</span>{% endif %}</li>{% endfor %}
     </ul>
   </div>
-  {% if note %}<p class="container marquee-note">{{ note }}</p>{% endif %}
-</section>
+  {% if note %}<p class="{% if not inline %}container {% endif %}marquee-note">{{ note }}</p>{% endif %}
+</{{ "div" if inline else "section" }}>
 {%- endmacro %}
 
 {# M10 Case study #}
@@ -235,8 +235,8 @@
 {%- endmacro %}
 
 {% macro story_card(s) -%}
-<article class="card story-card reveal">
-  {{ photo(s.image, s.image_alt, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+<article class="card story-card reveal" style="--pos: {{ s.image_position or '50% 50%' }}">
+  {{ photo(s.image, s.image_alt, "media ratio-45", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
   <div class="card-body">
     <span class="kicker">{{ s.tag }}</span>
     <h3>{{ s.title }}</h3>
@@ -331,7 +331,6 @@
   <div class="media">
     {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
     {% if e.type %}<span class="ev-chip">{{ e.type }}</span>{% endif %}
-    {% if not e.is_past %}<span class="ev-status">{{ _("Upcoming") }}</span>{% endif %}
   </div>
   <div class="card-body">
     <p class="ev-meta"><span>{{ when }}</span><span>{{ e.city or e.location }}</span></p>
@@ -339,6 +338,7 @@
     <p class="ev-sum">{{ e.summary }}</p>
     <div class="ev-foot">
       {% if e.is_past %}<span class="ev-more">{{ _("See the story") }} <span aria-hidden="true">→</span></span>
+      {% elif e.no_inquire %}<span class="ev-more">{{ _("View details") }} <span aria-hidden="true">→</span></span>
       {% else %}<span class="ev-more">{{ _("View program") }} <span aria-hidden="true">→</span></span><a class="ev-inquire" href="{{ u(e.inquire_link or ('contact.html?interest=' ~ (_('Global Experiences') | urlencode) ~ '&program=' ~ (e.title | urlencode))) }}">{{ _("Inquire") }}</a>{% endif %}
     </div>
   </div>

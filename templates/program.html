@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, arrow, head, program_card, status_badge, cta_band, ld with context %}
+{% from "macros.html" import page_hero, photo, btn, arrow, head, program_card, status_badge, person, cta_band, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% set m = people_by_id.get(item.mentor_id) %}
 {% set ind = industries[item.industry] if item.industry in industries else item.industry %}
@@ -12,7 +12,7 @@
 {% block content %}
 {% set apply = "contact.html?interest=" ~ (_("Research & Internship Programs") | urlencode) ~ "&program=" ~ (item.title | urlencode) %}
 {% set hero = {"eyebrow": ind ~ " · " ~ type_label, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{% set actions %}{% if item.status == "open" %}{{ btn(_("Apply now"), apply, "light") }}{{ btn(_("Ask a question"), apply, "ghost", false) }}{% elif item.status == "closed" %}{{ btn(_("Join the waitlist"), apply, "light") }}{% else %}{{ btn(_("Explore current programs"), "research.html#programs", "light") }}{% endif %}{% endset %}
+{% set actions %}{% if item.status == "open" %}{{ btn(_("Apply now"), apply, "light") }}{{ btn(_("Inquire"), apply, "ghost", false) }}{% elif item.status == "closed" %}{{ btn(_("Join the waitlist"), apply, "light") }}{% else %}{{ btn(_("Explore current programs"), "research.html#programs", "light") }}{% endif %}{% endset %}
 {{ page_hero(hero, [[_("Research & Internships"), "research.html"], [item.title, item.url]], actions, [status_badge(item.status, true), item.length, item.format]) }}
 
 <section class="section">
@@ -48,9 +48,7 @@
     <aside class="detail-side">
       <div class="side-card mentor-card" id="mentor">
         <p class="eyebrow">{{ _("Your mentor") }}</p>
-        <div class="mentor-photo">{% if m and m.photo %}{{ photo(m.photo, m.name, "", 500, sizes="200px") }}{% else %}<div class="avatar" aria-hidden="true">{{ (m.initials if m and m.initials else "") or "" }}</div>{% endif %}</div>
-        <h3>{{ m.name if m else _("Mentor") }}{% if m and m.org %} <span class="mentor-org">| {{ m.org }}</span>{% endif %}</h3>
-        {% if m %}<p style="margin-top:1rem">{{ arrow(_("Full bio"), "team.html#" ~ m.id) }}</p>{% endif %}
+        {% if m %}{{ person(m) }}{% else %}<div class="person"><div class="avatar" aria-hidden="true"></div><h3>{{ _("Mentor") }}</h3><p class="role">{{ item.mentor_note }}</p></div>{% endif %}
       </div>
       <div class="side-card side-sticky">
         {{ status_badge(item.status, true) }}
@@ -58,7 +56,7 @@
         <p class="muted small">{{ item.dates }} · {{ item.length }}</p>
         {% if item.status == "open" %}
         <p class="small">{{ _("Places are limited and offered on a rolling basis.") }}</p>
-        {{ btn(_("Apply now"), apply) }}{{ btn(_("Ask a question"), apply, "outline", false) }}
+        {{ btn(_("Apply now"), apply) }}{{ btn(_("Inquire"), apply, "outline", false) }}
         {% elif item.status == "closed" %}
         <p class="small">{{ _("Applications are closed for now. Join the waitlist to hear first when the next cohort opens.") }}</p>
         {{ btn(_("Join the waitlist"), apply) }}

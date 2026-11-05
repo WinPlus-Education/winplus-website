@@ -50,8 +50,7 @@ results:
 offer:
   eyebrow: Our Programs
   title: Four programs. One plan, built around you.
-  intro: Applying to high school, college or graduate school? Most applicants piece together a counselor, a research program and a summer trip from different vendors. At WinPlus every program is designed
-    to strengthen the others, guided by one team that knows your story.
+  intro: Applying to high school, college or graduate school? Most applicants piece together a counselor, a research program and a summer trip from different vendors. At WinPlus every program is designed to strengthen the others, guided by one team that knows your story.
   segments:
   - title: Admissions Counseling
     text: 'From US high school to graduate school, and across the UK, Canada and Australia: a strategy shaped by mentors and alumni interviewers from top US universities.'
@@ -101,11 +100,11 @@ why:
   - title: On the ground in the US
     text: Our bilingual Chinese-American and American team lives and works in the US, with first-hand insight from current students, alumni interviewers and each cycle's published admissions policies.
   - title: Mentors who have been there
-    text: Professors, scientists, alumni interviewers and industry leaders work with students directly, from the first research question to the final essay.
-  - title: Bespoke, never a mold
-    text: 'Every plan starts from the student: their character, experience and interests. We amplify strengths and close gaps deliberately, instead of forcing anyone into a template.'
-  - title: Growth that outlasts admission
-    text: We develop the curiosity, skills and character that carry students through university, graduate school and the careers beyond them.
+    text: Professors, scientists, alumni interviewers and industry leaders work with students directly, sharing what it really takes to get in and to thrive.
+  - title: A roadmap built around one student
+    text: 'We get to know each student first: their strengths, interests and goals, and we respect where they want to go. Then we build a step-by-step roadmap that shows them at their best, and guide every step. No cookie-cutter templates.'
+  - title: With you for the whole journey
+    text: Admission is a milestone, not the finish line. We stay with students from middle school through university, graduate school and career, developing the curiosity, skills and character that last.
 journey:
   eyebrow: Our Approach
   title: From first conversation to final decision
@@ -113,8 +112,7 @@ journey:
   link_text: How we work
   link: about.html#how-we-work
   early_title: Start early. Plan with intent.
-  early_text: The strongest applications are built over years, not over one summer. Talk to us as early as possible, whether that is middle school, the start of high school or a year before graduate applications,
-    so we can plan every step ahead of time.
+  early_text: The strongest applications are built over years, not over one summer. Talk to us as early as possible, whether that is middle school, the start of high school or a year before graduate applications, so we can plan every step ahead of time.
   early_cta: Start planning now
   early_link: contact.html
   steps:

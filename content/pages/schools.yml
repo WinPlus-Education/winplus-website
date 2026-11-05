@@ -1,32 +1,31 @@
 seo_title: 'School Partnerships: Admissions, Research & Summer | WinPlus'
-meta_description: Partner with WinPlus to offer admissions counseling, mentor-led research, campus immersion and global conferences to your students.
+meta_description: 'Partner with WinPlus: college counseling, turnkey summer programs, cross-border exchange and curriculum enrichment for private schools in China, the US and Singapore.'
 eyebrow: Partner With Us
-title: World-class mentors and global stages for your students, delivered by WinPlus.
-intro: WinPlus partners with schools and education organizations to deliver full-cycle talent development, from summer programs and research to admissions, under your brand or ours.
-  We deliver; you gain new revenue and differentiation with zero operational burden.
+title: A world-class counseling and global programs team for your school, without building one.
+intro: WinPlus partners with private schools to deliver college counseling, research, summer programs and global experiences, under your brand or ours. We deliver; your students gain access to top mentors
+  and real stages, and your school gains outcomes families choose you for.
 image: /images/uploads/photos/hbs-classroom.webp
 image_alt: Students from a partner school on a US university visit
-challenges_title: Why now
+challenges_title: The challenges private schools tell us about
 challenges:
-- letter: '1'
-  title: The outcomes gap
-  text: Parents want top-university results, but schools and organizations struggle to build the resources and faculty in-house.
-- letter: '2'
-  title: The talent bar is changing
-  text: AI is redefining what excellence means. Research ability, hands-on creation and a global perspective are the new competitive edge.
-- letter: '3'
-  title: Access is the real barrier
-  text: Information is no longer scarce. Access to top people and real stages is, and WinPlus delivers that access through partners.
-benefits_title: Why partner with WinPlus
+- title: Limited counseling capacity
+  text: One counselor for dozens of students cannot offer US-level, Ivy-informed guidance to everyone, especially across the US, UK and other systems.
+- title: Summer programs are hard to run
+  text: International travel, partner universities, safety and logistics demand a team most schools don't have, and the stakes for minors are high.
+- title: Placement results drive enrollment
+  text: Parents choose schools on outcomes. Without a track record at top universities, enrollment and retention suffer.
+benefits_title: Why schools choose WinPlus
 benefits:
-- title: New revenue, zero operations
-  text: We handle delivery, so you don't need to build a team.
-- title: Instant differentiation
-  text: A service competitors can't easily copy becomes your advantage immediately.
-- title: Better enrollment & retention
-  text: Top outcomes are why families pay, and why they stay.
-- title: Brand empowerment
-  text: Mentors from Harvard, MIT and NASA, and programs at leading universities, presented under your brand.
+- title: Elite mentor networks
+  text: Professors, scientists, alumni interviewers and industry leaders from America's top universities and companies, working directly with your students.
+- title: Safety and compliance
+  text: Background checks for staff and mentors, minor-welfare protocols and supervised travel, set out in every partnership agreement.
+- title: Proven outcomes
+  text: 87 Ivy League and Top-30 offers and students on international conference stages, from Dubai to UN Headquarters.
+- title: Flexible models
+  text: Referral, co-brand or white-label. You choose how visible WinPlus is and who owns the family relationship.
+- title: US, China and Singapore expertise
+  text: A bilingual team on the ground in Boston and Beijing that understands families, schools and universities on both sides.
 models_title: Partnership models
 models:
 - title: Referral
@@ -47,35 +46,6 @@ roles:
   - International resources
   - Quality control
 models_note: Every partnership comes with a formal contract, student protection measures and quality standards.
-services_title: Services you can offer
-services_intro: Five core services covering exploration, hands-on experience, applications and long-term growth.
-services_table:
-- service: Campus Immersion & Summer Schools
-  ages: Ages 12–18
-  outcomes: Global-issues training · certificate of completion · university admissions sessions
-  edge: Mentors from top universities and industry; project-based curriculum
-  models: Referral · Co-brand
-- service: Research & Silicon Valley Internships
-  ages: Grades 10–12 and above
-  outcomes: Research paper · mentor recommendation letter
-  edge: Real research topics, working scientists as mentors, managed process
-  models: Co-brand · White-label
-- service: US, Canada, UK & Australia Admissions
-  ages: Undergraduate, master's & PhD applicants
-  outcomes: Custom strategy · 50+ rounds of essay editing
-  edge: Ivy League alumni interviewers + the Eight Key Elements framework
-  models: White-label · Co-brand
-- service: Global Leadership Conferences
-  ages: Middle & high school students
-  outcomes: International conference or forum participation · issue research · speaking or presentation opportunities
-  edge: Real platform access, issue training and guidance throughout
-  models: Co-brand · White-label
-- service: Essays, Test Prep & Portfolios
-  ages: Ages 12–18
-  outcomes: Score improvement · long-term growth roadmap
-  edge: A US–China team connecting the whole narrative
-  models: Referral · White-label
-services_note: Every service is delivered and quality-controlled by WinPlus. Specific deliverables vary by program, student and application cycle and are set out in the partnership agreement.
 track_title: Our track record
 track:
 - number: 100+
@@ -97,28 +67,40 @@ steps:
   text: 'Begin with a low-commitment referral pilot: small investment, real results.'
 - title: Scale up
   text: Expand to more services and students as results come in.
-ideal_partners: 'Ideal partners: private schools and education organizations in China, the US, Singapore and beyond seeking premium outcomes and differentiated programming.'
+ideal_partners: 'Ideal partners: private schools of 50–500 students in China, the US and Singapore, and education organizations seeking premium outcomes and differentiated programming.'
 contact_title: Talk to us about a partnership
 contact_name: Cathy Guo
-contact_role: Co-Founder & Executive President
+contact_role: Co-Founder
 contact_email: cathy.guo@winplus.org
-trusted_label: 'Trusted by:'
-school_logos:
-- name: '[Partner logo]'
-  logo: ''
-- name: '[Partner logo]'
-  logo: ''
-- name: '[Partner logo]'
-  logo: ''
-- name: '[Partner logo]'
-  logo: ''
 primary_cta: Explore a Partnership
 primary_link: contact.html?interest=School%20Partnership
 secondary_cta: Download Overview (PDF)
 secondary_file: ''
 case_eyebrow: Partnership in practice
 case_title: A 12-day US program for the High School Affiliated to Renmin University of China
-case_text: 'In July 2024 WinPlus co-delivered a global competency study tour for 15 students and their teachers: ten universities including Harvard, MIT, Yale, Princeton and Penn, plus
-  McKinsey, Meta, the IMF and NASA, with seminars led by WinPlus mentors and the school''s own alumni.'
+case_text: 'In July 2024 WinPlus co-delivered a global competency study tour for 15 students and their teachers: ten universities including Harvard, MIT, Yale, Princeton and Penn, plus McKinsey, Meta, the
+  IMF and NASA, with seminars led by WinPlus mentors and the school''s own alumni.'
 case_image: /images/uploads/photos/amnh-2024.webp
 case_link: events/us-east-coast-study-tour.html
+challenges_intro: Families expect top-university outcomes and global experiences. Building them in-house is slow, costly and risky.
+types_title: Partnership types
+types_intro: Start with one, or combine them into a full-cycle program for your students.
+types:
+- title: College Counseling Partnership
+  text: 'Admissions strategy for US, UK, Canada and Australia, delivered alongside your counselors: school lists, essays, interviews and parent communication, with Ivy League alumni interviewers.'
+- title: Turnkey Summer Programs
+  text: 'Campus immersions at leading US universities, fully designed and operated by WinPlus: itinerary, mentors, labs and admissions sessions, supervision and logistics.'
+- title: Cross-Border Exchange
+  text: Exchanges, visits and joint projects connecting your students with peers, universities and organizations in the US, China and Singapore.
+- title: Curriculum Enrichment
+  text: Mentor-led research, internships, global-issues training and international conference preparation that run alongside your school year.
+value_title: What your school gains
+value:
+- title: New revenue, zero operations
+  text: We handle delivery, so you don't need to build a team.
+- title: Instant differentiation
+  text: A program competitors can't easily copy becomes your advantage immediately.
+- title: Better enrollment and retention
+  text: Top outcomes are why families choose a school, and why they stay.
+- title: Brand empowerment
+  text: World-class mentors and programs at leading universities, presented under your brand.

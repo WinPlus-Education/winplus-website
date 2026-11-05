@@ -46,10 +46,10 @@ nav:
     match: research/
     children:
       - { label: AI & Technology, link: "research.html?industry=ai-technology#programs" }
-      - { label: Business & Finance, link: "research.html?industry=business-finance#programs" }
-      - { label: Science & Space, link: "research.html?industry=science-space#programs" }
       - { label: Arts & Media, link: "research.html?industry=arts-media#programs" }
+      - { label: Business & Finance, link: "research.html?industry=business-finance#programs" }
       - { label: Policy & Global Affairs, link: "research.html?industry=policy-global-affairs#programs" }
+      - { label: Science & Space, link: "research.html?industry=science-space#programs" }
   - label: Global Experiences
     link: experiences.html
     children:

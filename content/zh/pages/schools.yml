@@ -1,31 +1,30 @@
 seo_title: 机构合作 | 升学规划、科研与夏校合作方案 | WinPlus 欧歌学院
-meta_description: WinPlus 欧歌学院机构合作方案：推荐合作、联合品牌与白标三种模式，为学校与教育机构提供升学规划、科研实习、名校深度研学与全球领导力会议，合作伙伴零运营负担。
+meta_description: 与 WinPlus 合作：面向中国、美国与新加坡私立学校的升学规划、一站式夏校、跨境交流与课程拓展。
 eyebrow: 机构合作
-title: 世界级导师 · 顶级国际舞台，由 WinPlus 为您的学生交付。
-intro: WinPlus 与学校及教育机构合作，提供从夏校、科研到升学申请的全周期人才培养服务，可使用您的品牌或我们的品牌。交付由我们完成，您获得新增收入与差异化优势，零运营负担。
+title: 无需自建团队，即可拥有世界一流的升学规划与国际项目团队。
+intro: WinPlus 与私立学校合作，提供升学规划、科研、夏校与国际项目，可使用贵校品牌或 WinPlus 品牌。我们负责交付；学生获得顶尖导师与真实舞台，学校获得家长选择您的成果。
 image: /images/uploads/photos/hbs-classroom.webp
 image_alt: WinPlus 学员与导师在哈佛商学院教室
-challenges_title: 为什么是现在
+challenges_title: 私立学校普遍面临的挑战
 challenges:
-- letter: '1'
-  title: 结果落差
-  text: 家长追求顶尖名校结果，而学校与机构难以在内部配齐相应的资源与师资。
-- letter: '2'
-  title: 人才标准之变
-  text: AI 正在重写「优秀」的定义——科研能力、动手创造、全球视野，成为新的竞争力。
-- letter: '3'
-  title: 资源即壁垒
-  text: 真正稀缺的不再是信息，而是触达顶尖的人与舞台的能力。WinPlus 专为弥合这一落差而生。
-benefits_title: 为什么与我们合作
+- title: 升学指导力量有限
+  text: 一位升学老师面对数十名学生，难以为每个人提供美国一线、熟悉藤校的指导，更难覆盖美、英等多个体系。
+- title: 夏校项目难以落地
+  text: 国际出行、合作大学、安全与后勤都需要专业团队，而涉及未成年人，责任重大。
+- title: 升学成果决定招生
+  text: 家长依据升学成果选择学校。缺少名校录取记录，招生与留存都会受到影响。
+benefits_title: 学校为什么选择 WinPlus
 benefits:
-- title: 新增收入，零运营负担
-  text: 交付由我们完成，您无需自建团队。
-- title: 即刻差异化
-  text: 一项竞争对手难以复制的服务，立即成为您的优势。
-- title: 提升招生与留存
-  text: 顶尖成果，正是家长愿意付费、愿意长期留下的理由。
-- title: 品牌赋能
-  text: 让哈佛、NASA 级别的资源，呈现在您的品牌之下。
+- title: 顶尖导师网络
+  text: 来自美国顶尖大学与企业的教授、科学家、校友面试官和行业领袖，直接指导贵校学生。
+- title: 安全与合规
+  text: 员工与导师背景审查、未成年人保护规范与全程监护出行，均写入合作协议。
+- title: 可验证的成果
+  text: 87 封藤校与前 30 名校录取，学生登上从迪拜到联合国总部的国际会议舞台。
+- title: 灵活的合作模式
+  text: 推荐、联合品牌或白标合作，由您决定 WinPlus 的可见度以及家长关系归属。
+- title: 中美新三地经验
+  text: 扎根波士顿与北京的双语团队，深谙两地家庭、学校与大学。
 models_title: 合作模式
 models:
 - title: 推荐合作（Referral）
@@ -46,35 +45,6 @@ roles:
   - 国际资源
   - 质量管控
 models_note: 每一项合作均配备正式合同、学生保护机制与质量标准。
-services_title: 可合作的服务
-services_intro: 五大核心服务，覆盖探索、实践、申请与长期成长路径。
-services_table:
-- service: 名校深度研学与夏校
-  ages: 12–18 岁
-  outcomes: 全球议题训练 · 结业证明 · 名校招生说明会
-  edge: 名校与行业背景导师参与，项目化课程设计
-  models: 推荐 · 联合品牌
-- service: 科研与硅谷实习
-  ages: 10–12 年级及以上
-  outcomes: 科研论文 · 导师推荐信
-  edge: 真实课题 + 在职科学家导师深度参与 + 过程管理
-  models: 联合品牌 · 白标
-- service: 美加英澳升学规划
-  ages: 本硕博申请者
-  outcomes: 定制策略 · 50+ 文书精修机会
-  edge: 藤校校友面试官 + 八大要素体系
-  models: 白标 · 联合品牌
-- service: 全球领导力会议
-  ages: 初高中生
-  outcomes: 国际会议 / 论坛参与 · 议题研究 · 发言 / 展示机会
-  edge: 真实平台资源对接 + 议题培训 + 全程辅导
-  models: 联合品牌 · 白标
-- service: 文书 / 标化 / 作品集
-  ages: 12–18 岁
-  outcomes: 标化提分 · 成长路线图
-  edge: 中美团队串联全程叙事
-  models: 推荐 · 白标
-services_note: 每一项服务均由 WinPlus 交付并质量管控。具体交付内容因项目类型、学生基础与申请周期而异，最终以合作协议及项目说明为准。
 track_title: 成果与公信力
 track:
 - number: 100+
@@ -96,21 +66,11 @@ steps:
   text: 从一次低门槛的推荐合作试点开始——投入小，见效真。
 - title: 扩大规模
   text: 根据成果逐步扩展至更多服务与学生。
-ideal_partners: 理想合作伙伴：中国、美国、新加坡等地希望提供高端升学成果与差异化项目的私立学校及教育机构。
+ideal_partners: 理想合作伙伴：中国、美国与新加坡规模为 50–500 名学生的私立学校，以及追求优质成果与差异化项目的教育机构。
 contact_title: 洽谈合作
 contact_name: 郭琪 Cathy Guo
-contact_role: 联合创始人兼执行总裁
+contact_role: 联合创始人
 contact_email: cathy.guo@winplus.org
-trusted_label: 合作伙伴：
-school_logos:
-- name: '[合作伙伴标识]'
-  logo: ''
-- name: '[合作伙伴标识]'
-  logo: ''
-- name: '[合作伙伴标识]'
-  logo: ''
-- name: '[合作伙伴标识]'
-  logo: ''
 primary_cta: 洽谈合作
 primary_link: contact.html?interest=%E5%AD%A6%E6%A0%A1%E5%90%88%E4%BD%9C
 secondary_cta: 下载合作方案（PDF）
@@ -120,3 +80,25 @@ case_title: 为中国人民大学附属中学打造 12 天美国研学项目
 case_text: 2024 年 7 月，WinPlus 为人大附中 15 名学生及带队老师联合打造全球胜任力研学之旅：走访哈佛、MIT、耶鲁、普林斯顿、宾大等十所名校，参访麦肯锡、Meta、国际货币基金组织与 NASA，由 WinPlus 导师与人大附中校友授课。
 case_image: /images/uploads/photos/amnh-2024.webp
 case_link: events/us-east-coast-study-tour.html
+challenges_intro: 家长期待名校录取与国际经历，而自建团队既慢、成本高，风险也大。
+types_title: 合作类型
+types_intro: 可从单项合作开始，也可组合为面向学生的全周期项目。
+types:
+- title: 升学规划合作
+  text: 与校内升学老师协作，提供美、英、加、澳申请策略：选校、文书、面试与家长沟通，并有藤校校友面试官参与。
+- title: 一站式夏校项目
+  text: 美国顶尖大学深度研学，由 WinPlus 全程设计与运营：行程、导师、实验室与招生讲座、监护与后勤。
+- title: 跨境交流
+  text: 交流访问与联合项目，连接贵校学生与美国、中国、新加坡的同龄人、大学和机构。
+- title: 课程拓展
+  text: 导师带领的科研、实习、全球议题培训与国际会议准备，与学年课程并行开展。
+value_title: 学校能获得什么
+value:
+- title: 新增收入，零运营负担
+  text: 交付由我们负责，无需自建团队。
+- title: 即刻形成差异化
+  text: 竞争对手难以复制的项目，立刻成为您的优势。
+- title: 提升招生与留存
+  text: 名校成果是家长选择学校、也是留下来的原因。
+- title: 品牌赋能
+  text: 世界一流的导师与名校项目，以贵校品牌呈现。

@@ -43,26 +43,24 @@
         <h2>{{ _("Who should apply") }}</h2>
         <ul class="check-list">{% for e in item.eligibility %}<li>{{ e }}</li>{% endfor %}</ul>
       </section>
-
-      <section id="mentor">
-        <p class="eyebrow">{{ _("Your mentor") }}</p>
-        {% if m %}
-        <div class="mentor">
-          {% if m.photo %}<div class="media">{{ photo(m.photo, m.name, "", 500) }}</div>{% else %}<div class="avatar" aria-hidden="true">{{ m.initials }}</div>{% endif %}
-          <div>
-            <h3>{{ m.name }}</h3>
-            <p class="role">{{ m.title }}{% if m.affiliation %} · {{ m.affiliation }}{% endif %}</p>
-            <div class="prose">{{ m.bio | md | safe }}</div>
-            <p style="margin-top:1.25rem">{{ arrow(_("Meet the full team"), "team.html#" ~ m.id) }}</p>
-          </div>
-        </div>
-        {% else %}
-        <div class="mentor"><div class="avatar" aria-hidden="true">M</div><div><h3>{{ item.mentor_note }}</h3><p>{{ _("Full mentor profile available on request.") }}</p></div></div>
-        {% endif %}
-      </section>
     </div>
 
     <aside class="detail-side">
+      <div class="side-card mentor-card" id="mentor">
+        <p class="eyebrow">{{ _("Your mentor") }}</p>
+        {% if m %}
+        {% if m.photo %}<div class="mentor-photo">{{ photo(m.photo, m.name, "", 500, sizes="320px") }}</div>{% endif %}
+        <h3>{{ m.name }}</h3>
+        <p class="role">{{ m.title }}{% if m.affiliation %} · {{ m.affiliation }}{% endif %}</p>
+        {% set paras = (m.bio or "").split("\n\n") %}
+        <div class="small muted">{{ paras[0] | md | safe }}</div>
+        {% if paras | length > 1 %}<details class="mentor-more"><summary>{{ _("Full bio") }}</summary><div class="small muted">{{ paras[1:] | join("\n\n") | md | safe }}</div></details>{% endif %}
+        <p style="margin-top:1rem">{{ arrow(_("Meet the full team"), "team.html#" ~ m.id) }}</p>
+        {% else %}
+        <h3>{{ item.mentor_note }}</h3>
+        <p class="small muted">{{ _("Full mentor profile available on request.") }}</p>
+        {% endif %}
+      </div>
       <div class="side-card side-sticky">
         {{ status_badge(item.status, true) }}
         <h2 class="h3" style="margin-top:1.25rem">{{ item.title }}</h2>

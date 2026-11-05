@@ -4,16 +4,15 @@ short_title: Campus Immersion
 seo_title: Harvard, MIT, Yale & Stanford Summer Immersion | WinPlus
 meta_description: 'A 12-day summer immersion at Harvard, MIT, Yale, Stanford and Silicon Valley: labs, professor seminars, admissions sessions and a personal plan.'
 eyebrow: Campus Immersion
-summary: Not a campus tour. Twelve days inside the labs, classrooms and companies of Harvard, MIT, Yale, Stanford and Silicon Valley, discovering what these places are really like and
-  where you belong.
-image: /images/uploads/photos/immersion-group.webp
-image_alt: WinPlus Campus Immersion students and mentors
+summary: Not a campus tour. Twelve days inside the labs, classrooms and companies of Harvard, MIT, Yale, Stanford and Silicon Valley, discovering what these places are really like and where you belong.
+image: /images/uploads/campus/stanford-arcade.webp
+image_alt: Main Quad arcade and Hoover Tower, Stanford University
 kicker: Beyond the campus tour
 card_text: Labs, seminars with professors and candid conversations with students at Harvard, MIT, Yale and Stanford.
 statement: You can't choose the right university from a brochure. You have to step inside.
-statement_text: Campus Immersion takes students beyond the visitor route. They take part in lab and team sessions, learn from professors and mentors in their classrooms, talk with current
-  students about real campus life, and hear directly from admissions teams. Guided by WinPlus mentors throughout, students come home with a clear sense of which university culture fits
-  them, and a personal plan to get there.
+statement_text: Campus Immersion takes students beyond the visitor route. They take part in lab and team sessions, learn from professors and mentors in their classrooms, talk with current students about
+  real campus life, and hear directly from admissions teams. Guided by WinPlus mentors throughout, students come home with a clear sense of which university culture fits them, and a personal plan to get
+  there.
 facts:
 - number: '12'
   label: Days across Boston, New York and California
@@ -26,11 +25,11 @@ facts:
 features_title: What makes it different
 features:
 - title: Inside the lab, not outside the gate
-  text: Students visit research labs such as the MIT Media Lab, aerospace and engineering labs, and Stanford's stem-cell research institute, where researchers explain their work and
-    students take on hands-on challenges.
+  text: Students visit research labs such as the MIT Media Lab, aerospace and engineering labs, and Stanford's stem-cell research institute, where researchers explain their work and students take on hands-on
+    challenges.
 - title: Taught by the people who teach there
-  text: Seminars with WinPlus mentors and guests from Harvard, MIT, Yale and Stanford, including a former NASA astronaut and MIT professor, on leadership, international relations, AI,
-    gene editing and space engineering.
+  text: Seminars with WinPlus mentors and guests from Harvard, MIT, Yale and Stanford, including a former NASA astronaut and MIT professor, on leadership, international relations, AI, gene editing and space
+    engineering.
 - title: The real student experience
   text: Meals in university dining halls, conversations with current students and alumni, and time to experience each campus's culture, pace and community first-hand.
 - title: Admissions, demystified
@@ -38,23 +37,7 @@ features:
 - title: Where ideas become industries
   text: Visits to technology companies and organisations such as Meta, Apple and Google offices, NASA, the United Nations Headquarters and a Hollywood production company.
 - title: Global competency, certified
-  text: Coursework built on four global competencies (global analysis, cultural empathy, diverse communication and sustainable action), with a WinPlus Global Competency Certificate on
-    completion.
-itinerary_title: The journey at a glance
-itinerary_note: Sample itinerary based on the 2025 program. Each year's route is confirmed before departure.
-itinerary:
-- city: New York
-  days: Days 1–4
-  text: Columbia and NYU seminars, the United Nations Headquarters, Wall Street and the city's great museums.
-- city: New Haven & Boston
-  days: Days 5–6
-  text: 'Yale, Harvard and MIT: lab visits, classes with mentors, Harvard Kennedy School and the Charles River.'
-- city: Silicon Valley
-  days: Days 7–9
-  text: Stanford, UC Berkeley, technology company headquarters and NASA Ames.
-- city: Los Angeles
-  days: Days 10–12
-  text: UCLA and USC, a Hollywood production company and the closing ceremony.
+  text: Coursework built on four global competencies (global analysis, cultural empathy, diverse communication and sustainable action), with a WinPlus Global Competency Certificate on completion.
 outcomes_title: What students bring home
 outcomes:
 - A clear sense of which universities, and which university cultures, fit them
@@ -99,12 +82,12 @@ testimonials:
 - quote: I came to understand that US universities want to know who I am, what makes me unique, who I hope to become and what I hope to contribute to the world.
   name: Student participant
   role: Campus Immersion 2025
-- quote: Thank you to every teacher for such thoughtful care. Our child cried on returning home, not wanting to leave the teachers and new friends. The program was full, rich and warm,
-    and our child grew so much.
+- quote: Thank you to every teacher for such thoughtful care. Our child cried on returning home, not wanting to leave the teachers and new friends. The program was full, rich and warm, and our child grew
+    so much.
   name: Parent
   role: Campus Immersion 2025
-- quote: At MIT's Sea Grant lab, a professor explained that a robot sitting in the corner could carry sensors three kilometres below the ocean surface. Only then did I grasp how deep
-    the research at a place like MIT really goes.
+- quote: At MIT's Sea Grant lab, a professor explained that a robot sitting in the corner could carry sensors three kilometres below the ocean surface. Only then did I grasp how deep the research at a place
+    like MIT really goes.
   name: Student participant
   role: US Study Tour 2024
 next:
@@ -114,12 +97,11 @@ next:
   link: contact.html?interest=Global%20Experiences&program=Campus%20Immersion%202027
 faq:
 - q: Who is Campus Immersion for?
-  a: Middle and high school students (typically ages 12–18) who want to understand top US universities first-hand before applying. All sessions are in English; WinPlus staff support
-    students throughout.
+  a: Middle and high school students (typically ages 12–18) who want to understand top US universities first-hand before applying. All sessions are in English; WinPlus staff support students throughout.
 - q: How many students are in a cohort?
   a: Cohorts are kept small, around 20 students, so every student is known and supported.
 - q: Who travels with the students?
   a: WinPlus staff accompany the cohort from departure, and WinPlus mentors lead the program in the US. [Add staff ratio and safety details.]
 - q: What does the program cost?
-  a: Fees vary by year and route and typically include coursework, accommodation, ground transport, meals and tickets. International flights, visa fees and travel insurance are not included;
-    our team helps families arrange them. Contact us for the current fee.
+  a: Fees vary by year and route and typically include coursework, accommodation, ground transport, meals and tickets. International flights, visa fees and travel insurance are not included; our team helps
+    families arrange them. Contact us for the current fee.

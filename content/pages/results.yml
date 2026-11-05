@@ -219,7 +219,7 @@ offer_tiers:
     note: ''
 offers_note: Selected list of undergraduate and graduate offers. US categories follow the U.S. News & World Report 2027 Best National Universities ranking.
 cases_title: Case studies
-cases_intro: 'Two very different starting points, one approach: a plan built around the student.'
+cases_intro: 'Three very different starting points, one approach: a plan built around the student.'
 cases:
 - tag: Ivy League
   title: From top of the class to Yale, with scholarship
@@ -236,6 +236,14 @@ cases:
   change: TOEFL 99 and SAT 1400 (superscore); a published GIS research paper; spoke at a UN climate conference; a photography exhibition and published work; charity cello concerts at a children's hospital.
   outcome: Admitted to UC Davis, Boston University, Purdue, Northeastern and Ohio State, with scholarships of $80,000 (UC Riverside), $60,000 (UC Santa Cruz) and $40,000 (Syracuse). Waitlisted at UCLA and
     UC San Diego.
+- tag: US + UK dual track
+  title: Cambridge astrophysics and UC Berkeley, from one profile
+  start: A student passionate about astronomy who wanted to keep both the US and UK open, two systems that reward very different things.
+  strategy: 'One profile built to serve both: a 2024 East Coast campus immersion, then in 2025 a small-group research project with a NASA scientist on exoplanet telescope design using CODE V optical software,
+    and a recommendation from that mentor.'
+  change: Research depth that powered the UK personal statement and the Cambridge interview, where the student drew on work on the crystal packing of mirror materials, and a US narrative uniting astronomy
+    with STEM education.
+  outcome: Offer from the University of Cambridge (astrophysics) and admitted to UC Berkeley.
 stories_title: Student stories
 stories:
 - tag: Global stage

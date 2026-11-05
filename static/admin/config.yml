@@ -251,6 +251,10 @@ collections:
       widget: object
       collapsed: true
       fields:
+      - name: consent
+        label: Form notices & consents (legal)
+        required: false
+        widget: string
       - name: title
         label: Title
         required: false
@@ -500,25 +504,6 @@ collections:
         label: Text
         required: false
         widget: text
-      - name: highlight
-        label: Highlight
-        required: false
-        widget: boolean
-      - name: links
-        label: Links
-        required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: label
-          label: Label
-          required: false
-          widget: string
-        - name: link
-          label: Link (e.g. results.html)
-          required: false
-          widget: string
-        summary: '{{fields.label}}'
       summary: '{{fields.title}}'
     - name: compare
       label: Compare
@@ -623,18 +608,6 @@ collections:
       label: Photo description (accessibility & SEO)
       required: false
       widget: string
-    - name: summary_eyebrow
-      label: Summary eyebrow
-      required: false
-      widget: string
-    - name: summary_statement
-      label: Summary statement
-      required: false
-      widget: string
-    - name: summary_text
-      label: Summary text
-      required: false
-      widget: markdown
     - name: programs_eyebrow
       label: Programs eyebrow
       required: false
@@ -647,75 +620,6 @@ collections:
       label: Programs intro
       required: false
       widget: string
-    - name: why_eyebrow
-      label: Why eyebrow
-      required: false
-      widget: string
-    - name: why_title
-      label: Why title
-      required: false
-      widget: string
-    - name: why
-      label: Why
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: title
-        label: Title
-        required: false
-        widget: string
-      - name: text
-        label: Text
-        required: false
-        widget: text
-      summary: '{{fields.title}}'
-    - name: how_eyebrow
-      label: How eyebrow
-      required: false
-      widget: string
-    - name: how_title
-      label: How title
-      required: false
-      widget: string
-    - name: how_intro
-      label: How intro
-      required: false
-      widget: string
-    - name: how
-      label: How
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: title
-        label: Title
-        required: false
-        widget: string
-      - name: text
-        label: Text
-        required: false
-        widget: text
-      - name: highlight
-        label: Highlight
-        required: false
-        widget: boolean
-      - name: links
-        label: Links
-        required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: label
-          label: Label
-          required: false
-          widget: string
-        - name: link
-          label: Link (e.g. results.html)
-          required: false
-          widget: string
-        summary: '{{fields.label}}'
-      summary: '{{fields.title}}'
     - name: results_eyebrow
       label: Results eyebrow
       required: false
@@ -763,6 +667,33 @@ collections:
       label: Button link
       required: false
       widget: string
+    - name: approach_eyebrow
+      label: Approach eyebrow
+      required: false
+      widget: string
+    - name: approach_title
+      label: Approach title
+      required: false
+      widget: string
+    - name: approach_text
+      label: Approach text
+      required: false
+      widget: text
+    - name: approach
+      label: Approach
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
   - name: contact
     label: Book Consultation (form)
     file: content/pages/contact.yml
@@ -1180,10 +1111,6 @@ collections:
           label: Alt
           required: false
           widget: string
-        - name: caption
-          label: Caption
-          required: false
-          widget: string
         summary: '{{fields.image}}'
     - name: results
       label: Results
@@ -1262,10 +1189,6 @@ collections:
         widget: list
         collapsed: true
         fields:
-        - name: kicker
-          label: Kicker
-          required: false
-          widget: string
         - name: title
           label: Title
           required: false
@@ -1359,6 +1282,22 @@ collections:
         label: Link (e.g. results.html)
         required: false
         widget: string
+      - name: early_title
+        label: Early title
+        required: false
+        widget: string
+      - name: early_text
+        label: Early text
+        required: false
+        widget: text
+      - name: early_cta
+        label: Early cta
+        required: false
+        widget: string
+      - name: early_link
+        label: Early link
+        required: false
+        widget: string
       - name: steps
         label: Steps
         required: false
@@ -1373,25 +1312,6 @@ collections:
           label: Text
           required: false
           widget: text
-        - name: highlight
-          label: Highlight
-          required: false
-          widget: boolean
-        - name: links
-          label: Links
-          required: false
-          widget: list
-          collapsed: true
-          fields:
-          - name: label
-            label: Label
-            required: false
-            widget: string
-          - name: link
-            label: Link (e.g. results.html)
-            required: false
-            widget: string
-          summary: '{{fields.label}}'
         summary: '{{fields.title}}'
     - name: team
       label: Team
@@ -1480,6 +1400,32 @@ collections:
         required: false
         widget: image
         choose_url: true
+    - name: events
+      label: Events
+      required: false
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the title
+        required: false
+        widget: string
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: intro
+        label: Intro text
+        required: false
+        widget: text
+      - name: link_text
+        label: Link text
+        required: false
+        widget: string
+      - name: link
+        label: Link (e.g. results.html)
+        required: false
+        widget: string
   - name: insights
     label: Insights (page text)
     file: content/pages/insights.yml
@@ -1739,6 +1685,11 @@ collections:
         label: Winplus rate
         required: false
         widget: string
+      - name: logo
+        label: Logo file (PNG/SVG, transparent background)
+        required: false
+        widget: image
+        choose_url: true
       summary: '{{fields.name}}'
     - name: footnote
       label: Footnote
@@ -1755,7 +1706,7 @@ collections:
     - name: offers_intro
       label: Offers intro
       required: false
-      widget: string
+      widget: text
     - name: offer_tiers
       label: Offer tiers
       required: false
@@ -1829,15 +1780,6 @@ collections:
         label: Outcome
         required: false
         widget: text
-      - name: image
-        label: Photo (upload, or paste an image link)
-        required: false
-        widget: image
-        choose_url: true
-      - name: image_alt
-        label: Photo description (accessibility & SEO)
-        required: false
-        widget: string
       summary: '{{fields.title}}'
     - name: stories_title
       label: Stories title
@@ -1957,10 +1899,6 @@ collections:
       widget: list
       collapsed: true
       fields:
-      - name: letter
-        label: Letter
-        required: false
-        widget: string
       - name: title
         label: Title
         required: false
@@ -2038,45 +1976,6 @@ collections:
       label: Models note
       required: false
       widget: string
-    - name: services_title
-      label: Services title
-      required: false
-      widget: string
-    - name: services_intro
-      label: Services intro
-      required: false
-      widget: string
-    - name: services_table
-      label: Services table
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: service
-        label: Service
-        required: false
-        widget: string
-      - name: ages
-        label: Ages
-        required: false
-        widget: string
-      - name: outcomes
-        label: Outcomes
-        required: false
-        widget: string
-      - name: edge
-        label: Edge
-        required: false
-        widget: string
-      - name: models
-        label: Models
-        required: false
-        widget: string
-      summary: '{{fields.service}}'
-    - name: services_note
-      label: Services note
-      required: false
-      widget: text
     - name: track_title
       label: Track title
       required: false
@@ -2139,26 +2038,6 @@ collections:
       label: Contact email
       required: false
       widget: string
-    - name: trusted_label
-      label: Trusted label
-      required: false
-      widget: string
-    - name: school_logos
-      label: School logos
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: name
-        label: Name
-        required: false
-        widget: string
-      - name: logo
-        label: Logo file (PNG/SVG, transparent background)
-        required: false
-        widget: image
-        choose_url: true
-      summary: '{{fields.name}}'
     - name: primary_cta
       label: Primary cta
       required: false
@@ -2197,6 +2076,52 @@ collections:
       label: Case link
       required: false
       widget: string
+    - name: challenges_intro
+      label: Challenges intro
+      required: false
+      widget: text
+    - name: types_title
+      label: Types title
+      required: false
+      widget: string
+    - name: types_intro
+      label: Types intro
+      required: false
+      widget: string
+    - name: types
+      label: Types
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
+    - name: value_title
+      label: Value title
+      required: false
+      widget: string
+    - name: value
+      label: Value
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
   - name: team
     label: Our Team (all people)
     file: content/pages/team.yml
@@ -2230,8 +2155,8 @@ collections:
       label: Photo description (accessibility & SEO)
       required: false
       widget: string
-    - name: groups
-      label: Groups
+    - name: people
+      label: People
       required: false
       widget: list
       collapsed: true
@@ -2240,50 +2165,35 @@ collections:
         label: Id
         required: false
         widget: string
+      - name: name
+        label: Name
+        required: false
+        widget: string
+      - name: initials
+        label: Initials
+        required: false
+        widget: string
       - name: title
         label: Title
         required: false
         widget: string
-      - name: intro
-        label: Intro text
+      - name: affiliation
+        label: Affiliation
         required: false
-        widget: text
-      - name: people
-        label: People
+        widget: string
+      - name: photo
+        label: Photo
         required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: id
-          label: Id
-          required: false
-          widget: string
-        - name: name
-          label: Name
-          required: false
-          widget: string
-        - name: initials
-          label: Initials
-          required: false
-          widget: string
-        - name: title
-          label: Title
-          required: false
-          widget: string
-        - name: affiliation
-          label: Affiliation
-          required: false
-          widget: string
-        - name: photo
-          label: Photo
-          required: false
-          widget: image
-          choose_url: true
-        - name: bio
-          label: Full bio
-          required: false
-          widget: markdown
-        summary: '{{fields.title}}'
+        widget: image
+        choose_url: true
+      - name: bio
+        label: Full bio
+        required: false
+        widget: markdown
+      - name: founder
+        label: Founder
+        required: false
+        widget: boolean
       summary: '{{fields.title}}'
     - name: note
       label: Note
@@ -2361,12 +2271,24 @@ collections:
     label: Who
     required: false
     widget: text
-  - name: help
-    label: Help
+  - name: system
+    label: System
+    required: false
+    widget: text
+  - name: challenges_intro
+    label: Challenges intro
+    required: false
+    widget: text
+  - name: challenges
+    label: Challenges
     required: false
     widget: list
     collapsed: true
     fields:
+    - name: challenge
+      label: Challenge
+      required: false
+      widget: string
     - name: title
       label: Title
       required: false
@@ -2376,43 +2298,37 @@ collections:
       required: false
       widget: text
     summary: '{{fields.title}}'
-  - name: highlight
-    label: Highlight
+  - name: timeline_title
+    label: Timeline title
     required: false
-    widget: object
+    widget: string
+  - name: timeline
+    label: Timeline
+    required: false
+    widget: list
     collapsed: true
     fields:
-    - name: label
-      label: Label
-      required: false
-      widget: string
-    - name: title
-      label: Title
+    - name: when
+      label: When
       required: false
       widget: string
     - name: text
       label: Text
       required: false
       widget: text
-  - name: faq
-    label: FAQ (questions & answers)
+    summary: '{{fields.when}}'
+  - name: outcomes_text
+    label: Outcomes text
+    required: false
+    widget: string
+  - name: outcomes
+    label: Outcomes
     required: false
     widget: list
-    collapsed: true
-    fields:
-    - name: q
-      label: Question
-      required: false
+    field:
+      name: item
+      label: Item
       widget: string
-    - name: a
-      label: Answer
-      required: false
-      widget: markdown
-    summary: '{{fields.q}}'
-  - name: lead
-    label: Lead
-    required: false
-    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -2624,33 +2540,6 @@ collections:
       required: false
       widget: text
     summary: '{{fields.title}}'
-  - name: itinerary_title
-    label: Itinerary title
-    required: false
-    widget: string
-  - name: itinerary_note
-    label: Itinerary note
-    required: false
-    widget: text
-  - name: itinerary
-    label: Itinerary
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: city
-      label: City
-      required: false
-      widget: string
-    - name: days
-      label: Days
-      required: false
-      widget: string
-    - name: text
-      label: Text
-      required: false
-      widget: text
-    summary: '{{fields.city}}'
   - name: outcomes_title
     label: Outcomes title
     required: false
@@ -2766,6 +2655,33 @@ collections:
       required: false
       widget: markdown
     summary: '{{fields.q}}'
+  - name: itinerary_title
+    label: Itinerary title
+    required: false
+    widget: string
+  - name: itinerary_note
+    label: Itinerary note
+    required: false
+    widget: text
+  - name: itinerary
+    label: Itinerary
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: city
+      label: City
+      required: false
+      widget: string
+    - name: days
+      label: Days
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.city}}'
   - name: selection_title
     label: Selection title
     required: false
@@ -2874,6 +2790,10 @@ collections:
     label: 'SEO: browser tab & Google title'
     required: false
     widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
   summary: '{{title}}'
   format: yml
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -3375,6 +3295,10 @@ collections:
       widget: object
       collapsed: true
       fields:
+      - name: consent
+        label: Form notices & consents (legal)
+        required: false
+        widget: string
       - name: title
         label: Title
         required: false
@@ -3624,25 +3548,6 @@ collections:
         label: Text
         required: false
         widget: text
-      - name: highlight
-        label: Highlight
-        required: false
-        widget: boolean
-      - name: links
-        label: Links
-        required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: label
-          label: Label
-          required: false
-          widget: string
-        - name: link
-          label: Link (e.g. results.html)
-          required: false
-          widget: string
-        summary: '{{fields.label}}'
       summary: '{{fields.title}}'
     - name: compare
       label: Compare
@@ -3747,18 +3652,6 @@ collections:
       label: Photo description (accessibility & SEO)
       required: false
       widget: string
-    - name: summary_eyebrow
-      label: Summary eyebrow
-      required: false
-      widget: string
-    - name: summary_statement
-      label: Summary statement
-      required: false
-      widget: string
-    - name: summary_text
-      label: Summary text
-      required: false
-      widget: markdown
     - name: programs_eyebrow
       label: Programs eyebrow
       required: false
@@ -3771,75 +3664,6 @@ collections:
       label: Programs intro
       required: false
       widget: string
-    - name: why_eyebrow
-      label: Why eyebrow
-      required: false
-      widget: string
-    - name: why_title
-      label: Why title
-      required: false
-      widget: string
-    - name: why
-      label: Why
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: title
-        label: Title
-        required: false
-        widget: string
-      - name: text
-        label: Text
-        required: false
-        widget: text
-      summary: '{{fields.title}}'
-    - name: how_eyebrow
-      label: How eyebrow
-      required: false
-      widget: string
-    - name: how_title
-      label: How title
-      required: false
-      widget: string
-    - name: how_intro
-      label: How intro
-      required: false
-      widget: string
-    - name: how
-      label: How
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: title
-        label: Title
-        required: false
-        widget: string
-      - name: text
-        label: Text
-        required: false
-        widget: text
-      - name: highlight
-        label: Highlight
-        required: false
-        widget: boolean
-      - name: links
-        label: Links
-        required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: label
-          label: Label
-          required: false
-          widget: string
-        - name: link
-          label: Link (e.g. results.html)
-          required: false
-          widget: string
-        summary: '{{fields.label}}'
-      summary: '{{fields.title}}'
     - name: results_eyebrow
       label: Results eyebrow
       required: false
@@ -3887,6 +3711,33 @@ collections:
       label: Button link
       required: false
       widget: string
+    - name: approach_eyebrow
+      label: Approach eyebrow
+      required: false
+      widget: string
+    - name: approach_title
+      label: Approach title
+      required: false
+      widget: string
+    - name: approach_text
+      label: Approach text
+      required: false
+      widget: string
+    - name: approach
+      label: Approach
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
   - name: contact
     label: Book Consultation (form)
     file: content/zh/pages/contact.yml
@@ -4304,10 +4155,6 @@ collections:
           label: Alt
           required: false
           widget: string
-        - name: caption
-          label: Caption
-          required: false
-          widget: string
         summary: '{{fields.image}}'
     - name: results
       label: Results
@@ -4386,10 +4233,6 @@ collections:
         widget: list
         collapsed: true
         fields:
-        - name: kicker
-          label: Kicker
-          required: false
-          widget: string
         - name: title
           label: Title
           required: false
@@ -4483,6 +4326,22 @@ collections:
         label: Link (e.g. results.html)
         required: false
         widget: string
+      - name: early_title
+        label: Early title
+        required: false
+        widget: string
+      - name: early_text
+        label: Early text
+        required: false
+        widget: string
+      - name: early_cta
+        label: Early cta
+        required: false
+        widget: string
+      - name: early_link
+        label: Early link
+        required: false
+        widget: string
       - name: steps
         label: Steps
         required: false
@@ -4497,25 +4356,6 @@ collections:
           label: Text
           required: false
           widget: text
-        - name: highlight
-          label: Highlight
-          required: false
-          widget: boolean
-        - name: links
-          label: Links
-          required: false
-          widget: list
-          collapsed: true
-          fields:
-          - name: label
-            label: Label
-            required: false
-            widget: string
-          - name: link
-            label: Link (e.g. results.html)
-            required: false
-            widget: string
-          summary: '{{fields.label}}'
         summary: '{{fields.title}}'
     - name: team
       label: Team
@@ -4604,6 +4444,32 @@ collections:
         required: false
         widget: image
         choose_url: true
+    - name: events
+      label: Events
+      required: false
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the title
+        required: false
+        widget: string
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: intro
+        label: Intro text
+        required: false
+        widget: text
+      - name: link_text
+        label: Link text
+        required: false
+        widget: string
+      - name: link
+        label: Link (e.g. results.html)
+        required: false
+        widget: string
   - name: insights
     label: Insights (page text)
     file: content/zh/pages/insights.yml
@@ -4863,6 +4729,11 @@ collections:
         label: Winplus rate
         required: false
         widget: string
+      - name: logo
+        label: Logo file (PNG/SVG, transparent background)
+        required: false
+        widget: image
+        choose_url: true
       summary: '{{fields.name}}'
     - name: footnote
       label: Footnote
@@ -4953,15 +4824,6 @@ collections:
         label: Outcome
         required: false
         widget: text
-      - name: image
-        label: Photo (upload, or paste an image link)
-        required: false
-        widget: image
-        choose_url: true
-      - name: image_alt
-        label: Photo description (accessibility & SEO)
-        required: false
-        widget: string
       summary: '{{fields.title}}'
     - name: stories_title
       label: Stories title
@@ -5081,10 +4943,6 @@ collections:
       widget: list
       collapsed: true
       fields:
-      - name: letter
-        label: Letter
-        required: false
-        widget: string
       - name: title
         label: Title
         required: false
@@ -5162,45 +5020,6 @@ collections:
       label: Models note
       required: false
       widget: string
-    - name: services_title
-      label: Services title
-      required: false
-      widget: string
-    - name: services_intro
-      label: Services intro
-      required: false
-      widget: string
-    - name: services_table
-      label: Services table
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: service
-        label: Service
-        required: false
-        widget: string
-      - name: ages
-        label: Ages
-        required: false
-        widget: string
-      - name: outcomes
-        label: Outcomes
-        required: false
-        widget: string
-      - name: edge
-        label: Edge
-        required: false
-        widget: string
-      - name: models
-        label: Models
-        required: false
-        widget: string
-      summary: '{{fields.service}}'
-    - name: services_note
-      label: Services note
-      required: false
-      widget: string
     - name: track_title
       label: Track title
       required: false
@@ -5263,26 +5082,6 @@ collections:
       label: Contact email
       required: false
       widget: string
-    - name: trusted_label
-      label: Trusted label
-      required: false
-      widget: string
-    - name: school_logos
-      label: School logos
-      required: false
-      widget: list
-      collapsed: true
-      fields:
-      - name: name
-        label: Name
-        required: false
-        widget: string
-      - name: logo
-        label: Logo file (PNG/SVG, transparent background)
-        required: false
-        widget: image
-        choose_url: true
-      summary: '{{fields.name}}'
     - name: primary_cta
       label: Primary cta
       required: false
@@ -5321,6 +5120,52 @@ collections:
       label: Case link
       required: false
       widget: string
+    - name: challenges_intro
+      label: Challenges intro
+      required: false
+      widget: string
+    - name: types_title
+      label: Types title
+      required: false
+      widget: string
+    - name: types_intro
+      label: Types intro
+      required: false
+      widget: string
+    - name: types
+      label: Types
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
+    - name: value_title
+      label: Value title
+      required: false
+      widget: string
+    - name: value
+      label: Value
+      required: false
+      widget: list
+      collapsed: true
+      fields:
+      - name: title
+        label: Title
+        required: false
+        widget: string
+      - name: text
+        label: Text
+        required: false
+        widget: text
+      summary: '{{fields.title}}'
   - name: team
     label: Our Team (all people)
     file: content/zh/pages/team.yml
@@ -5354,8 +5199,8 @@ collections:
       label: Photo description (accessibility & SEO)
       required: false
       widget: string
-    - name: groups
-      label: Groups
+    - name: people
+      label: People
       required: false
       widget: list
       collapsed: true
@@ -5364,54 +5209,39 @@ collections:
         label: Id
         required: false
         widget: string
+      - name: name
+        label: Name
+        required: false
+        widget: string
+      - name: initials
+        label: Initials
+        required: false
+        widget: string
       - name: title
         label: Title
         required: false
         widget: string
-      - name: intro
-        label: Intro text
+      - name: affiliation
+        label: Affiliation
         required: false
-        widget: text
-      - name: people
-        label: People
+        widget: string
+      - name: photo
+        label: Photo
         required: false
-        widget: list
-        collapsed: true
-        fields:
-        - name: id
-          label: Id
-          required: false
-          widget: string
-        - name: name
-          label: Name
-          required: false
-          widget: string
-        - name: initials
-          label: Initials
-          required: false
-          widget: string
-        - name: title
-          label: Title
-          required: false
-          widget: string
-        - name: affiliation
-          label: Affiliation
-          required: false
-          widget: string
-        - name: photo
-          label: Photo
-          required: false
-          widget: image
-          choose_url: true
-        - name: bio
-          label: Full bio
-          required: false
-          widget: markdown
-        - name: education
-          label: Education
-          required: false
-          widget: string
-        summary: '{{fields.title}}'
+        widget: image
+        choose_url: true
+      - name: bio
+        label: Full bio
+        required: false
+        widget: markdown
+      - name: education
+        label: Education
+        required: false
+        widget: string
+      - name: founder
+        label: Founder
+        required: false
+        widget: boolean
       summary: '{{fields.title}}'
     - name: note
       label: Note
@@ -5489,12 +5319,24 @@ collections:
     label: Who
     required: false
     widget: text
-  - name: help
-    label: Help
+  - name: system
+    label: System
+    required: false
+    widget: string
+  - name: challenges_intro
+    label: Challenges intro
+    required: false
+    widget: string
+  - name: challenges
+    label: Challenges
     required: false
     widget: list
     collapsed: true
     fields:
+    - name: challenge
+      label: Challenge
+      required: false
+      widget: string
     - name: title
       label: Title
       required: false
@@ -5504,43 +5346,37 @@ collections:
       required: false
       widget: text
     summary: '{{fields.title}}'
-  - name: highlight
-    label: Highlight
+  - name: timeline_title
+    label: Timeline title
     required: false
-    widget: object
+    widget: string
+  - name: timeline
+    label: Timeline
+    required: false
+    widget: list
     collapsed: true
     fields:
-    - name: label
-      label: Label
-      required: false
-      widget: string
-    - name: title
-      label: Title
+    - name: when
+      label: When
       required: false
       widget: string
     - name: text
       label: Text
       required: false
       widget: text
-  - name: faq
-    label: FAQ (questions & answers)
+    summary: '{{fields.when}}'
+  - name: outcomes_text
+    label: Outcomes text
+    required: false
+    widget: string
+  - name: outcomes
+    label: Outcomes
     required: false
     widget: list
-    collapsed: true
-    fields:
-    - name: q
-      label: Question
-      required: false
+    field:
+      name: item
+      label: Item
       widget: string
-    - name: a
-      label: Answer
-      required: false
-      widget: markdown
-    summary: '{{fields.q}}'
-  - name: lead
-    label: Lead
-    required: false
-    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -5752,33 +5588,6 @@ collections:
       required: false
       widget: text
     summary: '{{fields.title}}'
-  - name: itinerary_title
-    label: Itinerary title
-    required: false
-    widget: string
-  - name: itinerary_note
-    label: Itinerary note
-    required: false
-    widget: string
-  - name: itinerary
-    label: Itinerary
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: city
-      label: City
-      required: false
-      widget: string
-    - name: days
-      label: Days
-      required: false
-      widget: string
-    - name: text
-      label: Text
-      required: false
-      widget: text
-    summary: '{{fields.city}}'
   - name: outcomes_title
     label: Outcomes title
     required: false
@@ -5894,6 +5703,33 @@ collections:
       required: false
       widget: markdown
     summary: '{{fields.q}}'
+  - name: itinerary_title
+    label: Itinerary title
+    required: false
+    widget: string
+  - name: itinerary_note
+    label: Itinerary note
+    required: false
+    widget: string
+  - name: itinerary
+    label: Itinerary
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: city
+      label: City
+      required: false
+      widget: string
+    - name: days
+      label: Days
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.city}}'
   - name: selection_title
     label: Selection title
     required: false
@@ -5989,7 +5825,7 @@ collections:
   - name: apply_link
     label: Apply link
     required: false
-    widget: text
+    widget: string
   - name: inquire_link
     label: Inquire link
     required: false
@@ -5998,6 +5834,14 @@ collections:
     label: Register url
     required: false
     widget: string
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
   summary: '{{title}}'
   format: yml
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

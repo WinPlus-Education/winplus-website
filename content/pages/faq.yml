@@ -6,22 +6,22 @@ intro: Everything families ask us most, in one place. Can't find your answer? Ta
 general_title: About WinPlus
 general:
 - q: What is WinPlus?
-  a: WinPlus Education and Technology Inc. is a boutique education consultancy and talent-development platform founded in 2020 in Harvard Square, Cambridge, Massachusetts, with a team
-    in Beijing. We offer admissions counseling from US high school to graduate school, online research and internships, campus immersion at leading US universities, and global leadership
-    conferences.
-- q: What makes WinPlus different from other admissions consultants?
-  a: 'Three things: a US-based team with first-hand insight each admissions cycle; mentors from Harvard, MIT, Yale and Stanford who work with students directly; and bespoke plans that
-    build the profile through our own research, immersion and conference programs, rather than forcing students into a template.'
-- q: Who are the WinPlus mentors?
-  a: Our mentors and advisors include MIT and Harvard professors, a former NASA astronaut, NASA scientists, Ivy League alumni interviewers, and engineers and researchers with backgrounds
-    at Meta, Microsoft, Apple, Google and Bloomberg. See [Our Team](team.html).
-- q: Where are you located, and do you work with international families?
-  a: Our US headquarters is in Harvard Square, Cambridge (Boston), and our China headquarters is in Beijing. We work with families in the US, mainland China, Hong Kong, Singapore and
-    beyond, mostly online and across time zones.
+  a: WinPlus Education and Technology Inc. is a boutique education consultancy and talent-development platform, founded in 2020 in Harvard Square by Harvard Kennedy School graduates, with teams in Boston
+    and Beijing. We combine admissions counseling from US high school to graduate school with mentor-led research and internships, campus immersion and global leadership conferences.
+- q: What makes WinPlus different?
+  a: 'Most consultants edit applications. We build what goes into them: our own research, internship, immersion and conference programs, led by mentors from top universities and companies, coordinated in
+    one plan by one team that knows the student. And because our team lives in the US, our insight comes from the ground, every cycle.'
+- q: Who do you work with?
+  a: Students from middle school to graduate school, and their families, in the US, mainland China, Hong Kong, Singapore and beyond. We also partner with private schools to deliver counseling and global
+    programs to their students.
+- q: Who are the mentors?
+  a: University professors, a former NASA astronaut, NASA scientists, alumni interviewers, and engineers and researchers from leading technology and finance companies. See [Our Team](team.html).
+- q: Do you work with families outside the US?
+  a: Yes. Most sessions run online across time zones, with in-person meetings in Boston and Beijing and during our programs in the US.
 - q: Does WinPlus guarantee admission?
-  a: No. No ethical counselor can guarantee admission to any institution. Individual results vary and past results do not guarantee future outcomes.
+  a: No. No ethical counselor can. Individual results vary, and past results do not guarantee future outcomes.
 - q: How do I get started?
-  a: Book a free strategy session. We'll learn about the student's goals and current profile, and recommend next steps with no commitment required.
+  a: Book a free strategy session. We learn about the student's goals and current profile and recommend clear next steps, with no commitment required.
 sections:
 - id: admissions
   title: Admissions Counseling

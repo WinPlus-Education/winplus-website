@@ -38,10 +38,10 @@ nav:
     match: research/
     children:
       - { label: 人工智能与科技, link: "research.html?industry=ai-technology#programs" }
-      - { label: 商业与金融, link: "research.html?industry=business-finance#programs" }
-      - { label: 科学与航天, link: "research.html?industry=science-space#programs" }
       - { label: 艺术与传媒, link: "research.html?industry=arts-media#programs" }
+      - { label: 商业与金融, link: "research.html?industry=business-finance#programs" }
       - { label: 政策与全球事务, link: "research.html?industry=policy-global-affairs#programs" }
+      - { label: 科学与航天, link: "research.html?industry=science-space#programs" }
   - label: 国际体验
     link: experiences.html
     children:

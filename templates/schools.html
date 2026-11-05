@@ -1,48 +1,49 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, values, journey, marquee, cta_band with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, values, pillars, journey, cta_band with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block content %}
 {{ page_hero(page, [[_("About Us"), "about.html"], [page.eyebrow, "schools.html"]], btn(page.primary_cta, page.primary_link, "light") ~ (btn(page.secondary_cta, page.secondary_file, "ghost", false) if page.secondary_file else "")) }}
 
 <section class="section">
   <div class="container">
-    {{ head("", page.challenges_title) }}
-    <div class="values">{% for c in page.challenges %}<div class="value reveal"><span class="num" style="color:var(--brass);font-size:1.1rem">{{ "%02d" | format(loop.index) }}</span><h3 style="margin-top:.75rem">{{ c.title }}</h3><p>{{ c.text }}</p></div>{% endfor %}</div>
+    {{ head("", page.challenges_title, page.challenges_intro) }}
+    <div class="challenges">{% for c in page.challenges %}<article class="challenge reveal" style="--i: {{ loop.index0 }};background:var(--ivory)"><p class="challenge-q"><span class="num">{{ "%02d" | format(loop.index) }}</span></p><h3>{{ c.title }}</h3><p>{{ c.text }}</p></article>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section s-ivory">
+  <div class="container">
+    {{ head("", page.types_title, page.types_intro) }}
+    <div class="grid g-4">{% for t in page.types %}<div class="value reveal"><h3>{{ t.title }}</h3><p>{{ t.text }}</p></div>{% endfor %}</div>
   </div>
 </section>
 
 <section class="section s-ink">
   <div class="container">
     {{ head("", page.benefits_title) }}
-    <div class="pillars">{% for b in page.benefits %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ b.title }}</h3><p>{{ b.text }}</p></div>{% endfor %}</div>
+    <div class="pillars pillars-5">{% for b in page.benefits %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ b.title }}</h3><p>{{ b.text }}</p></div>{% endfor %}</div>
   </div>
 </section>
 
 <section class="section">
+  <div class="container">
+    {{ head("", page.value_title) }}
+    <div class="grid g-4">{% for v in page.value %}<div class="value reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p></div>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section s-ivory">
   <div class="container">
     {{ head("", page.models_title) }}
     {{ values(page.models) }}
     <div class="split-intro" style="margin-top:clamp(48px,5vw,80px)">
       <div><h3>{{ page.roles_title }}</h3></div>
       <div class="grid g-2">
-        <div><p class="kicker">{{ _("Partner") }}</p><ul class="check-list">{% for r in page.roles.partner %}<li>{{ r }}</li>{% endfor %}</ul></div>
-        <div><p class="kicker">WinPlus</p><ul class="check-list">{% for r in page.roles.winplus %}<li>{{ r }}</li>{% endfor %}</ul></div>
+        <div><p class="kicker">{{ _("Partner") }}</p><ul class="ticks">{% for r in page.roles.partner %}<li>{{ r }}</li>{% endfor %}</ul></div>
+        <div><p class="kicker">WinPlus</p><ul class="ticks">{% for r in page.roles.winplus %}<li>{{ r }}</li>{% endfor %}</ul></div>
       </div>
     </div>
     <p class="notice">{{ page.models_note }}</p>
-  </div>
-</section>
-
-<section class="section s-ivory">
-  <div class="container">
-    {{ head("", page.services_title, page.services_intro) }}
-    <div class="table-wrap">
-      <table class="table">
-        <thead><tr><th>{{ _("Service") }}</th><th>{{ _("For") }}</th><th>{{ _("Key outcomes") }}</th><th>{{ _("Why it's hard to copy") }}</th><th>{{ _("Models") }}</th></tr></thead>
-        <tbody>{% for s in page.services_table %}<tr><td>{{ s.service }}</td><td>{{ s.ages }}</td><td>{{ s.outcomes }}</td><td>{{ s.edge }}</td><td>{{ s.models }}</td></tr>{% endfor %}</tbody>
-      </table>
-    </div>
-    <p class="notice">{{ page.services_note }}</p>
   </div>
 </section>
 

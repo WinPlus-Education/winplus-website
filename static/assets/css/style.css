@@ -479,13 +479,11 @@ a.card:hover .media img { transform: scale(1.04); }
 .event-card .btn-row { margin-top: auto; padding-top: 1.25rem; }
 
 /* ---------- M15 Gallery + lightbox ---------- */
-.gallery { display: grid; grid-auto-flow: dense; grid-template-columns: repeat(12, 1fr); grid-auto-rows: clamp(140px, 14vw, 240px); gap: 10px; }
-.gallery a { grid-column: span 4; position: relative; overflow: hidden; display: block; background: var(--stone); }
-.gallery a:nth-child(6n+1) { grid-column: span 6; grid-row: span 2; }
-.gallery a:nth-child(6n+4) { grid-column: span 6; grid-row: span 2; }
+.gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.gallery a { position: relative; overflow: hidden; display: block; background: var(--stone); aspect-ratio: 4 / 3; }
 .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
 .gallery a:hover img { transform: scale(1.04); }
-@media (max-width: 720px) { .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; } .gallery a, .gallery a:nth-child(6n+1), .gallery a:nth-child(6n+4) { grid-column: span 1; grid-row: span 1; } .gallery a:nth-child(3n+1) { grid-column: span 2; grid-row: span 2; } }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .lightbox { position: fixed; inset: 0; z-index: 120; background: rgba(8, 12, 20, .94); display: flex; align-items: center; justify-content: center; padding: 4vh 4vw; }
 .lightbox img { max-height: 86vh; max-width: 100%; width: auto; }
 .lightbox button { position: absolute; background: none; border: 0; color: var(--white); font-size: 2rem; cursor: pointer; padding: 1rem; }
@@ -778,3 +776,19 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .other-links ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .75rem 2.5rem; }
 .other-links a { font-family: var(--font-display); font-size: 1.35rem; text-decoration: none; }
 .other-links a:hover { color: var(--brass); }
+
+/* ---------- Program page: mentor card in the sidebar ---------- */
+.mentor-card .mentor-photo { aspect-ratio: 4 / 5; max-width: 200px; margin-bottom: 1.25rem; overflow: hidden; }
+.mentor-card h3 { font-size: 1.5rem; margin-bottom: .25rem; }
+.mentor-card .role { color: var(--brass); font-size: .88rem; margin-bottom: .9rem; }
+.mentor-card .eyebrow { margin-bottom: 1.25rem; }
+.mentor-more summary { cursor: pointer; font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; margin-top: .75rem; }
+.mentor-more[open] summary { margin-bottom: .5rem; }
+
+/* Outcomes merged into "What makes it different" */
+.outcomes-merge { margin-top: clamp(48px, 5vw, 80px); padding-top: clamp(32px, 4vw, 56px); border-top: 1px solid var(--line); }
+.h2-sm { font-size: clamp(1.6rem, 1.3rem + 1vw, 2.2rem); }
+.ticks-lg li { font-size: 1rem; padding-left: 2rem; }
+.pillars-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .pillars-5 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .pillars-5 { grid-template-columns: 1fr; } }

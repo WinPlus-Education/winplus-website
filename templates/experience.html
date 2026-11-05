@@ -21,12 +21,19 @@
 <section class="section s-ivory">
   <div class="container">
     {{ head("", item.features_title) }}
-    <div class="grid g-3">
+    <div class="grid g-{{ 4 if item.features | length == 4 else 3 }}">
       {% for f in item.features %}<div class="value reveal"><span class="num" style="color:var(--brass)">{{ "%02d" | format(loop.index) }}</span><h3 style="margin-top:.75rem">{{ f.title }}</h3><p>{{ f.text }}</p></div>{% endfor %}
     </div>
+    {% if item.outcomes %}
+    <div class="split-intro outcomes-merge">
+      <div><p class="eyebrow">{{ _("Outcomes") }}</p><h3 class="h2-sm">{{ item.outcomes_title }}</h3>{% if item.selection_title %}<h4 style="margin-top:2rem">{{ item.selection_title }}</h4><p class="muted small">{{ item.selection_text }}</p>{% endif %}</div>
+      <ul class="ticks ticks-lg">{% for o in item.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>
+    </div>
+    {% endif %}
   </div>
 </section>
 
+{% if item.itinerary %}
 <section class="section">
   <div class="container">
     {{ head("", item.itinerary_title) }}
@@ -34,6 +41,7 @@
     {% if item.itinerary_note %}<p class="notice">{{ item.itinerary_note }}</p>{% endif %}
   </div>
 </section>
+{% endif %}
 
 {% if item.gallery %}
 <section class="section s-ivory">
@@ -43,17 +51,6 @@
   </div>
 </section>
 {% endif %}
-
-<section class="section{% if not item.gallery %} s-ivory{% endif %}">
-  <div class="container split-intro">
-    <div>
-      <p class="eyebrow">{{ _("Outcomes") }}</p>
-      <h2>{{ item.outcomes_title }}</h2>
-      {% if item.selection_title %}<h3 style="margin-top:2.5rem">{{ item.selection_title }}</h3><p class="muted">{{ item.selection_text }}</p>{% endif %}
-    </div>
-    <ul class="check-list">{% for o in item.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>
-  </div>
-</section>
 
 {% if item.past %}
 <section class="section">

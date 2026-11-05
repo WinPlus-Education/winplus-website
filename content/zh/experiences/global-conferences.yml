@@ -5,8 +5,8 @@ seo_title: 高中生国际会议项目 | 全球领导力 | WinPlus 欧歌学院
 meta_description: 高中生围绕气候、残障权利、性别平等等全球议题开展研究，在 WinPlus 导师指导下参加高规格国际会议并展示观点。
 eyebrow: 全球领导力会议
 summary: 千载难逢的舞台。学生研究一项全球议题，在 WinPlus 导师指导下充分准备，并在高规格国际会议上，与外交官、政策制定者和全球代表分享自己的观点。
-image: /images/uploads/students/un-cosp19-speaker.jpg
-image_alt: WinPlus 学生在国际会议上发言
+image: /images/uploads/campus/un-flags.webp
+image_alt: 国际组织总部外的各国国旗
 kicker: 国际舞台
 card_text: 研究一项全球议题，在高规格国际会议上面向国际代表展示。
 statement: 领导力不是简历上的一行字，而是在全球领袖面前，说出真正有价值的话。
@@ -14,13 +14,13 @@ statement_text: 大多数学生只是阅读全球挑战，我们的学生学会�
 facts:
 - number: '15'
   label: 次国际会议参与
-- number: '1'
-  label: 2026 年 COSP19 唯一高中生发言人
+- number: '[X]'
+  label: '[占位：补充一项核心数据]'
 - number: 100+
   label: 仅 COP28 一场会议的论坛与会议
 - number: 10+
   label: 个国家有合作伙伴
-features_title: 项目流程
+features_title: 与众不同之处
 features:
 - title: 选择议题
   text: 气候、残障权利、性别平等、教育、健康：学生选择自己最关心的问题。

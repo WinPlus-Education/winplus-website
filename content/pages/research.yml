@@ -2,27 +2,26 @@ seo_title: Research & Internship Programs for High School Students | WinPlus
 meta_description: Online research and internships for high schoolers in AI, finance, space, biotech, policy and film, led by mentors from NASA, Meta, Microsoft and Caltech.
 eyebrow: Research & Internships
 title: Real problems. Real mentors. Work that matters.
-intro: Bespoke online research and internship programs led by scientists, engineers and leaders from NASA, Meta, Microsoft, Caltech and MIT. Students solve real-world problems and finish
-  with work they can stand behind.
+intro: Bespoke online research and internship programs led by scientists, engineers and leaders from NASA, Meta, Microsoft, Caltech and MIT. Students solve real-world problems and finish with work they
+  can stand behind.
 image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
 image_alt: A scientist working at a laboratory microscope
 summary_eyebrow: Why it matters
 summary_statement: The strongest applicants don't just say they're curious. They show what their curiosity has produced.
-summary_text: 'Selective universities look for evidence: a question pursued, a problem solved, a mentor who can vouch for the work. WinPlus programs give students first-hand experience
-  of real-world problem-solving, a finished paper, prototype or portfolio, and a recommendation from an expert who watched them work.'
+summary_text: 'Selective universities look for evidence: a question pursued, a problem solved, a mentor who can vouch for the work. WinPlus programs give students first-hand experience of real-world problem-solving,
+  a finished paper, prototype or portfolio, and a recommendation from an expert who watched them work.'
 how_eyebrow: How We Work
 how_title: Built around the questions shaping the future
 how_intro: Every program is designed by WinPlus with its mentor, around the fields that will define the next decade of education and industry.
 how:
 - title: Designed around frontier fields
-  text: 'We build programs where the world is moving fastest: artificial intelligence, space, biotechnology, finance and global policy. We update them each year as the fields evolve,
-    so students learn what universities and employers will value next.'
+  text: 'We build programs where the world is moving fastest: artificial intelligence, space, biotechnology, finance and global policy. We update them each year as the fields evolve, so students learn what
+    universities and employers will value next.'
 - title: Led by practitioners, in small groups
-  text: Mentors are working scientists, engineers and researchers at organizations such as NASA, Meta, Microsoft and Caltech. Small cohorts mean every student is known, challenged and
-    guided personally.
+  text: Mentors are working scientists, engineers and researchers at organizations such as NASA, Meta, Microsoft and Caltech. Small cohorts mean every student is known, challenged and guided personally.
 - title: Learn, then build
-  text: Each program moves from learning weeks (concepts, tools and methods) to output weeks, when students apply them to their own project, with a concrete deliverable every week and
-    a project manager tracking progress.
+  text: Each program moves from learning weeks (concepts, tools and methods) to output weeks, when students apply them to their own project, with a concrete deliverable every week and a project manager
+    tracking progress.
 - title: Connected to the application
   text: Your WinPlus mentor helps choose the program that fits the student's roadmap, then turns the experience into activity descriptions, essays and interview stories.
 deliverables_title: What every student leaves with
@@ -41,35 +40,40 @@ programs_intro: Filter by field or by type. Research programs centre on an origi
 industries:
 - id: ai-technology
   title: AI & Technology
-- id: business-finance
-  title: Business & Finance
-- id: science-space
-  title: Science & Space
-- id: policy-global-affairs
-  title: Policy & Global Affairs
 - id: arts-media
   title: Arts & Media
-faq_title: 'Research & internships: common questions'
+- id: business-finance
+  title: Business & Finance
+- id: policy-global-affairs
+  title: Policy & Global Affairs
+- id: science-space
+  title: Science & Space
+faq_title: 'Research & internships: your questions, answered'
 faq:
-- q: Who are the mentors in WinPlus research programs?
-  a: Our mentors are working scientists, engineers and researchers with backgrounds at organizations such as NASA, Meta, Microsoft, Apple, Bloomberg, Caltech, MIT and Harvard. Each program
-    page lists its mentor's background. Company and university names describe mentors' professional backgrounds; programs are run by WinPlus.
-- q: Are the programs online?
-  a: Yes. Research and internship programs run online with live mentor sessions, so students can join from anywhere. Sessions are scheduled across US and Asian time zones.
-- q: Does my child need prior experience?
-  a: Most programs are designed for motivated beginners. Some advanced tracks expect basic coding or mathematics, which is listed under Eligibility on each program page.
-- q: What's the difference between a research program and an internship?
-  a: Research programs centre on an original question and end in a paper or report. Internships centre on building something, such as a product, model or prototype, the way an industry
-    team would. Both include a mentor, weekly deliverables and a final presentation.
-- q: Will my child receive a recommendation letter?
-  a: Mentors write letters for students who complete the program and demonstrate strong work. Letters are earned, not automatic, which is what gives them weight with admissions officers.
-- q: Can students publish their research?
-  a: Some projects are suitable for student journals, conferences or competitions. Mentors and WinPlus advisors recommend the right outlet when a project is ready.
-- q: How long are the programs and when do they run?
-  a: Most programs run for 6–8 weeks, with the main cohorts in summer (June–August) and selected programs starting in spring. Each program page shows whether applications are open.
-- q: How do I choose the right program?
-  a: Book a free strategy session. We'll recommend programs that fit the student's interests, grade and application plan.
-cta_title: Find the program that fits your child's story.
+- q: What will the student actually produce?
+  a: 'Every program ends in a concrete piece of work: a research paper, a working prototype, a financial model, a policy brief or a film, depending on the program. Students present it in a final showcase,
+    and it becomes the evidence behind their activity list, essays and interviews.'
+- q: Who are the mentors?
+  a: Working scientists, engineers and researchers whose careers include organizations such as NASA, Meta, Microsoft and leading research universities. Each program page names the mentor and their background.
+    Organization names describe mentors' careers; programs are run by WinPlus.
+- q: How is this different from an online course?
+  a: 'A course teaches content to everyone. Our programs are small cohorts built around a real problem: students choose a question or product, meet their mentor live every week, and deliver work that is
+    reviewed like professional work, not graded like homework.'
+- q: 'Research or internship: which is right?'
+  a: 'Research suits students who want to answer an original question and write it up; it is strongest for STEM, social science and policy majors. Internships suit students who want to build: a product,
+    model or prototype, the way an industry team works. Both include a mentor, weekly deliverables and a final presentation.'
+- q: Is a recommendation letter guaranteed?
+  a: No, and that is why it matters. Mentors write letters for students who complete the program and do strong work. An earned letter from a mentor who saw the work first-hand carries far more weight than
+    a certificate of attendance.
+- q: Does the student need prior experience?
+  a: Most programs are designed for motivated beginners and teach the tools in the first weeks. Advanced tracks list any coding or mathematics prerequisites under Eligibility on the program page.
+- q: Can the work be published or entered in competitions?
+  a: When a project is strong enough, mentors and WinPlus advisors recommend suitable student journals, conferences or competitions and support the submission. Publication depends on the work and the outlet,
+    and is never promised in advance.
+- q: When do programs run, and how much time do they take?
+  a: Most run online for 6 to 8 weeks, mainly in summer (June to August), with selected cohorts in spring. Expect live sessions each week plus independent work; each program page lists its schedule and
+    whether applications are open.
+cta_title: Find the program that fits your story.
 cta_text: Talk with a WinPlus mentor about interests, timing and which program will add the most to the profile.
 cta: Book a Free Consultation
 cta_link: contact.html

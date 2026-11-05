@@ -48,7 +48,7 @@
 
 <section class="section">
   <div class="container">
-    <div class="head-row">{{ head(_("Featured outcomes"), item.outcomes_text) }}{{ arrow(_("See all results"), "results.html") }}</div>
+    <div class="head-row">{{ head(_("Our Results"), _("Featured outcomes"), item.outcomes_text) }}{{ arrow(_("See all results"), "results.html") }}</div>
     {% if item.outcomes %}{{ school_cards(item.outcomes) }}{{ results_notice() }}{% endif %}
   </div>
 </section>

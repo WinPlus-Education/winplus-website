@@ -4,17 +4,19 @@ end_date: '2026-11-20'
 time_label: November 9–20, 2026
 type: Global Conference
 location: Antalya, Türkiye
-image: /images/uploads/campus/un-flags.webp
-image_alt: Flags of member states outside an international headquarters
+image: /images/uploads/photos/cop31-antalya.webp
+image_alt: COP31 sign and flags at the conference venue entrance in Antalya
 summary: A WinPlus student delegation joins the 2026 UN Climate Change Conference (COP31) in Antalya, Türkiye, to engage with the global climate agenda.
-details: |-
-  COP31, the 2026 UN Climate Change Conference, takes place in Antalya, Türkiye, from November 9 to 20, 2026. Türkiye hosts the conference and holds the COP31 Presidency, with Australia leading the negotiations.
+details: 'COP31, the 2026 UN Climate Change Conference, takes place in Antalya, Türkiye, from November 9 to 20, 2026. Türkiye hosts the conference and holds the COP31 Presidency, with Australia''s Chris
+  Bowen serving as President of Negotiations. The host''s theme runs "From Dialogue to Consensus, From Consensus to Action."
 
-  WinPlus students prepare with mentors before the conference: how the UN climate process works, the issues on the table, and a research question of their own. At the conference they attend sessions and side events and, where the conference's rules allow, present their work.
 
-  Building on our COP28 delegation in Dubai, where five WinPlus students presented climate research, COP31 is our next step on the global climate stage. [Confirm delegation details, dates on site and how to join.]
+  WinPlus students prepare with mentors before the conference: how the UN climate process works, the issues on the table, and a research question of their own. Building on our COP28 delegation in Dubai,
+  where five WinPlus students presented climate research, COP31 is our next step on the global climate stage. [Confirm delegation details, dates on site and how to join.]
 
-  Official conference information: [UNFCCC: The road to Antalya](https://unfccc.int/cop31/the-road-to-antalya). WinPlus is an independent education company; participation follows the conference's own registration rules and does not imply endorsement by the UNFCCC.
+
+  Official information: [cop31.tr](https://cop31.tr/) and [UNFCCC: The road to Antalya](https://unfccc.int/cop31/the-road-to-antalya). WinPlus is an independent education company; participation follows
+  the conference''s own registration and accreditation rules and does not imply endorsement by the UNFCCC or the COP31 Presidency.'
 apply_label: Ask about joining
 apply_link: contact.html?interest=Global%20Experiences&program=COP31%20Antalya
 inquire_link: ''
@@ -23,3 +25,19 @@ gallery: []
 testimonials: []
 seo_title: WinPlus Student Delegation to COP31, Antalya 2026 | WinPlus
 meta_description: WinPlus students join COP31, the 2026 UN Climate Change Conference in Antalya, Türkiye, November 9–20, 2026, after preparing with mentors on climate policy.
+category: conference
+expect_title: What to expect
+expect:
+- Pre-conference training with WinPlus mentors on the UN climate process, the COP31 Action Agenda and a research question of each student's own
+- The Green Zone, the host-run space open to registered visitors, with exhibitions, events and sessions for youth, academia, civil society and startups
+- Sessions across the Action Agenda's priority themes, including Youth and Education, Zero Waste, Oceans and Seas, Food Security, Clean Energy Transition and Climate-Resilient Cities
+- Where the conference's rules allow, opportunities to present research or join youth-focused events. The Blue Zone, where negotiations take place, is open only to accredited participants
+- A debrief and a written reflection or policy brief after the conference, plus guidance on describing the experience in applications
+facts:
+- number: '197'
+  label: Parties to the UN climate convention
+- number: ~100,000
+  label: Expected participants
+- number: '12'
+  label: Days of conference, November 9–20
+facts_source: Figures as published by the COP31 Presidency at cop31.tr.

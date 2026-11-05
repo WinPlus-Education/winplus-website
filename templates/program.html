@@ -48,18 +48,9 @@
     <aside class="detail-side">
       <div class="side-card mentor-card" id="mentor">
         <p class="eyebrow">{{ _("Your mentor") }}</p>
-        {% if m %}
-        {% if m.photo %}<div class="mentor-photo">{{ photo(m.photo, m.name, "", 500, sizes="320px") }}</div>{% endif %}
-        <h3>{{ m.name }}</h3>
-        <p class="role">{{ m.title }}{% if m.affiliation %} · {{ m.affiliation }}{% endif %}</p>
-        {% set paras = (m.bio or "").split("\n\n") %}
-        <div class="small muted">{{ paras[0] | md | safe }}</div>
-        {% if paras | length > 1 %}<details class="mentor-more"><summary>{{ _("Full bio") }}</summary><div class="small muted">{{ paras[1:] | join("\n\n") | md | safe }}</div></details>{% endif %}
-        <p style="margin-top:1rem">{{ arrow(_("Meet the full team"), "team.html#" ~ m.id) }}</p>
-        {% else %}
-        <h3>{{ item.mentor_note }}</h3>
-        <p class="small muted">{{ _("Full mentor profile available on request.") }}</p>
-        {% endif %}
+        <div class="mentor-photo">{% if m and m.photo %}{{ photo(m.photo, m.name, "", 500, sizes="200px") }}{% else %}<div class="avatar" aria-hidden="true">{{ (m.initials if m and m.initials else "") or "" }}</div>{% endif %}</div>
+        <h3>{{ m.name if m else _("Mentor") }}{% if m and m.org %} <span class="mentor-org">| {{ m.org }}</span>{% endif %}</h3>
+        {% if m %}<p style="margin-top:1rem">{{ arrow(_("Full bio"), "team.html#" ~ m.id) }}</p>{% endif %}
       </div>
       <div class="side-card side-sticky">
         {{ status_badge(item.status, true) }}
@@ -80,17 +71,6 @@
   </div>
 </section>
 
-<section class="section s-ivory">
-  <div class="container">
-    <div class="head-row">{{ head("", _("Explore other programs")) }}{{ arrow(_("All programs"), "research.html#programs") }}</div>
-    <div class="grid g-3">
-      {% set others = siblings | rejectattr("slug", "equalto", item.slug) | rejectattr("status", "equalto", "past") | list %}
-      {% set same = others | selectattr("industry", "equalto", item.industry) | list %}
-      {% set rest = others | rejectattr("industry", "equalto", item.industry) | list %}
-      {% for p in (same + rest)[:3] %}{{ program_card(p) }}{% endfor %}
-    </div>
-  </div>
-</section>
 
 {{ cta_band(_("Not sure which program fits?"), _("A WinPlus mentor can recommend programs that fit the student's interests and application plan."), site.cta_text, site.cta_link) }}
 {% endblock %}

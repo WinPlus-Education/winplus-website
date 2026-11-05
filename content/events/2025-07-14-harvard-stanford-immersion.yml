@@ -7,8 +7,8 @@ location: New York · Boston · Silicon Valley · Los Angeles
 image: /images/uploads/photos/wall-street-group.webp
 image_alt: WinPlus students and mentors on Wall Street, New York
 summary: Twenty students, ten universities and 35 organizations, from Columbia and Harvard to Stanford, Apple Park and Hollywood, in twelve days.
-details: Mentors from Harvard, MIT and Stanford taught 50 hours of global competency coursework on leadership, international relations, AI, gene editing and satellite engineering. Admissions
-  teams at leading universities hosted information sessions, and students visited technology companies including Apple, Google and Meta, as well as NASA.
+details: Mentors from Harvard, MIT and Stanford taught 50 hours of global competency coursework on leadership, international relations, AI, gene editing and satellite engineering. Admissions teams at leading
+  universities hosted information sessions, and students visited technology companies including Apple, Google and Meta, as well as NASA.
 gallery: []
 testimonials:
 - quote: The ten universities we visited left a deep impression on me. The professors and alumni we met made me want, more than ever, to study at a place like this.
@@ -17,3 +17,4 @@ testimonials:
 - quote: Thank you to every teacher for such thoughtful care. Our child cried on returning home, not wanting to leave the teachers and new friends.
   name: Parent
   role: 2025 cohort
+category: immersion

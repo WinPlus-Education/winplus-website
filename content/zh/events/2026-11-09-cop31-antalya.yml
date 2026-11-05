@@ -4,17 +4,16 @@ end_date: '2026-11-20'
 time_label: 2026年11月9日–20日
 type: 国际会议
 location: 土耳其 安塔利亚
-image: /images/uploads/campus/un-flags.webp
-image_alt: 国际组织总部外的各国国旗
+image: /images/uploads/photos/cop31-antalya.webp
+image_alt: COP31 安塔利亚会场入口的标识与旗帜
 summary: WinPlus 学生代表团参加在土耳其安塔利亚举行的 2026 年联合国气候变化大会（COP31），走近全球气候议程。
-details: |-
-  COP31（2026 年联合国气候变化大会）将于 2026 年 11 月 9 日至 20 日在土耳其安塔利亚举行。土耳其为东道国并担任 COP31 主席国，澳大利亚主导谈判工作。
+details: 'COP31（2026 年联合国气候变化大会）将于 2026 年 11 月 9 日至 20 日在土耳其安塔利亚举行。土耳其为东道国并担任 COP31 主席国，澳大利亚的 Chris Bowen 担任谈判主席。东道国主题为“从对话到共识，从共识到行动”。
 
-  会前，WinPlus 学生在导师指导下系统准备：了解联合国气候进程与核心议题，并提出自己的研究问题。会议期间，学生参加分会场与边会活动，并在会议规则允许的情况下展示研究成果。
 
-  继 COP28 迪拜大会五名 WinPlus 学生发表气候研究之后，COP31 是我们在全球气候舞台上的又一站。[请确认代表团详情、现场日期及参与方式。]
+  会前，WinPlus 学生在导师指导下系统准备：了解联合国气候进程与核心议题，并提出自己的研究问题。继 COP28 迪拜大会五名 WinPlus 学生发表气候研究之后，COP31 是我们在全球气候舞台上的又一站。[请确认代表团详情、现场日期及参与方式。]
 
-  官方会议信息：[UNFCCC：The road to Antalya](https://unfccc.int/cop31/the-road-to-antalya)。WinPlus 是独立教育机构，学生依照会议自身的注册规则参与，不代表 UNFCCC 对 WinPlus 的认可。
+
+  官方信息：[cop31.tr](https://cop31.tr/) 与 [UNFCCC：The road to Antalya](https://unfccc.int/cop31/the-road-to-antalya)。WinPlus 是独立教育机构，学生依照会议自身的注册与认证规则参与，不代表 UNFCCC 或 COP31 主席国对 WinPlus 的认可。'
 apply_label: 咨询参与方式
 apply_link: contact.html?interest=Global%20Experiences&program=COP31%20Antalya
 inquire_link: ''
@@ -23,3 +22,19 @@ gallery: []
 testimonials: []
 seo_title: WinPlus 学生代表团参加 COP31 安塔利亚气候大会 | WinPlus 欧歌学院
 meta_description: WinPlus 学生参加 2026 年 11 月 9–20 日在土耳其安塔利亚举行的联合国气候变化大会 COP31，会前由导师指导气候政策研究。
+category: conference
+expect_title: 活动亮点
+expect:
+- 会前由 WinPlus 导师进行培训：联合国气候进程、COP31 行动议程，以及每位学生自己的研究问题
+- 绿区：由东道国运营、面向注册访客开放的区域，设有面向青年、学术界、公民社会与初创企业的展览、活动与论坛
+- 覆盖行动议程优先主题的分会场，包括青年与教育、零废弃、海洋、粮食安全、清洁能源转型与气候韧性城市等
+- 在会议规则允许时，展示研究成果或参加青年主题活动。进行谈判的蓝区仅向获得认证的参会者开放
+- 会后复盘，完成书面反思或政策简报，并获得在申请中呈现这段经历的指导
+facts:
+- number: '197'
+  label: 个《联合国气候变化框架公约》缔约方
+- number: 约 10 万
+  label: 预计参会人数
+- number: '12'
+  label: 天会期（11 月 9–20 日）
+facts_source: 数据来源：COP31 主席国官网 cop31.tr。

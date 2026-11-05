@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, values, pillars, journey, cta_band with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, journey, cta_band with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block content %}
 {{ page_hero(page, [[_("About Us"), "about.html"], [page.eyebrow, "schools.html"]], btn(page.primary_cta, page.primary_link, "light") ~ (btn(page.secondary_cta, page.secondary_file, "ghost", false) if page.secondary_file else "")) }}
@@ -21,29 +21,7 @@
 <section class="section s-ink">
   <div class="container">
     {{ head("", page.benefits_title) }}
-    <div class="pillars pillars-5">{% for b in page.benefits %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ b.title }}</h3><p>{{ b.text }}</p></div>{% endfor %}</div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    {{ head("", page.value_title) }}
-    <div class="grid g-4">{% for v in page.value %}<div class="value reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p></div>{% endfor %}</div>
-  </div>
-</section>
-
-<section class="section s-ivory">
-  <div class="container">
-    {{ head("", page.models_title) }}
-    {{ values(page.models) }}
-    <div class="split-intro" style="margin-top:clamp(48px,5vw,80px)">
-      <div><h3>{{ page.roles_title }}</h3></div>
-      <div class="grid g-2">
-        <div><p class="kicker">{{ _("Partner") }}</p><ul class="ticks">{% for r in page.roles.partner %}<li>{{ r }}</li>{% endfor %}</ul></div>
-        <div><p class="kicker">WinPlus</p><ul class="ticks">{% for r in page.roles.winplus %}<li>{{ r }}</li>{% endfor %}</ul></div>
-      </div>
-    </div>
-    <p class="notice">{{ page.models_note }}</p>
+    <div class="pillars pillars-3">{% for b in page.benefits %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ b.title }}</h3><p>{{ b.text }}</p></div>{% endfor %}</div>
   </div>
 </section>
 
@@ -76,14 +54,5 @@
   </div>
 </section>
 
-<section class="section s-ink">
-  <div class="container split-intro">
-    <div><p class="eyebrow">{{ _("Contact") }}</p><h2>{{ page.contact_title }}</h2></div>
-    <div>
-      <p class="lead"><strong style="color:#fff">{{ page.contact_name }}</strong><br>{{ page.contact_role }}<br><a href="mailto:{{ page.contact_email }}">{{ page.contact_email }}</a></p>
-      <div class="btn-row" style="margin-top:2rem">{{ btn(page.primary_cta, page.primary_link, "light") }}</div>
-      <p class="notice">{{ site.consent.school_notice }}</p>
-    </div>
-  </div>
-</section>
+{{ cta_band(page.cta_title, page.cta_text, page.primary_cta, page.primary_link) }}
 {% endblock %}

@@ -109,7 +109,7 @@
 {% block content %}{% endblock %}
 </main>
 
-{% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin-in", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
+{% set icons = {"wechat": "fa-weixin", "linkedin": "fa-linkedin", "instagram": "fa-instagram", "youtube": "fa-youtube", "bilibili": "fa-bilibili", "tiktok": "fa-tiktok", "facebook": "fa-facebook-f", "x": "fa-x-twitter", "weibo": "fa-weibo"} %}
 <footer class="site-footer">
   <div class="container footer-band">
     <div class="fb-cta">
@@ -140,9 +140,9 @@
         {% for s in site.social if s.platform == 'wechat' or (s.url and s.url != '#') %}
         <li>
           {% if s.platform == 'wechat' %}
-          <button class="social-btn wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
+          <button class="social-btn is-wechat wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
           {% else %}
-          <a class="social-btn" href="{{ s.url }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
+          <a class="social-btn is-{{ s.platform }}" href="{{ s.url }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
           {% endif %}
         </li>
         {% endfor %}

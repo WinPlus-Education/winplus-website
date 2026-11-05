@@ -50,6 +50,7 @@ PAGES = {
     "about.html": ("about", "about.html", "0.8"),
     "team.html": ("team", "team.html", "0.8"),
     "schools.html": ("schools", "schools.html", "0.6"),
+    "partner-inquiry.html": ("partner-inquiry", "partner-inquiry.html", "0.4"),
     "faq.html": ("faq", "faq.html", "0.7"),
     "contact.html": ("contact", "contact.html", "0.8"),
     "credits.html": ("credits", "credits.html", "0.1"),

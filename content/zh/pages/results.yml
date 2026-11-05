@@ -3,8 +3,8 @@ meta_description: WinPlus 学员录取成果：87 封常春藤及 Top 30 录取�
 eyebrow: 录取成果
 title: 成果，自己会说话
 intro: WinPlus 指导的学生获得世界顶尖大学录取的比例，远高于各校整体录取率。这里是数字、故事，以及背后的家庭。
-image: /images/uploads/campus/yale.webp
-image_alt: 耶鲁大学斯特林纪念图书馆
+image: /images/uploads/campus/mit-killian.webp
+image_alt: 麻省理工学院基利安庭院与大穹顶
 stats:
 - number: 100+
   label: 自 2020 年以来指导的学生
@@ -186,7 +186,7 @@ offer_tiers:
     logo: /images/uploads/universities/ohio-state.png
     note: ''
   - name: 罗格斯大学新布朗斯维克分校
-    logo: ''
+    logo: /images/uploads/universities/rutgers.png
     note: ''
   - name: 加州大学圣塔芭芭拉分校
     logo: /images/uploads/universities/ucsb.png
@@ -195,10 +195,10 @@ offer_tiers:
     logo: /images/uploads/universities/umd.png
     note: ''
   - name: 罗切斯特大学
-    logo: ''
+    logo: /images/uploads/universities/rochester.png
     note: ''
   - name: 华盛顿大学
-    logo: ''
+    logo: /images/uploads/universities/washington.png
     note: ''
 - label: 英国 G5
   schools:

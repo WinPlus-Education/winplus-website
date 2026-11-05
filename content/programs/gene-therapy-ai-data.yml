@@ -13,12 +13,12 @@ format: Online · live mentor sessions
 length: 8 weeks
 dates: Summer 2027 · dates to be confirmed
 cohort: Small group
-overview: 'Gene therapy is one of the most promising frontiers in medicine, and much of the progress now depends on data. Students learn how gene editing and delivery work, including
-  AAV capsids, the blood–brain barrier, receptor recognition and directed evolution, through the research papers scientists read.
+overview: 'Gene therapy is one of the most promising frontiers in medicine, and much of the progress now depends on data. Students learn how gene editing and delivery work, including AAV capsids, the blood–brain
+  barrier, receptor recognition and directed evolution, through the research papers scientists read.
 
 
-  Then they do the work: using Python to analyse sequencing data from real AAV selection experiments, counting variants, calculating enrichment and visualising results, while learning
-  why lab findings need further validation before they reach patients.'
+  Then they do the work: using Python to analyse sequencing data from real AAV selection experiments, counting variants, calculating enrichment and visualising results, while learning why lab findings need
+  further validation before they reach patients.'
 outcomes:
 - A Discovery Report explaining methods, findings and interpretation
 - Python analysis of real experimental data

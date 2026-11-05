@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, stats, rates, results_notice, case_study, story_card, quotes, cta_band, school_cards with context %}
+{% from "macros.html" import page_hero, head, stats, rates, results_notice, case_card, story_card, quotes, cta_band, school_cards with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block content %}
 {{ page_hero(page, [[page.eyebrow, "results.html"]]) }}
@@ -29,8 +29,8 @@
 
 <section class="section" id="case-studies">
   <div class="container">
-    {{ head(_("Success stories"), page.cases_title, page.cases_intro) }}
-    {% for c in page.cases %}{{ case_study(c, loop.index is even) }}{% endfor %}
+    {{ head(_("Our Success Stories"), page.cases_title, page.cases_intro) }}
+    <div class="stories">{% for c in page.cases %}{{ case_card(c) }}{% endfor %}</div>
     {{ results_notice() }}
   </div>
 </section>

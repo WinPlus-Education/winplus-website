@@ -18,8 +18,7 @@
     </div>
     <div style="margin-top:clamp(64px,7vw,112px)">
       {{ head("", page.deliverables_title) }}
-      {{ values(page.deliverables[:3]) }}
-      {% if page.deliverables | length > 3 %}<div class="values" style="margin-top:clamp(24px,3vw,56px)">{% for v in page.deliverables[3:] %}<div class="value reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p></div>{% endfor %}</div>{% endif %}
+      <div class="deliverables">{% for v in page.deliverables %}<div class="deliverable reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p></div>{% endfor %}</div>
     </div>
   </div>
 </section>

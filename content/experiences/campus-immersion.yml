@@ -31,49 +31,22 @@ features:
   text: Seminars with WinPlus mentors and guests from Harvard, MIT, Yale and Stanford, including a former NASA astronaut and MIT professor, on leadership, international relations, AI, gene editing and space
     engineering.
 - title: The real student experience
-  text: Meals in university dining halls, conversations with current students and alumni, and time to experience each campus's culture, pace and community first-hand.
+  text: Meals in university dining halls, conversations with current students and alumni, and time to experience each campus's culture, pace and community first-hand. Students leave with a clear sense of
+    which universities, and which cultures, fit them, and with friendships across schools and backgrounds.
 - title: Admissions, demystified
-  text: Admissions sessions at leading universities, and a personalised US undergraduate admissions plan for every student, prepared by WinPlus mentors.
+  text: Admissions sessions at leading universities, and a personalised US undergraduate admissions plan for every student, prepared by WinPlus mentors. Every moment becomes first-hand material for essays
+    and interviews.
 - title: Where ideas become industries
   text: Visits to technology companies and organisations such as Meta, Apple and Google offices, NASA, the United Nations Headquarters and a Hollywood production company.
 - title: Global competency, certified
   text: Coursework built on four global competencies (global analysis, cultural empathy, diverse communication and sustainable action), with a WinPlus Global Competency Certificate on completion.
-outcomes_title: What students bring home
 outcomes:
 - A clear sense of which universities, and which university cultures, fit them
 - A personalised US undergraduate admissions plan
 - A WinPlus Global Competency Certificate
 - Friendships with peers from different schools and backgrounds
 - First-hand experiences that become powerful essay and interview material
-past_title: Past cohorts
-past:
-- year: '2026'
-  title: Harvard Global Competency Summer Immersion
-  text: July 12–23, 2026. Harvard, MIT, Yale, Princeton and Silicon Valley.
-- year: '2025'
-  title: Harvard–Stanford Global Competency Immersion
-  text: July 14–25, 2025. New York, Boston, Silicon Valley and Los Angeles; 10 universities; 20 students.
-- year: '2024'
-  title: US East Coast Global Competency Study Tour
-  text: July 15–27, 2024. A 12-day program for 15 students from the High School Affiliated to Renmin University of China, across Boston, New York, Philadelphia and Washington, D.C.
-gallery_title: Moments from past cohorts
-gallery:
-- image: /images/uploads/photos/hbs-classroom.webp
-  caption: A seminar in a Harvard Business School classroom
-- image: /images/uploads/photos/yale-sterling-group.webp
-  caption: Sterling Memorial Library, Yale University, 2026
-- image: /images/uploads/photos/hks-session.webp
-  caption: A mentor session at Harvard Kennedy School, 2026
-- image: /images/uploads/photos/wall-street-group.webp
-  caption: Wall Street, New York
-- image: /images/uploads/photos/mit-charles-river.webp
-  caption: Sailing on the Charles River beside MIT, 2026
-- image: /images/uploads/photos/immersion-group.webp
-  caption: The cohort with WinPlus mentors
-- image: /images/uploads/photos/statue-of-liberty.webp
-  caption: New York Harbor, 2026
-- image: /images/uploads/photos/amnh-2024.webp
-  caption: American Museum of Natural History, 2024
+past_title: Past events
 testimonials_title: In their words
 testimonials:
 - quote: The ten universities we visited left a deep impression on me. The professors and alumni we met made me want, more than ever, to study at a place like this.
@@ -105,3 +78,4 @@ faq:
 - q: What does the program cost?
   a: Fees vary by year and route and typically include coursework, accommodation, ground transport, meals and tickets. International flights, visa fees and travel insurance are not included; our team helps
     families arrange them. Contact us for the current fee.
+category: immersion

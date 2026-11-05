@@ -210,6 +210,23 @@
 </article>
 {%- endmacro %}
 
+{# Success story card: outcome first, the full journey on demand (no divider lines) #}
+{% macro case_card(c) -%}
+<article class="story reveal">
+  <span class="story-tag">{{ c.tag }}</span>
+  <h3>{{ c.title }}</h3>
+  <p class="story-outcome">{{ c.outcome }}</p>
+  <details class="story-more">
+    <summary><span>{{ _("Read the story") }}</span></summary>
+    <dl>
+      <dt>{{ _("Starting point") }}</dt><dd>{{ c.start }}</dd>
+      <dt>{{ _("Our strategy") }}</dt><dd>{{ c.strategy }}</dd>
+      <dt>{{ _("What changed") }}</dt><dd>{{ c.change }}</dd>
+    </dl>
+  </details>
+</article>
+{%- endmacro %}
+
 {% macro story_card(s) -%}
 <article class="card story-card reveal">
   {{ photo(s.image, s.image_alt, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
@@ -292,7 +309,7 @@
     <h3>{{ p.title }}</h3>
     <p>{{ p.summary }}</p>
     {% set m = people_by_id.get(p.mentor_id) %}
-    {% if p.mentor_note or m %}<p class="mentor-line">{{ _("Mentor") }}: {{ p.mentor_note or m.title }}</p>{% endif %}
+    {% if m and not m.name.startswith("[") %}<p class="mentor-line">{{ _("Mentor") }}: {{ m.name }}{% if m.org %} | {{ m.org }}{% endif %}</p>{% elif p.mentor_note %}<p class="mentor-line">{{ _("Mentor") }}: {{ p.mentor_note }}</p>{% endif %}
     <span class="link-arrow">{{ _("View program") }} <span aria-hidden="true">→</span></span>
   </div>
 </a>
@@ -305,7 +322,7 @@
   {% if e.image %}<a href="{{ u(e.url) }}" tabindex="-1" aria-hidden="true">{{ photo(e.image, "", "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}</a>{% endif %}
   <div class="card-body">
     <div class="event-top">
-      <p class="event-date"><span class="num">{{ e.date | date_fmt('day') }}</span><span>{{ e.date | date_fmt('mon') }} {{ e.date | date_fmt('year') }}{% if e.end_label %} · {{ e.end_label }}{% endif %}</span></p>
+      <p class="event-date">{% if e.date_label %}<span class="num">{{ e.date_label }}</span>{% else %}<span class="num">{{ e.date | date_fmt('day') }}</span><span>{{ e.date | date_fmt('mon') }} {{ e.date | date_fmt('year') }}{% if e.end_label %} · {{ e.end_label }}{% endif %}</span>{% endif %}</p>
       {% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}
     </div>
     <h3><a href="{{ u(e.url) }}" style="text-decoration:none">{{ e.title }}</a></h3>
@@ -315,12 +332,27 @@
       {% if e.is_past %}
       {{ arrow(_("See photos & stories"), e.url) }}
       {% else %}
+      {{ btn(_("Details"), e.url, "outline", false, "btn-sm") }}
       {{ btn(e.apply_label or _("Apply"), e.apply_link or e.url ~ "#register", "primary", false, "btn-sm") }}
-      {{ btn(_("Inquire"), e.inquire_link or inquire, "outline", false, "btn-sm") }}
       {% endif %}
     </div>
   </div>
 </article>
+{%- endmacro %}
+
+{# Past event card: hero image plus a strip of additional photos from the event #}
+{% macro past_event_card(e) -%}
+{% set extra = (e.gallery or []) | rejectattr("image", "equalto", e.image) | list %}
+<a class="card past-card reveal" href="{{ u(e.url) }}">
+  <div class="media">{{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}</div>
+  {% if extra %}<div class="past-thumbs">{% for g in extra[:3] %}{{ photo(g.image, g.caption or "", "", 400, sizes="12vw") }}{% endfor %}</div>{% endif %}
+  <div class="card-body">
+    <div class="event-top"><p class="event-date"><span>{{ e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year'))) }}</span></p>{% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}</div>
+    <h3>{{ e.title }}</h3>
+    <p>{{ e.summary }}</p>
+    <span class="link-arrow">{{ _("See photos & stories") }} <span aria-hidden="true">→</span></span>
+  </div>
+</a>
 {%- endmacro %}
 
 {# M15 Gallery (opens in lightbox) #}

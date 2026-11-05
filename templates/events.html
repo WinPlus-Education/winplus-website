@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, event_card, btn with context %}
+{% from "macros.html" import page_hero, head, event_card, past_event_card, btn with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block content %}
 {{ page_hero(page, [[page.eyebrow, "events.html"]], btn(page.upcoming_title, "#upcoming", "light") ~ btn(page.past_title, "#past", "ghost", false)) }}
@@ -19,7 +19,7 @@
 <section class="section s-ivory" id="past">
   <div class="container">
     {{ head("", page.past_title, page.past_intro) }}
-    <div class="grid g-3">{% for e in past_events %}{{ event_card(e) }}{% endfor %}</div>
+    <div class="grid g-3">{% for e in past_events %}{{ past_event_card(e) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}

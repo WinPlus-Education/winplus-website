@@ -17,12 +17,7 @@ people:
 
 
     Through WinPlus, he has led visits to UN Headquarters, explaining the organization’s structure, values and mission while sharing stories from peacekeeping work. Students connect institutional responsibilities
-    with the people affected by conflict and the coordination required for international cooperation.
-
-
-    For students interested in politics, history, law or public service, this opens questions about implementation, evidence and competing needs. Families can see how reading, analytical writing, languages
-    and cross-cultural understanding support substantive study of international affairs, and how policy analysis must engage with the needs, constraints and changing conditions experienced by different
-    communities on the ground.'
+    with the people affected by conflict and the coordination required for international cooperation.'
   founder: false
 - id: le-cong
   name: Le Cong
@@ -35,31 +30,20 @@ people:
 
 
     His laboratory studies CRISPR, large gene insertion, single-cell analysis and stem-cell disease models. Projects such as CRISPR-GPT explore AI-assisted gene editing. Through WinPlus, he has led students
-    to Stanford’s stem-cell research institute and introduced frontier research, connecting genetic changes with cellular function and disease.
-
-
-    These encounters give students specific questions to pursue: how experiments test hypotheses, how computational methods support biology, and what evidence a biomedical application requires. For families
-    considering biology, medicine or AI and life sciences, they clarify the preparation involved: biology and chemistry, data analysis, English-language scientific reading and careful interpretation of
-    experimental results, alongside sustained curiosity about how living systems work.'
+    to Stanford’s stem-cell research institute and introduced frontier research, connecting genetic changes with cellular function and disease.'
   founder: false
 - id: harper-gu
   name: Harper Gu
   initials: HG
-  title: Industry Internship Mentor
+  title: Software Engineer
   affiliation: Apple Background
   photo: ''
-  bio: 'Harper Gu has an Apple background and mentors WinPlus’s eight-week AI-assisted coding course. High school students use Claude and Claude Code to design, build and publish software while maintaining
-    a portfolio website and weekly learning records.
+  bio: 'Harper Gu is a software engineer with an Apple background. [Add education and professional background.]
 
 
-    Students learn HTML, CSS, JavaScript, developer tools, the terminal and Git, then deploy to GitHub Pages. They practice specifying features, reviewing AI-generated changes and testing whether to accept,
-    revise or reverse them. Projects follow four directions: creative coding, data visualization, web applications or interactive essays, connecting technical learning with artistic interests or practical
-    questions.
-
-
-    Later work covers scope, peer testing and reliability on mobile devices, slow connections and empty inputs. Final requirements include a live portfolio, code repository, meaningful version history,
-    seven journals and a presentation. Students explain AI’s contribution and their own decisions, giving families evidence of both a finished product and the understanding behind its development.'
+    At WinPlus, Harper mentors AI-Assisted Software Engineering.'
   founder: false
+  org: Apple
 - id: cathy-guo
   name: Cathy Guo
   initials: CG
@@ -70,10 +54,7 @@ people:
 
 
     She serves on the board of the Harvard Kennedy School Alumni Association and of Douglass Residential College at Rutgers, and has worked with UN Women and Oxford Economics. She has championed international
-    education and philanthropy across the Middle East, Europe, Africa, Southeast Asia and southwest China.
-
-
-    At WinPlus she leads global competency programs, leadership education and partnerships with universities and international organizations.'
+    education and philanthropy across the Middle East, Europe, Africa, Southeast Asia and southwest China.'
   founder: true
 - id: josh-guo
   name: Josh Guo
@@ -86,12 +67,7 @@ people:
 
 
     At WinPlus, he advises undergraduate, master’s and doctoral applicants in economics, politics, philosophy, law-related fields and other humanities and social sciences. He also serves as a Yale undergraduate
-    admissions interviewer and has helped students gain admission to Harvard, Yale and Stanford.
-
-
-    His background illustrates how social concerns become academic questions through economic, political, ethical or legal analysis. Reading, interviews, source comparison and evidence-based writing can
-    develop those questions into substantive projects. For families, these activities offer concrete preparation beyond general interests, while interview practice asks students to explain what they investigated,
-    why they made particular choices and how their understanding changed.'
+    admissions interviewer and has helped students gain admission to Harvard, Yale and Stanford.'
   founder: false
 - id: daniel-e-hastings
   name: Daniel E. Hastings
@@ -104,12 +80,7 @@ people:
 
 
     His teaching collaborations include the National University of Singapore and Asian students. In WinPlus sessions, he introduces space sustainability, systems engineering and manufacturing in Earth orbit,
-    examining how missions coordinate resources, infrastructure and technical requirements over time.
-
-
-    For families exploring engineering, these subjects explain the tradeoffs among performance, reliability, cost and subsystem coordination. Students can distinguish an interest in individual technologies
-    from an interest in integrating complete missions. His experience in undergraduate education and international collaboration also provides context for the mathematical foundations, interdisciplinary
-    learning and independent judgment required for university engineering study.'
+    examining how missions coordinate resources, infrastructure and technical requirements over time.'
   founder: false
 - id: jeffrey-hoffman
   name: Jeffrey A. Hoffman
@@ -122,11 +93,7 @@ people:
 
 
     Through WinPlus, he has led visits to MIT AeroAstro and explained Perseverance, crewed Shuttle operations and the Apollo program. Drawing on actual missions, he shows how instruments, spacecraft and
-    astronauts work together under scientific, environmental and resource constraints.
-
-
-    These examples connect physics, mechanical engineering, electronics and systems design. They help students distinguish interests in scientific research, hardware or mission coordination, while giving
-    families concrete reference points for engineering preparation: applying knowledge, explaining design choices and contributing responsibly to a multidisciplinary team working toward a shared mission.'
+    astronauts work together under scientific, environmental and resource constraints.'
   founder: false
 - id: steve-kelman
   name: Steve Kelman
@@ -139,12 +106,7 @@ people:
 
 
     Through WinPlus, he has led visits to Harvard Kennedy School and discussed US–China relations, international affairs and American governance, connecting current events with how governments organize,
-    decide and implement policy.
-
-
-    These discussions help families distinguish political science, international relations and public management through concrete questions about institutions and their responsibilities. Students can investigate
-    who makes decisions, how countries interact and why public organizations perform differently. Comparing policy objectives, implementation conditions and outcomes encourages evidence-based judgment,
-    providing a practical foundation for analytical reading, research and writing across the humanities and social sciences.'
+    decide and implement policy.'
   founder: false
 - id: damir-kozhanbayev
   name: Damir Kozhanbayev
@@ -156,14 +118,9 @@ people:
     of Education as an Urban Scholars Fellow in Learning Design, Innovation, and Technology.
 
 
-    At WinPlus, he mentors an eight-week UN and global-challenges research course. Students select questions in areas such as children’s rights, education, gender equality or climate, learning about UN
-    institutions and Sustainable Development Goals. They prepare an annotated bibliography using five to seven academic sources and two to three UN reports, then compare two to three cases.
-
-
-    Students develop three to five evidence-based recommendations addressing feasibility and implementation. Final requirements include a ten-to-fifteen-page paper, two-page policy brief and ten-to-fifteen-minute
-    presentation. These demonstrate source evaluation, comparative analysis and policy communication, while providing material for later Model UN or research presentations. Families can see how social concerns
-    become structured inquiry.'
+    At WinPlus, Damir mentors Global Challenges Policy Research.'
   founder: false
+  org: Harvard Project on Workforce
 - id: changfan-lin
   name: Changfan Lin
   initials: CL
@@ -174,32 +131,21 @@ people:
     He now engineers AAV vectors to improve gene-delivery targeting and safety.
 
 
-    At WinPlus, he advises undergraduate, master’s and doctoral applicants in biology and ecology, helping students gain admission to Caltech and Cornell. His eight-week gene-therapy course covers gene
-    editing and delivery, AAV capsids, the blood–brain barrier, receptor recognition and directed evolution. Research papers illustrate limitations in translating animal findings to humans.
-
-
-    Students use Python to analyze sequencing data from real AAV selection experiments, count variants, calculate enrichment and visualize results. A required Discovery Report explains methods, findings
-    and interpretation; a literature review is optional. This combines biology, scientific reading and computation, helping students support conclusions with data while understanding the further validation
-    required before experimental findings become clinical applications.'
+    At WinPlus, Changfan mentors Gene Therapy & AI Data Analysis.'
   founder: false
+  org: Caltech
 - id: yinong-liu
   name: Yinong Liu
   initials: YL
   title: WinPlus Mentor in AI Product Innovation for Fashion and Retail
   affiliation: ''
   photo: ''
-  bio: 'Yinong Liu mentors WinPlus’s AI Product Innovation for Luxury Retail course. Across eight sessions, students use public information, customer observation and competitor research to examine e-commerce,
-    appointments, product discovery, styling and after-sales service.
+  bio: '[Add Yinong Liu''s education and professional background.]
 
 
-    They map customer journeys, identify five pain points and select one problem, comparing three to five solutions. They match needs with conversational AI, recommendations or visual search, then define
-    users, a minimum viable product, essential features and success criteria. Prototypes use Figma, Canva or slides without requiring advanced programming.
-
-
-    Students consider privacy, incorrect AI responses, brand tone and feasibility, proposing measures such as satisfaction, conversion or efficiency. A final proposal and five-to-seven-minute pitch present
-    evidence, competitor analysis, the prototype and business value. The project connects fashion, business and technology through research and design reasoning, giving families concrete evidence of how
-    students investigate users, choose appropriate tools and justify product decisions.'
+    At WinPlus, Yinong mentors AI Product Innovation for Luxury Retail.'
   founder: false
+  org: '[Affiliation]'
 - id: mike-medavoy
   name: Mike Medavoy
   initials: MM
@@ -211,12 +157,7 @@ people:
 
 
     Through WinPlus, he has led visits to a Hollywood production company and shared insights into filmmaking, the entertainment industry and talent representation. Students learn how stories become projects
-    and how directors, actors, writers, producers and agents connect creative ideas with financing and audiences.
-
-
-    For students interested in film, literature, performance or media, this provides a basis for distinguishing writing, visual storytelling, acting, production management and entertainment business. Families
-    gain a clearer understanding of artistic preparation: developing original work, explaining creative choices and learning how to contribute to a collaborative production with defined creative, technical
-    and organizational roles and responsibilities.'
+    and how directors, actors, writers, producers and agents connect creative ideas with financing and audiences.'
   founder: false
 - id: rachel-morgan
   name: Rachel Morgan
@@ -228,14 +169,9 @@ people:
     photonics to instruments for detecting Earth-like exoplanets, with research experience at JPL and MIT Lincoln Laboratory.
 
 
-    At WinPlus, she advises aerospace, mechanical and electrical engineering applicants and mentors an eight-week space-telescope project. Students compare missions, define scientific objectives and set
-    requirements for aperture, field of view, detectors, orbit and stability. They develop optical calculations, ray-tracing simulations and mechanical CAD or physical models.
-
-
-    Required outputs include a mission-design report, models and a design-review presentation explaining how optical and mechanical choices interact. Morgan has helped students gain admission to MIT, Carnegie
-    Mellon and the University of Illinois Urbana-Champaign. The project gives families tangible evidence of students’ interests in computation, modeling or hardware and their ability to justify engineering
-    decisions.'
+    At WinPlus, Rachel mentors Space Telescope Mission Design.'
   founder: false
+  org: NASA Ames Research Center
 - id: anhphu-nguyen
   name: AnhPhu Nguyen
   initials: AN
@@ -247,12 +183,7 @@ people:
 
 
     At WinPlus, he advises undergraduate applicants in computer science and AI, leads learning visits to Harvard’s engineering school and has helped students gain undergraduate admission to Harvard and
-    Stanford. His experience links device repair and prototyping with user needs and product development.
-
-
-    For families, this offers a practical way to distinguish interests in algorithms, software, intelligent hardware and interaction design. Students can build around a defined user problem, test and revise
-    prototypes, and explain design tradeoffs. These records help parents assess technical understanding and sustained improvement, while giving students evidence and reasoning to discuss alongside a finished
-    product.'
+    Stanford. His experience links device repair and prototyping with user needs and product development.'
   founder: false
 - id: cedric-pan
   name: Cedric Pan
@@ -265,10 +196,7 @@ people:
 
 
     He has held executive roles at a Silicon Valley autonomous-driving company, a multinational ride-sharing company and a Boston K-12 education technology company, and earlier worked with the Development
-    Research Center of the State Council and China Development Bank.
-
-
-    At WinPlus he leads admissions strategy, technology entrepreneurship and the research and internship programs.'
+    Research Center of the State Council and China Development Bank.'
   founder: true
 - id: vania-shi
   name: Vania Shi
@@ -281,31 +209,20 @@ people:
 
 
     At WinPlus, she advises undergraduate business applicants and candidates for MBA, finance and business-analytics master’s programs. She has led visits to MIT Sloan and helped applicants gain admission
-    to Harvard Business School, MIT Sloan and Wharton.
-
-
-    For younger families, her background clarifies distinctions among finance, business analytics and management: capital and risk, data-informed operating decisions, and organizational strategy. MBA study
-    belongs to a later stage; secondary-school students can begin with mathematics, statistics, economics reading, company research or small entrepreneurial projects. These experiences provide concrete
-    evidence of interests before choosing an undergraduate pathway and longer-term business education, informed by practical exposure to companies and management.'
+    to Harvard Business School, MIT Sloan and Wharton.'
   founder: false
 - id: sijie-tian
   name: Sijie Tian
   initials: ST
-  title: Artificial Intelligence Mentor
+  title: AI Engineer
   affiliation: Meta Background
   photo: /images/uploads/team/sijie-tian.webp
-  bio: 'Sijie Tian has a Meta background and mentors WinPlus’s six-week AI Agent from 0 to 1 course for high school students with beginner or intermediate programming experience. Students build a working
-    study assistant, research helper or data-cleaning agent.
+  bio: 'Sijie Tian is an engineer with a background on Meta''s AI teams. [Add education and professional background.]
 
 
-    Starting with language-model API calls and prompt experiments, they develop a loop that observes, plans, acts and stops under defined conditions. They connect tools, specify inputs and outputs, and
-    record successful and failed calls. Training includes sandbox boundaries, command allowlists, file restrictions, timeouts and API-key handling.
-
-
-    Students assess performance through five to ten evaluation tasks, analyze execution traces and improve a weakness. Required outputs include code, a demonstration, evaluation results, execution logs
-    and a reflection report. These show parents whether students understand tool use, debugging and testing. Students must explain how their agent works, what evidence supports its performance and where
-    its limitations remain.'
+    At WinPlus, Sijie mentors AI Agents from 0 to 1.'
   founder: false
+  org: Meta
 - id: hannah-tomio
   name: Hannah Tomio
   initials: HT
@@ -316,14 +233,9 @@ people:
     at Tohoku University. Her experience includes NASA Goddard, JPL and Boeing.
 
 
-    At WinPlus, she advises aerospace, mechanical and electrical engineering applicants and mentors an eight-week satellite-constellation design project. Using Starlink as a case study, students examine
-    orbital altitude, inclination, period, coverage and revisit time. They use NASA’s GMAT to simulate orbits and compare satellite numbers and arrangements for a chosen communication mission.
-
-
-    The course also compares radio and optical communications, introduces key components and develops a simplified link budget. The final paper or portfolio includes requirements, constellation architecture,
-    simulations, a network diagram and design justifications, followed by a presentation. Families can see how students apply physics, computing and electronics to parameter selection, modeling and engineering
-    reasoning.'
+    At WinPlus, Hannah mentors Satellite Constellation & Orbit Design.'
   founder: false
+  org: University of Bern
 - id: claire-yoo
   name: Claire Yoo
   initials: CY
@@ -335,12 +247,7 @@ people:
 
 
     At WinPlus, she advises undergraduate applicants interested in medicine, neuroscience and related life sciences. She has led learning visits connected with Harvard’s life-science and medical-school
-    environments and helped students gain undergraduate admission to Harvard and Stanford.
-
-
-    As a current undergraduate, she offers a close view of how coursework, laboratories and reading refine academic interests. The usual US medical pathway follows undergraduate study, so younger students
-    can first explore biology, neuroscience and health-related questions. Her experience helps families understand undergraduate research and premedical preparation, while encouraging students to distinguish
-    an interest in a medical career from enjoyment of specific scientific work.'
+    environments and helped students gain undergraduate admission to Harvard and Stanford.'
   founder: false
 - id: yuan-yuan
   name: Yuan Yuan
@@ -352,14 +259,9 @@ people:
     for a microservices-based algorithmic trading system, connecting business requirements, system behavior and software testing.
 
 
-    Through WinPlus, Yuan has led students to Meta’s New York offices, introducing product design, workplace culture, collaboration and the professional environment. Students connect familiar digital products
-    with the technical teams, user needs and development processes behind them.
-
-
-    This experience provides a basis for comparing software engineering, product design and data-related interests. Students can investigate a familiar product: whom it serves, what problem it solves, which
-    features could improve and how to evaluate results. For families, observations and product analysis after the visit offer evidence of curiosity and reasoning, helping students turn workplace exposure
-    into a more focused learning plan or project question.'
+    At WinPlus, Yuan mentors FinTech & AI Startup Lab.'
   founder: false
+  org: Meta · Bloomberg
 - id: terry-zhang
   name: Terry Zhang
   initials: TZ
@@ -370,14 +272,45 @@ people:
     office attendance in relation to managers and teammates.
 
 
-    At WinPlus, he mentors a Microsoft quarterly-revenue forecasting project using public financial data. Across eight meetings, students clean data, explore trends and study seasonality, lagged variables
-    and rolling averages. They use Python to compare ARIMA and ETS models, separate training and test data, and evaluate errors using MAE, RMSE and MAPE.
-
-
-    Further analysis examines revenue drivers and share-price relationships while distinguishing correlation from causation. Required outputs include annotated code or a notebook, predicted-versus-actual
-    charts, an analytical report and a presentation. For students considering mathematics, computing, finance or business analytics, the project connects statistics with a concrete business problem. Parents
-    can assess progress through data handling, model comparisons and explanations of errors.'
+    At WinPlus, Terry mentors Financial Forecasting with Python.'
   founder: false
+  org: Microsoft · Google
+- id: mentor-ar-accessibility
+  name: '[Mentor name]'
+  initials: ''
+  title: Engineering Lead, Meta Reality Labs
+  affiliation: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads AR Glasses Accessibility Software.'
+  founder: false
+  org: Meta Reality Labs
+- id: mentor-iot-devices
+  name: '[Mentor name]'
+  initials: ''
+  title: Cloud Engineer, 10+ years at Amazon Web Services
+  affiliation: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads IoT & AI Device Development.'
+  founder: false
+  org: Amazon Web Services
+- id: mentor-screenwriting
+  name: '[Mentor name]'
+  initials: ''
+  title: Cannes award-winning short-film director; MFA in Screenwriting, Northwestern University
+  affiliation: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads Screenwriting & Directing.'
+  founder: false
+  org: '[Affiliation]'
+- id: mentor-ux-research
+  name: '[Mentor name]'
+  initials: ''
+  title: User Research Lead, 8+ years at Google; dual master's, Stanford University
+  affiliation: ''
+  photo: ''
+  bio: '[Add mentor name, photo and professional background.] This mentor leads Product & UX Research for Short Video.'
+  founder: false
+  org: Google
 note: Selected members of the WinPlus team. Titles and affiliations describe each person's professional background and do not imply that their institution endorses WinPlus.
 cta_title: Work with mentors like these
 cta_text: Start with a free strategy session and we will introduce the mentors best placed to guide you.

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, gallery, quotes, faq, cta_band, results_notice, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, gallery, past_event_card, quotes, faq, cta_band, results_notice, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block schema %}
 {{ ld({"@context": "https://schema.org", "@type": "Service", "serviceType": item.title, "name": item.title, "description": item.summary, "url": canonical, "provider": {"@id": site_url ~ "/#organization"}, "audience": {"@type": "EducationalAudience", "educationalRole": "student"}}) }}
@@ -21,43 +21,19 @@
 <section class="section s-ivory">
   <div class="container">
     {{ head("", item.features_title) }}
-    <div class="grid g-{{ 4 if item.features | length == 4 else 3 }}">
-      {% for f in item.features %}<div class="value reveal"><span class="num" style="color:var(--brass)">{{ "%02d" | format(loop.index) }}</span><h3 style="margin-top:.75rem">{{ f.title }}</h3><p>{{ f.text }}</p></div>{% endfor %}
+    <div class="pillars{% if item.features | length == 3 %} pillars-3{% endif %}">
+      {% for f in item.features %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>{% endfor %}
     </div>
-    {% if item.outcomes %}
-    <div class="split-intro outcomes-merge">
-      <div><p class="eyebrow">{{ _("Outcomes") }}</p><h3 class="h2-sm">{{ item.outcomes_title }}</h3>{% if item.selection_title %}<h4 style="margin-top:2rem">{{ item.selection_title }}</h4><p class="muted small">{{ item.selection_text }}</p>{% endif %}</div>
-      <ul class="ticks ticks-lg">{% for o in item.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>
-    </div>
-    {% endif %}
+    {% if item.selection_title %}<div class="note-callout reveal"><h3>{{ item.selection_title }}</h3><p>{{ item.selection_text }}</p></div>{% endif %}
   </div>
 </section>
 
-{% if item.itinerary %}
+{% set evs = past_events | selectattr("category", "equalto", item.category) | list %}
+{% if evs %}
 <section class="section">
   <div class="container">
-    {{ head("", item.itinerary_title) }}
-    <div class="itinerary">{% for s in item.itinerary %}<div class="reveal">{% if s.days %}<p class="days">{{ s.days }}</p>{% endif %}<p class="city">{{ s.city }}</p><p>{{ s.text }}</p></div>{% endfor %}</div>
-    {% if item.itinerary_note %}<p class="notice">{{ item.itinerary_note }}</p>{% endif %}
-  </div>
-</section>
-{% endif %}
-
-{% if item.gallery %}
-<section class="section s-ivory">
-  <div class="container">
-    {{ head("", item.gallery_title) }}
-    {{ gallery(item.gallery) }}
-  </div>
-</section>
-{% endif %}
-
-{% if item.past %}
-<section class="section">
-  <div class="container">
-    {{ head("", item.past_title) }}
-    <div class="itinerary">{% for p in item.past %}<div class="reveal"><p class="days">{{ p.year }}</p><p class="city" style="font-size:1.4rem">{{ p.title }}</p><p>{{ p.text }}</p></div>{% endfor %}</div>
-    <p style="margin-top:2rem">{{ arrow(_("See past events"), "events.html#past") }}</p>
+    <div class="head-row">{{ head("", item.past_title or _("Past events")) }}{{ arrow(_("All past events"), "events.html#past") }}</div>
+    <div class="grid g-3">{% for e in evs %}{{ past_event_card(e) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}
@@ -83,14 +59,4 @@
   <div class="container">{{ faq(item.faq, item.title ~ ": " ~ _("FAQ")) }}</div>
 </section>
 
-<section class="section s-ivory">
-  <div class="container">
-    {% for e in siblings if e.slug != item.slug %}
-    <a class="split is-reverse reveal" href="{{ u(e.url) }}" style="text-decoration:none;color:inherit">
-      {{ photo(e.image, e.image_alt, "split-media", 1200, sizes="(max-width: 900px) 100vw, 50vw") }}
-      <div class="split-copy"><span class="kicker">{{ _("Also explore") }}</span><h2>{{ e.title }}</h2><p class="lead">{{ e.card_text }}</p><span class="link-arrow">{{ _("Explore the program") }} <span aria-hidden="true">→</span></span></div>
-    </a>
-    {% endfor %}
-  </div>
-</section>
 {% endblock %}

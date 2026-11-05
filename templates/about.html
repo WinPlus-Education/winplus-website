@@ -35,7 +35,7 @@
   <div class="container">
     {{ head(page.how_eyebrow, page.how_title, page.how_intro) }}
     {{ journey(page.how) }}
-    <div class="pillars" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(56px,6vw,96px)">
+    <div class="pillars pillars-3" style="margin-top:clamp(56px,6vw,96px)">
       {% for c in page.compare %}<div class="pillar reveal"><h3>{{ c.title }}</h3><p>{{ c.text }}</p></div>{% endfor %}
     </div>
   </div>

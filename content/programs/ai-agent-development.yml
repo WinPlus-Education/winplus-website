@@ -13,12 +13,12 @@ format: Online · live mentor sessions
 length: 6 weeks
 dates: Summer 2027 · dates to be confirmed
 cohort: Small group
-overview: 'AI agents are software that can plan, use tools and complete tasks on their own, and they are reshaping how every industry works. In this internship, students build one themselves:
-  a study assistant, research helper or data-cleaning agent that actually works.
+overview: 'AI agents are software that can plan, use tools and complete tasks on their own, and they are reshaping how every industry works. In this internship, students build one themselves: a study assistant,
+  research helper or data-cleaning agent that actually works.
 
 
-  Students start with language-model API calls and prompt experiments, then build a loop that observes, plans, acts and stops under defined conditions. Just as important, they learn
-  to make agents safe and reliable: sandbox boundaries, command allowlists, timeouts and careful handling of API keys.'
+  Students start with language-model API calls and prompt experiments, then build a loop that observes, plans, acts and stops under defined conditions. Just as important, they learn to make agents safe
+  and reliable: sandbox boundaries, command allowlists, timeouts and careful handling of API keys.'
 outcomes:
 - Working agent code and a live demonstration
 - Evaluation results across 5–10 test tasks, with execution logs

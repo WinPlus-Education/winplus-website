@@ -3,8 +3,8 @@ meta_description: 'WinPlus student outcomes: 87 Ivy League and Top-30 offers inc
 eyebrow: Our Results
 title: Outcomes that speak for themselves
 intro: WinPlus-advised students earn offers from the world's most selective universities at rates far above each school's overall admit rate. Here are the numbers, the stories and the families behind them.
-image: /images/uploads/campus/yale.webp
-image_alt: Sterling Memorial Library, Yale University
+image: /images/uploads/campus/mit-killian.webp
+image_alt: Killian Court and the Great Dome, MIT
 stats:
 - number: 100+
   label: Students advised since 2020
@@ -186,7 +186,7 @@ offer_tiers:
     logo: /images/uploads/universities/ohio-state.png
     note: ''
   - name: Rutgers University–New Brunswick
-    logo: ''
+    logo: /images/uploads/universities/rutgers.png
     note: ''
   - name: UC Santa Barbara
     logo: /images/uploads/universities/ucsb.png
@@ -195,10 +195,10 @@ offer_tiers:
     logo: /images/uploads/universities/umd.png
     note: ''
   - name: University of Rochester
-    logo: ''
+    logo: /images/uploads/universities/rochester.png
     note: ''
   - name: University of Washington
-    logo: ''
+    logo: /images/uploads/universities/washington.png
     note: ''
 - label: UK G5
   schools:

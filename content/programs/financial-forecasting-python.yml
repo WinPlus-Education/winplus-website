@@ -13,12 +13,12 @@ format: Online · 8 mentor meetings
 length: 8 weeks
 dates: Summer 2027 · dates to be confirmed
 cohort: Small group
-overview: 'How do companies predict what comes next? Students take on a real analyst''s problem, forecasting Microsoft''s quarterly revenue from public financial data, and learn the
-  statistics and judgement behind every forecast.
+overview: 'How do companies predict what comes next? Students take on a real analyst''s problem, forecasting Microsoft''s quarterly revenue from public financial data, and learn the statistics and judgement
+  behind every forecast.
 
 
-  Students clean data, explore trends and seasonality, and compare ARIMA and ETS models in Python. They then examine what drives revenue and how it relates to share price, learning to
-  tell correlation from causation.'
+  Students clean data, explore trends and seasonality, and compare ARIMA and ETS models in Python. They then examine what drives revenue and how it relates to share price, learning to tell correlation from
+  causation.'
 outcomes:
 - Annotated Python notebook
 - Predicted-versus-actual charts and error analysis (MAE, RMSE, MAPE)

@@ -13,12 +13,11 @@ format: Online · live mentor sessions
 length: 6–8 weeks
 dates: Summer 2027 · dates to be confirmed
 cohort: Small group
-overview: 'Smart devices bring together hardware, software and the cloud. In this internship students learn how the Internet of Things works end to end, then design and build their own
-  AI-powered device that collects data, sends it to the cloud and responds intelligently.
+overview: 'Smart devices bring together hardware, software and the cloud. In this internship students learn how the Internet of Things works end to end, then design and build their own AI-powered device
+  that collects data, sends it to the cloud and responds intelligently.
 
 
-  Along the way they experience the full product life cycle used by professional engineering teams, from requirements and hardware assembly to software, cloud deployment and a final
-  demo.'
+  Along the way they experience the full product life cycle used by professional engineering teams, from requirements and hardware assembly to software, cloud deployment and a final demo.'
 outcomes:
 - A working IoT prototype with technical documentation
 - Hands-on experience across hardware, software and cloud
@@ -41,3 +40,4 @@ eligibility:
 - Grades 9–12
 - No hardware experience required
 - A laptop and reliable internet connection; hardware kit details confirmed on enrollment
+mentor_id: mentor-iot-devices

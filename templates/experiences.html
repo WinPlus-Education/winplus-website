@@ -13,10 +13,9 @@
     <a class="split reveal{% if loop.index is even %} is-reverse{% endif %}" href="{{ u(e.url) }}" style="text-decoration:none;color:inherit;{% if not loop.first %}margin-top:clamp(56px,7vw,112px);{% endif %}">
       {{ photo(e.image, e.image_alt, "split-media", 1400, sizes="(max-width: 900px) 100vw, 50vw") }}
       <div class="split-copy">
-        <span class="kicker">{{ e.kicker }}</span>
         <h2>{{ e.title }}</h2>
         <p class="lead">{{ e.summary }}</p>
-        <ul class="outcomes">{% for o in e.outcomes[:3] %}<li>{{ o }}</li>{% endfor %}</ul>
+        <ul class="ticks ticks-lg">{% for o in e.outcomes[:3] %}<li>{{ o }}</li>{% endfor %}</ul>
         <span class="link-arrow" style="margin-top:2rem">{{ _("Explore the program") }} <span aria-hidden="true">→</span></span>
       </div>
     </a>

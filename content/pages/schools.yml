@@ -4,8 +4,8 @@ eyebrow: Partner With Us
 title: A world-class counseling and global programs team for your school, without building one.
 intro: WinPlus partners with private schools to deliver college counseling, research, summer programs and global experiences, under your brand or ours. We deliver; your students gain access to top mentors
   and real stages, and your school gains outcomes families choose you for.
-image: /images/uploads/photos/hbs-classroom.webp
-image_alt: Students from a partner school on a US university visit
+image: /images/uploads/campus/classroom-lecture.webp
+image_alt: A teacher leading a lively class discussion
 challenges_title: The challenges private schools tell us about
 challenges:
 - title: Limited counseling capacity
@@ -16,36 +16,18 @@ challenges:
   text: Parents choose schools on outcomes. Without a track record at top universities, enrollment and retention suffer.
 benefits_title: Why schools choose WinPlus
 benefits:
-- title: Elite mentor networks
-  text: Professors, scientists, alumni interviewers and industry leaders from America's top universities and companies, working directly with your students.
+- title: Elite mentors, under your brand
+  text: Professors, scientists, alumni interviewers and industry leaders from America's top universities and companies work directly with your students, presented as your school's own program.
+- title: Outcomes that drive enrollment
+  text: 87 Ivy League and Top-30 offers and students on international conference stages. Placement results are why families choose a school, and why they stay.
+- title: Differentiation competitors can't copy
+  text: 'Research with working scientists, immersions inside leading universities and real international conferences: programs that set your school apart immediately.'
+- title: New revenue, zero operations
+  text: We design, staff and deliver every program. Choose a referral, co-brand or white-label model, and how visible WinPlus is to your families.
 - title: Safety and compliance
   text: Background checks for staff and mentors, minor-welfare protocols and supervised travel, set out in every partnership agreement.
-- title: Proven outcomes
-  text: 87 Ivy League and Top-30 offers and students on international conference stages, from Dubai to UN Headquarters.
-- title: Flexible models
-  text: Referral, co-brand or white-label. You choose how visible WinPlus is and who owns the family relationship.
 - title: US, China and Singapore expertise
   text: A bilingual team on the ground in Boston and Beijing that understands families, schools and universities on both sides.
-models_title: Partnership models
-models:
-- title: Referral
-  text: You refer, we deliver, and you receive a referral share. The simplest model, with no operational burden.
-- title: Co-brand / reseller
-  text: We deliver together, share marketing and share revenue.
-- title: White-label / wholesale
-  text: You are the brand and own the family relationship; WinPlus provides admissions, research and exclusive resources behind the scenes.
-roles_title: Who does what
-roles:
-  partner:
-  - Student relationships
-  - Enrollment & recruitment
-  - Local trust
-  winplus:
-  - Mentors & curriculum
-  - Admissions delivery
-  - International resources
-  - Quality control
-models_note: Every partnership comes with a formal contract, student protection measures and quality standards.
 track_title: Our track record
 track:
 - number: 100+
@@ -68,12 +50,8 @@ steps:
 - title: Scale up
   text: Expand to more services and students as results come in.
 ideal_partners: 'Ideal partners: private schools of 50–500 students in China, the US and Singapore, and education organizations seeking premium outcomes and differentiated programming.'
-contact_title: Talk to us about a partnership
-contact_name: Cathy Guo
-contact_role: Co-Founder
-contact_email: cathy.guo@winplus.org
 primary_cta: Explore a Partnership
-primary_link: contact.html?interest=School%20Partnership
+primary_link: partner-inquiry.html
 secondary_cta: Download Overview (PDF)
 secondary_file: ''
 case_eyebrow: Partnership in practice
@@ -94,13 +72,5 @@ types:
   text: Exchanges, visits and joint projects connecting your students with peers, universities and organizations in the US, China and Singapore.
 - title: Curriculum Enrichment
   text: Mentor-led research, internships, global-issues training and international conference preparation that run alongside your school year.
-value_title: What your school gains
-value:
-- title: New revenue, zero operations
-  text: We handle delivery, so you don't need to build a team.
-- title: Instant differentiation
-  text: A program competitors can't easily copy becomes your advantage immediately.
-- title: Better enrollment and retention
-  text: Top outcomes are why families choose a school, and why they stay.
-- title: Brand empowerment
-  text: World-class mentors and programs at leading universities, presented under your brand.
+cta_title: Ready to explore a partnership?
+cta_text: Tell us about your school and we'll reply within two business days to set up an intro call.

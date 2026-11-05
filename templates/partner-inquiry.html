@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_head with context %}
+{% block content %}
+{{ page_head(page, [[_("About Us"), "about.html"], [_("Partner With Us"), "schools.html"], [page.eyebrow, "partner-inquiry.html"]]) }}
+<section class="section">
+  <div class="container contact-layout">
+    <aside>
+      <h2 class="h3">{{ page.next_title }}</h2>
+      <ol class="next-steps">{% for s in page.next_steps %}<li>{{ s }}</li>{% endfor %}</ol>
+    </aside>
+
+    {# Netlify Forms: submissions appear in the Netlify dashboard under "Forms" as "partner-inquiry". #}
+    <form class="form form-wrap" name="partner-inquiry" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}">
+      <input type="hidden" name="form-name" value="partner-inquiry">
+      <input type="hidden" name="language" value="{{ lang.code }}">
+      <input type="hidden" name="consent_version" value="{{ site.consent.version }}">
+      <input type="hidden" name="notice_text" value="{{ site.consent.school_notice }}">
+      <p class="hp"><label>Leave this empty: <input name="company_website"></label></p>
+      <div class="form-grid">
+        <label class="field">{{ _("Contact name") }} *<input name="name" autocomplete="name" required></label>
+        <label class="field">{{ _("Job title") }} *<input name="job_title" autocomplete="organization-title" required></label>
+        <label class="field">{{ _("School or organization") }} *<input name="organization" autocomplete="organization" required></label>
+        <label class="field">{{ _("Work email") }} *<input type="email" name="email" autocomplete="email" required></label>
+        <label class="field">{{ _("Phone or WeChat") }} <span class="opt">({{ _("optional") }})</span><input name="phone"></label>
+        <label class="field">{{ _("Country or region") }} *
+          <select name="country" required><option value="">{{ _("Select") }}</option>{% for c in page.countries %}<option>{{ c }}</option>{% endfor %}</select>
+        </label>
+        <label class="field">{{ _("Type of institution") }} *
+          <select name="institution_type" required><option value="">{{ _("Select") }}</option>{% for c in page.institution_types %}<option>{{ c }}</option>{% endfor %}</select>
+        </label>
+        <label class="field">{{ _("Number of students") }} <span class="opt">({{ _("optional") }})</span>
+          <select name="student_count"><option value="">{{ _("Select") }}</option>{% for c in page.student_counts %}<option>{{ c }}</option>{% endfor %}</select>
+        </label>
+      </div>
+      <fieldset>
+        <legend>{{ _("Areas of interest") }}</legend>
+        <div class="check-row">{% for t in page.interests %}<label class="consent"><input type="checkbox" name="interests" value="{{ t }}"> <span>{{ t }}</span></label>{% endfor %}</div>
+      </fieldset>
+      <div class="form-grid">
+        <label class="field">{{ _("Preferred start") }} <span class="opt">({{ _("optional") }})</span>
+          <select name="timeline"><option value="">{{ _("Select") }}</option>{% for c in page.timelines %}<option>{{ c }}</option>{% endfor %}</select>
+        </label>
+        <label class="field">{{ _("Website") }} <span class="opt">({{ _("optional") }})</span><input type="url" name="website" placeholder="https://"></label>
+        <label class="field full">{{ _("Tell us about your goals") }} <span class="opt">({{ _("optional") }})</span><textarea name="message" rows="4"></textarea></label>
+      </div>
+      <p class="form-note">{{ site.consent.school_notice }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></p>
+      <div><button class="btn btn-primary" type="submit">{{ _("Send inquiry") }} <span class="arr" aria-hidden="true">→</span></button></div>
+    </form>
+  </div>
+</section>
+{% endblock %}

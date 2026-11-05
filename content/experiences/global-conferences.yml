@@ -30,25 +30,10 @@ features:
 - title: Prepare like a professional
   text: Training on how international institutions work, policy research and a written position, guided by mentors with UN and UNICEF experience.
 - title: Take the stage
-  text: Students attend sessions and side events and, where opportunities allow, speak, present research or exhibit their work.
+  text: Students attend sessions and side events and, where opportunities allow, speak, present research or exhibit their work. Students gain real experience presenting before international audiences.
 - title: Turn it into impact
-  text: Reflection, a follow-up project and guidance on how to describe the experience in applications.
-itinerary_title: Where our students have presented
-itinerary_note: Opportunities depend on each conference's rules and are never guaranteed. References to conferences are factual and do not imply endorsement of WinPlus by their organizers.
-itinerary:
-- city: COSP19, New York
-  days: '2026'
-  text: A 17-year-old WinPlus student was the only high-school speaker at the 19th Conference of States Parties to the Convention on the Rights of Persons with Disabilities, UN Headquarters.
-- city: UNPFII, New York
-  days: '2026'
-  text: A WinPlus student delegation took part in the 25th session of the UN Permanent Forum on Indigenous Issues at UN Headquarters.
-- city: COP28, Dubai
-  days: '2023'
-  text: WinPlus students presented climate research at the UN Climate Change Conference and met with university professors and regional leaders.
-- city: Global women's forum, Bangkok
-  days: '2024'
-  text: A WinPlus student was selected to speak on young women's health, and her Dunhuang-inspired artwork was exhibited at the forum.
-outcomes_title: What students gain
+  text: 'Reflection, a follow-up project and guidance on how to describe the experience in applications. Students complete a policy brief or reflection paper and build a global network of peers, professionals
+    and mentors: leadership and impact that carry real weight in applications.'
 outcomes:
 - Experience presenting before international audiences
 - A policy brief or reflection paper
@@ -57,12 +42,6 @@ outcomes:
 selection_title: A selective program, not a ticket
 selection_text: WinPlus does not sell access to any organization or conference. We select students on readiness and commitment, prepare them seriously, and support them to participate under each conference's
   own rules. [Confirm selection criteria.]
-gallery_title: Moments from the global stage
-gallery:
-- image: /images/uploads/photos/unpfii-2026.webp
-  caption: WinPlus delegation in the UN General Assembly Hall during UNPFII, April 2026
-- image: /images/uploads/students/un-cosp19-speaker.jpg
-  caption: Speaking at COSP19, June 2026
 testimonials_title: ''
 testimonials: []
 next:
@@ -80,3 +59,5 @@ faq:
   a: Through pre-conference training on how international institutions work and on the chosen topic, policy research and writing, and presentation coaching from WinPlus mentors.
 - q: Does WinPlus have a special relationship with the United Nations?
   a: No. WinPlus is an independent education company. Students participate in conferences under each conference's own registration and participation rules.
+category: conference
+past_title: Past events

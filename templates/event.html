@@ -24,6 +24,11 @@
         <li><strong>{{ _("Type") }}</strong>{{ item.type }}</li>
       </ul>
       <div class="prose">{{ item.details | md | safe }}</div>
+      {% if item.expect %}
+      <h2 class="h2-sm" style="margin-top:3rem">{{ item.expect_title or _("What to expect") }}</h2>
+      <ul class="ticks ticks-lg">{% for x in item.expect %}<li>{{ x }}</li>{% endfor %}</ul>
+      {% endif %}
+      {% if item.facts %}<dl class="stats stats-sm" style="margin-top:3rem">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl>{% if item.facts_source %}<p class="notice">{{ item.facts_source }}</p>{% endif %}{% endif %}
     </div>
     <aside class="detail-side">
       <div class="side-card side-sticky" id="register">

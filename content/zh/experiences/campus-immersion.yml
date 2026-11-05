@@ -27,49 +27,20 @@ features:
 - title: 由真正在那里授课的人来讲
   text: WinPlus 导师与来自哈佛、MIT、耶鲁、斯坦福的嘉宾（包括前 NASA 宇航员、MIT 教授）讲授领导力、国际关系、人工智能、基因编辑与航天工程。
 - title: 真实的大学生活
-  text: 在大学食堂用餐，与在校生和校友交流，亲身感受每所校园的文化、节奏与氛围。
+  text: 在大学食堂用餐，与在校生和校友交流，亲身感受每所校园的文化、节奏与氛围。学员清楚了解哪些大学、哪种大学文化适合自己，并收获来自不同学校与背景的同伴友谊。
 - title: 揭开招生的面纱
-  text: 参加名校招生说明会，并由 WinPlus 导师为每位学员定制美国本科升学规划。
+  text: 参加名校招生说明会，并由 WinPlus 导师为每位学员定制美国本科升学规划。每一段经历，都将成为文书与面试的第一手素材。
 - title: 从创意到产业
   text: 参访 Meta、苹果、谷歌等科技企业，以及 NASA、联合国总部和好莱坞制片公司。
 - title: 全球胜任力认证
   text: 课程围绕全球分析、文化共情、多元沟通与可持续行动四大胜任力设计，结业颁发《WinPlus 全球胜任力证书》。
-outcomes_title: 学员将收获
 outcomes:
 - 清楚了解哪些大学、哪种大学文化适合自己
 - 一份个性化美国本科升学规划
 - 《WinPlus 全球胜任力证书》
 - 来自不同学校与背景的同伴友谊
 - 可转化为文书与面试素材的第一手经历
-past_title: 往期项目
-past:
-- year: '2026'
-  title: 哈佛全球胜任力暑期研学营
-  text: 2026 年 7 月 12–23 日。哈佛、MIT、耶鲁、普林斯顿与硅谷。
-- year: '2025'
-  title: 哈佛—斯坦福全球胜任力研学营
-  text: 2025 年 7 月 14–25 日。纽约、波士顿、硅谷与洛杉矶；10 所名校；20 名学员。
-- year: '2024'
-  title: 美国东海岸全球胜任力研学
-  text: 2024 年 7 月 15–27 日。为人大附中 15 名学生打造的 12 天项目，走访波士顿、纽约、费城与华盛顿。
-gallery_title: 往期精彩瞬间
-gallery:
-- image: /images/uploads/photos/hbs-classroom.webp
-  caption: 哈佛商学院教室中的研讨课
-- image: /images/uploads/photos/yale-sterling-group.webp
-  caption: 耶鲁大学斯特林纪念图书馆，2026
-- image: /images/uploads/photos/hks-session.webp
-  caption: 哈佛肯尼迪学院导师课，2026
-- image: /images/uploads/photos/wall-street-group.webp
-  caption: 纽约华尔街
-- image: /images/uploads/photos/mit-charles-river.webp
-  caption: MIT 旁的查尔斯河帆船体验，2026
-- image: /images/uploads/photos/immersion-group.webp
-  caption: 学员与 WinPlus 导师合影
-- image: /images/uploads/photos/statue-of-liberty.webp
-  caption: 纽约港，2026
-- image: /images/uploads/photos/amnh-2024.webp
-  caption: 美国自然历史博物馆，2024
+past_title: 往期活动
 testimonials_title: 学员与家长说
 testimonials:
 - quote: 我们所到访的十所高校给了我深深的震撼。二十几位德才兼备的名校教授和校友，让我对进入名校的愿望越来越强烈。
@@ -98,3 +69,4 @@ faq:
   a: WinPlus 工作人员从出发起全程陪同，WinPlus 导师在美国带领项目。[补充师生比与安全说明。]
 - q: 项目费用是多少？
   a: 费用因年份与路线而异，通常包含课程、住宿、地面交通、餐食与门票，不含国际机票、签证费与旅游保险，我们的团队会协助办理。请联系我们了解最新费用。
+category: immersion

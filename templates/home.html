@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import photo, btn, arrow, head, stats, rates, results_notice, offer_cards, pillars, journey, people, people_schema, marquee, case_study, event_card, quotes, cta_band with context %}
+{% from "macros.html" import photo, btn, arrow, head, stats, rates, results_notice, offer_cards, pillars, journey, people, people_schema, marquee, case_study, event_card, past_event_card, case_card, quotes, cta_band with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block preload %}{% set first = (page.hero.slides | selectattr("image", "exists") | first).image %}<link rel="preload" as="image" href="{{ img(first, 2000) }}"{% if srcset(first) %} imagesrcset="{{ srcset(first) }}" imagesizes="100vw"{% endif %}>{% endblock %}
 {% block content %}
@@ -95,7 +95,7 @@
 <section class="section">
   <div class="container">
     <div class="head-row">{{ head(st.eyebrow, st.title, st.intro) }}{{ arrow(st.link_text, st.link) }}</div>
-    {% for c in results_data.cases[:2] %}{{ case_study(c, loop.index is even) }}{% endfor %}
+    <div class="stories">{% for c in results_data.cases[:3] %}{{ case_card(c) }}{% endfor %}</div>
     {{ results_notice() }}
   </div>
 </section>
@@ -118,7 +118,7 @@
 <section class="section">
   <div class="container">
     <div class="head-row">{{ head(ev.eyebrow, ev.title, ev.intro) }}{{ arrow(ev.link_text, ev.link) }}</div>
-    <div class="grid g-3">{% for e in past_events[:3] %}{{ event_card(e) }}{% endfor %}</div>
+    <div class="grid g-3">{% for e in past_events[:3] %}{{ past_event_card(e) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}

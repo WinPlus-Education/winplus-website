@@ -127,3 +127,23 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/events/harvard-global-competency-immersion.html"
+  to = "/events/2026-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/zh/events/harvard-global-competency-immersion.html"
+  to = "/zh/events/2026-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/events/harvard-stanford-immersion.html"
+  to = "/events/2025-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/zh/events/harvard-stanford-immersion.html"
+  to = "/zh/events/2025-summer-campus-immersion.html"
+  status = 301

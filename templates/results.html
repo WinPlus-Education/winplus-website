@@ -31,15 +31,15 @@
   <div class="container">
     {{ head(_("Our Success Stories"), page.cases_title, page.cases_intro) }}
     <div class="stories">{% for c in page.cases %}{{ case_card(c, loop.index) }}{% endfor %}</div>
+    <div class="grid g-3 story-row" id="student-stories">{% for s in page.stories %}{{ story_card(s) }}{% endfor %}</div>
     {{ results_notice() }}
   </div>
 </section>
 
+{% if page.testimonials %}
 <section class="section s-ivory">
   <div class="container">
-    {{ head("", page.stories_title) }}
-    <div class="grid g-3">{% for s in page.stories %}{{ story_card(s) }}{% endfor %}</div>
-    <div class="head-row" style="margin-top:clamp(64px,7vw,112px);margin-bottom:2rem">
+    <div class="head-row">
       {{ head(_("In their words"), page.testimonials_title) }}
       <div class="carousel-nav" data-carousel="#res-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div>
     </div>
@@ -47,6 +47,7 @@
     {{ results_notice() }}
   </div>
 </section>
+{% endif %}
 
 {{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
 {% endblock %}

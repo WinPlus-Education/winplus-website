@@ -20,7 +20,7 @@
   <div class="container split-intro">
     <div>
       <p class="eyebrow">{{ _("The story") }}</p>
-      <p class="statement">{{ item.summary }}</p>
+      {% if item.statement %}<p class="statement">{{ item.statement }}</p>{% endif %}
       <ul class="event-chips">
         <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
         <li><span>{{ _("Location") }}</span>{{ item.location }}</li>

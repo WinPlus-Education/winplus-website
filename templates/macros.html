@@ -240,7 +240,8 @@
     <span class="kicker">{{ s.tag }}</span>
     <h3>{{ s.title }}</h3>
     <p>{{ s.text }}</p>
-    {% if s.link %}<a class="link-arrow" href="{{ u(s.link) }}">{{ _("Learn more") }} <span aria-hidden="true">→</span></a>{% endif %}
+    {% if s.story %}<details class="story-more"><summary><span>{{ _("Read the story") }}</span></summary><div class="story-body">{{ s.story | md | safe }}</div></details>
+    {% elif s.link %}<a class="link-arrow" href="{{ u(s.link) }}">{{ _("Learn more") }} <span aria-hidden="true">→</span></a>{% endif %}
   </div>
 </article>
 {%- endmacro %}

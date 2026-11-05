@@ -218,8 +218,8 @@ offer_tiers:
     logo: /images/uploads/universities/lse.png
     note: ''
 offers_note: Selected list of undergraduate and graduate offers. US categories follow the U.S. News & World Report 2027 Best National Universities ranking.
-cases_title: Selected case studies
-cases_intro: 'Three very different starting points, one approach: a plan built around the student.'
+cases_title: Selected case studies and student stories
+cases_intro: 'Different starting points, one approach: a plan built around the student.'
 cases:
 - tag: Ivy League
   title: From top of the class to Yale, with scholarship
@@ -244,26 +244,37 @@ cases:
   change: Research depth that powered the UK personal statement and the Cambridge interview, where the student drew on work on the crystal packing of mirror materials, and a US narrative uniting astronomy
     with STEM education.
   outcome: Offer from the University of Cambridge (astrophysics) and admitted to UC Berkeley.
-stories_title: Student stories
 stories:
 - tag: Global stage
-  title: The only high-school speaker at COSP19
-  text: After issue training with WinPlus mentors, a 17-year-old student addressed the 19th Conference of States Parties to the CRPD at UN Headquarters, New York, in June 2026.
-  image: /images/uploads/campus/un-flags.webp
-  image_alt: Flags of member states outside an international headquarters
-  link: experiences/global-conferences.html
+  title: WinPlus Student Speaks at COSP19, UN Headquarters
+  text: In June 2026, a 17-year-old WinPlus student was the only high-school speaker at the 19th Conference of States Parties to the Convention on the Rights of Persons with Disabilities.
+  story: '**The starting point.** [Add: the student''s background and what first drew them to disability inclusion.]
+
+
+    **The preparation.** Months of issue training with WinPlus mentors: how the United Nations and the Convention on the Rights of Persons with Disabilities work, research on inclusion, and coaching to
+    write and deliver a speech in English.
+
+
+    **The moment.** At COSP19, held at UN Headquarters in New York on June 9–11, 2026, the year the Convention turned 20, the student delivered a speech of about two and a half minutes to delegates from
+    around the world. Its message: *“Inclusion is not only about offering help; it is about giving everyone the opportunity to express themselves, take part in society and shape the future.”*
+
+
+    **What came next.** [Add: what the student did after the conference and how the experience shaped their plans and applications.]'
+  image: /images/uploads/students/un-cosp19-speaker.jpg
+  image_alt: A WinPlus student delivering a speech at COSP19, UN Headquarters
+  link: ''
 - tag: Research
-  title: A NASA mentor's letter, and Harvard and Stanford computer science
-  text: A student who completed a NASA planetary-analysis software project with a NASA scientist's recommendation was admitted to Harvard and Stanford for computer science.
+  title: '[Placeholder: research student story]'
+  text: '[Add a student story: the starting point, the research project and mentor, what changed, and the outcome.]'
   image: https://images.unsplash.com/photo-1630959305606-3123a081dada
   image_alt: A student working on a research project
-  link: research.html
+  link: ''
 - tag: Engineering
-  title: Summer schools and research to Penn and Berkeley engineering
-  text: MIT underwater-robotics research and environmental-policy research, each with a recommendation, helped a mechanical-engineering applicant earn offers from Penn and UC Berkeley.
+  title: '[Placeholder: engineering student story]'
+  text: '[Add a student story: the starting point, the summer programs and research, what changed, and the outcome.]'
   image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
   image_alt: Students in an engineering lab
-  link: admissions/us-college.html
+  link: ''
 testimonials_title: What families say
 testimonials:
 - quote: '[Parent testimonial placeholder: what changed for their child, and the family''s experience working with WinPlus.]'

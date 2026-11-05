@@ -1865,10 +1865,6 @@ collections:
         required: false
         widget: text
       summary: '{{fields.title}}'
-    - name: stories_title
-      label: Stories title
-      required: false
-      widget: string
     - name: stories
       label: Stories
       required: false
@@ -1885,6 +1881,10 @@ collections:
         widget: string
       - name: text
         label: Text
+        required: false
+        widget: text
+      - name: story
+        label: Story
         required: false
         widget: text
       - name: image
@@ -2709,10 +2709,22 @@ collections:
       name: item
       label: Item
       widget: string
+  - name: statement
+    label: Statement
+    required: false
+    widget: text
   - name: date_label
     label: Date label
     required: false
     widget: string
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
   - name: apply_label
     label: Apply label
     required: false
@@ -2729,14 +2741,6 @@ collections:
     label: Register url
     required: false
     widget: string
-  - name: seo_title
-    label: 'SEO: browser tab & Google title'
-    required: false
-    widget: string
-  - name: meta_description
-    label: 'SEO: Google description (about 150 characters)'
-    required: false
-    widget: text
   - name: expect_title
     label: Expect title
     required: false
@@ -4883,10 +4887,6 @@ collections:
         required: false
         widget: text
       summary: '{{fields.title}}'
-    - name: stories_title
-      label: Stories title
-      required: false
-      widget: string
     - name: stories
       label: Stories
       required: false
@@ -4903,6 +4903,10 @@ collections:
         widget: string
       - name: text
         label: Text
+        required: false
+        widget: text
+      - name: story
+        label: Story
         required: false
         widget: text
       - name: image
@@ -5731,10 +5735,22 @@ collections:
       name: item
       label: Item
       widget: string
+  - name: statement
+    label: Statement
+    required: false
+    widget: string
   - name: date_label
     label: Date label
     required: false
     widget: string
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
   - name: apply_label
     label: Apply label
     required: false
@@ -5751,14 +5767,6 @@ collections:
     label: Register url
     required: false
     widget: string
-  - name: seo_title
-    label: 'SEO: browser tab & Google title'
-    required: false
-    widget: string
-  - name: meta_description
-    label: 'SEO: Google description (about 150 characters)'
-    required: false
-    widget: text
   - name: expect_title
     label: Expect title
     required: false

@@ -218,7 +218,7 @@ offer_tiers:
     logo: /images/uploads/universities/lse.png
     note: ''
 offers_note: 部分本科及研究生录取名单。美国院校分类依据《美国新闻与世界报道》2027 年全美最佳大学排名。
-cases_title: 精选案例
+cases_title: 精选案例与学员故事
 cases_intro: 截然不同的起点，同一种方法：围绕学生本人制定规划。
 cases:
 - tag: 常春藤
@@ -239,26 +239,35 @@ cases:
   strategy: 打造同时服务两国申请的背景：2024 年美国东海岸名校研学；2025 年与 NASA 科学家进行小班科研，使用 CODE V 光学软件研究系外行星望远镜设计，并获得导师推荐信。
   change: 科研深度支撑了英国个人陈述与剑桥面试（学生在面试中运用了镜面材料晶体堆积的研究经验），同时构建了融合天文与 STEM 教育的美国申请叙事。
   outcome: 获剑桥大学（天体物理）录取，并被加州大学伯克利分校录取。
-stories_title: 学员故事
 stories:
 - tag: 国际舞台
-  title: COSP19 唯一的高中生发言人
-  text: 经过 WinPlus 导师的议题培训，一位 17 岁学生于 2026 年 6 月在纽约联合国总部召开的《残疾人权利公约》第十九届缔约国大会上发言。
-  image: /images/uploads/campus/un-flags.webp
-  image_alt: 国际组织总部外的各国国旗
-  link: experiences/global-conferences.html
+  title: WinPlus 学生在联合国总部 COSP19 发言
+  text: 2026 年 6 月，一位 17 岁的 WinPlus 学生成为《残疾人权利公约》第十九届缔约国大会唯一的高中生发言人。
+  story: '**起点。** [请补充：学生的背景，以及最初关注残障包容议题的原因。]
+
+
+    **准备。** 在 WinPlus 导师指导下进行数月的议题培训：了解联合国与《残疾人权利公约》的运作，开展包容议题研究，并训练英文演讲稿的撰写与表达。
+
+
+    **高光时刻。** 2026 年 6 月 9 日至 11 日，《公约》生效 20 周年之际，COSP19 在纽约联合国总部召开。这位学生面向来自世界各地的代表发表了约两分半钟的英文演讲，核心观点是：*“包容不仅仅是提供帮助，而是让每个人都拥有表达自己、参与社会和影响未来的机会。”*
+
+
+    **之后。** [请补充：学生会后的行动，以及这段经历如何影响其规划与申请。]'
+  image: /images/uploads/students/un-cosp19-speaker.jpg
+  image_alt: WinPlus 学生在联合国总部 COSP19 发言
+  link: ''
 - tag: 科研
-  title: 一封 NASA 导师推荐信，与哈佛、斯坦福计算机专业
-  text: 一位学生完成了 NASA 行星分析软件项目并获得 NASA 科学家推荐信，被哈佛与斯坦福计算机专业录取。
+  title: '[占位：科研学员故事]'
+  text: '[请补充学员故事：起点、科研项目与导师、关键变化与录取结果。]'
   image: https://images.unsplash.com/photo-1630959305606-3123a081dada
   image_alt: 学生进行科研项目
-  link: research.html
+  link: ''
 - tag: 工程
-  title: 夏校与科研，助力宾大与伯克利工程录取
-  text: MIT 水下机器人科研与环境政策科研，各获一封推荐信，帮助一位机械工程申请者获得宾大与加州伯克利录取。
+  title: '[占位：工程学员故事]'
+  text: '[请补充学员故事：起点、夏校与科研经历、关键变化与录取结果。]'
   image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
   image_alt: 工程实验室中的学生
-  link: admissions/us-college.html
+  link: ''
 testimonials_title: 家长怎么说
 testimonials:
 - quote: '[家长评价占位：孩子的变化，以及与 WinPlus 合作的体验。]'

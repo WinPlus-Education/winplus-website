@@ -56,7 +56,7 @@ schools:
 footnote: '* 基于 WinPlus 指导学生，[年份]届。整体录取率来自各校公布数据。[补充统计方法。]'
 offers_eyebrow: 录取墙
 offers_title: 我们的学生被这些大学录取
-offers_intro: WinPlus 学员获得录取的部分院校，涵盖常春藤、美国 Top 50 与英国 G5。
+offers_intro: 2024–2026 年 WinPlus 学员获得本科或研究生录取的院校，涵盖常春藤、美国 Top 50 与英国 G5。
 offer_tiers:
 - label: 常春藤与美国 Top 30
   schools:
@@ -71,9 +71,9 @@ offer_tiers:
     note: ''
   - name: 耶鲁大学
     logo: /images/uploads/universities/yale.png
-    note: 连续三年获录取
+    note: 本科连续三年获录取
   - name: 斯坦福大学
-    logo: ''
+    logo: /images/uploads/logos/stanford.png
     note: ''
   - name: 宾夕法尼亚大学
     logo: /images/uploads/universities/upenn.png
@@ -92,6 +92,12 @@ offer_tiers:
     note: ''
   - name: 达特茅斯学院
     logo: ''
+    note: ''
+  - name: 卡内基梅隆大学
+    logo: ''
+    note: ''
+  - name: 康奈尔大学
+    logo: /images/uploads/logos/cornell.png
     note: ''
   - name: 布朗大学
     logo: /images/uploads/universities/brown.png
@@ -117,6 +123,9 @@ offer_tiers:
   - name: 北卡罗来纳大学教堂山分校
     logo: ''
     note: ''
+  - name: 南加州大学
+    logo: ''
+    note: ''
   - name: 佐治亚理工学院
     logo: /images/uploads/universities/georgia-tech.png
     note: ''
@@ -125,6 +134,9 @@ offer_tiers:
     note: ''
 - label: 美国 Top 50（31–50 名）
   schools:
+  - name: 波士顿学院
+    logo: ''
+    note: ''
   - name: 纽约大学
     logo: ''
     note: ''
@@ -137,13 +149,25 @@ offer_tiers:
   - name: 加州大学戴维斯分校
     logo: ''
     note: ''
+  - name: 加州大学尔湾分校
+    logo: ''
+    note: ''
+  - name: 佛罗里达大学
+    logo: ''
+    note: ''
   - name: 伊利诺伊大学厄巴纳-香槟分校
+    logo: ''
+    note: ''
+  - name: 德克萨斯大学奥斯汀分校
     logo: ''
     note: ''
   - name: 威斯康星大学麦迪逊分校
     logo: ''
     note: ''
   - name: 东北大学
+    logo: ''
+    note: ''
+  - name: 理海大学
     logo: ''
     note: ''
   - name: 俄亥俄州立大学
@@ -156,6 +180,9 @@ offer_tiers:
     logo: ''
     note: ''
   - name: 马里兰大学帕克分校
+    logo: ''
+    note: ''
+  - name: 罗切斯特大学
     logo: ''
     note: ''
   - name: 华盛顿大学
@@ -178,7 +205,7 @@ offer_tiers:
   - name: 伦敦政治经济学院
     logo: /images/uploads/universities/lse.png
     note: ''
-offers_note: 部分名单。美国院校分类依据《美国新闻与世界报道》2027 年全美最佳大学排名。耶鲁大学连续三年录取 WinPlus 学员。
+offers_note: 部分本科及研究生录取名单。美国院校分类依据《美国新闻与世界报道》2027 年全美最佳大学排名。
 cases_title: 成功案例
 cases_intro: 截然不同的起点，同一种方法：围绕学生本人制定规划。
 cases:

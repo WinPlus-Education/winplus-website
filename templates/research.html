@@ -1,58 +1,54 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, program_card, ld with context %}
+{% from "macros.html" import page_hero, head, intro, values, program_card, faq, cta_band, btn, ld with context %}
+{% block body_class %}has-overlay{% endblock %}
 {% block schema %}
-{% set list = [] %}{% for p in programs %}{% set _ = list.append({"@type": "ListItem", "position": loop.index, "url": site_url ~ "/" ~ p.url, "name": p.title}) %}{% endfor %}
-{{ ld({"@context": "https://schema.org", "@type": "ItemList", "name": "WinPlus research and internship programs", "itemListElement": list}) }}
+{% set list = [] %}{% for p in programs %}{% set _x = list.append({"@type": "ListItem", "position": loop.index, "url": site_url ~ "/" ~ lang.prefix ~ p.url, "name": p.title}) %}{% endfor %}
+{{ ld({"@context": "https://schema.org", "@type": "ItemList", "name": page.programs_title, "itemListElement": list}) }}
 {% endblock %}
 {% block content %}
-{{ page_hero(page, [[page.eyebrow, "research.html"]], btn(page.cta, page.cta_link)) }}
+{{ page_hero(page, [[page.eyebrow, "research.html"]], btn(_("Explore programs"), "#programs", "light") ~ btn(site.cta_text, site.cta_link, "ghost", false)) }}
 
-<section class="section section-tight">
-  <div class="wrap">
-    <div class="grid-3 why-grid">
-      {% for w in page.why %}<div class="why-item"><h3>{{ w.title }}</h3><p>{{ w.text }}</p></div>{% endfor %}
+{{ intro(page.summary_eyebrow, page.summary_statement, page.summary_text) }}
+
+<section class="section s-ivory" id="how-we-work">
+  <div class="container">
+    {{ head(page.how_eyebrow, page.how_title, page.how_intro) }}
+    <div class="pillars">
+      {% for p in page.how %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div>{% endfor %}
+    </div>
+    <div style="margin-top:clamp(64px,7vw,112px)">
+      {{ head("", page.deliverables_title) }}
+      {{ values(page.deliverables[:3]) }}
+      {% if page.deliverables | length > 3 %}<div class="values" style="margin-top:clamp(24px,3vw,56px)">{% for v in page.deliverables[3:] %}<div class="value reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p></div>{% endfor %}</div>{% endif %}
     </div>
   </div>
 </section>
 
-{% if page.method_title %}
-<section class="section section-tight section-flush-top">
-  <div class="wrap"><div class="callout callout-lg"><p class="kicker">{{ page.method_title }}</p><p>{{ page.method_text }}</p></div></div>
-</section>
-{% endif %}
-
-<section class="section section-cream" id="deliverables">
-  <div class="wrap">
-    {{ head(_("Key deliverables"), page.deliverables_title, page.deliverables_intro) }}
-    <div class="grid-3 deliverables">
-      {% for d in page.deliverables %}
-      <div class="deliverable"><span class="diff-num">{{ "%02d" % loop.index }}</span><h3>{{ d.title }}</h3><p>{{ d.text }}</p></div>
-      {% endfor %}
+<section class="section" id="programs">
+  <div class="container">
+    {{ head(page.programs_eyebrow, page.programs_title, page.programs_intro) }}
+    <div class="filters" data-filters="#program-grid">
+      <div class="filter-group" data-group="industry" role="group" aria-label="{{ _('Field') }}">
+        <span class="filter-label">{{ _("Field") }}</span>
+        <button class="chip is-active" data-value="all" aria-pressed="true">{{ _("All") }}</button>
+        {% for c in page.industries %}<button class="chip" data-value="{{ c.id }}" aria-pressed="false">{{ c.title }}</button>{% endfor %}
+      </div>
+      <div class="filter-group" data-group="type" role="group" aria-label="{{ _('Type') }}">
+        <span class="filter-label">{{ _("Type") }}</span>
+        <button class="chip is-active" data-value="all" aria-pressed="true">{{ _("All") }}</button>
+        <button class="chip" data-value="research" aria-pressed="false">{{ _("Research") }}</button>
+        <button class="chip" data-value="internship" aria-pressed="false">{{ _("Internship") }}</button>
+      </div>
     </div>
+    <div class="grid g-3" id="program-grid">
+      {% for p in programs | sort(attribute="order") %}{{ program_card(p) }}{% endfor %}
+    </div>
+    <p class="empty-note" data-filter-empty hidden>{{ _("No programs match these filters yet. Try another combination, or ask us about upcoming programs.") }}</p>
   </div>
 </section>
 
-<section class="section section-tight">
-  <div class="wrap">
-    <h2 class="h3">{{ page.format_title }}</h2>
-    <dl class="facts facts-row">{% for f in page.format %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>
-  </div>
-</section>
-
-{% for c in page.categories %}
-{% set items = programs | selectattr("category", "equalto", c.id) | list %}
-{% if items %}
-<section class="section program-section{% if loop.index is even %} section-sky{% endif %}" id="{{ c.id }}">
-  <div class="wrap">
-    {{ head(_("Programs"), c.title) }}
-    <div class="grid-3">{% for p in items %}{{ program_card(p) }}{% endfor %}</div>
-  </div>
-</section>
-{% endif %}
-{% endfor %}
-
-<section class="section">
-  <div class="wrap">{{ faq(page.faq, _("Research program FAQ")) }}</div>
+<section class="section s-ivory">
+  <div class="container">{{ faq(page.faq, page.faq_title) }}</div>
 </section>
 
 {{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}

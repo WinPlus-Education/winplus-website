@@ -43,14 +43,16 @@ PAGES = {
     "home.html": ("home", "index.html", "1.0"),
     "admissions.html": ("admissions", "admissions.html", "0.9"),
     "research.html": ("research", "research.html", "0.9"),
-    "enrichment.html": ("enrichment", "enrichment.html", "0.9"),
+    "experiences.html": ("experiences", "experiences.html", "0.9"),
     "events.html": ("events", "events.html", "0.7"),
     "results.html": ("results", "results.html", "0.9"),
     "insights.html": ("insights", "insights.html", "0.8"),
+    "about.html": ("about", "about.html", "0.8"),
     "team.html": ("team", "team.html", "0.8"),
     "schools.html": ("schools", "schools.html", "0.6"),
-    "how-it-works.html": ("how-it-works", "how-it-works.html", "0.7"),
+    "faq.html": ("faq", "faq.html", "0.7"),
     "contact.html": ("contact", "contact.html", "0.8"),
+    "credits.html": ("credits", "credits.html", "0.1"),
     "sitemap.html": (None, "sitemap.html", "0.3"),
     "thanks.html": ("contact", "thanks.html", None),
     "404.html": (None, "404.html", None),
@@ -60,9 +62,12 @@ PAGES = {
 COLLECTIONS = {
     "admissions": ("service.html", "admissions"),
     "programs": ("program.html", "research"),
-    "enrichment": ("enrichment-detail.html", "enrichment"),
+    "experiences": ("experience.html", "experiences"),
     "events": ("event.html", "events"),
 }
+
+# Legal pages, in footer order (content/legal/<name>.md)
+LEGAL = ["privacy", "terms", "terms-of-service", "cookies", "disclaimer", "accessibility"]
 
 DATE_FORMATS = {
     "en": {"long": "%B %-d, %Y", "mon": "%b", "day": "%-d", "year": "%Y", "weekday": "%A, %B %-d, %Y"},
@@ -146,17 +151,38 @@ def img_url(src, width=1200, root=""):
     return root + src.lstrip("/")
 
 
+def srcset_for(src, root=""):
+    """Responsive image candidates: Unsplash sizes, or local files with a -800 variant next to them."""
+    if not src:
+        return ""
+    if src.startswith("http"):
+        if "images.unsplash.com" in src and "?" not in src:
+            return ", ".join(f"{src}?auto=format&fit=crop&w={w}&q=70 {w}w" for w in (800, 1400, 2200))
+        return ""
+    path = ROOT / "static" / src.lstrip("/")
+    small = path.with_name(path.stem + "-800" + path.suffix)
+    if small.exists():
+        base = root + src.lstrip("/")
+        return f"{base[: -len(path.suffix)]}-800{path.suffix} 800w, {base} 2000w"
+    return ""
+
+
 def load_language(lang):
     base = lang["dir"]
     data = {"site": load_yaml(base / "site.yml"), "posts": load_posts(base)}
     for name, (_, out) in COLLECTIONS.items():
         data[name] = load_collection(base, name, out)
     data["legal"] = []
-    for path in sorted((base / "legal").glob("*.md")):
-        meta, body = read_front_matter(path)
-        meta["body"] = md(body)
-        data["legal"].append((path.stem, meta))
+    for stem in LEGAL:
+        path = base / "legal" / f"{stem}.md"
+        if path.exists():
+            meta, body = read_front_matter(path)
+            meta["body"] = md(body)
+            data["legal"].append((stem, meta))
     data["results"] = load_yaml(base / "pages" / "results.yml")
+    data["team"] = load_yaml(base / "pages" / "team.yml")
+    data["research_page"] = load_yaml(base / "pages" / "research.yml")
+    data["pages"] = {n: load_yaml(base / "pages" / f"{n}.yml") for n in ("admissions", "research", "experiences", "about")}
     return data
 
 
@@ -200,6 +226,7 @@ def build():
             return text
 
         def date_fmt(d_, kind="long", code=code):
+            d_ = as_date(d_)
             if not d_:
                 return ""
             fmt = DATE_FORMATS[code].get(kind, kind)
@@ -211,12 +238,22 @@ def build():
         env.globals["_"] = translate
 
         events = d["events"]
-        upcoming = [e for e in events if e.get("date") and e["date"] >= now - dt.timedelta(days=1)]
+        for e in events:
+            end = as_date(e.get("end_date")) or e.get("date")
+            e["is_past"] = bool(end and end < now - dt.timedelta(days=1))
+        upcoming = [e for e in events if e.get("date") and not e["is_past"]]
+        team = d["team"]
+        people = [p for g in team.get("groups", []) for p in g.get("people", [])]
         common = {
             "lang": lang, "site": d["site"], "site_url": site_url, "posts": d["posts"],
-            "programs": d["programs"], "services": d["admissions"], "enrichments": d["enrichment"],
-            "events": events, "upcoming": upcoming, "past_events": [e for e in events if e not in upcoming][::-1],
-            "results_data": d["results"], "today": TODAY, "year": TODAY.year, "version": version,
+            "programs": d["programs"], "services": d["admissions"], "experiences": d["experiences"],
+            "events": events, "upcoming": upcoming, "past_events": [e for e in events if e["is_past"]][::-1],
+            "results_data": d["results"], "team_data": team, "people_by_id": {p["id"]: p for p in people if p.get("id")},
+            "team_founders": next((g["people"] for g in team.get("groups", []) if g.get("id") == "founders"), []),
+            "industries": {c["id"]: c["title"] for c in d["research_page"].get("industries", [])},
+            "section_pages": d["pages"],
+            "legal_pages": [(stem, meta.get("title", stem)) for stem, meta in d["legal"]],
+            "today": TODAY, "year": TODAY.year, "version": version,
         }
 
         def render(template, out_name, page=None, priority=None, **extra):
@@ -245,6 +282,8 @@ def build():
                 switch[l["code"]] = asset_root + l["prefix"] + target
             env.globals["u"] = link
             env.globals["img"] = lambda src, w=1200: img_url(src, w, asset_root)
+            env.globals["srcset"] = lambda src: srcset_for(src, asset_root)
+            env.tests["exists"] = lambda src: bool(src) and (src.startswith("http") or (ROOT / "static" / src.lstrip("/")).exists())
             html = env.get_template(template).render(
                 **common, page=page or {}, root=asset_root, current=out_name,
                 canonical=url_for(code, out_name), alternates=alternates if len(alternates) > 1 else {},
@@ -264,7 +303,7 @@ def build():
         for post in d["posts"]:
             render("post.html", post["url"], {}, "0.6", post=post)
         for stem, meta in d["legal"]:
-            render("legal.html", f"{stem}.html", meta, "0.2")
+            render("legal.html", f"{stem}.html", meta, "0.2", stem=stem)
 
         # llms.txt — a plain-language summary for AI assistants (English site only)
         if code == "en":

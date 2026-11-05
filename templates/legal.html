@@ -1,14 +1,17 @@
 {% extends "base.html" %}
-{% from "macros.html" import breadcrumbs with context %}
+{% from "macros.html" import page_head with context %}
 {% block content %}
-<section class="page-hero">
-  <div class="wrap narrow">
-    {{ breadcrumbs([[page.title, current]]) }}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ _("Last updated") }} {{ page.updated | date_fmt("long") }}</p>
-  </div>
-</section>
+{{ page_head({"title": page.title, "eyebrow": _("Legal")}, [[page.title, current]]) }}
 <section class="section">
-  <div class="wrap narrow prose legal">{{ page.body | safe }}</div>
+  <div class="container legal-layout">
+    <nav class="legal-nav" aria-label="{{ _('Legal pages') }}">
+      <ul>{% for s, t in legal_pages %}<li><a href="{{ u(s ~ '.html') }}"{% if s == stem %} aria-current="page"{% endif %}>{{ t }}</a></li>{% endfor %}</ul>
+    </nav>
+    <div>
+      {% if page.draft %}<p class="draft-flag">{{ page.draft }}</p>{% endif %}
+      <p class="legal-meta">{% if page.effective %}{{ _("Effective date") }}: {{ page.effective }} · {% endif %}{{ _("Last updated") }}: {{ page.updated_label or (page.updated | date_fmt("long")) }}</p>
+      <div class="prose">{{ page.body | safe }}</div>
+    </div>
+  </div>
 </section>
 {% endblock %}

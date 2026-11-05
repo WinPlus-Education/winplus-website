@@ -1,169 +1,116 @@
 {% extends "base.html" %}
-{% from "macros.html" import photo, btn, more, head, faq, marquee, event_card, quote_card, cta_band with context %}
+{% from "macros.html" import photo, btn, arrow, head, stats, rates, results_notice, offer_cards, pillars, journey, people, people_schema, marquee, case_study, story_card, quotes, cta_band with context %}
+{% block body_class %}has-overlay{% endblock %}
+{% block preload %}{% set first = (page.hero.slides | selectattr("image", "exists") | first).image %}<link rel="preload" as="image" href="{{ img(first, 2000) }}"{% if srcset(first) %} imagesrcset="{{ srcset(first) }}" imagesizes="100vw"{% endif %}>{% endblock %}
 {% block content %}
 {% set h = page.hero %}
-<section class="hero">
-  <div class="wrap hero-grid">
+{% set slides = h.slides | selectattr("image", "exists") | list %}
+{# ---------- M1 Hero slideshow ---------- #}
+<section class="hero-home" data-slides aria-roledescription="carousel" aria-label="{{ _('Top university campuses') }}">
+  <ul class="slides">
+    {% for s in slides %}
+    <li class="slide{% if loop.first %} is-active{% endif %}" data-caption="{{ s.caption }}">
+      {% set ss = srcset(s.image) %}
+      <img src="{{ img(s.image, 2000) }}"{% if ss %} srcset="{{ ss }}" sizes="100vw"{% endif %} alt="{{ s.alt }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="container">
     <div class="hero-copy">
       <p class="eyebrow">{{ h.eyebrow }}</p>
-      <h1>{{ h.title_line1 }} <em>{{ h.title_line2 }}</em></h1>
+      <h1 class="display">{{ h.title }}</h1>
       <p class="lead">{{ h.subtitle }}</p>
       <div class="btn-row">
-        {{ btn(h.primary_cta, h.primary_link) }}
-        {{ btn(h.secondary_cta, h.secondary_link, "outline") }}
+        {{ btn(h.primary_cta, h.primary_link, "light") }}
+        {{ btn(h.secondary_cta, h.secondary_link, "ghost", false) }}
       </div>
     </div>
-    <div class="hero-media">
-      {{ photo(h.image, h.image_alt, "hero-photo", 1400, "Hero photo", true) }}
-      {% if h.proof %}<p class="hero-proof"><span class="dot" aria-hidden="true"></span>{{ h.proof }}</p>{% endif %}
-    </div>
+  </div>
+  <div class="slide-caption" aria-hidden="true">
+    <span data-slide-caption>{{ slides[0].caption }}</span>
+    <span class="slide-dots">{% for s in slides %}<button type="button" aria-label="{{ s.caption }}"{% if loop.first %} aria-current="true"{% endif %}></button>{% endfor %}</span>
   </div>
 </section>
 
-{# ---------- Results: photos | key numbers | offers chart ---------- #}
+{# ---------- Our results ---------- #}
 {% set r = page.results %}
-<section class="section results-hook">
-  <div class="wrap">
-    <div class="split-head">
-      {{ head(r.eyebrow, r.title, r.text) }}
-      {{ more(r.link_text, r.link) }}
-    </div>
-    <div class="results-grid">
-      <div class="results-photos">
-        {% for p in r.photos[:3] %}
-        <figure class="rp rp-{{ loop.index }}">
-          {{ photo(p.image, p.alt, "", 900) }}
-          {% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
-        </figure>
-        {% endfor %}
-      </div>
-      <div class="results-stats">
-        {% for s in r.key_stats[:2] %}
-        <div class="key-stat{% if '[' in s.number %} is-placeholder{% endif %}">
-          <span class="ks-num">{{ s.number }}</span>
-          <span class="ks-label">{{ s.label }}</span>
-          {% if s.note %}<span class="ks-note">{{ s.note }}</span>{% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      <div class="results-chart card">
-        <h3>{{ r.chart_title }}</h3>
-        {% set ns = namespace(max=0, any=false) %}
-        {% for c in r.chart %}{% set v = c.value | num %}{% if v %}{% set ns.any = true %}{% if v > ns.max %}{% set ns.max = v %}{% endif %}{% endif %}{% endfor %}
-        <ul class="hbars{% if not ns.any %} is-placeholder{% endif %}">
-          {% for c in r.chart %}
-          {% set v = c.value | num %}
-          <li>
-            <span class="hb-name">{{ c.name }}</span>
-            <span class="hb-track"><span class="hb-bar" style="width: {{ ((v / ns.max * 100) if (v and ns.max) else (92 - loop.index0 * 5)) | round(1) }}%"></span></span>
-            <span class="hb-val">{{ (v | int) if v else '[X]' }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-        <p class="footnote">{{ r.chart_note }}</p>
-      </div>
-    </div>
-
-    <div class="offers-band">
-      <p class="offers-label">{{ r.offers_label }}</p>
-      <div class="offer-groups">
-        {% for g in r.offer_groups %}
-        <div class="offer-group">
-          <h3>{{ g.label }}</h3>
-          <ul class="school-names">{% for s in g.schools %}<li>{{ s }}</li>{% endfor %}</ul>
-        </div>
-        {% endfor %}
-      </div>
-      <p class="footnote">{{ r.footnote }}</p>
-    </div>
-  </div>
-</section>
-
-{{ marquee(site.partners_label, site.partners, site.partners_note) }}
-
-{% set m = page.mission %}
-<section class="section section-sky">
-  <div class="wrap mission">
-    {{ photo(m.image, m.image_alt, "mission-photo", 1000) }}
-    <div class="mission-copy">
-      <p class="eyebrow">{{ m.eyebrow }}</p>
-      <h2>{{ m.title }}</h2>
-      <div class="mission-text">
-        {% for para in m.paragraphs %}<p>{{ para }}</p>{% endfor %}
-      </div>
-      {{ more(_("Meet our team"), "team.html") }}
-    </div>
-  </div>
-</section>
-
-{% set o = page.offer %}
 <section class="section">
-  <div class="wrap">
-    {{ head(o.eyebrow, o.title, o.intro, true) }}
-    <div class="grid-3 offer-grid">
-      {% for s in o.segments %}
-      <a class="card offer-card" href="{{ u(s.link) }}">
-        {{ photo(s.image, s.image_alt, "ratio-wide", 800) }}
-        <div class="card-body">
-          <p class="kicker">0{{ loop.index }}</p>
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-          <ul class="ticks">{% for pt in s.points %}<li>{{ pt }}</li>{% endfor %}</ul>
-          <span class="more">{{ s.link_text }} <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-      {% endfor %}
+  <div class="container">
+    <div class="head-row">
+      {{ head(r.eyebrow, r.title, r.text) }}
+      {{ arrow(r.link_text, r.link) }}
     </div>
+    {{ stats(r.stats) }}
+    {% if results_data.schools %}
+    <h3 class="h4" style="margin-top:clamp(48px,6vw,88px);margin-bottom:0">{{ r.rates_title }}</h3>
+    {{ rates(results_data.schools, r.rates_count or 6) }}
+    {% endif %}
+    <p class="notice">{{ r.note }}</p>
+    {{ results_notice() }}
+  </div>
+</section>
+
+{# ---------- What we offer + why WinPlus ---------- #}
+{% set o = page.offer %}
+<section class="section s-ivory" id="offer">
+  <div class="container">
+    {{ head(o.eyebrow, o.title, o.intro) }}
+    {{ offer_cards(o.segments) }}
   </div>
 </section>
 
 {% set w = page.why %}
-<section class="section section-cream">
-  <div class="wrap">
-    {{ head(w.eyebrow, w.title) }}
-    <div class="grid-4 why-grid">
-      {% for p in w.points %}
-      <div class="why-item"><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div>
-      {% endfor %}
-    </div>
+<section class="section s-ink">
+  <div class="container">
+    {{ head(w.eyebrow, w.title, w.intro) }}
+    {{ pillars(w.points) }}
   </div>
 </section>
 
-{% set ev = page.events %}
-<section class="section" id="events">
-  <div class="wrap">
-    <div class="split-head">
-      {{ head(ev.eyebrow, ev.title, ev.text) }}
-      {{ more(ev.link_text, ev.link) }}
+{# ---------- How we work ---------- #}
+{% set j = page.journey %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(j.eyebrow, j.title, j.intro) }}{{ arrow(j.link_text, j.link) }}</div>
+    {{ journey(j.steps) }}
+  </div>
+</section>
+
+{# ---------- Who we are ---------- #}
+{% set t = page.team %}
+{% set featured = [] %}{% for pid in t.featured %}{% if pid in people_by_id %}{% set _x = featured.append(people_by_id[pid]) %}{% endif %}{% endfor %}
+<section class="section s-ivory">
+  <div class="container">
+    <div class="head-row">{{ head(t.eyebrow, t.title, t.text) }}{{ arrow(t.link_text, t.link) }}</div>
+    {{ people(featured, 5) }}
+    {{ people_schema(featured) }}
+  </div>
+</section>
+{{ marquee(site.partners_label, site.partners, site.partners_note) }}
+
+{# ---------- Success stories & testimonials ---------- #}
+{% set st = page.stories %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(st.eyebrow, st.title, st.intro) }}{{ arrow(st.link_text, st.link) }}</div>
+    {% for c in results_data.cases[:2] %}{{ case_study(c, loop.index is even) }}{% endfor %}
+    {{ results_notice() }}
+  </div>
+</section>
+
+<section class="section s-ivory">
+  <div class="container">
+    <div class="grid g-3">{% for s in results_data.stories[:3] %}{{ story_card(s) }}{% endfor %}</div>
+    {% if results_data.testimonials %}
+    <div class="head-row" style="margin-top:clamp(64px,7vw,112px);margin-bottom:2rem">
+      {{ head(_("In their words"), results_data.testimonials_title) }}
+      <div class="carousel-nav" data-carousel="#home-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div>
     </div>
-    {% if upcoming %}
-    <div class="grid-3 events-grid">{% for e in upcoming[:3] %}{{ event_card(e) }}{% endfor %}</div>
-    {% else %}
-    <p class="empty-note">{{ _("New events are announced regularly. Subscribe below to hear first.") }}</p>
+    {{ quotes(results_data.testimonials, "home-quotes") }}
+    {{ results_notice() }}
     {% endif %}
   </div>
 </section>
 
-{% set t = page.testimonials %}
-<section class="section section-sky">
-  <div class="wrap">
-    <div class="split-head">
-      {{ head(t.eyebrow, t.title) }}
-      {{ more(t.link_text, t.link) }}
-    </div>
-    <div class="grid-3">
-      {% for s in results_data.stories[:3] %}
-      {{ quote_card({"quote": s.quote, "name": s.initials ~ " · " ~ _("Admitted to") ~ " " ~ s.admitted_to, "role": s.program}) }}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    {{ faq(page.faq['items'], page.faq.title, true) }}
-  </div>
-</section>
-
-{{ cta_band(page.cta.title, page.cta.text, page.cta.button, page.cta.link) }}
+{{ cta_band(page.cta.title, page.cta.text, page.cta.button, page.cta.link, page.cta.image) }}
 {% endblock %}

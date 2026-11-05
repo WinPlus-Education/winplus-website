@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, head, intro, photo, btn, arrow, stats, faq, cta_band with context %}
+{% block body_class %}has-overlay{% endblock %}
+{% block content %}
+{{ page_hero(page, [[page.eyebrow, "experiences.html"]], btn(page.cta, page.cta_link, "light")) }}
+
+{{ intro(page.summary_eyebrow, page.summary_statement, page.summary_text) }}
+
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(page.programs_eyebrow, page.programs_title) }}
+    {% for e in experiences | sort(attribute="order") %}
+    <a class="split reveal{% if loop.index is even %} is-reverse{% endif %}" href="{{ u(e.url) }}" style="text-decoration:none;color:inherit;{% if not loop.first %}margin-top:clamp(56px,7vw,112px);{% endif %}">
+      {{ photo(e.image, e.image_alt, "split-media", 1400, sizes="(max-width: 900px) 100vw, 50vw") }}
+      <div class="split-copy">
+        <span class="kicker">{{ e.kicker }}</span>
+        <h2>{{ e.title }}</h2>
+        <p class="lead">{{ e.summary }}</p>
+        <ul class="outcomes">{% for o in e.outcomes[:3] %}<li>{{ o }}</li>{% endfor %}</ul>
+        <span class="link-arrow" style="margin-top:2rem">{{ _("Explore the program") }} <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section s-ink">
+  <div class="container">
+    {{ head(page.highlights_eyebrow, page.highlights_title) }}
+    {{ stats(page.highlights, page.highlights_note) }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">{{ faq(page.faq, page.faq_title) }}</div>
+</section>
+
+{{ cta_band(page.cta_title, page.cta_text, page.cta, page.cta_link) }}
+{% endblock %}

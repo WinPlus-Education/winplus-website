@@ -1,61 +1,98 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, more, head, faq, cta_band, program_card, ld with context %}
+{% from "macros.html" import page_hero, photo, btn, arrow, head, program_card, status_badge, cta_band, ld with context %}
+{% block body_class %}has-overlay{% endblock %}
+{% set m = people_by_id.get(item.mentor_id) %}
+{% set ind = industries[item.industry] if item.industry in industries else item.industry %}
+{% set type_label = _("Research") if item.type == "research" else _("Internship") %}
 {% block schema %}
-{{ ld({"@context": "https://schema.org", "@type": "Course", "name": item.title, "description": item.summary, "url": canonical, "provider": {"@id": site_url ~ "/#organization"}, "educationalLevel": "High school", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "Mentor-led small-group sessions"}}) }}
+{% set course = {"@context": "https://schema.org", "@type": "Course", "name": item.title, "description": item.summary, "url": canonical, "provider": {"@id": site_url ~ "/#organization"}, "educationalLevel": "High school", "inLanguage": lang.html, "about": ind, "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": item.length, "instructor": ({"@type": "Person", "name": m.name, "jobTitle": m.title} if m else {"@type": "Person", "description": item.mentor_note})}} %}
+{% if item.status == "open" %}{% set _x = course.update({"offers": {"@type": "Offer", "category": "Paid", "availability": "https://schema.org/InStock", "url": canonical}}) %}{% endif %}
+{{ ld(course) }}
 {% endblock %}
 {% block content %}
 {% set apply = "contact.html?interest=" ~ (_("Research & Internship Programs") | urlencode) ~ "&program=" ~ (item.title | urlencode) %}
-{% set hero = {"eyebrow": item.org ~ " · " ~ item.format, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{{ page_hero(hero, [[_("Research & Internships"), "research.html"], [item.title, item.url]], btn(_("Apply for this program"), apply)) }}
+{% set hero = {"eyebrow": ind ~ " · " ~ type_label, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{% set actions %}{% if item.status == "open" %}{{ btn(_("Apply now"), apply, "light") }}{{ btn(_("Ask a question"), apply, "ghost", false) }}{% elif item.status == "closed" %}{{ btn(_("Join the waitlist"), apply, "light") }}{% else %}{{ btn(_("Explore current programs"), "research.html#programs", "light") }}{% endif %}{% endset %}
+{{ page_hero(hero, [[_("Research & Internships"), "research.html"], [item.title, item.url]], actions, [status_badge(item.status, true), item.length, item.format]) }}
 
-<section class="section section-tight">
-  <div class="wrap">
-    <dl class="facts facts-row">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>
-  </div>
-</section>
-
-<section class="section section-flush-top">
-  <div class="wrap detail-grid">
+<section class="section">
+  <div class="container detail">
     <div class="detail-main">
-      <h2>{{ _("Program overview") }}</h2>
-      <div class="prose">{{ item.overview | md | safe }}</div>
-      <h2>{{ _("What students do") }}</h2>
-      <ol class="approach">{% for a in item.activities %}<li><span class="step-num">{{ loop.index }}</span><div><p>{{ a }}</p></div></li>{% endfor %}</ol>
-      <h2>{{ _("What students receive") }}</h2>
-      <ul class="checklist">{% for d in item.deliverables %}<li>{{ d }}</li>{% endfor %}</ul>
-      <p class="small muted"><a href="{{ u('research.html#deliverables') }}">{{ _("See what every research student receives") }}</a></p>
-      {% if item.prerequisites %}<h2>{{ _("Who should apply") }}</h2><p>{{ item.prerequisites }}</p>{% endif %}
+      <section id="overview">
+        <p class="eyebrow">{{ _("Program overview") }}</p>
+        <h2>{{ _("What this program is about") }}</h2>
+        <div class="prose">{{ item.overview | md | safe }}</div>
+        <ul class="fact-line">
+          <li><strong>{{ _("Format") }}</strong>{{ item.format }}</li>
+          <li><strong>{{ _("Length") }}</strong>{{ item.length }}</li>
+          <li><strong>{{ _("Dates") }}</strong>{{ item.dates }}</li>
+          <li><strong>{{ _("Cohort") }}</strong>{{ item.cohort }}</li>
+        </ul>
+        <h3 style="margin-top:2.5rem">{{ _("What students leave with") }}</h3>
+        <ul class="check-list">{% for o in item.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>
+      </section>
+
+      <section id="plan">
+        <p class="eyebrow">{{ _("Program plan") }}</p>
+        <h2>{{ _("Curriculum") }}</h2>
+        <ol class="curriculum">{% for c in item.curriculum %}<li><span class="phase">{{ c.phase }}</span><div><h3>{{ c.title }}</h3><p>{{ c.text }}</p></div></li>{% endfor %}</ol>
+      </section>
+
+      <section id="eligibility">
+        <p class="eyebrow">{{ _("Application eligibility") }}</p>
+        <h2>{{ _("Who should apply") }}</h2>
+        <ul class="check-list">{% for e in item.eligibility %}<li>{{ e }}</li>{% endfor %}</ul>
+      </section>
+
+      <section id="mentor">
+        <p class="eyebrow">{{ _("Your mentor") }}</p>
+        {% if m %}
+        <div class="mentor">
+          {% if m.photo %}<div class="media">{{ photo(m.photo, m.name, "", 500) }}</div>{% else %}<div class="avatar" aria-hidden="true">{{ m.initials }}</div>{% endif %}
+          <div>
+            <h3>{{ m.name }}</h3>
+            <p class="role">{{ m.title }}{% if m.affiliation %} · {{ m.affiliation }}{% endif %}</p>
+            <div class="prose">{{ m.bio | md | safe }}</div>
+            <p style="margin-top:1.25rem">{{ arrow(_("Meet the full team"), "team.html#" ~ m.id) }}</p>
+          </div>
+        </div>
+        {% else %}
+        <div class="mentor"><div class="avatar" aria-hidden="true">M</div><div><h3>{{ item.mentor_note }}</h3><p>{{ _("Full mentor profile available on request.") }}</p></div></div>
+        {% endif %}
+      </section>
     </div>
+
     <aside class="detail-side">
-      <div class="side-card mentor-card">
-        <p class="kicker">{{ _("Your mentor") }}</p>
-        {% if item.mentor_photo %}{{ photo(item.mentor_photo, item.mentor, "avatar-photo", 300) }}{% else %}<span class="avatar" aria-hidden="true">M</span>{% endif %}
-        <h2 class="h4">{{ item.mentor }}</h2>
-        <p>{{ item.mentor_bio }}</p>
-      </div>
-      <div class="side-card side-cta">
-        <h2 class="h4">{{ _("Ready to apply?") }}</h2>
-        <p>{{ _("Places are limited and offered on a rolling basis.") }}</p>
-        {{ btn(_("Apply now"), apply) }}
+      <div class="side-card side-sticky">
+        {{ status_badge(item.status, true) }}
+        <h2 class="h3" style="margin-top:1.25rem">{{ item.title }}</h2>
+        <p class="muted small">{{ item.dates }} · {{ item.length }}</p>
+        {% if item.status == "open" %}
+        <p class="small">{{ _("Places are limited and offered on a rolling basis.") }}</p>
+        {{ btn(_("Apply now"), apply) }}{{ btn(_("Ask a question"), apply, "outline", false) }}
+        {% elif item.status == "closed" %}
+        <p class="small">{{ _("Applications are closed for now. Join the waitlist to hear first when the next cohort opens.") }}</p>
+        {{ btn(_("Join the waitlist"), apply) }}
+        {% else %}
+        <p class="small">{{ _("This is a past program. Similar topics may return in future cohorts.") }}</p>
+        {{ btn(_("Explore current programs"), "research.html#programs") }}
+        {% endif %}
       </div>
     </aside>
   </div>
 </section>
 
-<section class="section section-sky">
-  <div class="wrap">{{ faq(item.faq, _("Program FAQ")) }}</div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="split-head">{{ head("", _("Explore other programs")) }}{{ more(_("All programs"), "research.html") }}</div>
-    <div class="grid-3">
-      {% set same = siblings | selectattr("category", "equalto", item.category) | rejectattr("slug", "equalto", item.slug) | list %}
-      {% set others = siblings | rejectattr("category", "equalto", item.category) | list %}
-      {% for p in (same + others)[:3] %}{{ program_card(p) }}{% endfor %}
+<section class="section s-ivory">
+  <div class="container">
+    <div class="head-row">{{ head("", _("Explore other programs")) }}{{ arrow(_("All programs"), "research.html#programs") }}</div>
+    <div class="grid g-3">
+      {% set others = siblings | rejectattr("slug", "equalto", item.slug) | rejectattr("status", "equalto", "past") | list %}
+      {% set same = others | selectattr("industry", "equalto", item.industry) | list %}
+      {% set rest = others | rejectattr("industry", "equalto", item.industry) | list %}
+      {% for p in (same + rest)[:3] %}{{ program_card(p) }}{% endfor %}
     </div>
   </div>
 </section>
 
-{{ cta_band(_("Not sure which program fits?"), _("A WinPlus consultant can recommend programs that fit the student's interests and application plan."), _("Book a Free Consultation"), "contact.html") }}
+{{ cta_band(_("Not sure which program fits?"), _("A WinPlus mentor can recommend programs that fit the student's interests and application plan."), site.cta_text, site.cta_link) }}
 {% endblock %}

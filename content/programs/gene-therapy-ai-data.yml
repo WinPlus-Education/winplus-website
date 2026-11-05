@@ -1,45 +1,44 @@
 order: 7
-title: Gene Therapy AI Data Analysis
-category: science-space
-org: Caltech
-format: Research Project
-seo_title: Gene Therapy AI Data Analysis | High School Science Research Program | WinPlus
-meta_description: Apply AI and data analysis to biomedical research questions in gene therapy, mentored by a Caltech postdoctoral researcher.
-summary: Apply AI and data analysis to biomedical research questions in gene therapy, mentored by a Caltech postdoctoral researcher.
+title: Gene Therapy & AI Data Analysis
+industry: science-space
+type: research
+status: open
+mentor_id: changfan-lin
+seo_title: Gene Therapy Research Program for High School Students | WinPlus
+meta_description: Analyse real AAV gene-therapy sequencing data with Python, mentored by a Caltech postdoctoral fellow. Eight-week online biology research program.
+summary: Analyse real gene-therapy sequencing data with Python, and learn how lab discoveries become medicine, with a postdoctoral fellow from Caltech.
 image: https://images.unsplash.com/photo-1630959305606-3123a081dada
-image_alt: Silhouette of a researcher using a microscope
-facts:
-- label: Format
-  value: Research Project
-- label: Length
-  value: 6–8 weeks
-- label: Schedule
-  value: '[Day/time, time zone]'
-- label: Group size
-  value: '[X] students'
-- label: Grade level
-  value: Grades 9–12
-- label: Next start
-  value: '[Month YEAR]'
-overview: Gene therapy research generates large, complex datasets. Students learn the science behind gene therapy and use computational tools to analyze real or public research data.
-activities:
-- Foundations of genetics and gene therapy
-- Reading and understanding scientific papers
-- Analyzing biological data with Python
-- Formulating and testing a research question
-- Writing a research paper and presenting results
-mentor: Postdoctoral Researcher, Caltech Gene Therapy Lab
-mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
-mentor_photo: ''
-deliverables:
-- A research paper suitable for student journals or science competitions
-- Mentor recommendation letter (for eligible students)
-- Certificate of completion
-- Final showcase presentation
-prerequisites: Strong interest in biology; high school biology recommended.
-faq:
-- q: Is this program online?
-  a: Yes. This is an research project with live sessions, so students can join from anywhere.
-- q: How do I apply?
-  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
-internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'
+image_alt: A researcher using a microscope in a laboratory
+format: Online · live mentor sessions
+length: 8 weeks
+dates: Summer 2027 · dates to be confirmed
+cohort: Small group
+overview: 'Gene therapy is one of the most promising frontiers in medicine, and much of the progress now depends on data. Students learn how gene editing and delivery work, including
+  AAV capsids, the blood–brain barrier, receptor recognition and directed evolution, through the research papers scientists read.
+
+
+  Then they do the work: using Python to analyse sequencing data from real AAV selection experiments, counting variants, calculating enrichment and visualising results, while learning
+  why lab findings need further validation before they reach patients.'
+outcomes:
+- A Discovery Report explaining methods, findings and interpretation
+- Python analysis of real experimental data
+- Optional literature review
+- Mentor recommendation letter for students who excel
+curriculum:
+- phase: Weeks 1–2
+  title: The science
+  text: Gene editing, delivery and AAV vectors.
+- phase: Weeks 3–4
+  title: Reading research
+  text: Key papers and the limits of translating animal findings to humans.
+- phase: Weeks 5–7
+  title: Data analysis
+  text: 'Python analysis of real AAV sequencing data: variants, enrichment, visualisation.'
+- phase: Week 8
+  title: Discovery Report
+  text: Write up and present methods, findings and interpretation.
+eligibility:
+- Grades 10–12
+- High school biology; chemistry helpful
+- No prior Python required
+mentor_note: Postdoctoral fellow, Caltech; PhD, Cornell

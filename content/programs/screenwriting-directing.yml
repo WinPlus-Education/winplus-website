@@ -1,45 +1,42 @@
-order: 4
+order: 10
 title: Screenwriting & Directing
-category: arts-media
-org: Northwestern + Cannes
-format: Online Course
-seo_title: Screenwriting & Directing | High School Film & Media Program | WinPlus
-meta_description: Write and direct an original short film with an award-winning filmmaker, from first idea to final cut.
-summary: Write and direct an original short film with an award-winning filmmaker, from first idea to final cut.
+industry: arts-media
+type: research
+status: open
+mentor_note: Cannes award-winning short-film director; MFA in Screenwriting, Northwestern University
+seo_title: Screenwriting & Directing Program for Teens | WinPlus
+meta_description: Write, shoot and edit an original short film with a Cannes award-winning director trained in Northwestern University's screenwriting program.
+summary: Write, shoot and edit an original short film, guided by a Cannes award-winning director trained in Northwestern's screenwriting program.
 image: https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf
-image_alt: Person holding a film clapperboard on set
-facts:
-- label: Format
-  value: Online Course
-- label: Length
-  value: 6–8 weeks
-- label: Schedule
-  value: '[Day/time, time zone]'
-- label: Group size
-  value: '[X] students'
-- label: Grade level
-  value: Grades 9–12
-- label: Next start
-  value: '[Month YEAR]'
-overview: Students develop their voice as storytellers, learning the craft of screenwriting and directing used in professional film, then produce an original short film for their portfolio.
-activities:
-- Story development and screenplay structure
-- Writing and revising an original short screenplay
-- Shot planning, directing actors and production basics
-- Editing and post-production
-- Screening and critique at the final showcase
-mentor: MFA Screenwriting (Northwestern University); Cannes short film award winner
-mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
-mentor_photo: ''
-deliverables:
-- An original screenplay and short film for an arts portfolio
-- Mentor recommendation letter (for eligible students)
-- Certificate of completion
-- Final showcase presentation
-prerequisites: No experience required; a smartphone camera is enough to start.
-faq:
-- q: Is this program online?
-  a: Yes. This is an online course with live sessions, so students can join from anywhere.
-- q: How do I apply?
-  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
-internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'
+image_alt: A film clapperboard on set
+format: Online · live mentor sessions
+length: 6–8 weeks
+dates: Summer 2027 · dates to be confirmed
+cohort: Small group
+overview: 'Students develop their voice as storytellers through the foundations of screenwriting and directing taught in leading film programs. They take an original idea all the way
+  to a finished short film: screenplay, shot planning, directing, editing and post-production.
+
+
+  The result is portfolio-ready work for arts and film applications, along with the experience of seeing a creative vision through from first draft to final cut.'
+outcomes:
+- An original screenplay
+- A finished short film for an arts portfolio
+- A screening and critique with the mentor
+- Mentor recommendation letter for students who excel
+curriculum:
+- phase: Weeks 1–2
+  title: Story
+  text: Story development and screenplay structure.
+- phase: Weeks 3–4
+  title: Screenplay
+  text: Write and revise an original short screenplay.
+- phase: Weeks 5–6
+  title: Production
+  text: Shot planning, directing actors and production basics.
+- phase: Weeks 7–8
+  title: Post & screening
+  text: Editing, post-production and a final screening.
+eligibility:
+- Grades 9–12
+- No prior film experience required
+- Access to a smartphone or camera for filming

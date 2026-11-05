@@ -1,33 +1,30 @@
-order: 6
+order: 3
 title: US High School Admissions
 short_title: US High School
 interest: US High School Admissions
-seo_title: "US Boarding & Private High School Admissions Counseling | SSAT & TOEFL | WinPlus"
-meta_description: "US boarding and private high school admissions counseling for international students: school selection, SSAT and TOEFL strategy, applications, essays and interview coaching."
-summary: Boarding and private school placement for international students, including school selection, SSAT/TOEFL strategy and interview coaching.
-image: https://images.unsplash.com/photo-1758270704286-83476deb3bd1
-image_alt: Students raising their hands in a classroom
-who: Students in Grades 6–10 (and their families) applying to US boarding schools and private day schools.
-included:
-  - School research and balanced school list
-  - SSAT / ISEE and TOEFL testing strategy
-  - Application essays (student and parent statements)
-  - Interview coaching and mock interviews
-  - Campus visit planning
-  - Recommendation planning
-  - Decision support and enrollment preparation
-approach:
-  - { title: "Find the right fit", text: "Academics, culture, location and support for international students." }
-  - { title: "Prepare thoroughly", text: "Testing, essays and interviews prepared well ahead of deadlines." }
-  - { title: "Support the transition", text: "Help settling in academically and socially once accepted." }
-deadlines_title: Typical timeline
-deadlines:
-  - { label: "Research & campus visits", date: "Spring to fall of the year before entry" }
-  - { label: "Testing (SSAT/ISEE, TOEFL)", date: "Fall of the application year" }
-  - { label: "Application deadline", date: "Commonly mid-January" }
-  - { label: "Decisions", date: "Commonly March 10" }
+seo_title: US Boarding & Private High School Admissions Consulting | WinPlus
+meta_description: 'Admissions counseling for top US boarding and private day schools: school selection, SSAT, applications, essays, interviews and visits, from a Harvard Square team.'
+summary: Boarding and private day school admissions, from school selection to SSAT, interviews and visits.
+eyebrow: US High School
+title_long: The right US boarding or day school, and a confident start
+image: https://images.unsplash.com/photo-1579902932390-67ffddfee64a
+image_alt: A historic red-brick campus building
+who: Students in Grades 5–10 applying to US boarding schools and private day schools, and families relocating to the US.
+help:
+- title: Finding the right school
+  text: We help families understand the differences between schools in academics, culture, size and support, and build a list where the student will thrive, not just be admitted.
+- title: A complete, polished application
+  text: SSAT/ISEE and English testing plans, applications, student and parent essays, and recommendations, coordinated on one timeline.
+- title: Interviews, visits and transition
+  text: Interview preparation, campus-visit planning from our base near many top New England schools, and guidance for the move to US school life.
+highlight:
+  label: Why it matters
+  title: High school shapes the college path
+  text: The right high school opens doors to rigorous courses, research and leadership, the foundation of a strong college application four years later.
 faq:
-  - q: What grade should my child enter a US boarding school?
-    a: Grade 9 is the most common entry point, though many schools also admit students into Grade 10. We advise based on your child's readiness.
-  - q: Is the SSAT required?
-    a: Many boarding schools require or recommend the SSAT or ISEE, and international students often also need TOEFL or similar. Requirements vary by school.
+- q: When do US boarding school applications open?
+  a: Most applications open in late summer or early autumn and are due in January, with decisions in March for entry the following September.
+- q: Is the SSAT required?
+  a: Many schools require or recommend the SSAT or ISEE; international students usually also submit TOEFL, Duolingo or similar. We plan tests around each school's policy.
+- q: Can you help with campus visits?
+  a: Yes. From our base in Harvard Square we help families plan visits and interviews at schools across New England and beyond.

@@ -1,4 +1,3 @@
-# Our Results page. Stats, rates, cases and testimonials also appear on the home page.
 seo_title: Our Results | Ivy League & Top-30 Admissions Outcomes | WinPlus
 meta_description: 'WinPlus student outcomes: 87 Ivy League and Top-30 offers including Harvard, Yale three years running, Princeton and Penn, plus case studies and family testimonials.'
 eyebrow: Our Results
@@ -58,35 +57,48 @@ schools:
 footnote: '* Based on WinPlus-counseled students, Class of [YEAR]. General admit rates from each university''s published data. [Add methodology.]'
 offers_eyebrow: Admissions wall
 offers_title: Universities our students have been admitted to
-offers_intro: 87 offers from Top-30 and Ivy League universities so far, earned by WinPlus students across the US and the UK.
+offers_intro: Selected universities where WinPlus students have earned offers, across the Ivy League, the US Top 50 and the UK's G5.
 offer_tiers:
-- label: Ivy League
+- label: Ivy League & US Top 30
   schools:
+  - name: Massachusetts Institute of Technology
+    logo: /images/uploads/universities/mit.png
+    note: ''
+  - name: Princeton University
+    logo: /images/uploads/universities/princeton.png
+    note: ''
   - name: Harvard University
     logo: /images/uploads/universities/harvard.png
     note: ''
   - name: Yale University
     logo: /images/uploads/universities/yale.png
     note: Admitted 3 years in a row
-  - name: Princeton University
-    logo: /images/uploads/universities/princeton.png
-    note: ''
-  - name: Columbia University
-    logo: /images/uploads/universities/columbia.png
+  - name: Stanford University
+    logo: ''
     note: ''
   - name: University of Pennsylvania
     logo: /images/uploads/universities/upenn.png
     note: ''
+  - name: Duke University
+    logo: /images/uploads/universities/duke.png
+    note: ''
+  - name: Johns Hopkins University
+    logo: ''
+    note: ''
+  - name: University of Chicago
+    logo: ''
+    note: ''
+  - name: Columbia University
+    logo: /images/uploads/universities/columbia.png
+    note: ''
+  - name: Dartmouth College
+    logo: ''
+    note: ''
   - name: Brown University
     logo: /images/uploads/universities/brown.png
     note: ''
-- label: US Top 30
-  schools:
-  - name: Massachusetts Institute of Technology
-    logo: /images/uploads/universities/mit.png
-    note: ''
-  - name: Duke University
-    logo: /images/uploads/universities/duke.png
+  - name: Washington University in St. Louis
+    logo: ''
     note: ''
   - name: UC Berkeley
     logo: /images/uploads/universities/berkeley.png
@@ -94,8 +106,61 @@ offer_tiers:
   - name: UCLA
     logo: /images/uploads/universities/ucla.png
     note: ''
+  - name: University of Notre Dame
+    logo: ''
+    note: ''
+  - name: University of Michigan
+    logo: ''
+    note: ''
+  - name: University of Virginia
+    logo: ''
+    note: ''
+  - name: University of North Carolina at Chapel Hill
+    logo: ''
+    note: ''
   - name: Georgia Institute of Technology
     logo: /images/uploads/universities/georgia-tech.png
+    note: ''
+  - name: UC San Diego
+    logo: ''
+    note: ''
+- label: US Top 50 (31–50)
+  schools:
+  - name: New York University
+    logo: ''
+    note: ''
+  - name: Tufts University
+    logo: ''
+    note: ''
+  - name: Boston University
+    logo: ''
+    note: ''
+  - name: UC Davis
+    logo: ''
+    note: ''
+  - name: University of Illinois Urbana-Champaign
+    logo: ''
+    note: ''
+  - name: University of Wisconsin–Madison
+    logo: ''
+    note: ''
+  - name: Northeastern University
+    logo: ''
+    note: ''
+  - name: Ohio State University
+    logo: ''
+    note: ''
+  - name: Rutgers University–New Brunswick
+    logo: ''
+    note: ''
+  - name: UC Santa Barbara
+    logo: ''
+    note: ''
+  - name: University of Maryland, College Park
+    logo: ''
+    note: ''
+  - name: University of Washington
+    logo: ''
     note: ''
 - label: UK G5
   schools:
@@ -114,7 +179,7 @@ offer_tiers:
   - name: London School of Economics (LSE)
     logo: /images/uploads/universities/lse.png
     note: ''
-offers_note: Selected list. Our students' offers span the Ivy League, US Top 30 and UK G5, including Yale three years in a row.
+offers_note: Selected list. US categories follow the U.S. News & World Report 2027 Best National Universities ranking. Yale admitted WinPlus students three years in a row.
 cases_title: Case studies
 cases_intro: 'Two very different starting points, one approach: a plan built around the student.'
 cases:
@@ -135,7 +200,8 @@ cases:
     and a photography portfolio and exhibition.'
   change: TOEFL 99 and SAT 1400 (superscore); a published GIS research paper; spoke at a UN climate conference; a photography exhibition and published work; charity cello concerts at
     a children's hospital.
-  outcome: Admitted to UC Davis, Boston University, Purdue, Northeastern and Ohio State, with scholarships of $80,000 (UC Riverside), $60,000 (UC Santa Cruz) and $40,000 (Syracuse). Waitlisted at UCLA and UC San Diego.
+  outcome: Admitted to UC Davis, Boston University, Purdue, Northeastern and Ohio State, with scholarships of $80,000 (UC Riverside), $60,000 (UC Santa Cruz) and $40,000 (Syracuse).
+    Waitlisted at UCLA and UC San Diego.
   image: /images/uploads/students/uc-scholarship-story.jpg
   image_alt: A WinPlus student on a university visit
 stories_title: Student stories

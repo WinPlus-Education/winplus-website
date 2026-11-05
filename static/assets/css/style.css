@@ -557,7 +557,7 @@ a.card:hover .media img { transform: scale(1.04); }
 .wall-tier h3 { font-family: var(--font-body); font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin-bottom: 1.25rem; }
 .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .wall li { list-style: none; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.5rem 1rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: .75rem; justify-content: center; min-height: 150px; }
-.wall img { max-height: 54px; width: auto; }
+.wall img { max-height: 48px; width: auto; filter: grayscale(1); opacity: .7; }
 .wall span { font-size: .82rem; line-height: 1.35; }
 .wall em { font-style: normal; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
 .wall ul, ul.wall { padding: 0; margin: 0; }

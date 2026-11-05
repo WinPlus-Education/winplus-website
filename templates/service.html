@@ -7,7 +7,7 @@
 {% block content %}
 {% set contact = "contact.html?interest=" ~ (item.interest | urlencode) %}
 {% set hero = {"eyebrow": item.eyebrow, "title": item.title_long, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{{ page_hero(hero, [[_("Admissions Counseling"), "admissions.html"], [item.short_title, item.url]], btn(site.cta_text, contact, "light")) }}
+{{ page_hero(hero, [[_("Admissions Counseling"), "admissions.html"], [item.short_title, item.url]], btn(site.cta_text, contact, "light"), none, "ev-hero" if item.hero_right else "") }}
 
 {# What makes the difference: who it's for, how the system works, key challenges and our approach #}
 <section class="section">

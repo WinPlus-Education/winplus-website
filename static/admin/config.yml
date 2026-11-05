@@ -2345,6 +2345,10 @@ collections:
       name: item
       label: Item
       widget: string
+  - name: hero_right
+    label: Hero right
+    required: false
+    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -5446,6 +5450,10 @@ collections:
       name: item
       label: Item
       widget: string
+  - name: hero_right
+    label: Hero right
+    required: false
+    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'

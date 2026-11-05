@@ -1,45 +1,41 @@
-order: 4
+order: 10
 title: 编剧与导演
-category: arts-media
-org: Northwestern + Cannes
-format: 线上课程
-seo_title: 编剧与导演 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 跟随获奖电影人，从最初的创意到最终剪辑，编写并执导一部原创短片。
-summary: 跟随获奖电影人，从最初的创意到最终剪辑，编写并执导一部原创短片。
+industry: arts-media
+type: research
+status: open
+mentor_note: 戛纳获奖短片导演；西北大学编剧硕士
+seo_title: 高中生编剧与电影导演项目 | WinPlus 欧歌学院
+meta_description: 与戛纳获奖短片导演（西北大学编剧硕士）一起，完成原创短片的编剧、拍摄与剪辑。面向青少年的线上课程。
+summary: 在戛纳获奖短片导演（西北大学编剧硕士）的指导下，完成一部原创短片的编剧、拍摄与剪辑。
 image: https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf
-image_alt: 片场手持场记板
-facts:
-- label: 形式
-  value: 线上课程
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 学生将发展自己的叙事风格，学习专业电影创作中的编剧与导演技巧，并制作一部原创短片作为作品集。
-activities:
-- 故事构思与剧本结构
-- 撰写并修改原创短片剧本
-- 分镜设计、演员指导与制片基础
-- 剪辑与后期制作
-- 在结业展示会上放映并接受点评
-mentor: 西北大学编剧艺术硕士，戛纳短片奖得主
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 原创剧本与短片，可用于艺术作品集
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 无需经验，用手机即可开始拍摄。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 片场中的场记板
+format: 线上 · 导师直播课
+length: 6–8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '学生将通过顶尖电影院校教授的编剧与导演基础，找到自己讲故事的声音，并把原创想法变成一部完整的短片：剧本、分镜、导演、剪辑与后期制作。
+
+
+  最终成果可用于艺术与电影专业申请的作品集，也让学生经历从初稿到成片、完整实现创作构想的过程。'
+outcomes:
+- 一部原创剧本
+- 一部可放入艺术作品集的短片
+- 与导师一起放映与点评
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 故事
+  text: 故事构思与剧本结构。
+- phase: 第 3–4 周
+  title: 剧本
+  text: 撰写并修改原创短片剧本。
+- phase: 第 5–6 周
+  title: 拍摄
+  text: 分镜、指导演员与拍摄基础。
+- phase: 第 7–8 周
+  title: 后期与放映
+  text: 剪辑、后期制作与期末放映。
+eligibility:
+- 9–12 年级
+- 无需电影制作经验
+- 可使用手机或相机拍摄

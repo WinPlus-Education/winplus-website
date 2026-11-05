@@ -1,88 +1,309 @@
-seo_title: "我们的团队 | 升学顾问、导师与创始人 | WinPlus 欧歌学院"
-meta_description: "认识 WinPlus 欧歌学院团队：创始人郭琪、盘超，升学顾问，以及来自哈佛、MIT、NASA、Meta、联合国、哥伦比亚大学等机构的导师。"
-eyebrow: 我们的团队
-title: 每一位 WinPlus 学员背后的团队
-intro: WinPlus 是全周期人才培养平台，陪伴学生从 9 年级走向世界名校录取，并为未来做好准备。认识让这一切成为可能的团队。
-image: https://images.unsplash.com/photo-1758873269811-4e62e346b4b7
-image_alt: 团队围坐在桌边协作
-
-what_title: 我们做什么
-what:
-  - { title: "升学规划", text: "美国、英国、加拿大、澳大利亚本科及研究生申请，以及美国高中申请。", link: admissions.html }
-  - { title: "科研与实习", text: "人工智能、金融、科学与艺术领域的导师制科研与实习项目。", link: research.html }
-  - { title: "国际背景提升", text: "联合国会议、全球胜任力夏校与冬校，以及领导力项目。", link: enrichment.html }
-
-compare_title: 一站式平台 vs. 分散的多家机构
-without:
-  label: 没有一体化平台
-  heading: 每项需求都要找一家机构。
-  center: 学生与家长
-  vendors: [升学顾问, 科研项目, 实习机构, 标化培训, 文书老师]
-  note: 向每一家重复讲述你的故事，五份规划却互不衔接。
-with:
-  label: 选择 WinPlus
-  heading: 一位人才顾问统筹全程。
-  center: 你的专属人才顾问
-  stages: ["9–10 年级 · 背景打造", "10–11 年级 · 科研与能力", "11 年级 · 申请策略", "12 年级 · 申请执行", "录取及未来"]
-benefits:
-  - { title: "连贯一致", text: "从 9 年级到录取，始终是同一段关系。" }
-  - { title: "一位专属顾问", text: "一位顾问负责孩子的完整成长路径。" }
-  - { title: "真正的个性化规划", text: "一套围绕学生本人打造的完整策略。" }
-  - { title: "更高性价比", text: "避免多家机构的重复收费。" }
-
-leaders_title: 创始人
-leaders:
-  - name: 郭琪 Cathy Guo
-    role: 联合创始人兼执行总裁
+# Team page. People are grouped; other pages pick people by their id (e.g. home page, program mentors).
+seo_title: 导师团队 | 哈佛、MIT、斯坦福导师与顾问 | WinPlus 欧歌学院
+meta_description: 认识 WinPlus 欧歌学院的创始人、顾问与导师：MIT 与哈佛教授、前 NASA 宇航员、NASA 科学家、藤校校友面试官，以及来自 Meta、微软、苹果的行业导师。
+eyebrow: 导师团队
+title: 每一位 WinPlus 学生背后的导师
+intro: 来自世界顶尖大学与企业的教授、科学家、校友面试官和行业领袖，直接指导我们的学生。
+image: /images/uploads/photos/hbs-classroom.webp
+image_alt: WinPlus 导师与学生在大学校园
+groups:
+- id: founders
+  title: 创始人
+  intro: WinPlus 欧歌学院由两位哈佛肯尼迪学院校友于 2020 年在哈佛广场创立。
+  people:
+  - id: cathy-guo
+    name: 郭琪 Cathy Guo
+    initials: CG
+    title: 联合创始人、执行总裁
+    affiliation: 哈佛大学肯尼迪学院公共政策硕士
     photo: /images/uploads/team/cathy-guo.jpg
-    bio: "哈佛大学肯尼迪学院公共政策硕士；曾任职联合国妇女署、牛津经济研究院；罗格斯大学 Douglass 女子学院董事。"
-    linkedin: ""
-  - name: 盘超 Cedric Pan
-    role: 联合创始人
+    bio: '郭琪老师于 2020 年在哈佛广场联合创立 WinPlus 欧歌学院，毕业于哈佛大学肯尼迪学院公共政策硕士，罗格斯大学经济与传媒双学士。
+
+
+      她现任哈佛肯尼迪学院校友会董事、罗格斯大学 Douglass 女子学院董事，曾就职于联合国妇女署、牛津经济研究院等机构，长期在中东、欧洲、非洲、东南亚和中国西南地区推动国际教育与公益事业。
+
+
+      在 WinPlus，她负责全球胜任力课程、领导力教育以及与大学和国际组织的合作。'
+  - id: cedric-pan
+    name: 盘超 Cedric Pan
+    initials: CP
+    title: 联合创始人
+    affiliation: 哈佛大学肯尼迪学院公共政策硕士 · 哈佛大学教育学硕士
     photo: /images/uploads/team/cedric-pan.jpg
-    bio: "北京大学；哈佛大学公共政策硕士 + 教育学硕士；MIT 航空航天创业项目导师；曾任硅谷与波士顿教育科技公司高管。"
-    linkedin: ""
+    bio: '盘超老师毕业于哈佛大学肯尼迪政府学院公共政策硕士、哈佛大学教育学硕士，北京大学城市规划和经济学双学士，现任麻省理工学院航空航天创业项目导师。
 
-consultants_title: 顾问与教练
-consultants_intro: 从规划到录取，与家庭日常沟通的伙伴。
-consultants:
-  - { name: "[顾问姓名]", role: "资深升学顾问", photo: "", bio: "[教育背景、擅长方向（如美国 / 英国）、从业年限。]" }
-  - { name: "[顾问姓名]", role: "升学顾问", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
-  - { name: "[教练姓名]", role: "文书与面试教练", photo: "", bio: "[教育背景、擅长方向、从业年限。]" }
 
-featured_title: 部分导师
-featured_intro: 部分指导 WinPlus 学员的教授与业界专家，并非全部合作资源。
-featured:
-  - { name: Professor Steve, photo: /images/uploads/team/steve.jpg, background: "哈佛大学 · 美国国会预算办公室", field: "国际关系、政府与公共政策" }
-  - { name: Professor Jeff, photo: /images/uploads/team/jeff.jpg, background: "MIT · 美国国家航空航天局", field: "航空航天与工程" }
-  - { name: Professor Nico, photo: /images/uploads/team/nico.jpg, background: "哈佛大学 · 费哲金融", field: "金融与数据科学" }
-  - { name: Professor Rachel, photo: /images/uploads/team/rachel.jpg, background: "MIT · 斯坦福大学", field: "电气工程与机械工程" }
-  - { name: Professor Oliner, photo: /images/uploads/team/oliner.jpg, background: "斯宾塞私立高中 · 哥伦比亚大学", field: "运动与体育管理" }
-  - { name: Professor Mike, photo: /images/uploads/team/mike.jpg, background: "凤凰影业 CEO", field: "影视制作" }
-  - { name: Professor Tarik, photo: /images/uploads/team/tarik.jpg, background: "联合国总部 · 哥伦比亚大学", field: "联合国维和行动、国际组织与国际关系" }
-  - { name: Professor Yuan, photo: /images/uploads/team/yuan.jpg, background: "Meta · 哥伦比亚大学", field: "人工智能与计算机科学" }
+      他曾在硅谷自动驾驶公司、跨国共享出行公司和波士顿 K12 教育科技公司担任高管，早年曾在国务院发展研究中心、国家开发银行等机构工作。
 
-network_title: 导师与师资网络
-network:
-  - { title: "科研导师", text: "人工智能、航空航天、机械工程、数据科学、计算机等领域。", count: "[X]+" }
-  - { title: "产业导师", text: "金融、国际关系、公共政策、国际贸易、时尚、电影等领域。", count: "[X]+" }
-  - { title: "升学策略导师", text: "来自顶尖大学的前招生官与升学顾问。", count: "[X]+" }
-team_stat: { number: "40+", label: "位团队成员" }
 
-mentors_title: 项目导师
-mentors_intro: WinPlus 项目由来自世界顶尖机构的业界专家与研究人员授课，而非职业辅导老师。
-mentors:
-  - { role: "Llama 团队软件工程负责人", org: Meta AI, program: AI 智能体项目, photo: "", link: research/ai-agent-development.html }
-  - { role: "资深云计算工程师，10 年以上经验", org: 苹果（硅谷）, program: Claude Code AI 编程项目, photo: "", link: research/claude-code-ai-programming.html }
-  - { role: "云计算工程师，10 年以上经验", org: 亚马逊 AWS, program: 物联网 AI 设备项目, photo: "", link: research/iot-ai-devices.html }
-  - { role: "编剧艺术硕士；戛纳获奖导演", org: 西北大学, program: 编剧与导演项目, photo: "", link: research/screenwriting-directing.html }
-  - { role: "资深数据科学家，7 年以上经验", org: 微软总部, program: 金融预测项目, photo: "", link: research/financial-forecasting-python.html }
-  - { role: "工程负责人，8 年以上经验", org: 彭博, program: 金融科技 + AI 项目, photo: "", link: research/fintech-ai-startup.html }
-  - { role: 博士后研究员, org: 加州理工基因治疗实验室, program: 基因治疗科研项目, photo: "", link: research/gene-therapy-ai-data.html }
-  - { role: 研究科学家, org: NASA 艾姆斯研究中心, program: JWST 深空科研项目, photo: "", link: research/jwst-deep-space-research.html }
-  - { role: 航空航天工程师, org: NASA 戈达德 / MIT, program: 星链轨道设计项目, photo: "", link: research/starlink-orbit-design.html }
+      在 WinPlus，他负责升学策略、科技创业以及科研与实习项目。'
+- id: advisors
+  title: 学术和产业顾问
+  intro: 杰出的教授与业界领袖，为学生打开所在机构与领域的大门。
+  people:
+  - id: jeffrey-hoffman
+    name: Jeffrey A. Hoffman
+    initials: JH
+    title: 麻省理工学院航空航天工程实践教授
+    affiliation: 前 NASA 宇航员
+    photo: /images/uploads/team/jeff.jpg
+    bio: 'Jeffrey A. Hoffman 是 MIT 航空航天工程实践教授、前 NASA 宇航员，拥有哈佛大学博士学位。他曾五次执行航天飞机任务，在太空工作超过 1,211 小时，并参与 1993 年哈勃太空望远镜首次维修。他还担任火星制氧实验 MOXIE 副首席研究员，该装置搭载于“毅力号”，验证了从火星大气提取氧气的可行性。
 
-join_title: 加入我们的导师网络
-join_text: 如果你是研究人员、工程师或创作者，并希望指导有志青年，欢迎与我们联系。
-join_cta: 联系我们
-join_link: contact.html
+
+      在 WinPlus 活动中，他带领学生参观 MIT 航空航天系，讲解“毅力号”探索、航天飞机载人飞行和阿波罗登月工程，结合实际任务说明科学仪器、航天器与宇航员如何协同工作，以及工程设计如何应对资源和环境限制。
+
+
+      这些案例连接物理、机械、电子与系统工程，帮助学生辨认自己更偏向科学研究、硬件设计还是任务组织。家长也能据此理解工程学习的具体要求：运用学科知识解决问题、解释设计取舍，并在团队中承担职责。'
+    education: 哈佛大学博士；阿默斯特学院学士；莱斯大学硕士
+  - id: daniel-e-hastings
+    name: Daniel E. Hastings
+    initials: DH
+    title: 麻省理工学院 Institute Professor
+    affiliation: 前本科教育院长、前航空航天系主任
+    photo: ''
+    bio: 'Daniel E. Hastings 是 MIT Institute Professor，获该校最高教师荣誉；本科毕业于牛津大学，获 MIT 硕士及博士学位。他研究航天器与空间环境、推进技术及复杂系统设计，曾任 MIT 本科教育院长、航空航天系主任、新加坡—MIT 科研联盟负责人和美国空军首席科学家。
+
+
+      他与新加坡国立大学及亚洲学生有长期教学交流。在 WinPlus 活动中，他带领学生了解航天可持续发展、系统工程与地球轨道制造，讨论技术方案如何长期运行、任务目标如何匹配资源，以及在轨生产所需的基础设施。
+
+
+      这类交流将“系统工程”具体化为性能、可靠性、成本和子系统协同之间的取舍，帮助学生区分深入单项技术与统筹整体任务的兴趣。其本科教育管理及亚洲合作经验，也为家庭理解跨学科训练与不同教育体系下的工程准备提供参照。'
+    education: 牛津大学数学学士；麻省理工学院航空航天硕士及博士
+  - id: le-cong
+    name: Le Cong
+    initials: LC
+    title: 斯坦福大学病理学与遗传学副教授
+    affiliation: 清华大学学士；哈佛大学生物与生物医学科学博士
+    photo: ''
+    bio: 'Le Cong 是斯坦福大学病理学与遗传学副教授，毕业于清华大学，获哈佛大学生物与生物医学科学博士学位。他研究基因工程、基因与细胞治疗，曾获美国国家人类基因组研究所 Genomic Innovator Award，研究连接实验生物学、计算方法和工程设计。
+
+
+      其团队研究 CRISPR、大段基因插入、单细胞分析及干细胞疾病模型，并通过 CRISPR-GPT 等项目探索 AI 辅助基因编辑。在 WinPlus 活动中，他带领学生参观斯坦福干细胞研究所，讲授前沿基因编辑研究，介绍基因、细胞功能与疾病之间的关系。
+
+
+      学生由此接触科研问题：遗传变化怎样影响细胞，实验如何验证假设，计算工具如何辅助研究。对于考虑生物、医学或 AI 与生命科学交叉方向的家庭，这些内容明确了准备重点，包括生物与化学基础、数据分析、英文文献阅读及实验结果的解释。'
+    education: 清华大学学士；哈佛大学生物与生物医学科学博士
+  - id: mike-medavoy
+    name: Mike Medavoy
+    initials: MM
+    title: 好莱坞制片人
+    affiliation: Phoenix Pictures 联合创始人
+    photo: /images/uploads/team/mike.jpg
+    bio: 'Mike Medavoy 是好莱坞制片人、Phoenix Pictures 联合创始人，毕业于加州大学洛杉矶分校。他的经历涵盖人才经纪、电影公司管理和制片，曾联合创办 Orion Pictures，并在 United Artists 与 TriStar Pictures 担任管理职务。参与推动的作品包括《黑天鹅》《禁闭岛》《十二宫》和《细细的红线》。
+
+
+      在 WinPlus 活动中，他带领学生参观好莱坞制片公司，分享制片流程、产业运作和明星经纪经验，解释一个故事如何成为电影项目，以及导演、演员、编剧、制片人与经纪人如何分工协作，连接创意、资金与市场。
+
+
+      这些经历为喜欢电影、文学、表演或传媒的学生提供探索入口，帮助其区分叙事写作、视觉表达、表演创作、项目管理与娱乐商业。家长也能理解艺术学习所需的准备：持续创作作品、表达创意，并学习如何参与团队制作。'
+    education: 加州大学洛杉矶分校毕业
+  - id: tarik-carney
+    name: Tarik Carney
+    initials: TC
+    title: 联合国事务专业人士
+    affiliation: 国际和平与安全领域
+    photo: /images/uploads/team/tarik.jpg
+    bio: 'Tarik Carney 长期从事联合国和平与安全工作，拥有哥伦比亚大学国际与公共事务学院及巴黎政治学院硕士学位，曾在纽约大学和日本上智大学学习哲学与日语。他的经历涵盖中非共和国民事事务、乌干达儿童保护、纽约联合国总部平民保护及索马里局势分析，连接人文训练与国际事务实践。
+
+
+      在 WinPlus 活动中，他带领学生参观联合国总部，讲解组织机构、价值观与使命，分享维和工作中的故事。学生既能了解机构职责，也能看到和平、安全与人道保护如何落实到个人，以及国际合作需要怎样的沟通和协调。
+
+
+      对于关注政治、历史、法律或国际公共服务的学生，这些经历引出可继续研究的问题：政策目标为何与现场条件存在差距，国际问题需要什么证据，以及不同群体的需求如何协调。家长也能理解阅读写作、外语与跨文化学习在这一方向上的实际用途。'
+    education: 哥伦比亚大学 SIPA 及巴黎政治学院硕士
+  - id: steve-kelman
+    name: Steve Kelman
+    initials: SK
+    title: 哈佛肯尼迪学院 Weatherhead 公共管理荣休教授
+    affiliation: 哈佛大学学士及政府学博士
+    photo: /images/uploads/team/steve.jpg
+    bio: 'Steve Kelman 是哈佛肯尼迪政府学院 Weatherhead 公共管理荣休教授，在哈佛完成本科及政府学博士学习。他研究政府管理、公共政策与组织变革，曾于 1993 至 1997 年担任美国行政管理和预算局下属联邦采购政策办公室负责人，参与联邦政府管理改革，并著有《Unleashing Change》等著作。
+
+
+      在 WinPlus 活动中，他带领学生参观哈佛肯尼迪政府学院，讲解中美关系、国际关系与美国政府治理，将新闻议题与政府组织、政策决策及执行联系起来，介绍公共事务研究如何回应现实问题。
+
+
+      对于初高中家庭，这类交流有助于区分政治学、国际关系与公共管理的研究重点，例如谁制定和执行政策、国家之间如何互动，以及公共组织为何表现不同。学生可进一步比较政策目标、实施条件与结果，练习运用资料支持判断，为人文社科阅读、研究和写作打下基础。'
+    education: 哈佛大学学士及政府学博士
+- id: admissions
+  title: 学业规划与升学导师
+  intro: 负责每位学生升学路线、科研与申请的导师。
+  people:
+  - id: rachel-morgan
+    name: Rachel Morgan
+    initials: RM
+    title: NASA Ames 研究中心光学科学家
+    affiliation: MIT 航空航天博士
+    photo: /images/uploads/team/rachel.jpg
+    bio: 'Rachel Morgan 是在 NASA Ames 研究中心开展研究的光学科学家，拥有 MIT 航空航天与物理本科背景，以及航空航天硕士、博士学位。她研究集成光子技术在天文仪器中的应用，关注类地系外行星探测，并曾在 NASA 喷气推进实验室及 MIT 林肯实验室积累科研经验。
+
+
+      在 WinPlus，她指导航空航天、机械与电子工程申请，并担任八周太空望远镜课程导师。学生从科学问题出发，比较已有任务，确定口径、视场、探测器、轨道和稳定性要求，再开展光学计算、光线追迹仿真，以及机械 CAD 或实体结构建模。
+
+
+      课程要求提交任务设计报告、模型与设计评审展示，说明光学和机械方案如何配合。她曾帮助学生获得 MIT、卡内基梅隆和伊利诺伊大学厄巴纳—香槟分校录取。课程中的计算、模型和设计解释，也让家长能够具体了解学生的工程兴趣与实际学习进展。'
+  - id: hannah-tomio
+    name: Hannah Tomio
+    initials: HT
+    title: 伯尔尼大学激光物理博士后
+    affiliation: MIT 航空航天博士
+    photo: ''
+    bio: 'Hannah Tomio 是伯尔尼大学激光物理博士后，拥有 MIT 航空航天博士学位，本科就读于卡内基梅隆大学电气与计算机工程专业，并获东北大学航空航天硕士学位。她曾与 NASA 戈达德航天中心合作，在喷气推进实验室及波音实习，研究激光仪器、光通信与空间精密测量。
+
+
+      在 WinPlus，她指导航空航天、机械和电子工程申请，并教授八周低轨卫星星座设计课程。学生以 Starlink 等系统为案例，学习轨道高度、倾角、周期、覆盖与重访时间，使用 NASA GMAT 软件仿真，比较卫星数量及轨道布局对任务的影响。
+
+
+      课程还比较无线电与激光通信，介绍关键器件并开展简化链路预算。结课报告或作品集包括任务需求、星座架构、仿真结果、通信网络图和设计论证，并要求完成展示，让学生把物理、计算机与电子系统知识用于具体任务，向家长呈现建模与工程推理能力。'
+  - id: josh-guo
+    name: Josh Guo
+    initials: JG
+    title: 耶鲁大学毕业生
+    affiliation: 德勤从业者 · 公共政策与人文社科方向
+    photo: ''
+    bio: 'Josh Guo 毕业于耶鲁大学，获专业荣誉 Distinction in Major，曾任职德勤。他曾在白宫环境质量委员会实习，接触气候、能源与环境政策协调，并向康涅狄格州立法机构提交公共议题书面意见。他也参与云南布朗族文化保护，通过访谈、影像、音乐记录和写作连接人文研究与社区实践。
+
+
+      在 WinPlus，他指导经济、政治、哲学、法律相关及其他人文社科方向的本科、硕士和博士申请，并担任耶鲁本科申请面试官，曾帮助学生获得哈佛、耶鲁和斯坦福录取，将研究与面试经验用于升学支持。
+
+
+      其背景为初高中学生提供从社会议题走向学术研究的参照：从经济激励、政治制度、伦理或法律角度提出问题，再通过阅读、访谈、资料比较和写作形成项目。申请与面试表达则需要清楚说明自己做过什么、作出哪些选择，以及认识如何发生变化。'
+  - id: changfan-lin
+    name: Changfan Lin
+    initials: CL
+    title: 加州理工学院博士后研究员
+    affiliation: 康奈尔大学博士
+    photo: ''
+    bio: 'Changfan Lin 是加州理工学院 Gradinaru 实验室博士后，本科毕业于清华大学，在康奈尔完成博士研究，曾主导解析昼夜节律核心蛋白复合物的冷冻电镜结构。目前研究腺相关病毒载体（AAV）的工程改造，改善基因递送的靶向性与安全性。
+
+
+      在 WinPlus，他指导生物、生态等方向的本科、硕士和博士申请，曾帮助学生获得加州理工与康奈尔录取。他教授八周基因治疗科研课程，介绍基因编辑与递送、AAV 衣壳、血脑屏障、受体识别及定向进化，并通过论文讨论动物实验结果向人类应用转化的限制。
+
+
+      学生使用 Python 分析真实 AAV 筛选实验的测序数据，完成变体计数、富集分析和可视化，最终提交说明方法、结果与解释的“发现报告”，也可延伸撰写综述。项目将生命科学、文献阅读与计算训练结合，帮助学生练习以数据支持结论，并理解科研结果仍需进一步验证。'
+  - id: claire-yoo
+    name: Claire Yoo
+    initials: CY
+    title: 哈佛大学整合生物学本科生
+    affiliation: Harvard Undergraduate OpenBio 联合外联负责人
+    photo: ''
+    bio: 'Claire Yoo 在哈佛大学攻读整合生物学本科，担任 Harvard Undergraduate OpenBio Laboratory 联合外联负责人，推动高中生和大学生接触科研。她通过哈佛 PRISE 项目进入 Jost 实验室开展微生物研究，并参与哈佛植物标本馆相关研究，关注植物化合物与环境指示等方向。
+
+
+      在 WinPlus，她指导医学兴趣、神经科学及相关生命科学方向的本科申请，带领学生深入哈佛生命科学与医学院相关环境学习参访，曾帮助学生获得哈佛和斯坦福本科录取，将校园体验、专业探索与申请支持结合起来。
+
+
+      她以在读本科生的视角，介绍兴趣如何通过课程、实验室与阅读逐步细化。美国常见的医学培养路径是在本科后申请医学院；初高中阶段可以先探索生物、神经科学等方向，判断是否喜欢实验研究及健康问题。她的经历为家长理解本科科研和医学预科准备提供近距离参照。'
+  - id: anhphu-nguyen
+    name: AnhPhu Nguyen
+    initials: AN
+    title: 科技创业者
+    affiliation: MIRA 联合创始人 · 曾就读哈佛大学
+    photo: ''
+    bio: 'AnhPhu Nguyen 是科技创业者、智能眼镜公司 MIRA 联合创始人，曾在哈佛学习 Human Augmentation，探索计算机、工程与人机交互如何拓展人类能力。他从学生时期经营手机维修业务起步，获哈佛工程学院报道，并参与发起 AR／VR 开发者社团，探索可穿戴设备与互动技术。
+
+
+      在 WinPlus，他指导计算机与人工智能方向的本科申请，带领学生深入哈佛工程学院学习参访，曾帮助学生获得哈佛和斯坦福本科录取。其经历连接设备维修、原型制作与产品开发，使学生接触软件、硬件和交互设计之间的关系。
+
+
+      对于初高中家庭，这提供了区分算法数据、软件产品、智能硬件等兴趣的参照。学生可以围绕真实用户和问题制作原型，记录测试与修改，并解释设计取舍；家长可据此判断学生是否理解技术、能否持续改进，而不只看作品是否完成。'
+  - id: vania-shi
+    name: Vania Shi
+    initials: VS
+    title: Court Square Advisors 创始人
+    affiliation: MIT Sloan 金融硕士
+    photo: ''
+    bio: 'Vania Shi 是Court Square Advisors 创始人，拥有 MIT Sloan 金融硕士和加拿大女王大学荣誉商科学士学位。她在咨询、运营与投资领域有十余年经历，曾任 Morrison 投资经理及 Altman Solon 经理，涉及增长战略、商业尽职调查、运营改进与资本筹措。
+
+
+      在 WinPlus，她指导商科本科，以及 MBA、金融和商业分析硕士申请，带领学生深入 MIT 商学院学习参访，曾帮助学生获得哈佛商学院、MIT Sloan 和沃顿等商学院录取，将行业经验与商学院学习及申请规划联系起来。
+
+
+      对于初高中家庭，她的背景有助于区分金融、商业分析和管理战略：分别关注资金与风险、用数据回答经营问题，以及组织决策。MBA 属于后续阶段的规划，学生现阶段可通过数学统计、经济阅读、企业研究或小型创业实践探索兴趣，为选择本科方向积累具体依据。'
+- id: industry
+  title: 产业实习项目导师
+  intro: 带领线上科研与实习项目的工程师和研究员。
+  people:
+  - id: yuan-yuan
+    name: Yuan Yuan
+    initials: YY
+    title: 科技行业从业者
+    affiliation: Meta 与 Bloomberg 工作背景
+    photo: /images/uploads/team/yuan.jpg
+    bio: 'Yuan Yuan 拥有 Meta 与 Bloomberg 工作背景，曾在哥伦比亚大学工程与应用科学学院学习，连接互联网科技与金融信息服务。其公开技术交流包括 CppCon 2024 关于微服务算法交易系统行为驱动开发的海报，涉及业务需求、系统行为与软件测试之间的关系。
+
+
+      在 WinPlus 活动中，Yuan Yuan 带领学生参观 Meta 纽约办公室，学习产品设计，了解工作文化、协作方式与职业环境。学生可以把熟悉的数字产品与其背后的技术团队、用户需求和开发流程联系起来，了解科技企业实际工作。
+
+
+      这一背景也为比较软件工程、产品设计和数据方向提供参照。学生可选取一个常用产品，研究它服务谁、解决什么问题、哪些功能值得改进，以及如何验证效果。对家长而言，参访后的观察与产品分析能体现学生的兴趣和思考，为后续学习与项目选题提供依据。'
+  - id: sijie-tian
+    name: Sijie Tian
+    initials: ST
+    title: 人工智能方向导师
+    affiliation: Meta 工作背景
+    photo: ''
+    bio: 'Sijie Tian 拥有 Meta 工作背景，在 WinPlus 指导六周“AI Agent 从零到一”课程，面向有初中级编程经验的高中生。学生围绕学习助手、资料研究或数据清理等任务，构建小型智能体，理解系统如何调用工具、执行行动并检查结果。
+
+
+      课程从大语言模型 API 和提示词实验开始，建立包含观察、计划、行动与停止条件的程序循环，再接入计算或文件读取工具，规范输入输出，记录成功与失败的调用。学生同时学习沙箱、命令白名单、文件权限、超时限制及密钥管理，测试系统是否遵守执行边界。
+
+
+      最后通过五至十个任务评估表现，分析执行轨迹与失败原因，并改进一个弱点。结课要求包括代码、演示、评估表、执行记录和反思报告，解释系统如何工作、怎样测试及有哪些限制。家长可据此判断其是否理解工具调用、调试与工程评估。'
+  - id: harper-gu
+    name: Harper Gu
+    initials: HG
+    title: 产业实习项目导师
+    affiliation: Apple 工作背景
+    photo: ''
+    bio: 'Harper Gu 拥有 Apple 工作背景，在 WinPlus 指导八周 AI 编程课程，带领高中生使用 Claude 与 Claude Code 设计、开发和发布软件。课程结合网页基础、产品设计与 AI 工具，要求维护个人网站，记录每周作品和学习过程。
+
+
+      学生学习 HTML、CSS、JavaScript、开发者工具、终端与 Git，并将网页部署到 GitHub Pages；随后明确功能需求、检查 AI 修改的代码，通过测试接受、调整或撤回改动。项目可选择创意编程、数据可视化、网页应用或交互式文章，结合艺术、数据与日常问题。
+
+
+      后期训练包括控制范围、同伴测试，以及手机、慢速网络或空内容等条件下的可靠性检查。结课提交作品网站、代码仓库、版本记录、七篇日志和最终展示，说明 AI 的贡献与学生自己的判断。家长可看到作品质量、开发过程和实际理解。'
+  - id: terry-zhang
+    name: Terry Zhang
+    initials: TZ
+    title: 科技与数据研究方向导师
+    affiliation: Microsoft 与 Google 工作背景
+    photo: ''
+    bio: 'Terry Zhang，亦名 Dehao Terry Zhang，拥有 Microsoft 与 Google 工作背景，曾就读密歇根大学 Rackham 研究生院。他参与的混合办公研究发表于《美国国家科学院院刊》，分析员工到岗与管理者、同事的关系。
+
+
+      在 WinPlus，他指导微软季度营收预测项目，通过八次导师会议，使用公开财务数据开展清理、趋势观察和探索性分析，学习季节性、滞后变量与移动平均。学生使用 Python 比较 ARIMA、ETS 等模型，划分训练集与测试集，并以 MAE、RMSE、MAPE 评估误差。
+
+
+      课程进一步讨论营收驱动因素及其与股价的关联，区分相关与因果。结课提交注释代码或 Notebook、预测与实际值对比图、分析报告和展示，将编程、统计与商业问题结合。家长可通过数据处理、模型比较和误差解释，判断学生的分析能力。'
+  - id: yinong-liu
+    name: Yinong Liu
+    initials: YL
+    title: WinPlus AI 时尚与零售产品创新课程导师
+    affiliation: ''
+    photo: ''
+    bio: 'Yinong Liu 是 WinPlus AI 时尚与奢侈品零售课程导师，指导学生围绕真实消费体验设计 AI 产品。八次课程以公开信息、用户观察和竞品研究为基础，分析电商、到店预约、产品发现、搭配建议与售后服务，培养产品判断和商业分析能力。
+
+
+      学生绘制顾客旅程，识别五个痛点，选择一个问题并比较三至五个现有方案，再匹配对话助手、推荐系统、视觉搜索等 AI 能力。随后明确目标用户、最小可行产品、核心功能与成功标准，用 Figma、Canva 或演示文稿制作无需编程的原型。
+
+
+      课程要求考虑隐私、AI 错误回答、品牌语气与实施可行性，并提出满意度、转化率或服务效率等指标。结课提交产品创新提案，完成五至七分钟展示，解释问题证据、竞品、原型及商业价值。项目适合探索时尚、商科与科技交叉兴趣，家长可通过研究与设计论证了解学生的分析能力。'
+  - id: damir-kozhanbayev
+    name: Damir Kozhanbayev
+    initials: DK
+    title: 哈佛 Project on Workforce 研究员
+    affiliation: 前 UNICEF 教育项目官员
+    photo: ''
+    bio: 'Damir Kozhanbayev 是哈佛 Project on Workforce 研究员，曾在 UNICEF 哈萨克斯坦办公室负责教育与知识创新，并以 Urban Scholars Fellow 身份进入哈佛教育学院学习“学习设计、创新与技术”，兼具国际组织与教育研究背景。
+
+
+      在 WinPlus，他指导八周联合国与全球挑战研究课程，帮助学生从儿童权利、教育、性别平等、气候等议题中明确研究问题，了解联合国机构与可持续发展目标。学生阅读五至七篇学术资料及两至三份联合国报告，制作注释书目，比较两至三个案例中的参与者、政策目标、执行和结果。
+
+
+      学生据此提出三至五项有证据支持的建议，讨论可行性与实施障碍。结课要求包括十至十五页论文、两页政策简报和十至十五分钟展示，训练资料判断、案例分析与政策表达。成果可为后续模拟联合国或研究展示积累内容，让家长看到社会关切如何转化为研究。'
+note: 以上为 WinPlus 部分团队成员。头衔与机构仅说明个人的职业背景，并不代表其所在机构为 WinPlus 背书。
+cta_title: 让这样的导师指导您的孩子
+cta_text: 从一次免费规划咨询开始，我们将为您介绍最适合孩子的导师。
+cta: 预约免费咨询
+cta_link: contact.html

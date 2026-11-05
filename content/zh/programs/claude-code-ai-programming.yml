@@ -1,45 +1,42 @@
 order: 2
-title: Claude Code AI 编程科研
-category: ai-technology
-org: Apple + Oracle
-format: 线上科研
-seo_title: Claude Code AI 编程科研 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 研究 AI 编程助手如何改变软件开发方式，并运用这些工具开发真实应用，由资深硅谷云计算工程师指导。
-summary: 研究 AI 编程助手如何改变软件开发方式，并运用这些工具开发真实应用，由资深硅谷云计算工程师指导。
+title: AI 辅助软件工程
+industry: ai-technology
+type: research
+status: open
+mentor_id: harper-gu
+mentor_note: 拥有苹果背景的软件工程师
+seo_title: 高中生 AI 编程项目（Claude Code）| WinPlus 欧歌学院
+meta_description: 八周内借助 AI 编程工具设计、开发并上线真实软件，由苹果背景工程师指导。面向高中生的线上项目。
+summary: 学会用 AI 编程工具设计、开发并上线真实软件，也学会判断 AI 的对与错，由苹果工程团队背景的导师指导。
 image: https://images.unsplash.com/photo-1565687981296-535f09db714e
-image_alt: 程序员使用笔记本电脑和显示器工作
-facts:
-- label: 形式
-  value: 线上科研
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: Claude Code 等 AI 编程助手正在改变软件工程。学生围绕 AI 辅助编程提出研究问题，并开发一个将研究发现付诸实践的项目。
-activities:
-- 学习专业的软件工程工作流程
-- 使用 AI 编程助手规划、编写和测试代码
-- 设计并开展关于 AI 辅助编程的小型研究
-- 开发展示研究发现的应用
-- 撰写科研论文
-mentor: 硅谷资深云计算工程师，10 年以上经验（苹果）
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 科研论文及可运行的软件项目
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 建议具备一定编程经验。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 使用笔记本和显示器编程的程序员
+format: 线上 · 导师直播课
+length: 8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: 'AI 正在改变软件的编写方式。未来出色的工程师，是能够驾驭 AI 工具、审查其产出并做出正确判断的人。学生将使用 Claude 与 Claude Code 设计、开发并发布自己的软件，同时维护个人作品集网站与每周学习日志。
+
+
+  学生将学习 HTML、CSS、JavaScript、终端与 Git，并部署到 GitHub Pages。项目可选四个方向：创意编程、数据可视化、网页应用或互动文章，让技术学习与个人兴趣相结合。'
+outcomes:
+- 上线的个人作品集网站与项目
+- 包含完整版本记录的代码仓库
+- 七篇学习日志与期末展示
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 基础工具
+  text: HTML、CSS、JavaScript、开发者工具、终端与 Git。
+- phase: 第 3–4 周
+  title: 与 AI 协作
+  text: 描述需求、审查 AI 生成的修改，决定接受、修改或回退。
+- phase: 第 5–6 周
+  title: 打造项目
+  text: 确定范围，开发并迭代创意、数据、网页或文章项目。
+- phase: 第 7–8 周
+  title: 上线与答辩
+  text: 同伴测试、移动端与弱网可靠性、部署与期末展示。
+eligibility:
+- 9–12 年级
+- 无需编程基础
+- 笔记本电脑与稳定网络

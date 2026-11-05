@@ -1,0 +1,72 @@
+seo_title: "关于我们 | 创立于哈佛广场的精品升学规划机构 | WinPlus 欧歌学院"
+meta_description: "WinPlus 欧歌学院由哈佛肯尼迪学院校友于 2020 年在哈佛广场创立。了解我们的故事、使命与量身定制的升学与人才培养方式。"
+eyebrow: 关于我们
+title: "创立于哈佛广场的精品升学规划机构。"
+intro: "WinPlus 欧歌学院把世界顶尖大学的导师、科研与国际舞台带给各地有志向的学生，并围绕每一位学生制定一套完整规划。"
+image: /images/uploads/photos/hks-session.webp
+image_alt: WinPlus 在哈佛肯尼迪学院的导师课堂
+
+story_eyebrow: 我们的故事
+story_statement: "我们创立 WinPlus，是因为人才无处不在，但能够培养人才的导师与机会并非人人可及。"
+story_text: "WinPlus Education and Technology Inc.（欧歌学院）由哈佛肯尼迪学院校友郭琪（Cathy Guo）与盘超（Cedric Pan）于 2020 年在哈佛广场创立。如今，我们的剑桥美国总部与北京团队服务着来自美国、中国大陆、香港、新加坡等地的家庭。\n\n我们的团队与导师来自哈佛、MIT、斯坦福、耶鲁、宾夕法尼亚大学及世界知名企业。我们已帮助上百名学生进入常春藤及美国 Top 50 大学，并带领学生参加气候、科技与女性议题的国际会议。"
+
+mission_eyebrow: 我们的使命
+mission_title: "全人培养，追求真理"
+mission_text: "依托哈佛大学“全人教育”与“追求真理（*veritas*）”的理念，WinPlus 致力于推动全球教育公平与影响力，培养适应未来国际社会、全球治理与全面发展的青年领袖和未来产业人才：有好奇心、有能力、有原则、有温度。"
+mission_image: /images/uploads/campus.jpg
+mission_image_alt: 绿意环绕的红砖大学图书馆
+
+principles_eyebrow: 我们的信念
+principles_title: "我们的原则"
+principles:
+  - title: 每个学生都独一无二
+    text: "我们从不套用模板。每一份规划都从学生的性格、经历与兴趣出发，帮助他们成为更完整的自己。"
+  - title: 真实成就胜过包装
+    text: "招生官能分辨“故事”与“事实”。我们帮助学生通过科研、实习与领导力积累真实成就，再把故事讲好。"
+  - title: 成长，而不只是录取
+    text: "录取是里程碑，而不是终点。学生在这里培养的能力、判断力与品格，应当受用一生。"
+  - title: 始终坚守诚信
+    text: "我们从不保证录取，从不夸大学生的工作，也从不出售任何机构的参与资格。我们的声誉建立在对家庭与学校的诚实之上。"
+
+how_eyebrow: 服务流程
+how_title: "一套规划，所有项目协同发力。"
+how_intro: "很多家庭分别寻找升学顾问、科研项目和暑期活动，各有各的规划。在 WinPlus，同一个团队制定一张路线图，每个项目都为其他项目加分。"
+how:
+  - title: 了解
+    text: "免费规划咨询，深入了解学生的背景、目标、兴趣与性格。"
+  - title: 规划
+    text: "量身定制的多年路线图，涵盖选课、活动、科研、实习与国际经历，并配有专属导师。"
+  - title: 提升
+    highlight: true
+    text: "通过相辅相成的 WinPlus 项目，让背景真正立起来。"
+    links:
+      - { label: 科研与实习, link: research.html }
+      - { label: 名校深度研学, link: experiences/campus-immersion.html }
+      - { label: 全球领导力会议, link: experiences/global-conferences.html }
+  - title: 申请
+    text: "申请策略、文书头脑风暴与修改、面试与推荐信，由来自学生目标院校的导师指导。"
+  - title: 抉择
+    text: "录取选择、候补应对，以及顺利过渡到大学及未来。"
+compare:
+  - { title: "一段关系", text: "一位了解孩子的专属导师，从 9 年级陪伴到录取。" }
+  - { title: "一个连贯的故事", text: "每个项目都服务于同一条主线，不做无用功。" }
+  - { title: "一个导师网络", text: "教授、科学家和业界领袖，面向每一位学生开放。" }
+
+numbers_eyebrow: WinPlus 概览
+numbers:
+  - { number: "2020", label: "创立于哈佛广场" }
+  - { number: "100+", label: "指导学生" }
+  - { number: "40+", label: "团队成员与导师" }
+  - { number: "10+", label: "个国家有合作伙伴" }
+
+leaders_title: "核心团队"
+leaders_link_text: "认识全部导师"
+
+schools_title: "学校与教育机构合作"
+schools_text: "WinPlus 与中国、美国、新加坡等地的学校和教育机构合作，以您的品牌或我们的品牌，为学生带来导师、科研与国际项目。"
+schools_link_text: "合作洽谈"
+
+cta_title: "聊聊孩子的成长之路。"
+cta_text: "从一次与 WinPlus 导师的免费规划咨询开始。"
+cta: 预约免费咨询
+cta_link: contact.html

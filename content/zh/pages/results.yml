@@ -1,123 +1,173 @@
-seo_title: "录取成果 | 87 封藤校及 Top30 录取：哈佛、耶鲁、牛津、剑桥 | WinPlus 欧歌学院"
-meta_description: "WinPlus 学员录取成果：累计培养 100+ 名学生，87 例 Top-30 / 藤校录取，录取院校包括哈佛、耶鲁、普林斯顿、MIT、牛津、剑桥等，以及学员故事与家长评价。"
+# 录取成果页面。数据、案例与评价也会显示在首页。
+seo_title: 录取成果 | 常春藤与美国 Top 30 录取 | WinPlus 欧歌学院
+meta_description: WinPlus 学员录取成果：87 封常春藤及 Top 30 录取，包括哈佛、耶鲁（连续三年）、普林斯顿、宾大等，以及成功案例与家长评价。
 eyebrow: 录取成果
-title: 用成果说话
-intro: WinPlus 学员在世界顶尖大学的录取率持续高于整体水平。这里是他们的数据、故事与心声。
-image: https://images.unsplash.com/photo-1541339907198-e08756dedf3f
-image_alt: 毕业生将学位帽抛向空中
-
+title: 成果，自己会说话
+intro: WinPlus 指导的学生获得世界顶尖大学录取的比例，远高于各校整体录取率。这里是数字、故事，以及背后的家庭。
+image: /images/uploads/campus/yale.webp
+image_alt: 耶鲁大学斯特林纪念图书馆
 stats:
-  - { number: "100+", label: "累计培养学生" }
-  - { number: "87", label: "例 Top-30 / 藤校录取" }
-  - { number: "15", label: "次联合国会议参会" }
-  - { number: "6", label: "个国家的合作伙伴" }
-stats_note: "数据截至 2026 年 7 月。"
-
-chart_title: "录取率对比：WinPlus 学员 vs. 整体申请者"
+- number: 100+
+  label: 自 2020 年以来指导的学生
+- number: '[X%]'
+  label: 录取常春藤或美国 Top 30 的比例
+- number: '87'
+  label: 常春藤与 Top 30 录取
+- number: '3'
+  label: 连续三年获耶鲁录取
+stats_note: 数据截至 2026 年 7 月。[请确认统计口径：包含哪些学生及届别。]
+chart_title: 录取率：WinPlus 学员 vs. 整体
 schools:
-  - { name: 哈佛大学, general_rate: "", winplus_rate: "" }
-  - { name: 斯坦福大学, general_rate: "", winplus_rate: "" }
-  - { name: 麻省理工学院, general_rate: "", winplus_rate: "" }
-  - { name: 普林斯顿大学, general_rate: "", winplus_rate: "" }
-  - { name: 耶鲁大学, general_rate: "", winplus_rate: "" }
-  - { name: 哥伦比亚大学, general_rate: "", winplus_rate: "" }
-  - { name: 宾夕法尼亚大学, general_rate: "", winplus_rate: "" }
-  - { name: 加州理工学院, general_rate: "", winplus_rate: "" }
-  - { name: 杜克大学, general_rate: "", winplus_rate: "" }
-  - { name: 约翰斯·霍普金斯大学, general_rate: "", winplus_rate: "" }
-  - { name: 西北大学, general_rate: "", winplus_rate: "" }
-  - { name: 芝加哥大学, general_rate: "", winplus_rate: "" }
-  - { name: 康奈尔大学, general_rate: "", winplus_rate: "" }
-  - { name: 加州大学伯克利分校, general_rate: "", winplus_rate: "" }
-  - { name: 加州大学洛杉矶分校, general_rate: "", winplus_rate: "" }
-  - { name: 达特茅斯学院, general_rate: "", winplus_rate: "" }
-  - { name: 莱斯大学, general_rate: "", winplus_rate: "" }
-  - { name: 卡内基梅隆大学, general_rate: "", winplus_rate: "" }
-  - { name: 牛津大学, general_rate: "", winplus_rate: "" }
-  - { name: 剑桥大学, general_rate: "", winplus_rate: "" }
-  - { name: 帝国理工学院, general_rate: "", winplus_rate: "" }
-  - { name: 伦敦政治经济学院, general_rate: "", winplus_rate: "" }
-footnote: "* 基于 WinPlus 辅导学员，[年份] 届。整体录取率来自各校公开数据。[请补充统计方法。]"
-
-offers_title: 学员录取院校
-offers_eyebrow: "录取荣誉墙"
-offers_intro: "截至目前，WinPlus 学员已斩获 87 封美国 Top30 及常春藤盟校录取，覆盖美国与英国顶尖名校。"
-# Each tier is a row on the "admissions wall". Logos live in /images/uploads/universities/
+- name: Harvard
+  general_rate: ''
+  winplus_rate: ''
+- name: Stanford
+  general_rate: ''
+  winplus_rate: ''
+- name: MIT
+  general_rate: ''
+  winplus_rate: ''
+- name: Princeton
+  general_rate: ''
+  winplus_rate: ''
+- name: Yale
+  general_rate: ''
+  winplus_rate: ''
+- name: Columbia
+  general_rate: ''
+  winplus_rate: ''
+- name: UPenn
+  general_rate: ''
+  winplus_rate: ''
+- name: Caltech
+  general_rate: ''
+  winplus_rate: ''
+- name: Duke
+  general_rate: ''
+  winplus_rate: ''
+- name: Johns Hopkins
+  general_rate: ''
+  winplus_rate: ''
+- name: Northwestern
+  general_rate: ''
+  winplus_rate: ''
+- name: UChicago
+  general_rate: ''
+  winplus_rate: ''
+footnote: '* 基于 WinPlus 指导学生，[年份]届。整体录取率来自各校公布数据。[补充统计方法。]'
+offers_eyebrow: 录取墙
+offers_title: 我们的学生被这些大学录取
+offers_intro: 截至目前，WinPlus 学员已斩获 87 封美国 Top30 及常春藤盟校录取，覆盖美国与英国顶尖名校。
 offer_tiers:
-  - label: "常春藤盟校"
-    schools:
-      - { name: "哈佛大学", logo: /images/uploads/universities/harvard.png, note: "" }
-      - { name: "耶鲁大学", logo: /images/uploads/universities/yale.png, note: "连续三年获录取" }
-      - { name: "普林斯顿大学", logo: /images/uploads/universities/princeton.png, note: "" }
-      - { name: "哥伦比亚大学", logo: /images/uploads/universities/columbia.png, note: "" }
-      - { name: "宾夕法尼亚大学", logo: /images/uploads/universities/upenn.png, note: "" }
-      - { name: "布朗大学", logo: /images/uploads/universities/brown.png, note: "" }
-  - label: "美国 Top30"
-    schools:
-      - { name: "麻省理工学院", logo: /images/uploads/universities/mit.png, note: "" }
-      - { name: "杜克大学", logo: /images/uploads/universities/duke.png, note: "" }
-      - { name: "加州大学伯克利分校", logo: /images/uploads/universities/berkeley.png, note: "" }
-      - { name: "加州大学洛杉矶分校", logo: /images/uploads/universities/ucla.png, note: "" }
-      - { name: "佐治亚理工学院", logo: /images/uploads/universities/georgia-tech.png, note: "" }
-  - label: "英国 G5"
-    schools:
-      - { name: "牛津大学", logo: /images/uploads/universities/oxford.png, note: "" }
-      - { name: "剑桥大学", logo: /images/uploads/universities/cambridge.png, note: "" }
-      - { name: "帝国理工学院", logo: /images/uploads/universities/imperial.png, note: "" }
-      - { name: "伦敦大学学院", logo: /images/uploads/universities/ucl.png, note: "" }
-      - { name: "伦敦政治经济学院", logo: /images/uploads/universities/lse.png, note: "" }
-offers_note: "以上为部分展示。录取覆盖常春藤盟校、美国 Top30、英国 G5 及更多世界顶尖高校，其中耶鲁大学已连续三年斩获录取。"
-
-highlights_title: 学员故事
-highlights:
-  - title: "国际舞台：联合国会议唯一高中生发言代表"
-    tag: 国际舞台
-    text: "背景：17 岁高中在读学员。我们做了什么：联合国议题培训与全程辅导。结果：2026 年 6 月，在纽约联合国总部《残疾人权利公约》第十九届缔约国大会（COSP19）上，成为唯一的高中生发言代表。"
-    image: /images/uploads/students/un-cosp19-speaker.jpg
-    image_alt: WinPlus 学员在联合国会议上发言
-    link: enrichment/un-conferences.html
-  - title: "藤校逆袭：从中游成绩到哈佛、耶鲁"
-    tag: 藤校逆袭
-    text: "背景：成绩中游、目标顶尖名校。我们做了什么：基于「八大要素」体系的冲藤规划。结果：录取哈佛 / 耶鲁，含奖学金。"
-    image: /images/uploads/students/ivy-admit-story.jpg
-    image_alt: WinPlus 学员展示研究成果
-    link: admissions/us-college.html
-  - title: "低基础翻盘：从零标化到加州大学奖学金"
-    tag: 低基础翻盘
-    text: "背景：无托福 / SAT 起步。我们做了什么：标化、科研与文书系统提升。结果：录取加州大学系统并获奖学金。"
-    image: /images/uploads/students/uc-scholarship-story.jpg
-    image_alt: WinPlus 学员参观大学
-    link: research.html
-
-stories_title: 学员心声
+- label: 常春藤盟校
+  schools:
+  - name: 哈佛大学
+    logo: /images/uploads/universities/harvard.png
+    note: ''
+  - name: 耶鲁大学
+    logo: /images/uploads/universities/yale.png
+    note: 连续三年获录取
+  - name: 普林斯顿大学
+    logo: /images/uploads/universities/princeton.png
+    note: ''
+  - name: 哥伦比亚大学
+    logo: /images/uploads/universities/columbia.png
+    note: ''
+  - name: 宾夕法尼亚大学
+    logo: /images/uploads/universities/upenn.png
+    note: ''
+  - name: 布朗大学
+    logo: /images/uploads/universities/brown.png
+    note: ''
+- label: 美国 Top30
+  schools:
+  - name: 麻省理工学院
+    logo: /images/uploads/universities/mit.png
+    note: ''
+  - name: 杜克大学
+    logo: /images/uploads/universities/duke.png
+    note: ''
+  - name: 加州大学伯克利分校
+    logo: /images/uploads/universities/berkeley.png
+    note: ''
+  - name: 加州大学洛杉矶分校
+    logo: /images/uploads/universities/ucla.png
+    note: ''
+  - name: 佐治亚理工学院
+    logo: /images/uploads/universities/georgia-tech.png
+    note: ''
+- label: 英国 G5
+  schools:
+  - name: 牛津大学
+    logo: /images/uploads/universities/oxford.png
+    note: ''
+  - name: 剑桥大学
+    logo: /images/uploads/universities/cambridge.png
+    note: ''
+  - name: 帝国理工学院
+    logo: /images/uploads/universities/imperial.png
+    note: ''
+  - name: 伦敦大学学院
+    logo: /images/uploads/universities/ucl.png
+    note: ''
+  - name: 伦敦政治经济学院
+    logo: /images/uploads/universities/lse.png
+    note: ''
+offers_note: 部分名单。我们的学生录取涵盖常春藤、美国 Top 30 与英国 G5，其中耶鲁大学连续三年录取。
+cases_title: 成功案例
+cases_intro: 截然不同的起点，同一种方法：围绕学生本人制定规划。
+cases:
+- tag: 常春藤
+  title: 从年级第一到耶鲁（含奖学金）
+  start: 9 年级暑假开始指导。GPA 4.0，14 门 AP 满分，年级排名 1/300+，托福 117，SAT 1550。生物与公共卫生活动丰富，但缺少国际影响力。
+  strategy: 补足国际领导力与专家推荐：申请国际女性大会发言，由美国疾控中心专家与北大全球健康教授指导科研，并由耶鲁校友面试官与哈佛导师共同指导文书与模拟面试。
+  change: 在曼谷全球女性大会上台发言，绘画作品入选大会画展；获得两封专家推荐信；50+ 轮文书修改；获得所申请藤校全部面试。
+  outcome: 录取耶鲁（含奖学金）、宾大、约翰霍普金斯、圣母大学、加州伯克利与加州洛杉矶。
+  image: /images/uploads/students/ivy-admit-story.jpg
+  image_alt: WinPlus 学生展示作品
+- tag: 逆袭
+  title: 从无托福、无 SAT 到 Top 50 录取与 18 万美元奖学金
+  start: 11 年级暑假开始指导。GPA 约 3.5，无托福、无 SAT、无科研。活动丰富但缺少亮点与国际高度。
+  strategy: 八大要素全面拔高：密集的标化提分计划、与地理信息科学教授合作三个月科研、参加联合国气候大会，以及摄影作品集与个人影展。
+  change: 托福 99、SAT 1400（拼分）；发表一篇 GIS 研究论文；在联合国气候大会上发言；举办摄影展并在杂志发表作品；在儿童医院举办大提琴慈善演出。
+  outcome: 录取加州戴维斯、波士顿大学、普渡、东北大学与俄亥俄州立，并获加州河滨 8 万美元、加州圣克鲁兹 6 万美元、雪城 4 万美元奖学金；加州洛杉矶与加州圣地亚哥候补。
+  image: /images/uploads/students/uc-scholarship-story.jpg
+  image_alt: WinPlus 学生参观大学
+stories_title: 学员故事
 stories:
-  - initials: A.L.
-    admitted_to: 斯坦福大学
-    program: NASA 深空科研项目
-    quote: "科研经历彻底改变了我在申请中介绍自己的方式。[示例引言]"
-  - initials: M.W.
-    admitted_to: 牛津大学
-    program: 英国升学规划
-    quote: "我的 WinPlus 顾问非常清楚牛津在寻找什么样的学生。[示例引言]"
-  - initials: J.C.
-    admitted_to: 哥伦比亚大学
-    program: 彭博金融科技项目 + 美国升学规划
-    quote: "我有真实的项目、导师推荐信和属于自己的故事，这让一切都不一样了。[示例引言]"
-
-testimonials_title: 家长与校友评价
+- tag: 国际舞台
+  title: COSP19 唯一的高中生发言人
+  text: 经过 WinPlus 导师的议题培训，一位 17 岁学生于 2026 年 6 月在纽约联合国总部召开的《残疾人权利公约》第十九届缔约国大会上发言。
+  image: /images/uploads/students/un-cosp19-speaker.jpg
+  image_alt: WinPlus 学生在 COSP19 发言
+  link: experiences/global-conferences.html
+- tag: 科研
+  title: 一封 NASA 导师推荐信，与哈佛、斯坦福计算机专业
+  text: 一位学生完成了 NASA 行星分析软件项目并获得 NASA 科学家推荐信，被哈佛与斯坦福计算机专业录取。
+  image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+  image_alt: 学生进行科研项目
+  link: research.html
+- tag: 工程
+  title: 夏校与科研，助力宾大与伯克利工程录取
+  text: MIT 水下机器人科研与环境政策科研，各获一封推荐信，帮助一位机械工程申请者获得宾大与加州伯克利录取。
+  image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
+  image_alt: 工程实验室中的学生
+  link: admissions/us-college.html
+testimonials_title: 家长怎么说
 testimonials:
-  - quote: "[家长评价占位——例如孩子的变化，以及家庭与 WinPlus 合作的体验。]"
-    name: "[20XX 届学生家长]"
-    role: 家长
-  - quote: "[校友评价占位——例如项目如何帮助其在大学中发展。]"
-    name: "[姓名]，[大学]，[年份] 届"
-    role: 校友
-  - quote: "[家长评价占位。]"
-    name: "[家长姓名]"
-    role: 家长
-  - quote: "[校友评价占位。]"
-    name: "[姓名]，[大学]"
-    role: 校友
-
-cta: 开启你的成长之旅
+- quote: '[家长评价占位：孩子的变化，以及与 WinPlus 合作的体验。]'
+  name: '[20XX 届学生家长]'
+  role: 家长
+- quote: 科研经历彻底改变了我在申请中介绍自己的方式。[占位：请替换为已获同意的真实评价。]
+  name: '[学生姓名缩写]'
+  role: 录取 [大学]
+- quote: '[校友评价占位：项目对大学生活的帮助。]'
+  name: '[姓名]，[大学]，[年份]届'
+  role: 校友
+- quote: 非常感谢老师们无微不至的照顾！行程紧凑丰富，孩子收获很大。
+  name: 家长
+  role: 2025 名校研学
+cta_title: 一起写下下一个成功故事。
+cta_text: 从与 WinPlus 导师的免费规划咨询开始。
+cta: 预约免费咨询
 cta_link: contact.html

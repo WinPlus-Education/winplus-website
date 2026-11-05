@@ -1,0 +1,23 @@
+seo_title: "常见问题 | 升学规划、科研项目与国际体验 | WinPlus 欧歌学院"
+meta_description: "关于 WinPlus 欧歌学院的常见问题：我们是谁、升学规划、科研与实习、名校研学、国际会议、费用与如何开始。"
+eyebrow: 常见问题
+title: "常见问题"
+intro: "家长最常问的问题都在这里。没有找到答案？欢迎与 WinPlus 导师聊聊。"
+general_title: "关于 WinPlus"
+general:
+  - q: WinPlus 欧歌学院是什么机构？
+    a: "WinPlus Education and Technology Inc.（欧歌学院）是一家精品升学规划与人才培养机构，2020 年创立于美国马萨诸塞州剑桥市哈佛广场，在北京设有团队。我们提供从美国高中到研究生阶段的升学规划、线上科研与实习、美国名校深度研学以及全球领导力会议项目。"
+  - q: WinPlus 与其他留学顾问有什么不同？
+    a: "三点：扎根美国、每个申请季都能获得一手信息的本土团队；来自哈佛、MIT、耶鲁、斯坦福、直接指导学生的导师；以及通过自有科研、研学和会议项目真正提升背景的定制规划，而不是把学生套进模板。"
+  - q: WinPlus 的导师都是谁？
+    a: "我们的导师与顾问包括 MIT 与哈佛教授、前 NASA 宇航员、NASA 科学家、藤校校友面试官，以及拥有 Meta、微软、苹果、谷歌、彭博背景的工程师与研究员。详见[导师团队](team.html)。"
+  - q: 你们在哪里？服务海外家庭吗？
+    a: "美国总部位于波士顿剑桥市哈佛广场，中国总部位于北京。我们服务美国、中国大陆、香港、新加坡等地的家庭，主要通过线上方式跨时区沟通。"
+  - q: WinPlus 保证录取吗？
+    a: "不保证。任何有职业操守的顾问都无法保证被任何院校录取。个人结果因人而异，过往成果不代表未来结果。"
+  - q: 如何开始？
+    a: "预约免费规划咨询。我们会了解学生的目标与现有背景，并给出下一步建议，无需任何承诺。"
+sections:
+  - { id: admissions, title: "升学规划", page: admissions, link: admissions.html }
+  - { id: research, title: "科研与实习", page: research, link: research.html }
+  - { id: experiences, title: "国际体验", page: experiences, link: experiences.html }

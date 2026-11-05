@@ -33,7 +33,7 @@ track:
   label: 名学生
 - number: '87'
   label: 例 Top-30 / 藤校录取
-- number: '6'
+- number: '[6]'
   label: 个合作国家
 - number: 40+
   label: 位团队成员

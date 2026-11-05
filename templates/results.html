@@ -30,7 +30,7 @@
 <section class="section" id="case-studies">
   <div class="container">
     {{ head(_("Our Success Stories"), page.cases_title, page.cases_intro) }}
-    <div class="stories">{% for c in page.cases %}{{ case_card(c) }}{% endfor %}</div>
+    <div class="stories">{% for c in page.cases %}{{ case_card(c, loop.index) }}{% endfor %}</div>
     {{ results_notice() }}
   </div>
 </section>

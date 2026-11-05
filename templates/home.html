@@ -95,7 +95,7 @@
 <section class="section">
   <div class="container">
     <div class="head-row">{{ head(st.eyebrow, st.title, st.intro) }}{{ arrow(st.link_text, st.link) }}</div>
-    <div class="stories">{% for c in results_data.cases[:3] %}{{ case_card(c) }}{% endfor %}</div>
+    <div class="stories">{% for c in results_data.cases[:3] %}{{ case_card(c, loop.index) }}{% endfor %}</div>
     {{ results_notice() }}
   </div>
 </section>

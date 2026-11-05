@@ -211,11 +211,17 @@
 {%- endmacro %}
 
 {# Success story card: outcome first, the full journey on demand (no divider lines) #}
-{% macro case_card(c) -%}
+{% macro case_card(c, n=1) -%}
 <article class="story reveal">
-  <span class="story-tag">{{ c.tag }}</span>
+  <header class="story-head">
+    <span class="story-tag">{{ c.tag }}</span>
+    <span class="story-num" aria-hidden="true">{{ "%02d" | format(n) }}</span>
+  </header>
   <h3>{{ c.title }}</h3>
-  <p class="story-outcome">{{ c.outcome }}</p>
+  <div class="story-result">
+    <p class="story-label">{{ _("The result") }}</p>
+    <p class="story-outcome">{{ c.outcome }}</p>
+  </div>
   <details class="story-more">
     <summary><span>{{ _("Read the story") }}</span></summary>
     <dl>

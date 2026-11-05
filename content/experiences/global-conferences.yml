@@ -21,7 +21,7 @@ facts:
   label: '[Placeholder: add a headline figure]'
 - number: 100+
   label: Sessions and forums at COP28 alone
-- number: 10+
+- number: '[10+]'
   label: Countries where WinPlus has partners
 features_title: What makes it different
 features:

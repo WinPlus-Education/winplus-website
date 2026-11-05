@@ -20,7 +20,7 @@ highlights:
   label: Top US universities visited in a single immersion
 - number: '18'
   label: Professors and mentors teaching each immersion cohort
-- number: 10+
+- number: '[10+]'
   label: Countries where WinPlus has partners
 highlights_note: Data as of 2026.
 faq_title: 'Global experiences: your questions, answered'

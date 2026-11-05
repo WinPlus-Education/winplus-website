@@ -2829,10 +2829,6 @@ collections:
     label: 'SEO: Google description (about 150 characters)'
     required: false
     widget: text
-  - name: date_label
-    label: Date label
-    required: false
-    widget: string
   - name: cta_title
     label: Cta title
     required: false
@@ -5920,10 +5916,6 @@ collections:
     label: 'SEO: Google description (about 150 characters)'
     required: false
     widget: text
-  - name: date_label
-    label: Date label
-    required: false
-    widget: string
   - name: cta_title
     label: Cta title
     required: false

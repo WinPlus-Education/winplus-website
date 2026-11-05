@@ -22,3 +22,19 @@ testimonials:
 category: immersion
 statement: Twelve days, ten universities, and a clearer sense of where each student belongs.
 seo_title: 2024 Summer Campus Immersion | WinPlus
+partner: The High School Affiliated to Renmin University of China (RDFZ)
+facts:
+- number: '15'
+  label: Students
+- number: '10'
+  label: Universities
+- number: '12'
+  label: Days on the East Coast
+highlights:
+- title: Ten universities
+  text: Harvard, MIT, Brown, Yale, Princeton, Penn, Columbia, NYU, Johns Hopkins and Georgetown.
+- title: Global institutions
+  text: McKinsey & Company, Meta's New York office, BrainCo, economists at the IMF and a UN peacekeeping officer.
+- title: Beyond the classroom
+  text: Sailing at MIT and squash with a former Yale team captain.
+city: U.S. East Coast

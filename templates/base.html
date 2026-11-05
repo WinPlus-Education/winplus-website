@@ -140,16 +140,12 @@
         {% for s in site.social if s.platform == 'wechat' or (s.url and s.url != '#') %}
         <li>
           {% if s.platform == 'wechat' %}
-          <button class="social-btn is-wechat wechat-btn" aria-expanded="false" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
+          <button class="social-btn is-wechat wechat-btn" type="button" aria-haspopup="dialog" aria-controls="wechat-pop" title="{{ s.label }}"><i class="fa-brands fa-weixin" aria-hidden="true"></i><span class="social-txt">WeChat</span><span class="sr-only">{{ s.label }}</span></button>
           {% else %}
           <a class="social-btn is-{{ s.platform }}" href="{{ s.url }}" title="{{ s.label }}" target="_blank" rel="noopener">{% if s.platform in icons %}<i class="fa-brands {{ icons[s.platform] }}" aria-hidden="true"></i>{% endif %}<span class="social-txt{% if s.platform == 'xiaohongshu' %} always{% endif %}">{{ '小红书' if s.platform == 'xiaohongshu' else s.label }}</span><span class="sr-only">{{ s.label }}</span></a>
           {% endif %}
         </li>
         {% endfor %}
-        <li id="wechat-pop" class="wechat-pop" hidden>
-          {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 400) }}" alt="{{ _('WeChat QR code') }}">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
-          <p>{{ _("Scan to follow us on WeChat") }}{% if site.wechat_id %}<br><strong>{{ site.wechat_id }}</strong>{% endif %}</p>
-        </li>
       </ul>
       <p class="offices">{% for o in site.offices %}{{ o.display }}{{ " · " if not loop.last else "" }}{% endfor %}</p>
     </div>
@@ -180,6 +176,18 @@
     </div>
   </div>
 </footer>
+
+{# WeChat QR: opens from the WeChat icon in the footer #}
+<div id="wechat-pop" class="wechat-modal" role="dialog" aria-modal="true" aria-labelledby="wechat-title" hidden>
+  <div class="wm-backdrop" data-wm-close></div>
+  <div class="wm-panel">
+    <button type="button" class="wm-close" data-wm-close aria-label="{{ _('Close') }}">×</button>
+    <p class="eyebrow">WeChat</p>
+    <h2 id="wechat-title">{{ _("Add WinPlus on WeChat") }}</h2>
+    {% if site.wechat_qr %}<img src="{{ img(site.wechat_qr, 480) }}" width="240" height="231" alt="{{ _('WeChat QR code') }}" loading="lazy">{% else %}<div class="qr-ph">[WeChat QR]</div>{% endif %}
+    <p>{{ _("Open WeChat and scan the code to add us.") }}{% if site.wechat_id %}<br><strong>{{ site.wechat_id }}</strong>{% endif %}</p>
+  </div>
+</div>
 
 {# Cookie banner: strictly necessary cookies only until the visitor chooses (legal Part 6 §3) #}
 <div class="cookie" data-cookie role="dialog" aria-live="polite" aria-label="{{ _('Cookie preferences') }}" hidden>

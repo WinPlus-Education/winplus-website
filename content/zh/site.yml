@@ -18,7 +18,7 @@ offices:
 
 email: "[email@winplus.org]"
 wechat_id: ""
-wechat_qr: ""
+wechat_qr: /images/uploads/wechat-qr.png
 
 cta_text: 预约免费咨询
 cta_link: contact.html
@@ -49,6 +49,9 @@ nav:
       - { label: 全球领导力会议, link: experiences/global-conferences.html }
   - label: 活动
     link: events.html
+    children:
+      - { label: 近期活动, link: "events.html#upcoming" }
+      - { label: 往期活动, link: "events.html#past" }
   - label: 录取成果
     link: results.html
   - label: 洞察

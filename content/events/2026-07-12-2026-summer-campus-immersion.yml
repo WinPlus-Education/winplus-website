@@ -32,3 +32,42 @@ testimonials: []
 category: immersion
 statement: Twelve days inside Harvard, MIT, Yale, Princeton and Silicon Valley.
 seo_title: 2026 Summer Campus Immersion | WinPlus
+facts:
+- number: '12'
+  label: Days across Boston, New York and Silicon Valley
+- number: '50'
+  label: Hours of coursework with Harvard, MIT and Yale mentors
+- number: '4'
+  label: Ivy League and peer campuses, plus Silicon Valley
+highlights:
+- title: Seminars at Harvard
+  image: /images/uploads/photos/hks-session.webp
+  text: Fifty hours of global competency coursework with mentors from Harvard, MIT and Yale, on AI, fintech, aerospace engineering and international affairs.
+- title: Classrooms and labs
+  image: /images/uploads/photos/hbs-classroom.webp
+  text: A seminar in a Harvard Business School classroom, visits to the MIT Media Lab and aerospace labs, and a session with professors including a former NASA astronaut.
+- title: Life on campus
+  image: /images/uploads/photos/yale-sterling-group.webp
+  text: Time at Harvard, MIT, Yale and Princeton with current students and alumni, from libraries to sailing on the Charles.
+arc:
+- label: Boston
+  title: Harvard & MIT
+  text: Seminars at Harvard Kennedy School and Harvard Business School, the MIT Media Lab and the Charles River.
+- label: New England
+  title: Yale & Princeton
+  text: Campus visits, admissions insight and conversations with students and alumni.
+- label: New York
+  title: The city
+  text: New York Harbor and the city's cultural landmarks.
+- label: West Coast
+  title: Silicon Valley
+  text: Technology and innovation where it is built.
+outcomes:
+- title: A personalised US admissions plan
+  text: Each student left with a plan shaped by WinPlus mentors around their interests and goals.
+- title: Clarity about fit
+  text: Seeing campuses from the inside helped students understand where they would thrive.
+- title: New academic interests
+  text: Seminars on AI, aerospace and international affairs opened directions to explore further.
+- title: Mentors and friends
+  text: Relationships with mentors and a cohort that continue after the program.

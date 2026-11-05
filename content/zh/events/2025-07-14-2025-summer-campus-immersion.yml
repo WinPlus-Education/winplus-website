@@ -19,3 +19,20 @@ testimonials:
 category: immersion
 statement: 十二天，横跨东西海岸，走进十所大学与 35 家机构。
 seo_title: 2025 暑期名校深度研学 | WinPlus 欧歌学院
+facts:
+- number: '20'
+  label: 名学员
+- number: '10'
+  label: 所名校
+- number: '35'
+  label: 家机构
+- number: '12'
+  label: 天横跨东西海岸
+highlights:
+- title: 名校导师课程
+  text: 哈佛、MIT 与斯坦福导师讲授 50 小时全球胜任力课程，涵盖领导力、国际关系、人工智能、基因编辑与卫星工程。
+- title: 走近招生办
+  text: 从哥伦比亚、哈佛到斯坦福，多所名校招生团队举办说明会。
+- title: 科技前沿
+  text: 参访苹果、谷歌、Meta 等科技企业以及 NASA。
+city: 美国东西海岸

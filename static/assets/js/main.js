@@ -186,7 +186,12 @@
 
   // ---------- WeChat QR pop-up ----------
   var wbtn = $(".wechat-btn"), wpop = $("#wechat-pop");
-  if (wbtn && wpop) wbtn.addEventListener("click", function () { wpop.hidden = !wpop.hidden; wbtn.setAttribute("aria-expanded", wpop.hidden ? "false" : "true"); });
+  if (wbtn && wpop) {
+    var wKey = function (e) { if (e.key === "Escape") wClose(); };
+    var wClose = function () { wpop.hidden = true; document.removeEventListener("keydown", wKey); wbtn.focus(); };
+    wbtn.addEventListener("click", function () { wpop.hidden = false; document.addEventListener("keydown", wKey); var c = wpop.querySelector(".wm-close"); if (c) c.focus(); });
+    Array.prototype.forEach.call(wpop.querySelectorAll("[data-wm-close]"), function (el) { el.addEventListener("click", wClose); });
+  }
 
   // ---------- Cookie consent (legal Part 6 §3): analytics load only after consent ----------
   var KEY = "wp_cookie_consent_v1";

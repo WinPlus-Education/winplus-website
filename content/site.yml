@@ -25,7 +25,7 @@ offices:
 
 email: "[email@winplus.org]"
 wechat_id: ""
-wechat_qr: ""
+wechat_qr: /images/uploads/wechat-qr.png
 
 cta_text: Book a Free Consultation
 cta_link: contact.html
@@ -57,6 +57,9 @@ nav:
       - { label: Global Leadership Conferences, link: experiences/global-conferences.html }
   - label: Events
     link: events.html
+    children:
+      - { label: Upcoming Events, link: "events.html#upcoming" }
+      - { label: Past Events, link: "events.html#past" }
   - label: Our Results
     link: results.html
   - label: Insights

@@ -31,3 +31,42 @@ testimonials: []
 category: immersion
 statement: 十二天，走进哈佛、MIT、耶鲁、普林斯顿与硅谷。
 seo_title: 2026 暑期名校深度研学 | WinPlus 欧歌学院
+facts:
+- number: '12'
+  label: 天行程，覆盖波士顿、纽约与硅谷
+- number: '50'
+  label: 小时哈佛、MIT 与耶鲁导师课程
+- number: '4'
+  label: 所藤校及顶尖名校，外加硅谷
+highlights:
+- title: 哈佛导师课
+  image: /images/uploads/photos/hks-session.webp
+  text: 由哈佛、MIT 与耶鲁导师主讲的 50 小时全球胜任力课程，涵盖人工智能、金融科技、航天工程与国际事务。
+- title: 课堂与实验室
+  image: /images/uploads/photos/hbs-classroom.webp
+  text: 在哈佛商学院教室上研讨课，参访 MIT 媒体实验室与航空航天实验室，聆听前 NASA 宇航员等教授授课。
+- title: 名校生活
+  image: /images/uploads/photos/yale-sterling-group.webp
+  text: 在哈佛、MIT、耶鲁与普林斯顿与在校生和校友交流，从图书馆到查尔斯河上的帆船。
+arc:
+- label: 波士顿
+  title: 哈佛与 MIT
+  text: 哈佛肯尼迪学院与商学院课堂、MIT 媒体实验室与查尔斯河。
+- label: 新英格兰
+  title: 耶鲁与普林斯顿
+  text: 走访校园，了解招生，与在校生和校友交流。
+- label: 纽约
+  title: 城市探索
+  text: 纽约港与城市文化地标。
+- label: 西海岸
+  title: 硅谷
+  text: 在科技创新的发源地感受前沿。
+outcomes:
+- title: 个性化美国本科升学规划
+  text: 每位学员获得由 WinPlus 导师根据兴趣与目标量身定制的规划。
+- title: 更清楚适合自己的学校
+  text: 深入校园，理解自己在哪里最能成长。
+- title: 新的学术兴趣
+  text: 人工智能、航天与国际事务课程打开新的探索方向。
+- title: 导师与伙伴
+  text: 与导师和同伴建立的联系在项目结束后延续。

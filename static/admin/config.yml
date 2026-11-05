@@ -2649,6 +2649,10 @@ collections:
   - name: title
     label: Title
     required: false
+    widget: text
+  - name: card_title
+    label: Card title
+    required: false
     widget: string
   - name: date
     label: Date & start time
@@ -2676,6 +2680,14 @@ collections:
     label: Location
     required: false
     widget: string
+  - name: city
+    label: City
+    required: false
+    widget: string
+  - name: partner
+    label: Partner
+    required: false
+    widget: string
   - name: image
     label: Photo (upload, or paste an image link)
     required: false
@@ -2689,70 +2701,14 @@ collections:
     label: Summary
     required: false
     widget: text
-  - name: details
-    label: Details
-    required: false
-    widget: markdown
-  - name: gallery
-    label: Photo gallery
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
-  - name: testimonials
-    label: Testimonials
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
   - name: statement
     label: Statement
     required: false
     widget: text
-  - name: date_label
-    label: Date label
+  - name: details
+    label: Details
     required: false
-    widget: string
-  - name: seo_title
-    label: 'SEO: browser tab & Google title'
-    required: false
-    widget: string
-  - name: meta_description
-    label: 'SEO: Google description (about 150 characters)'
-    required: false
-    widget: text
-  - name: apply_label
-    label: Apply label
-    required: false
-    widget: string
-  - name: apply_link
-    label: Apply link
-    required: false
-    widget: string
-  - name: inquire_link
-    label: Inquire link
-    required: false
-    widget: string
-  - name: register_url
-    label: Register url
-    required: false
-    widget: string
-  - name: expect_title
-    label: Expect title
-    required: false
-    widget: string
-  - name: expect
-    label: Expect
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
+    widget: markdown
   - name: facts
     label: Facts
     required: false
@@ -2770,6 +2726,115 @@ collections:
     summary: '{{fields.label}}'
   - name: facts_source
     label: Facts source
+    required: false
+    widget: string
+  - name: highlights_title
+    label: Highlights title
+    required: false
+    widget: string
+  - name: highlights
+    label: Highlights
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: arc
+    label: Arc
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: label
+      label: Label
+      required: false
+      widget: string
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: outcomes
+    label: Outcomes
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: gallery
+    label: Photo gallery
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: caption
+      label: Caption
+      required: false
+      widget: string
+    summary: '{{fields.image}}'
+  - name: testimonials
+    label: Testimonials
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: quote
+      label: Quote
+      required: false
+      widget: text
+    - name: name
+      label: Name
+      required: false
+      widget: string
+    - name: role
+      label: Role
+      required: false
+      widget: string
+    summary: '{{fields.name}}'
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
+  - name: date_label
+    label: Date label
+    required: false
+    widget: string
+  - name: cta_title
+    label: Cta title
     required: false
     widget: string
   summary: '{{title}}'
@@ -5676,6 +5741,10 @@ collections:
     label: Title
     required: false
     widget: string
+  - name: card_title
+    label: Card title
+    required: false
+    widget: string
   - name: date
     label: Date & start time
     required: false
@@ -5702,6 +5771,14 @@ collections:
     label: Location
     required: false
     widget: string
+  - name: city
+    label: City
+    required: false
+    widget: string
+  - name: partner
+    label: Partner
+    required: false
+    widget: string
   - name: image
     label: Photo (upload, or paste an image link)
     required: false
@@ -5715,70 +5792,14 @@ collections:
     label: Summary
     required: false
     widget: text
-  - name: details
-    label: Details
-    required: false
-    widget: markdown
-  - name: gallery
-    label: Photo gallery
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
-  - name: testimonials
-    label: Testimonials
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
   - name: statement
     label: Statement
     required: false
     widget: string
-  - name: date_label
-    label: Date label
+  - name: details
+    label: Details
     required: false
-    widget: string
-  - name: seo_title
-    label: 'SEO: browser tab & Google title'
-    required: false
-    widget: string
-  - name: meta_description
-    label: 'SEO: Google description (about 150 characters)'
-    required: false
-    widget: text
-  - name: apply_label
-    label: Apply label
-    required: false
-    widget: string
-  - name: apply_link
-    label: Apply link
-    required: false
-    widget: string
-  - name: inquire_link
-    label: Inquire link
-    required: false
-    widget: string
-  - name: register_url
-    label: Register url
-    required: false
-    widget: string
-  - name: expect_title
-    label: Expect title
-    required: false
-    widget: string
-  - name: expect
-    label: Expect
-    required: false
-    widget: list
-    field:
-      name: item
-      label: Item
-      widget: string
+    widget: markdown
   - name: facts
     label: Facts
     required: false
@@ -5796,6 +5817,115 @@ collections:
     summary: '{{fields.label}}'
   - name: facts_source
     label: Facts source
+    required: false
+    widget: string
+  - name: highlights_title
+    label: Highlights title
+    required: false
+    widget: string
+  - name: highlights
+    label: Highlights
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: arc
+    label: Arc
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: label
+      label: Label
+      required: false
+      widget: string
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: outcomes
+    label: Outcomes
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      required: false
+      widget: string
+    - name: text
+      label: Text
+      required: false
+      widget: text
+    summary: '{{fields.title}}'
+  - name: gallery
+    label: Photo gallery
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: caption
+      label: Caption
+      required: false
+      widget: string
+    summary: '{{fields.image}}'
+  - name: testimonials
+    label: Testimonials
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: quote
+      label: Quote
+      required: false
+      widget: text
+    - name: name
+      label: Name
+      required: false
+      widget: string
+    - name: role
+      label: Role
+      required: false
+      widget: string
+    summary: '{{fields.name}}'
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
+  - name: meta_description
+    label: 'SEO: Google description (about 150 characters)'
+    required: false
+    widget: text
+  - name: date_label
+    label: Date label
+    required: false
+    widget: string
+  - name: cta_title
+    label: Cta title
     required: false
     widget: string
   summary: '{{title}}'

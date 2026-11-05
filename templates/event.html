@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, gallery, quotes, results_notice, past_event_card, cta_band, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, quotes, results_notice, event_card, journey, cta_band, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block schema %}
 {% set online = 'online' in (item.location | lower) or '线上' in item.location %}
@@ -10,36 +10,98 @@
 {{ ld(ev) }}
 {% endblock %}
 {% block content %}
-{% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if item.is_past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
-{% set actions %}{% if not item.is_past %}{{ btn(item.apply_label or _("Register"), item.apply_link or "#register", "light") }}{% endif %}{% endset %}
-{{ page_hero(hero, [[_("Events"), "events.html"], [item.title, item.url]], actions, [item.time_label, item.location]) }}
+{#
+  One template for upcoming and past events. Every section is optional and appears only when its
+  content exists. When an event ends: add gallery photos, switch the copy to past tense, done.
+#}
+{% set past = item.is_past %}
+{% set inquire = item.inquire_link or ("contact.html?interest=" ~ (_("Global Experiences") | urlencode) ~ "&program=" ~ (item.title | urlencode)) %}
+{% set shots = ([{"image": item.image, "caption": item.image_alt}] if item.image else []) + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
+{% set has_gallery = past and shots | length > 1 %}
 
-{% if item.is_past %}
-{# ---------- Past event: the story, the moments, what's next ---------- #}
+{% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{% set actions %}{% if not past %}{{ btn(_("Inquire"), inquire, "light") }}{% elif has_gallery %}{{ btn(_("View gallery"), "#gallery", "light") }}{% endif %}{% endset %}
+{{ page_hero(hero, [[_("Events"), "events.html"], [item.card_title or item.title, item.url]], actions, [item.time_label, item.location]) }}
+
+{# 1. Key numbers #}
+{% if item.facts %}
+<section class="section section-tight s-ink ev-facts">
+  <div class="container">
+    <dl class="stats stats-{{ [item.facts | length, 4] | min }}">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl>
+    {% if item.facts_source %}<p class="ev-source">{{ item.facts_source }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{# 2. Overview #}
 <section class="section">
   <div class="container split-intro">
     <div>
-      <p class="eyebrow">{{ _("The story") }}</p>
+      <p class="eyebrow">{{ _("The story") if past else _("About the program") }}</p>
       {% if item.statement %}<p class="statement">{{ item.statement }}</p>{% endif %}
       <ul class="event-chips">
         <li><span>{{ _("Date") }}</span>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
         <li><span>{{ _("Location") }}</span>{{ item.location }}</li>
-        <li><span>{{ _("Type") }}</span>{{ item.type }}</li>
+        {% if item.partner %}<li><span>{{ _("In partnership with") }}</span>{{ item.partner }}</li>{% endif %}
       </ul>
     </div>
     <div class="prose">{{ item.details | md | safe }}</div>
   </div>
 </section>
 
-{% if item.facts %}
-<section class="section section-tight s-ink">
-  <div class="container"><dl class="stats">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl></div>
+{# 3. Signature experiences / highlights #}
+{% if item.highlights or item.expect %}
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(_("Highlights") if past else _("What to expect"), item.highlights_title or (_("What we did") if past else _("Signature experiences")), item.highlights_intro) }}
+    {% if item.highlights %}
+    {% set n = item.highlights | length %}
+    <div class="hl-grid hl-{{ n if n <= 4 else 3 }}">
+      {% for h in item.highlights %}
+      <article class="hl-card reveal{% if h.image %} has-img{% endif %}">
+        {% if h.image %}{{ photo(h.image, h.title, "hl-media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}{% endif %}
+        <div class="hl-body">
+          <span class="hl-n">{{ "%02d" | format(loop.index) }}</span>
+          <h3>{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <ul class="ticks ticks-lg">{% for x in item.expect %}<li>{{ x }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
 </section>
 {% endif %}
 
-{% set shots = [{"image": item.image, "caption": item.image_alt}] + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
-{% if shots | length > 1 %}
-<section class="section s-ivory" id="gallery">
+{# 4. The arc of the program #}
+{% if item.arc %}
+<section class="section">
+  <div class="container">
+    {{ head(_("How it unfolded") if past else _("The week at a glance"), item.arc_title, item.arc_intro) }}
+    {{ journey(item.arc) }}
+  </div>
+</section>
+{% endif %}
+
+{# 5. Outcomes #}
+{% if item.outcomes %}
+<section class="section s-ink">
+  <div class="container">
+    {{ head(_("Outcomes"), item.outcomes_title or (_("What students gained") if past else _("What students gain"))) }}
+    <div class="oc-grid">
+      {% for o in item.outcomes %}
+      <div class="oc reveal"><span class="oc-n">{{ "%02d" | format(loop.index) }}</span><h3>{{ o.title }}</h3><p>{{ o.text }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# 6. Gallery (past events) #}
+{% if has_gallery %}
+<section class="section" id="gallery">
   <div class="container">
     <div class="head-row">{{ head(_("Gallery"), _("Moments from the program")) }}<p class="gallery-count">{{ shots | length }} {{ _("photos") }} · {{ _("Click to enlarge") }}</p></div>
     <div class="mosaic" data-gallery>
@@ -53,8 +115,9 @@
 </section>
 {% endif %}
 
+{# 7. Quotes #}
 {% if item.testimonials %}
-<section class="section{% if shots | length <= 1 %} s-ivory{% endif %}">
+<section class="section s-ivory">
   <div class="container">
     <div class="head-row">{{ head(_("In their words"), "") }}<div class="carousel-nav" data-carousel="#ev-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
     {{ quotes(item.testimonials, "ev-quotes") }}
@@ -63,80 +126,21 @@
 </section>
 {% endif %}
 
+{# 8. More events #}
 {% set more = past_events | rejectattr("slug", "equalto", item.slug) | list %}
 {% if more %}
 <section class="section">
   <div class="container">
-    <div class="head-row">{{ head(_("Past events"), _("More moments from WinPlus students")) }}{{ arrow(_("All events"), "events.html#past") }}</div>
-    <div class="grid g-3">{% for e in more[:3] %}{{ past_event_card(e) }}{% endfor %}</div>
+    <div class="head-row">{{ head(_("Past events"), _("More moments from WinPlus students") if past else _("Where WinPlus students have been")) }}{{ arrow(_("All events"), "events.html#past") }}</div>
+    <div class="grid g-3">{% for e in more[:3] %}{{ event_card(e) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}
 
 {% set prog = "experiences/campus-immersion.html" if item.category == "immersion" else "experiences/global-conferences.html" %}
-{{ cta_band(_("Be part of the next chapter."), _("Applications for our next programs open soon. Register your interest and we'll share dates and details first."), _("Register interest"), "contact.html?interest=" ~ (_("Global Experiences") | urlencode) ~ "&program=" ~ (item.title | urlencode), item.image, _("Explore the program"), prog) }}
+{% if past %}
+{{ cta_band(_("Be part of the next chapter."), _("Applications for our next programs open soon. Register your interest and we'll share dates and details first."), _("Register interest"), inquire, item.image, _("Explore the program"), prog) }}
 {% else %}
-
-<section class="section">
-  <div class="container detail">
-    <div class="detail-main">
-      <p class="eyebrow">{{ _("About this event") if not item.is_past else _("The story") }}</p>
-      <ul class="fact-line" style="margin-top:0;margin-bottom:2rem">
-        <li><strong>{{ _("Date") }}</strong>{{ item.time_label or (item.date | date_fmt('long')) }}</li>
-        <li><strong>{{ _("Location") }}</strong>{{ item.location }}</li>
-        <li><strong>{{ _("Type") }}</strong>{{ item.type }}</li>
-      </ul>
-      <div class="prose">{{ item.details | md | safe }}</div>
-      {% if item.expect %}
-      <h2 class="h2-sm" style="margin-top:3rem">{{ item.expect_title or _("What to expect") }}</h2>
-      <ul class="ticks ticks-lg">{% for x in item.expect %}<li>{{ x }}</li>{% endfor %}</ul>
-      {% endif %}
-      {% if item.facts %}<dl class="stats stats-sm" style="margin-top:3rem">{% for f in item.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.number }}</dd></div>{% endfor %}</dl>{% if item.facts_source %}<p class="notice">{{ item.facts_source }}</p>{% endif %}{% endif %}
-    </div>
-    <aside class="detail-side">
-      <div class="side-card side-sticky" id="register">
-        {% if item.apply_link %}
-        <h2 class="h3">{{ _("Apply") }}</h2>
-        <p class="small muted">{{ item.time_label }}</p>
-        {{ btn(item.apply_label or _("Apply"), item.apply_link) }}{{ btn(_("Inquire"), item.inquire_link or ("contact.html?program=" ~ (item.title | urlencode)), "outline", false) }}
-        {% else %}
-        <h2 class="h3">{{ _("Register") }}</h2>
-        <form class="form" name="event-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
-          <input type="hidden" name="form-name" value="event-registration">
-          <input type="hidden" name="event" value="{{ item.title }} ({{ item.date | date_fmt('long') }})">
-          <input type="hidden" name="language" value="{{ lang.code }}">
-          <input type="hidden" name="consent_version" value="{{ site.consent.version }}">
-          <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
-          <label class="field" for="r-name">{{ _("Name") }} *<input id="r-name" name="name" autocomplete="name" required></label>
-          <label class="field" for="r-email">{{ _("Email") }} *<input id="r-email" type="email" name="email" autocomplete="email" required></label>
-          <label class="field" for="r-role">{{ _("I am a") }}
-            <select id="r-role" name="role"><option>{{ _("Parent or guardian") }}</option><option>{{ _("Student (13 or older)") }}</option><option>{{ _("School or organization representative") }}</option></select>
-          </label>
-          <p class="form-note">{{ site.consent.inquiry_notice }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></p>
-          <label class="consent"><input type="checkbox" name="photo_consent" value="yes"> <span>{{ site.consent.event_photo }}</span></label>
-          <label class="consent"><input type="checkbox" name="marketing_consent" value="yes"> <span>{{ site.consent.marketing }}</span></label>
-          <button class="btn btn-primary" type="submit">{{ _("Register") }} <span class="arr" aria-hidden="true">→</span></button>
-        </form>
-        {% endif %}
-      </div>
-    </aside>
-  </div>
-</section>
-
-{% if item.gallery %}
-<section class="section s-ivory">
-  <div class="container">{{ head(_("Gallery"), _("Moments from the program")) }}{{ gallery(item.gallery) }}</div>
-</section>
-{% endif %}
-
-{% if item.testimonials %}
-<section class="section">
-  <div class="container">
-    <div class="head-row" style="margin-bottom:2rem">{{ head("", _("In their words")) }}<div class="carousel-nav" data-carousel="#ev-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
-    {{ quotes(item.testimonials, "ev-quotes") }}
-    {{ results_notice() }}
-  </div>
-</section>
-{% endif %}
+{{ cta_band(item.cta_title or _("Join the delegation."), item.cta_text or _("Places are limited. Send us an inquiry and a WinPlus advisor will share the full program, eligibility and next steps."), _("Inquire"), inquire, item.image, _("Explore the program"), prog) }}
 {% endif %}
 {% endblock %}

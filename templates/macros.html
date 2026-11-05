@@ -145,6 +145,7 @@
   {% for st in steps %}
   <li class="reveal{% if st.highlight %} is-highlight{% endif %}">
     <span class="step-n">{{ "%02d" | format(loop.index) }}</span>
+    {% if st.label %}<span class="step-label">{{ st.label }}</span>{% endif %}
     <h3>{{ st.title }}</h3>
     <p>{{ st.text }}</p>
     {% if st.links %}<div class="step-links">{% for l in st.links %}<a href="{{ u(l.link) }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
@@ -323,43 +324,30 @@
 {%- endmacro %}
 
 {# M14 Event card #}
+{# Event card: one design for upcoming and past events #}
 {% macro event_card(e) -%}
-{% set inquire = "contact.html?interest=" ~ (_("Events & Info Sessions") | urlencode) ~ "&program=" ~ (e.title | urlencode) %}
-<article class="card event-card reveal">
-  {% if e.image %}<a href="{{ u(e.url) }}" tabindex="-1" aria-hidden="true">{{ photo(e.image, "", "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}</a>{% endif %}
+{% set n_photos = 1 + ((e.gallery or []) | rejectattr("image", "equalto", e.image) | list | length) %}
+{% set when = (e.card_date or e.time_label or (e.date | date_fmt('long'))) if not e.is_past else (e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year')))) %}
+<article class="ev-card reveal{% if e.is_past %} is-past{% endif %}">
+  <div class="media">
+    {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+    {% if e.type %}<span class="ev-chip">{{ e.type }}</span>{% endif %}
+    {% if e.is_past and n_photos > 1 %}<span class="photo-count">{{ n_photos }} {{ _("photos") }}</span>{% elif not e.is_past %}<span class="ev-status">{{ _("Upcoming") }}</span>{% endif %}
+  </div>
   <div class="card-body">
-    <div class="event-top">
-      <p class="event-date">{% if e.date_label %}<span class="num">{{ e.date_label }}</span>{% else %}<span class="num">{{ e.date | date_fmt('day') }}</span><span>{{ e.date | date_fmt('mon') }} {{ e.date | date_fmt('year') }}{% if e.end_label %} · {{ e.end_label }}{% endif %}</span>{% endif %}</p>
-      {% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}
-    </div>
-    <h3><a href="{{ u(e.url) }}" style="text-decoration:none">{{ e.title }}</a></h3>
-    <ul class="event-meta">{% if e.time_label %}<li>{{ e.time_label }}</li>{% endif %}<li>{{ e.location }}</li></ul>
-    <p>{{ e.summary }}</p>
-    <div class="btn-row">
-      {% if e.is_past %}
-      {{ arrow(_("See photos & stories"), e.url) }}
-      {% else %}
-      {{ btn(_("Details"), e.url, "outline", false, "btn-sm") }}
-      {{ btn(e.apply_label or _("Apply"), e.apply_link or e.url ~ "#register", "primary", false, "btn-sm") }}
-      {% endif %}
+    <p class="ev-meta"><span>{{ when }}</span><span>{{ e.city or e.location }}</span></p>
+    <h3><a class="ev-link" href="{{ u(e.url) }}">{{ e.card_title or e.title }}</a></h3>
+    <p class="ev-sum">{{ e.summary }}</p>
+    <div class="ev-foot">
+      {% if e.is_past %}<span class="ev-more">{{ _("See the story") }} <span aria-hidden="true">→</span></span>
+      {% else %}<span class="ev-more">{{ _("View program") }} <span aria-hidden="true">→</span></span><a class="ev-inquire" href="{{ u(e.inquire_link or ('contact.html?interest=' ~ (_('Global Experiences') | urlencode) ~ '&program=' ~ (e.title | urlencode))) }}">{{ _("Inquire") }}</a>{% endif %}
     </div>
   </div>
 </article>
 {%- endmacro %}
 
-{# Past event card: hero image plus a strip of additional photos from the event #}
-{% macro past_event_card(e) -%}
-{% set n_photos = 1 + ((e.gallery or []) | rejectattr("image", "equalto", e.image) | list | length) %}
-<a class="card past-card reveal" href="{{ u(e.url) }}">
-  <div class="media">{{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}{% if n_photos > 1 %}<span class="photo-count">{{ n_photos }} {{ _("photos") }}</span>{% endif %}</div>
-  <div class="card-body">
-    <div class="event-top"><p class="event-date"><span>{{ e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year'))) }}</span></p>{% if e.type %}<span class="tag">{{ e.type }}</span>{% endif %}</div>
-    <h3>{{ e.title }}</h3>
-    <p>{{ e.summary }}</p>
-    <span class="link-arrow">{{ _("See photos & stories") }} <span aria-hidden="true">→</span></span>
-  </div>
-</a>
-{%- endmacro %}
+{# Kept for templates that still call it #}
+{% macro past_event_card(e) -%}{{ event_card(e) }}{%- endmacro %}
 
 {# M15 Gallery (opens in lightbox) #}
 {% macro gallery(items) -%}

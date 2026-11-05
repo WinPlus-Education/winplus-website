@@ -20,3 +20,20 @@ testimonials:
 category: immersion
 statement: Two coasts, ten universities and 35 organizations in twelve days.
 seo_title: 2025 Summer Campus Immersion | WinPlus
+facts:
+- number: '20'
+  label: Students
+- number: '10'
+  label: Universities
+- number: '35'
+  label: Organizations
+- number: '12'
+  label: Days, coast to coast
+highlights:
+- title: Coursework with top mentors
+  text: Fifty hours of global competency coursework from Harvard, MIT and Stanford mentors on leadership, international relations, AI, gene editing and satellite engineering.
+- title: Admissions from the inside
+  text: Information sessions hosted by admissions teams at leading universities, from Columbia and Harvard to Stanford.
+- title: Where technology is made
+  text: Visits to Apple, Google and Meta, and to NASA.
+city: U.S. East & West Coasts

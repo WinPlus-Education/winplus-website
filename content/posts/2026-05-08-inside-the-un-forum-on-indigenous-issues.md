@@ -7,14 +7,8 @@ summary: "WinPlus students and teachers joined the 25th session of the UN Perman
 dek: "At the 25th session of the UN Permanent Forum on Indigenous Issues, WinPlus students watched a global dialogue unfold and came away with a sharper idea of what international perspective really means."
 image: /images/uploads/photos/unpfii-2026-general-assembly-group.webp
 image_alt: "WinPlus co-founder Cathy Guo and students with Indigenous delegates in front of the rostrum of the UN General Assembly Hall"
-image_caption: "Cathy Guo and WinPlus students with Indigenous representatives in the UN General Assembly Hall."
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
-key_facts:
-  - { value: "25th", label: "Session of the Permanent Forum" }
-  - { value: "Apr 20 – May 1", label: "2026, UN Headquarters, New York" }
-  - { value: "~6%", label: "of the world's population are Indigenous peoples" }
-  - { value: "~40%", label: "of global biodiversity is in their care" }
 ---
 
 From April 20 to May 1, 2026, the **25th session of the United Nations Permanent Forum on Indigenous Issues (UNPFII)** met at UN Headquarters in New York. The Forum is a high-level advisory body to the UN Economic and Social Council and the most important platform for Indigenous peoples to speak directly to the UN and its member states.
@@ -106,7 +100,7 @@ In these sessions, students heard directly from Indigenous communities around th
 
 Teaching assistant Youran recorded her reflections during the Forum:
 
-<blockquote class="pull"><p>"When voices from different countries, cultures and histories come together in the same room, global issues stop being concepts in a book. They become realities shared by real people."</p><cite>Youran, WinPlus teaching assistant</cite></blockquote>
+<blockquote class="pull"><p>When voices from different countries, cultures and histories come together in the same room, global issues stop being concepts in a book. They become realities shared by real people.</p><cite>Youran, WinPlus teaching assistant</cite></blockquote>
 
 At a side event on Indigenous peoples, climate change and land conflict, Youran gained a new understanding of familiar ideas. Climate change affects Indigenous peoples more directly and in more complex ways: not only the natural environment, but the long-standing relationship between people and land, their traditions and the continuity of their communities. Her view of "land" itself shifted: "For many Indigenous groups, land holds ancestral memory, tradition and spiritual belonging. When land is taken, developed or redefined, what is affected is not just living space but the foundation a people needs to carry its culture and way of life forward."
 
@@ -114,7 +108,7 @@ At a side event on Indigenous peoples, climate change and land conflict, Youran 
 
 **One student**, a Hakka from Fujian, found an unexpected resonance:
 
-<blockquote class="pull"><p>"When these languages are forgotten, what's lost isn't just a tool for communication. It's a history, an identity and a deep connection between people and their land."</p><cite>A WinPlus student</cite></blockquote>
+<blockquote class="pull"><p>When these languages are forgotten, what's lost isn't just a tool for communication. It's a history, an identity and a deep connection between people and their land.</p><cite>A WinPlus student</cite></blockquote>
 
 That took her beyond an abstract idea of "cultural preservation" to the heart of rights and dignity. "It isn't only about offering support. We need to listen to Indigenous peoples themselves and let them lead," she said. "Only when Indigenous peoples can express their own needs and shape their own development do protections really mean something." Indigenous issues stopped being "someone else's problem" and became a question of rights, participation, dignity and cultural continuity.
 

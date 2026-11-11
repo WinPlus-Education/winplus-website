@@ -50,37 +50,32 @@ industries:
   title: Science & Space
 faq_title: 'Research & internships: your questions, answered'
 faq:
-- q: "Why publish in a specialist journal rather than a top journal?"
-  a: "For most high school students, a world-leading journal isn't realistic. Universities care more about whether the student completed the full research process than about the journal's prestige. A specialist journal open to student work still shows university-level research skills and rigorous academic English. Admissions officers also value research a student reached out for and earned, for example with a university or Chinese Academy of Sciences lab, more than a project that was paid for."
-- q: "My child's test scores are average and their direction is unclear. Can they still join?"
-  a: "Yes. Our job is to turn a vague interest into something concrete. During the consultation we look for the student's strengths and suggest initial directions."
-- q: "Can a high school student really produce professional-level work in eight weeks?"
-  a: "Yes. Mentors learn each student's strengths and current level, then set a path that stretches them without losing them, instead of forcing everyone into one template. If the student keeps pace, the output and growth follow naturally. [Read how two students designed a deep-space telescope with a NASA scientist](insights/nasa-mentored-research-two-students-one-telescope.html)."
-- q: "How do you make sure online research is rigorous?"
-  a: "Running online is exactly why we can bring in top mentors. NASA scientists and senior engineers at companies such as Meta and Google have very full schedules; flexible online collaboration lets students work directly on first-hand problems from world-class labs."
 - q: What will the student actually produce?
-  a: 'Every program ends in a concrete piece of work: a research paper, a working prototype, a financial model, a policy brief or a film, depending on the program. Students present it in a final showcase,
-    and it becomes the evidence behind their activity list, essays and interviews.'
+  a: 'Every program ends in a concrete piece of work: a research paper, a working prototype, a financial model, a policy brief or a film, depending on the program. Students present it in a final showcase, and it becomes the evidence behind their activity list, essays and interviews.'
 - q: Who are the mentors?
-  a: Working scientists, engineers and researchers whose careers include organizations such as NASA, Meta, Microsoft and leading research universities. Each program page names the mentor and their background.
-    Organization names describe mentors' careers; programs are run by WinPlus.
+  a: Working scientists, engineers and researchers whose careers include organizations such as NASA, Meta, Microsoft and leading research universities. Each program page names the mentor and their background. Organization names describe mentors' careers; programs are run by WinPlus.
 - q: How is this different from an online course?
-  a: 'A course teaches content to everyone. Our programs are small cohorts built around a real problem: students choose a question or product, meet their mentor live every week, and deliver work that is
-    reviewed like professional work, not graded like homework.'
+  a: 'A course teaches content to everyone. Our programs are small cohorts built around a real problem: students choose a question or product, meet their mentor live every week, and deliver work that is reviewed like professional work, not graded like homework.'
 - q: 'Research or internship: which is right?'
-  a: 'Research suits students who want to answer an original question and write it up; it is strongest for STEM, social science and policy majors. Internships suit students who want to build: a product,
-    model or prototype, the way an industry team works. Both include a mentor, weekly deliverables and a final presentation.'
+  a: 'Research suits students who want to answer an original question and write it up; it is strongest for STEM, social science and policy majors. Internships suit students who want to build: a product, model or prototype, the way an industry team works. Both include a mentor, weekly deliverables and a final presentation.'
+- q: Should students do a summer school or research? Are they required?
+  a: Neither is required. Whether to take part, and which kind, depends on the student's interests, background, time and goals. Summer schools suit students exploring a field and experiencing university courses; research suits students who want to go deep on a specific question, and the two can build on each other. When choosing, we look at whether the coursework or project fits, how the mentor guides students and what the student will actually gain.
 - q: Is a recommendation letter guaranteed?
-  a: No, and that is why it matters. Mentors write letters for students who complete the program and do strong work. An earned letter from a mentor who saw the work first-hand carries far more weight than
-    a certificate of attendance.
+  a: No, and that is why it matters. Mentors write letters for students who complete the program and do strong work. An earned letter from a mentor who saw the work first-hand carries far more weight than a certificate of attendance.
 - q: Does the student need prior experience?
-  a: Most programs are designed for motivated beginners and teach the tools in the first weeks. Advanced tracks list any coding or mathematics prerequisites under Eligibility on the program page.
+  a: Most programs are designed for motivated beginners and teach the tools in the first weeks. Advanced tracks list any coding or mathematics prerequisites under Eligibility on the program page. Taking part in a program does not make the student an official intern or member of the mentor's organization; the student's role and the format are set out in each program's description.
+- q: How do you make sure online research is rigorous?
+  a: Running online is exactly why we can bring in top mentors. NASA scientists and senior engineers at companies such as Meta and Google have very full schedules; flexible online collaboration lets students work directly on first-hand problems from world-class labs.
+- q: Can a high school student really produce professional-level work in eight weeks?
+  a: Yes. Mentors learn each student's strengths and current level, then set a path that stretches them without losing them, instead of forcing everyone into one template. If the student keeps pace, the output and growth follow naturally. [Read how two students designed a deep-space telescope with a NASA scientist](insights/nasa-mentored-research-two-students-one-telescope.html).
 - q: Can the work be published or entered in competitions?
-  a: When a project is strong enough, mentors and WinPlus advisors recommend suitable student journals, conferences or competitions and support the submission. Publication depends on the work and the outlet,
-    and is never promised in advance.
+  a: When a project is strong enough, mentors and WinPlus advisors recommend suitable student journals, conferences or competitions and support the submission. Publication depends on the work and the outlet, and is never promised in advance.
+- q: Why publish in a specialist journal rather than a top journal?
+  a: For most high school students, a world-leading journal isn't realistic. Universities care more about whether the student completed the full research process than about the journal's prestige. A specialist journal open to student work still shows university-level research skills and rigorous academic English. Admissions officers also value research a student reached out for and earned, for example with a university or Chinese Academy of Sciences lab, more than a project that was paid for.
+- q: My child's test scores are average and their direction is unclear. Can they still join?
+  a: Yes. Our job is to turn a vague interest into something concrete. During the consultation we look for the student's strengths and suggest initial directions.
 - q: When do programs run, and how much time do they take?
-  a: Most run online for 6 to 8 weeks, mainly in summer (June to August), with selected cohorts in spring. Expect live sessions each week plus independent work; each program page lists its schedule and
-    whether applications are open.
+  a: Most run online for 6 to 8 weeks, mainly in summer (June to August), with selected cohorts in spring. Expect live sessions each week plus independent work; each program page lists its schedule and whether applications are open.
 cta_title: Find the program that fits your story.
 cta_text: Talk with a WinPlus mentor about interests, timing and which program will add the most to the profile.
 cta: Book a Free Consultation

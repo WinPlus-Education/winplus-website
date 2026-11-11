@@ -16,7 +16,7 @@
 #}
 {% set past = item.is_past %}
 {% set inquire = item.inquire_link or ("contact.html?interest=" ~ (_("Global Experiences") | urlencode) ~ "&program=" ~ (item.title | urlencode)) %}
-{% set shots = ([{"image": item.image, "caption": item.image_alt}] if item.image else []) + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
+{% set shots = ([{"image": item.image, "caption": item.image_alt}] if item.image and "/photos/" in item.image else []) + ((item.gallery or []) | rejectattr("image", "equalto", item.image) | list) %}
 {% set has_gallery = past and shots | length > 1 %}
 
 {% set hero = {"eyebrow": item.type ~ (" · " ~ _("Past event") if past else ""), "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}

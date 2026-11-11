@@ -7,14 +7,8 @@ summary: "One student decided to apply to US universities at the end of May in 1
 dek: "He switched from European to US applications at the end of 11th grade, with a 3.5 GPA and no test scores. Here is the six-month plan that followed, in the words of the people who lived it."
 image: /images/uploads/photos/hbs-classroom.webp
 image_alt: "WinPlus study-tour students and mentors in a Harvard Business School classroom"
-image_caption: "A WinPlus global competency study tour in a Harvard Business School classroom (summer 2024)."
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
-key_facts:
-  - { value: "6 months", label: "From decision to applications" }
-  - { value: "3.5", label: "GPA when we started" }
-  - { value: "12", label: "US university offers" }
-  - { value: "$80K", label: "Scholarship from UC Riverside" }
 ---
 
 Every year, WinPlus walks many students through one of the most important seasons of their lives, and every student's story is worth sharing. Today we want to share one student's story. In just six months he went from uncertainty and doubt to confidently accepting an offer from the US university he wanted.
@@ -130,6 +124,6 @@ After careful planning and preparation, the student received offers from 12 US u
 
 Throughout the process we emphasized that authenticity matters more than outcomes. What the student gained during application season went far beyond the offers: he learned to handle pressure, manage the anxiety of applying, and build a more positive, optimistic mindset.
 
-<blockquote class="pull"><p>"The trip was short, but it had a huge impact on me. I started to realize I had many more choices, and to believe I could go further."</p><cite>The student</cite></blockquote>
+<blockquote class="pull"><p>The trip was short, but it had a huge impact on me. I started to realize I had many more choices, and to believe I could go further.</p><cite>The student</cite></blockquote>
 
 WinPlus is committed to growing alongside our students. We believe the heart of education is not only helping students reach their dream universities, but helping them become more authentic, more complete people. We hope every student on the application journey can show who they really are and find their own path to success.

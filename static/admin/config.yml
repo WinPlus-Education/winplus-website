@@ -1887,10 +1887,6 @@ collections:
         label: Text
         required: false
         widget: text
-      - name: story
-        label: Story
-        required: false
-        widget: text
       - name: image
         label: Photo (upload, or paste an image link)
         required: false
@@ -2903,10 +2899,6 @@ collections:
     label: Photo description (accessibility & SEO)
     required: false
     widget: text
-  - name: image_caption
-    label: Cover photo caption
-    required: false
-    widget: text
   - name: source
     label: Source
     required: false
@@ -2915,21 +2907,6 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
-  - name: key_facts
-    label: Key facts strip (2–4 numbers)
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: value
-      label: Value
-      required: false
-      widget: string
-    - name: label
-      label: Label
-      required: false
-      widget: string
-    summary: '{{fields.label}}'
   - name: body
     label: Text
     required: false
@@ -5054,10 +5031,6 @@ collections:
         label: Text
         required: false
         widget: text
-      - name: story
-        label: Story
-        required: false
-        widget: text
       - name: image
         label: Photo (upload, or paste an image link)
         required: false
@@ -6066,10 +6039,6 @@ collections:
     label: Photo description (accessibility & SEO)
     required: false
     widget: string
-  - name: image_caption
-    label: Cover photo caption
-    required: false
-    widget: string
   - name: source
     label: Source
     required: false
@@ -6078,21 +6047,6 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
-  - name: key_facts
-    label: Key facts strip (2–4 numbers)
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: value
-      label: Value
-      required: false
-      widget: string
-    - name: label
-      label: Label
-      required: false
-      widget: string
-    summary: '{{fields.label}}'
   - name: body
     label: Text
     required: false

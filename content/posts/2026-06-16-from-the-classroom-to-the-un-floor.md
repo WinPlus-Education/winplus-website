@@ -7,14 +7,8 @@ summary: "At the 19th Conference of States Parties to the CRPD at UN Headquarter
 dek: "A 17-year-old WinPlus student started 153rd in the speakers' queue at UN Headquarters. Days of preparation, a lot of listening and one persistent mentor later, his voice was entered into the official record."
 image: /images/uploads/photos/cosp19-student-speaking.webp
 image_alt: "A 17-year-old WinPlus student delivering a statement as an NGO representative at the CRPD Conference of States Parties"
-image_caption: "The student delivers his statement at the 19th Conference of States Parties to the CRPD, UN Headquarters, New York, June 10, 2026."
 source: "WinPlus WeChat (欧歌未来)"
 featured: true
-key_facts:
-  - { value: "17", label: "The student's age when he spoke" }
-  - { value: "#153", label: "His starting place in the speakers' queue" }
-  - { value: "2+ min", label: "Statement entered into the UN record" }
-  - { value: "20 yrs", label: "Since the CRPD was adopted" }
 ---
 
 On June 10, 2026, the 19th session of the Conference of States Parties to the Convention on the Rights of Persons with Disabilities (CRPD) was under way at United Nations Headquarters in New York. In the conference room, a 17-year-old Chinese high school student was waiting for his turn.
@@ -23,13 +17,13 @@ Delegates from around the world took the floor one after another. Then the chair
 
 The student, in a dark suit, sat at the speaker's desk. The microphone light came on, and he began a statement of just over two minutes: how his father had shaped him, where the limits of medicine lie, the visible and invisible barriers his disabled peers meet at school, and, finally, the responsibility of his generation.
 
-<blockquote class="pull"><p>"A doctor's hands can save one life at a time. An inclusive society can change the lives of millions."</p><cite>From the student's statement to COSP19</cite></blockquote>
+<blockquote class="pull"><p>A doctor's hands can save one life at a time. An inclusive society can change the lives of millions.</p><cite>From the student's statement to COSP19</cite></blockquote>
 
 Applause followed. Two minutes is not long, but it meant a 17-year-old's voice was formally recorded in a United Nations meeting. Behind those minutes were days of drafting and rehearsal, and a mentor team at his side throughout.
 
 Disability issues come down to whether a person can go to school, work and access information on equal terms, and take part in the decisions that affect them. For a student still learning about the world, coming close to those realities is also a lesson in understanding difference, respecting other people's choices and asking what you can do for others.
 
-<figure class="fig-wide"><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV broadcast showing the student speaking at the NGO desk" loading="lazy"><figcaption>the student's statement as broadcast live on UN Web TV.</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV broadcast showing the student speaking at the NGO desk" loading="lazy"><figcaption>the student's statement as broadcast live on UN Web TV.</figcaption></figure>
 
 ## <span class="h-num">01</span> A convention turns twenty
 
@@ -84,7 +78,7 @@ At one session, a young man about the student's age took the floor. He was from 
 
 The moment had a big impact on the student. Well-meaning attitudes often cast people with disabilities as passive recipients of care. Here they were speakers, advocates and leaders of the agenda. That evening he wrote:
 
-<blockquote class="pull"><p>"This conference showed me that real equality isn't only about offering help. It's about giving everyone the chance to be respected, to be heard and to take part in shaping society."</p><cite>the student, in his daily reflection</cite></blockquote>
+<blockquote class="pull"><p>This conference showed me that real equality isn't only about offering help. It's about giving everyone the chance to be respected, to be heard and to take part in shaping society.</p><cite>the student, in his daily reflection</cite></blockquote>
 
 ## <span class="h-num">04</span> From 153rd in line to the microphone
 
@@ -98,7 +92,7 @@ Before he spoke, the student was visibly nervous, his face flushed. Mentor Ms. S
 
 At the microphone, the student began with his childhood: why he wanted to study medicine, and why he came to see that medicine alone cannot build an inclusive world. As one of very few young speakers, he drew glances from around the room as delegates turned to see where the young voice was coming from. He closed:
 
-<blockquote class="pull"><p>"My generation will become the designers of our institutions. That responsibility doesn't have to wait for the halls of power in the future. It starts now, in the hallways of our schools."</p><cite>The close of the student's statement</cite></blockquote>
+<blockquote class="pull"><p>My generation will become the designers of our institutions. That responsibility doesn't have to wait for the halls of power in the future. It starts now, in the hallways of our schools.</p><cite>The close of the student's statement</cite></blockquote>
 
 <figure><img src="/images/uploads/photos/cosp19-general-assembly-hall.webp" alt="The student standing in the gallery of the UN General Assembly Hall" loading="lazy"><figcaption>the student in the UN General Assembly Hall.</figcaption></figure>
 

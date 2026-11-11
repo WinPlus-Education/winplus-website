@@ -5,16 +5,10 @@ date: 2026-05-20
 category: "Research & Internships"
 summary: "One student had just been rejected by a well-known research program; the other had almost no research resources at her public school. Eight weeks designing a deep-space telescope with a NASA scientist led to offers from Cambridge, Imperial, UC Berkeley, Michigan and UCLA."
 dek: "Eight weeks, one deep-space telescope, two very different students. What a custom research internship with a NASA scientist did for their applications, and for them."
-image: /images/uploads/insights/nasa-research/webb-telescope-session.jpg
-image_alt: "Online research session: mentor Rachel explains the James Webb Space Telescope's 18 actively controlled mirror segments"
-image_caption: "Mentor Rachel walks the team through the James Webb Space Telescope's mirror design in a live online session."
+image: https://images.unsplash.com/photo-1446776811953-b23d57bd21aa
+image_alt: "Earth seen from the International Space Station"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
-key_facts:
-  - { value: "8 weeks", label: "Online research internship" }
-  - { value: "2", label: "Students, one telescope design" }
-  - { value: "10+", label: "Top-30 mechanical engineering offers (engineering student)" }
-  - { value: "3", label: "Astrophysics offers incl. Cambridge (astronomy student)" }
 faq_title: "Questions families ask about our research internships"
 faq:
   - q: "My child's test scores are average and their direction is still unclear. Can they join?"
@@ -36,8 +30,8 @@ What they couldn't have known was that within weeks, in WinPlus's NASA research 
 Even less could they have imagined that those eight weeks would reshape their applications and the direction of their education.
 
 <div class="profiles">
-<div class="profile"><p class="role">Aerospace engineer</p><h3>Student 1</h3><p>11th grade, US public high school with few research resources. Strong spatial and hands-on skills.</p><p>Owned the telescope itself: structure, mechanics, materials and strength.</p><p class="outcome">Michigan (Mechanical Engineering), UCLA, UIUC and 10+ US Top-30 engineering offers</p></div>
-<div class="profile"><p class="role">Planetary astronomer</p><h3>Student 2</h3><p>11th grade, international division of a top Chinese high school. Passionate about astrophysics and data.</p><p>Owned the science: spectral data, exoplanet detection and habitability.</p><p class="outcome">Cambridge, Imperial College London and UC Berkeley (Astrophysics)</p></div>
+<div class="profile"><p class="role">Aerospace engineer</p><h3>The engineer</h3><p>11th grade, US public high school with few research resources. Strong spatial and hands-on skills.</p><p>Owned the telescope itself: structure, mechanics, materials and strength.</p><p class="outcome">Michigan (Mechanical Engineering), UCLA, UIUC and 10+ US Top-30 engineering offers</p></div>
+<div class="profile"><p class="role">Planetary astronomer</p><h3>The astronomer</h3><p>11th grade, international division of a top Chinese high school. Passionate about astrophysics and data.</p><p>Owned the science: spectral data, exoplanet detection and habitability.</p><p class="outcome">Cambridge, Imperial College London and UC Berkeley (Astrophysics)</p></div>
 <div class="profile profile-mentor"><p class="role">Mentor</p><h3>Rachel</h3><p>BS, MS and PhD in Aerospace Engineering from MIT. Longtime scientist at NASA's Ames Research Center in Silicon Valley.</p></div>
 </div>
 
@@ -83,7 +77,7 @@ She sent the engineer real NASA telescope design reports and taught her to work 
 
 Step by step, the engineer changed. "I realized the physics I learned in class isn't just for exams," she said. "It can actually be used to design a space telescope. Putting theory into practice like that is really interesting."
 
-<blockquote class="pull"><p>"She started out as a very shy, introverted girl. By the end, her communication skills were outstanding."</p><cite>Cedric Pan, WinPlus co-founder, who guided the project throughout</cite></blockquote>
+<blockquote class="pull"><p>She started out as a very shy, introverted girl. By the end, her communication skills were outstanding.</p><cite>Cedric Pan, WinPlus co-founder, who guided the project throughout</cite></blockquote>
 
 The once-hesitant student began to look like an engineer. She went looking for telescope design drawings on her own and started asking questions: "If we switch this part to a composite, would strength and weight improve?" "If we change this structure, would we lose less light in the optical path?" She went from waiting for instructions to being a real collaborator on a real research project.
 
@@ -115,7 +109,7 @@ But he didn't panic. Trained by the NASA project to face the unknown, find tools
 
 A few months later, **offers in astrophysics from Cambridge, Imperial College London and UC Berkeley** arrived.
 
-<blockquote class="pull"><p>"I used to think grades and test scores were what mattered most. Now I understand that what matters most is finding a direction that's truly your own. Taking a different path turned out to suit me better."</p><cite>The astronomer</cite></blockquote>
+<blockquote class="pull"><p>I used to think grades and test scores were what mattered most. Now I understand that what matters most is finding a direction that's truly your own. Taking a different path turned out to suit me better.</p><cite>The astronomer</cite></blockquote>
 
 ## <span class="h-num">05</span> More than a research project
 

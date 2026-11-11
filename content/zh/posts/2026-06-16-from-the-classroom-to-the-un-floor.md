@@ -6,14 +6,8 @@ summary: "在纽约联合国总部《残疾人权利公约》第十九届缔约�
 dek: "最初排在第153位，几天的准备、整日的聆听，加上导师的全力争取，一位17岁中国高中生的声音被正式记录在联合国会议里。"
 image: /images/uploads/photos/cosp19-student-speaking.webp
 image_alt: "欧歌学员以 NGO 代表身份在《残疾人权利公约》缔约国大会上发言"
-image_caption: "2026年6月10日，欧歌学员在纽约联合国总部《残疾人权利公约》第十九届缔约国大会上发言。"
 source: "欧歌未来 公众号"
 featured: true
-key_facts:
-  - { value: "17岁", label: "发言时的年龄" }
-  - { value: "第153位", label: "最初的发言排队顺位" }
-  - { value: "2分多钟", label: "被正式记录在联合国会议中" }
-  - { value: "20周年", label: "《残疾人权利公约》通过" }
 ---
 
 2026年6月10日，纽约联合国总部，《残疾人权利公约》第十九届缔约国大会正在进行。会场里，一位17岁的中国高中生，正等待着属于自己的发言时刻。
@@ -22,7 +16,7 @@ key_facts:
 
 这位同学身着正装，坐在发言席。话筒亮起，他开始了两分多钟的发言：从父亲对他的影响讲起，谈到医学的边界，谈到残障同龄人在校园里遇到的有形与无形的障碍，最后落在年轻一代的责任上。
 
-<blockquote class="pull"><p>"一双医生的手，一次只能挽救一条生命；一个包容的社会，却能改变千千万万人的命运。"</p><cite>这位同学在大会上的发言</cite></blockquote>
+<blockquote class="pull"><p>一双医生的手，一次只能挽救一条生命；一个包容的社会，却能改变千千万万人的命运。</p><cite>这位同学在大会上的发言</cite></blockquote>
 
 发言结束，掌声在会场中响起。两分多钟很短；但这是一个17岁的声音，被正式记录在联合国的会议里。
 
@@ -30,7 +24,7 @@ key_facts:
 
 残障议题，关乎一个人能否平等地上学、工作、获取信息，能否参与与自己有关的决定。对正在认识世界的学生来说，走近这些真实处境，也是在学习如何理解差异、尊重他人的选择，并思考自己能够为他人做些什么。
 
-<figure class="fig-wide"><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV 直播画面中这位同学在 NGO 席位发言" loading="lazy"><figcaption>这位同学在《残疾人权利公约》第十九届缔约国大会上发言（UN Web TV 直播截图）。</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV 直播画面中这位同学在 NGO 席位发言" loading="lazy"><figcaption>这位同学在《残疾人权利公约》第十九届缔约国大会上发言（UN Web TV 直播截图）。</figcaption></figure>
 
 ## <span class="h-num">01</span> 《公约》二十周年
 
@@ -85,7 +79,7 @@ key_facts:
 
 这一幕给这位同学带来了很大冲击。在传统的善意中，残障群体往往被放在"被动接受照顾"的弱者角色里；而在这里，他们是发言者、倡导者，是议题的主导者。他在当天的总结里写道：
 
-<blockquote class="pull"><p>"这次参会让我明白，真正的平等不仅是提供帮助，更是给予每个人被尊重、被倾听和参与社会发展的机会。"</p><cite>这位同学的当日总结</cite></blockquote>
+<blockquote class="pull"><p>这次参会让我明白，真正的平等不仅是提供帮助，更是给予每个人被尊重、被倾听和参与社会发展的机会。</p><cite>这位同学的当日总结</cite></blockquote>
 
 ## <span class="h-num">04</span> 从第153位，到发言席
 
@@ -99,7 +93,7 @@ key_facts:
 
 在麦克风前，这位同学开始了他的讲述：他回忆起童年经历，讲到自己为什么想学医，又为什么意识到，光靠医学建不成一个包容的世界。作为为数不多的青年发言者，他一开口，现场不少与会者不禁频频回头，想看看这个年轻的声音究竟来自哪里。发言的最后，他总结道：
 
-<blockquote class="pull"><p>"我们这代人终将成为制度的设计者，而这个责任不必等到未来在权力的殿堂里才开始，它现在就发生在我们学校的走廊里。"</p><cite>这位同学发言的结尾</cite></blockquote>
+<blockquote class="pull"><p>我们这代人终将成为制度的设计者，而这个责任不必等到未来在权力的殿堂里才开始，它现在就发生在我们学校的走廊里。</p><cite>这位同学发言的结尾</cite></blockquote>
 
 <figure><img src="/images/uploads/photos/cosp19-general-assembly-hall.webp" alt="这位同学在联合国大会厅" loading="lazy"><figcaption>这位同学在联合国大会厅。</figcaption></figure>
 

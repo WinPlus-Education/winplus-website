@@ -288,8 +288,10 @@
 
 {# M12 Call to action band #}
 {% macro cta_band(title, text, button, link, image="", secondary="", secondary_link="") -%}
-<section class="cta-band">
-  {% if image %}{{ photo(image, "", "", 2000) }}{% endif %}
+{# Background: the image passed in, otherwise the current page's own hero image #}
+{% set bg = image or ((item.image if item is defined and item else "") or (page.image if page is defined and page else "")) %}
+<section class="cta-band{% if bg %} has-image{% endif %}">
+  {% if bg %}{{ photo(bg, "", "cta-bg", 2000) }}{% endif %}
   <div class="container">
     <h2>{{ title }}</h2>
     {% if text %}<p>{{ text }}</p>{% endif %}

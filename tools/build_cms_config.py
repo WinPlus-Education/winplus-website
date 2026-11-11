@@ -27,11 +27,14 @@ LABELS = {
     "partners": "Logo strip (mentor network)", "logo": "Logo file (PNG/SVG, transparent background)", "photo": "Photo",
     "bio": "Full bio", "body": "Text", "date": "Date & start time", "end_date": "End date (optional)",
     "featured": "Featured people (ids from Our Team)", "gallery": "Photo gallery", "testimonials": "Testimonials",
+    "dek": "Standfirst (one or two sentences under the title)", "image_caption": "Cover photo caption", "key_facts": "Key facts strip (2–4 numbers)",
+    "faq_title": "Q&A heading", "logo_text": "Text beside the crest logo (empty = brand name)", "company_cn": "China entity name", "tax_id_cn": "Unified social credit code",
+    "postal_code": "ZIP / postal code",
 }
 IMAGE_KEYS = {"image", "photo", "logo", "wechat_qr", "default_image", "mission_image", "case_image", "secondary_file"}
 TEXT_KEYS = {"intro", "text", "summary", "bio", "a", "quote", "overview", "details", "meta_description", "footer_blurb",
              "footer_disclaimer", "statement_text", "summary_text", "story_text", "mission_text", "case_text", "start",
-             "strategy", "change", "outcome", "who", "selection_text", "card_text", "subtitle"}
+             "strategy", "change", "outcome", "who", "selection_text", "card_text", "subtitle", "dek"}
 MARKDOWN_KEYS = {"overview", "details", "bio", "body", "a", "summary_text", "story_text", "mission_text"}
 DATE_KEYS = {"date", "end_date", "updated"}
 NUMBER_KEYS = {"order", "rates_count"}

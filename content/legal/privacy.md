@@ -164,7 +164,7 @@ WinPlus Education and Technology Inc.
 
 Attn: Privacy Officer, [insert name]
 
-[insert mailing address]
+Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
 
 Email: [insert privacy contact email]
 

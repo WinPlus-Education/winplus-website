@@ -23,7 +23,7 @@
         {% for p in posts if p.slug != featured.slug %}
         <a class="card post-card" href="{{ u(p.url) }}" data-filter-item data-cat="{{ p.category | slugify }}">
           {{ photo(p.image, p.image_alt or p.title, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
-          <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3><p class="meta">{{ p.date | date_fmt("long") }}</p></div>
+          <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3>{% if p.summary %}<p class="post-sum">{{ p.summary }}</p>{% endif %}<p class="meta">{{ p.date | date_fmt("long") }}</p></div>
         </a>
         {% endfor %}
       </div>

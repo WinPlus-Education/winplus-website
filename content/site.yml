@@ -20,8 +20,8 @@ area_served: ["United States", "China", "Hong Kong", "Singapore", "Canada", "Uni
 knows_about: ["College admissions counseling", "US college admissions", "Ivy League admissions", "Graduate school admissions", "US boarding and high school admissions", "UK university admissions", "Canadian university admissions", "Australian university admissions", "High school research programs", "High school internships", "Summer programs at US universities", "Global competency education", "International youth conferences", "留学咨询", "美国本科申请", "藤校申请", "研究生申请", "美高申请", "背景提升", "科研项目", "暑期研学"]
 
 offices:
-  - { label: "US headquarters", display: "Harvard Square, Cambridge (Boston), MA", street: "[Street address]", city: "Cambridge", region: "MA", country: "US" }
-  - { label: "China headquarters", display: "Beijing", street: "[Street address]", city: "Beijing", region: "Beijing", country: "CN" }
+  - { label: "US headquarters", display: "Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138", street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
+  - { label: "China headquarters", display: "Beijing", street: "Building 1, 26A Zhanlanguan Road, Xicheng District", city: "Beijing", region: "Beijing", country: "CN" }
 
 email: "[email@winplus.org]"
 wechat_id: ""
@@ -172,7 +172,7 @@ cookie:
 consent:
   version: "2026-11-04 draft"
   inquiry_notice: "WinPlus will use the information you provide to respond to your inquiry and provide information about our programs, as described in our Privacy Policy. Fields marked * are required; if they are not completed, we may be unable to respond. Your information will be processed in the United States."
-  marketing: "Yes, I would like to receive newsletters, white papers, and information about WinPlus programs and events by email from WinPlus Education and Technology Inc., [insert mailing address], [insert contact email]. WinPlus will use my name and email address for this purpose. I can unsubscribe at any time."
+  marketing: "Yes, I would like to receive newsletters, white papers, and information about WinPlus programs and events by email from WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, [insert contact email]. WinPlus will use my name and email address for this purpose. I can unsubscribe at any time."
   school_notice: "WinPlus will use the business contact information you provide to respond to your inquiry and communicate with you about potential collaboration, as described in our Privacy Policy."
   age_question: "I am a"
   age_under: "Thank you for your interest. Please ask your parent or guardian to complete this form on your behalf."

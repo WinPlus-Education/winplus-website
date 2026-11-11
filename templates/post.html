@@ -5,20 +5,54 @@
 {% block og_type %}article{% endblock %}
 {% block schema %}
 {{ ld({"@context": "https://schema.org", "@type": "BlogPosting", "headline": post.title, "description": post.summary, "datePublished": post.date.date().isoformat() if post.date else "", "inLanguage": lang.html, "image": [img(post.image, 1200)] if post.image else [], "author": {"@type": "Organization", "name": site.company_legal}, "publisher": {"@id": site_url ~ "/#organization"}, "mainEntityOfPage": canonical}) }}
+{% if post.faq %}
+{% set qa = [] %}{% for f in post.faq %}{% set _x = qa.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endfor %}
+{{ ld({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa}) }}
+{% endif %}
 {% endblock %}
 {% block content %}
+{# Images inside the article body are written as /images/...; point them at the right folder for this page #}
+{% set body = post.body | replace('="/images/', '="' ~ root ~ 'images/') %}
+{% set plain = body | striptags %}
+{% set minutes = ((plain | length) / 450) | round(0, 'ceil') | int if lang.code == 'zh' else ((plain | wordcount) / 220) | round(0, 'ceil') | int %}
 <article>
   <header class="article-head">
     <div class="container container-text">
       {{ breadcrumbs([[_("Insights"), "insights.html"], [post.title, post.url]]) }}
       <span class="kicker">{{ post.category }}</span>
       <h1>{{ post.title }}</h1>
-      <p class="muted small">{{ post.date | date_fmt("long") }}{% if post.source %} · {{ _("Originally published on") }} {{ post.source }}{% endif %}</p>
+      {% if post.dek %}<p class="article-dek">{{ post.dek }}</p>{% endif %}
+      <p class="muted small article-meta">
+        <span>{{ post.date | date_fmt("long") }}</span>
+        <span aria-hidden="true">·</span><span>{{ minutes if minutes > 0 else 1 }} {{ _("min read") }}</span>
+        {% if post.source %}<span aria-hidden="true">·</span><span>{{ _("Originally published on") }} {{ post.source }}</span>{% endif %}
+      </p>
     </div>
   </header>
+  {% if post.image %}
+  <div class="container article-lead">
+    <figure class="article-lead-fig">
+      <img src="{{ img(post.image, 1600) }}" alt="{{ post.image_alt or post.title }}" decoding="async">
+      {% if post.image_caption %}<figcaption>{{ post.image_caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+  {% endif %}
   <div class="container container-text">
-    {% if post.image %}{{ photo(post.image, post.image_alt or post.title, "article-photo", 1600, true) }}{% endif %}
-    <div class="prose">{{ post.body | safe }}</div>
+    {% if post.key_facts %}
+    <dl class="key-facts">
+      {% for k in post.key_facts %}<div><dt>{{ k.label }}</dt><dd>{{ k.value }}</dd></div>{% endfor %}
+    </dl>
+    {% endif %}
+    <div class="prose">{{ body | safe }}</div>
+    {% if post.faq %}
+    <section class="article-faq" aria-labelledby="article-faq-title">
+      <span class="kicker">{{ _("Q&A") }}</span>
+      <h2 id="article-faq-title" class="h3">{{ post.faq_title or _("Questions families ask us") }}</h2>
+      <dl class="qa-list">
+        {% for f in post.faq %}<div class="qa-item"><dt>{{ f.q }}</dt><dd>{{ f.a | md | safe }}</dd></div>{% endfor %}
+      </dl>
+    </section>
+    {% endif %}
     <div class="side-card" style="margin-top:4rem">
       <h2 class="h3">{{ _("Get personalized advice") }}</h2>
       <p class="muted">{{ _("Talk to a WinPlus mentor about your student's plan.") }}</p>
@@ -27,10 +61,19 @@
   </div>
 </article>
 {% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
+{% if related %}
 <section class="section">
-  <div class="container container-text">
+  <div class="container">
     <h2 class="h3">{{ _("More insights") }}</h2>
-    <ul class="related">{% for p in related[:4] %}<li><a href="{{ u(p.url) }}"><span>{{ p.title }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}</ul>
+    <div class="grid g-3">
+      {% for p in related[:3] %}
+      <a class="card post-card" href="{{ u(p.url) }}">
+        {{ photo(p.image, p.image_alt or p.title, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+        <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3><p class="meta">{{ p.date | date_fmt("long") }}</p></div>
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
+{% endif %}
 {% endblock %}

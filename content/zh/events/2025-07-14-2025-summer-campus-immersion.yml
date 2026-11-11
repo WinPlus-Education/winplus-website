@@ -8,7 +8,23 @@ image: /images/uploads/photos/wall-street-group.webp
 image_alt: WinPlus 学员与导师在纽约华尔街
 summary: 20 名学员、10 所名校、35 家机构：从哥伦比亚和哈佛到斯坦福、苹果总部与好莱坞，12 天行程。
 details: 来自哈佛、MIT 与斯坦福的导师讲授 50 小时全球胜任力课程，涵盖领导力、国际关系、人工智能、基因编辑与卫星工程。多所名校招生团队举办说明会，学员参访了苹果、谷歌、Meta 等科技企业以及 NASA。
-gallery: []
+gallery:
+- image: /images/uploads/photos/immersion-2025-hks-group.webp
+  caption: "哈佛大学肯尼迪政府学院"
+- image: /images/uploads/photos/immersion-2025-fireside-chat.webp
+  caption: "与导师围炉对话"
+- image: /images/uploads/photos/immersion-2025-nvidia-hq.webp
+  caption: "参访硅谷英伟达总部"
+- image: /images/uploads/photos/immersion-2025-caltech.webp
+  caption: "加州理工学院贝克曼礼堂"
+- image: /images/uploads/photos/immersion-2025-hks-handshake.webp
+  caption: "郭琪老师与学员在哈佛肯尼迪学院"
+- image: /images/uploads/photos/immersion-2025-wall-street.webp
+  caption: "华尔街铜牛"
+- image: /images/uploads/photos/immersion-2025-statue-of-liberty.webp
+  caption: "纽约港与自由女神像"
+- image: /images/uploads/photos/immersion-2025-staircase.webp
+  caption: "学员与郭琪老师合影"
 testimonials:
 - quote: 我们所到访的十所高校给了我深深的震撼，让我对进入名校的愿望越来越强烈。
   name: 学员

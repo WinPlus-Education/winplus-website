@@ -35,7 +35,11 @@ highlights:
   text: Her Dunhuang-inspired artwork was exhibited at the forum, bringing a cultural lens to sustainable development.
 - title: Inside the SDG review
   text: The forum reviewed water, energy, innovation, cities and partnerships, and fed its findings into the UN High-level Political Forum.
-gallery: []
+gallery:
+- image: /images/uploads/photos/apfsd13-backdrop.webp
+  caption: "A WinPlus student and Cathy Guo at the 13th APFSD"
+- image: /images/uploads/photos/apfsd13-delegates-flags.webp
+  caption: "With conference delegates in front of member-state flags"
 testimonials: []
 seo_title: WinPlus Delegation at APFSD13, Bangkok 2026 | WinPlus
 meta_description: A WinPlus student spoke on young women's health at the 13th Asia-Pacific Forum on Sustainable Development (APFSD), UN Conference Centre, Bangkok, February 24–27, 2026.

@@ -25,14 +25,16 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0f1a2b">
   <link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ root }}favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
   <link rel="sitemap" type="application/xml" href="{{ root }}sitemap.xml">
   {% block preload %}{% endblock %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   {% if lang.code == 'zh' %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap">
   {% else %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap">
   {% endif %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
@@ -41,7 +43,7 @@
 
   {# Organization structured data on every page (SEO + AI search) #}
   {% set same_as = [] %}{% for s in site.social %}{% if s.url and s.url.startswith('http') %}{% set _x = same_as.append(s.url) %}{% endif %}{% endfor %}
-  {% set addresses = [] %}{% for o in site.offices %}{% set _x = addresses.append({"@type": "PostalAddress", "name": o.label, "streetAddress": o.street, "addressLocality": o.city, "addressRegion": o.region, "addressCountry": o.country}) %}{% endfor %}
+  {% set addresses = [] %}{% for o in site.offices %}{% set _x = addresses.append({"@type": "PostalAddress", "name": o.label, "streetAddress": o.street, "addressLocality": o.city, "addressRegion": o.region, "postalCode": o.postal_code or "", "addressCountry": o.country}) %}{% endfor %}
   {% set founders = [] %}{% for p in team_founders %}{% set _x = founders.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.education}) %}{% endfor %}
   {% set org = {
     "@context": "https://schema.org",
@@ -50,7 +52,7 @@
     "name": site.company_legal,
     "alternateName": [site.name ~ " Education", site.name_local or site.name],
     "url": site_url ~ "/",
-    "logo": site_url ~ "/favicon.svg",
+    "logo": site_url ~ "/apple-touch-icon.png",
     "description": site.meta_description,
     "slogan": site.tagline,
     "foundingDate": site.founded,
@@ -74,10 +76,7 @@
 
 <header class="site-header" data-header>
   <div class="container header-row">
-    <a class="logo" href="{{ u('index.html') }}" aria-label="{{ site.name }} {{ _('home') }}">
-      <span class="logo-name">{{ site.name }}</span>
-      <span class="logo-sub">{{ site.name_sub }}</span>
-    </a>
+    {% include "partials/logo.html" %}
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">{{ _("Menu") }}</span><span class="bars" aria-hidden="true"></span>
     </button>
@@ -153,7 +152,7 @@
 
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a class="logo" href="{{ u('index.html') }}"><span class="logo-name">{{ site.name }}</span><span class="logo-sub">{{ site.name_sub }}</span></a>
+      {% include "partials/logo.html" %}
       <p>{{ site.footer_blurb }}</p>
     </div>
     {% for col in site.footer_columns %}
@@ -167,7 +166,7 @@
   <div class="container footer-legal">
     <p class="disclaimer">{{ site.footer_disclaimer }}</p>
     <div class="legal-row">
-      <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}</p>
+      <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}{% if site.company_cn %}<br><span class="legal-cn">{{ site.company_cn }}{% if site.tax_id_cn %} · {{ _("Unified social credit code") }} {{ site.tax_id_cn }}{% endif %}</span>{% endif %}</p>
       <ul>
         {% for l in site.legal_links %}<li><a href="{{ u(l.link) }}">{{ l.label }}</a></li>{% endfor %}
         <li><button type="button" data-cookie-settings>{{ site.cookie.settings }}</button></li>

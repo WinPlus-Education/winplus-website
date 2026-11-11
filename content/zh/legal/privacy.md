@@ -164,7 +164,9 @@ WinPlus Education and Technology Inc.
 
 收件人：私隐主任 [填写姓名]
 
-[填写邮寄地址]
+Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
+
+中国主体：北京欧歌国际教育科技有限公司（统一社会信用代码：91110108MACL9RWB49），北京市西城区展览馆路甲26号1号楼1-4内4层402室
 
 电邮：[填写私隐联络电邮]
 

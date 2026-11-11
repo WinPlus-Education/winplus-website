@@ -112,6 +112,10 @@ collections:
         label: Region
         required: false
         widget: string
+      - name: postal_code
+        label: ZIP / postal code
+        required: false
+        widget: string
       - name: country
         label: Country
         required: false
@@ -633,7 +637,7 @@ collections:
       required: false
       widget: string
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -970,7 +974,7 @@ collections:
       required: false
       widget: string
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -1661,7 +1665,7 @@ collections:
         widget: string
       summary: '{{fields.title}}'
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -2869,6 +2873,10 @@ collections:
     label: Title
     required: false
     widget: string
+  - name: seo_title
+    label: 'SEO: browser tab & Google title'
+    required: false
+    widget: string
   - name: date
     label: Date & start time
     required: false
@@ -2882,6 +2890,10 @@ collections:
     label: Summary
     required: false
     widget: text
+  - name: dek
+    label: Standfirst (one or two sentences under the title)
+    required: false
+    widget: text
   - name: image
     label: Photo (upload, or paste an image link)
     required: false
@@ -2890,7 +2902,11 @@ collections:
   - name: image_alt
     label: Photo description (accessibility & SEO)
     required: false
-    widget: string
+    widget: text
+  - name: image_caption
+    label: Cover photo caption
+    required: false
+    widget: text
   - name: source
     label: Source
     required: false
@@ -2899,10 +2915,44 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
+  - name: key_facts
+    label: Key facts strip (2–4 numbers)
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: value
+      label: Value
+      required: false
+      widget: string
+    - name: label
+      label: Label
+      required: false
+      widget: string
+    summary: '{{fields.label}}'
   - name: body
     label: Text
     required: false
     widget: markdown
+  - name: faq_title
+    label: Q&A heading
+    required: false
+    widget: string
+  - name: faq
+    label: FAQ (questions & answers)
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: q
+      label: Question
+      required: false
+      widget: string
+    - name: a
+      label: Answer
+      required: false
+      widget: markdown
+    summary: '{{fields.q}}'
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -3191,6 +3241,18 @@ collections:
         name: item
         label: Item
         widget: string
+    - name: company_cn
+      label: China entity name
+      required: false
+      widget: string
+    - name: tax_id_cn
+      label: Unified social credit code
+      required: false
+      widget: string
+    - name: logo_text
+      label: Text beside the crest logo (empty = brand name)
+      required: false
+      widget: string
     - name: offices
       label: Offices
       required: false
@@ -3215,6 +3277,10 @@ collections:
         widget: string
       - name: region
         label: Region
+        required: false
+        widget: string
+      - name: postal_code
+        label: ZIP / postal code
         required: false
         widget: string
       - name: country
@@ -3738,7 +3804,7 @@ collections:
       required: false
       widget: string
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -4075,7 +4141,7 @@ collections:
       required: false
       widget: string
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -4766,7 +4832,7 @@ collections:
         widget: string
       summary: '{{fields.title}}'
     - name: faq_title
-      label: Faq title
+      label: Q&A heading
       required: false
       widget: string
     - name: faq
@@ -5987,6 +6053,10 @@ collections:
     label: Summary
     required: false
     widget: text
+  - name: dek
+    label: Standfirst (one or two sentences under the title)
+    required: false
+    widget: text
   - name: image
     label: Photo (upload, or paste an image link)
     required: false
@@ -5994,6 +6064,10 @@ collections:
     choose_url: true
   - name: image_alt
     label: Photo description (accessibility & SEO)
+    required: false
+    widget: string
+  - name: image_caption
+    label: Cover photo caption
     required: false
     widget: string
   - name: source
@@ -6004,10 +6078,44 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
+  - name: key_facts
+    label: Key facts strip (2–4 numbers)
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: value
+      label: Value
+      required: false
+      widget: string
+    - name: label
+      label: Label
+      required: false
+      widget: string
+    summary: '{{fields.label}}'
   - name: body
     label: Text
     required: false
     widget: markdown
+  - name: faq_title
+    label: Q&A heading
+    required: false
+    widget: string
+  - name: faq
+    label: FAQ (questions & answers)
+    required: false
+    widget: list
+    collapsed: true
+    fields:
+    - name: q
+      label: Question
+      required: false
+      widget: string
+    - name: a
+      label: Answer
+      required: false
+      widget: markdown
+    summary: '{{fields.q}}'
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

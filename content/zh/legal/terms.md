@@ -134,7 +134,9 @@ WinPlus 可随时修改本网站或本使用条款。本使用条款之修订于
 
 WinPlus Education and Technology Inc.
 
-[填写邮寄地址]
+Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
+
+中国主体：北京欧歌国际教育科技有限公司（统一社会信用代码：91110108MACL9RWB49），北京市西城区展览馆路甲26号1号楼1-4内4层402室
 
 电邮：[填写联络电邮]
 
@@ -142,7 +144,7 @@ WinPlus Education and Technology Inc.
 
 仅在您希望撤回合约时填写并交回本表格。
 
-致：WinPlus Education and Technology Inc.，[填写邮寄地址]，[填写联络电邮]
+致：WinPlus Education and Technology Inc.，Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA，[填写联络电邮]
 
 本人谨此通知，本人撤回就提供以下服务所订立之合约：[项目名称]
 

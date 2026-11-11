@@ -263,18 +263,12 @@ stories:
   image_alt: WinPlus 学生在纽约联合国总部 COSP19 大会上发言
   link: ''
   image_position: 50% 35%
-- tag: 科研
-  title: '[占位：科研学员故事]'
-  text: '[请补充学员故事：起点、科研项目与导师、关键变化与录取结果。]'
-  image: https://images.unsplash.com/photo-1630959305606-3123a081dada
-  image_alt: 学生进行科研项目
-  link: ''
-- tag: 工程
-  title: '[占位：工程学员故事]'
-  text: '[请补充学员故事：起点、夏校与科研经历、关键变化与录取结果。]'
-  image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
-  image_alt: 工程实验室中的学生
-  link: ''
+- tag: 科研实习
+  title: 两位学员，一台深空望远镜
+  text: 一位刚被知名科研项目拒绝，一位所在的美国公立高中几乎没有科研资源。与NASA科学家共同完成八周深空望远镜科研后，分别收获剑桥、帝国理工、伯克利天体物理录取，以及密歇根、UCLA、UIUC机械工程录取。
+  image: /images/uploads/insights/nasa-research/webb-telescope-session.jpg
+  image_alt: NASA科学家导师在线上为学员讲解韦伯望远镜
+  link: insights/nasa-mentored-research-two-students-one-telescope.html
 testimonials_title: 家长怎么说
 testimonials:
 - quote: 我们所到访的十所高校给了我深深的震撼，二十几位德才兼备的名校教授和出类拔萃的校友，让我感慨他们当之无愧为世界名校的精英。他们的教导都深深印在我心里，让我对进入名校的欲望越来越强烈，梦想有朝一日成为像他们一样的精英栋梁。

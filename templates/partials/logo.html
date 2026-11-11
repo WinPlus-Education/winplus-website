@@ -1,0 +1,5 @@
+{# Brand lockup: crest to the left of the name. EN shows "WINPLUS", ZH shows "欧歌学院" (set via logo_text in site.yml). #}
+<a class="logo" href="{{ u('index.html') }}" aria-label="{{ site.logo_text or site.name }} {{ _('home') }}">
+  {% include "partials/crest.svg" %}
+  <span class="logo-name{% if lang.code == 'zh' %} logo-name-zh{% endif %}">{{ site.logo_text or site.name }}</span>
+</a>

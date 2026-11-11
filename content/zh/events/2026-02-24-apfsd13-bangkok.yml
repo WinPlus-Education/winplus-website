@@ -35,7 +35,11 @@ highlights:
   text: 她的敦煌主题艺术作品在论坛展出，以文化视角呈现可持续发展。
 - title: 走进可持续发展目标审议
   text: 论坛审议了水、能源、创新、城市与伙伴关系，并将结论提交联合国高级别政治论坛。
-gallery: []
+gallery:
+- image: /images/uploads/photos/apfsd13-backdrop.webp
+  caption: "欧歌学员与郭琪老师在第十三届 APFSD"
+- image: /images/uploads/photos/apfsd13-delegates-flags.webp
+  caption: "与与会代表在会员国国旗前合影"
 testimonials: []
 seo_title: WinPlus 代表团参加曼谷第 13 届亚太可持续发展论坛 | WinPlus 欧歌学院
 meta_description: 一位 WinPlus 学生在 2026 年 2 月 24–27 日于曼谷联合国会议中心举行的第 13 届亚太可持续发展论坛（APFSD）上就青年女性健康议题发言。

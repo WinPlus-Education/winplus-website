@@ -134,7 +134,7 @@ These Terms of Use are available in English and Chinese. In the event of any inc
 
 WinPlus Education and Technology Inc.
 
-[insert mailing address]
+Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
 
 Email: [insert contact email]
 
@@ -142,7 +142,7 @@ Email: [insert contact email]
 
 Complete and return this form only if you wish to withdraw from the contract.
 
-To: WinPlus Education and Technology Inc., [insert mailing address], [insert contact email]
+To: WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, [insert contact email]
 
 I hereby give notice that I withdraw from my contract for the provision of the following service: [program name]
 

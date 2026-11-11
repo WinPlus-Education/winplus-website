@@ -8,7 +8,23 @@ image: /images/uploads/photos/wall-street-group.webp
 image_alt: WinPlus students and mentors on Wall Street, New York
 summary: Twenty students, ten universities and 35 organizations, from Columbia and Harvard to Stanford, Apple Park and Hollywood, in twelve days.
 details: Mentors from Harvard, MIT and Stanford taught 50 hours of global competency coursework on leadership, international relations, AI, gene editing and satellite engineering. Admissions teams at leading universities hosted information sessions, and students visited technology companies including Apple, Google and Meta, as well as NASA.
-gallery: []
+gallery:
+- image: /images/uploads/photos/immersion-2025-hks-group.webp
+  caption: "At the John F. Kennedy School of Government, Harvard"
+- image: /images/uploads/photos/immersion-2025-fireside-chat.webp
+  caption: "A fireside conversation with mentors"
+- image: /images/uploads/photos/immersion-2025-nvidia-hq.webp
+  caption: "Visiting NVIDIA headquarters in Silicon Valley"
+- image: /images/uploads/photos/immersion-2025-caltech.webp
+  caption: "Beckman Auditorium, Caltech"
+- image: /images/uploads/photos/immersion-2025-hks-handshake.webp
+  caption: "Cathy Guo with a student at Harvard Kennedy School"
+- image: /images/uploads/photos/immersion-2025-wall-street.webp
+  caption: "The Charging Bull on Wall Street"
+- image: /images/uploads/photos/immersion-2025-statue-of-liberty.webp
+  caption: "New York Harbor and the Statue of Liberty"
+- image: /images/uploads/photos/immersion-2025-staircase.webp
+  caption: "The cohort with Cathy Guo"
 testimonials:
 - quote: The ten universities we visited left a deep impression on me. The professors and alumni we met made me want, more than ever, to study at a place like this.
   name: Student participant

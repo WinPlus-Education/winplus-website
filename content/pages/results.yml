@@ -264,17 +264,11 @@ stories:
   link: ''
   image_position: 50% 35%
 - tag: Research
-  title: '[Placeholder: research student story]'
-  text: '[Add a student story: the starting point, the research project and mentor, what changed, and the outcome.]'
-  image: https://images.unsplash.com/photo-1630959305606-3123a081dada
-  image_alt: A student working on a research project
-  link: ''
-- tag: Engineering
-  title: '[Placeholder: engineering student story]'
-  text: '[Add a student story: the starting point, the summer programs and research, what changed, and the outcome.]'
-  image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
-  image_alt: Students in an engineering lab
-  link: ''
+  title: Two students, one NASA telescope
+  text: One had just been rejected by a well-known research program; the other's public school had almost no research resources. After eight weeks designing a deep-space telescope with a NASA scientist, they earned offers from Cambridge, Imperial and UC Berkeley (astrophysics) and Michigan, UCLA and UIUC (mechanical engineering).
+  image: /images/uploads/insights/nasa-research/webb-telescope-session.jpg
+  image_alt: A NASA scientist mentor explaining the James Webb Space Telescope to WinPlus students online
+  link: insights/nasa-mentored-research-two-students-one-telescope.html
 testimonials_title: What families say
 testimonials:
 - quote: The ten universities we visited left a deep impression on me. More than twenty professors and outstanding alumni, people of real character and learning, showed me why these schools are the world's best. Their teaching stays with me, and my wish to study at a top university grows stronger every day. I hope one day to become someone like them.

@@ -12,9 +12,13 @@ founded: "2020"
 area_served: ["美国", "中国", "中国香港", "新加坡", "加拿大", "英国", "澳大利亚", "阿联酋"]
 knows_about: ["留学咨询", "升学规划", "美国本科申请", "藤校申请", "美国研究生申请", "美高申请", "英国留学申请", "加拿大留学申请", "澳洲留学申请", "高中生科研项目", "高中生实习", "美国名校暑期研学", "全球胜任力教育", "国际青年会议"]
 
+# 中国主体信息（显示在中文站页脚）
+company_cn: 北京欧歌国际教育科技有限公司
+tax_id_cn: 91110108MACL9RWB49
+logo_text: 欧歌学院
 offices:
-  - { label: "美国总部", display: "美国马萨诸塞州剑桥市（波士顿）哈佛广场", street: "[街道地址]", city: "Cambridge", region: "MA", country: "US" }
-  - { label: "中国总部", display: "北京", street: "[街道地址]", city: "北京", region: "北京", country: "CN" }
+  - { label: "美国总部", display: "美国马萨诸塞州剑桥市哈佛广场 One Mifflin Place, Suite 400", street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
+  - { label: "中国总部", display: "北京市西城区展览馆路甲26号1号楼1-4内4层402室", street: "西城区展览馆路甲26号1号楼1-4内4层402室", city: "北京", region: "北京", country: "CN" }
 
 email: "[email@winplus.org]"
 wechat_id: ""
@@ -154,7 +158,7 @@ cookie:
 consent:
   version: "2026-11-04 draft"
   inquiry_notice: "WinPlus 将使用您提供的信息回复您的咨询并提供项目信息，详见我们的隐私政策。标有 * 的为必填项；如未填写，我们可能无法回复。您的信息将在美国处理。"
-  marketing: "是的，我愿意通过电子邮件接收 WinPlus Education and Technology Inc.（[填写邮寄地址]，[填写联系邮箱]）发送的通讯、白皮书以及 WinPlus 项目和活动信息。WinPlus 将为此使用我的姓名和电子邮箱。我可随时退订。"
+  marketing: "是的，我愿意通过电子邮件接收 WinPlus Education and Technology Inc.（Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA，[填写联系邮箱]）发送的通讯、白皮书以及 WinPlus 项目和活动信息。WinPlus 将为此使用我的姓名和电子邮箱。我可随时退订。"
   school_notice: "WinPlus 将使用您提供的工作联系信息回复您的咨询，并与您沟通潜在合作事宜，详见我们的隐私政策。"
   age_question: "我是"
   age_under: "感谢您的关注。请由您的父母或监护人代为填写此表格。"

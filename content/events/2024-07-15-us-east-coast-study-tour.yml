@@ -8,7 +8,31 @@ image: /images/uploads/photos/amnh-2024.webp
 image_alt: Students and WinPlus co-founder Cathy Guo at the American Museum of Natural History, July 2024
 summary: A 12-day program for 15 students from the High School Affiliated to Renmin University of China, with ten universities, McKinsey, Meta, the IMF and NASA.
 details: Co-organized with the High School Affiliated to Renmin University of China, the program took 15 students to ten universities including Harvard, MIT, Brown, Yale, Princeton, Penn, Columbia, NYU, Johns Hopkins and Georgetown. Students visited McKinsey & Company, Meta's New York office and BrainCo, met economists at the International Monetary Fund, heard from a UN peacekeeping officer, learned sailing at MIT and squash with a former Yale team captain.
-gallery: []
+gallery:
+- image: /images/uploads/photos/hbs-classroom.webp
+  caption: "A seminar in a Harvard Business School classroom"
+- image: /images/uploads/photos/immersion-2024-imf.webp
+  caption: "Meeting economists at the International Monetary Fund"
+- image: /images/uploads/photos/immersion-2024-brainco.webp
+  caption: "Hands-on with BrainCo's bionic hand kits"
+- image: /images/uploads/photos/immersion-2024-harvard-talk.webp
+  caption: "A mentor talk at Harvard"
+- image: /images/uploads/photos/immersion-2024-mit-dome.webp
+  caption: "In front of MIT's Great Dome"
+- image: /images/uploads/photos/immersion-2024-yale.webp
+  caption: "Sterling Memorial Library, Yale University"
+- image: /images/uploads/photos/immersion-2024-princeton.webp
+  caption: "A campus walk at Princeton University"
+- image: /images/uploads/photos/immersion-2024-harvard-seas.webp
+  caption: "Outside the Harvard Science and Engineering Complex"
+- image: /images/uploads/photos/immersion-2024-the-met.webp
+  caption: "The Metropolitan Museum of Art, New York"
+- image: /images/uploads/photos/immersion-group.webp
+  caption: "The cohort with WinPlus mentors at Harvard"
+- image: /images/uploads/photos/immersion-2024-company-visit.webp
+  caption: "A company visit in New York"
+- image: /images/uploads/photos/immersion-2024-team-lunch.webp
+  caption: "Lunch with mentors"
 testimonials:
 - quote: At MIT's Sea Grant lab, a professor explained that a robot in the corner could carry sensors three kilometres below the ocean surface. Only then did I grasp how deep the research at a place like MIT really goes.
   name: Student participant

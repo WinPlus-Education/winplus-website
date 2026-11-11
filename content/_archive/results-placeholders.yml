@@ -1,0 +1,27 @@
+# Placeholder story cards removed from the live Our Results page (2026-11-11). Not published.
+en: |
+  - tag: Research
+    title: '[Placeholder: research student story]'
+    text: '[Add a student story: the starting point, the research project and mentor, what changed, and the outcome.]'
+    image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+    image_alt: A student working on a research project
+    link: ''
+  - tag: Engineering
+    title: '[Placeholder: engineering student story]'
+    text: '[Add a student story: the starting point, the summer programs and research, what changed, and the outcome.]'
+    image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
+    image_alt: Students in an engineering lab
+    link: ''
+zh: |
+  - tag: 科研
+    title: '[占位：科研学员故事]'
+    text: '[请补充学员故事：起点、科研项目与导师、关键变化与录取结果。]'
+    image: https://images.unsplash.com/photo-1630959305606-3123a081dada
+    image_alt: 学生进行科研项目
+    link: ''
+  - tag: 工程
+    title: '[占位：工程学员故事]'
+    text: '[请补充学员故事：起点、夏校与科研经历、关键变化与录取结果。]'
+    image: https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16
+    image_alt: 工程实验室中的学生
+    link: ''

@@ -4,8 +4,8 @@ short_title: 夏校与冬校
 seo_title: "全球胜任力夏校与冬校 | 美国科研营、国内研学营 | WinPlus 欧歌学院"
 meta_description: "面向 12–18 岁学生的全球胜任力夏校与冬校：哈佛、MIT、斯坦福及硅谷背景导师授课，获得《哈佛全球胜任力证书》、与名校招生官面对面交流及个性化美本升学规划方案。"
 summary: 从名校课堂到硅谷现场，建立跨文化沟通能力与国际视野。由具备哈佛、MIT、斯坦福及硅谷企业背景的导师授课。
-image: https://images.unsplash.com/photo-1583373834259-46cc92173cb7
-image_alt: 草坪旁的大学建筑
+image: /images/uploads/events/2025-summer/hks-group.jpg
+image_alt: 欧歌学院夏校师生在哈佛大学肯尼迪政府学院
 facts:
   - { label: "招生对象", value: "12–18 岁初高中生" }
   - { label: "项目形式", value: "美国科研营 · 国内研学营" }
@@ -24,7 +24,51 @@ deliverables:
   - 个性化《美本升学规划方案》
   - 结业项目
 highlight: ""
+galleries_title: "往届夏校现场"
+galleries:
+  - title: "2026 夏校"
+    meta: "波士顿 · 纽约"
+    text: "哈佛肯尼迪政府学院研讨、MIT 航空航天与机器人实验室导师课、参访纽约联合国总部与纽约大学 Tisch 艺术学院。"
+    photos:
+      - { image: /images/uploads/events/2026-summer/hks-discussion.jpg, alt: "学生们在哈佛肯尼迪政府学院研讨" }
+      - { image: /images/uploads/events/2026-summer/space-flight-lecture.jpg, alt: "导师讲解抛物线飞行、亚轨道与轨道科研飞行" }
+      - { image: /images/uploads/events/2026-summer/mit-robotics-lecture.jpg, alt: "导师在 MIT 讲解遥操作与机器人研究" }
+      - { image: /images/uploads/events/2026-summer/mit-aeroastro.jpg, alt: "学生们与导师在 MIT 航空航天系" }
+      - { image: /images/uploads/events/2026-summer/hks-forum.jpg, alt: "学生们在哈佛肯尼迪政府学院小肯尼迪论坛" }
+      - { image: /images/uploads/events/2026-summer/harvard-rotunda.jpg, alt: "学生们在哈佛圆厅" }
+      - { image: /images/uploads/events/2026-summer/un-headquarters.jpg, alt: "学生们在纽约联合国总部外" }
+      - { image: /images/uploads/events/2026-summer/nyu-tisch.jpg, alt: "学生们在纽约大学 Tisch 艺术学院" }
+  - title: "2025 夏校"
+    meta: "波士顿 · 纽约 · 加州"
+    text: "从哈佛肯尼迪政府学院到加州理工学院与英伟达总部，与导师围炉对话，走进华尔街。"
+    photos:
+      - { image: /images/uploads/events/2025-summer/hks-group.jpg, alt: "学生们与郭琪老师在哈佛肯尼迪政府学院" }
+      - { image: /images/uploads/events/2025-summer/fireside-chat.jpg, alt: "与导师围炉对话" }
+      - { image: /images/uploads/events/2025-summer/nvidia-hq.jpg, alt: "学生们参访英伟达总部" }
+      - { image: /images/uploads/events/2025-summer/caltech.jpg, alt: "学生们在加州理工学院贝克曼礼堂前" }
+      - { image: /images/uploads/events/2025-summer/hks-handshake.jpg, alt: "郭琪老师在哈佛肯尼迪政府学院与学生握手" }
+      - { image: /images/uploads/events/2025-summer/wall-street.jpg, alt: "学生们在华尔街铜牛前" }
+      - { image: /images/uploads/events/2025-summer/statue-of-liberty.jpg, alt: "学生们在自由女神像前" }
+      - { image: /images/uploads/events/2025-summer/staircase.jpg, alt: "学生们与郭琪老师在哈佛楼梯合影" }
+  - title: "2024 夏校"
+    meta: "波士顿 · 纽约 · 纽黑文 · 普林斯顿 · 华盛顿"
+    text: "哈佛商学院课堂，参访哈佛、MIT、耶鲁、普林斯顿、国际货币基金组织与创业公司 BrainCo。"
+    photos:
+      - { image: /images/uploads/events/2024-summer/hbs-classroom.jpg, alt: "师生在哈佛商学院教室" }
+      - { image: /images/uploads/events/2024-summer/imf.jpg, alt: "学生们参访国际货币基金组织" }
+      - { image: /images/uploads/events/2024-summer/brainco.jpg, alt: "学生们在创业公司 BrainCo" }
+      - { image: /images/uploads/events/2024-summer/harvard-talk.jpg, alt: "导师在哈佛为学生分享" }
+      - { image: /images/uploads/events/2024-summer/mit-dome.jpg, alt: "学生们在 MIT 大圆顶前" }
+      - { image: /images/uploads/events/2024-summer/yale.jpg, alt: "学生们在耶鲁大学斯特林纪念图书馆前" }
+      - { image: /images/uploads/events/2024-summer/princeton.jpg, alt: "学生们参观普林斯顿大学" }
+      - { image: /images/uploads/events/2024-summer/harvard-seas.jpg, alt: "学生们在哈佛工程学院" }
+      - { image: /images/uploads/events/2024-summer/the-met.jpg, alt: "学生们在大都会艺术博物馆台阶上" }
+      - { image: /images/uploads/events/2024-summer/hks-steps.jpg, alt: "学生们与郭琪老师在哈佛肯尼迪政府学院" }
+      - { image: /images/uploads/events/2024-summer/company-visit.jpg, alt: "学生们参访企业" }
+      - { image: /images/uploads/events/2024-summer/team-lunch.jpg, alt: "师生午餐合影" }
 faq:
+  - q: 研学营和普通游学有什么不同？
+    a: "在短短两周不到的时间里，我们把顶尖导师、名校与企业参访、以及来自 Meta、谷歌、硅谷创投等行业前辈的分享整合在一起。除了专业知识与职业发展指引，行业前辈会分享他们的人生与职业经历，帮助孩子理解从学科、到专业、再到职业的完整发展路径。我们同样重视软实力：为人处世、有效沟通、善待他人与包容，以及孩子的身心健康。"
   - q: 学生在项目期间有人照顾吗？
     a: "[请说明带队安排、师生比例与安全保障措施。]"
   - q: 什么时候开始报名？

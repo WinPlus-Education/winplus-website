@@ -34,6 +34,40 @@
   </div>
 </section>
 
+{% if item.timeline %}
+<section class="section section-cream">
+  <div class="wrap">
+    {{ head(item.timeline_eyebrow or _("Track record"), item.timeline_title) }}
+    <ol class="un-timeline">
+      {% for t in item.timeline %}<li><span class="t-date">{{ t.date }}</span><span class="t-title">{{ t.title }}</span><span class="t-place">{{ t.place }}</span></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}
+
+{% if item.galleries %}
+<section class="section past-programs">
+  <div class="wrap">
+    {{ head(_("Past programs"), item.galleries_title or _("Moments from past programs")) }}
+    {% for g in item.galleries %}
+    <div class="pp">
+      <div class="pp-head">
+        <div>
+          {% if g.meta %}<p class="pp-meta">{{ g.meta }}</p>{% endif %}
+          <h3>{{ g.title }}</h3>
+          {% if g.text %}<p class="pp-text">{{ g.text }}</p>{% endif %}
+        </div>
+        {% if g.link %}{{ more(g.link_text or _("Read the story"), g.link) }}{% endif %}
+      </div>
+      <ul class="gallery">
+        {% for ph in g.photos %}<li><a href="{{ img(ph.image) }}" target="_blank" rel="noopener"><img src="{{ img(ph.image, 900) }}" alt="{{ ph.alt }}" loading="lazy" decoding="async"></a></li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section class="section section-sky"><div class="wrap">{{ faq(item.faq) }}</div></section>
 
 <section class="section">

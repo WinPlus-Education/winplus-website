@@ -41,4 +41,4 @@ You may request access to, correction of or deletion of your personal informatio
 
 ## Contact us
 
-Questions about this policy: [email@winplus.org], WinPlus Education & Technology Inc., [address].
+Questions about this policy: [email@winplus.org], WinPlus Education & Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA.

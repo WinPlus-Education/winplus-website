@@ -40,6 +40,8 @@
   </div>
 </section>
 
+{% set chart_has_data = page.schools and (page.schools | selectattr("winplus_rate") | list) %}
+{% if chart_has_data %}
 <section class="section section-cream">
   <div class="wrap">
     <div class="card chart-card">
@@ -68,12 +70,13 @@
     </div>
   </div>
 </section>
+{% endif %}
 
 
 <section class="section" id="highlights">
   <div class="wrap">
     {{ head(_("Highlights"), page.highlights_title) }}
-    <div class="grid-3">
+    <div class="{{ 'grid-2' if page.highlights|length in [2, 4] else 'grid-3' }}">
       {% for h in page.highlights %}
       <article class="card offer-card">
         {{ photo(h.image, h.image_alt, "ratio-wide", 800) }}
@@ -89,6 +92,7 @@
   </div>
 </section>
 
+{% if page.stories %}
 <section class="section section-sky">
   <div class="wrap">
     {{ head(_("Stories"), page.stories_title) }}
@@ -100,18 +104,22 @@
           <div><strong>{{ _("Admitted to") }} {{ s.admitted_to }}</strong><span class="kicker">{{ s.program }}</span></div>
         </div>
         <blockquote>“{{ s.quote }}”</blockquote>
+        {% if s.link %}{{ more(_("Read the story"), s.link) }}{% endif %}
       </figure>
       {% endfor %}
     </div>
   </div>
 </section>
+{% endif %}
 
+{% if page.testimonials %}
 <section class="section">
   <div class="wrap">
     {{ head(_("Testimonials"), page.testimonials_title) }}
     <div class="grid-2">{% for t in page.testimonials %}{{ quote_card(t) }}{% endfor %}</div>
   </div>
 </section>
+{% endif %}
 
 {{ cta_band(_("Your story could be next"), _("Start with a free strategy session with a WinPlus consultant."), page.cta, page.cta_link) }}
 {% endblock %}

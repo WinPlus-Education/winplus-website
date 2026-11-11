@@ -72,52 +72,52 @@ highlights_title: 学员故事
 highlights:
   - title: "国际舞台：联合国会议唯一高中生发言代表"
     tag: 国际舞台
-    text: "背景：17 岁高中在读学员。我们做了什么：联合国议题培训与全程辅导。结果：2026 年 6 月，在纽约联合国总部《残疾人权利公约》第十九届缔约国大会（COSP19）上，成为唯一的高中生发言代表。"
-    image: /images/uploads/students/un-cosp19-speaker.jpg
-    image_alt: WinPlus 学员在联合国会议上发言
-    link: enrichment/un-conferences.html
+    text: "背景：17 岁高中在读学员，最初排在发言队列第 153 位。我们做了什么：联合国议题培训、发言稿打磨与现场争取发言机会。结果：2026 年 6 月，在纽约联合国总部《残疾人权利公约》第十九届缔约国大会（COSP19）上，成为唯一的高中生发言代表。"
+    image: /images/uploads/events/2026-cosp19/jason-speaking.jpg
+    image_alt: WinPlus 学员在联合国《残疾人权利公约》缔约国大会上发言
+    link: insights/from-the-classroom-to-the-un-floor.html
+  - title: "NASA 科研项目：剑桥、伯克利、密歇根录取"
+    tag: 科研实习
+    text: "背景：一位刚被知名科研项目拒绝，一位所在的美国公立高中几乎没有科研资源。我们做了什么：NASA Ames 研究中心科学家定制的八周深空望远镜科研项目。结果：剑桥、帝国理工、伯克利天体物理录取；密歇根、UCLA、UIUC 机械工程录取。"
+    image: /images/uploads/insights/nasa-research/webb-telescope-session.jpg
+    image_alt: NASA 科学家导师在线上为欧歌学子讲解韦伯望远镜
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - title: "低基础翻盘：从零标化到 8 万美元奖学金"
+    tag: 低基础翻盘
+    text: "背景：十一年级五月底才转申美国，GPA 3.5，托福 / SAT 尚未准备。我们做了什么：六个月内系统提升标化、科研发表、艺术公益与文书。结果：收获 UC Davis、Rutgers、Ohio State 等 12 所美国大学录取，并获 UC Riverside 8 万美元奖学金。"
+    image: /images/uploads/students/uc-scholarship-story.jpg
+    image_alt: WinPlus 学员参观大学
+    link: insights/zizhao-six-month-turnaround.html
   - title: "藤校逆袭：从中游成绩到哈佛、耶鲁"
     tag: 藤校逆袭
     text: "背景：成绩中游、目标顶尖名校。我们做了什么：基于「八大要素」体系的冲藤规划。结果：录取哈佛 / 耶鲁，含奖学金。"
     image: /images/uploads/students/ivy-admit-story.jpg
     image_alt: WinPlus 学员展示研究成果
     link: admissions/us-college.html
-  - title: "低基础翻盘：从零标化到加州大学奖学金"
-    tag: 低基础翻盘
-    text: "背景：无托福 / SAT 起步。我们做了什么：标化、科研与文书系统提升。结果：录取加州大学系统并获奖学金。"
-    image: /images/uploads/students/uc-scholarship-story.jpg
-    image_alt: WinPlus 学员参观大学
-    link: research.html
 
 stories_title: 学员心声
 stories:
-  - initials: A.L.
-    admitted_to: 斯坦福大学
+  - initials: 玮
+    admitted_to: 剑桥、帝国理工、伯克利
     program: NASA 深空科研项目
-    quote: "科研经历彻底改变了我在申请中介绍自己的方式。[示例引言]"
-  - initials: M.W.
-    admitted_to: 牛津大学
-    program: 英国升学规划
-    quote: "我的 WinPlus 顾问非常清楚牛津在寻找什么样的学生。[示例引言]"
-  - initials: J.C.
-    admitted_to: 哥伦比亚大学
-    program: 彭博金融科技项目 + 美国升学规划
-    quote: "我有真实的项目、导师推荐信和属于自己的故事，这让一切都不一样了。[示例引言]"
+    quote: "以前我觉得申请最重要的是成绩和标准化考试。现在我明白了，最重要的是找到真正属于自己的方向。"
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - initials: S.
+    admitted_to: 密歇根大学
+    program: NASA 深空科研项目
+    quote: "之前课堂上学到的物理知识，不只是在考试中可以用到，其实是可以真实应用到航天望远镜的设计中的。"
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - initials: 钊
+    admitted_to: 12 所美国大学，8 万美元奖学金
+    program: 全球胜任力冬季研学营 + 美国升学规划
+    quote: "这段旅程虽然短，但对我影响非常大。我开始意识到，我其实可以有很多选择，也开始相信自己可以走得更远。"
+    link: insights/zizhao-six-month-turnaround.html
 
-testimonials_title: 家长与校友评价
+testimonials_title: 家长评价
 testimonials:
-  - quote: "[家长评价占位——例如孩子的变化，以及家庭与 WinPlus 合作的体验。]"
-    name: "[20XX 届学生家长]"
+  - quote: "看今天的视频，Jason 放开了很多……收获满满，不虚此行。特别感谢老师们的精心安排和全程陪伴！"
+    name: "Jason 妈妈，2026 年 6 月联合国 COSP19 发言后"
     role: 家长
-  - quote: "[校友评价占位——例如项目如何帮助其在大学中发展。]"
-    name: "[姓名]，[大学]，[年份] 届"
-    role: 校友
-  - quote: "[家长评价占位。]"
-    name: "[家长姓名]"
-    role: 家长
-  - quote: "[校友评价占位。]"
-    name: "[姓名]，[大学]"
-    role: 校友
 
 cta: 开启你的成长之旅
 cta_link: contact.html

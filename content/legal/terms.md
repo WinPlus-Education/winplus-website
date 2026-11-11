@@ -34,4 +34,4 @@ We may update these terms from time to time. The date at the top shows the lates
 
 ## Contact
 
-[email@winplus.org], WinPlus Education & Technology Inc., [address].
+[email@winplus.org], WinPlus Education & Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA.

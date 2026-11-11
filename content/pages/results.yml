@@ -73,52 +73,52 @@ highlights_title: Student stories
 highlights:
   - title: "The only high-school speaker at a UN conference"
     tag: Global Stage
-    text: "Background: a 17-year-old high school student. What we did: UN issue training and guidance at every step. Result: the only high-school student speaker at the 19th Conference of States Parties to the CRPD (COSP19), UN Headquarters, New York, June 2026."
-    image: /images/uploads/students/un-cosp19-speaker.jpg
-    image_alt: A WinPlus student speaking at a United Nations conference
-    link: enrichment/un-conferences.html
+    text: "Background: a 17-year-old high school student who started 153rd in the speakers' queue. What we did: UN issue training, statement coaching and on-site advocacy for a speaking slot. Result: the only high-school student speaker at the 19th Conference of States Parties to the CRPD (COSP19), UN Headquarters, New York, June 2026."
+    image: /images/uploads/events/2026-cosp19/jason-speaking.jpg
+    image_alt: A WinPlus student speaking at the CRPD Conference of States Parties at UN Headquarters
+    link: insights/from-the-classroom-to-the-un-floor.html
+  - title: "A NASA research project to Cambridge, Berkeley and Michigan"
+    tag: Research
+    text: "Background: one student just rejected by a well-known research program; another at a US public school with no research resources. What we did: an eight-week deep-space telescope project custom-designed by a NASA Ames scientist. Result: Cambridge, Imperial and UC Berkeley (astrophysics); Michigan, UCLA and UIUC (mechanical engineering)."
+    image: /images/uploads/insights/nasa-research/webb-telescope-session.jpg
+    image_alt: A NASA scientist mentor explaining the James Webb Space Telescope to WinPlus students online
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - title: "From no SAT or TOEFL to an $80,000 UC scholarship"
+    tag: Turnaround
+    text: "Background: switched to US applications at the end of Grade 11 with a 3.5 GPA and no TOEFL or SAT scores. What we did: a six-month plan across testing, published research, the arts and essays. Result: 12 US offers including UC Davis, Rutgers and Ohio State, and an $80,000 scholarship from UC Riverside."
+    image: /images/uploads/students/uc-scholarship-story.jpg
+    image_alt: A WinPlus student on a university visit
+    link: insights/zizhao-six-month-turnaround.html
   - title: "From mid-range grades to Harvard and Yale"
     tag: Ivy League
     text: "Background: average grades with top-university goals. What we did: an Ivy League plan built on our Eight Key Elements framework. Result: admitted to Harvard and Yale, with scholarship."
     image: /images/uploads/students/ivy-admit-story.jpg
     image_alt: A WinPlus student presenting her work
     link: admissions/us-college.html
-  - title: "From no SAT or TOEFL to a UC scholarship"
-    tag: Turnaround
-    text: "Background: started without TOEFL or SAT scores. What we did: a structured plan across testing, research and essays. Result: admitted to the University of California system with a scholarship."
-    image: /images/uploads/students/uc-scholarship-story.jpg
-    image_alt: A WinPlus student on a university visit
-    link: research.html
 
 stories_title: In their words
 stories:
-  - initials: A.L.
-    admitted_to: Stanford
+  - initials: W.
+    admitted_to: Cambridge, Imperial & UC Berkeley
     program: NASA Deep Space Research Program
-    quote: "The research experience completely changed how I talked about myself in my application. [PLACEHOLDER QUOTE]"
-  - initials: M.W.
-    admitted_to: Oxford
-    program: UK Admissions Counseling
-    quote: "My WinPlus consultant knew exactly what Oxford was looking for. [PLACEHOLDER QUOTE]"
-  - initials: J.C.
-    admitted_to: Columbia
-    program: Bloomberg FinTech Program + US Admissions
-    quote: "I had a real project, a mentor letter, and a story. That made all the difference. [PLACEHOLDER QUOTE]"
+    quote: "I used to think grades and test scores were what mattered most. Now I understand that what matters most is finding a direction that's truly your own."
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - initials: S.
+    admitted_to: University of Michigan
+    program: NASA Deep Space Research Program
+    quote: "I realized the physics I learned in class isn't just for exams. It can actually be used to design a space telescope."
+    link: insights/nasa-mentored-research-two-students-one-telescope.html
+  - initials: Z.
+    admitted_to: 12 US universities, $80K scholarship
+    program: Global Competency Winter Study Tour + US Admissions
+    quote: "The trip was short, but it had a huge impact on me. I started to realize I had many more choices, and to believe I could go further."
+    link: insights/zizhao-six-month-turnaround.html
 
 testimonials_title: What families say
 testimonials:
-  - quote: "[Parent testimonial placeholder — e.g., what changed for their child and the family's experience working with WinPlus.]"
-    name: "[Parent of a Class of 20XX student]"
+  - quote: "Watching today's video, Jason really opened up. We gained so much, and the trip was more than worth it. Special thanks to the teachers for their careful arrangements and for being with him every step of the way!"
+    name: "Jason's mother, after his statement at the UN (COSP19), June 2026"
     role: Parent
-  - quote: "[Alumni testimonial placeholder — e.g., how the program helped at university.]"
-    name: "[Name], [University], Class of [Year]"
-    role: Alumni
-  - quote: "[Parent testimonial placeholder.]"
-    name: "[Parent name]"
-    role: Parent
-  - quote: "[Alumni testimonial placeholder.]"
-    name: "[Name], [University]"
-    role: Alumni
 
 cta: Start Your Journey
 cta_link: contact.html

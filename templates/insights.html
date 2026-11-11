@@ -29,6 +29,7 @@
         <div class="card-body">
           <span class="tag">{{ p.category }}</span>
           <h3>{{ p.title }}</h3>
+          {% if p.summary %}<p class="post-sum">{{ p.summary }}</p>{% endif %}
           <p class="meta">{{ p.date | date_fmt("long") }}</p>
         </div>
       </a>

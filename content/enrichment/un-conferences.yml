@@ -4,8 +4,8 @@ short_title: UN Conferences
 seo_title: "UN Conference Program for High School Students | WinPlus"
 meta_description: "High school students attend United Nations conferences such as UNPFII and COSP with WinPlus: preparation, policy research, delegation experience and reflection."
 summary: Real seats at United Nations conferences and international forums, not a Model UN camp. Students research a global issue, speak or present, and build a global network. WinPlus students have taken part in 15 UN conferences.
-image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
-image_alt: United Nations headquarters beside the East River in New York
+image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg
+image_alt: WinPlus co-founder Cathy Guo and students with Indigenous representatives in the UN General Assembly Hall
 facts:
   - { label: "Location", value: "United Nations Headquarters, New York" }
   - { label: "Timing", value: "[Month(s), YEAR]" }
@@ -25,8 +25,48 @@ deliverables:
   - Certificate of participation
   - Material for essays and interviews
 highlight: "In June 2026, a 17-year-old WinPlus student was the only high-school speaker at the 19th Conference of States Parties to the CRPD (COSP19) at UN Headquarters in New York, after UN issue training and guidance from our team."
+timeline_title: "WinPlus at international conferences"
+timeline:
+  - { date: "Dec 2023", title: "UN Climate Change Conference (COP28)", place: "Dubai, UAE" }
+  - { date: "Feb 2024", title: "International organizations & humanities study program", place: "Geneva, Switzerland" }
+  - { date: "Dec 2024", title: "UN Climate Change Conference (COP29)", place: "Baku, Azerbaijan" }
+  - { date: "Mar 2025", title: "Commission on the Status of Women (CSW)", place: "New York, USA" }
+  - { date: "Feb 2026", title: "Asia-Pacific Forum on Sustainable Development (APFSD)", place: "Bangkok, Thailand" }
+  - { date: "Apr 2026", title: "ECOSOC Youth Forum", place: "New York, USA" }
+  - { date: "Apr 2026", title: "Permanent Forum on Indigenous Issues (UNPFII)", place: "New York, USA" }
+  - { date: "Jun 2026", title: "Conference of States Parties to the CRPD (COSP19)", place: "New York, USA" }
+galleries_title: "Moments from recent UN conferences"
+galleries:
+  - title: "Conference of States Parties to the CRPD (COSP19)"
+    meta: "June 2026 · UN Headquarters, New York"
+    text: "A 17-year-old WinPlus student delivered a statement as an NGO representative, met delegates from around the world and visited the Blooming Together exhibition."
+    link: insights/from-the-classroom-to-the-un-floor.html
+    link_text: Read Jason's story
+    photos:
+      - { image: /images/uploads/events/2026-cosp19/jason-speaking.jpg, alt: "A WinPlus student delivering a statement at the NGO desk during COSP19" }
+      - { image: /images/uploads/events/2026-cosp19/jason-guo-un-emblem.jpg, alt: "The student and co-founder Cathy Guo beside the UN emblem" }
+      - { image: /images/uploads/events/2026-cosp19/general-assembly-hall.jpg, alt: "The student in the UN General Assembly Hall" }
+      - { image: /images/uploads/events/2026-cosp19/conference-room.jpg, alt: "Listening to a session in a UN conference room" }
+      - { image: /images/uploads/events/2026-cosp19/delegate-gallery.jpg, alt: "Taking notes from the gallery of a UN conference room" }
+  - title: "Permanent Forum on Indigenous Issues (UNPFII), 25th session"
+    meta: "April 2026 · UN Headquarters, New York"
+    text: "Students attended the opening in the General Assembly Hall and side events on climate, human rights and AI, on the same day as UN Chinese Language Day."
+    link: insights/inside-the-un-forum-on-indigenous-issues.html
+    link_text: Read the story
+    photos:
+      - { image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg, alt: "Cathy Guo and students with Indigenous representatives in the General Assembly Hall" }
+      - { image: /images/uploads/events/2026-unpfii/side-event.jpg, alt: "A side-event roundtable at UN Headquarters" }
+      - { image: /images/uploads/insights/unpfii/general-assembly-podium.jpg, alt: "Cathy Guo and students at the General Assembly rostrum" }
+      - { image: /images/uploads/insights/unpfii/ga-hall-2.jpg, alt: "Students with an Indigenous representative in traditional regalia" }
+      - { image: /images/uploads/insights/unpfii/delegation-outside-un-hq.jpg, alt: "The WinPlus delegation outside UN Headquarters" }
+  - title: "Asia-Pacific Forum on Sustainable Development (APFSD), 13th session"
+    meta: "February 2026 · UN ESCAP, Bangkok"
+    text: "Cathy Guo led a WinPlus student to the UN's regional forum on the Sustainable Development Goals."
+    photos:
+      - { image: /images/uploads/events/2026-apfsd13/backdrop.jpg, alt: "A WinPlus student and Cathy Guo at the 13th APFSD in Bangkok" }
+      - { image: /images/uploads/events/2026-apfsd13/delegates-flags.jpg, alt: "The WinPlus student and Cathy Guo with delegates in front of member-state flags" }
 faq:
   - q: Do students speak at the UN?
-    a: "Opportunities vary by meeting. [Describe the speaking or side-event opportunities your students have had.]"
+    a: "Opportunities vary by meeting and are never guaranteed. Speaking in a formal session requires accreditation review, document submission and a place on the speakers' list. At COSP19 in June 2026, a WinPlus student started 153rd in the queue; with statement coaching from our team and on-site advocacy by co-founder Cathy Guo, he delivered a two-minute statement that was entered into the UN record. At COP28, a WinPlus student presented his environmental project to government officials and experts."
   - q: Is travel included?
     a: "[Describe what is included: travel, accommodation, chaperones, etc.]"

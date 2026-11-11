@@ -4,8 +4,8 @@ short_title: 联合国会议
 seo_title: "高中生联合国会议项目 | 真实联合国席位 | WinPlus 欧歌学院"
 meta_description: "WinPlus 带领高中生参加联合国会议（如 UNPFII、COSP），提供议题培训、政策研究、发言机会与全程辅导。学员已参与 15 次联合国会议。"
 summary: 真实的联合国会议与国际论坛席位，而非模拟联合国营地。学生研究全球议题、发言或展示，并建立全球人脉。WinPlus 学员已参与 15 次联合国会议。
-image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
-image_alt: 纽约东河畔的联合国总部
+image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg
+image_alt: 郭琪老师和欧歌学子与土著代表在联合国大会厅
 facts:
   - { label: "地点", value: "美国纽约联合国总部" }
   - { label: "时间", value: "[年 月]" }
@@ -25,8 +25,48 @@ deliverables:
   - 参会证明
   - 文书与面试素材
 highlight: "2026 年 6 月，一名 17 岁的 WinPlus 学员经过联合国议题培训与全程辅导，成为纽约联合国总部《残疾人权利公约》第十九届缔约国大会（COSP19）上唯一的高中生发言代表。"
+timeline_title: "欧歌学院历年参会时间线"
+timeline:
+  - { date: "2023年12月", title: "联合国气候变化大会（COP28）", place: "阿联酋 · 迪拜" }
+  - { date: "2024年2月", title: "欧洲国际组织人文研学营", place: "瑞士 · 日内瓦" }
+  - { date: "2024年12月", title: "联合国气候变化大会（COP29）", place: "阿塞拜疆 · 巴库" }
+  - { date: "2025年3月", title: "联合国女性大会（CSW）", place: "美国 · 纽约" }
+  - { date: "2026年2月", title: "联合国亚太区可持续发展论坛（APFSD）", place: "泰国 · 曼谷" }
+  - { date: "2026年4月", title: "联合国经社理事会青年论坛", place: "美国 · 纽约" }
+  - { date: "2026年4月", title: "联合国原住民问题常设论坛（UNPFII）", place: "美国 · 纽约" }
+  - { date: "2026年6月", title: "《残疾人权利公约》缔约国大会（COSP19）", place: "美国 · 纽约" }
+galleries_title: "近期联合国会议现场"
+galleries:
+  - title: "《残疾人权利公约》第十九届缔约国大会（COSP19）"
+    meta: "2026年6月 · 纽约联合国总部"
+    text: "17 岁的欧歌学员以 NGO 代表身份在大会上发言，与各国代表交流，并参观“共绽放”中国残疾人文创作品展。"
+    link: insights/from-the-classroom-to-the-un-floor.html
+    link_text: 阅读 Jason 的故事
+    photos:
+      - { image: /images/uploads/events/2026-cosp19/jason-speaking.jpg, alt: "欧歌学员在 COSP19 大会 NGO 席位发言" }
+      - { image: /images/uploads/events/2026-cosp19/jason-guo-un-emblem.jpg, alt: "学员与郭琪老师在联合国会徽旁" }
+      - { image: /images/uploads/events/2026-cosp19/general-assembly-hall.jpg, alt: "学员在联合国大会厅" }
+      - { image: /images/uploads/events/2026-cosp19/conference-room.jpg, alt: "在联合国会议室聆听会议" }
+      - { image: /images/uploads/events/2026-cosp19/delegate-gallery.jpg, alt: "在联合国会议室旁听席记录" }
+  - title: "联合国土著问题常设论坛第二十五届会议（UNPFII）"
+    meta: "2026年4月 · 纽约联合国总部"
+    text: "师生参加大会厅开幕式及气候、人权、人工智能等分论坛，同日恰逢联合国中文日。"
+    link: insights/inside-the-un-forum-on-indigenous-issues.html
+    link_text: 阅读全文
+    photos:
+      - { image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg, alt: "郭老师和学生们与土著代表在联合国大会厅" }
+      - { image: /images/uploads/events/2026-unpfii/side-event.jpg, alt: "联合国总部分论坛圆桌讨论" }
+      - { image: /images/uploads/insights/unpfii/general-assembly-podium.jpg, alt: "郭老师与学生们在大会厅讲台" }
+      - { image: /images/uploads/insights/unpfii/ga-hall-2.jpg, alt: "学生们与身着传统服饰的土著代表合影" }
+      - { image: /images/uploads/insights/unpfii/delegation-outside-un-hq.jpg, alt: "欧歌代表团在联合国总部外" }
+  - title: "联合国亚太区可持续发展论坛第十三届会议（APFSD）"
+    meta: "2026年2月 · 联合国亚太经社会，曼谷"
+    text: "郭琪老师带领欧歌学员参加联合国亚太区可持续发展目标论坛。"
+    photos:
+      - { image: /images/uploads/events/2026-apfsd13/backdrop.jpg, alt: "欧歌学员与郭琪老师在第十三届 APFSD 会场" }
+      - { image: /images/uploads/events/2026-apfsd13/delegates-flags.jpg, alt: "欧歌学员、郭琪老师与各国代表在会员国国旗前合影" }
 faq:
   - q: 学生能在联合国发言吗？
-    a: "发言机会因会议而异。[请补充学员以往获得的发言或边会机会。]"
+    a: "发言机会因会议而异，且无法保证。在正式分会场发言需要资格审核、文书提交与登记排队。2026 年 6 月 COSP19 大会上，一位欧歌学员最初排在第 153 位，在团队的发言稿辅导和郭琪老师的现场争取下，最终完成两分多钟的发言并被正式记录在联合国会议中。在 COP28 大会上，欧歌学员也曾向全球政府官员和专家学者介绍自己的环保项目。"
   - q: 费用是否包含交通住宿？
     a: "[请说明包含的内容：交通、住宿、带队老师等。]"

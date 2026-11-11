@@ -84,8 +84,8 @@ offer:
     - title: Experience Enrichment
       text: United Nations conferences, summer and winter schools and campus visits that build the global perspective and leadership top universities reward.
       points: ["UN conference delegations", "Summer & winter schools", "Campus tours & leadership programs"]
-      image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
-      image_alt: United Nations headquarters in New York beside the East River
+      image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg
+      image_alt: WinPlus students with Indigenous representatives in the UN General Assembly Hall
       link: enrichment.html
       link_text: Explore enrichment programs
 

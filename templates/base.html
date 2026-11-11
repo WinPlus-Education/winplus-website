@@ -31,7 +31,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Cinzel:wght@500&display=swap">
+  {% if lang.code == "zh" %}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&text={{ site.logo_text or site.name_local | urlencode }}&display=swap">{% endif %}
+  <link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ root }}favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
   {# Social media icons (Font Awesome free brand icons: core + brands) #}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
@@ -48,6 +52,7 @@
     "name": site.company_legal,
     "alternateName": [site.name ~ " Education", site.name ~ " " ~ (site.name_local or "")],
     "url": site_url ~ "/",
+    "address": ({"@type": "PostalAddress", "streetAddress": site.address_parts.street, "addressLocality": site.address_parts.city, "addressRegion": site.address_parts.region, "postalCode": site.address_parts.postal_code, "addressCountry": site.address_parts.country} if site.address_parts else none),
     "description": site.meta_description,
     "areaServed": site.area_served,
     "slogan": site.tagline,
@@ -86,10 +91,7 @@
 
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="logo" href="{{ u('index.html') }}" aria-label="{{ site.name }} {{ _('home') }}">
-      <span class="logo-name">{{ site.name }}</span>
-      <span class="logo-sub">{{ site.name_sub }}</span>
-    </a>
+    {% include "partials/logo.html" %}
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">{{ _("Menu") }}</span><span class="bars" aria-hidden="true"></span>
     </button>
@@ -126,7 +128,7 @@
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a class="logo" href="{{ u('index.html') }}"><span class="logo-name">{{ site.name }}</span><span class="logo-sub">{{ site.name_sub }}</span></a>
+      {% include "partials/logo.html" %}
       <p>{{ site.footer_blurb }}</p>
     </div>
     {% for item in site.nav if item.children %}
@@ -153,6 +155,7 @@
         <div><dt>{{ _("Phone") }}</dt><dd>{{ site.phone }}</dd></div>
         <div><dt>{{ _("WeChat") }}</dt><dd>{{ site.wechat_id }}</dd></div>
         <div><dt>{{ _("Address") }}</dt><dd>{{ site.address }}</dd></div>
+        {% if site.address_cn %}<div><dt>{{ _("China office") }}</dt><dd>{{ site.address_cn }}</dd></div>{% endif %}
       </dl>
       <ul class="social" aria-label="{{ _('Social media') }}">
         {% for s in site.social %}
@@ -196,7 +199,7 @@
   <div class="wrap footer-legal">
     <p class="disclaimer">{{ site.footer_disclaimer }}</p>
     <div class="legal-row">
-      <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}</p>
+      <p>© {{ year }} {{ site.company_legal }}{{ "" if site.company_legal.endswith(".") else "." }} {{ _("All rights reserved.") }}{% if site.company_cn %}<br><span class="legal-cn">{{ site.company_cn }}{% if site.tax_id_cn %} · {{ _("Unified social credit code") }} {{ site.tax_id_cn }}{% endif %}</span>{% endif %}</p>
       <ul>
         <li><a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></li>
         <li><a href="{{ u('terms.html') }}">{{ _("Terms & Disclaimer") }}</a></li>

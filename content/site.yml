@@ -16,7 +16,9 @@ google_site_verification: ""
 bing_site_verification: ""
 baidu_site_verification: ""
 founded: "[YEAR]"
-address: "[Street address, City, State ZIP]"
+address: "Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA"
+# Structured address for Google (used in the organization data)
+address_parts: { street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
 area_served: ["United States", "China", "Singapore", "Canada", "United Kingdom", "Australia"]
 
 email: "[email@winplus.org]"

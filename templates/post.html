@@ -5,20 +5,54 @@
 {% block og_type %}article{% endblock %}
 {% block schema %}
 {{ ld({"@context": "https://schema.org", "@type": "BlogPosting", "headline": post.title, "description": post.summary, "datePublished": post.date.date().isoformat() if post.date else "", "inLanguage": lang.html, "image": [img(post.image, 1200)] if post.image else [], "author": {"@type": "Organization", "name": site.company_legal}, "publisher": {"@id": site_url ~ "/#organization"}, "mainEntityOfPage": canonical}) }}
+{% if post.faq %}
+{% set qa = [] %}{% for f in post.faq %}{% set _x = qa.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endfor %}
+{{ ld({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa}) }}
+{% endif %}
 {% endblock %}
 {% block content %}
+{# Images inside the article body are written as /images/...; point them at the right folder for this page #}
+{% set body = post.body | replace('="/images/', '="' ~ root ~ 'images/') %}
+{% set plain = body | striptags %}
+{% set minutes = ((plain | length) / 450) | round(0, 'ceil') | int if lang.code == 'zh' else ((plain | wordcount) / 220) | round(0, 'ceil') | int %}
 <article class="article">
-  <header class="page-hero">
+  <header class="page-hero article-hero">
     <div class="wrap narrow">
       {{ breadcrumbs([[_("Insights"), "insights.html"], [post.title, post.url]]) }}
       <span class="tag">{{ post.category }}</span>
       <h1>{{ post.title }}</h1>
-      <p class="meta">{{ post.date | date_fmt("long") }}{% if post.source %} · {{ _("Originally published on") }} {{ post.source }}{% endif %}</p>
+      {% if post.dek %}<p class="article-dek">{{ post.dek }}</p>{% endif %}
+      <p class="meta article-meta">
+        <span>{{ post.date | date_fmt("long") }}</span>
+        <span aria-hidden="true">·</span><span>{{ minutes if minutes > 0 else 1 }} {{ _("min read") }}</span>
+        {% if post.source %}<span aria-hidden="true">·</span><span>{{ _("Originally published on") }} {{ post.source }}</span>{% endif %}
+      </p>
     </div>
   </header>
+  {% if post.image %}
+  <div class="wrap article-lead">
+    <figure class="article-lead-fig">
+      <img src="{{ img(post.image, 1600) }}" alt="{{ post.image_alt or post.title }}" decoding="async">
+      {% if post.image_caption %}<figcaption>{{ post.image_caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+  {% endif %}
   <div class="wrap narrow article-body">
-    {% if post.image %}{{ photo(post.image, post.image_alt or post.title, "ratio-wide article-photo", 1400, "Photo", true) }}{% endif %}
-    <div class="prose">{{ post.body | safe }}</div>
+    {% if post.key_facts %}
+    <dl class="key-facts">
+      {% for k in post.key_facts %}<div><dt>{{ k.label }}</dt><dd>{{ k.value }}</dd></div>{% endfor %}
+    </dl>
+    {% endif %}
+    <div class="prose">{{ body | safe }}</div>
+    {% if post.faq %}
+    <section class="article-faq" aria-labelledby="article-faq-title">
+      <p class="eyebrow">{{ _("Q&A") }}</p>
+      <h2 id="article-faq-title" class="h3">{{ post.faq_title or _("Questions families ask us") }}</h2>
+      <dl class="qa-list">
+        {% for f in post.faq %}<div class="qa-item"><dt>{{ f.q }}</dt><dd>{{ f.a | md | safe }}</dd></div>{% endfor %}
+      </dl>
+    </section>
+    {% endif %}
     <div class="article-cta side-card side-cta">
       <h2 class="h4">{{ _("Get personalized advice") }}</h2>
       <p>{{ _("Talk to a WinPlus consultant about your student's plan.") }}</p>
@@ -27,10 +61,23 @@
   </div>
 </article>
 {% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
+{% if related %}
 <section class="section section-sky">
   <div class="wrap">
     <h2 class="h3">{{ _("More insights") }}</h2>
-    <ul class="related">{% for p in related[:4] %}<li><a class="related-link" href="{{ u(p.url) }}"><span>{{ p.title }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}</ul>
+    <div class="grid-3 post-grid">
+      {% for p in related[:3] %}
+      <a class="card post-card" href="{{ u(p.url) }}">
+        {{ photo(p.image, p.image_alt or p.title, "ratio-wide", 700) }}
+        <div class="card-body">
+          <span class="tag">{{ p.category }}</span>
+          <h3>{{ p.title }}</h3>
+          <p class="meta">{{ p.date | date_fmt("long") }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
+{% endif %}
 {% endblock %}

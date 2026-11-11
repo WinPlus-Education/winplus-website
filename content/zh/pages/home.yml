@@ -84,8 +84,8 @@ offer:
     - title: 国际背景提升
       text: 联合国会议、全球胜任力夏校与冬校、名校参访，培养顶尖大学看重的全球视野与领导力。
       points: ["联合国会议代表团", "夏校与冬校", "名校参访与领导力项目"]
-      image: https://images.unsplash.com/photo-1750074275438-1cd7c94891c7
-      image_alt: 纽约东河畔的联合国总部
+      image: /images/uploads/events/2026-unpfii/general-assembly-group.jpg
+      image_alt: 欧歌学子与土著代表在联合国大会厅
       link: enrichment.html
       link_text: 了解国际背景提升
 

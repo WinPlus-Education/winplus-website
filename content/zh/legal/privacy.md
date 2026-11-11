@@ -41,4 +41,4 @@ WinPlus Education & Technology Inc.（以下简称「WinPlus」「我们」）�
 
 ## 联系我们
 
-如对本政策有任何疑问，请联系：[email@winplus.org]，WinPlus Education & Technology Inc.，[地址]。
+如对本政策有任何疑问，请联系：[email@winplus.org]，WinPlus Education & Technology Inc.，Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA；中国主体：北京欧歌国际教育科技有限公司，北京市西城区展览馆路甲26号1号楼1-4内4层402室。

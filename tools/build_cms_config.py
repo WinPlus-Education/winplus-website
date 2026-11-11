@@ -56,13 +56,15 @@ def collections(base, prefix, zh=False):
     c = f"{base}/"
     tag = f"{prefix} " if prefix else ""
     site = {"name": "site", "label": "Header, Footer, Contact & Social", "file": f"{c}site.yml", "fields": [
-        s("name", "Logo text"), s("name_sub", "Logo subtitle"), s("name_local", "Chinese brand name", False),
+        s("name", "Brand name"), s("logo_text", "Text beside the crest logo (leave empty to use the brand name)", False), s("name_sub", "Brand subtitle (used in page titles)"), s("name_local", "Chinese brand name", False),
         s("company_legal", "Legal company name"), s("tagline", "Tagline (top bar)"),
         *([] if zh else [s("site_url", "Website address (e.g. https://www.winplus.org), used for SEO")]),
         img("default_image", "Default image when sharing links"), t("meta_description", "Default search description"),
         t("keywords", "Search keywords (comma separated)", False),
         *([] if zh else [s("google_site_verification", "Google Search Console code", False), s("bing_site_verification", "Bing Webmaster code", False), s("baidu_site_verification", "Baidu verification code", False)]),
-        s("founded", "Year founded", False), s("address", "Address", False), SL("area_served", "Countries served (SEO)", False),
+        s("founded", "Year founded", False), s("address", "Address", False),
+        o("address_parts", "Address for Google (structured)", [s("street", "Street"), s("city", "City"), s("region", "State"), s("postal_code", "ZIP"), s("country", "Country code (e.g. US)")]),
+        *([s("company_cn", "China entity name", False), s("tax_id_cn", "Unified social credit code", False), s("address_cn", "China office address", False)] if zh else []), SL("area_served", "Countries served (SEO)", False),
         s("email", "Email"), s("phone", "Phone", False), s("wechat_id", "WeChat ID", False), img("wechat_qr", "WeChat QR code"),
         s("cta_text", "Header button text"), s("cta_link", "Header button link"),
         L("nav", "Main menu", [s("label", "Label"), s("link", "Link (e.g. results.html)"),
@@ -131,7 +133,7 @@ def collections(base, prefix, zh=False):
         s("highlights_title", "Student stories heading"),
         L("highlights", "Student stories (with photos)", [s("title", "Title"), s("tag", "Tag"), t("text", "Story")] + PHOTO + [s("link", "Link", False)], "{{fields.title}}"),
         s("stories_title", "Quotes heading"),
-        L("stories", "Student quotes (also on home page)", [s("initials", "Initials"), s("admitted_to", "Admitted to"), s("program", "Program"), t("quote", "Quote")], "{{fields.initials}} → {{fields.admitted_to}}"),
+        L("stories", "Student quotes (also on home page)", [s("initials", "Initials"), s("admitted_to", "Admitted to"), s("program", "Program"), t("quote", "Quote"), s("link", "Link to full story (optional)", False)], "{{fields.initials}} → {{fields.admitted_to}}"),
         s("testimonials_title", "Testimonials heading"),
         L("testimonials", "Parent & alumni testimonials", [t("quote", "Quote"), s("name", "Name"), s("role", "Role (e.g. Parent, Alumni)")], "{{fields.name}}"),
         s("cta", "Button"), s("cta_link", "Button link")]}
@@ -206,7 +208,14 @@ def collections(base, prefix, zh=False):
     enrich = folder(f"{prefix}enrichment-programs".lower().replace(" ", "-"), "Enrichment Programs", "Enrichment Program", "enrichment", [
         n("order", "Order in lists"), s("title", "Title"), s("short_title", "Short title")] + SEO + [t("summary", "Summary")] + PHOTO + [
         FACTS, m("overview", "Overview"), SL("activities", "What students do"), SL("deliverables", "What students receive"),
-        t("highlight", "Highlight story", False), FAQ], sort=["order", "title"])
+        t("highlight", "Highlight story", False),
+        s("timeline_eyebrow", "Timeline: small label", False), s("timeline_title", "Timeline: heading", False),
+        L("timeline", "Timeline of past conferences", [s("date", "Date (e.g. Jun 2026)"), s("title", "Event"), s("place", "Place")], "{{fields.date}} {{fields.title}}", False),
+        s("galleries_title", "Photo galleries: heading", False),
+        L("galleries", "Photo galleries of past programs", [s("title", "Title"), s("meta", "Date & place", False), t("text", "Short description", False),
+            s("link", "Link to story (optional)", False), s("link_text", "Link text (optional)", False),
+            L("photos", "Photos (first one is shown large)", [img("image", "Photo"), s("alt", "Photo description")], "{{fields.alt}}")], "{{fields.title}}", False),
+        FAQ], sort=["order", "title"])
     events = folder(f"{prefix}events".lower().replace(" ", "-"), "Upcoming Events", "Event", "events", [
         s("title", "Event title"), date("date", "Date & start time", "YYYY-MM-DDTHH:mm:ss", time=True),
         s("time_label", "Time as shown (e.g. 7:00–8:00 PM ET)"), s("type", "Type (e.g. Webinar, Info Session)"),
@@ -218,8 +227,12 @@ def collections(base, prefix, zh=False):
              "create": True, "slug": "{{year}}-{{month}}-{{day}}-{{slug}}", "sortable_fields": ["date", "title", "category"], "summary": "{{title}} ({{category}})",
              "fields": [s("title", "Title"), s("seo_title", "SEO title (optional)", False), date("date", "Publish date"),
                         s("category", "Topic (must match a topic filter on the Insights page)"), t("summary", "Short summary (also used for Google)"),
-                        img("image", "Cover image"), s("image_alt", "Cover image description", False),
-                        s("source", "Originally published on (e.g. WeChat, Xiaohongshu)", False), b("featured", "Feature at top of Insights page"), m("body", "Article")]}
+                        t("dek", "Standfirst (one or two sentences under the title)", False),
+                        img("image", "Cover image"), s("image_alt", "Cover image description", False), s("image_caption", "Cover image caption", False),
+                        L("key_facts", "Key facts strip (2–4 numbers)", [s("value", "Number (e.g. 12)"), s("label", "Label")], "{{fields.value}} {{fields.label}}", False),
+                        s("source", "Originally published on (e.g. WeChat, Xiaohongshu)", False), b("featured", "Feature at top of Insights page"), m("body", "Article"),
+                        s("faq_title", "Q&A heading (optional)", False),
+                        L("faq", "Q&A at the end of the article (also shown in Google)", [s("q", "Question"), t("a", "Answer")], "{{fields.q}}", False)]}
 
     pages = {"name": f"{prefix}pages".lower().replace(" ", "-"), "label": f"{tag}Pages",
              "files": [home, admissions, research, enrichment, results, team, schools] + simple}

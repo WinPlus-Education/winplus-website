@@ -18,10 +18,14 @@ collections:
     file: content/site.yml
     fields:
     - name: name
-      label: Logo text
+      label: Brand name
       widget: string
+    - name: logo_text
+      label: Text beside the crest logo (leave empty to use the brand name)
+      widget: string
+      required: false
     - name: name_sub
-      label: Logo subtitle
+      label: Brand subtitle (used in page titles)
       widget: string
     - name: name_local
       label: Chinese brand name
@@ -68,6 +72,26 @@ collections:
       label: Address
       widget: string
       required: false
+    - name: address_parts
+      label: Address for Google (structured)
+      widget: object
+      collapsed: true
+      fields:
+      - name: street
+        label: Street
+        widget: string
+      - name: city
+        label: City
+        widget: string
+      - name: region
+        label: State
+        widget: string
+      - name: postal_code
+        label: ZIP
+        widget: string
+      - name: country
+        label: Country code (e.g. US)
+        widget: string
     - name: area_served
       label: Countries served (SEO)
       widget: list
@@ -876,6 +900,10 @@ collections:
       - name: quote
         label: Quote
         widget: text
+      - name: link
+        label: Link to full story (optional)
+        widget: string
+        required: false
       summary: '{{fields.initials}} → {{fields.admitted_to}}'
     - name: testimonials_title
       label: Testimonials heading
@@ -1603,6 +1631,74 @@ collections:
     label: Highlight story
     widget: text
     required: false
+  - name: timeline_eyebrow
+    label: 'Timeline: small label'
+    widget: string
+    required: false
+  - name: timeline_title
+    label: 'Timeline: heading'
+    widget: string
+    required: false
+  - name: timeline
+    label: Timeline of past conferences
+    widget: list
+    collapsed: true
+    fields:
+    - name: date
+      label: Date (e.g. Jun 2026)
+      widget: string
+    - name: title
+      label: Event
+      widget: string
+    - name: place
+      label: Place
+      widget: string
+    summary: '{{fields.date}} {{fields.title}}'
+    required: false
+  - name: galleries_title
+    label: 'Photo galleries: heading'
+    widget: string
+    required: false
+  - name: galleries
+    label: Photo galleries of past programs
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      widget: string
+    - name: meta
+      label: Date & place
+      widget: string
+      required: false
+    - name: text
+      label: Short description
+      widget: text
+      required: false
+    - name: link
+      label: Link to story (optional)
+      widget: string
+      required: false
+    - name: link_text
+      label: Link text (optional)
+      widget: string
+      required: false
+    - name: photos
+      label: Photos (first one is shown large)
+      widget: list
+      collapsed: true
+      fields:
+      - name: image
+        label: Photo
+        widget: image
+        choose_url: true
+        required: false
+      - name: alt
+        label: Photo description
+        widget: string
+      summary: '{{fields.alt}}'
+    summary: '{{fields.title}}'
+    required: false
   - *id009
   sortable_fields:
   - order
@@ -1680,6 +1776,10 @@ collections:
   - name: summary
     label: Short summary (also used for Google)
     widget: text
+  - name: dek
+    label: Standfirst (one or two sentences under the title)
+    widget: text
+    required: false
   - name: image
     label: Cover image
     widget: image
@@ -1688,6 +1788,23 @@ collections:
   - name: image_alt
     label: Cover image description
     widget: string
+    required: false
+  - name: image_caption
+    label: Cover image caption
+    widget: string
+    required: false
+  - name: key_facts
+    label: Key facts strip (2–4 numbers)
+    widget: list
+    collapsed: true
+    fields:
+    - name: value
+      label: Number (e.g. 12)
+      widget: string
+    - name: label
+      label: Label
+      widget: string
+    summary: '{{fields.value}} {{fields.label}}'
     required: false
   - name: source
     label: Originally published on (e.g. WeChat, Xiaohongshu)
@@ -1701,6 +1818,23 @@ collections:
   - name: body
     label: Article
     widget: markdown
+  - name: faq_title
+    label: Q&A heading (optional)
+    widget: string
+    required: false
+  - name: faq
+    label: Q&A at the end of the article (also shown in Google)
+    widget: list
+    collapsed: true
+    fields:
+    - name: q
+      label: Question
+      widget: string
+    - name: a
+      label: Answer
+      widget: text
+    summary: '{{fields.q}}'
+    required: false
 - name: legal
   label: Legal pages
   files:
@@ -1756,10 +1890,14 @@ collections:
     file: content/zh/site.yml
     fields:
     - name: name
-      label: Logo text
+      label: Brand name
       widget: string
+    - name: logo_text
+      label: Text beside the crest logo (leave empty to use the brand name)
+      widget: string
+      required: false
     - name: name_sub
-      label: Logo subtitle
+      label: Brand subtitle (used in page titles)
       widget: string
     - name: name_local
       label: Chinese brand name
@@ -1789,6 +1927,38 @@ collections:
       required: false
     - name: address
       label: Address
+      widget: string
+      required: false
+    - name: address_parts
+      label: Address for Google (structured)
+      widget: object
+      collapsed: true
+      fields:
+      - name: street
+        label: Street
+        widget: string
+      - name: city
+        label: City
+        widget: string
+      - name: region
+        label: State
+        widget: string
+      - name: postal_code
+        label: ZIP
+        widget: string
+      - name: country
+        label: Country code (e.g. US)
+        widget: string
+    - name: company_cn
+      label: China entity name
+      widget: string
+      required: false
+    - name: tax_id_cn
+      label: Unified social credit code
+      widget: string
+      required: false
+    - name: address_cn
+      label: China office address
       widget: string
       required: false
     - name: area_served
@@ -2556,6 +2726,10 @@ collections:
       - name: quote
         label: Quote
         widget: text
+      - name: link
+        label: Link to full story (optional)
+        widget: string
+        required: false
       summary: '{{fields.initials}} → {{fields.admitted_to}}'
     - name: testimonials_title
       label: Testimonials heading
@@ -3271,6 +3445,74 @@ collections:
     label: Highlight story
     widget: text
     required: false
+  - name: timeline_eyebrow
+    label: 'Timeline: small label'
+    widget: string
+    required: false
+  - name: timeline_title
+    label: 'Timeline: heading'
+    widget: string
+    required: false
+  - name: timeline
+    label: Timeline of past conferences
+    widget: list
+    collapsed: true
+    fields:
+    - name: date
+      label: Date (e.g. Jun 2026)
+      widget: string
+    - name: title
+      label: Event
+      widget: string
+    - name: place
+      label: Place
+      widget: string
+    summary: '{{fields.date}} {{fields.title}}'
+    required: false
+  - name: galleries_title
+    label: 'Photo galleries: heading'
+    widget: string
+    required: false
+  - name: galleries
+    label: Photo galleries of past programs
+    widget: list
+    collapsed: true
+    fields:
+    - name: title
+      label: Title
+      widget: string
+    - name: meta
+      label: Date & place
+      widget: string
+      required: false
+    - name: text
+      label: Short description
+      widget: text
+      required: false
+    - name: link
+      label: Link to story (optional)
+      widget: string
+      required: false
+    - name: link_text
+      label: Link text (optional)
+      widget: string
+      required: false
+    - name: photos
+      label: Photos (first one is shown large)
+      widget: list
+      collapsed: true
+      fields:
+      - name: image
+        label: Photo
+        widget: image
+        choose_url: true
+        required: false
+      - name: alt
+        label: Photo description
+        widget: string
+      summary: '{{fields.alt}}'
+    summary: '{{fields.title}}'
+    required: false
   - *id009
   sortable_fields:
   - order
@@ -3348,6 +3590,10 @@ collections:
   - name: summary
     label: Short summary (also used for Google)
     widget: text
+  - name: dek
+    label: Standfirst (one or two sentences under the title)
+    widget: text
+    required: false
   - name: image
     label: Cover image
     widget: image
@@ -3356,6 +3602,23 @@ collections:
   - name: image_alt
     label: Cover image description
     widget: string
+    required: false
+  - name: image_caption
+    label: Cover image caption
+    widget: string
+    required: false
+  - name: key_facts
+    label: Key facts strip (2–4 numbers)
+    widget: list
+    collapsed: true
+    fields:
+    - name: value
+      label: Number (e.g. 12)
+      widget: string
+    - name: label
+      label: Label
+      widget: string
+    summary: '{{fields.value}} {{fields.label}}'
     required: false
   - name: source
     label: Originally published on (e.g. WeChat, Xiaohongshu)
@@ -3369,6 +3632,23 @@ collections:
   - name: body
     label: Article
     widget: markdown
+  - name: faq_title
+    label: Q&A heading (optional)
+    widget: string
+    required: false
+  - name: faq
+    label: Q&A at the end of the article (also shown in Google)
+    widget: list
+    collapsed: true
+    fields:
+    - name: q
+      label: Question
+      widget: string
+    - name: a
+      label: Answer
+      widget: text
+    summary: '{{fields.q}}'
+    required: false
 - name: zh-legal
   label: 中文 Legal pages
   files:

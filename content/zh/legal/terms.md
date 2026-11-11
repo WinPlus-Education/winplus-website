@@ -34,4 +34,4 @@ updated: 2026-10-31
 
 ## 联系方式
 
-[email@winplus.org]，WinPlus Education & Technology Inc.，[地址]。
+[email@winplus.org]，WinPlus Education & Technology Inc.，Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA；中国主体：北京欧歌国际教育科技有限公司，北京市西城区展览馆路甲26号1号楼1-4内4层402室。

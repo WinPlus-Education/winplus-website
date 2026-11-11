@@ -1,0 +1,55 @@
+note: Placeholder content removed from the live Our Results page on 2026-11-11. Kept here for reference only; this folder is not published.
+en:
+  stories:
+  - initials: A.L.
+    admitted_to: Stanford
+    program: NASA Deep Space Research Program
+    quote: The research experience completely changed how I talked about myself in my application. [PLACEHOLDER QUOTE]
+  - initials: M.W.
+    admitted_to: Oxford
+    program: UK Admissions Counseling
+    quote: My WinPlus consultant knew exactly what Oxford was looking for. [PLACEHOLDER QUOTE]
+  - initials: J.C.
+    admitted_to: Columbia
+    program: Bloomberg FinTech Program + US Admissions
+    quote: I had a real project, a mentor letter, and a story. That made all the difference. [PLACEHOLDER QUOTE]
+  testimonials:
+  - quote: '[Parent testimonial placeholder — e.g., what changed for their child and the family''s experience working with WinPlus.]'
+    name: '[Parent of a Class of 20XX student]'
+    role: Parent
+  - quote: '[Alumni testimonial placeholder — e.g., how the program helped at university.]'
+    name: '[Name], [University], Class of [Year]'
+    role: Alumni
+  - quote: '[Parent testimonial placeholder.]'
+    name: '[Parent name]'
+    role: Parent
+  - quote: '[Alumni testimonial placeholder.]'
+    name: '[Name], [University]'
+    role: Alumni
+zh:
+  stories:
+  - initials: A.L.
+    admitted_to: 斯坦福大学
+    program: NASA 深空科研项目
+    quote: 科研经历彻底改变了我在申请中介绍自己的方式。[示例引言]
+  - initials: M.W.
+    admitted_to: 牛津大学
+    program: 英国升学规划
+    quote: 我的 WinPlus 顾问非常清楚牛津在寻找什么样的学生。[示例引言]
+  - initials: J.C.
+    admitted_to: 哥伦比亚大学
+    program: 彭博金融科技项目 + 美国升学规划
+    quote: 我有真实的项目、导师推荐信和属于自己的故事，这让一切都不一样了。[示例引言]
+  testimonials:
+  - quote: '[家长评价占位——例如孩子的变化，以及家庭与 WinPlus 合作的体验。]'
+    name: '[20XX 届学生家长]'
+    role: 家长
+  - quote: '[校友评价占位——例如项目如何帮助其在大学中发展。]'
+    name: '[姓名]，[大学]，[年份] 届'
+    role: 校友
+  - quote: '[家长评价占位。]'
+    name: '[家长姓名]'
+    role: 家长
+  - quote: '[校友评价占位。]'
+    name: '[姓名]，[大学]'
+    role: 校友

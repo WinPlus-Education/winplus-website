@@ -4,8 +4,8 @@ short_title: Summer & Winter Schools
 seo_title: "Summer & Winter Schools for High School Students | WinPlus"
 meta_description: "Summer and winter school programs for high school students on leading university campuses: academic courses, campus life, college visits and leadership."
 summary: From top-university classrooms to Silicon Valley, students build cross-cultural communication skills and a global perspective, taught by mentors from Harvard, MIT, Stanford and Silicon Valley.
-image: https://images.unsplash.com/photo-1583373834259-46cc92173cb7
-image_alt: University building beside a green lawn
+image: /images/uploads/events/2025-summer/hks-group.jpg
+image_alt: WinPlus summer program students and Cathy Guo at the Harvard Kennedy School
 facts:
   - { label: "Ages", value: "12–18 (middle & high school)" }
   - { label: "Formats", value: "US research camps · China study tours" }
@@ -24,7 +24,51 @@ deliverables:
   - A personalized US undergraduate admissions plan
   - Capstone project
 highlight: ""
+galleries_title: "Moments from past summer programs"
+galleries:
+  - title: "2026 Summer Program"
+    meta: "Boston & New York"
+    text: "Seminars at the Harvard Kennedy School, MIT AeroAstro and robotics labs, a visit to UN Headquarters and NYU Tisch."
+    photos:
+      - { image: /images/uploads/events/2026-summer/hks-discussion.jpg, alt: "Students in a seminar discussion at the Harvard Kennedy School" }
+      - { image: /images/uploads/events/2026-summer/space-flight-lecture.jpg, alt: "A mentor lecture on parabolic, suborbital and orbital research flights" }
+      - { image: /images/uploads/events/2026-summer/mit-robotics-lecture.jpg, alt: "A mentor presenting teleoperation and robotics research at MIT" }
+      - { image: /images/uploads/events/2026-summer/mit-aeroastro.jpg, alt: "Students with a mentor at MIT AeroAstro" }
+      - { image: /images/uploads/events/2026-summer/hks-forum.jpg, alt: "Students at the John F. Kennedy Jr. Forum, Harvard Kennedy School" }
+      - { image: /images/uploads/events/2026-summer/harvard-rotunda.jpg, alt: "Students in a Harvard rotunda" }
+      - { image: /images/uploads/events/2026-summer/un-headquarters.jpg, alt: "Students outside UN Headquarters in New York" }
+      - { image: /images/uploads/events/2026-summer/nyu-tisch.jpg, alt: "Students at NYU Tisch School of the Arts" }
+  - title: "2025 Summer Program"
+    meta: "Boston, New York & California"
+    text: "From the Harvard Kennedy School to Caltech and NVIDIA headquarters, with fireside chats with mentors and a visit to Wall Street."
+    photos:
+      - { image: /images/uploads/events/2025-summer/hks-group.jpg, alt: "Students and Cathy Guo at the John F. Kennedy School of Government" }
+      - { image: /images/uploads/events/2025-summer/fireside-chat.jpg, alt: "A fireside chat with mentors" }
+      - { image: /images/uploads/events/2025-summer/nvidia-hq.jpg, alt: "Students on a visit to NVIDIA headquarters" }
+      - { image: /images/uploads/events/2025-summer/caltech.jpg, alt: "Students at Caltech's Beckman Auditorium" }
+      - { image: /images/uploads/events/2025-summer/hks-handshake.jpg, alt: "Cathy Guo congratulating a student at the Harvard Kennedy School" }
+      - { image: /images/uploads/events/2025-summer/wall-street.jpg, alt: "Students at the Charging Bull on Wall Street" }
+      - { image: /images/uploads/events/2025-summer/statue-of-liberty.jpg, alt: "Students in front of the Statue of Liberty" }
+      - { image: /images/uploads/events/2025-summer/staircase.jpg, alt: "Students and Cathy Guo on a staircase at Harvard" }
+  - title: "2024 Summer Program"
+    meta: "Boston, New York, New Haven, Princeton & Washington, D.C."
+    text: "Classes at Harvard Business School, visits to Harvard, MIT, Yale and Princeton, the International Monetary Fund and the startup BrainCo."
+    photos:
+      - { image: /images/uploads/events/2024-summer/hbs-classroom.jpg, alt: "Students and mentors in a Harvard Business School classroom" }
+      - { image: /images/uploads/events/2024-summer/imf.jpg, alt: "Students at the International Monetary Fund" }
+      - { image: /images/uploads/events/2024-summer/brainco.jpg, alt: "Students at the startup BrainCo with prosthetic-hand kits" }
+      - { image: /images/uploads/events/2024-summer/harvard-talk.jpg, alt: "A mentor talk at Harvard" }
+      - { image: /images/uploads/events/2024-summer/mit-dome.jpg, alt: "Students in front of MIT's Great Dome" }
+      - { image: /images/uploads/events/2024-summer/yale.jpg, alt: "Students at Yale's Sterling Memorial Library" }
+      - { image: /images/uploads/events/2024-summer/princeton.jpg, alt: "Students on a campus tour at Princeton" }
+      - { image: /images/uploads/events/2024-summer/harvard-seas.jpg, alt: "Students outside the Harvard Science and Engineering Complex" }
+      - { image: /images/uploads/events/2024-summer/the-met.jpg, alt: "Students on the steps of the Metropolitan Museum of Art" }
+      - { image: /images/uploads/events/2024-summer/hks-steps.jpg, alt: "Students and Cathy Guo at the Harvard Kennedy School" }
+      - { image: /images/uploads/events/2024-summer/company-visit.jpg, alt: "Students on a company visit" }
+      - { image: /images/uploads/events/2024-summer/team-lunch.jpg, alt: "Students and mentors at a group lunch" }
 faq:
+  - q: What makes this different from a typical study tour?
+    a: "In under two weeks we bring together top mentors, campus and company visits and conversations with professionals from Meta, Google, Silicon Valley venture capital and more. Beyond career guidance, mentors share their own life and career paths, so students understand the route from subject, to major, to career. We also focus on soft skills: communication, kindness and inclusion, and students' well-being."
   - q: Are students supervised?
     a: "[Describe supervision, staff ratios and safety protocols.]"
   - q: When do applications open?

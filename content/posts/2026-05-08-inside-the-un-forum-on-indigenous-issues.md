@@ -21,7 +21,7 @@ Indigenous peoples make up about 6% of the world's population yet protect around
 
 This session's agenda was broad, with a core focus on **the holistic health of Indigenous peoples**. Participants stressed that Indigenous health is inseparable from land, water, language, culture and ecosystems, and that conflict and the climate crisis are making those links ever more fragile. Beyond health, the Forum examined climate threats, green jobs and the transition of traditional pastoralism, aiming to build comprehensive protection of Indigenous rights through institutional innovation and policy implementation.
 
-## <span class="h-num">01</span> Two global conversations on one day
+<p class="sec-num"><span>01</span></p>
 
 April 20 was not only the start of a high-level dialogue on Indigenous issues. It was also **UN Chinese Language Day**.
 
@@ -35,7 +35,7 @@ UN Headquarters marked the day with a series of events showcasing Chinese as one
 
 On the same historic day, **a global platform for Indigenous voices and an international celebration of Chinese culture** met at the United Nations: a multilingual, multicultural conversation. WinPlus students and teachers were in the room. Over the following days they watched the world listen to marginalized Indigenous voices, and began to understand what a truly international perspective means.
 
-## <span class="h-num">02</span> A track record of showing up
+<p class="sec-num"><span>02</span></p>
 
 Over the past two years, WinPlus students have taken part in many international meetings: UN climate conferences, a study program at international organizations in Europe, the UN Internet Governance Forum, the Commission on the Status of Women, and, in February 2026, the UN Asia-Pacific Forum on Sustainable Development (APFSD).
 
@@ -57,7 +57,7 @@ Cathy holds a Master in Public Policy from the Harvard Kennedy School, previousl
 
 <figure><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="Cathy Guo, in traditional Yao dress, and students at the rostrum of the UN General Assembly Hall" loading="lazy"><figcaption>Cathy Guo and students in the UN General Assembly Hall.</figcaption></figure>
 
-## <span class="h-num">03</span> An opening that set the tone
+<p class="sec-num"><span>03</span></p>
 
 The opening ceremony began unforgettably: a representative of the Indigenous cultures of North America's Northwest Coast, wearing a traditional woven cedar hat and holding a wooden rhythm instrument, walked the hall singing. In Indigenous cultures, a ceremonial song like this opens a space, welcomes those who arrive, and reconnects people with land, culture and memory.
 
@@ -65,7 +65,7 @@ In his opening address, Secretary-General Guterres called Indigenous peoples "gu
 
 <div class="callout-dark"><p class="big">Real respect isn't speaking for others.</p><p class="small">It means breaking down structural exclusion so Indigenous peoples are truly heard, deeply involved, and hold real decision-making power on every issue that shapes their lives and our shared future.</p></div>
 
-## <span class="h-num">04</span> A hall full of stories
+<p class="sec-num"><span>04</span></p>
 
 Indigenous representatives from around the world, in traditional dress, turned the General Assembly Hall into a striking global tableau: felt hats and embroidered robes from the Central Asian steppe, shawls and long tunics from South Asia, traditional garments from the Himalayas. Every pattern, color and ornament carries a people's history, environment, values and heritage.
 
@@ -96,7 +96,7 @@ In these sessions, students heard directly from Indigenous communities around th
 </div>
 <p class="fig-grid-cap">Side events on land and self-determination in Asia, and on health and traditional knowledge.</p>
 
-## <span class="h-num">05</span> What the students took away
+<p class="sec-num"><span>05</span></p>
 
 Teaching assistant Youran recorded her reflections during the Forum:
 
@@ -118,7 +118,7 @@ That took her beyond an abstract idea of "cultural preservation" to the heart of
 
 <figure><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="A WinPlus student in the General Assembly Hall" loading="lazy"></figure>
 
-## <span class="h-num">06</span> Why we bring students to the UN
+<p class="sec-num"><span>06</span></p>
 
 WinPlus keeps bringing students to United Nations meetings because of what we believe about education. In a globalized world, knowledge alone is not enough. Students need a **whole-person education**: not only subject knowledge, but critical thinking, cross-cultural understanding and the ability to take part in international dialogue. The soft skills they need (expression, listening and collaboration) are best built in real international settings.
 

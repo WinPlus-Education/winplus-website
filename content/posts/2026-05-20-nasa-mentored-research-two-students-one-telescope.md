@@ -35,7 +35,7 @@ Even less could they have imagined that those eight weeks would reshape their ap
 <div class="profile profile-mentor"><p class="role">Mentor</p><h3>Rachel</h3><p>BS, MS and PhD in Aerospace Engineering from MIT. Longtime scientist at NASA's Ames Research Center in Silicon Valley.</p></div>
 </div>
 
-## <span class="h-num">01</span> Seeing past the worry
+<p class="sec-num"><span>01</span></p>
 
 When the engineer and her parents first came to us, WinPlus co-founder Cathy Guo could feel the parents' anxiety.
 
@@ -49,15 +49,15 @@ The engineer had strong spatial imagination and making skills. She just needed a
 
 <figure><img src="/images/uploads/insights/nasa-research/student-3d-print.jpg" alt="A detailed 3D-printed engineering model designed by the engineer" loading="lazy"><figcaption>One of the engineer's 3D-printed engineering designs.</figcaption></figure>
 
-## <span class="h-num">02</span> A project built around two students
+<p class="sec-num"><span>02</span></p>
 
-WinPlus co-founder and research lead Cedric Pan then contacted mentor Rachel and booked a research assessment interview for the engineer.
+WinPlus co-founder and research lead Cedric Pan then contacted Rachel and booked a research assessment interview for the engineer.
 
 <div class="fig-grid fig-grid-2 fig-grid-tall">
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Mentor Rachel in an optics laboratory" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Mentor Rachel in cleanroom gear assembling flight hardware" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel in an optics laboratory" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel in cleanroom gear assembling flight hardware" loading="lazy"></figure>
 </div>
-<p class="fig-grid-cap">Mentor Rachel in the lab.</p>
+<p class="fig-grid-cap">Rachel in the lab.</p>
 
 In the online assessment, Rachel didn't open with her own research. She asked the engineer a simple question: "What do you most like to do?" The engineer answered: "I like designing things, and mechanical structures."
 
@@ -67,7 +67,7 @@ Rachel's eyes lit up. "You two should work together!" Instead of handing them an
 
 One student would be the team's aerospace engineer, responsible for the telescope itself. The other would be the planetary astronomer, responsible for the astrophysics. Like two closely linked departments inside NASA, each would own its part and make the other stronger. In that moment, both students' dream of space caught fire.
 
-## <span class="h-num">03</span> The engineer: from shy to confident
+<p class="sec-num"><span>03</span></p>
 
 The start wasn't easy for the engineer. Engineering formulas, optical design software and structural analysis tools looked like a foreign language to an 11th grader.
 
@@ -85,7 +85,7 @@ After eight weeks, the engineer delivered a professional-grade mechanical design
 
 This admissions season she was **admitted to the University of Michigan's mechanical engineering program**, along with mechanical engineering offers from UCLA, UIUC and more than ten US Top-30 universities. Looking back, the research and Rachel's letter were the strongest pillars of her application.
 
-## <span class="h-num">04</span> The astronomer: simpler is smarter
+<p class="sec-num"><span>04</span></p>
 
 In the same team, the astronomer went through a different transformation.
 
@@ -111,7 +111,7 @@ A few months later, **offers in astrophysics from Cambridge, Imperial College Lo
 
 <blockquote class="pull"><p>I used to think grades and test scores were what mattered most. Now I understand that what matters most is finding a direction that's truly your own. Taking a different path turned out to suit me better.</p><cite>The astronomer</cite></blockquote>
 
-## <span class="h-num">05</span> More than a research project
+<p class="sec-num"><span>05</span></p>
 
 WinPlus's online research and internship programs for summer 2026 are now open. Alongside the NASA research internship, we offer custom research paths in **artificial intelligence, computer science, data science, business and economics, biomedicine, gene therapy, mechanical engineering, electrical engineering, the humanities and arts, and film**.
 

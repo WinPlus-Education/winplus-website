@@ -71,7 +71,8 @@ ul, ol { padding-left: 1.2em; }
 
 /* ---------- Layout primitives ---------- */
 .container { width: 100%; max-width: calc(var(--container) + 2 * var(--gutter)); margin-inline: auto; padding-inline: max(var(--gutter), env(safe-area-inset-left, 0px)) max(var(--gutter), env(safe-area-inset-right, 0px)); }
-.container-text { max-width: calc(820px + 2 * var(--gutter)); }
+.container-text > * { max-width: 820px; }
+.container-text.center > * { margin-inline: auto; }
 .section { padding-block: var(--section); }
 .section:not([class*="s-"]) + .section:not([class*="s-"]) { padding-top: 0; }
 .section-tight { padding-block: calc(var(--section) * .55); }
@@ -135,7 +136,7 @@ a:hover .link-arrow span, .link-arrow:hover span { transform: translateX(4px); }
 .header-row { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: var(--header-h); }
 /* Brand lockup: antique-gold crest to the left of the name (Cinzel EN, serif CJK on the Chinese site) */
 .logo { display: inline-flex; flex-direction: row; align-items: center; gap: .7rem; text-decoration: none; line-height: 1; flex: none; color: inherit; }
-.logo-crest { display: block; width: auto; height: 52px; color: #b8935a; flex: none; }
+.logo-crest { display: block; width: auto; height: 50px; color: #b08d57; flex: none; }
 .logo-name { font-family: "Cinzel", var(--font-display); font-weight: 700; font-size: 1.45rem; letter-spacing: .22em; text-transform: uppercase; padding-top: .12em; }
 .logo-name-zh { font-family: "Noto Serif SC", "Songti SC", "STSong", serif; font-weight: 700; letter-spacing: .18em; text-transform: none; font-size: 1.5rem; padding-top: 0; }
 .footer-brand .logo-crest { height: 56px; }
@@ -1103,7 +1104,7 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .post-sum { color: var(--mute); font-size: .95rem; line-height: 1.6; margin: 0 0 .75rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .article-hero h1 { max-width: 20ch; }
 .article-section { padding-top: clamp(56px, 7vw, 104px); }
-.article-body { --col: 720px; --wide: 1080px; max-width: var(--col); margin-inline: auto; font-size: 1.0625rem; line-height: 1.8; }
+.article-body { max-width: none; font-size: 1.0625rem; line-height: 1.8; }
 .lang-zh .article-body { line-height: 1.95; }
 .article-body > p:first-child { font-family: var(--font-display); font-size: clamp(1.35rem, 1.15rem + .6vw, 1.65rem); line-height: 1.5; color: var(--ink); }
 .lang-zh .article-body > p:first-child { font-family: var(--font-body); font-size: 1.2rem; font-weight: 500; }
@@ -1117,7 +1118,7 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .article-body figure { margin: 2.75rem 0; }
 .article-body figure img, .article-body .fig-grid img { width: 100%; display: block; border-radius: var(--radius); }
 .article-body figcaption, .article-body .fig-grid-cap { font-size: .85rem; line-height: 1.55; color: var(--mute-2); margin-top: .75rem; }
-.article-body .fig-wide, .article-body .fig-grid { width: min(var(--wide), 100vw - 2 * var(--gutter)); margin-left: 50%; transform: translateX(-50%); }
+
 .fig-grid { display: grid; gap: clamp(10px, 1.2vw, 18px); margin: 2.75rem 0 0; }
 .fig-grid figure { margin: 0; }
 .fig-grid img { aspect-ratio: 4 / 3; object-fit: cover; height: 100%; }
@@ -1133,7 +1134,7 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .lang-zh .article-body blockquote.pull p { font-family: "Noto Serif SC", var(--font-display); font-size: clamp(1.25rem, 1.1rem + .6vw, 1.6rem); max-width: 24em; line-height: 1.6; }
 .article-body blockquote.pull cite { display: block; margin-top: 1.25rem; font-style: normal; font-size: var(--t-eyebrow); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
 /* key idea panel (dark) */
-.article-body .callout-dark { width: min(var(--wide), 100vw - 2 * var(--gutter)); margin: 3.25rem 0 3.25rem 50%; transform: translateX(-50%); padding: clamp(40px, 6vw, 80px) clamp(24px, 6vw, 96px); background: var(--ink); color: var(--white); text-align: center; border-radius: 0; }
+.article-body .callout-dark { margin: 3.25rem 0; padding: clamp(40px, 6vw, 80px) clamp(24px, 6vw, 96px); background: var(--ink); color: var(--white); text-align: center; border-radius: 0; }
 .article-body .callout-dark p { margin: 0 auto; }
 .article-body .callout-dark .big { font-family: var(--font-display); font-size: clamp(1.8rem, 1.3rem + 1.8vw, 2.9rem); line-height: 1.2; max-width: 22ch; }
 .lang-zh .article-body .callout-dark .big { font-family: "Noto Serif SC", var(--font-display); font-size: clamp(1.4rem, 1.2rem + 1vw, 2rem); }
@@ -1150,7 +1151,7 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .article-body .qa dd p:last-child { margin-bottom: 0; }
 .article-body .qa .who { font-weight: 600; color: var(--ink); }
 /* people / roles: borderless columns with a brass rule, like "What we did" */
-.article-body .profiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 48px); width: min(var(--wide), 100vw - 2 * var(--gutter)); margin: 3rem 0 3rem 50%; transform: translateX(-50%); }
+.article-body .profiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin: 3rem 0; }
 .article-body .profile { border-top: 1px solid var(--ink); padding-top: 1.25rem; }
 .article-body .profile .role { font-size: var(--t-eyebrow); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); margin: 0 0 .5rem; }
 .article-body .profile h3 { font-size: 1.5rem; margin: 0 0 .6rem; }
@@ -1176,7 +1177,6 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 @media (max-width: 760px) {
   .article-body .profiles { grid-template-columns: 1fr; }
   .fig-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .article-body .fig-wide, .article-body .fig-grid, .article-body .profiles, .article-body .callout-dark { width: 100%; margin-left: 0; transform: none; }
 }
 
 /* keep the wider crest lockup from pushing the header CTA off-screen on laptop widths */
@@ -1195,3 +1195,18 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .cta-band.has-image h2, .cta-band.has-image p { text-shadow: 0 1px 24px rgba(10, 18, 30, .5); }
 @keyframes cta-zoom { from { transform: scale(1.02); } to { transform: scale(1.12); } }
 @media (prefers-reduced-motion: reduce) { .cta-band.has-image .photo img { animation: none; } }
+
+/* article layout: same container and side card as program pages; side card hidden on small screens */
+.article-layout .article-body > :first-child { margin-top: 0; }
+@media (max-width: 1000px) { .article-layout { grid-template-columns: 1fr; } .article-layout .detail-side { display: none; } }
+@media (max-width: 1000px) and (min-width: 761px) { .article-body .profiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+/* article section marker (number only, as in the original articles) */
+.article-body .sec-num { display: flex; align-items: center; gap: 1.25rem; margin: 4rem 0 1.75rem; font-family: var(--font-display); font-size: clamp(2.4rem, 1.9rem + 1.6vw, 3.4rem); line-height: 1; color: var(--brass); }
+.article-body .sec-num::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+/* highlighted key message */
+.article-body .note { margin: 2.25rem 0; padding: 1.5rem 1.75rem; background: var(--ivory); border-left: 2px solid var(--brass); }
+.article-body .note p { margin: 0; font-family: var(--font-display); font-size: clamp(1.25rem, 1.1rem + .5vw, 1.5rem); line-height: 1.45; color: var(--ink); }
+.lang-zh .article-body .note p { font-family: "Noto Serif SC", var(--font-display); font-size: 1.15rem; line-height: 1.8; }
+.article-body blockquote.pull:not(:has(cite)) { padding-bottom: 2.5rem; }
+.article-body .callout-dark p.big { color: var(--white); }
+.article-body .callout-dark p.small { color: rgba(255, 255, 255, .72); }

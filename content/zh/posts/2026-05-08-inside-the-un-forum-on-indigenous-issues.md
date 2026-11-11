@@ -20,7 +20,7 @@ featured: false
 
 本届会议的议题覆盖广泛，核心聚焦**土著人民的整体健康**。会议强调，土著人民的健康与土地、水源、语言、文化和生态系统密不可分，在冲突与气候危机的冲击下，这种关联愈发脆弱。除健康议题外，会议还深入探讨了气候威胁、绿色就业及传统畜牧业转型，旨在通过制度创新与政策落实，构建全方位的土著权利保障体系。
 
-## <span class="h-num">01</span> 同一天，两场全球对话
+<p class="sec-num"><span>01</span></p>
 
 4月20日这一天，不仅是土著议题高层级国际对话的起点，也恰逢**联合国中文日**的庆祝。
 
@@ -34,7 +34,7 @@ featured: false
 
 在同一个历史性的日子里，**土著人民的全球对话平台与中华文化的国际展示**交汇在联合国，形成了一场多语言、多文化的全球对话。这天，欧歌学院的师生们也踏入了这个全球议题的现场。会议期间，她们见证了世界如何倾听被边缘化来自土著人民的声音，也在这一过程中，逐渐理解什么是真正的国际视野。
 
-## <span class="h-num">02</span> 一次次走进国际会议现场
+<p class="sec-num"><span>02</span></p>
 
 过去两年间，欧歌学院的学生们已经多次参与国际会议：从联合国气候变化大会，到欧洲国际组织和人文研学营；从联合国互联网治理大会，到联合国女性大会。今年2月刚刚结束的联合国亚太区可持续发展论坛（APFSD 2026）也有欧歌学子的身影。
 
@@ -56,7 +56,7 @@ featured: false
 
 <figure><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="郭老师与学生们在联合国大会厅讲台" loading="lazy"><figcaption>郭老师与学生们在纽约联合国大会厅（UN General Assembly Hall）。</figcaption></figure>
 
-## <span class="h-num">03</span> 别具特色的开幕式
+<p class="sec-num"><span>03</span></p>
 
 开幕式的开场别具特色：一位来自北美西北海岸原住民文化背景的代表，头戴以雪松编织而成的传统斗笠，手持木质节奏器具，绕场吟唱。在原住民文化中，这样有仪式感的歌声用于开启一个空间、迎接来者，并将人与土地、文化与记忆重新连接。
 
@@ -64,7 +64,7 @@ featured: false
 
 <div class="callout-dark"><p class="big">真正的尊重，不是单方面地"替他人发声"。</p><p class="small">而是要打破结构性排斥，让土著人民在每一个关乎自身命运与全球未来的议题上，都能被真正听见、深度参与并拥有实实在在的决定权。</p></div>
 
-## <span class="h-num">04</span> 大会厅里的全球图景
+<p class="sec-num"><span>04</span></p>
 
 来自全球各地的土著代表，身着各自民族或文化背景的传统服饰，构成了联合国大会厅中一幅极具张力的全球图景：中亚草原的毡帽与刺绣长袍、南亚地区的披肩与长衫、喜马拉雅文化圈的传统服装，多元文化在同一空间中交汇。每一种图案、配色、配饰与穿着方式背后，都蕴含着一个民族的历史记忆、自然环境、价值观念与文化传承。
 
@@ -94,7 +94,7 @@ featured: false
 <figure><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="关于世卫组织与土著人民合作框架的边会海报" loading="lazy"></figure>
 </div>
 
-## <span class="h-num">05</span> 学生们的收获
+<p class="sec-num"><span>05</span></p>
 
 助教悠然在会议期间记录了她的思考：
 
@@ -116,7 +116,7 @@ featured: false
 
 <figure><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="欧歌学子在联合国大会厅" loading="lazy"></figure>
 
-## <span class="h-num">06</span> 为什么我们带学生走进联合国
+<p class="sec-num"><span>06</span></p>
 
 欧歌学院持续组织学生参加联合国系列会议，来源于我们深信的教育理念：在全球化时代，仅仅掌握知识已经远远不够。学生需要的是**全人教育**：不仅要学习学科知识，更要培养批判性思维、跨文化理解能力、国际对话能力。他们需要发展的软实力：表达力、倾听力、协作力，往往在真实的国际场域中才能得到最有效的锻炼。
 

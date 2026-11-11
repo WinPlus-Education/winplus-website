@@ -26,7 +26,7 @@ At COP28 he presented his environmental project on coal gangue to government off
 <dl>
 <dt>Parent: When is the ideal time to start preparing?</dt>
 <dd><p><span class="who">Cedric Pan:</span> Grade 9 is an ideal starting point. The student only settled on his direction the summer before 12th grade, but because he had already built up many activities and experiences, and he executes well, he still reached a great result. Planning earlier, in 9th or 10th grade, makes the timeline much more comfortable.</p>
-<p><span class="who">Student:</span> I agree with Mr. Pan. If you get TOEFL and SAT done early and lock in your direction, by 11th grade you can focus on essays, and the pressure is much lower.</p></dd>
+<p><span class="who">Student:</span> I agree with Cedric. If you get TOEFL and SAT done early and lock in your direction, by 11th grade you can focus on essays, and the pressure is much lower.</p></dd>
 </dl>
 </div>
 
@@ -34,7 +34,7 @@ At COP28 he presented his environmental project on coal gangue to government off
 
 After COP28, Cathy Guo invited the student to join WinPlus's winter study tour on the US East Coast. More than a year later, it is still vivid for him. A dozen or so days felt like a whole semester. It was his first time in the US: from Boston south through New York and Philadelphia, and on to Pittsburgh and Washington, D.C., visiting more than ten top universities including Harvard, MIT, Yale, Brown and Penn, as well as tech companies, cultural institutions and UN Headquarters.
 
-"As soon as I landed in Boston and saw Ms. Guo and Mr. Pan, and all those schools I'd only heard of, I was blown away," the student recalls. "Especially walking between Harvard and Boston University for those few days, I felt a really strong university culture."
+"As soon as I landed in Boston and saw Cathy and Cedric, and all those schools I'd only heard of, I was blown away," the student recalls. "Especially walking between Harvard and Boston University for those few days, I felt a really strong university culture."
 
 Cathy remembers visiting Carnegie Mellon together: "It made a big impression. CMU is not only top in AI and engineering, its music school is among the best in the country too. Later, back at MIT, I noticed that many engineering students are excellent musicians as well."
 
@@ -54,9 +54,9 @@ Throughout the tour, she brought in more than thirty mentors and older students 
 <dt>Parent: We've already signed up for the study tour. Can you tell us more about it?</dt>
 <dd><p><span class="who">Cathy Guo:</span> When I designed the study tour, I brought all the best resources together to give students the best possible experience: in under two weeks, an extraordinarily rich experience that is hard to replicate. Beyond top mentors sharing their expertise and career guidance, what matters more is that professionals share their life and career stories, planting seeds of exploration early.</p>
 <p>Imagine a student, years later, suddenly realizing: "Oh, that older brother I met was an engineer at Meta or Google! He told me he started preparing to study abroad at 16, came to the US for college and grad school..." Understanding the full path from subject, to major, to career is essential. Knowing it is what lets students make good choices and plans.</p>
-<p>Mr. Pan and I both know this goes far beyond choosing high school subjects. We want students to broaden their view, not only to Asia but to the US and to under-resourced regions, and to develop balanced, grounded values.</p>
+<p>Cedric and I both know this goes far beyond choosing high school subjects. We want students to broaden their view, not only to Asia but to the US and to under-resourced regions, and to develop balanced, grounded values.</p>
 <p>That is what "global competency" means in our program. We bring a new idea to Chinese families: education isn't only technique, coursework and research. It is also soft skills: how you treat people, communicate well, and practice kindness and inclusion. These matter a great deal to me. We aim to support each child's whole development, beyond academic results or admissions outcomes, and to help them grow into healthy, happy people with good mental well-being.</p>
-<p>Students often come to me with worries they don't want to share with their parents: "Ms. Guo, I've been feeling down lately," or problems with friends or school pressure. I help them work through it bit by bit, starting from small things they can act on, until they rebuild a sense of achievement and confidence. I tell them that if they keep working and keep acting every day, they will reach a result they're happy with. As the student says, the outcome isn't the only thing that counts: if the process is good and you truly grow through it, that is enough.</p></dd>
+<p>Students often come to me with worries they don't want to share with their parents: "Cathy, I've been feeling down lately," or problems with friends or school pressure. I help them work through it bit by bit, starting from small things they can act on, until they rebuild a sense of achievement and confidence. I tell them that if they keep working and keep acting every day, they will reach a result they're happy with. As the student says, the outcome isn't the only thing that counts: if the process is good and you truly grow through it, that is enough.</p></dd>
 </dl>
 </div>
 
@@ -68,7 +68,7 @@ When the student decided to apply to the US, it was already the end of May in 11
 <li><div><strong>Raise test scores</strong><span>We matched him with experienced one-on-one TOEFL and SAT teachers. From late May to December he studied intensively and earned strong scores on both, a clear boost to his competitiveness.</span></div></li>
 <li><div><strong>Do research and publish</strong><span>He had worked on a Chinese Academy of Sciences project that had paused but could continue. Once environmental science was set as his major, we advised him to reconnect with the original professor (a remote sensing and GIS specialist) and helped him set research goals and plan the outreach.</span></div></li>
 <li><div><strong>Build out arts and service</strong><span>He curated a solo photography exhibition and a professional portfolio, submitted to photography magazines, and organized and played in charity concerts at Beijing Children's Hospital.</span></div></li>
-<li><div><strong>Write an honest, effective essay</strong><span>Two months of work with lead essay mentor Josh, a former Yale admissions officer, on a personal statement built around film photography.</span></div></li>
+<li><div><strong>Write an honest, effective essay</strong><span>Two months of work with Josh, our lead essay mentor and a former Yale admissions officer, on a personal statement built around film photography.</span></div></li>
 </ol>
 
 While choosing his topic and writing the paper, the student stayed in close contact with Cedric Pan. He sent drafts, and our team gave feedback together to sharpen them. He ultimately submitted and published the paper in an academic journal, completing the full research process. "Universities would rather see research a student reached out for and earned, even free resources, than a project that was bought," says Cedric. "A Chinese Academy of Sciences background like this is especially convincing."
@@ -109,11 +109,11 @@ The essay became the most moving part of his application. It captured his person
 <p class="qa-label">Q&amp;A · Writing the essay</p>
 <dl>
 <dt>Cathy Guo: In your essay you wrote that film photography is a process of constant failure and constant exposure. The results don't always turn out as you hope, but through it you unfolded your own experience of life and found your own philosophy. Where did the idea come from, how did you write it, and how did our team help? (For example, did your essay story, intended major and activity list line up?)</dt>
-<dd><p><span class="who">Student:</span> We started the main essay at the beginning of summer, before Early Decision. Throughout, Mr. Pan and Josh helped me sort out ideas, sparked my thinking, and pushed me to find how to say "who I am" more precisely in just 500 words.</p>
+<dd><p><span class="who">Student:</span> We started the main essay at the beginning of summer, before Early Decision. Throughout, Cedric and Josh helped me sort out ideas, sparked my thinking, and pushed me to find how to say "who I am" more precisely in just 500 words.</p>
 <p>I think the most important purpose of the essay is to be a window into your own thinking. Photography is a very important part of my life; I shoot almost every month, even every week. It looks ordinary, but it carries a lot of emotion and thought for me. The idea came from exactly that "most ordinary small thing."</p>
 <p>People often ask me: digital cameras are so advanced now, why do you still shoot film? I ask myself that too. I gradually realized that what draws me isn't the finished photo, but the unpredictability of shooting film: you never know if a shot worked until it's developed. That uncertainty fascinates me, and it taught me how to face failure.</p>
 <p>I started projecting that onto life more broadly. In three years of high school, there were many times I worked hard and didn't get the result I wanted. But like a failed negative, I was still willing to pick up the camera and keep shooting. I came to understand that failure doesn't erase the value of the process. If the process is real and the effort is total, it deserves recognition.</p>
-<p>With that core idea, Josh, Mr. Pan and I had many in-depth discussions, not only on how to bring the ideas into the essay, but on which details and moments could work as small things that reveal big ones: which photography experience to use, how to express emotion through rhythm, where to turn and reveal the theme. Every part was carefully refined.</p>
+<p>With that core idea, Josh, Cedric and I had many in-depth discussions, not only on how to bring the ideas into the essay, but on which details and moments could work as small things that reveal big ones: which photography experience to use, how to express emotion through rhythm, where to turn and reveal the theme. Every part was carefully refined.</p>
 <p>This essay was my deepest look at myself. It tells a story, and it also holds my understanding of failure, persistence and growth. The teachers' guidance and support let me turn those complex thoughts into words with real momentum.</p></dd>
 </dl>
 </div>

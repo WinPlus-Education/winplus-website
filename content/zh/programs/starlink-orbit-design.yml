@@ -1,45 +1,42 @@
 order: 9
-title: SpaceX 星链卫星轨道设计
-category: science-space
-org: MIT + NASA
-format: 科研项目
-seo_title: SpaceX 星链卫星轨道设计 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 研究星链等卫星星座，并在 NASA 戈达德与 MIT 背景的航空航天工程师指导下设计卫星轨道。
-summary: 研究星链等卫星星座，并在 NASA 戈达德与 MIT 背景的航空航天工程师指导下设计卫星轨道。
+title: 卫星星座与轨道设计
+industry: science-space
+type: research
+status: open
+mentor_id: hannah-tomio
+mentor_note: MIT 航天博士；拥有 NASA 戈达德与喷气推进实验室经验
+seo_title: 高中生卫星星座设计项目 | WinPlus 欧歌学院
+meta_description: 以星链为案例，用 NASA GMAT 软件设计卫星星座并模拟轨道，由拥有 NASA 戈达德经验的 MIT 航天博士指导。
+summary: 以星链为案例，设计卫星星座并用 NASA 软件模拟轨道，由拥有 NASA 戈达德经验的 MIT 航天博士指导。
 image: https://images.unsplash.com/photo-1465101162946-4377e57745c3
-image_alt: 夜空中的星辰与银河
-facts:
-- label: 形式
-  value: 科研项目
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 卫星星座正在重塑全球通信。学生将学习轨道力学与仿真工具，并为特定任务设计和分析卫星星座。
-activities:
-- 轨道力学基础
-- 卫星星座设计中的权衡
-- 使用 Python 模拟轨道
-- 分析覆盖范围、碰撞风险与太空碎片
-- 展示星座设计方案
-mentor: NASA 戈达德航天中心 / MIT 航空航天工程师
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 工程设计报告与仿真模型
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 需具备代数与三角函数基础；建议修过物理。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 夜空中的银河与繁星
+format: 线上 · 导师直播课
+length: 8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '如今数千颗卫星环绕地球连接世界。这些网络是如何设计的？学生将学习轨道高度、倾角、周期、覆盖与重访时间，并用 NASA 的 GMAT 软件为自选通信任务模拟轨道。
+
+
+  学生还将比较无线电与光学（激光）通信，了解关键部件并建立简化的链路预算，掌握航天产业通用的工程推理方法。'
+outcomes:
+- 包含星座架构的研究论文或设计作品集
+- GMAT 轨道仿真与网络示意图
+- 阐述设计理由的期末展示
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 轨道力学
+  text: 高度、倾角、周期、覆盖与重访时间。
+- phase: 第 3–4 周
+  title: 仿真
+  text: 用 NASA GMAT 进行轨道仿真；比较星座布局。
+- phase: 第 5–6 周
+  title: 通信
+  text: 无线电与光学链路；关键部件；简化链路预算。
+- phase: 第 7–8 周
+  title: 设计与展示
+  text: 需求、架构、仿真与设计理由。
+eligibility:
+- 9–12 年级
+- 对物理、航天或电子工程有浓厚兴趣
+- 熟悉代数与三角函数

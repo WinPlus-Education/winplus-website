@@ -1,74 +1,53 @@
-seo_title: "College Admissions Counseling & Education Consultancy | US, Ivy League, UK, Grad School | WinPlus"
-meta_description: "Expert college admissions counseling for US, UK, Canadian and Australian universities, graduate school and US high schools. One dedicated WinPlus consultant from school selection to essays, interviews and acceptance."
+seo_title: 'College Admissions Counseling: US, Ivy League & Grad | WinPlus'
+meta_description: Bespoke admissions counseling for US high school, college and graduate school, plus the UK, Canada and Australia, led by a US-based team of mentors.
 eyebrow: Admissions Counseling
-title: Expert guidance, from first step to acceptance letter
-intro: We don't just help students apply. We help them build the profile that earns acceptance, then guide every part of the application to the US, UK, Canada, Australia and beyond.
-image: https://images.unsplash.com/photo-1741699427799-3fbb70fce948
-image_alt: Students studying in a large university library
-
-services_title: Our admissions services
-services_intro: Choose the path that fits your goals. Every service is led by one dedicated consultant.
-
-diff_title: What makes WinPlus counseling different
-diff_intro: Most counseling starts in Grade 11 with essays. Ours starts with the student and builds a profile worth writing about.
-differentiators:
-  - title: The Eight Key Elements framework
-    text: A proven system, refined over years, that covers every academic and extracurricular dimension and turns scattered experiences into one convincing application story.
-  - title: Ivy League admissions officers
-    text: Former Ivy League admissions officers work alongside our mentors, so results come from a method, not from a single star consultant.
-  - title: One consultant, start to finish
-    text: The same consultant works with your family from the first session to the final decision, so nothing is lost in hand-offs.
-  - title: Counseling plus real experience
-    text: Because WinPlus also runs research, internship and enrichment programs, your consultant can build the experiences that make an application stand out, not just describe them.
-  - title: Transparent milestones
-    text: Families receive a written roadmap, regular progress updates and a clear checklist of what happens when.
-  - title: Mentor letters that carry weight
-    text: Students in our programs can earn recommendation letters from mentors at leading organizations, written by people who saw their work first-hand.
-
-process_title: How we work
-process_intro: A clear, six-stage process that starts with understanding the student and ends with a confident decision.
-process:
-  - title: Free strategy session
-    text: We meet the student and parents to understand goals, interests, academic record and target schools.
-    deliverable: Initial recommendations
-    when: Week 1
-  - title: Profile assessment
-    text: Your consultant reviews grades, testing, activities and interests, and benchmarks them against admitted students at target schools.
-    deliverable: Written profile assessment
-    when: Weeks 1–3
-  - title: Multi-year roadmap
-    text: A personalized plan covering courses, testing, research, internships, competitions and summers, with the narrative we want the application to tell.
-    deliverable: Roadmap & timeline
-    when: Month 1
-  - title: Build the profile
-    text: The student completes research, internship and enrichment programs while the consultant tracks progress and adjusts the plan each term.
-    deliverable: Term-by-term check-ins
-    when: Ongoing
-  - title: Applications
-    text: School list strategy, essay brainstorming and editing, activity lists, recommendation planning, interview coaching and application review.
-    deliverable: Complete, reviewed applications
-    when: Grade 11–12
-  - title: Decisions & beyond
-    text: We help compare offers, handle waitlists and appeals, and prepare the student for the transition to university.
-    deliverable: Decision support
-    when: Spring of Grade 12
-
-timeline_title: What happens when
-timeline:
-  - { grade: "Grade 9", focus: "Explore interests, choose rigorous courses, start a first research or skills program." }
-  - { grade: "Grade 10", focus: "Deepen one or two passions, complete a mentored research project, plan testing." }
-  - { grade: "Grade 11", focus: "Leadership and impact, standardized tests, summer programs, build the school list." }
-  - { grade: "Grade 12", focus: "Essays, applications, interviews, decisions and the transition to university." }
-
+title: Admissions counseling, built around one student.
+intro: 'From US high school to graduate school, and across the UK, Canada and Australia: a US-based team and mentors from top universities build a strategy around who you are and who you want to become.'
+image: /images/uploads/photos/yale-old-campus.webp
+image_alt: WinPlus students on Yale University's Old Campus
+programs_eyebrow: Our Programs
+programs_title: Six admissions programs, one standard of care
+programs_intro: Choose the path that fits your goals. Every program includes a dedicated mentor and the full WinPlus network.
+results_eyebrow: Our Results
+results_title: Where our students are admitted
+results_link_text: See all results
+faq_title: 'Admissions counseling: your questions, answered'
 faq:
-  - q: How much does admissions counseling cost?
-    a: "Packages depend on the student's grade, target countries and the level of support needed. [Add pricing guidance or invite families to book a free session.]"
-  - q: Can you help if my child is already in Grade 12?
-    a: Yes. We offer focused application support for seniors, covering school list strategy, essays, interviews and application review.
-  - q: Do you guarantee admission?
-    a: No ethical counselor can guarantee admission. We guarantee a thoughtful strategy, expert support and a student who presents their strongest, most authentic self.
-  - q: Do you work with students outside the US?
-    a: Yes. Many of our families are based in China, Singapore and elsewhere. We meet online and schedule around your time zone.
-
-cta: Book Your Free Strategy Session
+- q: When is the right time to start?
+  a: 'Earlier than most families think. For US college, the strongest profiles are built from Grade 9 or 10: course choices, research and leadership take time to become real accomplishments. For boarding school, start 12 to 18 months before the January deadline. For graduate school, start a year before deadlines to plan tests, recommenders and positioning. If you are already in Grade 11 or 12, we focus the plan on what can still move the needle: [one student started at the end of Grade 11 and earned 12 US offers and an $80,000 scholarship](insights/six-month-turnaround.html).'
+- q: My child's interests aren't clear yet and their activities are scattered. What should we do?
+  a: 'We start from the classes the student enjoys, the activities they keep coming back to and the questions they genuinely care about, then clarify a direction step by step through conversations, coursework and hands-on projects. Activities don''t all need to point to one major: academic exploration alongside service, the arts or sports can together show a student''s abilities, interests and values.'
+- q: Should we wait for strong TOEFL or SAT scores before starting to plan?
+  a: No. Testing and planning can move forward together. Tests, schoolwork, activities and application preparation all need to fit into one schedule, so we set priorities around the student's academic workload and application stage and leave time for each.
+- q: What does a typical year with WinPlus look like?
+  a: After a free strategy session, your mentor builds a multi-year roadmap and meets with the student regularly to adjust it each term. Research, internships and global programs are scheduled around school. In the application year the focus shifts to the school list, early-round strategy, essays and interviews, with deadlines tracked on one shared timeline.
+- q: Do you only work with students aiming for the Ivy League?
+  a: 'No. Many of our students target the Ivy League and US Top 30, but our goal is the right fit: a list that balances reach, target and likely schools, including liberal arts colleges, and the UK, Canada and Australia where they suit the student.'
+- q: Do you write essays for students?
+  a: Never. Students write their own essays. We help them find the story worth telling, then push the drafts through many rounds of questions and feedback. Admissions officers read thousands of essays; authenticity is the only strategy that works.
+- q: How do you help a student find the topic for their personal statement?
+  a: 'Through several rounds of interviews before anyone writes a word: which experiences shaped the student most, and which reflections best show their real values. Often the strongest topic is a small, everyday thing the student keeps returning to, told so it reveals something larger. Our lead essay mentor, a former Yale undergraduate admissions interviewer, then works with the student over many drafts on structure, rhythm and how the essay, intended major and activity list tell one consistent story.'
+- q: Can a student apply to the US and the UK at the same time?
+  a: 'Yes, and many of ours do. The systems reward different things: the US reads the whole person across 10 to 20 applications, while the UK allows five UCAS choices and judges subject depth through one personal statement, tests and interviews. We plan one profile that serves both and a timeline that never forces a trade-off.'
+- q: Do you guarantee admission?
+  a: No. No ethical counselor can. We commit to a rigorous strategy, expert feedback and a student who presents their strongest, most authentic self. Individual results vary.
+- q: We live outside the US. How does it work?
+  a: Most of our families are in mainland China, Hong Kong, Singapore and the US. Sessions run online and are scheduled across time zones, with in-person meetings in Boston and Beijing and during our campus immersions.
+- q: How much does it cost?
+  a: Programs are tailored to the student's grade, goals and the level of support needed, so we share pricing after the free strategy session. [Add pricing guidance if desired.]
+cta_title: Start with a free strategy session.
+cta_text: Meet a WinPlus mentor, discuss your goals and leave with clear next steps. No commitment required.
+cta: Book a Free Consultation
 cta_link: contact.html
+approach_eyebrow: Our Approach
+approach_title: We build the profile, then the application.
+approach_text: Most counseling starts in Grade 11 with essays. Ours starts with the student, often years earlier, and turns a plan into real accomplishments before a single essay is written.
+approach:
+- title: Profile before paperwork
+  text: We run our own research, internship, immersion and conference programs, so we build the experiences that make an application stand out instead of only describing them.
+- title: Insight from the ground
+  text: Our bilingual team lives and works in the US. Every cycle we track published policies and hear first-hand from current students and alumni interviewers.
+- title: Mentors who know the schools
+  text: Graduates and alumni interviewers of the most selective universities review school lists, essays and interviews, so feedback comes from people who have been inside.
+- title: One mentor, start to finish
+  text: 'From the first strategy session to the final decision: school list, early-round strategy, essays, interviews, waitlists and the move to campus.'

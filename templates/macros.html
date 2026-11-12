@@ -1,21 +1,25 @@
-{# ---------- Shared building blocks used by every page ---------- #}
+{# ==========================================================================
+   WinPlus module library. Every page is assembled only from these blocks,
+   so spacing, type and color stay consistent site-wide.
+   ========================================================================== #}
 
-{# Photo with a tidy fallback: if the image is missing or fails to load, a soft placeholder shows instead #}
-{% macro photo(src, alt="", cls="", w=1200, note="Photo", eager=false) -%}
+{# Image with responsive sources and a tidy fallback if the file is missing #}
+{% macro photo(src, alt="", cls="", w=1400, eager=false, sizes="100vw", note="Photo") -%}
 <figure class="photo {{ cls }}{% if not src %} is-empty{% endif %}">
-  {% if src %}<img src="{{ img(src, w) }}" alt="{{ alt }}" {% if not eager %}loading="lazy" {% endif %}decoding="async" onerror="this.parentNode.classList.add('is-empty')">{% endif %}
-  <span class="photo-ph" aria-hidden="true">[{{ note }}]</span>
+  {% if src %}{% set ss = srcset(src) %}<img src="{{ img(src, w) }}"{% if ss %} srcset="{{ ss }}" sizes="{{ sizes }}"{% endif %} alt="{{ alt }}" {% if eager %}fetchpriority="high" {% else %}loading="lazy" {% endif %}decoding="async" onerror="this.parentNode.classList.add('is-empty')">{% endif %}
+  <span class="photo-ph" aria-hidden="true">{{ note }}</span>
 </figure>
 {%- endmacro %}
 
-{% macro btn(text, link, style="gold", arrow=true) -%}
-{% if text %}<a class="btn btn-{{ style }}" href="{{ u(link) }}">{{ text }}{% if arrow %} <span class="arr" aria-hidden="true">→</span>{% endif %}</a>{% endif %}
+{% macro btn(text, link, style="primary", arrow=true, cls="") -%}
+{% if text %}<a class="btn btn-{{ style }} {{ cls }}" href="{{ u(link) }}">{{ text }}{% if arrow %} <span class="arr" aria-hidden="true">→</span>{% endif %}</a>{% endif %}
 {%- endmacro %}
 
-{% macro more(text, link) -%}
-<a class="more" href="{{ u(link) }}">{{ text }} <span aria-hidden="true">→</span></a>
+{% macro arrow(text, link) -%}
+<a class="link-arrow" href="{{ u(link) }}">{{ text }} <span aria-hidden="true">→</span></a>
 {%- endmacro %}
 
+{# M3 Section head #}
 {% macro head(eyebrow="", title="", intro="", center=false, h="h2") -%}
 <header class="section-head{% if center %} center{% endif %}">
   {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
@@ -33,144 +37,342 @@
   </ol>
 </nav>
 {% set items = [{"@type": "ListItem", "position": 1, "name": _("Home"), "item": site_url ~ "/" ~ lang.prefix}] %}
-{% for c in crumbs %}{% set _ = items.append({"@type": "ListItem", "position": loop.index + 1, "name": c[0], "item": site_url ~ "/" ~ lang.prefix ~ c[1]}) %}{% endfor %}
+{% for c in crumbs %}{% set _x = items.append({"@type": "ListItem", "position": loop.index + 1, "name": c[0], "item": site_url ~ "/" ~ lang.prefix ~ c[1]}) %}{% endfor %}
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items} | jsonld | safe }}</script>
 {%- endmacro %}
 
-{# FAQ accordion + FAQPage structured data (great for Google rich results and AI answers) #}
-{% macro faq(items, title=none, center=false, intro=none) -%}
-{% set title = title if title is not none else _("Frequently asked questions") %}
+{# M2 Page hero: full-bleed photo anchored right, gradient on the left for legible text #}
+{% macro page_hero(p, crumbs, actions="", meta=none, cls="") -%}
+<section class="page-hero{% if cls %} {{ cls }}{% endif %}">
+  {{ photo(p.image, p.image_alt, "ph-img", 2000, true) }}
+  <div class="container">
+    <div class="page-hero-copy">
+      {{ breadcrumbs(crumbs) }}
+      {% if p.eyebrow %}<p class="eyebrow">{{ p.eyebrow }}</p>{% endif %}
+      <h1>{{ p.title }}</h1>
+      {% if p.intro or p.summary %}<p class="lead">{{ p.intro or p.summary }}</p>{% endif %}
+      {% if meta %}<ul class="tagline-meta">{% for m in meta if m %}<li>{{ m }}</li>{% endfor %}</ul>{% endif %}
+      {% if actions %}<div class="btn-row">{{ actions }}</div>{% endif %}
+    </div>
+  </div>
+</section>
+{%- endmacro %}
+
+{# Plain page header (pages without a hero photo: forms, legal, articles) #}
+{% macro page_head(p, crumbs) -%}
+<section class="page-head">
+  <div class="container">
+    {{ breadcrumbs(crumbs) }}
+    {% if p.eyebrow %}<p class="eyebrow">{{ p.eyebrow }}</p>{% endif %}
+    <h1>{{ p.title }}</h1>
+    {% if p.intro %}<p class="lead">{{ p.intro }}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}
+
+{# Answer-first summary block (helps readers and AI search alike) #}
+{% macro intro(eyebrow, statement, text="", link_text="", link="") -%}
+<section class="section">
+  <div class="container split-intro">
+    <div>{% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}<p class="statement">{{ statement }}</p></div>
+    <div>{% if text %}<div class="lead">{{ text | md | safe }}</div>{% endif %}{% if link_text %}<p style="margin-top:2rem">{{ arrow(link_text, link) }}</p>{% endif %}</div>
+  </div>
+</section>
+{%- endmacro %}
+
+{# M17 Results & testimonials notice (legal requirement under every result) #}
+{% macro results_notice() -%}
+<p class="notice">{{ site.results_notice }} <a href="{{ u('disclaimer.html') }}">{{ _("Website Disclaimer") }}</a>.</p>
+{%- endmacro %}
+
+{# M4 Stat band #}
+{% macro stats(items, note="") -%}
+<dl class="stats">
+  {% for s in items %}<div{% if '[' in (s.number | string) %} class="is-placeholder"{% endif %}><dt>{{ s.label }}</dt><dd>{{ s.number }}</dd></div>{% endfor %}
+</dl>
+{% if note %}<p class="notice">{{ note }}</p>{% endif %}
+{%- endmacro %}
+
+{# Acceptance rate comparison: WinPlus vs overall #}
+{% macro rates(schools, limit=99) -%}
+<div class="rate-grid">
+  {% for sc in schools[:limit] %}
+  {% set g = sc.general_rate | num %}{% set w = sc.winplus_rate | num %}
+  {% set mx = [g or 0, w or 0, 1] | max %}
+  <div class="rate">
+    <h3 class="rate-name">{% if sc.logo %}<img src="{{ img(sc.logo, 160) }}" alt="" loading="lazy" decoding="async">{% endif %}<span>{{ sc.name }}</span></h3>
+    <div class="rate-row is-wp"><span>WinPlus</span><span class="rate-track"><span class="rate-bar" style="width:{{ ((w / mx * 100) if w else 60) | round(1) }}%"></span></span><span class="rate-val">{{ (w ~ '%') if w else '[X%]' }}</span></div>
+    <div class="rate-row"><span>{{ _("Overall") }}</span><span class="rate-track"><span class="rate-bar" style="width:{{ ((g / mx * 100) if g else 8) | round(1) }}%"></span></span><span class="rate-val">{{ (g ~ '%') if g else '[X%]' }}</span></div>
+  </div>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{# M5 Offer cards #}
+{% macro offer_cards(items, cols=4) -%}
+<div class="grid g-{{ cols }}">
+  {% for s in items %}
+  <a class="card offer-card reveal" href="{{ u(s.link) }}">
+    {{ photo(s.image, s.image_alt, "media ratio-45", 900, sizes="(max-width: 720px) 100vw, 25vw") }}
+    <div class="card-body">
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.text }}</p>
+      {% if s.outcomes %}<ul class="ticks">{% for o in s.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>{% endif %}
+      <span class="link-arrow">{{ s.link_text or _("Learn more") }} <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{# Differentiation pillars #}
+{% macro pillars(items) -%}
+<div class="pillars">
+  {% for p in items %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div>{% endfor %}
+</div>
+{%- endmacro %}
+
+{# Value blocks (3 across) #}
+{% macro values(items) -%}
+<div class="values">
+  {% for v in items %}<div class="value reveal"><h3>{{ v.title }}</h3><p>{{ v.text }}</p>{% if v.link %}<p style="margin-top:1rem">{{ arrow(v.link_text or _("Learn more"), v.link) }}</p>{% endif %}</div>{% endfor %}
+</div>
+{%- endmacro %}
+
+{# M7 Journey steps #}
+{% macro journey(steps, unit="") -%}
+<ol class="journey" style="--steps: {{ steps | length }}">
+  {% for st in steps %}
+  <li class="reveal{% if st.highlight %} is-highlight{% endif %}">
+    <span class="step-n">{% if unit %}<small>{{ unit }}</small>{% endif %}{{ "%02d" | format(loop.index) }}</span>
+    {% if st.label %}<span class="step-label">{{ st.label }}</span>{% endif %}
+    <h3>{{ st.title }}</h3>
+    <p>{{ st.text }}</p>
+    {% if st.links %}<div class="step-links">{% for l in st.links %}<a href="{{ u(l.link) }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{%- endmacro %}
+
+{# M8 Person card (collapsible full bio) #}
+{% macro person(p) -%}
+<article class="person reveal" id="{{ p.id }}">
+  {% if p.photo %}{{ photo(p.photo, p.name, "media", 700, sizes="(max-width: 820px) 50vw, 20vw") }}{% else %}<div class="avatar" aria-hidden="true">{{ p.initials or p.name[0] }}</div>{% endif %}
+  <h3>{{ p.name }}</h3>
+  <p class="role">{{ p.title }}</p>
+  <p class="edu">{{ p.education or "" }}</p>
+  {% if p.bio %}
+  <details>
+    <summary>{{ _("Full bio") }}</summary>
+    <div class="bio">{{ p.bio | md | safe }}</div>
+  </details>
+  {% else %}<span></span>{% endif %}
+</article>
+{%- endmacro %}
+
+{% macro people(list, cols=4) -%}
+<div class="people" style="--cols: {{ cols }}">{% for p in list %}{{ person(p) }}{% endfor %}</div>
+{%- endmacro %}
+
+{# Person structured data for named experts (E-E-A-T for search and AI) #}
+{% macro people_schema(list) -%}
+{% set arr = [] %}
+{% for p in list %}{% set _x = arr.append({"@type": "Person", "name": p.name, "jobTitle": p.title, "description": p.education, "worksFor": {"@id": site_url ~ "/#organization"}}) %}{% endfor %}
+{% if arr %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@graph": arr} | jsonld | safe }}</script>{% endif %}
+{%- endmacro %}
+
+{# M9 Logo marquee #}
+{% macro marquee(label, items, note='', inline=false) -%}
+<{{ "div" if inline else "section" }} class="marquee{% if inline %} is-inline{% endif %}" aria-label="{{ label }}">
+  <p class="marquee-label">{{ label }}</p>
+  <div class="marquee-viewport">
+    <ul class="marquee-track">
+      {% for p in items %}<li>{% if p.logo %}<img src="{{ img(p.logo, 300) }}" alt="{{ p.name }}" loading="lazy" decoding="async">{% else %}<span class="wordmark">{{ p.name }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </div>
+  {% if note %}<p class="{% if not inline %}container {% endif %}marquee-note">{{ note }}</p>{% endif %}
+</{{ "div" if inline else "section" }}>
+{%- endmacro %}
+
+{# M10 Case study #}
+{% macro case_study(c, reverse=false) -%}
+<article class="case reveal{% if reverse %} is-reverse{% endif %}{% if not c.image %} no-media{% endif %}">
+  {% if c.image %}{{ photo(c.image, c.image_alt, "case-media", 1200, sizes="(max-width: 900px) 100vw, 45vw") }}{% endif %}
+  <div class="case-body">
+    <span class="kicker">{{ c.tag }}</span>
+    <h3>{{ c.title }}</h3>
+    <dl class="case-facts">
+      <div><dt>{{ _("Starting point") }}</dt><dd>{{ c.start }}</dd></div>
+      <div><dt>{{ _("Our strategy") }}</dt><dd>{{ c.strategy }}</dd></div>
+      <div><dt>{{ _("What changed") }}</dt><dd>{{ c.change }}</dd></div>
+    </dl>
+    <p class="case-outcome">{{ c.outcome }}</p>
+  </div>
+</article>
+{%- endmacro %}
+
+{# Success story card: outcome first, the full journey on demand (no divider lines) #}
+{% macro case_card(c, n=1) -%}
+<article class="story reveal">
+  <header class="story-head">
+    <span class="story-tag">{{ c.tag }}</span>
+    <span class="story-num" aria-hidden="true">{{ "%02d" | format(n) }}</span>
+  </header>
+  <h3>{{ c.title }}</h3>
+  <div class="story-result">
+    <p class="story-label">{{ _("The result") }}</p>
+    <p class="story-outcome">{{ c.outcome }}</p>
+  </div>
+  <details class="story-more">
+    <summary><span>{{ _("Read the story") }}</span></summary>
+    <dl>
+      <dt>{{ _("Starting point") }}</dt><dd>{{ c.start }}</dd>
+      <dt>{{ _("Our strategy") }}</dt><dd>{{ c.strategy }}</dd>
+      <dt>{{ _("What changed") }}</dt><dd>{{ c.change }}</dd>
+    </dl>
+  </details>
+</article>
+{%- endmacro %}
+
+{# Story / article card: same markup and look as the event cards (ev-card) #}
+{% macro info_card(title, link, image, image_alt="", chip="", meta=[], summary="", more="", attrs="", pos="") -%}
+<article class="ev-card reveal"{% if attrs %} {{ attrs | safe }}{% endif %}>
+  <div class="media"{% if pos %} style="--pos: {{ pos }}"{% endif %}>
+    {{ photo(image, image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+    {% if chip %}<span class="ev-chip">{{ chip }}</span>{% endif %}
+  </div>
+  <div class="card-body">
+    {% set meta = meta | select | list %}{% if meta %}<p class="ev-meta">{% for x in meta %}<span>{{ x }}</span>{% endfor %}</p>{% endif %}
+    <h3>{% if link %}<a class="ev-link" href="{{ u(link) }}">{{ title }}</a>{% else %}{{ title }}{% endif %}</h3>
+    {% if summary %}<p class="ev-sum">{{ summary }}</p>{% endif %}
+    {% if link %}<div class="ev-foot"><span class="ev-more">{{ more or _("Read the story") }} <span aria-hidden="true">→</span></span></div>{% endif %}
+  </div>
+</article>
+{%- endmacro %}
+{% macro story_card(s) -%}{{ info_card(s.title, s.link, s.image, s.image_alt, s.tag, [], s.text, _("Read the story"), pos=s.image_position) }}{%- endmacro %}
+{% macro post_card(p, attrs="") -%}{{ info_card(p.title, p.url, p.image, p.image_alt or p.title, "", [p.date | date_fmt("long")], p.summary, _("Read article"), attrs) }}{%- endmacro %}
+
+{# M10 Testimonial carousel (scroll-snap; arrow buttons added by JS) #}
+{% macro quotes(items, id="quotes") -%}
+<div class="quotes" id="{{ id }}" tabindex="0" aria-label="{{ _('Testimonials') }}">
+  {% for t in items %}
+  <figure class="quote">
+    <blockquote>{{ t.quote }}</blockquote>
+    <figcaption><strong>{{ t.name }}</strong>{{ t.role }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{# M11 FAQ accordion + FAQPage structured data #}
+{% macro faq(items, title=none, intro=none, schema=true, eyebrow=none) -%}
 {% if items %}
 <div class="faq">
   <div class="faq-aside">
-    <p class="eyebrow">{{ _("FAQ") }}</p>
-    {% if title %}<h2 class="faq-title">{{ title }}</h2>{% endif %}
-    <p class="faq-intro">{{ intro or _("Quick answers to the questions families ask us most.") }}</p>
-    <div class="faq-help">
-      <strong>{{ _("Still have questions?") }}</strong>
-      <a class="more" href="{{ u('contact.html') }}">{{ _("Talk to a consultant") }} <span aria-hidden="true">→</span></a>
-    </div>
+    <p class="eyebrow">{{ eyebrow or _("FAQ") }}</p>
+    <h2>{{ title or _("Frequently asked questions") }}</h2>
+    <p class="lead">{{ intro or _("Quick answers to the questions families ask us most.") }}</p>
+    {{ arrow(_("Talk to a consultant"), "contact.html") }}
   </div>
   <div class="faq-list">
     {% for f in items %}
-    <details class="faq-item"{% if loop.first %} open{% endif %}>
-      <summary><span class="faq-n" aria-hidden="true">{{ "%02d" | format(loop.index) }}</span><span class="faq-q">{{ f.q }}</span></summary>
+    <details class="faq-item">
+      <summary>{{ f.q }}</summary>
       <div class="faq-a">{{ f.a | md | safe }}</div>
     </details>
     {% endfor %}
   </div>
 </div>
+{% if schema %}
 {% set qa = [] %}
-{% for f in items %}{% if '[' not in f.a %}{% set _ = qa.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endif %}{% endfor %}
+{% for f in items %}{% if '[' not in f.a %}{% set _x = qa.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endif %}{% endfor %}
 {% if qa %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa} | jsonld | safe }}</script>{% endif %}
+{% endif %}
 {% endif %}
 {%- endmacro %}
 
-{% macro ld(obj) -%}
-<script type="application/ld+json">{{ obj | jsonld | safe }}</script>
-{%- endmacro %}
-
-{# Rolling logo strip #}
-{% macro marquee(label, items, note='') -%}
-<section class="marquee" aria-label="{{ label }}">
-  <div class="wrap marquee-row">
-    <p class="marquee-label">{{ label }}</p>
-    <div class="marquee-viewport">
-      <ul class="marquee-track">
-        {% for p in items %}
-        <li>{% if p.logo %}<img src="{{ img(p.logo, 300) }}" alt="{{ p.name }}" loading="lazy">{% else %}<span class="wordmark">{{ p.name }}</span>{% endif %}</li>
-        {% endfor %}
-      </ul>
-    </div>
+{# M12 Call to action band #}
+{% macro cta_band(title, text, button, link, image="", secondary="", secondary_link="") -%}
+{# Background: the image passed in, otherwise the current page's own hero image #}
+{% set bg = image or ((item.image if item is defined and item else "") or (page.image if page is defined and page else "")) %}
+<section class="cta-band{% if bg %} has-image{% endif %}">
+  {% if bg %}{{ photo(bg, "", "cta-bg", 2000) }}{% endif %}
+  <div class="container">
+    <h2>{{ title }}</h2>
+    {% if text %}<p>{{ text }}</p>{% endif %}
+    <div class="btn-row">{{ btn(button, link, "light") }}{% if secondary %}{{ btn(secondary, secondary_link, "ghost", false) }}{% endif %}</div>
   </div>
-  {% if note %}<p class="wrap marquee-note">{{ note }}</p>{% endif %}
 </section>
 {%- endmacro %}
 
-{% macro stats(items, cls="") -%}
-<dl class="stats {{ cls }}">
-  {% for s in items %}
-  <div class="stat"><dt>{{ s.label }}</dt><dd>{{ s.number }}</dd></div>
-  {% endfor %}
-</dl>
+{# Program status label #}
+{% macro status_badge(status, inline=false) -%}
+{% set labels = {"open": _("Open for applications"), "closed": _("Applications closed"), "past": _("Past program")} %}
+<span class="badge is-{{ status or 'closed' }}{% if inline %} badge-inline{% endif %}">{{ labels[status or 'closed'] }}</span>
 {%- endmacro %}
 
-{% macro event_card(e) -%}
-<article class="card event-card" data-date="{{ e.date.isoformat() if e.date else '' }}">
-  <a class="event-link" href="{{ u(e.url) }}">
-    <div class="event-top">
-      <time class="datebadge" datetime="{{ e.date.isoformat() if e.date else '' }}">
-        <span class="db-m">{{ e.date | date_fmt('mon') }}</span><span class="db-d">{{ e.date | date_fmt('day') }}</span><span class="db-y">{{ e.date | date_fmt('year') }}</span>
-      </time>
-      <div>
-        <span class="tag">{{ e.type }}</span>
-        <h3>{{ e.title }}</h3>
-        <p class="meta">{{ e.time_label }} · {{ e.location }}</p>
-      </div>
-    </div>
-    <p>{{ e.summary }}</p>
-    <span class="more">{{ _("Register") }} <span aria-hidden="true">→</span></span>
-  </a>
-</article>
-{%- endmacro %}
-
+{# M13 Program card: tags sit right under the image #}
 {% macro program_card(p) -%}
-<a class="card program-card" href="{{ u(p.url) }}">
-  {{ photo(p.image, p.image_alt, "ratio-wide", 700) }}
+{% set ind = industries[p.industry] if p.industry in industries else p.industry %}
+<a class="card program-card reveal" href="{{ u(p.url) }}" data-filter-item data-industry="{{ p.industry }}" data-type="{{ p.type }}" data-status="{{ p.status }}">
+  <div class="media" style="position:relative">
+    {{ status_badge(p.status) }}
+    {{ photo(p.image, p.image_alt, "ratio-32", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+  </div>
+  <ul class="tags"><li class="tag">{{ ind }}</li><li class="tag tag-type">{{ _("Research") if p.type == "research" else _("Internship") }}</li></ul>
   <div class="card-body">
-    <p class="kicker">{{ p.org }}</p>
     <h3>{{ p.title }}</h3>
     <p>{{ p.summary }}</p>
-    <div class="card-foot"><span class="tag tag-quiet">{{ p.format }}</span><span class="more">{{ _("Program details") }} <span aria-hidden="true">→</span></span></div>
+    {% set m = people_by_id.get(p.mentor_id) %}
+    {% if m and not m.name.startswith("[") %}<p class="mentor-line">{{ _("Mentor") }}: {{ m.name }}{% if m.org %} | {{ m.org }}{% endif %}</p>{% elif p.mentor_note %}<p class="mentor-line">{{ _("Mentor") }}: {{ p.mentor_note }}</p>{% endif %}
+    <span class="link-arrow">{{ _("View program") }} <span aria-hidden="true">→</span></span>
   </div>
 </a>
 {%- endmacro %}
 
-{% macro quote_card(t) -%}
-<figure class="card quote-card">
-  <blockquote>{{ t.quote }}</blockquote>
-  <figcaption><strong>{{ t.name }}</strong>{% if t.role %}<span class="tag tag-quiet">{{ t.role }}</span>{% endif %}</figcaption>
-</figure>
-{%- endmacro %}
-
-{% macro cta_band(title, text, button, link) -%}
-<section class="cta-band">
-  <div class="wrap cta-inner">
-    <div>
-      <h2>{{ title }}</h2>
-      {% if text %}<p>{{ text }}</p>{% endif %}
-    </div>
-    {{ btn(button, link) }}
+{# M14 Event card #}
+{# Event card: one design for upcoming and past events #}
+{% macro event_card(e) -%}
+{% set when = (e.card_date or e.time_label or (e.date | date_fmt('long'))) if not e.is_past else (e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year')))) %}
+<article class="ev-card reveal{% if e.is_past %} is-past{% endif %}">
+  <div class="media">
+    {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+    {% if e.type %}<span class="ev-chip">{{ e.type }}</span>{% endif %}
   </div>
-</section>
-{%- endmacro %}
-
-{% macro person(p, size="") -%}
-<article class="person {{ size }}">
-  {% if p.photo %}{{ photo(p.photo, p.name, "avatar-photo", 400) }}{% else %}<span class="avatar" aria-hidden="true">{{ (p.name or p.org or "?")[0] if (p.name and p.name[0] != '[') else "·" }}</span>{% endif %}
-  <div>
-    <h3>{{ p.name }}</h3>
-    <p class="kicker">{{ p.role }}</p>
-    {% if p.bio %}<p class="bio">{{ p.bio }}</p>{% endif %}
-    {% if p.linkedin %}<a class="more" href="{{ p.linkedin }}">LinkedIn <span aria-hidden="true">→</span></a>{% endif %}
+  <div class="card-body">
+    <p class="ev-meta"><span>{{ when }}</span><span>{{ e.city or e.location }}</span></p>
+    <h3><a class="ev-link" href="{{ u(e.url) }}">{{ e.card_title or e.title }}</a></h3>
+    <p class="ev-sum">{{ e.summary }}</p>
+    <div class="ev-foot">
+      {% if e.is_past %}<span class="ev-more">{{ _("See the story") }} <span aria-hidden="true">→</span></span>
+      {% elif e.no_inquire %}<span class="ev-more">{{ _("View details") }} <span aria-hidden="true">→</span></span>
+      {% else %}<span class="ev-more">{{ _("View program") }} <span aria-hidden="true">→</span></span><a class="ev-inquire" href="{{ u(e.inquire_link or ('contact.html?interest=' ~ (_('Global Experiences') | urlencode) ~ '&program=' ~ (e.title | urlencode))) }}">{{ _("Inquire") }}</a>{% endif %}
+    </div>
   </div>
 </article>
 {%- endmacro %}
 
-{# Standard header for inner pages: breadcrumbs, title, intro and an optional photo #}
-{% macro page_hero(p, crumbs, extra="") -%}
-<section class="page-hero{% if p.image %} has-photo{% endif %}">
-  <div class="wrap">
-    {{ breadcrumbs(crumbs) }}
-    <div class="page-hero-grid">
-      <div class="page-hero-copy">
-        {% if p.eyebrow %}<p class="eyebrow">{{ p.eyebrow }}</p>{% endif %}
-        <h1>{{ p.title }}</h1>
-        {% if p.intro or p.summary %}<p class="lead">{{ p.intro or p.summary }}</p>{% endif %}
-        {{ extra }}
-      </div>
-      {% if p.image %}{{ photo(p.image, p.image_alt, "page-hero-photo", 1200, "Photo", true) }}{% endif %}
-    </div>
-  </div>
-</section>
+{# Kept for templates that still call it #}
+{% macro past_event_card(e) -%}{{ event_card(e) }}{%- endmacro %}
+
+{# M15 Gallery (opens in lightbox) #}
+{% macro gallery(items) -%}
+{% if items %}
+<div class="gallery" data-gallery>
+  {% for g in items %}<a href="{{ img(g.image, 2000) }}" data-caption="{{ g.caption or '' }}">{{ photo(g.image, g.caption or g.alt or '', "", 1000, sizes="(max-width: 720px) 50vw, 33vw") }}</a>{% endfor %}
+</div>
+{% endif %}
+{%- endmacro %}
+
+{# School logo cards (admissions wall, featured outcomes). items: dicts with name/logo/note, or plain names #}
+{% macro school_cards(items, cls="") -%}
+<ul class="wall {{ cls }}">
+  {% for sc in items %}{% set name = sc.name if sc.name is defined else sc %}{% set logo = (sc.logo if sc.logo is defined else "") or school_logos.get(name, "") %}
+  <li class="reveal">{% if logo %}<img src="{{ img(logo, 240) }}" alt="" loading="lazy" decoding="async">{% else %}<span class="wall-mono" aria-hidden="true">{{ (name | replace("University of ", "") | replace("The ", ""))[0] }}</span>{% endif %}<span>{{ (sc.label if sc.label is defined and sc.label else school_names.get(name, name)) }}</span></li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro ld(obj) -%}
+<script type="application/ld+json">{{ obj | jsonld | safe }}</script>
 {%- endmacro %}

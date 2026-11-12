@@ -1,112 +1,182 @@
-# Global site settings — header, menu, footer, contact info, social media, SEO.
+# Global site settings: header, menu, footer, contact info, social media, consent text, SEO.
 name: WinPlus
 name_sub: EDUCATION
-company_legal: WinPlus Education & Technology Inc.
+company_legal: WinPlus Education and Technology Inc.
 name_local: 欧歌学院
-tagline: Global Talent Development Platform
+tagline: Bespoke pathways to the world's top universities
 
 # SEO: the site's real address. Change to https://www.winplus.org (or your domain) once the domain is connected.
 site_url: https://winplus-education.netlify.app
-default_image: https://images.unsplash.com/photo-1741637335289-c99652d3155f
-meta_description: "WinPlus Education is an education consultancy for high school students: college admissions counseling for the US, UK, Canada and Australia, Ivy League admissions strategy, mentor-led research and internships with mentors from NASA, Meta and MIT, and global programs like UN conferences."
-# Search keywords (used by Baidu/Bing and as hints for AI search). Separate with commas.
-keywords: "college admissions counseling, college admissions consultant, education consultancy, education consultant, US college admissions, Ivy League admissions consulting, Ivy League schools, top 30 universities, UK university admissions, Oxbridge admissions, graduate school admissions, boarding school admissions, high school research programs, summer programs for high school students, international students US admissions"
+default_image: /images/uploads/photos/yale-old-campus.webp
+meta_description: "WinPlus is a boutique, US-based education consultancy in Harvard Square. Mentors from Harvard, MIT, Yale and Stanford guide students to top universities through bespoke admissions counseling, research and internships, campus immersion and global conferences."
 # Search engine ownership codes. Paste only the code (the content="..." value) from Google Search Console, Bing Webmaster Tools or Baidu Ziyuan.
 google_site_verification: ""
 bing_site_verification: ""
 baidu_site_verification: ""
-founded: "[YEAR]"
-address: "[Street address, City, State ZIP]"
-area_served: ["United States", "China", "Singapore", "Canada", "United Kingdom", "Australia"]
+# Google Analytics 4 measurement ID (e.g. G-XXXXXXX). Loads only after a visitor accepts analytics cookies.
+analytics_ga4_id: ""
+founded: "2020"
+area_served: ["United States", "China", "Hong Kong", "Singapore", "Canada", "United Kingdom", "Australia", "United Arab Emirates"]
+knows_about: ["College admissions counseling", "US college admissions", "Ivy League admissions", "Graduate school admissions", "US boarding and high school admissions", "UK university admissions", "Canadian university admissions", "Australian university admissions", "High school research programs", "High school internships", "Summer programs at US universities", "Global competency education", "International youth conferences", "留学咨询", "美国本科申请", "藤校申请", "研究生申请", "美高申请", "背景提升", "科研项目", "暑期研学"]
 
-email: "[email@winplus.org]"
-phone: "[+1 000 000 0000]"
-wechat_id: "[WeChat ID]"
-wechat_qr: ""
+offices:
+  - { label: "US headquarters", display: "Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138", street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
+  - { label: "China headquarters", display: "Beijing", street: "Building 1, 26A Zhanlanguan Road, Xicheng District", city: "Beijing", region: "Beijing", country: "CN" }
+
+email: "info@winplus.org"
+wechat_id: ""
+wechat_qr: /images/uploads/wechat-qr.png
 
 cta_text: Book a Free Consultation
 cta_link: contact.html
 
-# Main menu. Items with "children" show a dropdown.
+# Main menu. Clicking a parent goes to its overview page; children show in the dropdown.
 nav:
   - label: Admissions Counseling
     link: admissions.html
     children:
-      - { label: Overview, link: admissions.html }
       - { label: US College Admissions, link: admissions/us-college.html }
-      - { label: Ivy League Admissions, link: admissions/ivy-league.html }
-      - { label: "UK, Canada & Australia", link: admissions/uk-canada-australia.html }
-      - { label: "Graduate School: US", link: admissions/grad-school-us.html }
-      - { label: "Graduate School: UK, Canada & Australia", link: admissions/grad-school-international.html }
+      - { label: US Graduate School Admissions, link: admissions/us-graduate.html }
       - { label: US High School Admissions, link: admissions/us-high-school.html }
-      - { label: How We Work, link: how-it-works.html }
+      - { label: UK Admissions, link: admissions/uk.html }
+      - { label: Canada Admissions, link: admissions/canada.html }
+      - { label: Australia Admissions, link: admissions/australia.html }
   - label: Research & Internships
     link: research.html
+    match: research/
     children:
-      - { label: All Programs, link: research.html }
-      - { label: What Students Receive, link: "research.html#deliverables" }
-      - { label: AI & Technology, link: "research.html#ai-technology" }
-      - { label: Finance & Business, link: "research.html#finance-business" }
-      - { label: Science & Space, link: "research.html#science-space" }
-      - { label: Arts & Media, link: "research.html#arts-media" }
-  - label: Experience Enrichment
-    link: enrichment.html
+      - { label: AI & Technology, link: "research.html?industry=ai-technology#programs" }
+      - { label: Arts & Media, link: "research.html?industry=arts-media#programs" }
+      - { label: Business & Finance, link: "research.html?industry=business-finance#programs" }
+      - { label: Policy & Global Affairs, link: "research.html?industry=policy-global-affairs#programs" }
+      - { label: Science & Space, link: "research.html?industry=science-space#programs" }
+  - label: Global Experiences
+    link: experiences.html
     children:
-      - { label: Overview, link: enrichment.html }
-      - { label: UN Conferences, link: enrichment/un-conferences.html }
-      - { label: Summer & Winter Schools, link: enrichment/summer-winter-schools.html }
-      - { label: Upcoming Events, link: events.html }
+      - { label: Campus Immersion, link: experiences/campus-immersion.html }
+      - { label: Global Leadership Conferences, link: experiences/global-conferences.html }
+  - label: Events
+    link: events.html
+    children:
+      - { label: Upcoming Events, link: "events.html#upcoming" }
+      - { label: Past Events, link: "events.html#past" }
   - label: Our Results
     link: results.html
   - label: Insights
     link: insights.html
-  - label: Our Team
-    link: team.html
+  - label: About Us
+    link: about.html
+    match: team
+    children:
+      - { label: Our Story, link: about.html }
+      - { label: How We Work, link: "about.html#how-we-work" }
+      - { label: Our Team, link: team.html }
+      - { label: For Schools, link: schools.html }
 
-# Small links in the bar above the menu
-utility_links:
-  - { label: Upcoming Events, link: events.html }
-  - { label: For Schools, link: schools.html }
+footer_title: "Every exceptional path begins with a conversation."
+footer_columns:
+  - title: Programs
+    links:
+      - { label: Admissions Counseling, link: admissions.html }
+      - { label: Research & Internships, link: research.html }
+      - { label: Campus Immersion, link: experiences/campus-immersion.html }
+      - { label: Global Leadership Conferences, link: experiences/global-conferences.html }
+  - title: Admissions
+    links:
+      - { label: US College, link: admissions/us-college.html }
+      - { label: US Graduate School, link: admissions/us-graduate.html }
+      - { label: US High School, link: admissions/us-high-school.html }
+      - { label: "UK, Canada & Australia", link: admissions/uk.html }
+  - title: Company
+    links:
+      - { label: Our Story, link: about.html }
+      - { label: How We Work, link: "about.html#how-we-work" }
+      - { label: Our Team, link: team.html }
+      - { label: Our Results, link: results.html }
+      - { label: For Schools, link: schools.html }
+  - title: Resources
+    links:
+      - { label: Events, link: events.html }
+      - { label: Insights, link: insights.html }
+      - { label: FAQ, link: faq.html }
+      - { label: Contact Us, link: contact.html }
 
-# Rolling logo strip under the home page hero. Upload logo files (SVG/PNG, transparent background).
-# Only list organizations you have the right to display.
-partners_label: "Our mentors come from"
-partners_note: "Logos indicate our mentors' professional backgrounds only and do not imply partnership or sponsorship. Selected list."
+# Rolling logo strip. Upload logo files (SVG/PNG, transparent background).
+# Only list organizations where our mentors work or studied. The UN emblem may not be used (UN restricts use of its name and emblem).
+partners_label: "Our mentor network comes from"
+partners_note: "Logos indicate the professional and academic backgrounds of WinPlus mentors and advisors. They do not imply partnership, sponsorship or endorsement by these organizations."
 partners:
   - { name: Harvard University, logo: /images/uploads/logos/harvard.png }
   - { name: MIT, logo: /images/uploads/logos/mit.png }
   - { name: NASA, logo: /images/uploads/logos/nasa.png }
+  - { name: Stanford University, logo: /images/uploads/logos/stanford.png }
   - { name: Yale University, logo: /images/uploads/logos/yale.png }
   - { name: Meta, logo: /images/uploads/logos/meta.png }
-  - { name: Stanford University, logo: /images/uploads/logos/stanford.png }
-  - { name: United Nations, logo: /images/uploads/logos/united-nations.png }
-  - { name: Google, logo: /images/uploads/logos/google.png }
-  - { name: Columbia University, logo: /images/uploads/logos/columbia.png }
-  - { name: Apple, logo: /images/uploads/logos/apple.png }
   - { name: Caltech, logo: /images/uploads/logos/caltech.png }
+  - { name: Apple, logo: /images/uploads/logos/apple.png }
+  - { name: Columbia University, logo: /images/uploads/logos/columbia.png }
   - { name: Microsoft, logo: /images/uploads/logos/microsoft.png }
+  - { name: SpaceX, logo: "" }
   - { name: Cornell University, logo: /images/uploads/logos/cornell.png }
-  - { name: Amazon, logo: /images/uploads/logos/amazon.png }
-  - { name: U.S. Centers for Disease Control and Prevention, logo: /images/uploads/logos/cdc.png }
   - { name: Bloomberg, logo: /images/uploads/logos/bloomberg.png }
-  - { name: Congressional Budget Office, logo: /images/uploads/logos/cbo.png }
+  - { name: Northwestern University, logo: "" }
+  - { name: Google, logo: /images/uploads/logos/google.png }
+  - { name: U.S. Centers for Disease Control and Prevention, logo: /images/uploads/logos/cdc.png }
+  - { name: Amazon, logo: /images/uploads/logos/amazon.png }
   - { name: Fiserv, logo: /images/uploads/logos/fiserv.png }
-  - { name: Phoenix Pictures, logo: "" }
 
-# Social media (icons in the footer). Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
+# Social media (icons in the footer). Leave url empty to hide a platform. Platform options: wechat, xiaohongshu, linkedin, instagram, youtube, bilibili, tiktok, facebook, x, weibo
 social:
   - { platform: wechat, label: WeChat, url: "" }
-  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "#" }
-  - { platform: linkedin, label: LinkedIn, url: "#" }
-  - { platform: instagram, label: Instagram, url: "#" }
-  - { platform: youtube, label: YouTube, url: "#" }
+  - { platform: xiaohongshu, label: Xiaohongshu (RED), url: "https://xhslink.cn/m/8tZcHuYWpGw" }
+  - { platform: linkedin, label: LinkedIn, url: "https://www.linkedin.com/company/winplus-edu/posts/" }
+  - { platform: instagram, label: Instagram, url: "" }
 
 newsletter:
-  title: Sign up for WinPlus newsletter
-  text: Get WinPlus insights, Admissions strategy, program launches and event invitations.
+  consent: "Email me WinPlus insights and event invitations. Unsubscribe anytime."
+  title: The WinPlus Letter
+  text: Admissions insight, program launches and event invitations, a few times a term.
   button: Subscribe
 
-footer_blurb: "Global talent development platform. Admissions counseling, research & internships and global enrichment for ambitious students."
+footer_blurb: "A premier boutique education consultancy and talent-development platform. Top mentors, real projects and global stages, guiding ambitious students from high school to graduate school and beyond."
 
-# Short disclaimer shown at the bottom of every page
-footer_disclaimer: "Admission outcomes depend on many factors and are never guaranteed. University and company names on this site describe our mentors' and students' backgrounds and do not imply endorsement or affiliation."
+# Short disclaimer at the bottom of every page (legal Part 4)
+footer_disclaimer: "Admission outcomes depend on many factors and are never guaranteed. University, company and organization names on this site describe the backgrounds of our mentors and the experiences of our students, and do not imply affiliation with or endorsement of WinPlus."
+
+# Shown under every result, statistic, testimonial and case study (legal Part 6 §13)
+results_notice: "Individual results vary. Past results do not indicate or guarantee future outcomes. WinPlus does not guarantee admission to any institution. See our"
+
+# Footer legal links (legal Part 6 §2). "Cookie Settings" is added automatically.
+legal_links:
+  - { label: Privacy Policy, link: privacy.html }
+  - { label: Terms of Use, link: terms.html }
+  - { label: Terms of Service, link: terms-of-service.html }
+  - { label: Cookie Policy, link: cookies.html }
+  - { label: Disclaimer, link: disclaimer.html }
+  - { label: Accessibility, link: accessibility.html }
+
+# Cookie banner (legal Part 6 §3)
+cookie:
+  text: "We use strictly necessary cookies to operate this website. With your permission, we also use analytics cookies to understand how the website is used. You can change your choice at any time through Cookie Settings."
+  policy: See our Cookie Policy.
+  accept: Accept Analytics
+  reject: Reject
+  settings: Cookie Settings
+  save: Save choice
+  necessary_label: Strictly necessary
+  necessary_text: Required for the website to work. Always on.
+  analytics_label: Analytics
+  analytics_text: Helps us understand which pages are useful. Off unless you turn it on.
+
+# Form notices and consents (legal Part 6 §4–§9). Version is saved with every submission.
+consent:
+  version: "2026-11-04 draft"
+  inquiry_notice: "WinPlus will use the information you provide to respond to your inquiry and provide information about our programs, as described in our Privacy Policy. Fields marked * are required; if they are not completed, we may be unable to respond. Your information will be processed in the United States."
+  marketing: "Yes, I would like to receive newsletters, white papers, and information about WinPlus programs and events by email from WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, info@winplus.org. WinPlus will use my name and email address for this purpose. I can unsubscribe at any time."
+  school_notice: "WinPlus will use the business contact information you provide to respond to your inquiry and communicate with you about potential collaboration, as described in our Privacy Policy."
+  age_question: "I am a"
+  age_under: "Thank you for your interest. Please ask your parent or guardian to complete this form on your behalf."
+  age_teen: "Please complete this form with your parent or guardian."
+  prc_transfer: "I consent to WinPlus processing the personal information I provide outside mainland China, in the United States, and providing it to the overseas recipients listed in the Privacy Policy, for the purposes described in the Privacy Policy. I may exercise my rights by contacting WinPlus at info@winplus.org."
+  prc_child: "I am the parent or legal guardian of the child named in this form. I separately consent to WinPlus processing my child's personal information, which is sensitive personal information under PRC law, for the purposes of responding to my inquiry, enrollment, and program delivery. I understand that this processing is necessary for my child to participate in WinPlus programs and that WinPlus protects this information as described in Section 7 of the Privacy Policy."
+  event_photo: "WinPlus will photograph and record this event. Photos and video may be published on the WinPlus website, social media, newsletters, and promotional materials, as described in our Privacy Policy. I consent to WinPlus using photos and video in which I (and my child) appear for these purposes."

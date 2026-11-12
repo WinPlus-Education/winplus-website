@@ -1,66 +1,84 @@
-seo_title: "Research & Internship Programs for High School Students | NASA, Meta, MIT Mentors | WinPlus"
-meta_description: "Mentor-led research and internship programs for high school students in AI, coding, finance, space science, biotech and film. Earn a portfolio project and a mentor recommendation letter."
+seo_title: Research & Internship Programs for High School Students | WinPlus
+meta_description: Online research and internships for high schoolers in AI, finance, space, biotech, policy and film, led by mentors from NASA, Meta, Microsoft and Caltech.
 eyebrow: Research & Internships
-title: Where high schoolers do work that belongs on a college application
-intro: Our programs aren't simulations. They're real projects, real mentors and real deliverables, the kind top admissions officers notice.
-image: https://images.unsplash.com/photo-1630959305606-3123a081dada
-image_alt: Silhouette of a researcher using a microscope
-
-why_title: Why research matters
-method_title: Two phases, real results
-method_text: 'Our "learning weeks + output weeks" method makes sure every student leaves with verifiable, presentable work, not just a certificate of participation.'
-why:
-  - title: Admissions impact
-    text: Research is one of the clearest differentiators for Ivy League and top-20 applicants, and most applicants don't have it.
-  - title: Career-ready skills
-    text: Students learn the tools professionals actually use, from Python and LLMs to lab data analysis and film production.
-  - title: Access to an elite network
-    text: Students work directly with engineers, scientists and creators from world-leading organizations.
-
-deliverables_title: What every student receives
-deliverables_intro: Every program ends with tangible results that strengthen college applications and stay with students long after.
+title: Real problems. Real mentors. Work that matters.
+intro: Bespoke online research and internship programs led by scientists, engineers and leaders from NASA, Meta, Microsoft, Caltech and MIT. Students solve real-world problems and finish with work they
+  can stand behind.
+image: https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6
+image_alt: A scientist working at a laboratory microscope
+summary_eyebrow: Why it matters
+summary_statement: The strongest applicants don't just say they're curious. They show what their curiosity has produced.
+summary_text: 'Selective universities look for evidence: a question pursued, a problem solved, a mentor who can vouch for the work. WinPlus programs give students first-hand experience of real-world problem-solving,
+  a finished paper, prototype or portfolio, and a recommendation from an expert who watched them work.'
+how_eyebrow: How We Work
+how_title: Built around the questions shaping the future
+how_intro: Every program is designed by WinPlus with its mentor, around the fields that will define the next decade of education and industry.
+how:
+- title: Designed around frontier fields
+  text: 'We build programs where the world is moving fastest: artificial intelligence, space, biotechnology, finance and global policy. We update them each year as the fields evolve, so students learn what
+    universities and employers will value next.'
+- title: Led by practitioners, in small groups
+  text: Mentors are working scientists, engineers and researchers at organizations such as NASA, Meta, Microsoft and Caltech. Small cohorts mean every student is known, challenged and guided personally.
+- title: Learn, then build
+  text: Each program moves from learning weeks (concepts, tools and methods) to output weeks, when students apply them to their own project, with a concrete deliverable every week and a project manager
+    tracking progress.
+- title: Connected to the application
+  text: Your WinPlus mentor helps choose the program that fits the student's roadmap, then turns the experience into activity descriptions, essays and interview stories.
+deliverables_title: What every student leaves with
 deliverables:
-  - title: Handwritten mentor recommendation letter
-    text: Mentors are working scientists at NASA, Meta and Caltech and engineering leads at major tech companies. Students who complete the program to a high standard receive a personal letter from a mentor who saw their work first-hand.
-  - title: A finished research paper or product
-    text: A research paper, working prototype, financial model or short film, depending on the program, ready to include in applications.
-  - title: Portfolio & presentation
-    text: Students present their work at a final showcase and leave with a polished portfolio piece and presentation.
-  - title: Research internship certificate
-    text: An official certificate describing the program, mentor and hours completed.
-  - title: Publication & competition guidance
-    text: Where appropriate, we help students submit their work to journals, conferences or competitions.
-  - title: Application-ready narrative
-    text: Your consultant helps translate the experience into activity descriptions and essays.
-
-format_title: How the programs work
-format:
-  - { label: "Format", value: "Online, live sessions with mentors" }
-  - { label: "Length", value: "6–8 weeks" }
-  - { label: "Method", value: "Learning weeks, then output weeks" }
-  - { label: "Who it's for", value: "Grades 10–12+, aiming for Top-50 universities" }
-
-categories:
-  - { id: ai-technology, title: "AI & Technology" }
-  - { id: finance-business, title: "Finance & Business" }
-  - { id: science-space, title: "Science & Space" }
-  - { id: arts-media, title: "Arts & Media" }
-
+- title: A finished piece of work
+  text: A research paper, working prototype, financial model, policy brief or short film, depending on the program.
+- title: A mentor recommendation
+  text: Students who complete the program to a high standard can earn a letter from a mentor who saw their work first-hand. Letters are earned, not automatic.
+- title: A portfolio & presentation
+  text: A final showcase presentation and a polished portfolio piece.
+- title: Publication & competition guidance
+  text: Where appropriate, guidance on submitting work to journals, conferences or competitions.
+programs_eyebrow: Programs
+programs_title: Explore our programs
+programs_intro: Filter by field or by type. Research programs centre on an original question; internships centre on building a real product or solving an industry problem.
+industries:
+- id: ai-technology
+  title: AI & Technology
+- id: arts-media
+  title: Arts & Media
+- id: business-finance
+  title: Business & Finance
+- id: policy-global-affairs
+  title: Policy & Global Affairs
+- id: science-space
+  title: Science & Space
+faq_title: 'Research & internships: your questions, answered'
 faq:
-  - q: Do students need prior experience?
-    a: Most programs are designed for motivated beginners. Some advanced tracks require basic coding or math, which is listed on each program page.
-  - q: Will my child really get a recommendation letter?
-    a: Mentors write letters for students who complete the program and demonstrate strong work. Letters are earned, not automatic, which is what makes them valuable.
-  - q: Can students publish their research?
-    a: Some projects are suitable for student journals, conferences or competitions. Mentors and consultants advise on the best outlet.
-  - q: How do I choose the right program?
-    a: Book a free strategy session and your consultant will recommend programs that fit the student's interests and application plan.
-  - q: Who are the mentors in your research programs?
-    a: Our mentors are working professionals and researchers with backgrounds at organizations such as NASA, Meta, MIT, Caltech, Apple, Microsoft and Bloomberg. Each program lists its mentor's background.
-  - q: Are the research programs online?
-    a: Most research and internship programs run online in small groups with live sessions, so students can join from anywhere. Some enrichment programs, such as UN conferences and summer schools, are in person.
-
-cta_title: Apply for a 2026 program
-cta_text: Spaces are limited and fill early. Talk to us about which program fits best.
-cta: Apply or Ask a Question
+- q: What will the student actually produce?
+  a: 'Every program ends in a concrete piece of work: a research paper, a working prototype, a financial model, a policy brief or a film, depending on the program. Students present it in a final showcase, and it becomes the evidence behind their activity list, essays and interviews.'
+- q: Who are the mentors?
+  a: Working scientists, engineers and researchers whose careers include organizations such as NASA, Meta, Microsoft and leading research universities. Each program page names the mentor and their background. Organization names describe mentors' careers; programs are run by WinPlus.
+- q: How is this different from an online course?
+  a: 'A course teaches content to everyone. Our programs are small cohorts built around a real problem: students choose a question or product, meet their mentor live every week, and deliver work that is reviewed like professional work, not graded like homework.'
+- q: 'Research or internship: which is right?'
+  a: 'Research suits students who want to answer an original question and write it up; it is strongest for STEM, social science and policy majors. Internships suit students who want to build: a product, model or prototype, the way an industry team works. Both include a mentor, weekly deliverables and a final presentation.'
+- q: Should students do a summer school or research? Are they required?
+  a: Neither is required. Whether to take part, and which kind, depends on the student's interests, background, time and goals. Summer schools suit students exploring a field and experiencing university courses; research suits students who want to go deep on a specific question, and the two can build on each other. When choosing, we look at whether the coursework or project fits, how the mentor guides students and what the student will actually gain.
+- q: Is a recommendation letter guaranteed?
+  a: No, and that is why it matters. Mentors write letters for students who complete the program and do strong work. An earned letter from a mentor who saw the work first-hand carries far more weight than a certificate of attendance.
+- q: Does the student need prior experience?
+  a: Most programs are designed for motivated beginners and teach the tools in the first weeks. Advanced tracks list any coding or mathematics prerequisites under Eligibility on the program page. Taking part in a program does not make the student an official intern or member of the mentor's organization; the student's role and the format are set out in each program's description.
+- q: How do you make sure online research is rigorous?
+  a: Running online is exactly why we can bring in top mentors. NASA scientists and senior engineers at companies such as Meta and Google have very full schedules; flexible online collaboration lets students work directly on first-hand problems from world-class labs.
+- q: Can a high school student really produce professional-level work in eight weeks?
+  a: Yes. Mentors learn each student's strengths and current level, then set a path that stretches them without losing them, instead of forcing everyone into one template. If the student keeps pace, the output and growth follow naturally. [Read how two students designed a deep-space telescope with a NASA scientist](insights/nasa-mentored-research-two-students-one-telescope.html).
+- q: Can the work be published or entered in competitions?
+  a: When a project is strong enough, mentors and WinPlus advisors recommend suitable student journals, conferences or competitions and support the submission. Publication depends on the work and the outlet, and is never promised in advance.
+- q: Why publish in a specialist journal rather than a top journal?
+  a: For most high school students, a world-leading journal isn't realistic. Universities care more about whether the student completed the full research process than about the journal's prestige. A specialist journal open to student work still shows university-level research skills and rigorous academic English. Admissions officers also value research a student reached out for and earned, for example with a university or Chinese Academy of Sciences lab, more than a project that was paid for.
+- q: Can my child's IB Extended Essay count as their research?
+  a: 'They are different. The Extended Essay guides IB students into academic exploration of one subject, but it is more of a conceptual exercise, and IB rules limit how much teachers can help with the content. Research outside school is more rigorous, closer to how university research actually works, and lets a mentor give real academic guidance. Many students do both: an EE in school, and a separate research project with a mentor.'
+- q: My child's test scores are average and their direction is unclear. Can they still join?
+  a: Yes. Our job is to turn a vague interest into something concrete. During the consultation we look for the student's strengths and suggest initial directions.
+- q: When do programs run, and how much time do they take?
+  a: Most run online for 6 to 8 weeks, mainly in summer (June to August), with selected cohorts in spring. Expect live sessions each week plus independent work; each program page lists its schedule and whether applications are open.
+cta_title: Find the program that fits your story.
+cta_text: Talk with a WinPlus mentor about interests, timing and which program will add the most to the profile.
+cta: Book a Free Consultation
 cta_link: contact.html

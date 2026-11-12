@@ -1,0 +1,68 @@
+title: 2025 暑期名校深度研学
+date: '2025-07-14T09:00:00'
+end_date: '2025-07-25'
+time_label: 2025 年 7 月 14–25 日
+type: 名校深度研学
+location: 纽约 · 波士顿 · 硅谷 · 洛杉矶
+image: /images/uploads/photos/wall-street-group.webp
+image_alt: WinPlus 学员与导师在纽约华尔街
+summary: 20 名学员、10 所名校、35 家机构：从哥伦比亚和哈佛到斯坦福、苹果总部与好莱坞，12 天行程。
+details: 来自哈佛、MIT 与斯坦福的导师讲授 50 小时全球胜任力课程，涵盖领导力、国际关系、人工智能、基因编辑与卫星工程。多所名校招生团队举办说明会，学员参访了苹果、谷歌、Meta 等科技企业以及 NASA。
+gallery:
+- image: /images/uploads/photos/immersion-2025-hks-group.webp
+  caption: "哈佛大学肯尼迪政府学院"
+- image: /images/uploads/photos/immersion-2025-fireside-chat.webp
+  caption: "与导师围炉对话"
+- image: /images/uploads/photos/immersion-2025-nvidia-hq.webp
+  caption: "参访硅谷英伟达总部"
+- image: /images/uploads/photos/immersion-2025-caltech.webp
+  caption: "加州理工学院贝克曼礼堂"
+- image: /images/uploads/photos/immersion-2025-hks-handshake.webp
+  caption: "郭琪老师与学员在哈佛肯尼迪学院"
+- image: /images/uploads/photos/immersion-2025-statue-of-liberty.webp
+  caption: "纽约港与自由女神像"
+- image: /images/uploads/photos/immersion-2025-staircase.webp
+  caption: "学员与郭琪老师合影"
+testimonials:
+- quote: 我们所到访的十所高校给了我深深的震撼，让我对进入名校的愿望越来越强烈。
+  name: 学员
+  role: 2025 年学员
+- quote: 非常感谢老师们无微不至的照顾！孩子回到家还哭了，说舍不得老师和同学们。
+  name: 家长
+  role: 2025 年学员家长
+category: immersion
+statement: 十二天，横跨东西海岸，走进十所大学与 35 家机构。
+seo_title: 2025 暑期名校深度研学 | WinPlus 欧歌学院
+facts:
+- number: '20'
+  label: 名学员
+- number: '10'
+  label: 所名校
+- number: '35'
+  label: 家机构
+- number: '12'
+  label: 天横跨东西海岸
+highlights:
+- title: 名校导师课程
+  text: 哈佛、MIT 与斯坦福导师讲授 50 小时全球胜任力课程，涵盖领导力、国际关系、人工智能、基因编辑与卫星工程。
+- title: 走近招生办
+  text: 从哥伦比亚、哈佛到斯坦福，多所名校招生团队举办说明会。
+- title: 科技前沿
+  text: 参访苹果、谷歌、Meta 等科技企业以及 NASA。
+city: 美国东西海岸
+highlights_title: 项目内容
+arc_unit: 站点
+arc_title: 四站，横跨东西海岸
+arc:
+- label: 纽约
+  title: 哥伦比亚与华尔街
+  text: 走进哥伦比亚大学，与 WinPlus 导师走访华尔街，游览城市地标。
+- label: 波士顿
+  title: 哈佛与 MIT
+  text: 走访哈佛与 MIT，参加大学招生团队举办的说明会。
+- label: 硅谷
+  title: 斯坦福与科技巨头
+  text: 斯坦福、苹果总部、谷歌、Meta 与 NASA，第一手了解塑造科技未来的企业与实验室。
+- label: 洛杉矶
+  title: 好莱坞
+  text: 好莱坞与洛杉矶的创意产业。

@@ -6,39 +6,30 @@ The WinPlus company website, built from the June 2026 mockup. Content is kept se
 
 | Folder / file | What it is |
 |---|---|
-| `content/site.yml` | Menu, contact info, social media, logo strip, footer |
+| `content/site.yml` | Menu, footer, contact, offices, social, logo strip, cookie banner and form consent text |
 | `content/pages/*.yml` | Text for each main page (one file per page) |
-| `content/admissions/*.yml` | One file per admissions service page |
-| `content/programs/*.yml` | One file per research / internship program page |
-| `content/enrichment/*.yml` | UN conferences, summer & winter schools |
-| `content/events/*.yml` | Upcoming events (with registration forms) |
+| `content/pages/team.yml` | Every person on the site (founders, advisors, mentors). Other pages pick people by `id` |
+| `content/admissions/*.yml` | The six admissions programs (US College, US Graduate, US High School, UK, Canada, Australia) |
+| `content/programs/*.yml` | Research & internship programs. `status`: open / closed / past; `type`: research / internship; `industry`: field id |
+| `content/experiences/*.yml` | Campus Immersion and Global Leadership Conferences |
+| `content/events/*.yml` | Events. Past/upcoming is automatic from the date (`end_date` optional); past events can have a `gallery` and `testimonials` |
 | `content/posts/*.md` | Insights articles |
-| `content/legal/*.md` | Privacy policy, terms & disclaimer |
-| `static/images/uploads/` | Uploaded photos and logos |
-| `static/admin/` | The online editor (Decap CMS) |
-| `templates/` | Page layouts (HTML), only for design changes |
-| `static/assets/css/style.css` | Colors, fonts, spacing |
+| `content/legal/*.md` | Privacy, Terms of Use, Terms of Service, Cookie Policy, Disclaimer, Accessibility (drafts under legal review) |
+| `content/zh/` | The Chinese site, same structure |
+| `static/images/uploads/` | Photos and logos (`campus/` = home hero slides, `photos/` = WinPlus program photos) |
+| `templates/macros.html` | The shared design modules every page is built from |
+| `static/assets/css/style.css` | Design tokens (colors, type, spacing) in `:root` |
 | `build.py` | Builds the site + sitemap.xml, robots.txt and llms.txt |
-| `netlify.toml` | Build settings and redirects for Netlify |
 
-**Site map:** Home · Admissions Counseling (overview + US College, UK/Canada/Australia, Grad School US, Grad School UK/Canada/Australia, US High School, How We Work) · Research & Internships (overview + 9 program pages) · Experience Enrichment (overview + UN Conferences, Summer & Winter Schools) · Events (+ one page per event) · Our Results · Insights (+ articles) · Our Team · For Schools · Contact · Privacy · Terms · Site Map
+**Site map:** Home · Admissions Counseling (+ 6 programs) · Research & Internships (+ programs) · Global Experiences (Campus Immersion, Global Leadership Conferences) · Events (+ event pages) · Our Results · Insights · About Us (Our Story, How We Work, Our Team, For Schools) · FAQ · Contact · Legal pages · Site Map
 
-**Forms (Netlify Forms):** `consultation` (contact page), `newsletter` (footer of every page), `event-registration` (each event page). See them under **Forms** in Netlify; export the newsletter list as CSV for Mailchimp, Brevo etc.
+**Home hero photos:** the slideshow shows every file listed under `hero.slides` in `content/pages/home.yml` that exists. Add landscape photos (2400px+ wide, licensed for web use) as `static/images/uploads/campus/harvard.webp`, `princeton.webp`, `stanford.webp`, `wharton.webp`, `brown.webp` and they appear automatically.
 
-**SEO / AI search built in:** unique titles and descriptions per page, canonical links, social-share previews, structured data (organization, services, courses, events, FAQs, articles, breadcrumbs), `sitemap.xml`, `robots.txt` (search engines and AI assistants allowed) and `llms.txt` (a plain-language summary for AI assistants). When your domain is connected, change **Site Settings → Website address** in the editor.
+**Forms (Netlify Forms):** `consultation` (contact page: age screening, PRC consents and the consent version are saved with each submission), `newsletter` (footer), `event-registration` (event pages).
 
----|---|
-| `content/site.yml` | Header, footer, contact info, menu, partner logos |
-| `content/pages/*.yml` | The text for each page (one file per page) |
-| `content/posts/*.md` | Insights articles (one file per article) |
-| `static/images/uploads/` | Uploaded photos and logos |
-| `static/admin/` | The online editor (Decap CMS) |
-| `templates/` | Page layouts (HTML), only for design changes |
-| `static/assets/css/style.css` | Colors, fonts, spacing |
-| `build.py` | Turns content + templates into the finished site in `_site/` |
-| `netlify.toml` | Tells Netlify how to build the site |
+**Cookie banner & analytics:** analytics only load after a visitor clicks "Accept Analytics". Add a Google Analytics 4 ID in Site Settings → `analytics_ga4_id`.
 
-**Pages:** Home · Admissions Counseling · Research & Internships · Our Results · Insights (+ article pages) · For Schools · About WinPlus · How It Works · Book Consultation (form) · Thank-you page
+**SEO / AI search:** unique titles and descriptions, canonical and hreflang links, structured data (organization with both offices, services, courses, events, people, FAQs, breadcrumbs), `sitemap.xml`, `robots.txt` and `llms.txt`. Old addresses redirect to new ones (see `netlify.toml`).
 
 ---
 
@@ -106,8 +97,8 @@ To use the editor locally without logging in, uncomment `local_backend: true` in
 
 ## For developers
 
-- `python tools/build_cms_config.py` regenerates `static/admin/config.yml` after you change the content structure.
+- `python tools/build_cms_config.py` regenerates `static/admin/config.yml` from the content files (run it after adding or renaming fields).
 - `python tools/check_cms_fields.py` checks that every field in the content files is editable in `/admin` (the editor deletes unknown fields when saving).
 
-## Not built yet
-- **Real photos, logos, results data, testimonials and bios**: all marked with `[ ]` placeholders.
+## Still to provide
+Anything in `[square brackets]` is a placeholder: results data (acceptance rates, % to Ivy/Top 30), testimonials with written consent, remaining campus hero photos, SpaceX and Northwestern logos, mentor photos, office street addresses, contact email, final legal text and the Terms of Service.

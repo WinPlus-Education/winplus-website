@@ -1,16 +1,81 @@
-seo_title: "预约免费咨询 | WinPlus 欧歌学院"
-meta_description: "预约 WinPlus 欧歌学院免费规划咨询，与升学顾问探讨大学申请、科研项目与国际背景提升，无需任何承诺。"
+seo_title: 预约免费规划咨询 | WinPlus 欧歌学院
+meta_description: 预约 WinPlus 导师的免费规划咨询，讨论升学规划、科研与实习、名校研学与国际会议，无需任何承诺。
 eyebrow: 免费规划咨询
-title: 预约免费规划咨询
-intro: 请简单介绍学生的情况与目标。WinPlus 顾问将在 [X] 个工作日内回复并安排通话，无需任何承诺。
+title: 预约您的免费规划咨询
+intro: 请介绍学生的情况与目标。WinPlus 导师会尽快与您联系，按照您所在时区的方便时间安排免费规划咨询。咨询后，您将获得初步建议与清晰的下一步方案，无需任何承诺。
 interests:
-  - 美国本科申请
-  - 英加澳本科申请
-  - 研究生申请
-  - 美国高中申请
-  - 科研与实习项目
-  - 联合国会议 / 夏校与冬校
-  - 机构合作
-  - 申请成为导师
-  - 其他
-success_message: 感谢你的留言！我们已收到你的信息，将尽快与你联系。
+- 美国本科申请
+- 研究生申请
+- 美高申请
+- 英国、加拿大、澳洲申请
+- 科研与实习项目
+- 国际体验
+- 活动与说明会
+- 学校合作
+- 其他
+grades:
+- 6 年级及以下
+- 7 年级
+- 8 年级
+- 9 年级
+- 10 年级
+- 11 年级
+- 12 年级
+- 间隔年
+- 本科在读
+- 研究生在读
+- 已工作
+countries:
+- code: US
+  label: 美国
+- code: CN
+  label: 中国大陆
+- code: HK
+  label: 中国香港
+- code: MO
+  label: 中国澳门
+- code: TW
+  label: 中国台湾
+- code: SG
+  label: 新加坡
+- code: CA
+  label: 加拿大（魁北克以外）
+- code: CA-QC
+  label: 加拿大（魁北克）
+- code: GB
+  label: 英国
+- code: AU
+  label: 澳大利亚
+- code: AE
+  label: 阿联酋
+- code: OTHER
+  label: 其他
+success_message: 感谢您的留言。我们已收到您的信息，WinPlus 导师将尽快与您联系。
+curricula:
+- 美国课程 / AP
+- IB
+- A-Level
+- 国内普高（高考体系）
+- 加拿大课程
+- 澳大利亚课程
+- 其他
+entry_years:
+- '2027'
+- '2028'
+- '2029'
+- '2030'
+- 2031 年及以后
+- 尚未确定
+contact_methods:
+- 电子邮件
+- 电话
+- 微信
+referrals:
+- 搜索引擎
+- 小红书
+- 微信
+- LinkedIn
+- 亲友推荐
+- 学校或升学老师
+- WinPlus 活动
+- 其他

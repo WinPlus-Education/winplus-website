@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_head with context %}
+{% block content %}
+{{ page_head(page, [[page.title, "credits.html"]]) }}
+<section class="section">
+  <div class="container container-text prose">
+    <p>{{ page.intro_text }}</p>
+    <ul>{% for c in page.credits %}<li><strong>{{ c.subject }}</strong>: {{ c.title }}, by {{ c.author }}, <a href="{{ c.source }}" rel="noopener">{{ c.license }}</a>{% if c.changes %} ({{ c.changes }}){% endif %}.</li>{% endfor %}</ul>
+  </div>
+</section>
+{% endblock %}

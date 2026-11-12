@@ -1,0 +1,45 @@
+order: 4
+title: 英国留学申请
+short_title: 英国
+interest: 英国、加拿大、澳洲申请
+seo_title: 英国留学申请：牛剑、G5 与英国硕士 | WinPlus 欧歌学院
+meta_description: 英国留学申请：牛剑与 G5 策略、UCAS 个人陈述、笔试、面试及英国硕士申请。
+summary: 牛津、剑桥、G5 及英国顶尖大学的本科与研究生申请。
+eyebrow: 英国留学申请
+title_long: 牛津、剑桥与 G5：本科与研究生申请
+image: /images/uploads/campus/cambridge.webp
+image_alt: 剑桥大学国王学院礼拜堂
+who: 通过 UCAS 申请英国本科的学生，以及申请英国硕士与博士项目的毕业生。
+system: 英国按专业录取，而非按学校录取。学生最多选择 5 个 UCAS 课程，牛津与剑桥只能二选一，并且所有学校共用一篇个人陈述。学术深度、笔试与面试决定了最激烈的竞争。
+challenges_intro: 英国录取看重单一学科的深度。习惯美式背景的学生，往往需要不同的策略。
+challenges:
+- challenge: 广度打动不了学科导师
+  title: 学科延伸的深度
+  text: 通过阅读、科研、竞赛与项目证明对所选学科的真正投入，这正是导师最先寻找的证据。
+- challenge: 一篇文书面对五所大学
+  title: 有观点的个人陈述
+  text: 一篇聚焦学术的个人陈述，展示学生如何思考自己的学科，并适用于每一个 UCAS 选择。
+- challenge: 笔试与面试决定顶尖名额
+  title: 笔试与面试
+  text: 针对需要的学科笔试进行备考，并通过模拟面试训练学生面对陌生问题时边想边说。
+timeline_title: 英国申请时间线
+timeline:
+- when: Year 12 / 11 年级
+  text: 确定专业，积累学科深度，规划所需笔试。
+- when: 暑假
+  text: 个人陈述初稿；确定课程与学校名单。
+- when: 10 月 15 日
+  text: 牛剑及医学、牙医、兽医课程的 UCAS 截止。
+- when: 10–11 月
+  text: 所需的学科笔试。
+- when: 12 月
+  text: 牛津与剑桥面试。
+- when: 1 月
+  text: 其他多数课程的 UCAS 截止；春季陆续发放录取。
+outcomes_text: WinPlus 学生已获得全部 G5 大学的录取：
+outcomes:
+- University of Oxford
+- University of Cambridge
+- Imperial College London
+- University College London (UCL)
+- London School of Economics (LSE)

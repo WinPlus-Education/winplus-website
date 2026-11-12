@@ -1,0 +1,37 @@
+order: 6
+title: Australia Admissions
+short_title: Australia
+interest: UK, Canada & Australia Admissions
+seo_title: Australia University Admissions Counseling | WinPlus
+meta_description: 'Australian university admissions counseling: course selection across IB, A-Level and AP, applications for Melbourne, Sydney, ANU and UNSW, and graduate degrees.'
+summary: Undergraduate and graduate applications to Melbourne, Sydney, ANU, UNSW and other leading Australian universities.
+eyebrow: Australia Admissions
+title_long: 'Leading Australian universities: undergraduate and graduate'
+image: /images/uploads/campus/sydney.webp
+image_alt: The Quadrangle, University of Sydney
+who: Students applying to Australian undergraduate programs and graduates applying to Australian master's and research degrees.
+system: Australian universities admit mainly on academic results, converted from ATAR, IB, A-Levels, AP or national systems, into a specific course. Many offer February and July intakes, and some courses,
+  such as medicine, add tests and interviews.
+challenges_intro: Australia rewards precise planning around grades, courses and intakes.
+challenges:
+- challenge: Entry scores differ by curriculum
+  title: Course and entry planning
+  text: We match students to courses based on interests and published entry requirements across IB, A-Levels, AP and national systems.
+- challenge: Two intakes, several countries
+  title: Coordinated applications
+  text: Applications, statements and documents timed around February and July intakes and any US, UK or Canadian applications.
+- challenge: Research degrees need a supervisor
+  title: Graduate and research degrees
+  text: Coursework master's and research degrees, including research proposals and supervisor outreach.
+timeline_title: The Australian application timeline
+timeline:
+- when: 12 months out
+  text: Course shortlist and entry requirements for the student's curriculum.
+- when: Aug–Dec
+  text: Applications for the February intake; any required tests or interviews.
+- when: Dec–Jan
+  text: Offers, often conditional on final results.
+- when: Feb–Mar
+  text: Semester 1 begins.
+- when: Jul
+  text: Mid-year intake at many universities.

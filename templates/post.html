@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import breadcrumbs, photo, btn, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, cta_band, post_card, event_card, program_card, ld with context %}
 {% block title %}{{ post.seo_title or post.title }} | {{ site.name }}{% endblock %}
 {% block description %}{{ post.summary }}{% endblock %}
 {% block og_type %}article{% endblock %}
@@ -7,30 +7,43 @@
 {{ ld({"@context": "https://schema.org", "@type": "BlogPosting", "headline": post.title, "description": post.summary, "datePublished": post.date.date().isoformat() if post.date else "", "inLanguage": lang.html, "image": [img(post.image, 1200)] if post.image else [], "author": {"@type": "Organization", "name": site.company_legal}, "publisher": {"@id": site_url ~ "/#organization"}, "mainEntityOfPage": canonical}) }}
 {% endblock %}
 {% block content %}
-<article class="article">
-  <header class="page-hero">
-    <div class="wrap narrow">
-      {{ breadcrumbs([[_("Insights"), "insights.html"], [post.title, post.url]]) }}
-      <span class="tag">{{ post.category }}</span>
-      <h1>{{ post.title }}</h1>
-      <p class="meta">{{ post.date | date_fmt("long") }}{% if post.source %} · {{ _("Originally published on") }} {{ post.source }}{% endif %}</p>
-    </div>
-  </header>
-  <div class="wrap narrow article-body">
-    {% if post.image %}{{ photo(post.image, post.image_alt or post.title, "ratio-wide article-photo", 1400, "Photo", true) }}{% endif %}
-    <div class="prose">{{ post.body | safe }}</div>
-    <div class="article-cta side-card side-cta">
-      <h2 class="h4">{{ _("Get personalized advice") }}</h2>
-      <p>{{ _("Talk to a WinPlus consultant about your student's plan.") }}</p>
-      {{ btn(site.cta_text, site.cta_link) }}
-    </div>
+{# Images inside the article body are written as /images/...; point them at the right folder for this page #}
+{% set body = post.body | replace('="/images/', '="' ~ root ~ 'images/') %}
+{% set plain = body | striptags %}
+{% set minutes = ((plain | length) / 450) | round(0, 'ceil') | int if lang.code == 'zh' else ((plain | wordcount) / 220) | round(0, 'ceil') | int %}
+{% set hero = {"image": post.image, "image_alt": post.image_alt or post.title, "eyebrow": post.category, "title": post.title, "intro": post.dek or post.summary} %}
+{{ page_hero(hero, [[_("Insights"), "insights.html"], [post.title, post.url]], meta=[post.date | date_fmt("long"), (minutes if minutes > 0 else 1) ~ " " ~ _("min read"), (_("Originally published on") ~ " " ~ post.source) if post.source else ""], cls="article-hero") }}
+
+<article class="section article-section">
+  <div class="container">
+    <div class="article-body prose">{{ body | safe }}</div>
   </div>
 </article>
-{% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
-<section class="section section-sky">
-  <div class="wrap">
-    <h2 class="h3">{{ _("More insights") }}</h2>
-    <ul class="related">{% for p in related[:4] %}<li><a class="related-link" href="{{ u(p.url) }}"><span>{{ p.title }}</span><span aria-hidden="true">→</span></a></li>{% endfor %}</ul>
+
+
+
+{% set linked_events = events | selectattr("slug", "in", post.events or []) | list %}
+{% set linked_programs = programs | selectattr("slug", "in", post.programs or []) | list %}
+{% if linked_events or linked_programs %}
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(_("Events") if linked_events else _("Programs"), _("The event behind this story") if linked_events else _("The program behind this story")) }}
+    <div class="grid g-3">{% for e in linked_events %}{{ event_card(e) }}{% endfor %}{% for pr in linked_programs %}{{ program_card(pr) }}{% endfor %}</div>
   </div>
 </section>
+{% endif %}
+
+{% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
+{% if related %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head(_("Insights"), _("More insights")) }}<a class="link-arrow" href="{{ u('insights.html') }}">{{ _("All articles") }} <span aria-hidden="true">→</span></a></div>
+    <div class="grid g-3">
+      {% for p in related[:3] %}{{ post_card(p) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{{ cta_band(_("Start with a free strategy session."), _("Meet a WinPlus mentor, discuss your goals and leave with clear next steps. No commitment required."), site.cta_text, site.cta_link, post.image) }}
 {% endblock %}

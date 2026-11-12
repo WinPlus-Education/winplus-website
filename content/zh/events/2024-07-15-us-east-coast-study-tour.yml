@@ -1,0 +1,77 @@
+title: 2024 暑期名校深度研学
+date: '2024-07-15T09:00:00'
+end_date: '2024-07-27'
+time_label: 2024 年 7 月 15–27 日
+type: 名校深度研学
+location: 波士顿 · 纽约 · 费城 · 华盛顿
+image: /images/uploads/photos/amnh-2024.webp
+image_alt: 学员与 WinPlus 联合创始人郭琪在美国自然历史博物馆，2024 年 7 月
+summary: 为人大附中 15 名学生打造的 12 天项目：十所名校，以及麦肯锡、Meta、国际货币基金组织与 NASA。
+details: WinPlus 与中国人民大学附属中学联合打造，带领 15 名学生走访哈佛、MIT、布朗、耶鲁、普林斯顿、宾大、哥伦比亚、纽约大学、约翰霍普金斯与乔治城等十所大学；参访麦肯锡、Meta 纽约办公室与 BrainCo；与国际货币基金组织经济学家交流，聆听联合国维和官员分享，在 MIT 体验帆船，并跟随前耶鲁校队队长学习壁球。
+gallery:
+- image: /images/uploads/photos/hbs-classroom.webp
+  caption: "哈佛商学院课堂研讨"
+- image: /images/uploads/photos/immersion-2024-imf.webp
+  caption: "在国际货币基金组织与经济学家交流"
+- image: /images/uploads/photos/immersion-2024-brainco.webp
+  caption: "在 BrainCo 体验仿生手套件"
+- image: /images/uploads/photos/immersion-2024-harvard-talk.webp
+  caption: "导师在哈佛为学生分享"
+- image: /images/uploads/photos/immersion-2024-mit-dome.webp
+  caption: "MIT 大圆顶前"
+- image: /images/uploads/photos/immersion-2024-yale.webp
+  caption: "耶鲁大学斯特林纪念图书馆"
+- image: /images/uploads/photos/immersion-2024-princeton.webp
+  caption: "漫步普林斯顿大学校园"
+- image: /images/uploads/photos/immersion-2024-harvard-seas.webp
+  caption: "哈佛科学与工程综合楼"
+- image: /images/uploads/photos/immersion-2024-the-met.webp
+  caption: "纽约大都会艺术博物馆"
+- image: /images/uploads/photos/immersion-group.webp
+  caption: "学员与 WinPlus 导师在哈佛"
+- image: /images/uploads/photos/immersion-2024-company-visit.webp
+  caption: "走访纽约企业"
+- image: /images/uploads/photos/immersion-2024-team-lunch.webp
+  caption: "与导师共进午餐"
+testimonials:
+- quote: 在 MIT 的 Sea Grant 实验室，教授告诉我们角落里那台机器人可以携带传感器下潜三千米。那一刻我才真正感受到 MIT 科研实力的深厚。
+  name: 学员
+  role: 2024 年学员
+- quote: 十二天前我们还素不相识，如今已是亲密的朋友。这段旅程开启了我们的航程：用脚步去发现真实。
+  name: 学员
+  role: 2024 年学员
+category: immersion
+statement: 十二天、十所大学，每位学生都更清楚自己属于哪里。
+seo_title: 2024 暑期名校深度研学 | WinPlus 欧歌学院
+partner: 中国人民大学附属中学
+facts:
+- number: '15'
+  label: 名学员
+- number: '10'
+  label: 所名校
+- number: '12'
+  label: 天美东行程
+highlights:
+- title: 十所名校
+  text: 哈佛、MIT、布朗、耶鲁、普林斯顿、宾大、哥伦比亚、纽约大学、约翰霍普金斯与乔治城。
+- title: 国际机构
+  text: 麦肯锡、Meta 纽约办公室、BrainCo，与国际货币基金组织经济学家及联合国维和官员交流。
+- title: 课堂之外
+  text: 在 MIT 体验帆船，跟随前耶鲁校队队长学习壁球。
+city: 美国东海岸
+highlights_title: 项目内容
+arc_unit: 站点
+arc_title: 美东四站
+arc:
+- label: 波士顿
+  title: 哈佛、MIT 与布朗
+  text: 走访校园，由教授带领参观 MIT Sea Grant 实验室，并在 MIT 体验帆船。
+- label: 纽约
+  title: 哥伦比亚、纽约大学与国际商业
+  text: 参访麦肯锡、Meta 纽约办公室与 BrainCo，以及美国自然历史博物馆。
+- label: 费城与普林斯顿
+  title: 宾大与普林斯顿
+  text: 两所常春藤名校：宾夕法尼亚大学与普林斯顿大学。
+- label: 华盛顿
+  title: 政策与世界
+  text: 乔治城与约翰霍普金斯大学，与国际货币基金组织经济学家及联合国维和官员交流。

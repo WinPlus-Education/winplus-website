@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% from "macros.html" import page_hero, head, photo, btn, arrow, stats, gallery, past_event_card, event_card, quotes, faq, cta_band, results_notice, ld with context %}
+{% block body_class %}has-overlay{% endblock %}
+{% block schema %}
+{{ ld({"@context": "https://schema.org", "@type": "Service", "serviceType": item.title, "name": item.title, "description": item.summary, "url": canonical, "provider": {"@id": site_url ~ "/#organization"}, "audience": {"@type": "EducationalAudience", "educationalRole": "student"}}) }}
+{% endblock %}
+{% block content %}
+{% set hero = {"eyebrow": item.eyebrow, "title": item.title, "summary": item.summary, "image": item.image, "image_alt": item.image_alt} %}
+{{ page_hero(hero, [[_("Global Experiences"), "experiences.html"], [item.short_title, item.url]], btn(_("See upcoming events"), "events.html#upcoming", "light") ~ btn(_("Join our newsletter"), "#newsletter", "ghost", false)) }}
+
+<section class="section">
+  <div class="container">
+    <div class="split-intro" style="margin-bottom:clamp(56px,6vw,96px)">
+      <p class="statement">{{ item.statement }}</p>
+      <p class="lead">{{ item.statement_text }}</p>
+    </div>
+    {{ stats(item.facts) }}
+  </div>
+</section>
+
+<section class="section s-ivory">
+  <div class="container">
+    {{ head("", item.features_title) }}
+    <div class="pillars{% if item.features | length == 3 %} pillars-3{% endif %}">
+      {% for f in item.features %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set evs = past_events | selectattr("category", "equalto", item.category) | list %}
+{% if evs %}
+<section class="section">
+  <div class="container">
+    <div class="head-row">{{ head("", item.past_title or _("Past events")) }}{{ arrow(_("All past events"), "events.html#past") }}</div>
+    <div class="grid g-3">{% for e in evs %}{{ past_event_card(e) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+
+{% if item.testimonials %}
+<section class="section s-ivory">
+  <div class="container">
+    <div class="head-row" style="margin-bottom:2rem">{{ head("", item.testimonials_title) }}<div class="carousel-nav" data-carousel="#exp-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
+    {{ quotes(item.testimonials, "exp-quotes") }}
+    {{ results_notice() }}
+  </div>
+</section>
+{% endif %}
+
+{% set ups = upcoming | selectattr("category", "equalto", item.category) | list %}
+<section class="section s-ink" id="upcoming">
+  <div class="container">
+    {% if ups %}
+    <div class="head-row">{{ head(_("Upcoming"), item.upcoming_title or _("Join the next delegation")) }}{{ arrow(_("All upcoming events"), "events.html#upcoming") }}</div>
+    {% if ups | length == 1 %}<div class="ev-feature">{{ event_card(ups[0]) }}</div>{% else %}<div class="grid g-3">{% for e in ups %}{{ event_card(e) }}{% endfor %}</div>{% endif %}
+    {% else %}
+    <div class="split-intro">
+      <div><p class="eyebrow">{{ _("Upcoming") }}</p><h2>{{ _("Be first to hear about the next program.") }}</h2></div>
+      <div><p class="lead">{{ _("We post every upcoming program on our Events page with full details, so you can explore it and inquire directly. Join our newsletter to hear as soon as the next one opens.") }}</p><div class="btn-row" style="margin-top:2rem">{{ btn(_("See upcoming events"), "events.html#upcoming", "light") }}{{ btn(_("Join our newsletter"), "#newsletter", "ghost", false) }}</div></div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">{{ faq(item.faq, item.title ~ ": " ~ _("FAQ")) }}</div>
+</section>
+
+{% endblock %}

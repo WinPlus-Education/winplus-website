@@ -1,0 +1,11 @@
+seo_title: "Photo Credits | WinPlus"
+meta_description: "Credits and licenses for third-party photographs used on the WinPlus website."
+title: Photo credits
+intro_text: "Photographs of WinPlus programs are WinPlus's own. Some other images are used under free licenses; we thank their authors. Images from Unsplash are used under the Unsplash License."
+credits:
+  - { subject: "IoT & AI Device Development", title: "Internet Widget", author: "dam", license: "CC BY 2.0", source: "https://www.flickr.com/photos/36749491@N00/16266134437", changes: "cropped, resized" }
+  - { subject: "AI Product Innovation for Luxury Retail", title: "The Boutique", author: "Peter Alfred Hess", license: "CC BY 2.0", source: "https://www.flickr.com/photos/22799676@N03/8246566956", changes: "resized" }
+  - { subject: "AR Glasses Accessibility Software", title: "action-adult-augmented-reality-756439", author: "toptenalternatives", license: "CC BY 2.0", source: "https://www.flickr.com/photos/159248733@N04/45977002511", changes: "resized" }
+  - { subject: "Product & UX Research", title: "Wireframing & prototyping table", author: "@resultsjunkie", license: "CC BY-SA 2.0", source: "https://www.flickr.com/photos/28678196@N04/9489007609", changes: "resized" }
+  - { subject: "Home hero: Caltech", title: "Beckman Auditorium", author: "Robert Skolmen (Bobskol854)", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Beckman_Auditorium.JPG", changes: "resized" }
+  - { subject: "Home hero: University of Pennsylvania", title: "College Hall U Penn", author: "Smallbones", license: "Public domain", source: "https://commons.wikimedia.org/wiki/File:College_Hall_U_Penn.JPG", changes: "cropped, resized" }

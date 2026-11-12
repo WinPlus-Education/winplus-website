@@ -1,45 +1,43 @@
 order: 8
-title: Deep Space Telescope Research
-category: science-space
-org: NASA (JWST)
-format: Research Project
-seo_title: Deep Space Telescope Research | High School Science Research Program | WinPlus
-meta_description: Explore the universe with data from the James Webb Space Telescope (JWST) and conduct an original astronomy research project with a NASA research scientist.
-summary: Explore the universe with data from the James Webb Space Telescope (JWST) and conduct an original astronomy research project with a NASA research scientist.
+title: Space Telescope Mission Design
+industry: science-space
+type: research
+status: open
+mentor_id: rachel-morgan
+seo_title: Space Telescope Research for High Schoolers | WinPlus
+meta_description: Design a space-telescope mission (optics, mechanics and science goals) in eight weeks with an optical scientist at NASA Ames Research Center (MIT PhD).
+summary: Design your own space-telescope mission, from science goal to optical and mechanical design, with an optical scientist at NASA Ames Research Center.
 image: https://images.unsplash.com/photo-1462332420958-a05d1e002413
-image_alt: Colorful nebula in deep space
-facts:
-- label: Format
-  value: Research Project
-- label: Length
-  value: 6–8 weeks
-- label: Schedule
-  value: '[Day/time, time zone]'
-- label: Group size
-  value: '[X] students'
-- label: Grade level
-  value: Grades 9–12
-- label: Next start
-  value: '[Month YEAR]'
-overview: Students learn how astronomers use space telescope data to study galaxies, stars and exoplanets, then pursue an original research question using publicly available data.
-activities:
-- How space telescopes collect and process data
-- Accessing and analyzing public astronomy data
-- Image processing and scientific visualization
-- Developing and testing a research question
-- Writing up and presenting original findings
-mentor: Research Scientist, NASA Ames Research Center
-mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
-mentor_photo: ''
-deliverables:
-- An astronomy research paper and presentation
-- Mentor recommendation letter (for eligible students)
-- Certificate of completion
-- Final showcase presentation
-prerequisites: Physics or math interest; Python basics helpful.
-faq:
-- q: Is this program online?
-  a: Yes. This is an research project with live sessions, so students can join from anywhere.
-- q: How do I apply?
-  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
-internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'
+image_alt: A colourful nebula in deep space
+format: Online · 8 mentor meetings
+length: 8 weeks
+dates: Summer 2027 · dates to be confirmed
+cohort: Small group
+overview: 'Every great telescope, from Hubble to the James Webb Space Telescope, starts with a question about the universe. Students choose a science goal, name their mission and design the telescope to
+  answer it, working through the same trade-offs NASA engineers face: aperture, field of view, detectors, orbit and stability.
+
+
+  Students take the role of mission scientist, optical engineer or mechanical engineer, building ray-tracing simulations and CAD or physical models, and finish with a design review like a real mission team.'
+outcomes:
+- A technical mission-design report
+- Optical ray-tracing simulation and mechanical CAD or physical model
+- A design-review presentation to mentors
+- Mentor recommendation letter for students who excel
+curriculum:
+- phase: Weeks 1–2
+  title: Science motivation
+  text: Recent space-telescope missions; define a science goal and mission requirements.
+- phase: Week 3
+  title: Preliminary design
+  text: Key parameters (telescope size, type, detectors, orbit) with supporting calculations.
+- phase: Weeks 4–5
+  title: Optical & mechanical models
+  text: Ray-tracing simulation, aberrations and stability; CAD or physical model.
+- phase: Weeks 6–8
+  title: Design review
+  text: Finalise the design, communicate the mission and present the final portfolio.
+eligibility:
+- Grades 9–12
+- Strong interest in physics, astronomy or engineering
+- Algebra and trigonometry; no prior CAD required
+mentor_note: Optical scientist, NASA Ames Research Center; MIT PhD

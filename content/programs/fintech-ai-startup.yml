@@ -1,45 +1,43 @@
-order: 6
-title: FinTech + AI Startup Project
-category: finance-business
-org: Bloomberg
-format: Online Program
-seo_title: FinTech + AI Startup Project | High School Finance Program | WinPlus
-meta_description: Develop a FinTech startup concept powered by AI, from problem and product to prototype and pitch, with a Bloomberg engineering lead.
-summary: Develop a FinTech startup concept powered by AI, from problem and product to prototype and pitch, with a Bloomberg engineering lead.
+order: 5
+title: FinTech & AI Startup Lab
+industry: business-finance
+type: internship
+status: open
+mentor_id: yuan-yuan
+seo_title: FinTech & AI Startup Program for High School Students | WinPlus
+meta_description: Design a FinTech startup powered by AI, from market research to business plan and pitch, mentored by an engineering leader with Bloomberg and Meta experience.
+summary: Discover how Wall Street technology delivers financial services, then design an AI-powered FinTech startup and pitch it, with a mentor from Bloomberg and Meta.
 image: https://images.unsplash.com/photo-1563986768711-b3bde3dc821e
-image_alt: Laptop showing financial software
-facts:
-- label: Format
-  value: Online Program
-- label: Length
-  value: 6–8 weeks
-- label: Schedule
-  value: '[Day/time, time zone]'
-- label: Group size
-  value: '[X] students'
-- label: Grade level
-  value: Grades 9–12
-- label: Next start
-  value: '[Month YEAR]'
-overview: 'Students experience what it''s like to build a FinTech company: they identify a real problem, design an AI-powered solution, build a prototype and pitch it.'
-activities:
-- Identify a real financial problem and its users
-- Design a product and business model
-- Build a simple prototype using AI tools
-- Test with users and refine
-- Pitch to a panel at the final showcase
-mentor: Engineering Lead, 8+ years (Bloomberg)
-mentor_bio: '[Mentor bio placeholder — 2–3 sentences on background and research.]'
-mentor_photo: ''
-deliverables:
-- A startup pitch deck and working prototype
-- Mentor recommendation letter (for eligible students)
-- Certificate of completion
-- Final showcase presentation
-prerequisites: No experience required.
-faq:
-- q: Is this program online?
-  a: Yes. This is an online program with live sessions, so students can join from anywhere.
-- q: How do I apply?
-  a: Click Apply below or book a free strategy session. Spaces are limited and are offered on a rolling basis.
-internal_note: '[Program details are a draft — Cedric to confirm content, dates, length and pricing.]'
+image_alt: A laptop showing financial software
+format: Online · live mentor sessions
+length: 6–8 weeks
+dates: Summer 2027 · dates to be confirmed
+cohort: Small group
+overview: 'Behind every trade, payment and bank app is technology. Students learn how FinTech products automate and deliver financial services, then apply machine learning, AI tools and user-experience
+  design to a problem they choose.
+
+
+  Guided by market research, each student designs a FinTech startup concept and writes a business plan, gaining a founder''s view of product, customers and business models.'
+outcomes:
+- A FinTech startup business plan
+- A product concept or prototype
+- A final investor-style pitch
+- Mentor recommendation letter for students who excel
+curriculum:
+- phase: Weeks 1–2
+  title: How FinTech works
+  text: How financial technology automates and delivers services.
+- phase: Weeks 3–4
+  title: Market research
+  text: Customers, competitors and an unmet need.
+- phase: Weeks 5–6
+  title: Product & AI
+  text: Machine learning, AI coding and UX design tools applied to the concept.
+- phase: Weeks 7–8
+  title: Plan & pitch
+  text: The business plan and final pitch.
+eligibility:
+- Grades 9–12
+- No prior finance or coding experience required
+- Interest in business, economics or technology
+mentor_note: Technologist with Bloomberg and Meta experience

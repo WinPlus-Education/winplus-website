@@ -1,45 +1,42 @@
 order: 8
-title: 深空望远镜科研
-category: science-space
-org: NASA (JWST)
-format: 科研项目
-seo_title: 深空望远镜科研 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 利用詹姆斯·韦布空间望远镜（JWST）数据探索宇宙，在 NASA 研究科学家指导下完成原创天文学研究。
-summary: 利用詹姆斯·韦布空间望远镜（JWST）数据探索宇宙，在 NASA 研究科学家指导下完成原创天文学研究。
+title: 太空望远镜任务设计
+industry: science-space
+type: research
+status: open
+mentor_id: rachel-morgan
+mentor_note: NASA 艾姆斯研究中心光学科学家；MIT 博士
+seo_title: 高中生太空望远镜科研项目 | WinPlus 欧歌学院
+meta_description: 八周内在 NASA 艾姆斯研究中心光学科学家（MIT 博士）指导下，设计一项太空望远镜任务：光学、机械与科学目标。
+summary: 从科学目标到光学与机械设计，设计属于你的太空望远镜任务，由 NASA 艾姆斯研究中心的光学科学家指导。
 image: https://images.unsplash.com/photo-1462332420958-a05d1e002413
 image_alt: 深空中绚丽的星云
-facts:
-- label: 形式
-  value: 科研项目
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 学生将学习天文学家如何利用空间望远镜数据研究星系、恒星与系外行星，并基于公开数据开展原创研究。
-activities:
-- 空间望远镜如何采集和处理数据
-- 获取并分析公开天文数据
-- 图像处理与科学可视化
-- 提出并验证研究问题
-- 撰写并展示原创研究成果
-mentor: NASA 艾姆斯研究中心研究科学家
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 天文学科研论文与成果展示
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 对物理或数学有兴趣；有 Python 基础更好。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+format: 线上 · 8 次导师会议
+length: 8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '从哈勃到詹姆斯·韦布太空望远镜，每一台伟大的望远镜都始于一个关于宇宙的问题。学生将选定科学目标、为任务命名，并设计能够回答这一问题的望远镜，权衡 NASA 工程师同样面对的取舍：口径、视场、探测器、轨道与稳定性。
+
+
+  学生分别担任任务科学家、光学工程师或机械工程师，完成光线追迹仿真与 CAD 或实体模型，并像真正的任务团队一样进行设计评审。'
+outcomes:
+- 技术性任务设计报告
+- 光学光线追迹仿真与机械 CAD 或实体模型
+- 面向导师的设计评审展示
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 科学动机
+  text: 近期太空望远镜任务；确定科学目标与任务需求。
+- phase: 第 3 周
+  title: 初步设计
+  text: 关键参数（口径、类型、探测器、轨道）及支撑计算。
+- phase: 第 4–5 周
+  title: 光学与机械模型
+  text: 光线追迹仿真、像差与稳定性；CAD 或实体模型。
+- phase: 第 6–8 周
+  title: 设计评审
+  text: 完善设计、讲述任务并展示最终作品集。
+eligibility:
+- 9–12 年级
+- 对物理、天文或工程有浓厚兴趣
+- 具备代数与三角函数基础；无需 CAD 经验

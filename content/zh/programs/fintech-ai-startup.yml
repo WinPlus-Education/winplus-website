@@ -1,45 +1,42 @@
-order: 6
-title: 金融科技 + AI 创业项目
-category: finance-business
-org: Bloomberg
-format: 线上项目
-seo_title: 金融科技 + AI 创业项目 | 高中生科研与实习项目 | WinPlus 欧歌学院
-meta_description: 在彭博工程负责人的指导下，打造一个由 AI 驱动的金融科技创业项目，从问题、产品到原型与路演。
-summary: 在彭博工程负责人的指导下，打造一个由 AI 驱动的金融科技创业项目，从问题、产品到原型与路演。
+order: 5
+title: 金融科技 + AI 创业实验室
+industry: business-finance
+type: internship
+status: open
+mentor_id: yuan-yuan
+mentor_note: 拥有彭博与 Meta 经验的技术专家
+seo_title: 高中生金融科技与 AI 创业项目 | WinPlus 欧歌学院
+meta_description: 从市场调研到商业计划书与路演，设计一个 AI 驱动的金融科技创业项目，由拥有彭博与 Meta 经验的导师指导。
+summary: 了解华尔街科技如何交付金融服务，再设计并路演一个 AI 驱动的金融科技创业项目，由拥有彭博与 Meta 经验的导师指导。
 image: https://images.unsplash.com/photo-1563986768711-b3bde3dc821e
-image_alt: 笔记本电脑上的金融软件
-facts:
-- label: 形式
-  value: 线上项目
-- label: 时长
-  value: 6–8 周
-- label: 上课时间
-  value: '[时间，时区]'
-- label: 小组人数
-  value: '[X] 人'
-- label: 适合年级
-  value: 9–12 年级
-- label: 下期开课
-  value: '[年 月]'
-overview: 学生将体验创办金融科技公司的全过程：发现真实问题，设计 AI 驱动的解决方案，开发原型并进行路演。
-activities:
-- 发现真实的金融问题及其用户
-- 设计产品与商业模式
-- 使用 AI 工具开发简易原型
-- 进行用户测试并迭代
-- 在结业展示会上向评审路演
-mentor: 彭博工程负责人，8 年以上经验
-mentor_bio: '[导师简介占位——2–3 句话介绍背景与研究方向。]'
-mentor_photo: ''
-deliverables:
-- 创业路演文稿与可运行原型
-- 导师亲笔推荐信（符合条件的学生）
-- 实习科研证书
-- 结业成果展示
-prerequisites: 无需经验。
-faq:
-- q: 这个项目是线上进行吗？
-  a: 是的，项目以线上形式进行并有导师实时授课，学生可在任何地方参加。
-- q: 如何申请？
-  a: 点击下方「申请」或预约免费规划咨询。名额有限，按申请顺序录取。
-internal_note: '[项目详情为草稿——请 Cedric 确认内容、日期、时长与价格。]'
+image_alt: 显示金融软件的笔记本电脑
+format: 线上 · 导师直播课
+length: 6–8 周
+dates: 2027 年暑期 · 具体日期待定
+cohort: 小班
+overview: '每一笔交易、支付和银行应用的背后都是科技。学生将了解金融科技产品如何实现金融服务的自动化与交付，并把机器学习、AI 工具和用户体验设计应用到自己选择的问题上。
+
+
+  在市场调研的基础上，每位学生设计一个金融科技创业概念并撰写商业计划书，从创始人的视角理解产品、用户与商业模式。'
+outcomes:
+- 金融科技创业商业计划书
+- 产品概念或原型
+- 投资人式期末路演
+- 表现优秀者可获导师推荐信
+curriculum:
+- phase: 第 1–2 周
+  title: 金融科技原理
+  text: 金融科技如何实现服务自动化与交付。
+- phase: 第 3–4 周
+  title: 市场调研
+  text: 用户、竞争对手与未被满足的需求。
+- phase: 第 5–6 周
+  title: 产品与 AI
+  text: 将机器学习、AI 编程与 UX 设计工具应用于产品概念。
+- phase: 第 7–8 周
+  title: 计划书与路演
+  text: 完成商业计划书与期末路演。
+eligibility:
+- 9–12 年级
+- 无需金融或编程基础
+- 对商业、经济或科技感兴趣

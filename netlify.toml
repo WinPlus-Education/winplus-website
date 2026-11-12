@@ -6,26 +6,114 @@
 [build.environment]
   PYTHON_VERSION = "3.11"
 
-# Old page addresses → new ones (keeps old links and Google results working)
-[[redirects]]
-  from = "/about.html"
-  to = "/team.html"
-  status = 301
+# Old page addresses → new ones (keeps old links and Google results working). Chinese pages (/zh/...) follow the same pattern.
 [[redirects]]
   from = "/about"
-  to = "/team.html"
+  to = "/about.html"
+  status = 301
+[[redirects]]
+  from = "/zh/about"
+  to = "/zh/about.html"
   status = 301
 [[redirects]]
   from = "/programs.html"
   to = "/research.html"
   status = 301
 [[redirects]]
+  from = "/zh/programs.html"
+  to = "/zh/research.html"
+  status = 301
+[[redirects]]
   from = "/programs"
   to = "/research.html"
   status = 301
 [[redirects]]
+  from = "/zh/programs"
+  to = "/zh/research.html"
+  status = 301
+[[redirects]]
   from = "/admin"
   to = "/admin/"
+  status = 301
+[[redirects]]
+  from = "/how-it-works.html"
+  to = "/about.html#how-we-work"
+  status = 301
+[[redirects]]
+  from = "/zh/how-it-works.html"
+  to = "/zh/about.html#how-we-work"
+  status = 301
+[[redirects]]
+  from = "/admissions/ivy-league.html"
+  to = "/admissions/us-college.html"
+  status = 301
+[[redirects]]
+  from = "/zh/admissions/ivy-league.html"
+  to = "/zh/admissions/us-college.html"
+  status = 301
+[[redirects]]
+  from = "/admissions/uk-canada-australia.html"
+  to = "/admissions/uk.html"
+  status = 301
+[[redirects]]
+  from = "/zh/admissions/uk-canada-australia.html"
+  to = "/zh/admissions/uk.html"
+  status = 301
+[[redirects]]
+  from = "/admissions/grad-school-international.html"
+  to = "/admissions/uk.html"
+  status = 301
+[[redirects]]
+  from = "/zh/admissions/grad-school-international.html"
+  to = "/zh/admissions/uk.html"
+  status = 301
+[[redirects]]
+  from = "/admissions/grad-school-us.html"
+  to = "/admissions/us-graduate.html"
+  status = 301
+[[redirects]]
+  from = "/zh/admissions/grad-school-us.html"
+  to = "/zh/admissions/us-graduate.html"
+  status = 301
+[[redirects]]
+  from = "/enrichment.html"
+  to = "/experiences.html"
+  status = 301
+[[redirects]]
+  from = "/zh/enrichment.html"
+  to = "/zh/experiences.html"
+  status = 301
+[[redirects]]
+  from = "/enrichment/un-conferences.html"
+  to = "/experiences/global-conferences.html"
+  status = 301
+[[redirects]]
+  from = "/zh/enrichment/un-conferences.html"
+  to = "/zh/experiences/global-conferences.html"
+  status = 301
+[[redirects]]
+  from = "/enrichment/summer-winter-schools.html"
+  to = "/experiences/campus-immersion.html"
+  status = 301
+[[redirects]]
+  from = "/zh/enrichment/summer-winter-schools.html"
+  to = "/zh/experiences/campus-immersion.html"
+  status = 301
+[[redirects]]
+  from = "/events/un-conference-delegation.html"
+  to = "/events/global-conference-delegation.html"
+  status = 301
+[[redirects]]
+  from = "/zh/events/un-conference-delegation.html"
+  to = "/zh/events/global-conference-delegation.html"
+  status = 301
+[[redirects]]
+  from = "/terms-and-disclaimer.html"
+  to = "/terms.html"
+  status = 301
+[[redirects]]
+  from = "/zh/terms-and-disclaimer.html"
+  to = "/zh/terms.html"
   status = 301
 
 # CSS/JS links carry a version number that changes on every build, so long caching is safe
@@ -39,3 +127,23 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/events/harvard-global-competency-immersion.html"
+  to = "/events/2026-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/zh/events/harvard-global-competency-immersion.html"
+  to = "/zh/events/2026-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/events/harvard-stanford-immersion.html"
+  to = "/events/2025-summer-campus-immersion.html"
+  status = 301
+
+[[redirects]]
+  from = "/zh/events/harvard-stanford-immersion.html"
+  to = "/zh/events/2025-summer-campus-immersion.html"
+  status = 301

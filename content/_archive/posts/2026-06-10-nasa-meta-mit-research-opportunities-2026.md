@@ -1,8 +1,8 @@
 ---
-title: "NASA, Meta, MIT: Real Research Opportunities for High School Students in 2026"
+title: "Mentors from NASA, Meta and MIT: A Guide to 2026 Research Programs for High School Students"
 date: 2026-06-10
 category: "Research & Internships"
-summary: "A comprehensive guide to the most competitive, mentor-led research programs available to high school students this summer."
+summary: "A guide to popular mentor-led research programs for high school students in summer 2026, with what sets each apart and how to apply."
 image: "https://images.unsplash.com/photo-1631557676757-fcc7b1160be8"
 image_alt: ""
 source: ""

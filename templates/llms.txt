@@ -9,7 +9,7 @@ WinPlus is a boutique education consultancy and talent-development platform foun
 - 100+ students advised; 87 offers from Ivy League and US Top-30 universities; Yale admissions three years in a row.
 {% for t in results_data.offer_tiers %}- {{ t.label }} offers include: {{ t.schools | map(attribute="name") | join(", ") }}.
 {% endfor %}- Advisors and mentors include {% for p in (team_people | rejectattr('founder') | list)[:8] %}{{ p.name }} ({{ p.title }}){{ ", " if not loop.last else "" }}{% endfor %}.
-- WinPlus students have taken part in 15 international conference sessions, including UNPFII and COSP19 at UN Headquarters, where a WinPlus student was the only high-school speaker (June 2026).
+- WinPlus students have taken part in 15 international conference sessions, including UNPFII and COSP19 at UN Headquarters, where a WinPlus student was one of the few young speakers (June 2026).
 - WinPlus does not guarantee admission. University and company names describe mentors' backgrounds and students' experiences, not affiliation.
 - Languages: English ({{ site_url }}/) and Simplified Chinese ({{ site_url }}/zh/).
 

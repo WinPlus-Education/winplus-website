@@ -71,8 +71,8 @@ COLLECTIONS = {
 LEGAL = ["privacy", "terms", "terms-of-service", "cookies", "disclaimer", "accessibility"]
 
 DATE_FORMATS = {
-    "en": {"long": "%B %-d, %Y", "mon": "%b", "day": "%-d", "year": "%Y", "weekday": "%A, %B %-d, %Y"},
-    "zh": {"long": "%Y年%-m月%-d日", "mon": "%-m月", "day": "%-d", "year": "%Y", "weekday": "%Y年%-m月%-d日 {wd}"},
+    "en": {"long": "%B %-d, %Y", "mon": "%b", "day": "%-d", "year": "%Y", "ym": "%b %Y", "weekday": "%A, %B %-d, %Y"},
+    "zh": {"long": "%Y年%-m月%-d日", "mon": "%-m月", "day": "%-d", "year": "%Y", "ym": "%Y年%-m月", "weekday": "%Y年%-m月%-d日 {wd}"},
 }
 ZH_WEEKDAYS = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
 

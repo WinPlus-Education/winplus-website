@@ -1,8 +1,8 @@
 ---
-title: "NASA、Meta、MIT：2026 年高中生真实科研机会全攻略"
+title: "NASA、Meta、MIT 背景导师领衔：2026 年高中生科研项目全攻略"
 date: 2026-06-10
 category: "科研与实习"
-summary: "全面盘点今年夏天高中生可参加的、竞争最激烈的导师制科研项目。"
+summary: "盘点 2026 年暑期高中生可参与的热门导师制科研项目，解析项目特色与申请要点。"
 image: "https://images.unsplash.com/photo-1631557676757-fcc7b1160be8"
 image_alt: ""
 source: ""

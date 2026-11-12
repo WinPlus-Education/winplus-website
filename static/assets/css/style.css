@@ -1205,3 +1205,13 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
   .article-body .profiles { grid-template-columns: 1fr; }
   .article-body .fig-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* show whole photos: rows size each photo by its own aspect ratio (--ar) so all share one height, nothing cropped */
+.article-body .fig-grid { display: flex; align-items: flex-start; gap: clamp(12px, 1.6vw, 24px); max-width: 1180px; }
+.article-body .fig-grid figure { flex: var(--ar, 1.33) 1 0; min-width: 0; }
+.article-body .fig-grid img { aspect-ratio: auto; height: auto; max-height: none; object-fit: contain; }
+.article-body .fig-grid-2 { max-width: 1080px; }
+/* single photos beside the text: whole photo, scaled to fit, never cropped */
+.article-body > figure img { width: auto; max-width: 100%; height: auto; max-height: 62vh; object-fit: contain; margin-inline: auto; }
+@media (max-width: 640px) { .article-body .fig-grid { flex-wrap: wrap; } .article-body .fig-grid figure { flex: 1 1 100%; } }
+.article-body .fig-grid + .fig-grid { margin-top: calc(-3rem + clamp(12px, 1.6vw, 24px)); }

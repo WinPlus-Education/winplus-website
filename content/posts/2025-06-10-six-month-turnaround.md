@@ -39,8 +39,8 @@ Beyond academics, Cathy built in experiences that mix learning and fun: going up
 Throughout the tour, she brought in more than thirty mentors and older students from Meta, Google, Silicon Valley venture capital and other backgrounds, who shared honest, thoughtful stories about careers, choosing a major and life. Back in Beijing, the student began to rethink his path. "The trip was short, but it had a huge impact on me," he recalls. "I started to realize I had many more choices, and to believe I could go further." He decided to apply to US universities.
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/photos/immersion-2024-imf.webp" alt="WinPlus study-tour students with hosts at the International Monetary Fund" loading="lazy"><figcaption>At the International Monetary Fund.</figcaption></figure>
-<figure><img src="/images/uploads/photos/immersion-2024-yale.webp" alt="WinPlus study-tour students and mentors in front of Yale's Sterling Memorial Library" loading="lazy"><figcaption>Sterling Memorial Library, Yale University.</figcaption></figure>
+<figure style="--ar: 1.333"><img src="/images/uploads/photos/immersion-2024-imf.webp" alt="WinPlus study-tour students with hosts at the International Monetary Fund" loading="lazy"><figcaption>At the International Monetary Fund.</figcaption></figure>
+<figure style="--ar: 1.333"><img src="/images/uploads/photos/immersion-2024-yale.webp" alt="WinPlus study-tour students and mentors in front of Yale's Sterling Memorial Library" loading="lazy"><figcaption>Sterling Memorial Library, Yale University.</figcaption></figure>
 </div>
 
 <p class="sec-num"><span>03</span></p>

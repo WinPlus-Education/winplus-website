@@ -43,9 +43,9 @@ programs: [jwst-deep-space-research]
 
 随后，欧歌学院的科研负责人<a href="../team.html#cedric-pan">盘超</a>老师联系了Rachel导师，并为“工程师”同学预约了科研评估面试。
 
-<div class="fig-grid fig-grid-2 fig-grid-tall">
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel导师在光学实验室" loading="lazy"><figcaption>Rachel导师在光学实验室。</figcaption></figure>
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel导师身着洁净服装调试设备" loading="lazy"><figcaption>Rachel导师身着洁净服装调试设备。</figcaption></figure>
+<div class="fig-grid fig-grid-2">
+<figure style="--ar: 0.772"><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel导师在光学实验室" loading="lazy"><figcaption>Rachel导师在光学实验室。</figcaption></figure>
+<figure style="--ar: 0.774"><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel导师身着洁净服装调试设备" loading="lazy"><figcaption>Rachel导师身着洁净服装调试设备。</figcaption></figure>
 </div>
 
 在线上评估咨询时，她没有上来就讲自己的课题，而是问了“工程师”同学一个很简单的问题："你平时最喜欢做什么？" “工程师”同学回答："我喜欢搞设计，还有机械结构。"

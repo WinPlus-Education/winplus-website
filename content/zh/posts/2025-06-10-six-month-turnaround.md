@@ -38,8 +38,8 @@ events: [cop28-dubai]
 在整个旅程中，郭老师还请来了三十多位来自Meta、谷歌、硅谷创投等不同背景的导师和学长姐，他们从职业生涯、专业选择到人生体验，分享了真实而深刻的故事。研学营结束后，他带着这些感悟回到北京，开始重新审视自己的人生轨迹。正如他自己回忆的那样："这段旅程虽然短，但对我影响非常大。我开始意识到，我其实可以有很多选择，也开始相信自己可以走得更远。"回到国内后，他下定决心，转向美国大学申请。
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/photos/immersion-2024-imf.webp" alt="欧歌学院研学营学生参访国际货币基金组织" loading="lazy"><figcaption>参访国际货币基金组织。</figcaption></figure>
-<figure><img src="/images/uploads/photos/immersion-2024-yale.webp" alt="欧歌学院研学营师生在耶鲁大学斯特林纪念图书馆前" loading="lazy"><figcaption>耶鲁大学斯特林纪念图书馆。</figcaption></figure>
+<figure style="--ar: 1.333"><img src="/images/uploads/photos/immersion-2024-imf.webp" alt="欧歌学院研学营学生参访国际货币基金组织" loading="lazy"><figcaption>参访国际货币基金组织。</figcaption></figure>
+<figure style="--ar: 1.333"><img src="/images/uploads/photos/immersion-2024-yale.webp" alt="欧歌学院研学营师生在耶鲁大学斯特林纪念图书馆前" loading="lazy"><figcaption>耶鲁大学斯特林纪念图书馆。</figcaption></figure>
 </div>
 
 <p class="sec-num"><span>03</span></p>

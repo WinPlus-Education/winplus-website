@@ -25,8 +25,8 @@ This session's agenda was broad, with a core focus on **the holistic health of I
 <p class="sec-num"><span>01</span></p>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/un-chinese-language-day.jpg" alt="UN Chinese Language Day banner, April 20" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/sun-lei-remarks.jpg" alt="Ambassador Sun Lei speaking at the Chinese Language Day event" loading="lazy"><figcaption>Sun Lei, Deputy Permanent Representative of China to the UN, speaks at the Chinese Language Day event.</figcaption></figure>
+<figure style="--ar: 2.535"><img src="/images/uploads/insights/unpfii/un-chinese-language-day.jpg" alt="UN Chinese Language Day banner, April 20" loading="lazy"></figure>
+<figure style="--ar: 2.235"><img src="/images/uploads/insights/unpfii/sun-lei-remarks.jpg" alt="Ambassador Sun Lei speaking at the Chinese Language Day event" loading="lazy"><figcaption>Sun Lei, Deputy Permanent Representative of China to the UN, speaks at the Chinese Language Day event.</figcaption></figure>
 </div>
 
 April 20 was not only the start of a high-level dialogue on Indigenous issues. It was also **UN Chinese Language Day**.
@@ -52,8 +52,8 @@ Over the past two years, WinPlus students have taken part in many international 
 </ol>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/delegation-outside-un-hq.jpg" alt="Cathy and students outside UN Headquarters in New York" loading="lazy"><figcaption>Cathy and students at UN Headquarters in New York.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="Cathy, in traditional Yao dress, and students at the rostrum of the UN General Assembly Hall" loading="lazy"><figcaption>Cathy and students in the UN General Assembly Hall.</figcaption></figure>
+<figure style="--ar: 1.769"><img src="/images/uploads/insights/unpfii/delegation-outside-un-hq.jpg" alt="Cathy and students outside UN Headquarters in New York" loading="lazy"><figcaption>Cathy and students at UN Headquarters in New York.</figcaption></figure>
+<figure style="--ar: 1.535"><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="Cathy, in traditional Yao dress, and students at the rostrum of the UN General Assembly Hall" loading="lazy"><figcaption>Cathy and students in the UN General Assembly Hall.</figcaption></figure>
 </div>
 
 For every conference, WinPlus co-founder <a href="../team.html#cathy-guo">Cathy Guo</a> leads the students herself, so that global issues from textbooks become real, specific learning.
@@ -75,10 +75,12 @@ Indigenous representatives from around the world, in traditional dress, turned t
 Cathy wore traditional Yao dress from Hezhou, Guangxi, to the Forum and to that evening's Chinese Language Day celebration. **Its vivid red base, fine embroidery and layered silver ornaments showed the richness of China's many ethnic cultures.** In an international setting like this, simply presenting one's culture is itself an act of exchange and mutual respect.
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="Cathy in traditional Yao dress in the General Assembly Hall" loading="lazy"><figcaption>Cathy in traditional Yao dress in the General Assembly Hall.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="WinPlus students with an Indigenous representative in traditional regalia" loading="lazy"><figcaption>WinPlus students with an Indigenous representative in traditional regalia.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="Indigenous delegates in traditional headdress in the General Assembly Hall" loading="lazy"><figcaption>Indigenous delegates in traditional headdress in the General Assembly Hall.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="Cathy and students with an Indigenous representative wearing a woven hat" loading="lazy"><figcaption>Cathy and students with an Indigenous representative wearing a woven hat.</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="Cathy in traditional Yao dress in the General Assembly Hall" loading="lazy"><figcaption>Cathy in traditional Yao dress in the General Assembly Hall.</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="WinPlus students with an Indigenous representative in traditional regalia" loading="lazy"><figcaption>WinPlus students with an Indigenous representative in traditional regalia.</figcaption></figure>
+</div>
+<div class="fig-grid fig-grid-2">
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="Indigenous delegates in traditional headdress in the General Assembly Hall" loading="lazy"><figcaption>Indigenous delegates in traditional headdress in the General Assembly Hall.</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="Cathy and students with an Indigenous representative wearing a woven hat" loading="lazy"><figcaption>Cathy and students with an Indigenous representative wearing a woven hat.</figcaption></figure>
 </div>
 
 Over the following days, WinPlus students and teachers joined side events on four major themes:
@@ -93,9 +95,9 @@ Over the following days, WinPlus students and teachers joined side events on fou
 In these sessions, students heard directly from Indigenous communities around the world about land being taken, resources over-exploited and cultures disappearing. Climate change, environmental change and economic inequality, concepts that can feel abstract in a textbook, became tied to specific people, communities and lives.
 
 <div class="fig-grid fig-grid-3">
-<figure><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="A side-event roundtable with Indigenous representatives at UN Headquarters" loading="lazy"><figcaption>A side-event roundtable with Indigenous representatives at UN Headquarters.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="Slide for a side event on land, conflict and self-determination of Indigenous peoples in Asia" loading="lazy"><figcaption>A side event on land, conflict and self-determination of Indigenous peoples in Asia.</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="Poster for a side event on the WHO framework for engagement with Indigenous peoples" loading="lazy"><figcaption>A side event on the WHO framework for engagement with Indigenous peoples.</figcaption></figure>
+<figure style="--ar: 1.777"><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="A side-event roundtable with Indigenous representatives at UN Headquarters" loading="lazy"><figcaption>A side-event roundtable with Indigenous representatives at UN Headquarters.</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="Slide for a side event on land, conflict and self-determination of Indigenous peoples in Asia" loading="lazy"><figcaption>A side event on land, conflict and self-determination of Indigenous peoples in Asia.</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="Poster for a side event on the WHO framework for engagement with Indigenous peoples" loading="lazy"><figcaption>A side event on the WHO framework for engagement with Indigenous peoples.</figcaption></figure>
 </div>
 
 <p class="sec-num"><span>05</span></p>
@@ -111,8 +113,8 @@ At a side event on Indigenous peoples, climate change and land conflict, Youran 
 <blockquote class="pull"><p>When these languages are forgotten, what's lost isn't just a tool for communication. It's a history, an identity and a deep connection between people and their land.</p><cite>A WinPlus student</cite></blockquote>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/reflection-vivian.jpg" alt="A WinPlus student holding a Forum publication in the General Assembly Hall" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="A WinPlus student in the General Assembly Hall" loading="lazy"></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/reflection-vivian.jpg" alt="A WinPlus student holding a Forum publication in the General Assembly Hall" loading="lazy"></figure>
+<figure style="--ar: 1.728"><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="A WinPlus student in the General Assembly Hall" loading="lazy"></figure>
 </div>
 
 That took her beyond an abstract idea of "cultural preservation" to the heart of rights and dignity. "It isn't only about offering support. We need to listen to Indigenous peoples themselves and let them lead," she said. "Only when Indigenous peoples can express their own needs and shape their own development do protections really mean something." Indigenous issues stopped being "someone else's problem" and became a question of rights, participation, dignity and cultural continuity.

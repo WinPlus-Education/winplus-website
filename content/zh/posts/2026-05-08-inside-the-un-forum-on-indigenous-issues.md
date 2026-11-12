@@ -24,8 +24,8 @@ events: [unpfii-25th-session]
 <p class="sec-num"><span>01</span></p>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/un-chinese-language-day.jpg" alt="联合国中文日主题海报" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/sun-lei-remarks.jpg" alt="中国常驻联合国副代表孙磊在中文日活动上致辞" loading="lazy"><figcaption>中国常驻联合国副代表孙磊在中文日专题活动上发表致辞。</figcaption></figure>
+<figure style="--ar: 2.535"><img src="/images/uploads/insights/unpfii/un-chinese-language-day.jpg" alt="联合国中文日主题海报" loading="lazy"></figure>
+<figure style="--ar: 2.235"><img src="/images/uploads/insights/unpfii/sun-lei-remarks.jpg" alt="中国常驻联合国副代表孙磊在中文日活动上致辞" loading="lazy"><figcaption>中国常驻联合国副代表孙磊在中文日专题活动上发表致辞。</figcaption></figure>
 </div>
 
 4月20日这一天，不仅是土著议题高层级国际对话的起点，也恰逢**联合国中文日**的庆祝。
@@ -51,8 +51,8 @@ events: [unpfii-25th-session]
 </ol>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/delegation-outside-un-hq.jpg" alt="郭琪老师和同学们在纽约联合国总部外" loading="lazy"><figcaption>郭琪老师和同学们在纽约联合国总部。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="郭老师与学生们在联合国大会厅讲台" loading="lazy"><figcaption>郭老师与学生们在纽约联合国大会厅（UN General Assembly Hall）。</figcaption></figure>
+<figure style="--ar: 1.769"><img src="/images/uploads/insights/unpfii/delegation-outside-un-hq.jpg" alt="郭琪老师和同学们在纽约联合国总部外" loading="lazy"><figcaption>郭琪老师和同学们在纽约联合国总部。</figcaption></figure>
+<figure style="--ar: 1.535"><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="郭老师与学生们在联合国大会厅讲台" loading="lazy"><figcaption>郭老师与学生们在纽约联合国大会厅（UN General Assembly Hall）。</figcaption></figure>
 </div>
 
 每一次参会，为了更好的帮助学生们将课本中的国际议题转化为真实而具体的学习体验，欧歌学院的创始人<a href="../team.html#cathy-guo">郭琪</a>老师都亲力亲为，带领学生们深入对话的核心。
@@ -74,10 +74,12 @@ events: [unpfii-25th-session]
 郭老师身着来自广西贺州的瑶族传统服饰参加会议以及当晚的联合国中文日活动。**鲜明的红色底色、精致的刺绣纹样，以及层叠的银饰与装饰细节，展现了中华民族的文化魅力。**在这样的国际场域中，多民族文化的呈现本身就是一种文化交流与相互尊重的体现。
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="郭老师身着瑶族传统服饰在联合国大会厅" loading="lazy"><figcaption>郭老师身着瑶族传统服饰在联合国大会厅。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="欧歌学子与身着传统服饰的土著代表合影" loading="lazy"><figcaption>欧歌学子与身着传统服饰的土著代表合影。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="头戴传统羽冠的土著代表在大会厅" loading="lazy"><figcaption>头戴传统羽冠的土著代表在大会厅。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="郭老师和学生们与头戴编织斗笠的土著代表合影" loading="lazy"><figcaption>郭老师和学生们与头戴编织斗笠的土著代表合影。</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="郭老师身着瑶族传统服饰在联合国大会厅" loading="lazy"><figcaption>郭老师身着瑶族传统服饰在联合国大会厅。</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="欧歌学子与身着传统服饰的土著代表合影" loading="lazy"><figcaption>欧歌学子与身着传统服饰的土著代表合影。</figcaption></figure>
+</div>
+<div class="fig-grid fig-grid-2">
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="头戴传统羽冠的土著代表在大会厅" loading="lazy"><figcaption>头戴传统羽冠的土著代表在大会厅。</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="郭老师和学生们与头戴编织斗笠的土著代表合影" loading="lazy"><figcaption>郭老师和学生们与头戴编织斗笠的土著代表合影。</figcaption></figure>
 </div>
 
 在接下来几天的会议中，欧歌学院师生还参加了多个分论坛的深入讨论，涵盖四个重要议题：
@@ -92,9 +94,9 @@ events: [unpfii-25th-session]
 在这些分论坛中，学生们听到了来自全球各地土著社区的直接声音，了解到他们在土地权利被侵占、资源被过度开发、文化逐渐消失等现实困境中的生存状况。气候变化、环境变化、经济不平等，这些原本在教科书中显得有些抽象的概念，在这里与具体的人、具体的社区、具体的生命经历相互交织。
 
 <div class="fig-grid fig-grid-3">
-<figure><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="联合国总部分论坛圆桌讨论" loading="lazy"><figcaption>联合国总部分论坛圆桌讨论。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="关于亚洲土著人民土地、冲突与自决的边会" loading="lazy"><figcaption>关于亚洲土著人民土地、冲突与自决的边会。</figcaption></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="关于世卫组织与土著人民合作框架的边会海报" loading="lazy"><figcaption>关于世卫组织与土著人民合作框架的边会海报。</figcaption></figure>
+<figure style="--ar: 1.777"><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="联合国总部分论坛圆桌讨论" loading="lazy"><figcaption>联合国总部分论坛圆桌讨论。</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="关于亚洲土著人民土地、冲突与自决的边会" loading="lazy"><figcaption>关于亚洲土著人民土地、冲突与自决的边会。</figcaption></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="关于世卫组织与土著人民合作框架的边会海报" loading="lazy"><figcaption>关于世卫组织与土著人民合作框架的边会海报。</figcaption></figure>
 </div>
 
 <p class="sec-num"><span>05</span></p>
@@ -110,8 +112,8 @@ events: [unpfii-25th-session]
 <blockquote class="pull"><p>当这些语言被遗忘时，失去的不仅是沟通的工具，更是一段历史、一种身份和人与土地之间深刻的联系。</p><cite>欧歌学员</cite></blockquote>
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/reflection-vivian.jpg" alt="欧歌学子在联合国大会厅手持论坛资料" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="欧歌学子在联合国大会厅" loading="lazy"></figure>
+<figure style="--ar: 2.042"><img src="/images/uploads/insights/unpfii/reflection-vivian.jpg" alt="欧歌学子在联合国大会厅手持论坛资料" loading="lazy"></figure>
+<figure style="--ar: 1.728"><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="欧歌学子在联合国大会厅" loading="lazy"></figure>
 </div>
 
 这样的认识让她突破了对"文化保护"的抽象理解，触及了权利与尊严的本质。"这不仅仅只是提供支持，更需要聆听原住民自身的声音，让他们成为主动的引领者。只有当原住民能够主动表达需求、主导发展方向时，相关保护措施才具有真正的意义。"这让土著议题从一个"他者问题"转化为一个关于权利、参与、尊严与文化延续的现实议题。

@@ -46,9 +46,9 @@ The engineer had strong spatial imagination and making skills. She just needed a
 
 WinPlus co-founder and research lead <a href="../team.html#cedric-pan">Cedric Pan</a> then contacted Rachel and booked a research assessment interview for the engineer.
 
-<div class="fig-grid fig-grid-2 fig-grid-tall">
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel in an optics laboratory" loading="lazy"><figcaption>Rachel in an optics laboratory.</figcaption></figure>
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel in cleanroom gear assembling flight hardware" loading="lazy"><figcaption>Rachel in cleanroom gear assembling flight hardware.</figcaption></figure>
+<div class="fig-grid fig-grid-2">
+<figure style="--ar: 0.772"><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel in an optics laboratory" loading="lazy"><figcaption>Rachel in an optics laboratory.</figcaption></figure>
+<figure style="--ar: 0.774"><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel in cleanroom gear assembling flight hardware" loading="lazy"><figcaption>Rachel in cleanroom gear assembling flight hardware.</figcaption></figure>
 </div>
 
 In the online assessment, Rachel didn't open with her own research. She asked the engineer a simple question: "What do you most like to do?" The engineer answered: "I like designing things, and mechanical structures."

@@ -52,10 +52,10 @@ His father is a surgeon who, on his busiest days, performs seven operations. Gro
 
 At the UN, that idea became concrete. Jet-lagged, he listened from 10 a.m. to 6 p.m. Between sessions he sought out participants from Saudi Arabia, Japan, Spain and elsewhere to ask how their countries support people with disabilities.
 
-<div class="fig-grid fig-grid-3 fig-grid-square">
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="The student with a delegate in traditional Gulf dress" loading="lazy"><figcaption>The student with a delegate in traditional Gulf dress.</figcaption></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="The student with a conference participant wearing a UN badge" loading="lazy"><figcaption>The student with a conference participant wearing a UN badge.</figcaption></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="The student in conversation with a delegate in a UN corridor" loading="lazy"><figcaption>The student in conversation with a delegate in a UN corridor.</figcaption></figure>
+<div class="fig-grid fig-grid-3">
+<figure style="--ar: 1.080"><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="The student with a delegate in traditional Gulf dress" loading="lazy"><figcaption>The student with a delegate in traditional Gulf dress.</figcaption></figure>
+<figure style="--ar: 1.081"><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="The student with a conference participant wearing a UN badge" loading="lazy"><figcaption>The student with a conference participant wearing a UN badge.</figcaption></figure>
+<figure style="--ar: 1.080"><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="The student in conversation with a delegate in a UN corridor" loading="lazy"><figcaption>The student in conversation with a delegate in a UN corridor.</figcaption></figure>
 </div>
 
 During the conference, the China Disabled Persons' Federation presented *Blooming Together*, an exhibition of more than 200 works by Chinese artists with disabilities, from calligraphy and porcelain to wood carving and paper-cutting.

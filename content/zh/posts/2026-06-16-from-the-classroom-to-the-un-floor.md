@@ -53,10 +53,10 @@ events: [cosp19-un-headquarters]
 
 到了联合国，这个想法变得具体起来。带着时差，他从上午十点一直听到下午六点。会议间隙，他主动和来自沙特、日本、西班牙等国的参会者交流，聊各国残障保障的现状。
 
-<div class="fig-grid fig-grid-3 fig-grid-square">
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="这位同学与身着海湾传统服饰的代表合影" loading="lazy"><figcaption>这位同学与身着海湾传统服饰的代表合影。</figcaption></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="这位同学与佩戴联合国证件的参会者合影" loading="lazy"><figcaption>这位同学与佩戴联合国证件的参会者合影。</figcaption></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="这位同学在联合国走廊与代表交流" loading="lazy"><figcaption>这位同学在联合国走廊与代表交流。</figcaption></figure>
+<div class="fig-grid fig-grid-3">
+<figure style="--ar: 1.080"><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="这位同学与身着海湾传统服饰的代表合影" loading="lazy"><figcaption>这位同学与身着海湾传统服饰的代表合影。</figcaption></figure>
+<figure style="--ar: 1.081"><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="这位同学与佩戴联合国证件的参会者合影" loading="lazy"><figcaption>这位同学与佩戴联合国证件的参会者合影。</figcaption></figure>
+<figure style="--ar: 1.080"><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="这位同学在联合国走廊与代表交流" loading="lazy"><figcaption>这位同学在联合国走廊与代表交流。</figcaption></figure>
 </div>
 
 会议期间，由中国残联主办的"共绽放——中国残疾人文创作品展"在联合国展区亮相。书画、瓷器、木雕、剪纸等200余件作品，都出自中国残障创作者之手。

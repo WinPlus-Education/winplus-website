@@ -46,4 +46,4 @@ Cookie 是您浏览网站时存放于您装置上之小型文字档案。类似�
 
 ## 6. 联络我们
 
-有关本 Cookie 政策之查询，请电邮至 [填写私隐联络电邮] 与 WinPlus 联络。
+有关本 Cookie 政策之查询，请电邮至 info@winplus.org 与 WinPlus 联络。

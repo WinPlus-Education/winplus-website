@@ -46,4 +46,4 @@ We may update this Cookie Policy to reflect changes in the cookies we use or in 
 
 ## 6. Contact Us
 
-Questions about this Cookie Policy may be directed to WinPlus at [insert privacy contact email].
+Questions about this Cookie Policy may be directed to WinPlus at info@winplus.org.

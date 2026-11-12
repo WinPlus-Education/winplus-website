@@ -9,14 +9,6 @@ image: https://images.unsplash.com/photo-1446776811953-b23d57bd21aa
 image_alt: "Earth seen from the International Space Station"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
-faq_title: "Questions families ask about our research internships"
-faq:
-  - q: "My child's test scores are average and their direction is still unclear. Can they join?"
-    a: "Yes. Our job is to turn a vague interest into something concrete. During the consultation, our team looks for the student's strengths and suggests initial directions."
-  - q: "Can a high school student really produce professional-level work in eight weeks?"
-    a: "Yes. The key is how we teach. We find a different growth path for each student instead of forcing everyone into one template. Mentors learn each student's strengths and current level, then set a path that stretches them without losing them. If the student keeps pace, the output and growth over eight weeks follow naturally."
-  - q: "How do you make sure an online research internship is rigorous?"
-    a: "Running online is exactly why we can bring in top mentors. Mentors like Rachel (a NASA scientist) and senior engineers at Silicon Valley companies such as Meta and Google have very full schedules. Flexible, efficient online collaboration is what lets strong high school students in China and North America work directly on first-hand problems from world-class labs."
 ---
 
 At the start of summer 2025, two 11th graders were each stuck.
@@ -37,17 +29,17 @@ Even less could they have imagined that those eight weeks would reshape their ap
 
 <p class="sec-num"><span>01</span></p>
 
-When the engineer and her parents first came to us, WinPlus co-founder Cathy Guo could feel the parents' anxiety.
+When the engineer and her parents first came to us, WinPlus co-founder Cathy could feel the parents' anxiety.
 
 "Her public school has limited resources and she's never done research," her parent said. "She doesn't have a standout project, and she's always so unhurried. She's at a real disadvantage for good schools."
+
+<figure><img src="/images/uploads/insights/nasa-research/student-3d-print.jpg" alt="A detailed 3D-printed engineering model designed by the engineer" loading="lazy"><figcaption>One of the engineer's 3D-printed engineering designs.</figcaption></figure>
 
 But as they talked, Cathy noticed details hidden beneath the worry.
 
 "This girl has very strong hands-on ability," Cathy recalled. "She teaches herself to knit. In her school's drama club, she sewed every one of the props on stage herself."
 
 The engineer had strong spatial imagination and making skills. She just needed a stage to use them.
-
-<figure><img src="/images/uploads/insights/nasa-research/student-3d-print.jpg" alt="A detailed 3D-printed engineering model designed by the engineer" loading="lazy"><figcaption>One of the engineer's 3D-printed engineering designs.</figcaption></figure>
 
 <p class="sec-num"><span>02</span></p>
 
@@ -87,13 +79,13 @@ This admissions season she was **admitted to the University of Michigan's mechan
 
 <p class="sec-num"><span>04</span></p>
 
+<figure><img src="/images/uploads/insights/nasa-research/student-harvard-robotics.jpg" alt="The astronomer and other students examining robotic hands in a Harvard lab" loading="lazy"><figcaption>The astronomer (left) learning about humanoid robotics at Harvard.</figcaption></figure>
+
 In the same team, the astronomer went through a different transformation.
 
 He had always been a science fanatic, never without a science-fiction novel, with a deep passion for astrophysics. But just before application season, he was rejected by a well-known research program while several classmates got in.
 
 "I was really panicking," he recalls. "Everyone else had something and I didn't. I wondered if I'd get in anywhere."
-
-<figure><img src="/images/uploads/insights/nasa-research/student-harvard-robotics.jpg" alt="The astronomer and other students examining robotic hands in a Harvard lab" loading="lazy"><figcaption>The astronomer (left) learning about humanoid robotics at Harvard.</figcaption></figure>
 
 His first telescope design was elaborate: a three-mirror system with multiple layers, very impressive-looking. Rachel asked him to rethink it: "Do these complex designs actually improve performance?"
 
@@ -115,6 +107,6 @@ A few months later, **offers in astrophysics from Cambridge, Imperial College Lo
 
 WinPlus's online research and internship programs for summer 2026 are now open. Alongside the NASA research internship, we offer custom research paths in **artificial intelligence, computer science, data science, business and economics, biomedicine, gene therapy, mechanical engineering, electrical engineering, the humanities and arts, and film**.
 
-Maybe your child faces the same questions: wanting a distinctive profile but not knowing where to start; worrying that many projects on the market are shallow, but also that rigorous ones will be too hard; or being more introverted and unsure how to stand out in an application. These are the questions families ask us most, and we answer the most common ones below.
+Maybe your child faces the same questions: wanting a distinctive profile but not knowing where to start; worrying that many projects on the market are shallow, but also that rigorous ones will be too hard; or being more introverted and unsure how to stand out in an application. These are the questions families ask us most.
 
 Research and internships are a window onto the world. The real goal is for students to discover their own interests and potential by working on real academic problems.

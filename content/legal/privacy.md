@@ -122,7 +122,7 @@ Depending on where you live, you may have the right to: (a) know what personal i
 
 ### 11.3 Submitting a Request
 
-Submit requests to [insert privacy contact email]. We will verify your identity before acting on a request and will respond within the period required by applicable law. You may also lodge a complaint with the data protection authority in your jurisdiction.
+Submit requests to info@winplus.org. We will verify your identity before acting on a request and will respond within the period required by applicable law. You may also lodge a complaint with the data protection authority in your jurisdiction.
 
 ## 12. Region-Specific Disclosures
 
@@ -148,7 +148,7 @@ WinPlus processes personal information of Macao residents in accordance with the
 
 ### 12.6 Singapore
 
-WinPlus processes personal data in accordance with the Personal Data Protection Act 2012. WinPlus’ Privacy Officer serves as its Data Protection Officer and may be contacted at [insert privacy contact email].
+WinPlus processes personal data in accordance with the Personal Data Protection Act 2012. WinPlus’ Privacy Officer serves as its Data Protection Officer and may be contacted at info@winplus.org.
 
 ### 12.7 United Arab Emirates
 
@@ -166,6 +166,6 @@ Attn: Privacy Officer, [insert name]
 
 Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
 
-Email: [insert privacy contact email]
+Email: info@winplus.org
 
 This Privacy Policy is available in English and Chinese. In the event of any inconsistency, the English version prevails, except where applicable law requires otherwise.

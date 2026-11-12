@@ -23,7 +23,7 @@ offices:
   - { label: "US headquarters", display: "Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138", street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
   - { label: "China headquarters", display: "Beijing", street: "Building 1, 26A Zhanlanguan Road, Xicheng District", city: "Beijing", region: "Beijing", country: "CN" }
 
-email: "[email@winplus.org]"
+email: "info@winplus.org"
 wechat_id: ""
 wechat_qr: /images/uploads/wechat-qr.png
 
@@ -172,11 +172,11 @@ cookie:
 consent:
   version: "2026-11-04 draft"
   inquiry_notice: "WinPlus will use the information you provide to respond to your inquiry and provide information about our programs, as described in our Privacy Policy. Fields marked * are required; if they are not completed, we may be unable to respond. Your information will be processed in the United States."
-  marketing: "Yes, I would like to receive newsletters, white papers, and information about WinPlus programs and events by email from WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, [insert contact email]. WinPlus will use my name and email address for this purpose. I can unsubscribe at any time."
+  marketing: "Yes, I would like to receive newsletters, white papers, and information about WinPlus programs and events by email from WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, info@winplus.org. WinPlus will use my name and email address for this purpose. I can unsubscribe at any time."
   school_notice: "WinPlus will use the business contact information you provide to respond to your inquiry and communicate with you about potential collaboration, as described in our Privacy Policy."
   age_question: "I am a"
   age_under: "Thank you for your interest. Please ask your parent or guardian to complete this form on your behalf."
   age_teen: "Please complete this form with your parent or guardian."
-  prc_transfer: "I consent to WinPlus processing the personal information I provide outside mainland China, in the United States, and providing it to the overseas recipients listed in the Privacy Policy, for the purposes described in the Privacy Policy. I may exercise my rights by contacting WinPlus at [insert privacy contact email]."
+  prc_transfer: "I consent to WinPlus processing the personal information I provide outside mainland China, in the United States, and providing it to the overseas recipients listed in the Privacy Policy, for the purposes described in the Privacy Policy. I may exercise my rights by contacting WinPlus at info@winplus.org."
   prc_child: "I am the parent or legal guardian of the child named in this form. I separately consent to WinPlus processing my child's personal information, which is sensitive personal information under PRC law, for the purposes of responding to my inquiry, enrollment, and program delivery. I understand that this processing is necessary for my child to participate in WinPlus programs and that WinPlus protects this information as described in Section 7 of the Privacy Policy."
   event_photo: "WinPlus will photograph and record this event. Photos and video may be published on the WinPlus website, social media, newsletters, and promotional materials, as described in our Privacy Policy. I consent to WinPlus using photos and video in which I (and my child) appear for these purposes."

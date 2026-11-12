@@ -18,23 +18,23 @@ featured: true
 
 <blockquote class="pull"><p>一双医生的手，一次只能挽救一条生命；一个包容的社会，却能改变千千万万人的命运。</p><cite>他在大会上的发言</cite></blockquote>
 
+<figure><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV 直播画面中学员在 NGO 席位发言" loading="lazy"><figcaption>UN Web TV 直播截图。</figcaption></figure>
+
 发言结束，掌声在会场中响起。两分多钟很短；但这是一个17岁的声音，被正式记录在联合国的会议里。
 
 从反复打磨讲稿，到在联合国会场从容开口，这几分钟的背后，是他这些天的思考与准备，也有导师团队一路的陪伴。
 
 残障议题，关乎一个人能否平等地上学、工作、获取信息，能否参与与自己有关的决定。对正在认识世界的学生来说，走近这些真实处境，也是在学习如何理解差异、尊重他人的选择，并思考自己能够为他人做些什么。
 
-<figure><img src="/images/uploads/insights/un-crpd-speech/un-web-tv-broadcast.jpg" alt="UN Web TV 直播画面中学员在 NGO 席位发言" loading="lazy"><figcaption>UN Web TV 直播截图。</figcaption></figure>
-
 <p class="sec-num"><span>01</span></p>
+
+<figure><img src="/images/uploads/photos/cosp19-student-guo-un-emblem.webp" alt="这位同学与郭老师在联合国总部会徽前合影" loading="lazy"><figcaption>这位同学和郭老师在纽约联合国总部。</figcaption></figure>
 
 过去三年间，欧歌学院的学子们见证并参与着全球重要议题的发生：从联合国气候变化大会到联合国妇女大会，从亚太区可持续发展论坛到经社理事会青年论坛。今年4月举行的联合国原住民问题常设论坛上，亦有欧歌学生的身影。
 
 今年，恰逢《残疾人权利公约》（CRPD）通过二十周年。2026年6月9日至11日，《公约》缔约国大会第十九届会议在纽约联合国总部举行。各缔约国政府代表、国际组织、残疾人权利倡导者和青年代表齐聚一堂。会上，中方候选人常健教授当选联合国残疾人权利委员会委员——这是中国代表时隔十年再次进入该委员会。
 
 本届大会的主题是"《公约》二十周年：巩固成就，规划变化世界中的下一阶段落实"。三场圆桌会议分别聚焦：消除针对残疾人的剥削、暴力与虐待；加强照护与支持体系，保障残疾人自主、独立地生活；以及推动残疾人从"参与"走向"代表"，在政治和公共生活中发挥领导作用。这些讨论都指向同一个问题：平等的权利，怎样才能真正走进日常生活？
-
-<figure><img src="/images/uploads/photos/cosp19-student-guo-un-emblem.webp" alt="这位同学与郭老师在联合国总部会徽前合影" loading="lazy"><figcaption>这位同学和郭老师在纽约联合国总部。</figcaption></figure>
 
 这次联合国之行，由欧歌学院创始人郭琪老师带队。郭老师曾任职于联合国妇女署，毕业于哈佛大学肯尼迪政府学院。这一路上，她不只是组织者，更是他的引路人：
 
@@ -65,9 +65,9 @@ featured: true
 
 <blockquote class="pull"><p>残疾是身体上的一种缺陷，但它不能定义一个人的勇气。</p><cite>东阳木雕大师 胡先民</cite></blockquote>
 
-站在胡老师的大型木雕《生生不息》前，这位同学想起了自己发言稿里的最后一句：让每个人——无论能力如何——不只是被照顾，更被真正看见。而这个展厅，正是在做这件事。
-
 <figure><img src="/images/uploads/insights/un-crpd-speech/blooming-together-exhibition.jpg" alt="这位同学、郭老师与东阳木雕大师胡先民在共绽放展板前合影" loading="lazy"><figcaption>与东阳木雕大师胡先民在"共绽放"展板前合影。</figcaption></figure>
+
+站在胡老师的大型木雕《生生不息》前，这位同学想起了自己发言稿里的最后一句：让每个人——无论能力如何——不只是被照顾，更被真正看见。而这个展厅，正是在做这件事。
 
 让这位同学难忘的，还有一场关于聋人群体与手语文化的边会。台上大部分发言者都是聋人，全程用手语分享自己的经历和观点。活动最后，一位来自马耳他的聋人用手语讲了一个故事：在马耳他手语获得法律认可之前，许多聋人在日常生活中获取信息有多难，又有多少不被理解的时刻。
 
@@ -83,9 +83,9 @@ featured: true
 
 <div class="callout-dark"><p class="big">"Nothing About Us Without Us."</p><p class="small">没有我们的参与，就不要替我们做决定。</p></div>
 
-在一场分会上，一位和他年龄相仿的年轻人在台上发言。他来自纽约一家自闭症倡导机构，作为一名自闭症人士，也作为倡导者，他清晰地讲述了残障者如何为自己发声、真正参与公共事务，引发现场很多共鸣。
-
 <figure><img src="/images/uploads/insights/un-crpd-speech/youth-advocate-session.jpg" alt="联合国总部会议室中青年倡导者发言" loading="lazy"><figcaption>来自纽约的青年倡导者发言。</figcaption></figure>
+
+在一场分会上，一位和他年龄相仿的年轻人在台上发言。他来自纽约一家自闭症倡导机构，作为一名自闭症人士，也作为倡导者，他清晰地讲述了残障者如何为自己发声、真正参与公共事务，引发现场很多共鸣。
 
 这一幕给这位同学带来了很大冲击。在传统的善意中，残障群体往往被放在"被动接受照顾"的弱者角色里；而在这里，他们是发言者、倡导者，是议题的主导者。他在当天的总结里写道：
 
@@ -93,11 +93,11 @@ featured: true
 
 <p class="sec-num"><span>04</span></p>
 
+<figure><img src="/images/uploads/insights/un-crpd-speech/guo-shi-student-un.jpg" alt="郭老师、石老师和这位同学在联合国总部外合影" loading="lazy"><figcaption>郭老师、石老师和这位同学在联合国。</figcaption></figure>
+
 要在联合国的正式分会场发言，需要资格审核、文书提交与登记排队。这位同学最初排在第153位。按照惯常的进度，这个顺序很可能轮不到他。
 
 郭老师主动找到了会场负责人，向她介绍这位同学，表达他从中国来，很希望能有发言机会。这位同学也没有放弃，带着讲稿在会场里一直等。随着前面一些发言者临时取消或缺席，他的名次一点点往前挪，终于等到了那个属于他的两分钟。
-
-<figure><img src="/images/uploads/insights/un-crpd-speech/guo-shi-student-un.jpg" alt="郭老师、石老师和这位同学在联合国总部外合影" loading="lazy"><figcaption>郭老师、石老师和这位同学在联合国。</figcaption></figure>
 
 发言前，少年的内心难免泛起波澜，紧张得满脸通红。同行导师石老师鼓励他：
 

@@ -15,26 +15,12 @@
 {{ page_hero(hero, [[_("Insights"), "insights.html"], [post.title, post.url]], meta=[post.date | date_fmt("long"), (minutes if minutes > 0 else 1) ~ " " ~ _("min read"), (_("Originally published on") ~ " " ~ post.source) if post.source else ""], cls="article-hero") }}
 
 <article class="section article-section">
-  <div class="container detail article-layout">
+  <div class="container">
     <div class="article-body prose">{{ body | safe }}</div>
-    <aside class="detail-side">
-      <div class="side-card side-sticky">
-        <p class="eyebrow">{{ post.category }}</p>
-        <p class="muted small">{{ post.date | date_fmt("long") }} · {{ minutes if minutes > 0 else 1 }} {{ _("min read") }}</p>
-        <h2 class="h3" style="margin-top:1.25rem">{{ _("Get personalized advice") }}</h2>
-        <p class="small muted">{{ _("Talk to a WinPlus mentor about your student's plan.") }}</p>
-        {{ btn(site.cta_text, site.cta_link) }}
-        {{ btn(_("All articles"), "insights.html", "outline", false) }}
-      </div>
-    </aside>
   </div>
 </article>
 
-{% if post.faq %}
-<section class="section s-ivory">
-  <div class="container">{{ faq(post.faq, post.faq_title or _("Questions families ask us"), eyebrow=_("Q&A")) }}</div>
-</section>
-{% endif %}
+
 
 {% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
 {% if related %}

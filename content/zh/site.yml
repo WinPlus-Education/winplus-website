@@ -20,7 +20,7 @@ offices:
   - { label: "美国总部", display: "美国马萨诸塞州剑桥市哈佛广场 One Mifflin Place, Suite 400", street: "One Mifflin Place, Suite 400", city: "Cambridge", region: "MA", postal_code: "02138", country: "US" }
   - { label: "中国总部", display: "北京市西城区展览馆路甲26号1号楼1-4内4层402室", street: "西城区展览馆路甲26号1号楼1-4内4层402室", city: "北京", region: "北京", country: "CN" }
 
-email: "[email@winplus.org]"
+email: "info@winplus.org"
 wechat_id: ""
 wechat_qr: /images/uploads/wechat-qr.png
 
@@ -158,11 +158,11 @@ cookie:
 consent:
   version: "2026-11-04 draft"
   inquiry_notice: "WinPlus 将使用您提供的信息回复您的咨询并提供项目信息，详见我们的隐私政策。标有 * 的为必填项；如未填写，我们可能无法回复。您的信息将在美国处理。"
-  marketing: "是的，我愿意通过电子邮件接收 WinPlus Education and Technology Inc.（Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA，[填写联系邮箱]）发送的通讯、白皮书以及 WinPlus 项目和活动信息。WinPlus 将为此使用我的姓名和电子邮箱。我可随时退订。"
+  marketing: "是的，我愿意通过电子邮件接收 WinPlus Education and Technology Inc.（Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA，info@winplus.org）发送的通讯、白皮书以及 WinPlus 项目和活动信息。WinPlus 将为此使用我的姓名和电子邮箱。我可随时退订。"
   school_notice: "WinPlus 将使用您提供的工作联系信息回复您的咨询，并与您沟通潜在合作事宜，详见我们的隐私政策。"
   age_question: "我是"
   age_under: "感谢您的关注。请由您的父母或监护人代为填写此表格。"
   age_teen: "请在父母或监护人的陪同下填写此表格。"
-  prc_transfer: "我同意 WinPlus 在中国大陆境外（美国）处理我提供的个人信息，并向隐私政策所列的境外接收方提供该等信息，用于隐私政策所述目的。我可通过 [填写隐私联系邮箱] 联系 WinPlus 行使我的权利。"
+  prc_transfer: "我同意 WinPlus 在中国大陆境外（美国）处理我提供的个人信息，并向隐私政策所列的境外接收方提供该等信息，用于隐私政策所述目的。我可通过 info@winplus.org 联系 WinPlus 行使我的权利。"
   prc_child: "我是本表格所述儿童的父母或法定监护人。我单独同意 WinPlus 为回复咨询、报名及提供项目之目的，处理我孩子的个人信息（根据中国法律属于敏感个人信息）。我理解此处理为孩子参加 WinPlus 项目所必需，WinPlus 将按照隐私政策第 7 条保护该等信息。"
   event_photo: "WinPlus 将在本次活动中拍照及录像。照片和视频可能发布于 WinPlus 网站、社交媒体、通讯及宣传资料，详见我们的隐私政策。我同意 WinPlus 将包含我（及我的孩子）的照片和视频用于上述目的。"

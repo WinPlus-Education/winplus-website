@@ -42,7 +42,7 @@ Please contact WinPlus before initiating a chargeback or payment dispute so that
 
 ### 3.6 Mandatory Consumer Rights
 
-Nothing in these Terms of Use or the Program Terms limits any right you have under the mandatory consumer protection laws of your country of residence. If you are a consumer residing in the European Economic Area or the United Kingdom, you may withdraw from a Program purchase within 14 days after the contract is formed, without giving a reason, by sending a clear statement to [insert contact email] or using the model withdrawal form at the end of these Terms of Use. WinPlus will refund all amounts due within 14 days after receiving your withdrawal notice, using the original payment method. If you expressly request that services begin during the withdrawal period, you must pay an amount proportionate to the services provided before you withdraw, and you lose the right of withdrawal once the services have been fully performed.
+Nothing in these Terms of Use or the Program Terms limits any right you have under the mandatory consumer protection laws of your country of residence. If you are a consumer residing in the European Economic Area or the United Kingdom, you may withdraw from a Program purchase within 14 days after the contract is formed, without giving a reason, by sending a clear statement to info@winplus.org or using the model withdrawal form at the end of these Terms of Use. WinPlus will refund all amounts due within 14 days after receiving your withdrawal notice, using the original payment method. If you expressly request that services begin during the withdrawal period, you must pay an amount proportionate to the services provided before you withdraw, and you lose the right of withdrawal once the services have been fully performed.
 
 ## 4. White Papers and Website Content
 
@@ -98,7 +98,7 @@ To the extent permitted by law, you agree to indemnify and hold harmless WinPlus
 
 ## 12. Copyright Complaints
 
-If you believe that content on the Website infringes your copyright, send a written notice to [insert contact email] that includes: (a) identification of the copyrighted work; (b) identification and location of the allegedly infringing material; (c) your contact information; (d) a statement that you have a good-faith belief that the use is not authorized by the copyright owner, its agent, or the law; (e) a statement, under penalty of perjury, that the information in the notice is accurate and that you are the owner or authorized to act on the owner’s behalf; and (f) your physical or electronic signature.
+If you believe that content on the Website infringes your copyright, send a written notice to info@winplus.org that includes: (a) identification of the copyrighted work; (b) identification and location of the allegedly infringing material; (c) your contact information; (d) a statement that you have a good-faith belief that the use is not authorized by the copyright owner, its agent, or the law; (e) a statement, under penalty of perjury, that the information in the notice is accurate and that you are the owner or authorized to act on the owner’s behalf; and (f) your physical or electronic signature.
 
 ## 13. Governing Law and Dispute Resolution
 
@@ -136,13 +136,13 @@ WinPlus Education and Technology Inc.
 
 Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA
 
-Email: [insert contact email]
+Email: info@winplus.org
 
 ## Model Withdrawal Form (EEA and UK Consumers Only)
 
 Complete and return this form only if you wish to withdraw from the contract.
 
-To: WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, [insert contact email]
+To: WinPlus Education and Technology Inc., Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA, info@winplus.org
 
 I hereby give notice that I withdraw from my contract for the provision of the following service: [program name]
 

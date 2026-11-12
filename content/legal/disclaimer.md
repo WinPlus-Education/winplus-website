@@ -48,4 +48,4 @@ To the fullest extent permitted by law, WinPlus is not liable for any loss or da
 
 ## 10. Contact Us
 
-Questions about this Website Disclaimer may be directed to WinPlus at [insert contact email].
+Questions about this Website Disclaimer may be directed to WinPlus at info@winplus.org.

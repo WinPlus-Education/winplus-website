@@ -2911,25 +2911,6 @@ collections:
     label: Text
     required: false
     widget: markdown
-  - name: faq_title
-    label: Q&A heading
-    required: false
-    widget: string
-  - name: faq
-    label: FAQ (questions & answers)
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: q
-      label: Question
-      required: false
-      widget: string
-    - name: a
-      label: Answer
-      required: false
-      widget: markdown
-    summary: '{{fields.q}}'
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -6051,25 +6032,6 @@ collections:
     label: Text
     required: false
     widget: markdown
-  - name: faq_title
-    label: Q&A heading
-    required: false
-    widget: string
-  - name: faq
-    label: FAQ (questions & answers)
-    required: false
-    widget: list
-    collapsed: true
-    fields:
-    - name: q
-      label: Question
-      required: false
-      widget: string
-    - name: a
-      label: Answer
-      required: false
-      widget: markdown
-    summary: '{{fields.q}}'
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

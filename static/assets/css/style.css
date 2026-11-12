@@ -1210,3 +1210,28 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 .article-body blockquote.pull:not(:has(cite)) { padding-bottom: 2.5rem; }
 .article-body .callout-dark p.big { color: var(--white); }
 .article-body .callout-dark p.small { color: rgba(255, 255, 255, .72); }
+
+/* ---------- Article layout v3: full container width, no dividers, blog-style photos ---------- */
+.article-body { max-width: none; }
+.article-body::after { content: ""; display: block; clear: both; }
+/* no divider lines */
+.article-body blockquote.pull { border: 0; padding: 1rem 0; margin: 3rem auto; }
+.article-body blockquote.pull p { max-width: 46ch; }
+.lang-zh .article-body blockquote.pull p { max-width: 36em; }
+.article-body .sec-num::after { display: none; }
+.article-body .steps-list, .article-body .steps-list li { border: 0; }
+.article-body .steps-list li { padding: 1rem 0; }
+.article-body .profile { border-top: 0; padding-top: 0; }
+/* single photos: a side column with text wrapping beside them, alternating sides */
+.article-body > figure { float: right; width: min(42%, 560px); margin: .35rem 0 1.75rem 3rem; }
+.article-body > figure:nth-of-type(even) { float: left; margin: .35rem 3rem 1.75rem 0; }
+.article-body > figure img { max-height: 58vh; object-fit: cover; object-position: center 30%; }
+/* blocks that should sit on their own line below any photo */
+.article-body .sec-num, .article-body blockquote.pull, .article-body .callout-dark, .article-body .note, .article-body .fig-grid, .article-body .fig-grid-cap, .article-body .profiles, .article-body .steps-list, .article-body .timeline { clear: both; }
+/* photo rows: keep them to one screen */
+.article-body .fig-grid img { max-height: 46vh; }
+.article-body .fig-grid-2 { max-width: 980px; }
+.article-body .fig-grid-tall img { aspect-ratio: 4 / 5; }
+@media (max-width: 760px) {
+  .article-body > figure, .article-body > figure:nth-of-type(even) { float: none; width: 100%; margin: 2rem 0; }
+}

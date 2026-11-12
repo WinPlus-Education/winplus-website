@@ -32,4 +32,4 @@ WinPlus supports accessibility by:
 
 ## 4. Feedback and Assistance
 
-If you experience difficulty accessing any part of the Website, or would like information in an alternative format, please contact WinPlus at [insert contact email]. Please describe the page and the issue you encountered. WinPlus will make reasonable efforts to respond promptly and to provide the information or service through an accessible alternative.
+If you experience difficulty accessing any part of the Website, or would like information in an alternative format, please contact WinPlus at info@winplus.org. Please describe the page and the issue you encountered. WinPlus will make reasonable efforts to respond promptly and to provide the information or service through an accessible alternative.

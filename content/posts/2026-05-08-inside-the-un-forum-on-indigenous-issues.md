@@ -23,9 +23,10 @@ This session's agenda was broad, with a core focus on **the holistic health of I
 
 <p class="sec-num"><span>01</span></p>
 
+<div class="fig-grid fig-grid-2">
 <figure><img src="/images/uploads/insights/unpfii/un-chinese-language-day.jpg" alt="UN Chinese Language Day banner, April 20" loading="lazy"></figure>
-
 <figure><img src="/images/uploads/insights/unpfii/sun-lei-remarks.jpg" alt="Ambassador Sun Lei speaking at the Chinese Language Day event" loading="lazy"><figcaption>Sun Lei, Deputy Permanent Representative of China to the UN, speaks at the Chinese Language Day event.</figcaption></figure>
+</div>
 
 April 20 was not only the start of a high-level dialogue on Indigenous issues. It was also **UN Chinese Language Day**.
 
@@ -39,7 +40,7 @@ On the same historic day, **a global platform for Indigenous voices and an inter
 
 Over the past two years, WinPlus students have taken part in many international meetings: UN climate conferences, a study program at international organizations in Europe, the UN Internet Governance Forum, the Commission on the Status of Women, and, in February 2026, the UN Asia-Pacific Forum on Sustainable Development (APFSD).
 
-<ol class="timeline">
+<ol class="a-timeline">
 <li><span class="t-date">Dec 2023</span><span class="t-title">UN Climate Change Conference (COP28)</span><span class="t-place">Dubai, UAE</span></li>
 <li><span class="t-date">Feb 2024</span><span class="t-title">International organizations &amp; humanities study program</span><span class="t-place">Geneva, Switzerland</span></li>
 <li><span class="t-date">Dec 2024</span><span class="t-title">UN Climate Change Conference (COP29)</span><span class="t-place">Baku, Azerbaijan</span></li>
@@ -49,11 +50,12 @@ Over the past two years, WinPlus students have taken part in many international 
 <li class="is-current"><span class="t-date">Apr 2026</span><span class="t-title">UN Permanent Forum on Indigenous Issues (UNPFII)</span><span class="t-place">New York, USA</span></li>
 </ol>
 
+<div class="fig-grid fig-grid-2">
 <figure><img src="/images/uploads/insights/unpfii/delegation-outside-un-hq.jpg" alt="Cathy and students outside UN Headquarters in New York" loading="lazy"><figcaption>Cathy and students at UN Headquarters in New York.</figcaption></figure>
-
 <figure><img src="/images/uploads/insights/unpfii/general-assembly-podium.jpg" alt="Cathy, in traditional Yao dress, and students at the rostrum of the UN General Assembly Hall" loading="lazy"><figcaption>Cathy and students in the UN General Assembly Hall.</figcaption></figure>
+</div>
 
-For every conference, WinPlus co-founder Cathy leads the students herself, so that global issues from textbooks become real, specific learning.
+For every conference, WinPlus co-founder <a href="../team.html#cathy-guo">Cathy Guo</a> leads the students herself, so that global issues from textbooks become real, specific learning.
 
 Cathy holds a Master in Public Policy from the Harvard Kennedy School, previously worked at UN Women, and has built deep experience and a wide network in international affairs. She is not only the organizer of each UN trip but the students' guide: **from securing speaking opportunities, to opening conversations with delegates from many countries, to helping students build international connections.** On a challenging and inspiring stage, she helps each student find their own voice.
 
@@ -63,7 +65,7 @@ The opening ceremony began unforgettably: a representative of the Indigenous cul
 
 In his opening address, Secretary-General Guterres called Indigenous peoples "guardians of nature" and keepers of the cultures and knowledge that sustain human civilization. He urged states to turn the UN Declaration on the Rights of Indigenous Peoples into national laws and policies, and to ensure Indigenous peoples' "full and meaningful participation" in decisions at every level. He also called urgently for decisive action to protect Indigenous leaders and human-rights defenders from violence and risk.
 
-<div class="callout-dark"><p class="big">Real respect isn't speaking for others.</p><p class="small">It means breaking down structural exclusion so Indigenous peoples are truly heard, deeply involved, and hold real decision-making power on every issue that shapes their lives and our shared future.</p></div>
+**Real respect isn't speaking for others.** It means breaking down structural exclusion so Indigenous peoples are truly heard, deeply involved, and hold real decision-making power on every issue that shapes their lives and our shared future.
 
 <p class="sec-num"><span>04</span></p>
 
@@ -72,10 +74,10 @@ Indigenous representatives from around the world, in traditional dress, turned t
 Cathy wore traditional Yao dress from Hezhou, Guangxi, to the Forum and to that evening's Chinese Language Day celebration. **Its vivid red base, fine embroidery and layered silver ornaments showed the richness of China's many ethnic cultures.** In an international setting like this, simply presenting one's culture is itself an act of exchange and mutual respect.
 
 <div class="fig-grid fig-grid-2">
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="Cathy in traditional Yao dress in the General Assembly Hall" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="WinPlus students with an Indigenous representative in traditional regalia" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="Indigenous delegates in traditional headdress in the General Assembly Hall" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="Cathy and students with an Indigenous representative wearing a woven hat" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/unpfii/ga-hall-1.jpg" alt="Cathy in traditional Yao dress in the General Assembly Hall" loading="lazy"><figcaption>Cathy in traditional Yao dress in the General Assembly Hall.</figcaption></figure>
+<figure><img src="/images/uploads/insights/unpfii/ga-hall-2.jpg" alt="WinPlus students with an Indigenous representative in traditional regalia" loading="lazy"><figcaption>WinPlus students with an Indigenous representative in traditional regalia.</figcaption></figure>
+<figure><img src="/images/uploads/insights/unpfii/ga-hall-3.jpg" alt="Indigenous delegates in traditional headdress in the General Assembly Hall" loading="lazy"><figcaption>Indigenous delegates in traditional headdress in the General Assembly Hall.</figcaption></figure>
+<figure><img src="/images/uploads/insights/unpfii/ga-hall-4.jpg" alt="Cathy and students with an Indigenous representative wearing a woven hat" loading="lazy"><figcaption>Cathy and students with an Indigenous representative wearing a woven hat.</figcaption></figure>
 </div>
 
 Over the following days, WinPlus students and teachers joined side events on four major themes:
@@ -90,11 +92,10 @@ Over the following days, WinPlus students and teachers joined side events on fou
 In these sessions, students heard directly from Indigenous communities around the world about land being taken, resources over-exploited and cultures disappearing. Climate change, environmental change and economic inequality, concepts that can feel abstract in a textbook, became tied to specific people, communities and lives.
 
 <div class="fig-grid fig-grid-3">
-<figure><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="A side-event roundtable with Indigenous representatives at UN Headquarters" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="Slide for a side event on land, conflict and self-determination of Indigenous peoples in Asia" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="Poster for a side event on the WHO framework for engagement with Indigenous peoples" loading="lazy"></figure>
+<figure><img src="/images/uploads/photos/unpfii-2026-side-event.webp" alt="A side-event roundtable with Indigenous representatives at UN Headquarters" loading="lazy"><figcaption>A side-event roundtable with Indigenous representatives at UN Headquarters.</figcaption></figure>
+<figure><img src="/images/uploads/insights/unpfii/side-event-asia.jpg" alt="Slide for a side event on land, conflict and self-determination of Indigenous peoples in Asia" loading="lazy"><figcaption>A side event on land, conflict and self-determination of Indigenous peoples in Asia.</figcaption></figure>
+<figure><img src="/images/uploads/insights/unpfii/side-event-who.jpg" alt="Poster for a side event on the WHO framework for engagement with Indigenous peoples" loading="lazy"><figcaption>A side event on the WHO framework for engagement with Indigenous peoples.</figcaption></figure>
 </div>
-<p class="fig-grid-cap">Side events on land and self-determination in Asia, and on health and traditional knowledge.</p>
 
 <p class="sec-num"><span>05</span></p>
 
@@ -108,9 +109,10 @@ At a side event on Indigenous peoples, climate change and land conflict, Youran 
 
 <blockquote class="pull"><p>When these languages are forgotten, what's lost isn't just a tool for communication. It's a history, an identity and a deep connection between people and their land.</p><cite>A WinPlus student</cite></blockquote>
 
+<div class="fig-grid fig-grid-2">
 <figure><img src="/images/uploads/insights/unpfii/reflection-vivian.jpg" alt="A WinPlus student holding a Forum publication in the General Assembly Hall" loading="lazy"></figure>
-
 <figure><img src="/images/uploads/insights/unpfii/reflection-charley.jpg" alt="A WinPlus student in the General Assembly Hall" loading="lazy"></figure>
+</div>
 
 That took her beyond an abstract idea of "cultural preservation" to the heart of rights and dignity. "It isn't only about offering support. We need to listen to Indigenous peoples themselves and let them lead," she said. "Only when Indigenous peoples can express their own needs and shape their own development do protections really mean something." Indigenous issues stopped being "someone else's problem" and became a question of rights, participation, dignity and cultural continuity.
 

@@ -56,7 +56,7 @@ numbers:
   label: 指导学生
 - number: 40+
   label: 团队成员与导师
-- number: '[10+]'
+- number: '12+'
   label: 个国家有合作伙伴
 leaders_title: 核心团队
 leaders_link_text: 认识全部导师

@@ -35,9 +35,9 @@ This year also marks twenty years since the Convention on the Rights of Persons 
 
 The theme was "The Convention at 20: consolidating achievements and charting the next phase of implementation in a changing world." Three round tables focused on ending exploitation, violence and abuse against persons with disabilities; strengthening care and support systems so people can live independently; and moving persons with disabilities from participation to representation in political and public life. All three pointed to one question: how do equal rights actually reach everyday life?
 
-The trip was led by WinPlus co-founder Cathy, who previously worked at UN Women and graduated from the Harvard Kennedy School. Along the way she was more than the organizer. She was his guide:
+The trip was led by WinPlus co-founder <a href="../team.html#cathy-guo">Cathy Guo</a>, who previously worked at UN Women and graduated from the Harvard Kennedy School. Along the way she was more than the organizer. She was his guide:
 
-<div class="note"><p>She secured him a rare speaking slot in a crowded session, introduced him to delegates from many countries, and connected him with a disability-rights lawyer.</p></div>
+**She secured him a rare speaking slot in a crowded session, introduced him to delegates from many countries, and connected him with a disability-rights lawyer.**
 
 WinPlus believes the real classroom is in the real international arena.
 
@@ -52,11 +52,10 @@ His father is a surgeon who, on his busiest days, performs seven operations. Gro
 At the UN, that idea became concrete. Jet-lagged, he listened from 10 a.m. to 6 p.m. Between sessions he sought out participants from Saudi Arabia, Japan, Spain and elsewhere to ask how their countries support people with disabilities.
 
 <div class="fig-grid fig-grid-3 fig-grid-square">
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="The student with a delegate in traditional Gulf dress" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="The student with a conference participant wearing a UN badge" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="The student in conversation with a delegate in a UN corridor" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="The student with a delegate in traditional Gulf dress" loading="lazy"><figcaption>The student with a delegate in traditional Gulf dress.</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="The student with a conference participant wearing a UN badge" loading="lazy"><figcaption>The student with a conference participant wearing a UN badge.</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="The student in conversation with a delegate in a UN corridor" loading="lazy"><figcaption>The student in conversation with a delegate in a UN corridor.</figcaption></figure>
 </div>
-<p class="fig-grid-cap">Talking with delegates from around the world between sessions.</p>
 
 During the conference, the China Disabled Persons' Federation presented *Blooming Together*, an exhibition of more than 200 works by Chinese artists with disabilities, from calligraphy and porcelain to wood carving and paper-cutting.
 
@@ -78,7 +77,7 @@ He never said a word, yet the room was completely silent. Movement, expression a
 
 Over his days at the UN, the student noticed one principle repeated again and again:
 
-<div class="callout-dark"><p class="big">"Nothing About Us Without Us."</p><p class="small">Decisions about people with disabilities should not be made without them.</p></div>
+<blockquote class="pull"><p>Nothing About Us Without Us.</p><cite>A principle of the disability-rights movement</cite></blockquote>
 
 <figure><img src="/images/uploads/insights/un-crpd-speech/youth-advocate-session.jpg" alt="A conference room at UN Headquarters during a session with a youth advocate speaking" loading="lazy"><figcaption>A young advocate from New York addresses a session.</figcaption></figure>
 
@@ -96,13 +95,13 @@ Speaking in a formal UN session requires accreditation review, document submissi
 
 Cathy went to the session's organizer, introduced him and explained that he had come from China hoping for the chance to speak. He didn't give up either: he waited in the room with his statement in hand. As some speakers ahead of him cancelled or didn't appear, his place moved up, until his two minutes finally arrived.
 
-Before he spoke, he was visibly nervous, his face flushed red. Vania, who traveled with him, encouraged him: "One day you're going to be a world-class doctor speaking in UN halls. You can do this little speech today."
+Before he spoke, he was visibly nervous, his face flushed red. <a href="../team.html#vania-shi">Vania Shi</a>, who traveled with him, encouraged him: "One day you're going to be a world-class doctor speaking in UN halls. You can do this little speech today."
 
 Cathy put a hand on his shoulder: "Your thinking and your words are more than good enough. Relax and enjoy the stage."
 
 At the microphone, he began with his childhood: why he wanted to study medicine, and why he came to see that medicine alone cannot build an inclusive world. As one of very few young speakers, he drew glances from around the room as delegates turned to see where the young voice was coming from. He closed:
 
-<div class="callout-dark"><p class="big">"My generation will become the designers of our institutions. That responsibility doesn't have to wait for the halls of power. It starts now, in the hallways of our schools."</p><p class="small">The close of his statement</p></div>
+<blockquote class="pull"><p>My generation will become the designers of our institutions. That responsibility doesn't have to wait for the halls of power. It starts now, in the hallways of our schools.</p><cite>The close of his statement</cite></blockquote>
 
 <figure><img src="/images/uploads/photos/cosp19-general-assembly-hall.webp" alt="The student in the gallery of the UN General Assembly Hall" loading="lazy"><figcaption>The student in the UN General Assembly Hall.</figcaption></figure>
 
@@ -124,6 +123,6 @@ That may be the point of it all: for a teenager to feel, for real, that his voic
 
 For years WinPlus has taken students into the rooms where things happen: from labs at Harvard and MIT, to Silicon Valley technology companies, to the halls of the United Nations. Our global mentor team brings deep international experience and backs every student to open the door to a larger world.
 
-<div class="note"><p>In this new era, knowledge can be searched. But global competency (cross-cultural empathy, composure in real high-pressure settings, and the poise to speak as an equal with leaders in any field) can only be built, step by step, in the real arena.</p></div>
+**In this new era, knowledge can be searched. But global competency (cross-cultural empathy, composure in real high-pressure settings, and the poise to speak as an equal with leaders in any field) can only be built, step by step, in the real arena.**
 
 Back from New York, the student is noticeably more confident. Impressed by what he saw of the WinPlus team's credentials and support, he has chosen WinPlus to guide him through his college applications. The two-minute statement, the conversations in the conference rooms, the reflection and growth will all become part of the story he writes. And a line from his speech may be the best summary of the journey: "This responsibility starts today, in the hallways of our schools."

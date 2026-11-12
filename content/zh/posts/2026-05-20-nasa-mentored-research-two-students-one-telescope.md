@@ -23,12 +23,12 @@ featured: false
 <div class="profiles">
 <div class="profile"><p class="role">航天工程师</p><h3>“工程师”</h3><p>美国公立高中11年级，学校科研资源有限；空间想象与动手能力很强。</p><p>负责望远镜本身的设计：结构、机械、材料、强度。</p><p class="outcome">密歇根大学机械工程、UCLA、UIUC 等十余所美国前30大学机械工程录取</p></div>
 <div class="profile"><p class="role">行星天文学家</p><h3>“天文学家”</h3><p>国内顶尖高中国际部11年级；痴迷天体物理和数据分析。</p><p>负责天体物理部分：光谱数据分析、外行星探测、宜居星球判断。</p><p class="outcome">剑桥大学、帝国理工学院、加州大学伯克利分校天体物理录取</p></div>
-<div class="profile profile-mentor"><p class="role">科研导师</p><h3>Rachel</h3><p>麻省理工学院（MIT）航天工程本硕博连读，多年担任美国航天局（NASA）位于硅谷的 Ames 研究中心科学家。</p></div>
+<div class="profile profile-mentor"><p class="role">科研导师</p><h3><a href="../team.html#rachel-morgan">Rachel Morgan</a></h3><p>麻省理工学院（MIT）航天工程本硕博连读，多年担任美国航天局（NASA）位于硅谷的 Ames 研究中心科学家。</p></div>
 </div>
 
 <p class="sec-num"><span>01</span></p>
 
-“工程师”同学和她的家长第一次来咨询时，欧歌学院创始人、有着丰富升学指导经验的郭老师能明显感受到家长的担忧：
+“工程师”同学和她的家长第一次来咨询时，欧歌学院创始人、有着丰富升学指导经验的<a href="../team.html#cathy-guo">郭琪</a>老师能明显感受到家长的担忧：
 
 <figure><img src="/images/uploads/insights/nasa-research/student-3d-print.jpg" alt="“工程师”同学设计的3D打印工程模型" loading="lazy"><figcaption>“工程师”同学3D打印工程设计作品。</figcaption></figure>
 
@@ -40,13 +40,12 @@ featured: false
 
 <p class="sec-num"><span>02</span></p>
 
-随后，欧歌学院的科研负责人盘老师联系了Rachel导师，并为“工程师”同学预约了科研评估面试。
+随后，欧歌学院的科研负责人<a href="../team.html#cedric-pan">盘超</a>老师联系了Rachel导师，并为“工程师”同学预约了科研评估面试。
 
 <div class="fig-grid fig-grid-2 fig-grid-tall">
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel导师在光学实验室" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel导师身着洁净服装调试设备" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel导师在光学实验室" loading="lazy"><figcaption>Rachel导师在光学实验室。</figcaption></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel导师身着洁净服装调试设备" loading="lazy"><figcaption>Rachel导师身着洁净服装调试设备。</figcaption></figure>
 </div>
-<p class="fig-grid-cap">Rachel导师在实验室。</p>
 
 在线上评估咨询时，她没有上来就讲自己的课题，而是问了“工程师”同学一个很简单的问题："你平时最喜欢做什么？" “工程师”同学回答："我喜欢搞设计，还有机械结构。"
 

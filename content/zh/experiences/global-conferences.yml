@@ -18,7 +18,7 @@ facts:
   label: '[占位：补充一项核心数据]'
 - number: 100+
   label: 仅 COP28 一场会议的论坛与会议
-- number: '[10+]'
+- number: '12+'
   label: 个国家有合作伙伴
 features_title: 与众不同之处
 features:

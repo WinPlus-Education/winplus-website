@@ -60,7 +60,7 @@ numbers:
   label: Students advised
 - number: 40+
   label: Team members and mentors
-- number: '[10+]'
+- number: '12+'
   label: Countries with partners
 leaders_title: Leadership
 leaders_link_text: Meet the full team

@@ -36,9 +36,9 @@ featured: true
 
 本届大会的主题是"《公约》二十周年：巩固成就，规划变化世界中的下一阶段落实"。三场圆桌会议分别聚焦：消除针对残疾人的剥削、暴力与虐待；加强照护与支持体系，保障残疾人自主、独立地生活；以及推动残疾人从"参与"走向"代表"，在政治和公共生活中发挥领导作用。这些讨论都指向同一个问题：平等的权利，怎样才能真正走进日常生活？
 
-这次联合国之行，由欧歌学院创始人郭琪老师带队。郭老师曾任职于联合国妇女署，毕业于哈佛大学肯尼迪政府学院。这一路上，她不只是组织者，更是他的引路人：
+这次联合国之行，由欧歌学院创始人<a href="../team.html#cathy-guo">郭琪</a>老师带队。郭老师曾任职于联合国妇女署，毕业于哈佛大学肯尼迪政府学院。这一路上，她不只是组织者，更是他的引路人：
 
-<div class="note"><p>帮他在紧张的席位中争取难能可贵的发言机会，在会场引荐各国参会者，还为他联系了残障权益领域的律师进行交流。</p></div>
+**帮他在紧张的席位中争取难能可贵的发言机会，在会场引荐各国参会者，还为他联系了残障权益领域的律师进行交流。**
 
 欧歌相信：真正的课堂，在真实的国际现场。
 
@@ -53,11 +53,10 @@ featured: true
 到了联合国，这个想法变得具体起来。带着时差，他从上午十点一直听到下午六点。会议间隙，他主动和来自沙特、日本、西班牙等国的参会者交流，聊各国残障保障的现状。
 
 <div class="fig-grid fig-grid-3 fig-grid-square">
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="这位同学与身着海湾传统服饰的代表合影" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="这位同学与佩戴联合国证件的参会者合影" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="这位同学在联合国走廊与代表交流" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-saudi-arabia.jpg" alt="这位同学与身着海湾传统服饰的代表合影" loading="lazy"><figcaption>这位同学与身着海湾传统服饰的代表合影。</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-exchange.jpg" alt="这位同学与佩戴联合国证件的参会者合影" loading="lazy"><figcaption>这位同学与佩戴联合国证件的参会者合影。</figcaption></figure>
+<figure><img src="/images/uploads/insights/un-crpd-speech/delegate-conversation.jpg" alt="这位同学在联合国走廊与代表交流" loading="lazy"><figcaption>这位同学在联合国走廊与代表交流。</figcaption></figure>
 </div>
-<p class="fig-grid-cap">会议间隙，与各国代表交流并合影。</p>
 
 会议期间，由中国残联主办的"共绽放——中国残疾人文创作品展"在联合国展区亮相。书画、瓷器、木雕、剪纸等200余件作品，都出自中国残障创作者之手。
 
@@ -81,7 +80,7 @@ featured: true
 
 在联合国的几天里，这位同学注意到，有个理念被反复提及：
 
-<div class="callout-dark"><p class="big">"Nothing About Us Without Us."</p><p class="small">没有我们的参与，就不要替我们做决定。</p></div>
+<blockquote class="pull"><p>Nothing About Us Without Us.</p><cite>没有我们的参与，就不要替我们做决定。</cite></blockquote>
 
 <figure><img src="/images/uploads/insights/un-crpd-speech/youth-advocate-session.jpg" alt="联合国总部会议室中青年倡导者发言" loading="lazy"><figcaption>来自纽约的青年倡导者发言。</figcaption></figure>
 
@@ -99,13 +98,13 @@ featured: true
 
 郭老师主动找到了会场负责人，向她介绍这位同学，表达他从中国来，很希望能有发言机会。这位同学也没有放弃，带着讲稿在会场里一直等。随着前面一些发言者临时取消或缺席，他的名次一点点往前挪，终于等到了那个属于他的两分钟。
 
-发言前，少年的内心难免泛起波澜，紧张得满脸通红。同行导师石老师鼓励他："你将来是要成为世界级医生、站在联合国大厅发言，今天这个小演讲，你可以的。"
+发言前，少年的内心难免泛起波澜，紧张得满脸通红。同行导师<a href="../team.html#vania-shi">Vania Shi</a>（石老师）鼓励他："你将来是要成为世界级医生、站在联合国大厅发言，今天这个小演讲，你可以的。"
 
 郭老师也拍拍他的肩膀："你的思维和表达都足够优秀，放松去享受这个舞台。"
 
 在麦克风前，这位同学开始了他的讲述：他回忆起童年经历，讲到自己为什么想学医，又为什么意识到，光靠医学建不成一个包容的世界。作为为数不多的青年发言者，他一开口，现场不少与会者不禁频频回头，想看看这个年轻的声音究竟来自哪里。发言的最后，他总结道：
 
-<div class="callout-dark"><p class="big">"我们这代人终将成为制度的设计者，而这个责任不必等到未来在权力的殿堂里才开始，它现在就发生在我们学校的走廊里。"</p><p class="small">发言的结尾</p></div>
+<blockquote class="pull"><p>我们这代人终将成为制度的设计者，而这个责任不必等到未来在权力的殿堂里才开始，它现在就发生在我们学校的走廊里。</p><cite>发言的结尾</cite></blockquote>
 
 <figure><img src="/images/uploads/photos/cosp19-general-assembly-hall.webp" alt="这位同学在联合国大会厅" loading="lazy"><figcaption>在联合国大会厅。</figcaption></figure>
 
@@ -127,6 +126,6 @@ featured: true
 
 欧歌学院多年来坚持走进真实现场：从哈佛、MIT 的实验室，到硅谷的科技公司，再到联合国全球议题的殿堂。欧歌学院的全球导师团队拥有丰富的国际经验，全力托举每一位学生，帮他们打开通往更大世界的门。
 
-<div class="note"><p>在这个新的时代，知识可以检索，但全球胜任力（Global Competency）——跨文化的共情力、在真实高压场合的临场力，以及与各领域领军人物平等对话的气度——只能在真实的现场中一点点练出来。</p></div>
+**在这个新的时代，知识可以检索，但全球胜任力（Global Competency）——跨文化的共情力、在真实高压场合的临场力，以及与各领域领军人物平等对话的气度——只能在真实的现场中一点点练出来。**
 
 纽约之行归来，他变得更加自信。见识了欧歌团队的专业背景与全程支持，他选择继续由欧歌陪伴，开启大学申请季。那两分多钟的发言、那些会场里的对话，那些思考和历练，会成为他写下的故事。而他在发言里说的那句话，或许也是这趟旅程最好的注脚："这份责任，从今天学校的走廊开始。"

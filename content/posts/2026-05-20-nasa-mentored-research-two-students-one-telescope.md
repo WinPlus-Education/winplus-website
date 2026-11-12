@@ -24,12 +24,12 @@ Even less could they have imagined that those eight weeks would reshape their ap
 <div class="profiles">
 <div class="profile"><p class="role">Aerospace engineer</p><h3>The engineer</h3><p>11th grade, US public high school with few research resources. Strong spatial and hands-on skills.</p><p>Owned the telescope itself: structure, mechanics, materials and strength.</p><p class="outcome">Michigan (Mechanical Engineering), UCLA, UIUC and 10+ US Top-30 engineering offers</p></div>
 <div class="profile"><p class="role">Planetary astronomer</p><h3>The astronomer</h3><p>11th grade, international division of a top Chinese high school. Passionate about astrophysics and data.</p><p>Owned the science: spectral data, exoplanet detection and habitability.</p><p class="outcome">Cambridge, Imperial College London and UC Berkeley (Astrophysics)</p></div>
-<div class="profile profile-mentor"><p class="role">Mentor</p><h3>Rachel</h3><p>BS, MS and PhD in Aerospace Engineering from MIT. Longtime scientist at NASA's Ames Research Center in Silicon Valley.</p></div>
+<div class="profile profile-mentor"><p class="role">Mentor</p><h3><a href="../team.html#rachel-morgan">Rachel Morgan</a></h3><p>BS, MS and PhD in Aerospace Engineering from MIT. Longtime scientist at NASA's Ames Research Center in Silicon Valley.</p></div>
 </div>
 
 <p class="sec-num"><span>01</span></p>
 
-When the engineer and her parents first came to us, WinPlus co-founder Cathy could feel the parents' anxiety.
+When the engineer and her parents first came to us, WinPlus co-founder <a href="../team.html#cathy-guo">Cathy Guo</a> could feel the parents' anxiety.
 
 "Her public school has limited resources and she's never done research," her parent said. "She doesn't have a standout project, and she's always so unhurried. She's at a real disadvantage for good schools."
 
@@ -43,13 +43,12 @@ The engineer had strong spatial imagination and making skills. She just needed a
 
 <p class="sec-num"><span>02</span></p>
 
-WinPlus co-founder and research lead Cedric Pan then contacted Rachel and booked a research assessment interview for the engineer.
+WinPlus co-founder and research lead <a href="../team.html#cedric-pan">Cedric Pan</a> then contacted Rachel and booked a research assessment interview for the engineer.
 
 <div class="fig-grid fig-grid-2 fig-grid-tall">
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel in an optics laboratory" loading="lazy"></figure>
-<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel in cleanroom gear assembling flight hardware" loading="lazy"></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-lab.jpg" alt="Rachel in an optics laboratory" loading="lazy"><figcaption>Rachel in an optics laboratory.</figcaption></figure>
+<figure><img src="/images/uploads/insights/nasa-research/mentor-rachel-cleanroom.jpg" alt="Rachel in cleanroom gear assembling flight hardware" loading="lazy"><figcaption>Rachel in cleanroom gear assembling flight hardware.</figcaption></figure>
 </div>
-<p class="fig-grid-cap">Rachel in the lab.</p>
 
 In the online assessment, Rachel didn't open with her own research. She asked the engineer a simple question: "What do you most like to do?" The engineer answered: "I like designing things, and mechanical structures."
 

@@ -98,9 +98,7 @@ In these sessions, students heard directly from Indigenous communities around th
 
 <p class="sec-num"><span>05</span></p>
 
-Teaching assistant Youran recorded her reflections during the Forum:
-
-<blockquote class="pull"><p>When voices from different countries, cultures and histories come together in the same room, global issues stop being concepts in a book. They become realities shared by real people.</p><cite>Youran, WinPlus teaching assistant</cite></blockquote>
+Teaching assistant Youran recorded her reflections during the Forum: "When voices from different countries, cultures and histories come together in the same room, global issues stop being concepts in a book. They become realities shared by real people."
 
 <figure><img src="/images/uploads/insights/unpfii/reflection-youran.jpg" alt="Indigenous representatives in traditional dress at UN Headquarters" loading="lazy"></figure>
 

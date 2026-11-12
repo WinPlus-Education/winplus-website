@@ -67,9 +67,11 @@ But Rachel's teaching was practical. "You don't need to grind through every theo
 
 She sent the engineer real NASA telescope design reports and taught her to work like an experienced engineer: break down the task, evaluate materials, calculate strength.
 
-Step by step, the engineer changed. "I realized the physics I learned in class isn't just for exams," she said. "It can actually be used to design a space telescope. Putting theory into practice like that is really interesting."
+Step by step, the engineer changed:
 
-<blockquote class="pull"><p>She started out as a very shy, introverted girl. By the end, her communication skills were outstanding.</p><cite>Cedric Pan, WinPlus co-founder, who guided the project throughout</cite></blockquote>
+<blockquote class="pull"><p>I realized the physics I learned in class isn't just for exams. It can actually be used to design a space telescope. Putting theory into practice like that is really interesting.</p><cite>The engineer</cite></blockquote>
+
+"She started out as a very shy, introverted girl. By the end, her communication skills were outstanding," says Cedric, who guided the project throughout.
 
 The once-hesitant student began to look like an engineer. She went looking for telescope design drawings on her own and started asking questions: "If we switch this part to a composite, would strength and weight improve?" "If we change this structure, would we lose less light in the optical path?" She went from waiting for instructions to being a real collaborator on a real research project.
 

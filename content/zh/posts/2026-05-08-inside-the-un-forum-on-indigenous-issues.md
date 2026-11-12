@@ -96,9 +96,7 @@ featured: false
 
 <p class="sec-num"><span>05</span></p>
 
-助教悠然在会议期间记录了她的思考：
-
-<blockquote class="pull"><p>当来自不同国家、不同文化、不同历史背景的声音汇聚在同一个会场时，国际议题便不再只是书本中的概念，而成为一个个真实而具体的人所共同面对的现实。</p><cite>助教 悠然</cite></blockquote>
+助教悠然在会议期间记录了她的思考："当来自不同国家、不同文化、不同历史背景的声音汇聚在同一个会场时，国际议题便不再只是书本中的概念，而成为一个个真实而具体的人所共同面对的现实。"
 
 <figure><img src="/images/uploads/insights/unpfii/reflection-youran.jpg" alt="身着传统服饰的土著代表在联合国总部" loading="lazy"></figure>
 

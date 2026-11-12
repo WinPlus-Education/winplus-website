@@ -46,12 +46,14 @@
 </section>
 {% endif %}
 
+{% if item.outcomes %}
 <section class="section s-ivory">
   <div class="container">
     <div class="head-row">{{ head(_("Our Results"), _("Featured outcomes"), item.outcomes_text) }}{{ arrow(_("See all results"), "results.html") }}</div>
     {% if item.outcomes %}{{ school_cards(item.outcomes) }}{{ results_notice() }}{% endif %}
   </div>
 </section>
+{% endif %}
 
 {{ cta_band(_("Start with a free strategy session."), _("Meet a WinPlus mentor, discuss your goals and leave with clear next steps. No commitment required."), site.cta_text, contact) }}
 

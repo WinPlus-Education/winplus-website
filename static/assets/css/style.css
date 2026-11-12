@@ -1235,3 +1235,12 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 @media (max-width: 760px) {
   .article-body > figure, .article-body > figure:nth-of-type(even) { float: none; width: 100%; margin: 2rem 0; }
 }
+/* quotes and notes sit beside a floated photo instead of dropping below it */
+.article-body blockquote.pull, .article-body .note { clear: none; display: flow-root; }
+.article-body blockquote.pull { margin: 2.25rem 0; }
+
+/* story/article cards reuse the event card; honour an image focal point; feature card spacing on Insights */
+.ev-card .media[style] img { object-position: var(--pos); }
+#post-grid .ev-feature { margin-bottom: clamp(24px, 3vw, 40px); }
+.ev-feature .ev-card .ev-sum { -webkit-line-clamp: 4; }
+#post-grid .ev-feature .ev-card h3 { -webkit-line-clamp: 4; }

@@ -234,18 +234,23 @@
 </article>
 {%- endmacro %}
 
-{% macro story_card(s) -%}
-<article class="card story-card reveal" style="--pos: {{ s.image_position or '50% 50%' }}">
-  {{ photo(s.image, s.image_alt, "media ratio-45", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+{# Story / article card: same markup and look as the event cards (ev-card) #}
+{% macro info_card(title, link, image, image_alt="", chip="", meta=[], summary="", more="", attrs="", pos="") -%}
+<article class="ev-card reveal"{% if attrs %} {{ attrs | safe }}{% endif %}>
+  <div class="media"{% if pos %} style="--pos: {{ pos }}"{% endif %}>
+    {{ photo(image, image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
+    {% if chip %}<span class="ev-chip">{{ chip }}</span>{% endif %}
+  </div>
   <div class="card-body">
-    <span class="kicker">{{ s.tag }}</span>
-    <h3>{{ s.title }}</h3>
-    <p>{{ s.text }}</p>
-    {% if s.story %}<details class="story-more"><summary><span>{{ _("Read the story") }}</span></summary><div class="story-body">{{ s.story | md | safe }}</div></details>
-    {% elif s.link %}<a class="link-arrow" href="{{ u(s.link) }}">{{ _("Learn more") }} <span aria-hidden="true">→</span></a>{% endif %}
+    {% set meta = meta | select | list %}{% if meta %}<p class="ev-meta">{% for x in meta %}<span>{{ x }}</span>{% endfor %}</p>{% endif %}
+    <h3>{% if link %}<a class="ev-link" href="{{ u(link) }}">{{ title }}</a>{% else %}{{ title }}{% endif %}</h3>
+    {% if summary %}<p class="ev-sum">{{ summary }}</p>{% endif %}
+    {% if link %}<div class="ev-foot"><span class="ev-more">{{ more or _("Read the story") }} <span aria-hidden="true">→</span></span></div>{% endif %}
   </div>
 </article>
 {%- endmacro %}
+{% macro story_card(s) -%}{{ info_card(s.title, s.link, s.image, s.image_alt, s.tag, [], s.text, _("Read the story"), pos=s.image_position) }}{%- endmacro %}
+{% macro post_card(p, attrs="") -%}{{ info_card(p.title, p.url, p.image, p.image_alt or p.title, p.category, [p.date | date_fmt("long")], p.summary, _("Read article"), attrs) }}{%- endmacro %}
 
 {# M10 Testimonial carousel (scroll-snap; arrow buttons added by JS) #}
 {% macro quotes(items, id="quotes") -%}

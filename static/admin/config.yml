@@ -2333,6 +2333,10 @@ collections:
       required: false
       widget: text
     summary: '{{fields.when}}'
+  - name: hero_right
+    label: Hero right
+    required: false
+    widget: boolean
   - name: outcomes_text
     label: Outcomes text
     required: false
@@ -2345,10 +2349,6 @@ collections:
       name: item
       label: Item
       widget: string
-  - name: hero_right
-    label: Hero right
-    required: false
-    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'
@@ -5458,6 +5458,10 @@ collections:
       required: false
       widget: text
     summary: '{{fields.when}}'
+  - name: hero_right
+    label: Hero right
+    required: false
+    widget: boolean
   - name: outcomes_text
     label: Outcomes text
     required: false
@@ -5470,10 +5474,6 @@ collections:
       name: item
       label: Item
       widget: string
-  - name: hero_right
-    label: Hero right
-    required: false
-    widget: boolean
   summary: '{{title}}'
   format: yml
   slug: '{{slug}}'

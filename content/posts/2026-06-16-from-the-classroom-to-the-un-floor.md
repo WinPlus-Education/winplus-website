@@ -96,9 +96,7 @@ Speaking in a formal UN session requires accreditation review, document submissi
 
 Cathy went to the session's organizer, introduced him and explained that he had come from China hoping for the chance to speak. He didn't give up either: he waited in the room with his statement in hand. As some speakers ahead of him cancelled or didn't appear, his place moved up, until his two minutes finally arrived.
 
-Before he spoke, he was visibly nervous, his face flushed red. Vania, who traveled with him, encouraged him:
-
-<blockquote class="pull"><p>One day you're going to be a world-class doctor speaking in UN halls. You can do this little speech today.</p><cite>Vania</cite></blockquote>
+Before he spoke, he was visibly nervous, his face flushed red. Vania, who traveled with him, encouraged him: "One day you're going to be a world-class doctor speaking in UN halls. You can do this little speech today."
 
 Cathy put a hand on his shoulder: "Your thinking and your words are more than good enough. Relax and enjoy the stage."
 

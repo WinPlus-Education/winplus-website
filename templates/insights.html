@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_head, photo with context %}
+{% from "macros.html" import page_head, photo, post_card with context %}
 {% block content %}
 {{ page_head(page, [[page.eyebrow, "insights.html"]]) }}
 <section class="section">
@@ -13,19 +13,9 @@
     </div>
     {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}
     <div id="post-grid">
-      {% if featured %}
-      <a class="feature-post" href="{{ u(featured.url) }}" data-filter-item data-cat="{{ featured.category | slugify }}">
-        {{ photo(featured.image, featured.image_alt or featured.title, "media", 1400, sizes="(max-width: 900px) 100vw, 55vw") }}
-        <div><span class="kicker">{{ featured.category }}</span><h2>{{ featured.title }}</h2><p class="lead">{{ featured.summary }}</p><span class="link-arrow" style="margin-top:1.5rem">{{ _("Read article") }} <span aria-hidden="true">→</span></span></div>
-      </a>
-      {% endif %}
+      {% if featured %}<div class="ev-feature" data-filter-item data-cat="{{ featured.category | slugify }}">{{ post_card(featured) }}</div>{% endif %}
       <div class="grid g-3">
-        {% for p in posts if p.slug != featured.slug %}
-        <a class="card post-card" href="{{ u(p.url) }}" data-filter-item data-cat="{{ p.category | slugify }}">
-          {{ photo(p.image, p.image_alt or p.title, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
-          <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3>{% if p.summary %}<p class="post-sum">{{ p.summary }}</p>{% endif %}<p class="meta">{{ p.date | date_fmt("long") }}</p></div>
-        </a>
-        {% endfor %}
+        {% for p in posts if p.slug != featured.slug %}{{ post_card(p, 'data-filter-item data-cat="' ~ (p.category | slugify) ~ '"') }}{% endfor %}
       </div>
     </div>
     <p class="empty-note" data-filter-empty hidden>{{ _("No articles in this topic yet.") }}</p>

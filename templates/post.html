@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, faq, cta_band, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, cta_band, post_card, ld with context %}
 {% block title %}{{ post.seo_title or post.title }} | {{ site.name }}{% endblock %}
 {% block description %}{{ post.summary }}{% endblock %}
 {% block og_type %}article{% endblock %}
@@ -28,12 +28,7 @@
   <div class="container">
     <div class="head-row">{{ head(_("Insights"), _("More insights")) }}<a class="link-arrow" href="{{ u('insights.html') }}">{{ _("All articles") }} <span aria-hidden="true">→</span></a></div>
     <div class="grid g-3">
-      {% for p in related[:3] %}
-      <a class="card post-card" href="{{ u(p.url) }}">
-        {{ photo(p.image, p.image_alt or p.title, "media", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
-        <div class="card-body"><span class="kicker">{{ p.category }}</span><h3>{{ p.title }}</h3>{% if p.summary %}<p class="post-sum">{{ p.summary }}</p>{% endif %}<p class="meta">{{ p.date | date_fmt("long") }}</p></div>
-      </a>
-      {% endfor %}
+      {% for p in related[:3] %}{{ post_card(p) }}{% endfor %}
     </div>
   </div>
 </section>

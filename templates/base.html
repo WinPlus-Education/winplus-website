@@ -118,7 +118,7 @@
     <div class="fb-news" id="newsletter">
       <h3>{{ site.newsletter.title }}</h3>
       <p>{{ site.newsletter.text }}</p>
-      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}">
+      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ u('thanks.html') }}" data-ajax-form data-success-title="{{ site.forms.newsletter_title }}" data-success-text="{{ site.forms.newsletter_text }}" data-sending="{{ site.forms.sending }}" data-error="{{ site.forms.error }}" data-invalid="{{ site.forms.invalid }}">
         <input type="hidden" name="form-name" value="newsletter">
         <input type="hidden" name="language" value="{{ lang.code }}">
         <input type="hidden" name="consent_version" value="{{ site.consent.version }}">

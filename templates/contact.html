@@ -5,7 +5,7 @@
 <section class="section">
   <div class="container">
     {# Netlify Forms: submissions appear in the Netlify dashboard under "Forms" as "consultation". Notice and consent text follow legal Part 6 §4–§9. #}
-    <form class="form consult-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}" data-consult-form>
+    <form class="form consult-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="company_website" action="{{ u('thanks.html') }}" data-consult-form data-ajax-form data-success-title="{{ site.forms.consultation_title }}" data-success-text="{{ site.forms.consultation_text }}" data-sending="{{ site.forms.sending }}" data-error="{{ site.forms.error }}" data-invalid="{{ site.forms.invalid }}">
       <input type="hidden" name="form-name" value="consultation">
       <input type="hidden" name="language" value="{{ lang.code }}">
       <input type="hidden" name="consent_version" value="{{ site.consent.version }}">
@@ -88,7 +88,7 @@
           <label class="consent" data-prc-child hidden style="margin-top:1rem"><input type="checkbox" name="prc_child_consent" value="yes"> <span>{{ _("If the student is under 14:") }} {{ site.consent.prc_child }}</span></label>
         </div>
         <label class="consent"><input type="checkbox" name="marketing_consent" value="yes"> <span>{{ site.consent.marketing }}</span></label>
-        <p class="form-note">{{ site.consent.inquiry_notice }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></p>
+        <p class="form-note">{{ site.consent.inquiry_notice }} {{ site.consent.sender }} <a href="{{ u('privacy.html') }}">{{ _("Privacy Policy") }}</a></p>
         <div class="btn-row"><button class="btn btn-primary" type="submit" data-submit>{{ _("Request my free consultation") }} <span class="arr" aria-hidden="true">→</span></button></div>
       </div>
     </form>

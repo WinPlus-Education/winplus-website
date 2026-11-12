@@ -333,7 +333,7 @@
 {# M14 Event card #}
 {# Event card: one design for upcoming and past events #}
 {% macro event_card(e) -%}
-{% set when = (e.card_date or e.time_label or (e.date | date_fmt('long'))) if not e.is_past else (e.date_label or (e.date | date_fmt('mon') ~ " " ~ (e.date | date_fmt('year')))) %}
+{% set when = (e.card_date or e.time_label or (e.date | date_fmt('long'))) if not e.is_past else (e.date_label or (e.date | date_fmt('ym'))) %}
 <article class="ev-card reveal{% if e.is_past %} is-past{% endif %}">
   <div class="media">
     {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}

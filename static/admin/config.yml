@@ -361,6 +361,10 @@ collections:
       - name: marketing
         label: Marketing
         required: false
+        widget: string
+      - name: sender
+        label: Sender
+        required: false
         widget: text
       - name: school_notice
         label: School notice
@@ -390,6 +394,48 @@ collections:
         label: Event photo
         required: false
         widget: text
+    - name: forms
+      label: Forms
+      required: false
+      widget: object
+      collapsed: true
+      fields:
+      - name: sending
+        label: Sending
+        required: false
+        widget: string
+      - name: invalid
+        label: Invalid
+        required: false
+        widget: string
+      - name: error
+        label: Error
+        required: false
+        widget: string
+      - name: consultation_title
+        label: Consultation title
+        required: false
+        widget: string
+      - name: consultation_text
+        label: Consultation text
+        required: false
+        widget: text
+      - name: partner_title
+        label: Partner title
+        required: false
+        widget: string
+      - name: partner_text
+        label: Partner text
+        required: false
+        widget: text
+      - name: newsletter_title
+        label: Newsletter title
+        required: false
+        widget: string
+      - name: newsletter_text
+        label: Newsletter text
+        required: false
+        widget: string
 - name: pages
   label: Pages
   files:
@@ -1690,7 +1736,7 @@ collections:
     - name: cta_text
       label: Cta text
       required: false
-      widget: string
+      widget: text
     - name: cta
       label: Button text
       required: false
@@ -2898,7 +2944,7 @@ collections:
   - name: image_alt
     label: Photo description (accessibility & SEO)
     required: false
-    widget: text
+    widget: string
   - name: source
     label: Source
     required: false
@@ -3502,6 +3548,10 @@ collections:
       - name: marketing
         label: Marketing
         required: false
+        widget: string
+      - name: sender
+        label: Sender
+        required: false
         widget: text
       - name: school_notice
         label: School notice
@@ -3529,6 +3579,48 @@ collections:
         widget: text
       - name: event_photo
         label: Event photo
+        required: false
+        widget: string
+    - name: forms
+      label: Forms
+      required: false
+      widget: object
+      collapsed: true
+      fields:
+      - name: sending
+        label: Sending
+        required: false
+        widget: string
+      - name: invalid
+        label: Invalid
+        required: false
+        widget: string
+      - name: error
+        label: Error
+        required: false
+        widget: string
+      - name: consultation_title
+        label: Consultation title
+        required: false
+        widget: string
+      - name: consultation_text
+        label: Consultation text
+        required: false
+        widget: string
+      - name: partner_title
+        label: Partner title
+        required: false
+        widget: string
+      - name: partner_text
+        label: Partner text
+        required: false
+        widget: string
+      - name: newsletter_title
+        label: Newsletter title
+        required: false
+        widget: string
+      - name: newsletter_text
+        label: Newsletter text
         required: false
         widget: string
 - name: zh-pages

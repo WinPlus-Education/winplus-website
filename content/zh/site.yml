@@ -146,7 +146,7 @@ legal_links:
 cookie:
   text: "我们使用必要 Cookie 以维持本网站运行。在您同意的情况下，我们也会使用分析 Cookie 来了解网站的使用情况。您可以随时通过“Cookie 设置”更改您的选择。"
   policy: 查看 Cookie 政策。
-  accept: 接受分析 Cookie
+  accept: 接受 Cookie
   reject: 拒绝
   settings: Cookie 设置
   save: 保存选择

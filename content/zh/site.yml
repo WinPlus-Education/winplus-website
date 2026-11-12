@@ -156,9 +156,10 @@ cookie:
   analytics_text: 帮助我们了解哪些页面有用。除非您开启，否则保持关闭。
 
 consent:
-  version: "2026-11-04 draft"
+  version: "2026-11-12 draft"
   inquiry_notice: "WinPlus 将使用您提供的信息回复您的咨询并提供项目信息，详见我们的隐私政策。标有 * 的为必填项；如未填写，我们可能无法回复。您的信息将在美国处理。"
-  marketing: "是的，我愿意通过电子邮件接收 WinPlus Education and Technology Inc.（Harvard Square, One Mifflin Place, Suite 400, Cambridge, MA 02138, USA，info@winplus.org）发送的通讯、白皮书以及 WinPlus 项目和活动信息。WinPlus 将为此使用我的姓名和电子邮箱。我可随时退订。"
+  marketing: "是的，我愿意通过电子邮件接收 WinPlus 的通讯、升学洞察与活动邀请，可随时退订。"
+  sender: "邮件发件方：WinPlus Education and Technology Inc.，One Mifflin Place, Suite 400, Cambridge, MA 02138, USA · info@winplus.org。"
   school_notice: "WinPlus 将使用您提供的工作联系信息回复您的咨询，并与您沟通潜在合作事宜，详见我们的隐私政策。"
   age_question: "我是"
   age_under: "感谢您的关注。请由您的父母或监护人代为填写此表格。"
@@ -166,3 +167,15 @@ consent:
   prc_transfer: "我同意 WinPlus 在中国大陆境外（美国）处理我提供的个人信息，并向隐私政策所列的境外接收方提供该等信息，用于隐私政策所述目的。我可通过 info@winplus.org 联系 WinPlus 行使我的权利。"
   prc_child: "我是本表格所述儿童的父母或法定监护人。我单独同意 WinPlus 为回复咨询、报名及提供项目之目的，处理我孩子的个人信息（根据中国法律属于敏感个人信息）。我理解此处理为孩子参加 WinPlus 项目所必需，WinPlus 将按照隐私政策第 7 条保护该等信息。"
   event_photo: "WinPlus 将在本次活动中拍照及录像。照片和视频可能发布于 WinPlus 网站、社交媒体、通讯及宣传资料，详见我们的隐私政策。我同意 WinPlus 将包含我（及我的孩子）的照片和视频用于上述目的。"
+
+# 表单提交后在页面上显示的信息（咨询、合作咨询、订阅）
+forms:
+  sending: 正在提交…
+  invalid: 请完善标出的必填信息。
+  error: 抱歉，信息未能成功提交。请稍后重试，或发送邮件至 info@winplus.org。
+  consultation_title: 感谢您的信任，我们已收到您的咨询。
+  consultation_text: WinPlus 导师将认真了解您的需求，并尽快与您联系，安排免费规划咨询。期待与您相识。
+  partner_title: 感谢您的联系。
+  partner_text: 我们的合作团队将尽快审阅您的咨询，并与您联系，探讨合作方式。
+  newsletter_title: 订阅成功。
+  newsletter_text: 感谢您的关注，WinPlus 的升学洞察与活动邀请将发送至您的邮箱。

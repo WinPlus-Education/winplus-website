@@ -229,4 +229,49 @@
     var c = getComputedStyle(icon, "::before").content;
     if (!c || c === "none" || c === "normal" || c === '""') document.documentElement.classList.add("no-icons");
   });
+
+  // ---------- Forms: send in the background (Netlify Forms) and confirm on the page ----------
+  // Without JavaScript the forms still post normally and land on thanks.html.
+  $$("form[data-ajax-form]").forEach(function (f) {
+    var btn = $("button[type=submit]", f), btnHtml = btn ? btn.innerHTML : "";
+    var status = document.createElement("p");
+    status.className = "form-status"; status.setAttribute("role", "alert"); status.hidden = true;
+    (btn ? btn.parentNode : f).insertAdjacentElement("afterend", status);
+    var say = function (msg) { status.textContent = msg; status.hidden = !msg; };
+    var reset = function () { if (btn) { btn.disabled = false; btn.innerHTML = btnHtml; } };
+
+    // Show which fields still need attention (the browser's own bubble is easy to miss)
+    f.addEventListener("invalid", function (e) {
+      var el = e.target, wrap = el.closest(".field, .consent, .field-group") || el;
+      wrap.classList.add("is-invalid");
+      say(f.dataset.invalid || "");
+    }, true);
+    var clear = function (e) {
+      var wrap = e.target.closest(".is-invalid");
+      if (wrap && e.target.checkValidity()) wrap.classList.remove("is-invalid");
+      if (!$(".is-invalid", f)) say("");
+    };
+    f.addEventListener("input", clear); f.addEventListener("change", clear);
+
+    f.addEventListener("submit", function (e) {
+      if (e.defaultPrevented) return;            // e.g. the consultation age check stopped it
+      e.preventDefault();
+      say("");
+      if (btn) { btn.disabled = true; btn.textContent = f.dataset.sending || "…"; }
+      var body = new URLSearchParams(new FormData(f)).toString();
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          var done = document.createElement("div");
+          done.className = "form-success"; done.setAttribute("role", "status"); done.tabIndex = -1;
+          var h = document.createElement("p"); h.className = "form-success-title"; h.textContent = f.dataset.successTitle || "";
+          var p = document.createElement("p"); p.textContent = f.dataset.successText || "";
+          done.appendChild(h); done.appendChild(p);
+          f.replaceWith(done);
+          done.focus({ preventScroll: true });
+          if (done.getBoundingClientRect().top < 0) done.scrollIntoView({ behavior: "smooth", block: "center" });
+        })
+        .catch(function () { reset(); say(f.dataset.error || ""); });
+    });
+  });
 })();

@@ -8,8 +8,7 @@
   <div class="container">
     {{ people(team_people, 4) }}
     {{ people_schema(team_people) }}
-    {{ marquee(site.partners_label, site.partners, site.partners_note, true) }}
-    <p class="notice">{{ page.note }}</p>
+    {{ marquee(site.partners_label, site.partners, site.partners_note, true, page.note) }}
   </div>
 </section>
 

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_head, photo, post_card with context %}
+{% from "macros.html" import page_hero, photo, post_card with context %}
+{% block body_class %}has-overlay{% endblock %}
 {% block content %}
-{{ page_head(page, [[page.eyebrow, "insights.html"]]) }}
+{{ page_hero(page, [[page.eyebrow, "insights.html"]]) }}
 <section class="section">
   <div class="container">
     {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}

@@ -182,7 +182,7 @@
 {%- endmacro %}
 
 {# M9 Logo marquee #}
-{% macro marquee(label, items, note='', inline=false) -%}
+{% macro marquee(label, items, note='', inline=false, note2='') -%}
 <{{ "div" if inline else "section" }} class="marquee{% if inline %} is-inline{% endif %}" aria-label="{{ label }}">
   <p class="marquee-label">{{ label }}</p>
   <div class="marquee-viewport">
@@ -191,6 +191,7 @@
     </ul>
   </div>
   {% if note %}<p class="{% if not inline %}container {% endif %}marquee-note">{{ note }}</p>{% endif %}
+  {% if note2 %}<p class="{% if not inline %}container {% endif %}marquee-note">{{ note2 }}</p>{% endif %}
 </{{ "div" if inline else "section" }}>
 {%- endmacro %}
 
@@ -239,7 +240,6 @@
 <article class="ev-card reveal"{% if attrs %} {{ attrs | safe }}{% endif %}>
   <div class="media"{% if pos %} style="--pos: {{ pos }}"{% endif %}>
     {{ photo(image, image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
-    {% if chip %}<span class="ev-chip">{{ chip }}</span>{% endif %}
   </div>
   <div class="card-body">
     {% set meta = meta | select | list %}{% if meta %}<p class="ev-meta">{% for x in meta %}<span>{{ x }}</span>{% endfor %}</p>{% endif %}
@@ -337,7 +337,6 @@
 <article class="ev-card reveal{% if e.is_past %} is-past{% endif %}">
   <div class="media">
     {{ photo(e.image, e.image_alt, "", 900, sizes="(max-width: 720px) 100vw, 33vw") }}
-    {% if e.type %}<span class="ev-chip">{{ e.type }}</span>{% endif %}
   </div>
   <div class="card-body">
     <p class="ev-meta"><span>{{ when }}</span><span>{{ e.city or e.location }}</span></p>

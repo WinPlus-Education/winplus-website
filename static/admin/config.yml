@@ -1520,6 +1520,15 @@ collections:
       label: Intro text
       required: false
       widget: text
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: image_alt
+      label: Photo description (accessibility & SEO)
+      required: false
+      widget: string
     - name: categories
       label: Categories
       required: false
@@ -4707,6 +4716,15 @@ collections:
       label: Intro text
       required: false
       widget: text
+    - name: image
+      label: Photo (upload, or paste an image link)
+      required: false
+      widget: image
+      choose_url: true
+    - name: image_alt
+      label: Photo description (accessibility & SEO)
+      required: false
+      widget: string
     - name: categories
       label: Categories
       required: false

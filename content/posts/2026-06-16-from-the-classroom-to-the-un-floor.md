@@ -5,8 +5,8 @@ date: 2026-06-16
 category: "Student Stories"
 summary: "At the 19th Conference of States Parties to the CRPD at UN Headquarters, a 17-year-old WinPlus student moved from 153rd in the speakers' queue to the microphone. What he learned about disability, dignity and youth responsibility along the way."
 dek: "On June 10, 2026, a 17-year-old Chinese high school student took the floor at UN Headquarters in New York, and his voice was entered into the official record."
-image: https://images.unsplash.com/photo-1607037183811-2a54d746cd35
-image_alt: "A conference room at United Nations Headquarters during a session"
+image: /images/uploads/photos/cosp19-conference-hall-hero.webp
+image_alt: "A session of the 19th Conference of States Parties to the CRPD at UN Headquarters, New York"
 source: "WinPlus WeChat (欧歌未来)"
 featured: true
 events: [cosp19-un-headquarters]

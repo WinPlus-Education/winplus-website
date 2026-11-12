@@ -5,8 +5,8 @@ date: 2026-05-08
 category: "Global Exposure"
 summary: "WinPlus students and teachers joined the 25th session of the UN Permanent Forum on Indigenous Issues in New York, attending side events on climate, human rights and AI, and reflecting on what it means to truly listen."
 dek: "At the 25th session of the UN Permanent Forum on Indigenous Issues, WinPlus students watched a global dialogue unfold and came away with a sharper idea of what international perspective really means."
-image: /images/uploads/photos/unpfii-2026-general-assembly-group.webp
-image_alt: "WinPlus co-founder Cathy and students with Indigenous delegates in front of the rostrum of the UN General Assembly Hall"
+image: /images/uploads/photos/unpfii-2026-general-assembly-hero.webp
+image_alt: "The UN General Assembly Hall during the Permanent Forum on Indigenous Issues"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
 events: [unpfii-25th-session]

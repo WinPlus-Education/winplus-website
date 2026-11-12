@@ -4,8 +4,8 @@ date: 2026-05-08
 category: "国际视野"
 summary: "欧歌学院师生参加联合国土著问题常设论坛第二十五届会议，深入气候、人权、人工智能等分论坛，在真实的全球对话现场理解什么是真正的国际视野。"
 dek: "在联合国土著问题常设论坛第二十五届会议上，欧歌学子见证世界如何倾听被边缘化的声音，也在这一过程中，逐渐理解什么是真正的国际视野。"
-image: /images/uploads/photos/unpfii-2026-general-assembly-group.webp
-image_alt: "郭老师和欧歌学子与土著代表在联合国大会厅讲台前合影"
+image: /images/uploads/photos/unpfii-2026-general-assembly-hero.webp
+image_alt: "联合国土著问题常设论坛期间的联合国大会厅"
 source: "欧歌未来 公众号"
 featured: false
 events: [unpfii-25th-session]

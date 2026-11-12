@@ -200,7 +200,6 @@
 <article class="case reveal{% if reverse %} is-reverse{% endif %}{% if not c.image %} no-media{% endif %}">
   {% if c.image %}{{ photo(c.image, c.image_alt, "case-media", 1200, sizes="(max-width: 900px) 100vw, 45vw") }}{% endif %}
   <div class="case-body">
-    <span class="kicker">{{ c.tag }}</span>
     <h3>{{ c.title }}</h3>
     <dl class="case-facts">
       <div><dt>{{ _("Starting point") }}</dt><dd>{{ c.start }}</dd></div>
@@ -216,7 +215,6 @@
 {% macro case_card(c, n=1) -%}
 <article class="story reveal">
   <header class="story-head">
-    <span class="story-tag">{{ c.tag }}</span>
     <span class="story-num" aria-hidden="true">{{ "%02d" | format(n) }}</span>
   </header>
   <h3>{{ c.title }}</h3>

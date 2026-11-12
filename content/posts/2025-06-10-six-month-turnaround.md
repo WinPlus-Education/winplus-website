@@ -52,7 +52,7 @@ When the student decided to apply to the US, it was already the end of May in 11
 <li><div><strong>Raise test scores</strong><span>We matched him with experienced one-on-one TOEFL and SAT teachers. From late May to December he studied intensively and earned strong scores on both, a clear boost to his competitiveness.</span></div></li>
 <li><div><strong>Do research and publish</strong><span>He had worked on a Chinese Academy of Sciences project that had paused but could continue. Once environmental science was set as his major, we advised him to reconnect with the original professor (a remote sensing and GIS specialist) and helped him set research goals and plan the outreach.</span></div></li>
 <li><div><strong>Build out arts and service</strong><span>He curated a solo photography exhibition and a professional portfolio, submitted to photography magazines, and organized and played in charity concerts at Beijing Children's Hospital.</span></div></li>
-<li><div><strong>Write an honest, effective essay</strong><span>Two months of work with <a href="../team.html#josh-guo">Josh Guo</a>, our lead essay mentor and a former Yale admissions officer, on a personal statement built around film photography.</span></div></li>
+<li><div><strong>Write an honest, effective essay</strong><span>Two months of work with <a href="../team.html#josh-guo">Josh Guo</a>, our lead essay mentor and a former Yale undergraduate admissions interviewer, on a personal statement built around film photography.</span></div></li>
 </ol>
 
 While choosing his topic and writing the paper, the student stayed in close contact with <a href="../team.html#cedric-pan">Cedric Pan</a>. He sent drafts, and our team gave feedback together to sharpen them. He ultimately submitted and published the paper in an academic journal, completing the full research process. "Universities would rather see research a student reached out for and earned, even free resources, than a project that was bought," says Cedric. "A Chinese Academy of Sciences background like this is especially convincing."
@@ -67,7 +67,7 @@ The student has also loved music for years and plays cello especially well; he h
 
 ## An essay that is honest, and works
 
-Polishing the main essay was a core task in the student's application. We started at the beginning of summer and matched him with our lead essay mentor, Josh, who has extensive writing-coaching experience and previously worked in Yale's admissions office, so he knows the depth of thought and style admissions officers look for.
+Polishing the main essay was a core task in the student's application. We started at the beginning of summer and matched him with our lead essay mentor, Josh, who has extensive writing-coaching experience and has served as a Yale undergraduate admissions interviewer, so he knows the depth of thought and style top universities look for.
 
 We always stress that the personal statement isn't a list of experiences. It is real self-expression. Before choosing a topic, we interviewed and guided the student several times to identify which experiences had shaped him most and which reflections best represented his values. We agreed that his long-standing practice of shooting film showed not only his sensitivity to beauty and record-keeping, but his deep understanding of failure, waiting and uncertainty. That became the central metaphor of his essay.
 

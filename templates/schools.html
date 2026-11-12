@@ -14,7 +14,7 @@
 <section class="section s-ivory">
   <div class="container">
     {{ head("", page.types_title, page.types_intro) }}
-    <div class="grid g-4">{% for t in page.types %}<div class="value reveal"><h3>{{ t.title }}</h3><p>{{ t.text }}</p></div>{% endfor %}</div>
+    <div class="pillars">{% for t in page.types %}<div class="pillar reveal"><span class="num">{{ "%02d" | format(loop.index) }}</span><h3>{{ t.title }}</h3><p>{{ t.text }}</p></div>{% endfor %}</div>
   </div>
 </section>
 
@@ -53,5 +53,7 @@
     <p class="notice notice-wrap">{{ page.ideal_partners }}</p>
   </div>
 </section>
+
+{{ cta_band(page.cta_title, page.cta_text, page.primary_cta, page.primary_link) }}
 
 {% endblock %}

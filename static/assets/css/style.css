@@ -417,7 +417,10 @@ a.card:hover .media img { transform: scale(1.04); }
 .marquee-track img { max-height: 44px; max-width: 150px; width: auto; }
 .marquee-track .wordmark { font-family: var(--font-display); font-size: 1.35rem; color: var(--mute); white-space: nowrap; }
 .marquee-note { text-align: center; font-size: .6875rem; color: var(--mute-2); margin: 1.5rem auto 0; max-width: none; }
-@media (min-width: 900px) { .marquee-note { white-space: nowrap; } }
+.marquee-note { text-wrap: balance; }
+.marquee-note + .marquee-note { margin-top: .4rem; }
+/* A notice placed straight after a centered logo strip follows its alignment */
+.marquee + .notice, .marquee + .marquee-note { text-align: center; margin-left: auto; margin-right: auto; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; } }
 
@@ -1057,7 +1060,7 @@ legend { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transfo
 /* ---------- Round 5 ---------- */
 /* Fine print: small, one line on desktop */
 .notice { font-size: .68rem; line-height: 1.5; color: var(--mute-2); max-width: none; margin-top: 1.5rem; }
-@media (min-width: 1280px) { .notice:not(.notice-wrap) { white-space: nowrap; } }
+.notice { text-wrap: pretty; }
 .notice-wrap { max-width: 90ch; }
 
 /* Person cards: no dividers; name / title / education / bio rows line up across a row */

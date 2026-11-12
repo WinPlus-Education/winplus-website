@@ -4,10 +4,11 @@ date: 2026-06-16
 category: "学员故事"
 summary: "在纽约联合国总部《残疾人权利公约》第十九届缔约国大会上，17岁的欧歌学员从第153位排队发言者，一步步等到了属于自己的两分钟。他对残障、尊严与青年责任的思考，从这里开始。"
 dek: "2026年6月10日，一位17岁的中国高中生在纽约联合国总部开口发言，他的声音被正式记录在联合国的会议里。"
-image: /images/uploads/photos/cosp19-student-speaking.webp
-image_alt: "欧歌学员以 NGO 代表身份在《残疾人权利公约》缔约国大会上发言"
+image: https://images.unsplash.com/photo-1607037183811-2a54d746cd35
+image_alt: "联合国总部会议室中的会议现场"
 source: "欧歌未来 公众号"
 featured: true
+events: [cosp19-un-headquarters]
 ---
 
 2026年6月10日，纽约联合国总部，《残疾人权利公约》第十九届缔约国大会正在进行。会场里，一位17岁的中国高中生，正等待着属于自己的发言时刻。

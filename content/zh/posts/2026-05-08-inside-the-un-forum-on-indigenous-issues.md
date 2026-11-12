@@ -8,6 +8,7 @@ image: /images/uploads/photos/unpfii-2026-general-assembly-group.webp
 image_alt: "郭老师和欧歌学子与土著代表在联合国大会厅讲台前合影"
 source: "欧歌未来 公众号"
 featured: false
+events: [unpfii-25th-session]
 ---
 
 <figure><img src="/images/uploads/insights/unpfii/secretary-general-opening.jpg" alt="联合国秘书长古特雷斯在开幕式上致辞" loading="lazy"><figcaption>联合国秘书长古特雷斯在开幕式上致辞。</figcaption></figure>

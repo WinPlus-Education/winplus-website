@@ -2907,10 +2907,26 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
+  - name: events
+    label: Events
+    required: false
+    widget: list
+    field:
+      name: item
+      label: Item
+      widget: string
   - name: body
     label: Text
     required: false
     widget: markdown
+  - name: programs
+    label: Programs
+    required: false
+    widget: list
+    field:
+      name: item
+      label: Item
+      widget: string
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -6028,10 +6044,26 @@ collections:
     label: Featured people (ids from Our Team)
     required: false
     widget: boolean
+  - name: events
+    label: Events
+    required: false
+    widget: list
+    field:
+      name: item
+      label: Item
+      widget: string
   - name: body
     label: Text
     required: false
     widget: markdown
+  - name: programs
+    label: Programs
+    required: false
+    widget: list
+    field:
+      name: item
+      label: Item
+      widget: string
   summary: '{{title}}'
   format: frontmatter
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

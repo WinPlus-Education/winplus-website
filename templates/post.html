@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, cta_band, post_card, ld with context %}
+{% from "macros.html" import page_hero, head, photo, btn, cta_band, post_card, event_card, program_card, ld with context %}
 {% block title %}{{ post.seo_title or post.title }} | {{ site.name }}{% endblock %}
 {% block description %}{{ post.summary }}{% endblock %}
 {% block og_type %}article{% endblock %}
@@ -21,6 +21,17 @@
 </article>
 
 
+
+{% set linked_events = events | selectattr("slug", "in", post.events or []) | list %}
+{% set linked_programs = programs | selectattr("slug", "in", post.programs or []) | list %}
+{% if linked_events or linked_programs %}
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(_("Events") if linked_events else _("Programs"), _("The event behind this story") if linked_events else _("The program behind this story")) }}
+    <div class="grid g-3">{% for e in linked_events %}{{ event_card(e) }}{% endfor %}{% for pr in linked_programs %}{{ program_card(pr) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
 
 {% set related = posts | rejectattr("slug", "equalto", post.slug) | list %}
 {% if related %}

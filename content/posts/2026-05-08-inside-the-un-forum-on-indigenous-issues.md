@@ -9,6 +9,7 @@ image: /images/uploads/photos/unpfii-2026-general-assembly-group.webp
 image_alt: "WinPlus co-founder Cathy and students with Indigenous delegates in front of the rostrum of the UN General Assembly Hall"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
+events: [unpfii-25th-session]
 ---
 
 <figure><img src="/images/uploads/insights/unpfii/secretary-general-opening.jpg" alt="Secretary-General António Guterres addressing the opening of the Forum in the General Assembly Hall" loading="lazy"><figcaption>UN Secretary-General António Guterres speaks at the opening ceremony.</figcaption></figure>

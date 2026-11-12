@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, head, photo, btn, arrow, quotes, results_notice, event_card, journey, cta_band, ld with context %}
+{% from "macros.html" import post_card, page_hero, head, photo, btn, arrow, quotes, results_notice, event_card, journey, cta_band, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% block schema %}
 {% set online = 'online' in (item.location | lower) or '线上' in item.location %}
@@ -136,6 +136,17 @@
     <div class="head-row">{{ head(_("In their words"), "") }}<div class="carousel-nav" data-carousel="#ev-quotes"><button type="button" data-prev aria-label="{{ _('Previous') }}">←</button><button type="button" data-next aria-label="{{ _('Next') }}">→</button></div></div>
     {{ quotes(item.testimonials, "ev-quotes") }}
     {{ results_notice() }}
+  </div>
+</section>
+{% endif %}
+
+{# 7b. Stories written about this event #}
+{% set stories = [] %}{% for p in posts if p.events and item.slug in p.events %}{% set _x = stories.append(p) %}{% endfor %}
+{% if stories %}
+<section class="section">
+  <div class="container">
+    {{ head(_("Insights"), _("Read the story")) }}
+    <div class="grid g-3">{% for p in stories %}{{ post_card(p) }}{% endfor %}</div>
   </div>
 </section>
 {% endif %}

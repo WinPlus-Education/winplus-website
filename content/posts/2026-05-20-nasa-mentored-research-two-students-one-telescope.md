@@ -9,6 +9,7 @@ image: https://images.unsplash.com/photo-1446776811953-b23d57bd21aa
 image_alt: "Earth seen from the International Space Station"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
+programs: [jwst-deep-space-research]
 ---
 
 At the start of summer 2025, two 11th graders were each stuck.

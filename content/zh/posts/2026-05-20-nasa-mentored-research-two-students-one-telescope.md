@@ -8,6 +8,7 @@ image: https://images.unsplash.com/photo-1446776811953-b23d57bd21aa
 image_alt: "从国际空间站看到的地球"
 source: "欧歌未来 公众号"
 featured: false
+programs: [jwst-deep-space-research]
 ---
 
 2025年暑假伊始，两个十一年级的高中生，正在各自陷入人生的卡点。

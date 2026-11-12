@@ -5,10 +5,11 @@ date: 2025-06-10
 category: "Admissions Strategy"
 summary: "One student decided to apply to US universities at the end of May in 11th grade, with a 3.5 GPA and no TOEFL or SAT scores ready. Six months of focused planning later: 12 US offers and an $80,000 scholarship. Here is how we did it."
 dek: "He switched from European to US applications at the end of 11th grade, with a 3.5 GPA and no test scores. Here is the six-month plan that followed, in the words of the people who lived it."
-image: /images/uploads/photos/hbs-classroom.webp
-image_alt: "WinPlus study-tour students and mentors in a Harvard Business School classroom"
+image: https://images.unsplash.com/photo-1594122230689-45899d9e6f69
+image_alt: "A speaker addressing a full auditorium"
 source: "WinPlus WeChat (欧歌未来)"
 featured: false
+events: [cop28-dubai]
 ---
 
 Every year, WinPlus walks many students through one of the most important seasons of their lives, and every student's story is worth sharing. Today we want to share one student's story. In just six months he went from uncertainty and doubt to confidently accepting an offer from the US university he wanted.

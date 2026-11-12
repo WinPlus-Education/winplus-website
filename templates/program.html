@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import page_hero, photo, btn, arrow, head, program_card, status_badge, person, cta_band, ld with context %}
+{% from "macros.html" import post_card, page_hero, photo, btn, arrow, head, program_card, status_badge, person, cta_band, ld with context %}
 {% block body_class %}has-overlay{% endblock %}
 {% set m = people_by_id.get(item.mentor_id) %}
 {% set ind = industries[item.industry] if item.industry in industries else item.industry %}
@@ -70,5 +70,14 @@
 </section>
 
 
+{% set stories = [] %}{% for p in posts if p.programs and item.slug in p.programs %}{% set _x = stories.append(p) %}{% endfor %}
+{% if stories %}
+<section class="section s-ivory">
+  <div class="container">
+    {{ head(_("Insights"), _("Read the story")) }}
+    <div class="grid g-3">{% for p in stories %}{{ post_card(p) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
 {{ cta_band(_("Not sure which program fits?"), _("A WinPlus mentor can recommend programs that fit the student's interests and application plan."), site.cta_text, site.cta_link) }}
 {% endblock %}

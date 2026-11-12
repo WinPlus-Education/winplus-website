@@ -250,7 +250,7 @@
 </article>
 {%- endmacro %}
 {% macro story_card(s) -%}{{ info_card(s.title, s.link, s.image, s.image_alt, s.tag, [], s.text, _("Read the story"), pos=s.image_position) }}{%- endmacro %}
-{% macro post_card(p, attrs="") -%}{{ info_card(p.title, p.url, p.image, p.image_alt or p.title, p.category, [p.date | date_fmt("long")], p.summary, _("Read article"), attrs) }}{%- endmacro %}
+{% macro post_card(p, attrs="") -%}{{ info_card(p.title, p.url, p.image, p.image_alt or p.title, "", [p.date | date_fmt("long")], p.summary, _("Read article"), attrs) }}{%- endmacro %}
 
 {# M10 Testimonial carousel (scroll-snap; arrow buttons added by JS) #}
 {% macro quotes(items, id="quotes") -%}

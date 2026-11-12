@@ -4,21 +4,13 @@
 {{ page_head(page, [[page.eyebrow, "insights.html"]]) }}
 <section class="section">
   <div class="container">
-    <div class="filters" data-filters="#post-grid">
-      <div class="filter-group" data-group="cat" role="group" aria-label="{{ _('Filter articles by topic') }}">
-        <span class="filter-label">{{ _("Topic") }}</span>
-        <button class="chip is-active" data-value="all" aria-pressed="true">{{ _("All") }}</button>
-        {% for c in page.categories %}<button class="chip" data-value="{{ c | slugify }}" aria-pressed="false">{{ c }}</button>{% endfor %}
-      </div>
-    </div>
     {% set featured = (posts | selectattr("featured") | list | first) or (posts | first) %}
     <div id="post-grid">
-      {% if featured %}<div class="ev-feature" data-filter-item data-cat="{{ featured.category | slugify }}">{{ post_card(featured) }}</div>{% endif %}
+      {% if featured %}<div class="ev-feature">{{ post_card(featured) }}</div>{% endif %}
       <div class="grid g-3">
-        {% for p in posts if p.slug != featured.slug %}{{ post_card(p, 'data-filter-item data-cat="' ~ (p.category | slugify) ~ '"') }}{% endfor %}
+        {% for p in posts if p.slug != featured.slug %}{{ post_card(p) }}{% endfor %}
       </div>
     </div>
-    <p class="empty-note" data-filter-empty hidden>{{ _("No articles in this topic yet.") }}</p>
   </div>
 </section>
 {% endblock %}

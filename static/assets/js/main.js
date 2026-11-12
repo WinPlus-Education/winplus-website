@@ -264,11 +264,16 @@
           if (!r.ok) throw new Error(r.status);
           var done = document.createElement("div");
           done.className = "form-success"; done.setAttribute("role", "status"); done.tabIndex = -1;
-          var icon = document.createElement("span"); icon.className = "form-success-icon"; icon.setAttribute("aria-hidden", "true");
-          icon.innerHTML = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
-          done.appendChild(icon);
-          var h = document.createElement("p"); h.className = "form-success-title"; h.textContent = f.dataset.successTitle || "";
-          var p = document.createElement("p"); p.textContent = f.dataset.successText || "";
+          // WinPlus crest (copied from the header logo) above the message
+          var crest = $(".logo-crest");
+          if (crest) {
+            var icon = document.createElement("span"); icon.className = "form-success-crest"; icon.setAttribute("aria-hidden", "true");
+            icon.appendChild(crest.cloneNode(true)); done.appendChild(icon);
+          }
+          // Keep the last two words together so no single word sits alone on the last line
+          var noOrphan = function (s) { return (s || "").replace(/ (\S+)$/, "\u00a0$1"); };
+          var h = document.createElement("p"); h.className = "form-success-title"; h.textContent = noOrphan(f.dataset.successTitle);
+          var p = document.createElement("p"); p.textContent = noOrphan(f.dataset.successText);
           done.appendChild(h); done.appendChild(p);
           f.replaceWith(done);
           done.focus({ preventScroll: true });

@@ -264,6 +264,9 @@
           if (!r.ok) throw new Error(r.status);
           var done = document.createElement("div");
           done.className = "form-success"; done.setAttribute("role", "status"); done.tabIndex = -1;
+          var icon = document.createElement("span"); icon.className = "form-success-icon"; icon.setAttribute("aria-hidden", "true");
+          icon.innerHTML = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
+          done.appendChild(icon);
           var h = document.createElement("p"); h.className = "form-success-title"; h.textContent = f.dataset.successTitle || "";
           var p = document.createElement("p"); p.textContent = f.dataset.successText || "";
           done.appendChild(h); done.appendChild(p);
